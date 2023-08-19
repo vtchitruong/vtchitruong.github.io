@@ -136,7 +136,7 @@ extra_css:
 nav:
   - Home: index.md
   - Lớp 10:
-    - grade-10/index.md
+    - grade-10/grade-10-index.md
     - Chủ đề F:
       - grade-10/topic-F/conditional-statement-if.md
       - grade-10/topic-F/for-loop.md
@@ -144,10 +144,15 @@ nav:
       - grade-10/topic-F/list.md
       - grade-10/topic-F/string.md
   - Lớp 11:
-    - grade-11/index.md
+    - grade-11/grade-11-index.md
     - Chủ đề F:
+      - grade-11/topic-F/array.md
       - grade-11/topic-F/searching-algorithm.md
       - grade-11/topic-F/sorting-algorithm.md
+  - Lớp 12:
+    - grade-12/grade-12-index.md
+  - Nâng cao:
+    - advanced/advanced-index.md
   # - Getting started:
   #   - Installation: getting-started.md
   #   - Creating your site: creating-your-site.md

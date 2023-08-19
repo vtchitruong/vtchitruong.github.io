@@ -229,7 +229,8 @@
 }
 
 .md-banner {
-    color: var(--md-footer-fg-color--lighter)
+    color: var(--md-footer-fg-color--lighter);
+    background-color: #005260;
 }
 
 .md-banner strong {
