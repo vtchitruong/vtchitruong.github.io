@@ -1,4 +1,4 @@
-# Kiểu dữ liệu list của Python
+# Cấu trúc dữ liệu danh sách liên kết
 
 ## Đặt vấn đề
 

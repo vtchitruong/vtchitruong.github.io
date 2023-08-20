@@ -1,25 +1,3 @@
-<!--
-  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
 {% extends "main.html" %}
 
 <!-- Render hero under tabs -->
@@ -28,35 +6,243 @@
 
   <!-- Additional styles for landing page -->
   <style>
-
-    /* Application header should be static for the landing page */
-    .md-header {
-      position: initial;
-    }
-
-    /* Remove spacing, as we cannot hide it completely */
-    .md-main__inner {
-      margin: 0;
-    }
-
-    /* Hide main content for now */
-    .md-content {
-      display: none;
-    }
-
-    /* Hide table of contents */
-    @media screen and (min-width: 60em) {
-      .md-sidebar--secondary {
-        display: none;
+      /* Application header should be static for the landing page */
+      .md-header {
+          position: initial;
       }
-    }
 
-    /* Hide navigation */
-    @media screen and (min-width: 76.25em) {
-      .md-sidebar--primary {
-        display: none;
+      /* Remove spacing, as we cannot hide it completely */
+      .md-main__inner {
+          margin: 0;
       }
-    }
+
+      /* Hide main content for now */
+      .md-content {
+          display: none;
+      }
+
+      /* Hide table of contents */
+      @media screen and (min-width: 60em) {
+          .md-sidebar--secondary {
+              display: none;
+          }
+      }
+
+      /* Hide navigation */
+      @media screen and (min-width: 76.25em) {
+          .md-sidebar--primary {
+              display: none;
+          }
+      }
+
+      .md-main {
+          flex-grow: 0;
+      }
+
+      .md-main__inner {
+          display: flex;
+          /* height: 100%; */
+      }
+
+      .tx-container {
+          padding-top: .0rem;
+          background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg, 47%, 55%, 1) 99%, #fff 99%)
+      }
+
+      .tx-hero {
+          margin: 32px 2.8rem;
+          color: var(--md-primary-bg-color);
+          justify-content: center;
+      }
+
+      .tx-hero h1 {
+          margin-bottom: 1rem;
+          color: currentColor;
+          font-weight: 700
+      }
+
+      .tx-hero__content {
+          padding-bottom: 1rem;
+          margin: 0 auto;
+      }
+
+      .tx-hero__image {
+          width: 17rem;
+          height: 17rem;
+          order: 1;
+          padding-right: 2.5rem;
+      }
+
+      .tx-hero .md-button {
+          margin-top: .5rem;
+          margin-right: .5rem;
+          color: var(--md-primary-bg-color)
+      }
+
+      .tx-hero .md-button--primary {
+          background-color: var(--md-primary-bg-color);
+          color: hsla(280deg, 37%, 48%, 1);
+          border-color: var(--md-primary-bg-color)
+      }
+
+      .tx-hero .md-button:focus,
+      .tx-hero .md-button:hover {
+          background-color: var(--md-accent-fg-color);
+          color: var(--md-default-bg-color);
+          border-color: var(--md-accent-fg-color)
+      }
+
+      .feature-item h2 svg {
+          height: 30px;
+          float: left;
+          margin-right: 10px;
+          transform: translateY(10%);
+      }
+
+      .top-hr {
+          margin-top: 0;
+      }
+
+      .feature-item {
+          font-weight: 300;
+          box-sizing: border-box;
+          padding: 0 15px;
+          word-break: break-word;
+      }
+
+      .feature-item h2 {
+          color: #333;
+          font-weight: 700;
+          font-size: 2em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: normal;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          font-family: inherit;
+      }
+
+      .feature-item p {
+          font-size: .8rem;
+          line-height: 1.8em;
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          color: #111;
+          margin: 0 0 10px;
+          display: block;
+      }
+
+      @media screen and (max-width:30em) {
+          .tx-hero h1 {
+              font-size: 1.4rem
+          }
+      }
+
+      @media screen and (min-width:60em) {
+          .md-sidebar--secondary {
+              display: none
+          }
+
+          .tx-hero {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+
+          .tx-hero__content {
+              max-width: 22rem;
+              margin-top: 3.5rem;
+              margin-bottom: 3.5rem;
+              margin-left: 1.0rem;
+              margin-right: 4.0rem;
+              align-items: center;
+          }
+      }
+
+      @media screen and (min-width:76.25em) {
+          /* .md-sidebar--primary {
+            display: none
+        } */
+
+          .top-hr {
+              width: 100%;
+              display: flex;              
+              max-width: 61rem;
+              margin-right: auto;
+              margin-left: auto;
+              padding: 0 .2rem;
+          }
+
+          .bottom-hr {
+              margin-top: 10px;
+              width: 100%;
+              display: flex;
+              max-width: 61rem;
+              margin-right: auto;
+              margin-left: auto;
+              padding: 0 .2rem;
+          }
+
+          .feature-item {
+              flex: 1;
+              min-width: 0;
+          }
+
+          .feature-item:hover {
+              background-color: #e7f9ff;
+              border-radius: 30px;
+          }
+      }
+
+      .hr {
+          border-bottom: 1px solid #eee;
+          width: 100%;
+          margin: 20px 0;
+      }
+
+      .text-center {
+          text-align: center;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+          margin-top: 15px;
+          font-size: 23px;
+          font-weight: 300;
+          padding-bottom: 10px;
+      }
+
+      .logos {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: row wrap;
+          margin: 0 auto;
+      }
+
+      .logos img {
+          flex: 1 1 auto;
+          padding: 25px;
+          max-height: 130px;
+          vertical-align: middle;
+      }
+
+      .hr-logos {
+          margin-top: 0;
+          margin-bottom: 30px;
+      }
+
+      .md-footer-meta__inner {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-top: 1.0rem;
+      }
+
+      .md-footer-social {
+          padding-top: 20px;
+      }
   </style>
 
   <!-- Hero for landing page -->
@@ -97,6 +283,99 @@
       </div>
     </div>
   </section>
+
+<!-- Main site box descriptions -->
+<div class="top-hr">
+<div><h1 style="color: var(--md-default-fg-color--light); font-size: 3em; font-weight: 300;">Những mong muốn của chúng tôi và bạn có thể tin</h1></div>
+</div>
+<div class="top-hr">
+    <div class="feature-item">
+        <h2>
+            <svg viewBox="0 0 24 24" id="meteor-icon-kit__regular-content" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.0769 24C10.4822 24 10 23.5523 10 23C10 22.4477 10.4822 22 11.0769 22H22.9231C23.5178 22 24 22.4477 24 23C24 23.5523 23.5178 24 22.9231 24H11.0769ZM11.0769 18C10.4822 18 10 17.5523 10 17C10 16.4477 10.4822 16 11.0769 16H22.9231C23.5178 16 24 16.4477 24 17C24 17.5523 23.5178 18 22.9231 18H11.0769ZM11.0769 12C10.4822 12 10 11.5523 10 11C10 10.4477 10.4822 10 11.0769 10H22.9231C23.5178 10 24 10.4477 24 11C24 11.5523 23.5178 12 22.9231 12H11.0769ZM18 6C18 6.55228 17.5523 7 17 7C16.4477 7 16 6.55228 16 6V3C16 2.44772 15.5523 2 15 2H3C2.44772 2 2 2.44772 2 3V15C2 15.5523 2.44772 16 3 16H6C6.55228 16 7 16.4477 7 17C7 17.5523 6.55228 18 6 18H3C1.34315 18 0 16.6569 0 15V3C0 1.34315 1.34315 0 3 0H15C16.6569 0 18 1.34315 18 3V6Z"
+                        fill="#758CA3"></path>
+                </g>
+            </svg>
+            Dựa trên Chương trình GDPT 2018
+        </h2>
+        <p>Mr School's documentation hoàn toàn bám sát khung chương trình bộ môn Tin học thuộc Chương trình GDPT
+            2018.</p>
+    </div>
+    <div class="feature-item">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 109 11a3.5 3.5 0 003.5-3.5m3.44 5.5A5.32 5.32 0 0118 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 00-1.93.59 5 5 0 010 5.82A3.39 3.39 0 0015 11a3.5 3.5 0 000-7z" />
+            </svg>Bình dân Tin học vụ
+        </h2>
+        <p>Mr School's documentation được thể hiện theo hướng vừa đảm bảo tính hàn lâm vừa <em>bình dân hóa</em>.
+            Bạn chỉ cần có trình độ hết lớp 9 là hoàn toàn tự học được. 
+            Bạn ở khác ngành, muốn nhảy ngang vào học căn bản, cũng có thể tiếp thu được mà không lo <em>xỉu ngang xỉu dọc</em>.</p>
+    </div>
+    <div class="feature-item">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M20.4 14.5L16 10 4 20" /></svg>
+            Giảng liệu tin cậy của giáo viên
+        </h2>
+        <p>Bạn là giáo viên, bạn hoàn toàn có thể tham khảo Mr School's documentation và chế biến lại theo ý mình.</p>
+    </div>
+</div>
+
+<div class="top-hr">
+    <div class="feature-item">
+        <h2>
+            <svg viewBox="0 0 24 24" id="meteor-icon-kit__regular-content" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.0769 24C10.4822 24 10 23.5523 10 23C10 22.4477 10.4822 22 11.0769 22H22.9231C23.5178 22 24 22.4477 24 23C24 23.5523 23.5178 24 22.9231 24H11.0769ZM11.0769 18C10.4822 18 10 17.5523 10 17C10 16.4477 10.4822 16 11.0769 16H22.9231C23.5178 16 24 16.4477 24 17C24 17.5523 23.5178 18 22.9231 18H11.0769ZM11.0769 12C10.4822 12 10 11.5523 10 11C10 10.4477 10.4822 10 11.0769 10H22.9231C23.5178 10 24 10.4477 24 11C24 11.5523 23.5178 12 22.9231 12H11.0769ZM18 6C18 6.55228 17.5523 7 17 7C16.4477 7 16 6.55228 16 6V3C16 2.44772 15.5523 2 15 2H3C2.44772 2 2 2.44772 2 3V15C2 15.5523 2.44772 16 3 16H6C6.55228 16 7 16.4477 7 17C7 17.5523 6.55228 18 6 18H3C1.34315 18 0 16.6569 0 15V3C0 1.34315 1.34315 0 3 0H15C16.6569 0 18 1.34315 18 3V6Z"
+                        fill="#758CA3"></path>
+                </g>
+            </svg>
+            Trực quan và cụ thể
+        </h2>
+        <p>Mỗi phần lý thuyết đều có ít nhất một ví dụ. 
+            Các đoạn mã đều có diễn giải, input và output. 
+        Bạn có thể copy các đoạn mã dễ dàng hoặc chạy chúng trên Google Colab theo link đính kèm (đối với Python).</p>
+    </div>
+    <div class="feature-item">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 109 11a3.5 3.5 0 003.5-3.5m3.44 5.5A5.32 5.32 0 0118 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 00-1.93.59 5 5 0 010 5.82A3.39 3.39 0 0015 11a3.5 3.5 0 000-7z" />
+            </svg>Xem được trên nhiều thiết bị
+        </h2>
+        <p>Máy tính để bàn. Máy tính <em>để đùi</em>. Máy tính bảng. Smartphone. Stupid phone. 
+            Tất cả đều hiển thị tốt, chấp các thể loại kích thước. Bạn có thể ngồi học hoặc nằm học, miễn là bạn chịu học.</p>
+    </div>
+    <div class="feature-item">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M20.4 14.5L16 10 4 20" /></svg>
+                Nâng cao và mở rộng
+        </h2>
+        <p>Mr School's documentation có phục vụ <em>buffet</em>, <em>cơm thêm</em>, <em>trà đá</em> 
+            là những kiến thức nâng cao, chuyên sâu so với phổ thông.  
+            Bạn có thể tập gym đầu óc hoặc thay đổi khẩu vị trong tiến trình tự học.</p>
+    </div>
+</div>
+
+<!-- ----------------------------------------------------- -->
+
 {% endblock %}
 
 <!-- Content -->
