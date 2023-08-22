@@ -1,4 +1,4 @@
-# Cấu trúc dữ liệu mảng
+# Mảng
 
 ## Đặt vấn đề
 

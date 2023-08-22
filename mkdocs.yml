@@ -135,6 +135,28 @@ extra_css:
 # Page tree
 nav:
   - Home: index.md
+  - Getting started:
+    - Getting started: getting-started.md
+#   - Creating your site: creating-your-site.md
+#   - Publishing your site: publishing-your-site.md
+#   - Customization: customization.md
+#   - Browser support: browser-support.md
+#   - Philosophy: philosophy.md
+#   - Alternatives: alternatives.md
+#   - License: license.md
+#   - Changelog:
+#     - changelog/index.md
+#     - How to upgrade: upgrade.md
+#   - Contributing:
+#     - contributing/index.md
+#     - Reporting a bug: contributing/reporting-a-bug.md
+#     - Reporting a docs issue: contributing/reporting-a-docs-issue.md
+#     - Requesting a change: contributing/requesting-a-change.md
+#     - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
+#   - Guides:
+#     - Creating a reproduction: guides/creating-a-reproduction.md
+#   - FAQ:
+#     - Sponsoring: faq/sponsoring.md
   - Lớp 10:
     - grade-10/grade-10-index.md
     - Chủ đề F:
@@ -147,34 +169,14 @@ nav:
     - grade-11/grade-11-index.md
     - Chủ đề F:
       - grade-11/topic-F/array.md
+      - grade-11/topic-F/linked-list.md
       - grade-11/topic-F/searching-algorithm.md
       - grade-11/topic-F/sorting-algorithm.md
   - Lớp 12:
     - grade-12/grade-12-index.md
   - Nâng cao:
     - advanced/advanced-index.md
-  # - Getting started:
-  #   - Installation: getting-started.md
-  #   - Creating your site: creating-your-site.md
-  #   - Publishing your site: publishing-your-site.md
-  #   - Customization: customization.md
-  #   - Browser support: browser-support.md
-  #   - Philosophy: philosophy.md
-  #   - Alternatives: alternatives.md
-  #   - License: license.md
-  #   - Changelog:
-  #     - changelog/index.md
-  #     - How to upgrade: upgrade.md
-  #   - Contributing:
-  #     - contributing/index.md
-  #     - Reporting a bug: contributing/reporting-a-bug.md
-  #     - Reporting a docs issue: contributing/reporting-a-docs-issue.md
-  #     - Requesting a change: contributing/requesting-a-change.md
-  #     - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
-  #   - Guides:
-  #     - Creating a reproduction: guides/creating-a-reproduction.md
-  #   - FAQ:
-  #     - Sponsoring: faq/sponsoring.md
+
   # - Setup:
   #   - setup/index.md
   #   - Changing the colors: setup/changing-the-colors.md

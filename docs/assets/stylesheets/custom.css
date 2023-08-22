@@ -529,3 +529,34 @@
 .md-typeset .mdx-sponsorship-total {
     font-weight: 700
 }
+
+/* -----------------Search box -------------------------- */
+.md-search__form {
+    border-radius: 100px;
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__form {
+    background-color: var(--md-default-bg-color);
+    box-shadow: 0 0 0.6rem #00000012;
+    color: var(--md-default-fg-color);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  [dir=ltr] .md-search__output, [dir=rtl] .md-search__output {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* -------------- View and edit butons on each page -------------------------*/
+.md-typeset .md-content__button {
+    color: var(--md-default-fg-color--lighter);
+    display: none;
+}
+
+.md-tabs__link--active, .md-tabs__link:focus, .md-tabs__link:hover {
+    color: inherit;
+    opacity: 1;
+}

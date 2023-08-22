@@ -28,29 +28,7 @@
     font-size: 2.41rem !important;
 }
 
-a.md-button.md-button {
-    color: #fff;
-    border-color: #fff;
-    border-radius: 100px;
-}
 
-a.md-button.md-button:hover {
-    color: #fff;
-    background-color: var(--md-accent-fg-color);
-    border-color: var(--md-accent-fg-color);
-}
-
-a.md-button.md-button--primary {
-    background-color: var(--md-accent-fg-color);
-    border-color: var(--md-accent-fg-color);
-    color: #fff;
-    border-radius: 100px;
-}
-a.md-button.md-button--primary:hover {
-    color: var(--md-accent-fg-color);
-    background-color: #fff;
-    border-color: #fff;
-}
 
 /*Table styling*/
 table {
@@ -105,4 +83,23 @@ div.doc-contents:not(.first) {
   padding-left: 25px;
   border-left: 4px solid rgba(230, 230, 230);
   margin-bottom: 80px;
+}
+
+/* -------------- admonition -------------------------*/
+.md-typeset .admonition {
+    border-radius: 15px;
+}
+
+[dir=ltr] .md-typeset .admonition-title {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.md-typeset .admonition, .md-typeset details {
+    border-radius: 15px;
+}
+
+[dir=ltr] .md-typeset summary {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
