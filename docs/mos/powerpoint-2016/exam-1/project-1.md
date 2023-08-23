@@ -1,4 +1,4 @@
-# Practice Exam 1 Training - Project 1
+# Practice Exam 1 - Project 1
 
 ## Fusion Tomo  
 You are developing a presentation showing the benefits of using the FusionTomo business model.  
@@ -13,8 +13,7 @@ Change the Slide Master theme colors to Blue.
     3\. Below the **Office** section of colors, select **Blue**.  
 
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_jVUxW1UsZjedE2A1YUNGIRT9FxKi-QbgE1p26xqQCKA31hp3pxIIpSO3XOK0djHi-dqhxyinPVGnfI65uLMIf7T2R2FQyysdbbyUifzusDaXDObNU=w600){ width="600", loading=lazy }    
-    </figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_jVUxW1UsZjedE2A1YUNGIRT9FxKi-QbgE1p26xqQCKA31hp3pxIIpSO3XOK0djHi-dqhxyinPVGnfI65uLMIf7T2R2FQyysdbbyUifzusDaXDObNU=w600){ width="600", loading=lazy }</figure>
 
     -OR-
 
@@ -22,8 +21,7 @@ Change the Slide Master theme colors to Blue.
     2\. In the **Master Views** group, click **Slide Master**.  
     
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9I-aSHEKF8Bw5YTOwUbA247HqRaakm__T71Uu5ttRDJIRbOQQKm5TkMltgHTTMfsQhI7nTgYH7Ny5lsKMS1HTB1bnYz7jDzTyjKbKO2k8vWqobJ73S=w600){ width="600", loading=lazy }    
-    </figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9I-aSHEKF8Bw5YTOwUbA247HqRaakm__T71Uu5ttRDJIRbOQQKm5TkMltgHTTMfsQhI7nTgYH7Ny5lsKMS1HTB1bnYz7jDzTyjKbKO2k8vWqobJ73S=w600){ width="600", loading=lazy }</figure>
     
     
     3\. In the **Background** group, select **Colors**.  
@@ -31,8 +29,7 @@ Change the Slide Master theme colors to Blue.
     (Hint: When you apply a theme or modify theme elements (i.e. Colors, Fonts or Effects) these automatically modify the Slide Masters, so it is not necessary to open the Slide Master view to apply these types of changes.)
 
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9eM2tzSpYdrFs6kg1WsH22sl1f4KZWt-Dvc8x-P9anysEacEmmMLXMWeuxcZyuZexz4QRyo9653uJ0cJ4RjpKPZ8Tk6XljnIJ0HHgz8YosbTuco7j5=w600){ width="600", loading=lazy }    
-    </figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9eM2tzSpYdrFs6kg1WsH22sl1f4KZWt-Dvc8x-P9anysEacEmmMLXMWeuxcZyuZexz4QRyo9653uJ0cJ4RjpKPZ8Tk6XljnIJ0HHgz8YosbTuco7j5=w600){ width="600", loading=lazy }</figure>
 
 ## Task 2
 
@@ -45,16 +42,14 @@ On Slide 2, create a bulleted list from the text, Leading... decades. For the 
     3\. In the **HOME** tab, **Paragraph** group, click the **Bullets down-arrow** and select **Bullets and Numbering**.  
 
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc8VJd7SUvw2gubDmZDvbAxFIEHGXQLivrC2cfBPgWPmIX1gUBekqqj12ftTQQ2zDU3Mbd8yK9WoMwBXjlpn9r53LUrB41N_Rs-_RYTwpHWP-ft-vp_z=w600){ width="600", loading=lazy }    
-    </figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc8VJd7SUvw2gubDmZDvbAxFIEHGXQLivrC2cfBPgWPmIX1gUBekqqj12ftTQQ2zDU3Mbd8yK9WoMwBXjlpn9r53LUrB41N_Rs-_RYTwpHWP-ft-vp_z=w600){ width="600", loading=lazy }</figure>
 
     4\. In the **Bullets and Numbering** pop-up, on the **Bulleted** tab, click the **Picture** button.     
     5\. On the **Insert Pictures** pop-up, click the **Browse** link to the right of From a file and browse to your GMetrixTemplates folder.  
     6\. Select **TomoLogo.png** and click **Insert**.  
 
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc__kkRZNfIJUrnij1895XtnqQm7N9iciC-HEwoTGEhiRzivK_bNJaZVYivxcfHcw0nkE23rFb3aLbQPtJ33N73xuEInfzHrmAW6_iKn7pXoQ9GCyeXC=w360){ width="360", loading=lazy }    
-    </figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc__kkRZNfIJUrnij1895XtnqQm7N9iciC-HEwoTGEhiRzivK_bNJaZVYivxcfHcw0nkE23rFb3aLbQPtJ33N73xuEInfzHrmAW6_iKn7pXoQ9GCyeXC=w360){ width="360", loading=lazy }</figure>
 
 ## Task 3
 
@@ -65,8 +60,7 @@ Insert a new slide 3 using the slide titled Board of Directors from FT Draft.
     2\. In the **INSERT** tab, **Slides** group, click **New Slide** and select **Reuse Slides…**
 
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc8zme7czSdQ_burvgR93_JWoyn1BZ33IHqPdZIygtsbpa-JI2hfR4k20Yi7npnZDcd7IHggQHGnaVpYxZLyA_EiMnZrNG7IwaSwKy2MoUhWlccJ5Lia=w600){ width="600", loading=lazy }    
-    </figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc8zme7czSdQ_burvgR93_JWoyn1BZ33IHqPdZIygtsbpa-JI2hfR4k20Yi7npnZDcd7IHggQHGnaVpYxZLyA_EiMnZrNG7IwaSwKy2MoUhWlccJ5Lia=w600){ width="600", loading=lazy }</figure>
 
     3\. The **Reuse Slides** pane will appear on the right. Click **Browse** then **Browse File...** and locate the GMetrixTemplates folder. Select **FT Draft.pptx** and click **Open**. All of the slides contained in the presentation will list in the **Reuse Slides** pane.  
     4\. At the bottom of the list, make sure the box next to Keep source formatting is disabled (clear).  
@@ -74,8 +68,7 @@ Insert a new slide 3 using the slide titled Board of Directors from FT Draft.
     6\. Close the **Reuse Slides** pane by clicking the X in the upper-right corner of the pane.  
 
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_Vg1xl560-t182evFn1Eu8k0SS4dVbvsOqzoO90zMp2bOzR-7GKmL79BBAmn7uE6Mzb7ohZ8kNWkw-o-Yr8_KeJ0SvRI1sUP3_Y6FHjX4GTNDJoYdo=w360){ width="360", loading=lazy }    
-    </figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_Vg1xl560-t182evFn1Eu8k0SS4dVbvsOqzoO90zMp2bOzR-7GKmL79BBAmn7uE6Mzb7ohZ8kNWkw-o-Yr8_KeJ0SvRI1sUP3_Y6FHjX4GTNDJoYdo=w360){ width="360", loading=lazy }</figure>
 
 ## Task 4
 
@@ -87,8 +80,7 @@ In the right pane of the slide titled FusionTomo, insert the video FusionTomo.m
     2\. In the content placeholder on the right side of the slide, click the **Insert Video** icon.  
 
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9y8e5F7hPKxFwVr-w0yLfmVGVWqSbu3dTgowJwKYGn6yK7zte6dmt0Ln-0IjQ8mp7rDtj-jC45ebk2JSGFaaQXsqF-ZH0bE0YA37BvZqObZXSMJJXx=w600){ width="600", loading=lazy }    
-    </figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9y8e5F7hPKxFwVr-w0yLfmVGVWqSbu3dTgowJwKYGn6yK7zte6dmt0Ln-0IjQ8mp7rDtj-jC45ebk2JSGFaaQXsqF-ZH0bE0YA37BvZqObZXSMJJXx=w600){ width="600", loading=lazy }</figure>
 
     3\. In the **Insert Video** pop-up, next to **From a file**, click **Browse**.  
     (Hint: Alternatively, you could click anywhere inside the placeholder, then on the **INSERT** tab, in the **Media** group, click **Video and select Video on My PC…**)
@@ -104,8 +96,7 @@ Insert a new slide at the end of the presentation by importing the file Leadersh
     2\. On the **HOME** tab, in the **Slides** group, click **New Slide** and select **Slides from Outline...**  
     
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9u-yXsOgCAalLewV9AM00UMbWyJ1fHbqN0MAE3eTtvsYPuguyq2EkjtbglCRZcbl4jJ_D3_y4AAiD-RtwkojQ_ddLfLzkGzSedix6KfLEOXZfRQVDK=w360){ width="360", loading=lazy }    
-    </figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9u-yXsOgCAalLewV9AM00UMbWyJ1fHbqN0MAE3eTtvsYPuguyq2EkjtbglCRZcbl4jJ_D3_y4AAiD-RtwkojQ_ddLfLzkGzSedix6KfLEOXZfRQVDK=w360){ width="360", loading=lazy }</figure>
 
     3\. In GMetrixTemplates folder, select **Leadership.docx**.  
     4\. Click **Insert**.  
