@@ -37,7 +37,7 @@ On slide 2, apply the color Light Blue to the text 10%, 12%, and 60% and eq
     7\. Click **OK**.  
     
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9xKPMEyT9ClfOO_7B7P711FWrVW5GEQXWD9w3tkD0edlsI7FXFVhQsPSgzv6f5ZVLgDN0EEjvmkhhuR7jSVjpAMTEW69KhtPZXJdegEA6S-6IX_Wa1=w600){ width="600", loading=lazy }</figure>
+    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9xKPMEyT9ClfOO_7B7P711FWrVW5GEQXWD9w3tkD0edlsI7FXFVhQsPSgzv6f5ZVLgDN0EEjvmkhhuR7jSVjpAMTEW69KhtPZXJdegEA6S-6IX_Wa1=w480){ width="480", loading=lazy }</figure>
 
 ## Task 3
 
