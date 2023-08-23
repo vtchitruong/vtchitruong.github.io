@@ -1,6 +1,6 @@
 # Practice Exam 1 - Project 3
 
-Rock Crawling
+## Rock Crawling
 A tourism office in southern Utah has hired you to modify a slide presentation on Rock Crawling in Moab, Utah.  
 
 ## Task 1
