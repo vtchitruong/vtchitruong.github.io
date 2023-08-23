@@ -37,7 +37,7 @@ Node cuối cùng có thành phần `next` trỏ đến `None`, là đối tư�
 Xe lửa có thể xem là hình ảnh minh họa cho danh sách liên kết. Bởi xe lửa gồm nhiều toa, toa liền trước *móc nối* với toa liền sau.    
 
 <figure markdown>
-  ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc8fwaSEFCjEpd0hB_3VSMOaNzQ_yGG1F31kkr4U0-WSGeyl8CJIo_3_xvaorVS4p1JYMplZZARlMBUrcydro-agvumnj45bcwR5jvNSDbawo2yyhKTrjr9fGbO1IH6Ny76KvseTRyv-XJ6z_tydOU-WI3JxK6uyLa-AS4OxQHrXlJayBErCnonRYdN21dZzJL-zNTJfmgIl3RNsstbrQCWxffE01tPeHxLODSQHJs0dEZooVsaBTCUpUlHrfpwFrXx4tbo35SQSsiD6bCGhJiwWW9B3diXm_i4N6LviyHkyxmBBbAkB6eqwd4yjdVV1QkfCJU5Ph79H3vw61N46XN-D977ZeIMRRgKm2ZKXt9odbPn2kyOehhLM_E50mX1vrf9Le49uF7bUXI91Xb9UShMzZKwqLRMtb9YBr0LP0iySsYnnzMMNlpkYCfoUKEOpM7RQDniUgNnDu4BWGeGt7ZrBS3ERiLWBe_4oVjoRnsOLXQ7F12iZvejvP6d4iKl727F2e-C3pQI9Ca-dnpp4J0rSn7kkG8Xjqi115RTj7c9sVtbTd0e7q9tV02dBVEcAjF4whuIToQiIuOracVwlIPCPuuq7DpP_y4yBkZURa3mpOo9yKqTfOAcASQRc85y_xWCMSLJHAWsJvTTy0mRnTXVYnk33i7qneNadUABE46I2MlazS13Omo03GrcxTBMab1bBxXtzyHeI9I7eTgpE9N1vCl3DL7J3NDVieiUylzaTKXX2SeBz5XZ4f54gUxpGelOP8GkktpTpAHhR5fGgHWfNxI1rhZPg2iWO8OftPnXbOSwZeldUkTv7vdwlbR1PUoOG9IhO2-j9eTTJZ4tytLyKs8qEiLcW2gGwUd5S9RZ0TizM1W9-yjDEUp27BRD_7YiYEzioCgOSXCbeOaocyKEE7Xg=w400){ width="400", loading=lazy }
+  ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9LdHBPN57uprTW3ia84rHWxOsIy0KqMas8IK62Hfl2Pcd-NHag7EH8tQVXhbF6xDEFZqYKIm4gxDLAuIZdzsm-lKTXvgr3RW_f_2vX-bijEyzjzZE8=w400){ width="400", loading=lazy }
   <figcaption>Hình 3. Xe lửa, theo nghĩa nào đó, là một danh sách liên kết</figcaption>
 </figure>
 
