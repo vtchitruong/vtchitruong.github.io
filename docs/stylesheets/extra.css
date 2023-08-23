@@ -103,3 +103,8 @@ div.doc-contents:not(.first) {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
+/* Images */
+.md-typeset img, .md-typeset svg, .md-typeset video {
+    border-radius: 15px;
+}
