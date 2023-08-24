@@ -47,14 +47,14 @@ theme:
       primary: green
       accent: light blue
       toggle:
-        icon: material/lightbulb-outline
-        name: Switch to dark mode
+      #   icon: material/lightbulb-outline
+      #   name: Switch to dark mode
     - scheme: slate
       primary: teal
       accent: lime
       toggle:
-        icon: material/lightbulb
-        name: Switch to light mode
+      #   icon: material/lightbulb
+      #   name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -176,6 +176,8 @@ nav:
     - grade-12/grade-12-index.md
   - Nâng cao:
     - advanced/advanced-index.md
+    - Đồ thị:
+      - DFS: advanced/graph/dfs.md
   - MOS:
     - MOS 2016: mos/mos-2016-index.md
     # - Word 2016: word-2016-index.md
@@ -190,6 +192,22 @@ nav:
         - Project 5: mos/powerpoint-2016/exam-1/project-5.md
         - Project 6: mos/powerpoint-2016/exam-1/project-6.md
         - Project 7: mos/powerpoint-2016/exam-1/project-7.md
+      - Practice Exam 2:
+        - Project 1: mos/powerpoint-2016/exam-2/project-1.md
+        - Project 2: mos/powerpoint-2016/exam-2/project-2.md
+        - Project 3: mos/powerpoint-2016/exam-2/project-3.md
+        - Project 4: mos/powerpoint-2016/exam-2/project-4.md
+        - Project 5: mos/powerpoint-2016/exam-2/project-5.md
+        - Project 6: mos/powerpoint-2016/exam-2/project-6.md
+        - Project 7: mos/powerpoint-2016/exam-2/project-7.md
+      - Practice Exam 3:
+        - Project 1: mos/powerpoint-2016/exam-3/project-1.md
+        - Project 2: mos/powerpoint-2016/exam-3/project-2.md
+        - Project 3: mos/powerpoint-2016/exam-3/project-3.md
+        - Project 4: mos/powerpoint-2016/exam-3/project-4.md
+        - Project 5: mos/powerpoint-2016/exam-3/project-5.md
+        - Project 6: mos/powerpoint-2016/exam-3/project-6.md
+        - Project 7: mos/powerpoint-2016/exam-3/project-7.md
       # - PowerPoint 2016 Core Practice Exam 2 Training:
       # - PowerPoint 2016 Core Practice Exam 3 Training:
   # - Setup:
