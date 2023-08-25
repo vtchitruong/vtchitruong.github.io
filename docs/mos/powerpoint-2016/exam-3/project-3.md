@@ -1,77 +1,89 @@
-# Practice Exam 1 - Project 3
+# Practice Exam 3 - Project 3
 
-## Business Camp
-You are an administrative assistant for an organization that sponsors a Business Leadership Camp for high school and college students. You are updating a presentation on the results of the most recent camp.  
+## Custom Construction
+You are the Sales representative for a company that builds custom sheds and outbuildings. You are modifying a sales presentation.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  1
+## Task 1
  
-Configure printing options to print slides 1, 3, and 4 as full page slides.  
+Hyperlink the text on slide 2, Custom Construction, to the website address customconstruction.gmetrix.com.  
 
 ???+ Tip "Hint"
-    1\. Select **slides 1, 3 and 4** by holding down the **CTRL** button and clicking on them individually.  
-    2\. Click the **FILE** tab to select it.  
+    1\. In the **Navigation Pane** on the left, select slide 2.  
+    2\. Select the text Custom Construction.  
+    3\. On the **INSERT** tab, in the Links group, click Hyperlink. 
+    (Hint: You can also right-click and select Hyperlink … )
 
-    3\. On the left click **Print**.  
-    4\. Beneath **Settings** click **the first down-arrow** to change **Print All Slides** to **Print Selection**.  
-    5\. Click the **second down-arrow** to ensure that **Full Page Slides** is selected.  
-    6\. Click the encircled left-arrow in the upper-left corner to return to the slide presentation.  
+    4\. In the Insert Hyperlink pop-up window, in the left pane, select Existing File or Web Page.  
+    5\. Type into Address: http://customconstruction.gmetrix.com
+    6\. Click OK.  
+    7\. Click anywhere on the slide to deselect the text.  
 
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  2
+## Task 2
 
-Prepare this presentation to be printed in Grayscale.  
+Insert a Down Ribbon shape, 1 high and 2.5 wide (2.54 cm x 6.35 cm) on slide 2. Center it in the space in the lower area of the slide.  
 
 ???+ Tip "Hint"
-    1\. Click the **FILE** tab.  
-    2\. Select **Print**.  
-    3\. Beneath **Settings**, click the down-arrow on the last option to change **Color** to **Grayscale**.  
-    4\. Click the encircled left arrow in the upper-left corner to return to the slide presentation.  
+    1\. In the **Navigation Pane** on the left, select slide 2.  
+    2\. Click the **INSERT** tab.  
+    3\. In the Illustrations group, click the Shapes down-arrow to open the gallery.  
+    4\. In the Stars and Banners section, select Down Ribbon.  
 
+
+    5\. Click and drag to draw the Down Ribbon shape in the empty space in the lower area of the slide.  
+    6\. In the DRAWING TOOLS FORMAT tab, in the Size group, use the spinner arrows to change Shape Height to 1 and Shape Width to 2.5\. (2.54 cm x 6.35 cm)
+    (Hint: You can also type the values into the fields).  
+
+    7\. In the Arrange group, click Align and select Align Center.  
+
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  3
+## Task 3
 
-Format the text on slide 4 into two columns with 0.5" (1.27 cm) spacing between the columns.  
+Apply the Moderate Effect SmartArt Style to the arrow shape on slide 4.  
 
-???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select **slide 4**.  
-    2\. Select the border of the content area.  
-    3\. On the **HOME** tab, in the **Paragraph** group, click Add or Remove Columns and select **More Columns**.  
-    4\. In the **Columns pop-up** window, configure the following:  
-    Number: **2**  
-    Spacing: **0.5"** (1.27 cm)  
-    5\. Click **OK**.  
+    1\.  In the **Navigation Pane** on the left, select slide 4.  
+    2\.  Click the arrow image to select it and reveal the SMARTART TOOLS contextual tabs.  
+    3\.  Click the SMARTART TOOLS DESIGN tab.  
+    4\.  In the SmartArt Styles group, click the More drop down arrow.  
+    5\.  Under Best Match.... select Moderate Effect.  
 
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  4
+## Task 4
 
-Add a new shape to the SmartArt graphic between "Invite Students from Course" and "Get Accepted to Camp". **INSERT** the text Enroll Students into the new shape.  
+Insert barn.jpg from the GMetrixTemplates folder into the empty placeholder on slide 3. Size the image 3 high and 6 wide.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select the **slide 5**.  
-    2\. Select the shape containing the text **Invite Students from Course**.  
-    3\. On the **SMARTART TOOLS DESIGN** tab, in the **Create Graphic** group, click the **Add Shape down-arrow** and select **Add Shape After**.  
+    1\. In the **Navigation Pane** on the left, click on slide 3.  
+    2\. In the empty placeholder on the slide, click the Pictures icon. 
+    (Hint: You could also go to the **INSERT** tab, in the Images group, click Pictures.)
 
-4\. Click inside the shape and type, **Enroll Students**.  
 
+    3\. Browse to the GMetrixTemplates folder and select Barn.jpg.  
+    4\. Click the Insert button.  
+    5\. In the PICTURE TOOLS FORMAT tab, in the Size group, use the spinner arrows to change Shape Height to 3 and Shape Width to 6.  
+    (Hint: You can also type the values into the fields).  
+
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  5
+## Task 5
 
-On the last slide, change the animation path for the MOS Certificate to Square.  
+Apply the Center Shadow Rectangle style to the picture on slide 5.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select the **last slide**.  
-    2\. Click on the image of the MOS Certificate to select it.  
-    3\. On the **ANIMATIONS** tab, in the **Animation** group, click the **More down-arrow** to open the gallery.  
-    4\. Beneath **Motion Paths**, ensure that Shapes is selected.  
-    5\. To the right of the gallery, click **Effect Options** and select **Square**.  
-
-    <figure markdown>
-    ![Image title](=w600){ width="600", loading=lazy }</figure>
+    1\.  In the **Navigation Pane** on the left, select slide 5.  
+    2\.  Click the image to select it and reveal the contextual tab.  
+    3\.  On the PICTURE TOOLS FORMAT contextual tab, in the Picture Styles group, click Center Shadow Rectangle.  

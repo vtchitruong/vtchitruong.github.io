@@ -1,78 +1,82 @@
-# Practice Exam 1 - Project 5
+# Practice Exam 3 - Project 5
 
-## Adventure Travel
-A travel agency has hired you to modify a slide presentation on adventure travel in their area.  
+## Rodeo
+You work for a community recreation department who wants to host a professional rodeo. You have been tasked with creating a presentation for potential sponsors.  
+     
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+
+## Task 1
  
-## Task  1
- 
-Rename the Untitled Section to "Intro".  
+Insert the chart from the file NFRTicketPrices.xlsx, located in the GMetrixTemplates folder, into the placeholder in the last slide.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, just below the title slide, click the section named, **Untitled Section**.
-    2\. Right-click and select **Rename** Section.  
+    1\. Select the last slide and select the placeholder.  
+    2\. In the **INSERT** tab >> Text group, select Object.  
 
-    3\. Type the name, **Intro**.  
-    4\. Click the **Rename** button.  
 
+    3\. In the Insert Object window, on the left side, select the option for Create from File. Then click Browse...  
+    4\. Navigate to the GMetrixTemplates folder and double click on NFRTicketPrices.xlsx
+    5\. Click OK.  
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  2
+## Task 2
 
-Apply the Rotated, White style to the image on slide 3.  
+On slide 6, add an entry at the end of the SmartArt with the text, Win $1,000 to receive a permanent PRCA Card
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select **slide 3**.  
-    2\. Click the image located on the right to select it and reveal the contextual tab. 
-    3\. On the **PICTURE TOOLS FORMAT** contextual tab, in the **Picture Styles** group, click **Rotated, White**.  
+    1\.  In the **Navigation Pane** on the left, select the slide 6.  
+    2\. Select the SmartArt.  
+(Note: Make sure that you select the SmartArt as a whole and not an individual node)
+    3\.  On the SMARTART TOOLS DESIGN tab, in the Create Graphic group, click the Add Shape down arrow and select Add Shape After.  
+(Note: The new node shape should be added at the end of the SmartArt)
 
+    4\.  Click the arrow located on the left border of the SmartArt border to open the text window.  
+    5\.  Click on the bullet for the new shape and type into the text box, Win $1,000 to receive a permanent PRCA Card.  
+    6\.  Close the text box by clicking the X in the upper-right corner of the box.  
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  3
+## Task 3
 
-Reposition the center image on slide 5 to Align Middle and place it on top of the other two images.  
+Change the colors of the SmartArt graphic on slide 6 to Colorful - Accent Colors.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select **slide 5**.  
-    2\. Click the center image to select it and reveal the contextual tab.  
-    3\. On the **PICTURE TOOLS FORMAT** contextual tab, in the **Arrange** group, click Align. 
-    4\. Select **Align Middle**.  
-
-    5\. Then in the **Arrange** group, select **Bring Forward** and click **Bring to Front**.  
-
+    1\.  In the **Navigation Pane** on the left, select slide 6.  
+    2\.  Click on the SmartArt graphic to select it and reveal the contextual tabs.  
+    3\.  Click on the SMARTART TOOLS DESIGN contextual tab.  
+    4\.  In the SmartArt Styles group, click Change Colors to open the menu.  
+    5\.  Select Colorful Range - Accent Colors.  
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  4
+## Task 4
 
-Use a feature in PowerPoint to correct all of the spelling errors in this presentation by changing RockCrawling to Rock Crawling, and Loging to Lodging.  
+Add the video, BroncRide.wmv from the GmetrixTemplates folder, to slide 4.  
 
 ???+ Tip "Hint"
-    1\. On the **REVIEW** tab, in the Proofing group, click Spelling.  
+    1\.  In the **Navigation Pane**, select slide 4.  
+    2\.  In the content placeholder, click the Insert Video icon. 
 
-    2\. Correct **RockCrawling** by accepting the suggestion **Rock Crawling** and clicking the **Change** button.  
-    3\. Correct **Loging** by selecting **Lodging** from the suggested list and clicking the **Change** button.  
-    4\. When you see the message that spell check is complete, click **OK**.  
+    3\.  In the Insert Video pop-up, next to From a file, click Browse.  
+(Hint:  Alternatively, you could click anywhere inside the placeholder, then on the **INSERT** tab, in the Media group, click Video and select Video on My PC…)
 
+    4\.  Browse to your GMetrixTemplates folder and select BroncRide.wmv.  
+    5\.  Click Insert.  
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  5
+## Task 5
 
-Create a handout by using a feature in PowerPoint to paste the slides into Microsoft Word. Display blank lines next to each slide on the handout. Name the document Handout.docx and save it into the GMetrixTemplates folder. Close the Handout document after it has been saved.  
+On slide 5, change the size of the media window to 4 (10.16cm) high.  
 
 ???+ Tip "Hint"
-    1\. On the **FILE** tab, select **Export**.  
-    2\. In the **Export** pane, click **Create Handouts**. In the pane on the right, click the **Create Handouts** button.  
-    3\. In the **Send to Microsoft Word pop-up** window, select Blank lines next to slides.  
-    4\. Verify that Paste is selected below the feature to **Add slides** to Microsoft Word document.  
-    5\. Click **OK**. (Hint: It will take a moment for PowerPoint to generate the Word document).  
-
-    6\. In the newly created Word document, click **FILE**, then SAVE AS.  
-    7\. Browse to the GMetrixTemplates folder.  
-    8\. Name the **FILE**, Handout.docx and click SAVE.  
-    9\. Close Handout.docx.  
-
-    <figure markdown>
-    ![Image title](=w600){ width="600", loading=lazy }</figure>
+    1\. In the **Navigation Pane**, select slide 5.  
+    2\. Click on the media object to select it and reveal the contextual tabs.  
+    3\. Click on the VIDEO TOOLS FORMAT contextual tab.  
+    4\. In the Size group, change the Height to 4. (10.16cm)

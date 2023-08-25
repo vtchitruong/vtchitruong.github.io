@@ -1,74 +1,69 @@
-# Practice Exam 1 - Project 7
+# Practice Exam 3 - Project 7
 
-## Lake Vacations
-You work for a tourism center near a popular lake in Arizona. You are developing a presentation promoting vacations at the lake.  
+## Certification Program
+You are developing a presentation to promote certification programs to schools.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  1
+## Task 1
  
-Place the photograph Boat and Canoe.jpg from the GMetrixTemplates folder into the placeholder located on the right of slide 4.  
+Insert the last slide titled, Certifications Can Launch Careers, using the Certifications.pptx file from the GMetrixTemplates folder into the presentation between slide 1 and slide 2.   Keep the source formatting.  
 
 ???+ Tip "Hint"
-1\. In the **Navigation Pane** on the left, click on slide 4\.  
-2\. In the empty placeholder on the slide, click the **Pictures** icon. (Hint: You could also go to the **INSERT** tab, in the **Images** group, click **Pictures**.)
+    1\.  In the **Navigation Pane**, click between slide 1 and slide 2.  
 
-3\. Browse to the GMetrix Templates folder and select **Boat and Canoe.jpg**.  
-4\. Click the **INSERT** button.  
+    2\.  In the HOME tab, Slides group, click New Slide and select Reuse Slides…
 
+
+    3\.  The Reuse Slides pane will appear on the right.  Click Browse then  Browse File... and locate the GMetrixTemplates folder.  Select Certifications.pptx and click Open.  All of the slides contained in the presentation will list in the Reuse Slides pane.  
+    4\.  At the bottom of the list, click the box Keep source formatting.  
+    5\.  Right-click the last slide, Certifications Can Launch Careers, and select Insert Slide.  
+    (Hint:  Alternatively, you can also click on the slide to insert it.)
+    6\.  Close the Reuse Slides pane by clicking the X in the upper-right corner of the pane.  
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  2
+## Task 2
 
-Center align the Equal shapes on slide 5 to the top shape, then group the shapes.  
+On slide 3, insert the comment Update this screenshot.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, click on **slide 5**.  
-    2\. Simultaneously select all of the **Equal** (=) shapes. (Hint: Hold the **CTRL** key on your keyboard while clicking on each of the **Equal** shapes.)
-    3\. On the **DRAWING TOOLS FORMAT** tab, in the **Arrange** group, click **Align** to open the drop-down menu.  
-    4\. In the **Align drop-down** menu, ensure that **Align Selected Objects** is enabled. If it is not, click to enable it.  
-    5\. In the **Align drop-down** menu, select **Align Center**.  
+    1\. In the **Navigation Pane** on the left, select slide 3.  
+    2\. On slide, select the image.  
+    3\. Click the **REVIEW** tab.  
+    4\. In the Comments group, click New Comment.  
 
-    6\. While the shapes are still selected, in the Arrange group, click Group, and then Group again.  
-
+    5\. In the Comment pane on the right type, Update this screenshot.  
+    6\. Press the Enter key to commit the comment.  
+    7\. Click the X in the upper-right corner of the Comment pane to close it.  
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  3
+## Task 3
 
-**INSERT** a legend above the chart on slide 6\.  
+Mark this presentation as Final. 
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the right, click on **slide 6**.  
-    2\. Click the chart to select it and reveal the contextual tabs for Charts.  
-    3\. On the **CHART TOOLS DESIGN** contextual tab, in the **Chart Layouts** group, click **Add Chart Element**.  
-    4\. Select **Legend** and click **Top**.  
-
+    1\.  On the **FILE** tab, in the Info pane, click the button Protect Presentation.  
+    2\.  Select Mark as Final.  
+    3\.  When prompted, This presentation will be marked as final and then saved, click OK. 
+    4\.  In the next pop-up, click OK.  
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  4
+## Task 4
 
-Convert the text on slide 7 to a Target List graphic.  
-
-???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the right, click on **slide 7**.  
-    2\. Select all three of the list items.  
-    3\. On the **HOME** tab, in the **Paragraph** group, click **Convert to SmartArt**.  
-    4\. From the top row, select **Target List**.  
-
-    <figure markdown>
-    ![Image title](=w600){ width="600", loading=lazy }</figure>
-
-## Task  5
-
-Navigate to the comment by Thor Christensen "Should we show price ranges?" and delete the comment.  
+Save the presentation into the GMetrixTemplates folder as an XPS file named, Certify.xps.  
 
 ???+ Tip "Hint"
-    1\. On the **REVIEW** tab, in the Comments group, click Show Comments.  
+    1\.  On the **FILE** tab, select Export. 
+    2\.  In the Export pane, click Create PDF/XPS Document.  In the pane on the right, click the Create PDF/XPS button. 
 
-    2\. In the **Comments** group, click Next. If you see a message pop-up asking if you want to continue searching from the beginning, click **Continue**.  
-    3\. Keep clicking Next until you locate the comment by Thor Christensen that reads, "Should we show price ranges?" (Hint: It is on slide 6).  
-    4\. After you've located the comment, in the comment group, click **Delete**. (Hint: You can also click the X in the upper-right of the comment.)  
-
-    <figure markdown>
-    ![Image title](=w600){ width="600", loading=lazy }</figure>
+    3\.  In the Publish as PDF or XPS pop-up window, browse to the GMetrixTemplates folder and select it. Configure the following: 
+    File name:  Certify
+    Save as type:  XPS Document (*.xps)
+    5\.  Click Publish.  (Hint:  It will take a moment for PowerPoint to generate the XPS document).  

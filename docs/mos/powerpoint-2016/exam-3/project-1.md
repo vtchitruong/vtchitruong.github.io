@@ -1,98 +1,122 @@
-# Practice Exam 1 - Project 1
+# Practice Exam 3 - Project 1
 
-## Computer Care
-You own a small retail business called, The Computer Store. You are creating a presentation to promote proper care of computers for your customers.  
+## Beekeeping
+You are a beekeeper. Your local Beekeeping Association has asked you to build an introductory presentation for people interested in learning about Beekeeping.  
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  1
+## Task 1
  
-On slide 5, apply the Fill - White, Text 1, Shadow Word Art style to the text, "Update At Least Weekly!".  
+Add the outline BeeBooks.docx from the GMetrixTemplates folder as a new slide at the end of the presentation.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select slide 5\.  
-    2\. Select the text **Update At Least Weekly!**.  
+    1\. In the **Navigation Pane** on the left, select the last slide.  
+    2\. On the HOME tab, in the Slides group, click New Slide and select Slides from Outline...  
 
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_Z7vMTj-alz8Y4egRAy7GMAb--FARjsdiE-Bey048s2EBmSqomD0ssupqNuXeeMBtdIxKZLqGVVP8XlFQvridr2rSvhgH39IDMC8sf8M3Ggn1JqN2-=w600){ width="600", loading=lazy }</figure>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-    3\. On the **DRAWING TOOLS FORMAT** tab, in the **WordArt Styles** group, open the gallery and select **Fill - White, Text 1, Shadow**. (Hint: It is the first option)
+    3\. In GMetrixTemplates folder, select BeeBooks.docx.  
+    4\. Click Insert.  
+    (Hint: A new slide should be added to the end of the presentation titled, Top 5 Beekeeping Books.)
 
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_vJ17cAvXikPQiHLfmzS7_ndECyxdu2y-lNpLoATC5-QXHSBqIWh6ILqpSR03ZbDAKmXoh-K0HRLXOSYrYeLpQ6q-c_G7TL85R7QW_7cYThCBtcx18=w480){ width="480", loading=lazy }</figure>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  2
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-Hyperlink the text on the last slide computerstore.gmetrix.com to the corresponding website address.  
+## Task 2
+
+Apply the Two Content layout to slide 2.  
+
+    1\.  In the **Navigation Pane** on the left, select slide 2.  
+    2\.  On the HOME tab, in the Slides group, click Layout and select Two Content.  
+
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+
+## Task 3
+
+Apply page numbering to all the slides except the title slide.  
+
+    1\.  In the **Navigation Pane** on the left, select any slide.  
+    2\.  On the **INSERT** tab, in the Text group, click Slide Number.  
+
+    3\.  In the Header and Footer pop-up window, on the Slide tab, select the following:
+    a\. Click the box Slide number to enable it.  
+    b\. Click the box Don't show on title slide to enable it.  
+    c\. Click the button Apply to All.  
+    (Hint:  A tiny orange-colored page number should now appear in the lower-right corner of all the slides except the title slide.)
+
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+
+## Task 4
+
+Create a new Custom Layout in the Slide Master that contains only a Picture placeholder between the title and footer.  
+
+    1\.  In the **Navigation Pane** on the left, select any slide.  
+    2\.  On the **VIEW** tab, in the **Master Views** group, click Slide Master.  
+
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+
+    3\.  On the SLIDE MASTER tab, in the Edit Master group, click Insert Layout.  
+    (Hint:  A new layout will be inserted named, Custom Layout Layout.)
+
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+
+    4\.  With the new layout selected, in the Master Layout group, click Insert Placeholder and select Picture.  
+
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+
+    5\.  In the space between the title and footer, click-drag to fill the space with the Picture placeholder.  
+    6\.  On the SLIDE MASTER tab, click **Close Master View**.  
+
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+
+## Task 5
+
+Remove the Footer, Date, and Page Number placeholders from the Blank Layout in the Slide Master.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select **slide 7**.  
-    2\. On the title slide, select the text **computerstore.gmetrix.com**.  
-    3\. On the **INSERT** tab, in the **Links** group, click **Hyperlink**. (Hint: You can also right-click and select **Hyperlink**.)
+    1\. In the **Navigation Pane** on the left, select any slide.  
+    2\. On the **VIEW** tab, in the **Master Views** group, click Slide Master.  
 
+    3\. In the **Navigation Pane**, select the Blank Layout.  
+    4\. Hold down **CTRL** on your keyboard and on the bottom of the layout slide select the Footer, Date, and Page Number placeholders.  
+    5\. Press Delete on your keyboard.  
+    6\. On the SLIDE MASTER tab, click **Close Master View**.  
+    
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_odihj47-Ssx60c262lUDhDF6NKu8u3-qCnt_3U6cuBv0y3T1CG-eswDFaEyCQNrJny00zlTU1VmdGfZ0Bjxffhkl5ErfKrKJ5SGToZo-5Ur7A0OgW=w600){ width="600", loading=lazy }</figure>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-    4\. Type into **Address**: **http://computerstore.gmetrix.com**.  
-    5\. Click **OK**.  
-    6\. Click anywhere on the slide to deselect the text.  
+## Task 6
 
-    <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_NYSucOVZTgGsoegyfSI47vTBW5gN5YGmeML4rjdYkFd3wdXBBFskJGzA2hH_kFgwjD5lz8B1Anlw8SZaCoFTRw6Dw6OWVGRcAOc7ODgomHBi4YOTy=w480){ width="480", loading=lazy }</figure>
-
-## Task  3
-
-On the last slide, **INSERT** a text box in the lower-right quarter of the slide. Resize the width of the textbox to 2.5 (6.35cm) and **INSERT** the text: Questions? Feel free to contact us.  
+Modify the left Header of the Handout Master to read Beekeeping.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select the **slide 7**.  
-    2\. On the **INSERT** tab, in the **Text** group, click **Text** Box. Hold down the mouse left-button and click drag to draw a text box in the empty space located in the lower-right quarter of the slide.  
+    1\. In the **VIEW** tab, in the **Master Views** group, click Handout Master.  
 
+    2\. Click the Header box in the upper-left corner. (HINT: If there is no Header section, check the Header box under the Placeholders group.)
+    3\. Type the word, Beekeeping.  
+    3\. In the Close group, click **Close Master View**.  
     <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9aqevmHeErTB14XQBBmPymncvrtElROQ_yWMZpJuvHm0QMcIs4cur0eHGa1i-BLFAKtiFaVEfFuan46f_MDx1kEDl6fgvneKIKU_ej1376UBDCMtuq=w600){ width="600", loading=lazy }</figure>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-    3\. Click on the **DRAWING TOOLS FORMAT** tab to select it.  
-    4\. In the **Size** group, change the **Shape Width** value to **2.5** (6.35cm).  
+## Task 7
 
-    <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc-m9co1vydem6najTGnT_KIwp0VsqJdLUnJvj6ISc7MTYIY8lNN0T60CpF2UAp3byjALXH2SFmXL2aYWNHZGs1f_laG1sPqmJWIQQ8RcRfFyf-b2YpK=w480){ width="480", loading=lazy }</figure>
+Change the view of this presentation to Slide Sorter before submitting this project for scoring.  
 
-    5\. Inside the text box, type the text: **Questions? Feel free to contact us**.  
-
-## Task  4
-
-Change the layout of slide 3 to Two Content. Apply an Intense Effect - Lavender, Accent 6 style to the shape.  
-
-???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select the **slide 3**.  
-    2\. On the **HOME** tab, in the **Slides** group, click **Layout** and select **Two Content**.  
-
-    <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc84lxi9lmdz-6xD8EzOFAd9IXjpEyn7uUaOSJytV5vZzp9rk7ApUTzUpX6a9ONPjUx4naa8a8tHzhNX0XrpaauhBUVrzWfB07lMLhFnNoaia5QyqFF3=w600){ width="600", loading=lazy }</figure>
-
-    3\. Click on the heart shape to select it and reveal the **DRAWING TOOLS FORMAT** contextual tab.  
-    4\. On the **DRAWING TOOLS FORMAT** tab, in the **Shape Styles** group, click on the gallery to open it.  
-
-    <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc8nDihp5iLo9tWN10-89tsFxoQkGUqJeTN0WT-uRufJV3T3WMYRBRKqK1bvbolYQujlKL7Y4hHKVaJRzvpe8Ij1qydNjp-ePxkSHmmADNtG38vIN90d=w480){ width="480", loading=lazy }</figure>
-
-    5\. Hover your mouse over each style to view its name. Click **Intense Effect - Lavender, Accent 6**. (Hint: It's at the bottom of the last column).  
-
-    <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc-NUHB1JxrnqbOSakPR_4pTmf4MNsi0YhLezPQ5kij4HUTAwe74c4VWGDBIIlDN8v-H6i8KbMOhgoHvGU19egRKlykMhmD1M8znaHLBu3CPEHMguQJY=w360){ width="360", loading=lazy }</figure>
-
-## Task  5
-
-Apply a Blue, Solid Fill background to slide 2.  
-
-???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select the **slide 2**.  
-    2\. On the **DESIGN** tab, in the **Customize** group, click **Format Background**.  
-
-    <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc-vuHLMDseTk437h1kDLu1E78y6g-dDU8HUc_hf_-Ft7hHaoyAt1ACQqCeiS5NR-aox9mPd0Fc55gRgYE5Wi15sVfESwwkFGaWLPy3gnpssB3pJa5-k=w600){ width="600", loading=lazy }</figure>
-
-    3\. In the **Format Background** pane, beneath **Fill** click **Solid fill** to select it.  
-    4\. Click the **Color down-arrow** and select **Blue**.  
-    5\. Click the **X** in the upper-right corner of the pane to close it.  
-
-    <figure markdown>
-    ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_43jeeuWO3lmHtQ4ueOeSpcPUxH4f8A1KMqdu8BCXHWs9zbaFMZ7svUO-EV-WFp_kforrzPHUjTeVlaXxOqF6eqYXDEY6NRNxtQ-48HJuwHk8Fzmd2=w360){ width="360", loading=lazy }</figure>
+    1\.  In the **VIEW** tab, in the Presentation Views group, click Slide Sorter.  
+    2\.  Submit this project for scoring.  

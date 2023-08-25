@@ -85,7 +85,7 @@ div.doc-contents:not(.first) {
   margin-bottom: 80px;
 }
 
-/* -------------- admonition -------------------------*/
+/* ------------------- admonition ------------------- */
 .md-typeset .admonition {
     border-radius: 15px;
 }
@@ -121,6 +121,22 @@ div.doc-contents:not(.first) {
     border-top-right-radius: 15px;
 }
 
+@media screen and (max-width: 44.9375em) {
+    .md-content__inner>.highlight>.highlighttable>tbody>tr>.linenos {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .md-content__inner>.highlight>.highlighttable>tbody>tr>.code>div>pre>code {
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .md-content__inner>.highlight>pre>code {
+        border-radius: 15px;
+    }
+}
+
 /* line number column of code blocks */
 .highlighttable .linenos {
     border-top-left-radius: 15px;
@@ -140,3 +156,29 @@ div.doc-contents:not(.first) {
 table tr:nth-child(2n) {
     background-color: transparent;
 }
+
+
+
+
+
+/* ------------------- posts background ------------------- */
+.md-main {
+    background-color: #f7f9fc;
+}
+
+.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+    background: #f7f9fc;
+    box-shadow: none !important;
+}
+
+.md-nav--secondary .md-nav__title {
+    background: #f7f9fc;
+    box-shadow: none !important; 
+}
+
+.md-content {
+    background-color: #fff;
+    margin-bottom: 0.8rem;
+    border-radius: 15px;
+}
+

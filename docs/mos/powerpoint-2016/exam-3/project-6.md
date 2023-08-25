@@ -1,68 +1,60 @@
-# Practice Exam 1 - Project 6
+# Practice Exam 3 - Project 6
 
-## Internet Sales
-You work for a marketing firm. You've been tasked to update a presentation about Internet sales.  
+## Mobile Apps
+You are the administrative assistant for a Small Business Support Center in your local community. You are helping to build a presentation about the potential of mobile apps in business.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  1
+## Task 1
  
-Import Marketing.rtf located in the Gmetrix Templates folder to create two new slides immediately following the title slide.  
+Add a Wipe transition to occur only between slide 1 and slide 2. 
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select **slide 1**.  
-    2\. On the **HOME** tab, in the **Slides** group, click **New Slide** and select **Slides from Outline...**  
+    1\.  In the **Navigation Pane** on the left, select slide 2.  
+    2\.  Click the TRANSITIONS tab.  
+    3\.  In the Transistions to This Slide group, click the More button to open the gallery.  
 
-    3\. In GMetrix Templates folder, select **Marketing.rtf**.  
-    4\. Click **INSERT**. (Hint: Two new slides should be created titled, "Interesting Statistics" and "Best Ways to Start".)  
-
+    4\.  In the Subtle section, select the Wipe transition.  
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  2
+## Task 2
 
-Remove the last slide, titled Summary, in this presentation.  
+Animate the list on slide 3 so each item will Appear individually when the mouse is clicked.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select the **last slide**.  
-    2\. Right-click and select **Delete Slide**.  
+    1\.  In the **Navigation Pane** on the left, select slide 3.  
+    2\.  On slide 3, click the text placeholder to select it.  
+    3\.  Click the ANIMATIONS tab.  
+    4\.  In the Animation group, click the More button to open the gallery.  
 
+    5\.  In the Entrance section, select the Appear transition.  
+    (Hint:  Alternately, in the Advanced Animation group click Add Animation and select Appear.)
+    6\.  Test the animation by clicking the SLIDE SHOW tab and in the Start Slide Show group, select From Current Slide.  Press the Enter key to see each list item appear.  When finished testing, click ESC on your keyboard.  
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  3
+## Task 3
 
-Delete the Word of Mouth row from the table on theGenerating Income slide.  
+Set the Duration to 1 second for the transition on slide two.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select the **slide Generating Income**.  
-    2\. Select the row by click anywhere inside the cell containing the text, **Word of Mouth**.  
-    3\. On the **TABLE TOOLS LAYOUT** tab, in the **Rows & Columns** group, click **Delete Rows**.  
-
+    1\. Select slide 2 and click the TRANSITIONS tab.  
+    2\. In the Timing group, click the Duration spinner down-arrow to change it to 01.00
+(Hint: You can also type the value into the window.)
+    
     <figure markdown>
     ![Image title](=w600){ width="600", loading=lazy }</figure>
 
-## Task  4
+## Task 4
 
-Edit the video End Time to stop exactly 14 seconds into the video.  
-
-???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select the slide containing the video.  
-    2\. Click inside the video window to select it and reveal the video contextual tabs.  
-    3\. On the **VIDEO TOOLS PLAYBACK** tab, in the **Editing** group, click **Trim Video**.  
-
-    4\. In the Trim Video pop-up window, change the **End Time** to 00:14
-    5\. Click **OK**.  
-
-    <figure markdown>
-    ![Image title](=w600){ width="600", loading=lazy }</figure>
-
-## Task  5
-
-Set the video to Medium volume.  
+Configure the transition between slide 4 and slide 5 to begin after 5 seconds if the mouse isn't clicked.  
 
 ???+ Tip "Hint"
-    1\. In the **Navigation Pane** on the left, select the slide containing the video.  
-    2\. Click inside the video window to select it and reveal the video contextual tabs.  
-    3\. On the **VIDEO TOOLS PLAYBACK** tab, in the Video Options group, click the **box for volume**, and select **Medium**.  
-
-    <figure markdown>
-    ![Image title](=w600){ width="600", loading=lazy }</figure>
+    1\.  In the **Navigation Pane** on the left, select slide 4.  
+    2\.  Click the TRANSITIONS tab.  
+    3\.  In the Timing group, click the After spinner up-arrow to change it to 00:05.00
+    (Hint:  You can also type the value into the window.)
