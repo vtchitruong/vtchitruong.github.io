@@ -50,6 +50,7 @@ Insert a Down Ribbon shape, 1 high and 2.5 wide (2.54 cm x 6.35 cm) on sli
 
 Apply the Moderate Effect SmartArt Style to the arrow shape on slide 4.  
 
+???+ Tip "Hint"
     1\.  In the **Navigation Pane** on the left, select slide 4.  
     2\.  Click the arrow image to select it and reveal the SMARTART TOOLS contextual tabs.  
     3\.  Click the SMARTART TOOLS DESIGN tab.  

@@ -113,9 +113,9 @@ div.doc-contents:not(.first) {
 
 /* This is for output block */
 .md-typeset pre>code {
-    border-radius: 15px;
-    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
+    border-radius: 15px;    
 }
+
 .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
@@ -140,8 +140,7 @@ div.doc-contents:not(.first) {
 /* line number column of code blocks */
 .highlighttable .linenos {
     border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
+    border-bottom-left-radius: 15px;    
 }
 
 .highlight span.filename {
@@ -156,10 +155,6 @@ div.doc-contents:not(.first) {
 table tr:nth-child(2n) {
     background-color: transparent;
 }
-
-
-
-
 
 /* ------------------- posts background ------------------- */
 .md-main {

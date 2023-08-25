@@ -2,6 +2,9 @@
 
 ## Smartphones
 You are an administrative assistant for the Electronics Engineering Department in a University. One of the professors has asked you to make some modifications to a slide presentation he is creating about Smartphones.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
 ## Task 1
  
@@ -14,17 +17,23 @@ Add a section between slide 1 and slide 2 named, History.
 
     3\.  Right-click Untitled Section and select Rename Section.  
     4\.  In the Rename Section pop-up window, in the textbox below Section name type: History.  
-    5\.  Click the Rename button.  
+    5\.  Click the Rename button.      
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
+
 ## Task 2
 
 Configure printing to print this presentation with notes.  
 
-    1\.  Click the FILE tab. 
+    1\.  Click the **FILE** tab. 
     2\.  Select Print.  
     3\.  Beneath Settings, click the second down-arrow to change Full Page Slides to Notes Pages.  
 (Hint:  Notice that Notes Pages are now displayed in the print preview window.)
     4\.  Click the encircled left arrow in the upper-left corner to return to the slide presentation.  
 
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
 ## Task 3
 
@@ -33,6 +42,9 @@ On slide 4, apply the WordArt style Fill - Black, Text 1, Shadow to the last s
     1\.  In the **Navigation Pane** on the left, select slide 4.  
     2\.  Select the text Today’s smartphones are very “smart”!
     3\.  On the DRAWING TOOLS FORMAT tab, in the WordArt Styles group, open the WordArt Quick Styles gallery and select Fill - Black, Text 1, Shadow.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
 ## Task 4
 
@@ -41,6 +53,9 @@ On Slide 4, use Hollow Square Bullets to create a list from the seven lines of t
     1\.  In the **Navigation Pane** on the left, select Slide 4.  
     2\.  Select the the seven lines of text beginning with Waterproofing… and ending with … Folding Displays
     3\.  In the HOME tab, Paragraph group, click the Bullets down-arrow and select Hollow Square Bullets.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
 ## Task 5
 

@@ -61,7 +61,7 @@ Ngoài thành phần `data`, mỗi node còn có thành phần `next` trỏ đ�
 **Bước 1:**  
 Tạo kiểu dữ liệu `node` gồm hai thành phần `data` và `next`.  
 
-``` py linenums="1" title="bubble_sort.py"
+``` py linenums="1"
 # Tạo kiểu dữ liệu node gồm hai thành phần data và next
 class node:
     def __init__(self, data):

@@ -1,21 +1,29 @@
 # Practice Exam 3 - Project 4
 
-Candy
+## Candy
 You are the Sales representative for a company that produces ice cream. You are modifying a presentation to promote custom flavors to your clients.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
 ## Task 1
  
 On slide 2, group the image and the text box containing Our Motto...  
 
+???+ Tip "Hint"
     1\.  In the **Navigation Pane** on the right, click on slide 2.  
     2\.  Simultaneously select the candy image and the text box containing the text, Our Motto...  
-(Hint:  Hold the CTRL key on your keyboard while clicking on each item.) 
+    (Hint:  Hold the **CTRL** key on your keyboard while clicking on each item.) 
     3\.  On the DRAWING TOOLS FORMAT tab, in the Arrange group, click Group and select Group.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
 ## Task 2
 
 On slide 3, create a table in the left placeholder with 1 columns and 10 rows.  Apply the Light Style 3 - Accent 3 style.  
 
+???+ Tip "Hint"
     1\.  In the **Navigation Pane** on the left, select slide 3.  
     2\.  In the left pane, click the **INSERT** table icon.  
 
@@ -26,11 +34,15 @@ On slide 3, create a table in the left placeholder with 1 columns and 10 rows. 
     5\.  On the TABLE TOOLS DESIGN tab, in the Table Styles group, click the More button to open the gallery.  
     6\.  In the gallery, select the Light Style 3 - Accent 3 style.  
 
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
 ## Task 3
 
 On slide 3, import the Flavors.xlsx table from the GMetrixTemplates folder into the right placeholder.  
 
+???+ Tip "Hint"
     1\.  In the **Navigation Pane** on the left, select slide 3.  
     2\.  Click in the right pane to select it.  
     3\.  On the **INSERT** tab, in the Text group, click Object.  
@@ -38,11 +50,15 @@ On slide 3, import the Flavors.xlsx table from the GMetrixTemplates folder in
 
     4\.  In the Insert Object pop-up window, click Create from file. 
     5\.  Click Browse and navigate to the GMetrixTemplates folder.  Select the Flavors.xlsx file and click Open.  Click OK.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
 ## Task 4
 
 Insert a Pie chart on slide 4 using default settings and data.  
 
+???+ Tip "Hint"
     1\.  In the **Navigation Pane** on the left, select slide 4.  
     2\. In the slide placeholder, click the Insert Chart icon.  
 
@@ -50,6 +66,9 @@ Insert a Pie chart on slide 4 using default settings and data.
     4\.  In the list of available Pie charts, click the first chart, Pie.  
     5\.  Click OK.  
     6\.  Close the speadsheet window by clicking the X in the upper-right corner.  
+    
+    <figure markdown>
+    ![Image title](=w600){ width="600", loading=lazy }</figure>
 
 ## Task 5
 
