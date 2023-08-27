@@ -61,6 +61,7 @@ Duyệt mảng từ đầu đến cuối, lặp lại nhiều lần thao tác:
 # Hàm tìm vị trí của phần tử nhỏ nhất trong mảng tính từ vị trí start
 def min_position(A, start):
     n = len(A)
+
     min = start
     for i in range(start + 1, n):
         if A[i] < A[min]:
@@ -70,6 +71,7 @@ def min_position(A, start):
 # Hàm sắp xếp chọn
 def selection_sort(A):
     n = len(A)
+    
     for i in range(n - 1):
         # Tìm vị trí của phần tử nhỏ nhất tính từ i
         m = min_position(A, i)
@@ -124,6 +126,7 @@ Tạm xem đầu mảng là đáy nước và cuối mảng là bề mặt, ta s
 # Hàm sắp xếp nổi bọt
 def bubble_sort(A):
     n = len(A)
+
     for i in range(n - 1):
         for j in range(n - 1 - i):
             # So sánh và hoán đổi hai phần tử kề nhau
@@ -156,6 +159,7 @@ print('Mảng sau khi sắp xếp:', array)
 # Hàm sắp xếp tráo đổi
 def exchange_sort(A):
     n = len(A)
+
     for i in range(n - 1):
         # So sánh và “tráo đổi” phần tử ở vị trí i với các phần tử bên phải
         for j in range(i + 1, n):

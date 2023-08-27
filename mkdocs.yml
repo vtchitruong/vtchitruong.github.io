@@ -128,6 +128,9 @@ markdown_extensions:
 ## Custom theme additions
 extra_javascript:
   - javascripts/extra.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - stylesheets/extra.css
 
@@ -172,6 +175,7 @@ nav:
       - grade-11/topic-F/linked-list.md
       - grade-11/topic-F/searching-algorithm.md
       - grade-11/topic-F/sorting-algorithm.md
+      - grade-11/topic-F/algorithmic-complexity.md
   - Lớp 12:
     - grade-12/grade-12-index.md
   - Nâng cao:

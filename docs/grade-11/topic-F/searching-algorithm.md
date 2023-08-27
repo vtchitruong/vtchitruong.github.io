@@ -68,6 +68,7 @@ def linear_search(A, key):
     for i in range(len(A)):  # Duyệt mảng từ đầu đến cuối
         if A[i] == key:      # Nếu phần tử đang xét A[i] bằng key cần tìm
             return i         # thì trả về i, là vị trí tìm thấy
+    
     return -1                # Trả về -1 vì đã duyệt hết mảng mà chưa trả về  i nào
 
 #---------------------------------

@@ -65,7 +65,7 @@ else:
 Ví dụ 3:  
 
 ``` py linenums="1"
-m = 19 #@param {type:"integer"}
+m = 19
 
 if m % 2 == 1:
     print(m, 'là số lẻ')
