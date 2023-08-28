@@ -148,14 +148,14 @@ Bảng sau liệt kê một số Big O phổ biến và tên gọi của chúng.
 
 | Big O | Tên gọi về thời gian thực thi |
 | --- | --- |
-| $O(1)$ |	Constant Time |
-| $O(logn)$ |	Iterative Logarithmic Time |
-| $O(logn)$ |	Logarithmic Time |
-| $O(n)$ |	Linear Time |
-| $O(n logn)$ |	Log Linear Time |
-| $O(n^2)$ |	Quadratic Time |
-| $O(n^p)$ |	Polynomial Time |
-| $O(c^n)$ |	Exponential Time |
+| $O(1)$ | Constant Time |
+| $O(logn)$ | Iterative Logarithmic Time |
+| $O(logn)$ | Logarithmic Time |
+| $O(n)$ | Linear Time |
+| $O(n logn)$ | Log Linear Time |
+| $O(n^2)$ | Quadratic Time |
+| $O(n^p)$ | Polynomial Time |
+| $O(c^n)$ | Exponential Time |
 | $O(n!)$ |	Factorial Time |
 
 Những Big O trên có thể được biểu diễn thành biểu đồ dưới đây. Trong đó, các Big O được minh họa từ màu xanh, mang ý nghĩa là thuật toán *chạy nhanh*, chuyển dần cho đến màu đỏ, mang ý nghĩa là *chạy rất chậm*.

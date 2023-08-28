@@ -34,6 +34,12 @@ if diem_thi_mos >= 700:
     print('Pass. Good job!')
 ```
 
+Output:
+
+``` pycon
+Pass. Good job!
+```
+
 ## Lệnh if đủ
 
 ```
@@ -62,6 +68,12 @@ else:
     print('Fail. Try again. Better luck next time.')
 ```
 
+Output:
+
+``` pycon
+Fail. Try again. Better luck next time.
+```
+
 Ví dụ 3:  
 
 ``` py linenums="1"
@@ -71,6 +83,12 @@ if m % 2 == 1:
     print(m, 'là số lẻ')
 else:
     print(m, 'là số chẵn')
+```
+
+Output:
+
+``` pycon
+19 là số lẻ
 ```
 
 ## Lệnh if đủ dành cho bài toán có nhiều hơn 2 trường hợp
@@ -104,6 +122,12 @@ elif age >= 15 and age <= 62:
     print("Bạn đang nằm trong độ tuổi lao động.")
 else:
     print("Bạn đã vào tuổi hưu.")
+```
+
+Output:
+
+``` pycon
+Bạn đã vào tuổi hưu.
 ```
 
 ??? note "Nhận xét"

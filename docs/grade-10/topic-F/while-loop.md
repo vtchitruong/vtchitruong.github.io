@@ -52,7 +52,6 @@ while i < n:
 !!! warning
     Do đó, hãy cẩn thận khi bấm nút Run. Tác giả chỉ code minh họa, chứ *ảnh* không tin lắm vào độ can đảm của bạn. 
 
-
 Để vòng lặp while dừng lại sau một số lần lặp nào đó, ta phải làm cho biểu thức điều kiện trở thành `False`.  
 Một trong những cách thường dùng là chèn thêm lệnh để thay đổi biến `i`.  
 
@@ -111,7 +110,7 @@ Nhập n: 10
 Tổng là 55
 ```
 
-### Lệnh break
+## Lệnh break
 
 Lệnh `break` dùng để ngắt vòng lặp, ngay cả khi biểu thức điều kiện vẫn còn `True`.  
 

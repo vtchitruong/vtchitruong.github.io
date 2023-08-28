@@ -1,8 +1,8 @@
-# Kiểu dữ liệu chuỗi của Python
+# Kiểu dữ liệu chuỗi
 
 ## Khái niệm
 
-***Chuỗi*** là một dãy các ký tự. Một số tài liệu khác sử dụng thuật ngữ *xâu*.  
+**Chuỗi** là một dãy các ký tự. Một số tài liệu khác sử dụng thuật ngữ *xâu*.  
 
 Trong Python, kiểu dữ liệu chuỗi là `str`. Một chuỗi được đặt trong **cặp nháy đơn** `' '` hoặc **cặp nháy kép** `" "`.  
 
@@ -24,6 +24,15 @@ print(s[0])           # In ra ký tự đầu tiên (chữ L)
 print(s[0])           # In ra ký tự có chỉ số 3 (khoảng trắng)
 print(s[7])           # In ra ký tự có chỉ số 7 (chữ Đ)
 print(s[len(s) - 1])  # In ra ký tự cuối cùng (chữ n)
+```
+
+Output:
+
+``` pycon
+L
+L
+Đ
+n
 ```
 
 Ví dụ 2:  
@@ -60,6 +69,21 @@ s = 'Lê Quý Đôn'
 
 for c in s:
     print(c)
+```
+
+Output:
+
+``` pycon
+L
+ê
+ 
+Q
+u
+ý
+ 
+Đ
+ô
+n
 ```
 
 Ví dụ 4:  
@@ -203,6 +227,7 @@ start = 15
 position = s.find('chi', start)
 print(position)
 ```
+
 Output:  
 
 ``` pycon

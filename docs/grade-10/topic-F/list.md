@@ -1,4 +1,4 @@
-# Kiểu dữ liệu list của Python
+# Kiểu dữ liệu list
 
 ## Đặt vấn đề
 
@@ -43,12 +43,25 @@ print(bangdiem)     # In ra toàn bộ danh sách
 print(bangdiem[9])  # In ra phần tử có chỉ số 9
 ```
 
+Output:
+
+``` pycon
+[8, 9, 3, 5, 10, 10, 7, 8, 4, 6]
+6
+```
+
 Ví dụ 2:  
 Khai báo danh sách rỗng, chưa có phần tử.  
 
 ``` py linenums="1"
 bangdiem = []
 print(bangdiem)
+```
+
+Output:
+
+``` pycon
+[]
 ```
 
 ## Truy xuất phần tử
@@ -75,6 +88,14 @@ n = len(bangdiem)      # Hàm len cho biết số lượng phần tử của dan
 print(bangdiem[n - 1]) # In phần tử cuối cùng
 ```
 
+Output:
+
+``` pycon
+8
+9
+6
+```
+
 ## Duyệt các phần tử trong danh sách
 
 Trong cùng một danh sách, các phần tử thường được xử lý như nhau. Nghĩa là, những thao tác nào được thực hiện đối với phần tử này, cũng sẽ được thực hiện đối với phần tử khác.  
@@ -92,6 +113,21 @@ for i in range(n):
     print(bangdiem[i])
 ```
 
+Output:
+
+``` pycon
+8
+9
+3
+5
+10
+10
+7
+8
+4
+6
+```
+
 ### Toán tử in
 Một cách khác để duyệt danh sách mà không cần dùng chỉ số, là sử dụng toán tử `in`.  
 
@@ -102,6 +138,21 @@ bangdiem = [8, 9, 3, 5, 10, 10, 7, 8, 4, 6]
 
 for diem in bangdiem:
     print(diem)
+```
+
+Output:
+
+``` pycon
+8
+9
+3
+5
+10
+10
+7
+8
+4
+6
 ```
 
 Nếu muốn xử lý các phần tử theo các hướng khác nhau, ta có thể sử dụng lệnh `if` bên trong thân vòng lặp `for`.
@@ -116,6 +167,13 @@ n = len(bangdiem)
 for i in range(n):
     if bangdiem[i] < 5:
         print(bangdiem[i])
+```
+
+Output:
+
+``` pycon
+3
+4
 ```
 
 ## Các lệnh xử lý danh sách có sẵn của Python
@@ -165,6 +223,14 @@ print('Sau khi xóa tất cả phần tử:', bangdiem)
 #------------------------------------------------------------
 del bangdiem      # Xóa luôn danh sách bangdiem
 # print(bangdiem) # Lệnh này sẽ gặp lỗi, vì lúc này không còn bangdiem nào nữa
+```
+
+Output:
+
+``` pycon
+Sau khi thêm phần tử: [2, 10, 8, 9, 3, 5, 10, 10, 7, 8, 4, 6, 5, 7]
+Sau khi xóa phần tử: [8, 9, 3, 5, 10, 10, 7, 8, 4, 6, 5]
+Sau khi xóa tất cả phần tử: []
 ```
 
 !!! warning "Lưu ý"
