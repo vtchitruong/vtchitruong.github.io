@@ -172,6 +172,7 @@ nav:
     - Khái quát chương trình học: grade-11/grade-11-index.md
     - Chủ đề A:
       - grade-11/topic-A/os-and-application.md
+      - grade-11/topic-A/os-history.md
     - Chủ đề F:
       - grade-11/topic-F/array.md
       - grade-11/topic-F/linked-list.md
@@ -184,6 +185,7 @@ nav:
     - advanced/advanced-index.md
     - Đồ thị:
       - DFS: advanced/graph/dfs.md
+      - BFS: advanced/graph/bfs.md
   - MOS:
     - MOS 2016: mos/mos-2016-index.md
     # - Word 2016: word-2016-index.md

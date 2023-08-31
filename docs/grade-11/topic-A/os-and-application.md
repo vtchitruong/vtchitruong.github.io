@@ -46,7 +46,16 @@ Sau khi cắm vào máy tính, máy in mới muốn in được thì phải đư
 Hình sau thể hiện mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng. Các mũi tên thể hiện hướng tương tác qua lại giữa các đối tượng này.  
 
 <figure markdown>
-  ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9DqG3t7HBJjE0YMpv29Vj191lkGhQ63kbbsMojltb08RUzb5Q0TCVIay4cSK1fkmjrJPewPWDZH-marLk7zzl8ott-V357SVFEVENIsu54k8nfX4kK=w600){ loading=lazy }
+  ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9DqG3t7HBJjE0YMpv29Vj191lkGhQ63kbbsMojltb08RUzb5Q0TCVIay4cSK1fkmjrJPewPWDZH-marLk7zzl8ott-V357SVFEVENIsu54k8nfX4kK=w240){ loading=lazy }
   <figcaption>Hình 1. Sơ đồ thể hiện mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng</figcaption>
 </figure>
 
+## Some English words
+
+| Vietnamese | Tiếng Anh | 
+| --- | --- |
+| hệ điều hành | operating system |
+| nền tảng | platform |
+| phần cứng | hardware |
+| phần mềm ứng dụng | application software |
+| tài nguyên | resource |
