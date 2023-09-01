@@ -55,6 +55,8 @@ Duyệt mảng từ đầu đến cuối, lặp lại nhiều lần thao tác:
   <figcaption>Hình 1. Minh họa ý tưởng thuật toán sắp xếp chọn</figcaption>  
 </figure>
 
+Xem mô phỏng thuật toán tại mục [Trực quan hóa](#truc-quan-hoa-thuat-toan-sap-xep) ở gần cuối bài này.  
+
 #### Chương trình minh họa
 
 ``` py linenums="1"
@@ -103,6 +105,32 @@ Duyệt mảng từ đầu đến cuối, lặp các thao tác:
   <figcaption>Hình 2. Minh họa ý tưởng thuật toán sắp xếp chèn</figcaption>  
 </figure>
 
+Xem mô phỏng thuật toán tại mục [Trực quan hóa](#truc-quan-hoa-thuat-toan-sap-xep) ở gần cuối bài này.  
+
+#### Chương trình minh họa
+
+``` py linenums="1"
+# Hàm sắp xếp chèn
+def insertion_sort(A):
+    n = len(A)
+
+    for i in range(1, n):
+        # Lưu A[i] vào biến tạm tmp vì A[i] sẽ bị ghi đè
+        tmp = A[i]
+
+        # Xuất phát từ phần tử đứng trước A[i]
+        j = i - 1
+
+        # Nếu A[j] nào lớn hơn A[i] (được lưu trong tmp)
+        # thì cho A[j] đó "lùi" ra sau (ghi đè lên phần tử đứng sau)
+        while j >= 0 and A[j] > tmp:
+            A[j + 1] = A[j]
+            j = j - 1
+
+        # Chèn A[i] (được lưu trong tmp) vào “chỗ trống”
+        A[j + 1] = tmp
+```
+
 ### Sắp xếp nổi bọt
 #### Ý tưởng
 
@@ -119,6 +147,8 @@ Tạm xem đầu mảng là đáy nước và cuối mảng là bề mặt, ta s
   ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_bsuEeJ8BMLv7hpvBYkIKV6T-lPrO6ECa9qV8co_GTVcP1YLSu2CIELhmiJYoRhc9Kd70Hz4euc6y442hgqnQaU9wZ0cYoA4OGPFFpPHOjQV-PZUTl=w1200){loading=lazy}  
   <figcaption>Hình 3. Minh họa ý tưởng thuật toán sắp xếp nổi bọt</figcaption>  
 </figure>
+
+Xem mô phỏng thuật toán tại mục [Trực quan hóa](#truc-quan-hoa-thuat-toan-sap-xep) ở gần cuối bài này.  
 
 #### Chương trình minh họa
 
@@ -153,6 +183,8 @@ print('Mảng sau khi sắp xếp:', array)
   <figcaption>Hình 4. Minh họa ý tưởng thuật toán sắp xếp tráo đổi</figcaption>  
 </figure>
 
+Xem mô phỏng thuật toán tại mục [Trực quan hóa](#truc-quan-hoa-thuat-toan-sap-xep) ở gần cuối bài này.  
+
 #### Chương trình minh họa
 
 ``` py linenums="1"
@@ -173,6 +205,12 @@ exchange_sort(array)  # Gọi hàm exchange_sort
 
 print('Mảng sau khi sắp xếp:', array)
 ```
+
+## Trực quan hóa thuật toán sắp xếp
+
+<div>
+    <iframe width="100%" height="580px" frameBorder=0 src="../sort-visualization.html"></iframe>
+</div>
 
 ## Google Colab
 
