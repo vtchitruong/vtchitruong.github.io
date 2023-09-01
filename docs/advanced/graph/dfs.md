@@ -42,7 +42,7 @@ linkStyle 1,4,6,8 stroke: #0694eb
 classDef currentNode color:#fff, fill: #0694eb
 ```
 
-## Các bước của thuật toán  
+## Các bước của thuật toán
 
 Thuật toán DFS có thể thực hiện bằng đệ quy hoặc stack. Các bước sau đây được thể hiện theo cách đệ quy.  
 
@@ -54,7 +54,7 @@ Thuật toán DFS có thể thực hiện bằng đệ quy hoặc stack. Các b�
     &emsp;&emsp;Nếu đỉnh N chưa ghé thăm:  
     &emsp;&emsp;&emsp;&emsp;- Thực hiện các thao tác nào đó theo yêu cầu tại đỉnh N.  
     &emsp;&emsp;&emsp;&emsp;- Đánh dấu đỉnh N đã ghé thăm.  
-    &emsp;&emsp;&emsp;&emsp;- Xem đỉnh N là đỉnh gốc và quay lại đầu bước 2.  
+    &emsp;&emsp;&emsp;&emsp;- Xem đỉnh N là đỉnh gốc S, gọi đệ quy đối với N để quay lại đầu bước 2.  
 
 Mã giả:  
 
@@ -95,7 +95,7 @@ Tìm một đường đi từ đỉnh xuất phát đến đỉnh đích. Trả 
 
 ### Giải thích
 
-Đồ thị có 8 đỉnh, 10 cạnh. Yêu cầu tìm đường đi từ đỉnh 1 đến đỉnh 5.  
+Đồ thị có 10 đỉnh, 11 cạnh. Yêu cầu tìm đường đi từ đỉnh 1 đến đỉnh 5.  
 
 Đường đi tìm được: 1 --> 2 --> 3 --> 5.  
 
@@ -133,18 +133,24 @@ Trước hết, ta khởi tạo mảng `trace` gồm toàn các phần tử 0, n
 === "Python"
     ``` py linenums="1"
     def init():
-        do_something()
+        global trace
+        
+        # Khởi tạo mảng trace gồm toàn 0, nghĩa là các đỉnh trong trace đều chưa có đỉnh liền trước
+        trace = [0] * (vertex + 1)
+        
+        # Trước đỉnh start không có đỉnh nào  
+        trace[start] = -1
     ```
 
 Hàm `Dfs()` có một tham số là `current` dùng để chỉ đỉnh hiện hành ở mỗi lần gọi đệ quy. Trong lần đầu tiên gọi hàm `Dfs()`, ta truyền vào tham số là đỉnh xuất phát, đặt là `start`: 
 
-```
+``` c++ linenums="1"
     Dfs(start);
 ```
 
 Hàm `Dfs()` hoạt động như sau:  
 
-Dùng vòng lặp để duyệt các đỉnh kề với đỉnh `current` dựa trên danh sách kề `a`, lặp thao tác:  
+Dùng vòng lặp để duyệt các đỉnh kề với đỉnh `current` dựa trên danh sách kề `a`, lặp các thao tác:  
 &emsp;&emsp;Giả sử `u` là một đỉnh kề đang xét. Dựa trên mảng `trace` để xét xem `u` đã ghé thăm chưa. Nếu `u` chưa ghé thăm, `trace[u] == 0`, thì đánh dấu `u` được ghé thăm từ đỉnh `current`: `trace[u] = current`, rồi gọi đệ quy `Dfs()`, truyền vào tham số là đỉnh `u`, nghĩa là tiến thêm một nấc theo ý tưởng chính là *đi xa nhất có thể*.  
 
 === "C++"
@@ -163,52 +169,84 @@ Dùng vòng lặp để duyệt các đỉnh kề với đỉnh `current` dựa 
             }
         }
     }
-    
     ```
 
 === "Python"
+    ``` py linenums="1"
+    def dfs(current):
+        global a, trace
+            
+        # Duyệt các đỉnh kề với đỉnh current
+        for u in a[current]:
+            # Nếu đỉnh u chưa ghé thăm thì đánh dấu ghé thăm u bằng mảng trace
+            # rồi xem u là đỉnh gốc, gọi đệ quy tiếp từ đỉnh u
+            if not trace[u]:
+                trace[u] = current
+                dfs(u)
+    
+    ```
 
 Sau khi hàm `Dfs()` hoàn tất, mảng `trace` được điền đầy đủ như sau:  
-
 
 | Đỉnh u | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 
 | --- | --- | --- |---| --- | --- | --- | --- | --- | --- | --- |
 | trace[u]| -1 | 1 | 2 | 2 | 3 | 4 | 3 | 7 | 0 | 0 | 
 
+Nếu dựa vào mảng `trace` để in ra đường đi thì trình tự sẽ bị ngược: 5 ← 3 ← 2 ← 1. Vì vậy, ta giải quyết bằng cách: Nạp các đỉnh của đường đi vào `stack` trước, rồi duyệt `stack` để in ra, thì đường đi sẽ *thuận chiều* lại.  
 
-Nếu dựa vào mảng `trace` để in ra đường đi thì trình tự sẽ bị ngược: 5 ← 3 ← 2 ← 1. Vì vậy, ta giải quyết bằng cách: Nạp các đỉnh của đường đi vào stack trước, rồi duyệt stack để in ra, thì đường đi sẽ *thuận chiều* lại.  
+Cách nạp các đỉnh của đường đi vào `stack` như sau:  
 
-Cách nạp các đỉnh của đường đi vào stack như sau:  
-
-Dùng vòng lặp while, cho một biến `tmp` xuất phát từ đỉnh đích (đỉnh `finish`) lùi dần về đỉnh xuất phát (đỉnh `start`) bằng mảng `trace`. Ứng với mỗi lần *lùi*, ta nạp đỉnh tương ứng (là biến `tmp`) vào stack.  
+Dùng vòng lặp while, cho một biến `tmp` xuất phát từ đỉnh đích (đỉnh `finish`) lùi dần về đỉnh xuất phát (đỉnh `start`) bằng mảng `trace`. Ứng với mỗi lần *lùi*, ta nạp đỉnh tương ứng (là biến `tmp`) vào `stack`.  
 
 === "C++"
     ``` c++ linenums="1"
-    // Khai báo stack path lưu các đỉnh của đường đi cần tìm
-    stack<int> path; 
+        // Khai báo stack path lưu các đỉnh của đường đi cần tìm
+        stack<int> path; 
 
-    // Dùng tmpFinish để không làm mất giá trị của finish khi truy ngược
-    int tmpFinish = finish;
+        // Dùng tmpFinish để không làm mất giá trị của finish khi truy ngược
+        int tmpFinish = finish;
 
-    // Nếu có đường đi đến đỉnh finish thì mới thực hiện truy ngược trace
-    if (trace[tmpFinish])
-    {
-        // Dựa vào mảng trace, cho tmpFinish "lùi" dần về start
-        while (tmpFinish != start)
+        // Nếu có đường đi đến đỉnh finish thì mới thực hiện truy ngược trace
+        if (trace[tmpFinish])
         {
-            // Trong khi chưa đụng đỉnh start, thì nạp đỉnh tmpFinish vào đường đi
-            path.push(tmpFinish);
+            // Dựa vào mảng trace, cho tmpFinish "lùi" dần về start
+            while (tmpFinish != start)
+            {
+                // Trong khi chưa đụng đỉnh start, thì nạp đỉnh tmpFinish vào đường đi
+                path.push(tmpFinish);
 
-            // "Lùi" tmpFinish về đỉnh liền trước đó
-            tmpFinish = trace[tmpFinish];
+                // "Lùi" tmpFinish về đỉnh liền trước đó
+                tmpFinish = trace[tmpFinish];
+            }
+
+            // Nạp đỉnh start vào đường đi
+            path.push(start);
         }
-
-        // Nạp đỉnh start vào đường đi
-        path.push(start);
-    }
     ```
 
 === "Python"
+    ``` py linenums="1"
+        # Khai báo stack path lưu các đỉnh của đường đi cần tìm
+        # Module collections của Python không có kiểu stack
+        # Thay vào đó deque dùng để biểu diễn cả queue lẫn stack
+        path = deque()
+
+        # Dùng tmpFinish để không làm mất giá trị của finish khi truy ngược
+        tmpFinish = finish
+        
+        # Nếu có đường đi đến đỉnh finish thì mới thực hiện truy ngược trace
+        if trace[tmpFinish]:
+            # Dựa vào mảng trace, cho tmpFinish "lùi" dần về start
+            while tmpFinish != start:
+                # Trong khi chưa đụng đỉnh start, thì nạp đỉnh tmpFinish vào đường đi
+                path.append(tmpFinish)
+                
+                # "Lùi" tmpFinish về đỉnh liền trước đó
+                tmpFinish = trace[tmpFinish]
+            
+            # Nạp đỉnh start vào đường đi
+            path.append(start)
+    ```
 
 !!! note "Lưu ý"
     Stack ở đây chỉ mang ý nghĩa lật ngược/đảo chiều trình tự hiển thị của đường đi, chứ không nhất thiết phải đúng kiểu dữ liệu `stack`. Ta có thể sử dụng bất kỳ kiểu dữ liệu nào miễn là phù hợp, tiện lợi, có hỗ trợ đảo chiều. Chẳng hạn, mặc dù C++ và Python đều có kiểu `stack`, ta vẫn có thể sử dụng kiểu `vector` đối với C++ hoặc `list` đối với Python, vì chúng đều có hàm `reverse()`.
@@ -223,18 +261,47 @@ Dùng vòng lặp while để duyệt stack, lặp các thao tác:
 
 === "C++"
     ``` c++ linenums="1"
-        // Trong khi stack path vẫn còn phần tử
-        while (!path.empty())
+        // Nếu không có phần tử nào trong stack path
+        // thì in ra -1, nghĩa là không có đường đi
+        if (path.empty())
         {
-            // thì in ra phần tử nằm ở đầu stack
-            f << path.top() << " --> ";
+            f << -1;
+        }
+        else
+        {
+            // Trong khi stack path vẫn còn phần tử
+            while (!path.empty())
+            {
+                // thì in ra phần tử nằm ở đầu stack
+                f << path.top() << " --> ";
 
-            // rồi xóa bỏ phần tử đầu stack này
-            path.pop();
+                // nếu stack path còn hơn một phần tử thì in dấu phân cách
+                if (path.size() != 1)
+                    f << " --> ";
+                
+                // rồi xóa bỏ phần tử đầu stack này
+                path.pop();
+            }
         }
     ```
 
 === "Python"
+    ``` py linenums="1"
+        # Nếu không có phần tử nào trong stack path
+        # thì in ra -1, nghĩa là không có đường đi
+        if len(path) == 0:
+            f.write(str(-1))
+        else:
+            # Đảo chiều của path rồi ghép thành chuỗi
+            output_path = ' --> '.join([str(u) for u in reversed(path)])
+            f.write(output_path)
+    ```
+
+
+### Toàn bộ chương trình
+
+Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/Graph/tree/main/DFS" target="_blank">GitHub</a>.  
+
 
 !!! abstract "Nhận xét"
 
@@ -242,6 +309,21 @@ Dùng vòng lặp while để duyệt stack, lặp các thao tác:
 
     Có thể có nhiều đường đi từ đỉnh `start` đến đỉnh `finish`, nhưng DFS luôn trả về đường đi có thứ tự từ điển nhỏ nhất.
 
+## So sánh DFS và BFS
 
+Cả hai thuật toán đều được dùng để duyệt đồ thị hoặc cây. Độ phức tạp đều là $O(số đỉnh + số cạnh)$.   
+
+Những điểm khác nhau được thể hiện trong bảng sau:  
+
+| &nbsp;| DFS | BFS |
+| --- | --- | --- |
+| Chiến lược | Đi đến đỉnh xa nhất của riêng một nhánh trước khi quay lui. | Đi hết các đỉnh trong cùng cấp, rồi mới đến các đỉnh ở cấp khác. |
+| Ưu tiên duyệt đỉnh | Ưu tiên đi sâu hơn ưu tiên các đỉnh anh em. | Ưu tiên các đỉnh anh em cùng cấp hơn ưu tiên cấp tiếp theo. |
+| Cấu trúc dữ liệu sử dụng | Đệ quy, ngăn xếp | Hàng đợi |
+| Bộ nhớ | Trong trường hợp xấu nhất, đồ thị phức tạp, có thể dẫn đến tràn bộ nhớ do gọi đệ quy quá nhiều. | Thường sử dụng nhiều bộ nhớ hơn do phải lưu tất cả đỉnh trong cùng một cấp. |
+| Khả năng hoàn tất | Có thể không hoàn tất nếu gặp phải đồ thị có chu trình (đường đi tuần hoàn giữa các đỉnh). | Hoàn tất được, miễn là đồ thị có số đỉnh hữu hạn và các đỉnh đều liên thông. |
+| Thứ tự các đỉnh của đường đi kết quả | Có thứ tự từ điển nhỏ nhất (trong số các phương án). | Có thứ tự khoảng cách tăng dần tính từ đỉnh xuất phát. |
+| Đường đi ngắn nhất | Không đảm bảo tìm được đường đi ngắn nhất. | Đảm bảo tìm được đường đi ngắn nhất đối với đồ thị không trọng số. |
+| Ứng dụng | Tìm đường trong mê cung, phát hiện chu trình, khám phá các cây có kích thước lớn. | Tìm đường trong mê cung, tìm đường đi ngắn nhất, giải đố, phân tích mạng. |
 
 
