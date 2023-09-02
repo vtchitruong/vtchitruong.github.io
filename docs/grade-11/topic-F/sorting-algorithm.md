@@ -209,7 +209,7 @@ print('Mảng sau khi sắp xếp:', array)
 ## Trực quan hóa thuật toán sắp xếp
 
 <div>
-    <iframe width="100%" height="580px" frameBorder=0 src="../sort-visualization.html"></iframe>
+    <iframe width="100%" height="690px" frameBorder=0 src="../sort-visualization.html"></iframe>
 </div>
 
 ## Google Colab
