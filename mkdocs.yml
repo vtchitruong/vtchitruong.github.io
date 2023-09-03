@@ -162,7 +162,7 @@ nav:
 #   - FAQ:
 #     - Sponsoring: faq/sponsoring.md
   - Lớp 10:
-    - grade-10/grade-10-index.md
+    - Khái quát chương trình học: grade-10/grade-10-index.md
     - Chủ đề F:
       - grade-10/topic-F/conditional-statement-if.md
       - grade-10/topic-F/for-loop.md

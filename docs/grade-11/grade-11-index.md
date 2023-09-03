@@ -29,6 +29,9 @@ It has been under development up until now.
 	3. Nêu được những khái niệm cơ bản của hệ cơ sở dữ liệu. Giải thích được các khái niệm đó qua ví dụ minh họa.
 	4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
 	5. Nêu được tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu.
+2. *(không có)*
+
+*Chủ đề F.2. là phần riêng của CS.*
 
 ### Chủ đề G
 
@@ -42,29 +45,30 @@ It has been under development up until now.
         - Nhu cầu nhân lực hiện tại và tương lai của nhóm nghề đó.
     2. Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực, v.v...) về một vài ngành nghề khác trong lĩnh vực tin học.
     3. Giao lưu được với bạn bè qua các kênh truyền thông tin số để tham khảo và trao đổi ý kiến về những thông tin trên.
-
-
+2. *(không có)*
 
 ## Phần riêng dành cho CS
 
 ### Chủ đề F
 
+*Chủ đề F.1. là phần chung.*
+
 #### F.2. Kỹ thuật lập trình
 
-1. Viết chương trình cho một số thuật toán sắp xếp, tìm kiếm cơ bản.
+1. Viết chương trình cho một số thuật toán sắp xếp, tìm kiếm cơ bản
     1. Phát biểu được bài toán sắp xếp và bài toán tìm kiếm.
     2. Viết được chương trình cho một vài thuật toán sắp xếp và tìm kiếm.
     3. Vận dụng được một vài thuật toán đã học để giải quyết một bài toán cụ thể.
-2. Kiểm thử và đánh giá hiệu quả của chương trình.
+2. Kiểm thử và đánh giá hiệu quả của chương trình
     1. Biết được việc kiểm thử giúp lập trình viên phát hiện lỗi, làm tăng độ tin cậy của chương trình nhưng chưa chứng minh được tính đúng của chương trình.
     2. Trình bày được sơ lược khái niệm độ phức tạp thời gian của thuật toán và phép toán tích cực.
     Nêu được ví dụ minh họa.
     3. Vận dụng được những qui tắc thực hành xác định độ phức tạp thời gian của một số thuật toán, chương trình đã biết.
-3. Phương pháp làm mịn dần và sử dụng module trong lập trình.
+3. Phương pháp làm mịn dần và sử dụng module trong lập trình
     1. Giải thích và vận dụng được phương pháp làm mịn dần trong lập trình.
     2. Giải thích và vận dụng được phương pháp thiết kế chương trình thành các module cho một bài toán cụ thể.
     3. Nhận biết được lợi ích của phương pháp nêu trên: Hỗ trợ làm việc đồng thời, dễ dàng bảo trì, phát triển chương trình và tái sử dụng module.
-4. Tổ chức dữ liệu trong chương trình.
+4. Tổ chức dữ liệu trong chương trình
     1. Trình bày được cấu trúc dữ liệu mảng (một và hai chiều) và danh sách liên kết.
     2. Tạo được một thư viện nhỏ và viết được chương trình có sử dụng thư viện vừa tạo ra.
     3. Viết được chương trình vận dụng những kiến thức tích hợp liên môn để giải quyết vấn đề.
