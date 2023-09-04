@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the content is centered vertically */
+    margin: 0; /* Remove default margin */
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+}
+
+.bit-container {
+    display: flex;
+}
+
+.bit {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #ffd966;
+}
+
+.rectangle {
+    margin-top: 10px;
+    width: 400px;
+    height: 1rem;
+    border-left: 2px solid #1997be;
+    border-right: 2px solid #1997be;
+    border-bottom: 2px solid #1997be;
+    border-radius: 0 0 15px 15px;
+}
+
+.caption {
+    margin-top: 10px;
+    color: #1997be;
+    font-size: 1.5rem;
+}
