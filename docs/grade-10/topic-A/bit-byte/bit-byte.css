@@ -13,21 +13,21 @@ body {
 }
 
 .bit {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #fff;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
     background-color: #ffd966;
 }
 
 .rectangle {
-    margin-top: 10px;
-    width: 400px;
+    margin-top: 0.2rem;
+    width: 336px;
     height: 1rem;
     border-left: 2px solid #1997be;
     border-right: 2px solid #1997be;
@@ -36,7 +36,7 @@ body {
 }
 
 .caption {
-    margin-top: 10px;
+    margin: 0.5rem 0;
     color: #1997be;
     font-size: 1.5rem;
 }

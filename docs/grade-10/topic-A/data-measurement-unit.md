@@ -43,12 +43,13 @@ Byte có thể dùng để biểu diễn một ký tự, một số, một kênh
 | zettabyte | ZB | 1 ZB = $2^{10}$ EB |
 | yottabyte | YB | 1 YB = $2^{10}$ ZB |
 
-Trên thực tế, người ta còn một cách quy đổi khác, đó là đơn vị sau bằng $10^3$ đơn vị trước, thay vì $2^{10}$ như bảng trên. Chẳng hạn:   
+Trên thực tế, người ta còn một cách quy đổi khác, đó là đơn vị sau bằng $10^3$ đơn vị trước, thay vì $2^{10}$ như bảng trên[^2]. Chẳng hạn:   
+
+[^2]: Tham khảo thêm về quy đổi đơn vị tại [Units of measurement for storage data](https://www.ibm.com/docs/en/storage-insights?topic=overview-units-measurement-storage-data)
 
 1 kilobyte = 1,000 byte  
-1 megabyte = 1,000,000 byte  
-1 gigabyte = 1,000,000,000 byte  
-v.v...  
+1 megabyte = 1,000 kilobyte = 1,000,000 byte  
+1 gigabyte = 1,000 megabyte = 1,000,000 kilobyte  
 
 Vì các nhà sản xuất thiết bị lưu trữ tính theo cách này, cộng thêm vài lý do khác, nên dung lượng của thiết bị lưu trữ mà máy tính nhận biết sẽ có sự chênh lệch với dung lượng ghi trên bao bì sản phẩm.  
 
