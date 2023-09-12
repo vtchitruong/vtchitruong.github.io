@@ -149,7 +149,6 @@ Bảng sau liệt kê một số Big O phổ biến và tên gọi của chúng.
 | Big O | Tên gọi về thời gian thực thi |
 | --- | --- |
 | $O(1)$ | Constant Time |
-| $O(logn)$ | Iterative Logarithmic Time |
 | $O(logn)$ | Logarithmic Time |
 | $O(n)$ | Linear Time |
 | $O(n logn)$ | Log Linear Time |
@@ -158,14 +157,12 @@ Bảng sau liệt kê một số Big O phổ biến và tên gọi của chúng.
 | $O(c^n)$ | Exponential Time |
 | $O(n!)$ |	Factorial Time |
 
-Những Big O trên có thể được biểu diễn thành biểu đồ dưới đây. Trong đó, các Big O được minh họa từ màu xanh, mang ý nghĩa là thuật toán *chạy nhanh*, chuyển dần cho đến màu đỏ, mang ý nghĩa là *chạy rất chậm*.
+Biểu đồ dưới đây biểu diễn các Big O trên, trừ $O(n^p)$ nhằm tránh bị rối. Trong đó, các Big O được minh họa từ màu xanh, mang ý nghĩa là thuật toán *chạy nhanh*, chuyển dần cho đến màu đỏ, mang ý nghĩa là *chạy rất chậm*. Cũng xin lưu ý, biểu đồ chỉ mang tính minh họa, giúp người học dễ hình dung về các độ phức tạp, chứ không chính xác về mặt toán học.  
 
-<figure markdown>
-  ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9f2u0pCOsRxK5n11hwE-0ivSxow89LeshC17afvHt3BklYPYLIDE3lrG9oGWqHLZhYLCbduddLg5HSvaGQ-TGu-etUz7vpGj0ABcyWx4cCZfV2tFqP=w540){loading=lazy}  
-  <figcaption>Hình 1. Biểu đồ minh họa sự tương quan giữa một số Big O</figcaption>  
-</figure>
-
-
+<div>
+    <iframe width="100%" height="480px" frameBorder=0 src="../complexity/big-o-chart.html"></iframe>
+    <p style="margin: 0">Hình 1. Biểu đồ minh họa sự tương quan giữa một số Big O</p>
+</div>
 
 ## Một số quy tắc xác định độ phức tạp
 

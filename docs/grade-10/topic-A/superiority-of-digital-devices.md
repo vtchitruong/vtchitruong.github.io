@@ -30,7 +30,7 @@ Những thao tác mà thiết bị số có thể thực hiện đối với d�
 
 ### Về mặt lưu trữ
 
-Thiết bị số  
+Thiết bị số:  
 
 - chiếm không gian vật lý ít,
 - có khả năng lưu trữ lớn,
@@ -51,7 +51,7 @@ Tốc độ xử lý của những máy tính thông thường đã đạt đế
 
 ### Khả năng truyền dẫn
 
-Thiết bị số có thể  
+Thiết bị số có thể:  
 
 - truyền dữ liệu với tốc độ cao mà vẫn đảm bảo được độ tin cậy của dữ liệu,  
 - truyền dữ liệu đến bất kỳ nơi nào có kết nối mạng.

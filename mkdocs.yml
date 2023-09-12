@@ -102,6 +102,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:materialx.emoji.to_svg
       emoji_index: !!python/name:materialx.emoji.twemoji
+      # options:
+        # custom_icons:
+        #   - overrides/.icons
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -126,6 +129,7 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.snippets
 
+
 ## Custom theme additions
 extra_javascript:
   - javascripts/extra.js
@@ -134,7 +138,6 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - stylesheets/extra.css
-
 
 # Page tree
 nav:
@@ -167,6 +170,7 @@ nav:
       - grade-10/topic-A/data-vs-information.md
       - grade-10/topic-A/data-measurement-unit.md      
       - grade-10/topic-A/superiority-of-digital-devices.md
+      - grade-10/topic-A/data-representation-in-cs.md
     - Chủ đề F:
       - grade-10/topic-F/conditional-statement-if.md
       - grade-10/topic-F/for-loop.md
