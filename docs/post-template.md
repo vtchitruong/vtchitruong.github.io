@@ -23,6 +23,11 @@ Output:
 
 ## Another headings 2
 
+<div>
+    <iframe width="100%" height="150px" frameBorder=0 src="../bit-byte/bit-byte.html"></iframe>
+    <p style="text-align: center; margin: 0">Hình 1:</p>
+</div>
+
 
 ## Google Colab
 
