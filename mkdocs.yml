@@ -76,7 +76,7 @@ extra:
           name: This post definitely needs improvement.
           data: 1
           note: >-
-            Thanks for your feedback!
+            Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
         - icon: material/heart
           name: This post could be improved.
           data: 2
