@@ -1,0 +1,27 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px 2px;
+    width: 250px;
+    height: 7.2rem;
+    font-family: Google Sans, Roboto, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.normal {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-2 {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.remainder {
+    color: #009acc;
+    font-weight: bold;
+}

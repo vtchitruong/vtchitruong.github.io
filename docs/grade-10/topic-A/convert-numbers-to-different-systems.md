@@ -65,7 +65,7 @@ Hệ thập lục phân sử dụng 16 ký số: `0`, `1`, `2`, `3`, `4`, `5`, `
         <iframe width="100%" height="200px" frameBorder=0 src="../convert-number-systems/dec-to-bin.html"></iframe>
     </div>
 
-    Vậy $13_{10} = 1101_2$.  
+    Vậy $13_{10} = 1101_2$  
 
     Nói cách khác, để lưu trữ số 13, máy tính lưu trữ 8 bit là 00001101.  
 

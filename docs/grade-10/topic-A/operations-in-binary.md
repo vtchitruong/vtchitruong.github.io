@@ -81,3 +81,12 @@ Phần này trình bày các phép toán logic gồm: **NOT**, **AND**, **OR** v
     <div>
         <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/xor.html"></iframe>
     </div>
+
+## Some English words
+
+| Vietnamese | Tiếng Anh | 
+| --- | --- |
+| phép toán logic | logical operation |
+| phép toán số học | arithmetich operation |
+| toán hạng | operand |
+| toán tử (ví dụ: `+`, `&#215`, `AND`, `OR`, v.v...) | operator |
