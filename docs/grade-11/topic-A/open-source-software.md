@@ -9,8 +9,8 @@
 
 [^1]: Một số sách ghi ngắn gọn hơn là *phần mềm nguồn mở*.
 
-Ví dụ:  
-Chromium là trình duyệt web mã nguồn mở. Mã nguồn của Chromium có thể xem tại [https://chromium.googlesource.com/chromium/src/](https://chromium.googlesource.com/chromium/src/){:target="_blank"}
+:   Ví dụ:  
+    Chromium là trình duyệt web mã nguồn mở. Mã nguồn của Chromium có thể xem tại [https://chromium.googlesource.com/chromium/src/](https://chromium.googlesource.com/chromium/src/){:target="_blank"}
 
 ### Một số đặc điểm của mã nguồn mở
 
@@ -22,7 +22,6 @@ Chromium là trình duyệt web mã nguồn mở. Mã nguồn của Chromium có
 
 3. Cộng đồng  
     Một số phần mềm mã nguồn mở có cộng đồng lớn giúp người dùng có thể tìm được sự trợ giúp khi cần.
-
 
 4. Tính đa dạng  
     Vì những người đóng góp cho phần mềm có nền tảng bản thân khác nhau, nên phần mềm có thể được phân hóa/phân mảnh, dẫn đến các quan điểm và giải pháp sáng tạo khác nhau. Ví dụ: Một thống kê cho biết, có đến hơn 600 bản phân phối Linux, chưa kể 500 bản khác đang phát triển.   
