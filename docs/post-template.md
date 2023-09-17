@@ -23,9 +23,9 @@ Output:
 
 ## Another headings 2
 
-<div>
+<div style="text-align: center">
     <iframe width="100%" height="150px" frameBorder=0 src="../bit-byte/bit-byte.html"></iframe>
-    <p style="text-align: center; margin: 0">Hình 1:</p>
+    <p style="text-align: center; margin: 0">Hình 1.</p>
 </div>
 
 

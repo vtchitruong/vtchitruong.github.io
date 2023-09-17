@@ -45,10 +45,10 @@ Phần cứng trước khi hoạt động được thì phải được hệ đi
 
 Hình sau thể hiện mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng. Các mũi tên thể hiện hướng tương tác qua lại giữa các đối tượng này.  
 
-<figure markdown>
-  ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9DqG3t7HBJjE0YMpv29Vj191lkGhQ63kbbsMojltb08RUzb5Q0TCVIay4cSK1fkmjrJPewPWDZH-marLk7zzl8ott-V357SVFEVENIsu54k8nfX4kK=w240){ loading=lazy }
-  <figcaption>Hình 1. Sơ đồ thể hiện mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng</figcaption>
-</figure>
+<div style="text-align: center">
+    <iframe height="325px" frameBorder=0 src="../os-vs-application/os-vs-application.html"></iframe>
+    <p style="text-align: center; margin: 0">Hình 1. Sơ đồ thể hiện mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng</p>
+</div>
 
 ## Some English words
 
