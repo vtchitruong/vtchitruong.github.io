@@ -66,50 +66,52 @@ theme:
 extra:
   annotate:
     json: [.s2]
-  analytics:
-    provider: google
-    property: G-406896385
-    feedback:
-      title: Bài viết trên có giúp ích gì cho bạn không?</br>Hãy nán lại "quánh giá" một cái cho chủ thớt thêm cảm hứng, hoặc cảm... lạnh 😄
-      ratings:
-        - icon: material/heart
-          name: This post definitely needs improvement.
-          data: 1
-          note: >-
-            Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
-        - icon: material/heart
-          name: This post could be improved.
-          data: 2
-          note: >- 
-            Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
-        - icon: material/heart
-          name: I'm not sure. This post is passable.
-          data: 3
-          note: >-
-            Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
-        - icon: material/heart
-          name: This post is quite useful.
-          data: 4
-          note: >-
-            Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
-        - icon: material/heart
-          name: This post is absolutely useful.
-          data: 5
-          note: >-
-            Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+  # analytics:
+  #   provider: google
+  #   property: G-406896385
+  #   feedback:
+  #     title: Bài viết trên có giúp ích gì cho bạn không?</br>Hãy nán lại "quánh giá" một cái cho chủ thớt thêm cảm hứng, hoặc cảm... lạnh 😄
+  #     ratings:
+  #       - icon: material/heart
+  #         name: This post definitely needs improvement.
+  #         data: 1
+  #         note: >-
+  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+  #       - icon: material/heart
+  #         name: This post could be improved.
+  #         data: 2
+  #         note: >- 
+  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+  #       - icon: material/heart
+  #         name: I'm not sure. This post is passable.
+  #         data: 3
+  #         note: >-
+  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+  #       - icon: material/heart
+  #         name: This post is quite useful.
+  #         data: 4
+  #         note: >-
+  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+  #       - icon: material/heart
+  #         name: This post is absolutely useful.
+  #         data: 5
+  #         note: >-
+  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@squidfunk
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
+      link: https://github.com/vtchitruong/vtchitruong.github.io
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/vothachchitruong
+    # - icon: fontawesome/brands/gitter
+    #   link: https://gitter.im/squidfunk/mkdocs-material
+    # - icon: fontawesome/brands/docker
+    #   link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    # - icon: fontawesome/brands/python
+    #   link: https://pypi.org/project/mkdocs-material/
+    # - icon: fontawesome/brands/mastodon
+    #   link: https://fosstodon.org/@squidfunk
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/squidfunk
 
 # Extensions
 markdown_extensions:
@@ -162,6 +164,7 @@ markdown_extensions:
 extra_javascript:
   - javascripts/extra.js
   - javascripts/mathjax.js
+  - javascripts/feedback.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
