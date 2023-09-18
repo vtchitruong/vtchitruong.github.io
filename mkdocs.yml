@@ -66,37 +66,37 @@ theme:
 extra:
   annotate:
     json: [.s2]
-  # analytics:
-  #   provider: google
-  #   property: G-406896385
-  #   feedback:
-  #     title: Bài viết trên có giúp ích gì cho bạn không?</br>Hãy nán lại "quánh giá" một cái cho chủ thớt thêm cảm hứng, hoặc cảm... lạnh 😄
-  #     ratings:
-  #       - icon: material/heart
-  #         name: This post definitely needs improvement.
-  #         data: 1
-  #         note: >-
-  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
-  #       - icon: material/heart
-  #         name: This post could be improved.
-  #         data: 2
-  #         note: >- 
-  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
-  #       - icon: material/heart
-  #         name: I'm not sure. This post is passable.
-  #         data: 3
-  #         note: >-
-  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
-  #       - icon: material/heart
-  #         name: This post is quite useful.
-  #         data: 4
-  #         note: >-
-  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
-  #       - icon: material/heart
-  #         name: This post is absolutely useful.
-  #         data: 5
-  #         note: >-
-  #           Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+  analytics:
+    provider: google
+    property: G-406896385
+    # feedback:
+    #   title: Bài viết trên có giúp ích gì cho bạn không?</br>Hãy nán lại "quánh giá" một cái cho chủ thớt thêm cảm hứng, hoặc cảm... lạnh 😄
+    #   ratings:
+    #     - icon: material/heart
+    #       name: This post definitely needs improvement.
+    #       data: 1
+    #       note: >-
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+    #     - icon: material/heart
+    #       name: This post could be improved.
+    #       data: 2
+    #       note: >- 
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+    #     - icon: material/heart
+    #       name: I'm not sure. This post is passable.
+    #       data: 3
+    #       note: >-
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+    #     - icon: material/heart
+    #       name: This post is quite useful.
+    #       data: 4
+    #       note: >-
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+    #     - icon: material/heart
+    #       name: This post is absolutely useful.
+    #       data: 5
+    #       note: >-
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/vtchitruong/vtchitruong.github.io
@@ -185,6 +185,8 @@ nav:
       - grade-10/topic-A/data-representation-in-cs.md
       - grade-10/topic-A/convert-numbers-to-different-systems.md
       - grade-10/topic-A/operations-in-binary.md
+    - Chủ đề B:
+      - grade-10/topic-B/computer-network.md
     - Chủ đề F:
       - grade-10/topic-F/conditional-statement-if.md
       - grade-10/topic-F/for-loop.md

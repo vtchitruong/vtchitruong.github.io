@@ -25,7 +25,7 @@
 1. Khái niệm mạng máy tính, Internet, IoT. Phân loại mạng máy tính.
     1. Trình bày được những thay đổi về chất lượng cuộc sống, phương thức học tập và làm việc trong xã hội mà ở đó mạng máy tính được sử dụng phổ biến.
     2. So sánh được mạng LAN và Internet.
-    3. Nêu được một số dịch vụ cụ thể mà Điện toán đám mây cung cấp cho người dùng.
+    3. Nêu được một số dịch vụ cụ thể mà điện toán đám mây cung cấp cho người dùng.
     4. Nêu được khái niệm Internet vạn vật (IoT).
     5. Nêu được ví dụ cụ thể về thay đổi trong cuộc sống mà IoT mang lại. Phát biểu ý kiến cá nhân về lợi ích của IoT.
 2. Sử dụng dịch vụ Web. Tự bảo vệ khi tham gia mạng.

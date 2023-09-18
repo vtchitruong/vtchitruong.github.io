@@ -23,7 +23,7 @@ Thông tin là dữ liệu, nhưng đã xử lý để có ngữ cảnh, ý ngh�
     - Trình bày lại  
 
 <figure markdown>
-  ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9_HYSxH7aXRlKmvHDW0GuS5ZieLh1G1B6Qx5PRR4UCbxx8Oj0r5b8l6oFevMJ21eXJX-ttholm5sbte0rOeoGaXKTA1MdPOnZTh2a4spHq-2onKRzP=w600){loading=lazy}  
+  ![Image title](../data-vs-information/data-vs-information.svg){loading=lazy}  
   <figcaption>Hình 1. Dữ liệu sau khi xử lý trở thành thông tin</figcaption>  
 </figure>
 
