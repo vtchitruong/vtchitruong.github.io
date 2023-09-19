@@ -196,16 +196,18 @@ nav:
   - Lớp 11:
     - Khái quát chương trình học: grade-11/grade-11-index.md
     - Chủ đề A:
-      - grade-11/topic-A/os-vs-application.md      
+      - grade-11/topic-A/os-vs-application.md
       - grade-11/topic-A/open-source-software.md
       - grade-11/topic-A/mobile-os.md
-      - grade-11/topic-A/os-history.md      
-    - Chủ đề F:
-      - grade-11/topic-F/array.md
-      - grade-11/topic-F/linked-list.md
-      - grade-11/topic-F/searching-algorithm.md
-      - grade-11/topic-F/sorting-algorithm.md
-      - grade-11/topic-F/algorithmic-complexity.md
+      - grade-11/topic-A/os-history.md
+    - Chủ đề F1:
+      - grade-11/topic-F1/data-management.md
+    - Chủ đề F2:
+      - grade-11/topic-F2/array.md
+      - grade-11/topic-F2/linked-list.md
+      - grade-11/topic-F2/searching-algorithm.md
+      - grade-11/topic-F2/sorting-algorithm.md
+      - grade-11/topic-F2/algorithmic-complexity.md
   - Lớp 12:
     - grade-12/grade-12-index.md
   - Nâng cao:

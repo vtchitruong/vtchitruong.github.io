@@ -24,7 +24,7 @@ It has been under development up until now.
     
 1. Giới thiệu các hệ cơ sở dữ liệu
     1. Nhận biết được nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lí
-	2. Diễn đạt được khái niệm hệ cơ sở dữ liệu, các khái niệm cơ bản trong mô hình cơ sở dữ liệu quan hệ như quan hệ (bảng), khoá, khoá ngoài, truy vấn, cập nhật dữ liệu,…
+	2. Diễn đạt được khái niệm hệ cơ sở dữ liệu, các khái niệm cơ bản trong mô hình cơ sở dữ liệu quan hệ như quan hệ (bảng), khóa, khóa ngoài, truy vấn, cập nhật dữ liệu, v.v...
 	3. Nêu được những khái niệm cơ bản của hệ cơ sở dữ liệu. Giải thích được các khái niệm đó qua ví dụ minh họa.
 	4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
 	5. Nêu được tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu.
