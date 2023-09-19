@@ -18,6 +18,25 @@ It has been under development up until now.
     3. Sử dụng được một số tiện ích có sẵn của hệ điều hành để nâng cao hiệu suất sử dụng máy tính.
     4. Kích hoạt và sử dụng được một vài chức năng cơ bản của một phần mềm soạn thảo văn bản, một phần mềm bảng tính và một phần mềm trình chiếu chạy trên Internet. Ví dụ các phần mềm trong gói Google Docs.
 
+#### A.2. Thế giới thiết bị số
+
+1. Những bộ phận chính bên trong máy tính
+
+    1. Nhận diện được hình dạng, mô tả được chức năng của các bộ phận chính bên trong thân máy tính như CPU, RAM và các thiết bị lưu trữ. Nêu được tên và giải thích được đơn vị đo hiệu năng của chúng như GHz, GB, v.v...
+    2. Nhận biết được sơ đồ của các mạch logic AND, OR, NOT, giải thích được vai trò của các mạch logic đó trong thực hiện các tính toán nhị phân.
+    3. Tùy chỉnh được một vài chức năng cơ bản của máy tính và các thiết bị vào – ra thông dụng để phù hợp với nhu cầu sử dụng và đạt hiệu quả tốt hơn.
+
+2. Chức năng và hoạt động của những thiết bị ngoại vi và thiết bị số thông dụng
+
+    1. Đọc hiểu được một số điểm chính trong tài liệu hướng dẫn về thiết bị số thông dụng. Thực hiện được một số những chỉ dẫn trong tài liệu đó.
+    2. Đọc hiểu và giải thích được một số thông số cơ bản như kích thước màn hình, CPU, RAM, dung lượng lưu trữ, độ phân giải camera, v.v... của các thiết bị số thông dụng. Ví dụ: PC, máy tính bảng, điện thoại thông minh, tivi có khả năng kết nối Internet, v.v...
+    3. Biết được cách kết nối các bộ phận thân máy, bàn phím, chuột, màn hình của máy tính với nhau.
+    4. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v...
+
+### Chủ đề B
+
+*(không có chủ đề B)*
+
 ### Chủ đề F
 
 #### F.1. Cơ sở dữ liệu
