@@ -16,17 +16,19 @@
 
 Phần cứng có thể tạm chia thành hai loại:
 
-- **Phần cứng bên trong**:  
-    Là những thiết bị gắn trực tiếp trên bo mạch chính hoặc trên các bảng mạch mở rộng. Chúng nằm "*trong hộp*" (case) của máy tính, thông thường từ ngoài nhìn vào sẽ không thấy.  
+### Phần cứng bên trong
+    
+Là những thiết bị gắn trực tiếp trên bo mạch chính hoặc trên các bảng mạch mở rộng. Chúng nằm "*trong hộp*" (case) của máy tính, thông thường từ ngoài nhìn vào sẽ không thấy.  
 
-    :   Ví dụ:  
-        CPU, RAM, ROM, GPU, bộ cấp nguồn, hệ thống làm mát, v.v...
+:   Ví dụ:  
+    CPU, RAM, ROM, GPU, bộ cấp nguồn, hệ thống làm mát, v.v...
 
-- **Phần cứng bên ngoài**:  
-    Còn được gọi Là **thiết bị ngoại vi**, là những thiết bị nằm bên ngoài hộp của máy tính và kết nối với máy tính thông qua các cổng trên thân máy.  
+### Phần cứng bên ngoài
+    
+Còn được gọi Là **thiết bị ngoại vi**, là những thiết bị nằm bên ngoài hộp của máy tính và kết nối với máy tính thông qua các cổng trên thân máy.  
 
-    :   Ví dụ:    
-        Bàn phím, chuột, màn hình, máy in, máy quét, camera, v.v...
+:   Ví dụ:    
+    Bàn phím, chuột, màn hình, máy in, máy quét, camera, v.v...
 
 ## Một số thành phần phần cứng bên trong máy tính
 
@@ -57,20 +59,21 @@ Hiện nay, CPU của nhiều máy tính cá nhân có tốc độ từ 1Ghz đ�
 ??? note "Kỷ lục về tốc độ CPU"
     Tính đến đầu tháng 01.2023, **13th-Generation Core i9-13900KS** là CPU đầu tiên đạt đến tốc độ 6Ghz. 
 
-
 ### Bộ nhớ trong
 
 Còn gọi là **bộ nhớ chính**, gồm có RAM và ROM.
 
-1. **RAM**  
-    Lưu trữ những dữ liệu mà CPU đang xử lý. Việc lưu trữ chỉ là tạm thời, dữ liệu sẽ mất đi khi tắt máy hoặc máy mất điện.
+#### RAM  
 
-2. **ROM**  
-    Bộ nhớ này có thể lưu trữ lâu dài, nhưng chỉ dành cho dữ liệu của nhà sản xuất thiết bị, không dễ cho người dùng ghi đè lên.  
+Lưu trữ những dữ liệu mà CPU đang xử lý. Việc lưu trữ chỉ là tạm thời, dữ liệu sẽ mất đi khi tắt máy hoặc máy mất điện.
 
-    ??? note "Sự nhập nhằng của thuật ngữ ROM giữa máy tính để bàn và điện thoại thông minh"
-        
-        ROM của điện thoại thông minh không hoàn toàn giống khái niệm ở mục 2, vốn dành cho máy tính để bàn. ROM của điện thoại thông minh là một loại bộ nhớ flash, còn có thể gọi là *thiết bị lưu trữ bên trong*. Nó gồm hai phần: Một phần dùng để lưu trữ hệ điều hành, người dùng không dễ chỉnh sửa được; phần còn lại dành cho dữ liệu và ứng dụng của người dùng, người dùng có thể tùy nghi lưu trữ hoặc cài đặt theo nhu cầu.
+#### ROM  
+
+Bộ nhớ này có thể lưu trữ lâu dài, nhưng chỉ dành cho dữ liệu của nhà sản xuất thiết bị, không dễ cho người dùng ghi đè lên.  
+
+??? note "Sự nhập nhằng của thuật ngữ ROM giữa máy tính để bàn và điện thoại thông minh"
+    
+    ROM của điện thoại thông minh không hoàn toàn giống khái niệm ở mục 2, vốn dành cho máy tính để bàn. ROM của điện thoại thông minh là một loại bộ nhớ flash, còn có thể gọi là *thiết bị lưu trữ bên trong*. Nó gồm hai phần: Một phần dùng để lưu trữ hệ điều hành, người dùng không dễ chỉnh sửa được; phần còn lại dành cho dữ liệu và ứng dụng của người dùng, người dùng có thể tùy nghi lưu trữ hoặc cài đặt theo nhu cầu.
 
 ### Thiết bị lưu trữ
 
@@ -88,29 +91,31 @@ Là những thiết bị dùng để lưu trữ lâu dài. Dữ liệu chứa tr
 
 Những thiết bị lưu trữ gắn trong máy gồm có:  
 
-1.  **Đĩa cứng**:
+#### Đĩa cứng
 
-    **HDD** (Hard Disk Drive) là đĩa cứng truyền thống, sử dụng từ tính để lưu trữ dữ liệu. HDD có một ổ đĩa quay và một đầu đọc/ghi dữ liệu cơ học.  
+1.  **HDD** (Hard Disk Drive):  
+    Là đĩa cứng truyền thống, sử dụng từ tính để lưu trữ dữ liệu. HDD có một ổ đĩa quay và một đầu đọc/ghi dữ liệu cơ học.  
 
-    **SSD** (Solid-State Drive) sử dụng các chip nhớ flash để lưu trữ dữ liệu, tức không có những bộ phận cơ học như HDD. Việc này giúp truy xuất dữ liệu nhanh hơn và tin cậy hơn.
+2.  **SSD** (Solid-State Drive):  
+    Sử dụng các chip nhớ flash để lưu trữ dữ liệu, tức không có những bộ phận cơ học như HDD. Việc này giúp truy xuất dữ liệu nhanh hơn và tin cậy hơn.
 
-    Hiện nay, nhiều máy tính cá nhân đã trang bị SSD. Dung lượng SSD phổ biến là 128GB, 256GB, 512GB, 1TB.  
+Hiện nay, nhiều máy tính cá nhân đã trang bị SSD. Dung lượng SSD phổ biến là 128GB, 256GB, 512GB, 1TB.  
 
-    ??? note "Kỷ lục về dung lượng SSD"
-        Tính đến tháng 8.2023, dung lượng của một SSD đã đạt đến 100TB[^1]. 
+??? note "Kỷ lục về dung lượng SSD"
+    Tính đến tháng 8.2023, dung lượng của một SSD đã đạt đến 100TB[^1]. 
 
-    [^1]: Sản phẩm đã được bán ra thị trường tại [https://nimbusdata.com/products/exadrive/](https://nimbusdata.com/products/exadrive/){:target="_blank"}
+[^1]: Sản phẩm đã được bán ra thị trường tại [https://nimbusdata.com/products/exadrive/](https://nimbusdata.com/products/exadrive/){:target="_blank"}
 
-2.  **Đĩa quang**:
+#### Đĩa quang
 
-    Gồm có CD, DVD và Blu-ray. Loại đĩa này sử dụng tia laser để đọc và ghi dữ liệu. Hiện nay, chúng dần không còn phổ biến trên máy tính.
+Gồm có CD, DVD và Blu-ray. Loại đĩa này sử dụng tia laser để đọc và ghi dữ liệu. Hiện nay, chúng dần không còn phổ biến trên máy tính.
 
-    Ngoài ra, còn có một số thiết bị lưu trữ khác, được xem là *phần cứng bên ngoài*, đó là: đĩa flash, thẻ nhớ, đĩa cứng gắn ngoài.
+Ngoài ra, còn có một số thiết bị lưu trữ khác, được xem là *phần cứng bên ngoài*, đó là: đĩa flash, thẻ nhớ, đĩa cứng gắn ngoài.
 
-    !!! note "USB flash drive"
-        Đĩa flash là thiết bị lưu trữ gắn ngoài, kết nối vào máy tính thông qua cổng USB. Do nó là một trong những thiết bị dùng cổng USB đầu tiên có mặt ở thị trường nước ta, nên người ta quen gọi là USB.
+??? note "USB flash drive"
+    Đĩa flash là thiết bị lưu trữ gắn ngoài, kết nối vào máy tính thông qua cổng USB. Do nó là một trong những thiết bị dùng cổng USB đầu tiên có mặt ở thị trường nước ta, nên người ta quen gọi là USB.
 
-        Mặc dù hiện nay có nhiều thiết bị kết nối vào máy tính thông qua cổng USB, cách gọi này vẫn còn khá phổ biến.
+    Mặc dù hiện nay có nhiều thiết bị kết nối vào máy tính thông qua cổng USB, cách gọi này vẫn còn khá phổ biến.
 
 ### Bộ xử lý đồ họa
 
