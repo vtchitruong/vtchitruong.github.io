@@ -143,10 +143,10 @@ Viết tắt là **GPU**, dùng để xử lý hình ảnh và video, có vai tr
 
 Bên cạnh đó, GPU còn góp phần trong các ứng dụng đòi hỏi sức mạnh tính toán lớn như khoa học kỹ thuật và trí tuệ nhân tạo.
 
-![Image title](https://images.nvidia.com/aem-dam/Solutions/geforce/news/geforce-rtx-graphics-cards/geforce-rtx-2080-technical-photography-pcb-front-001.png){loading=lazy}  
+![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_OQmstGEWx7I-4dKbm9mQ4pf6pXRtOFClvH7ar7-zSx3Sq-ldwadmIoVJmRwymqYhC5vbbS0_Bv_ckIBJ2Ep6NBJW3EPFG_JuZ2exoo0G_0ZLWFj_X=w800){loading=lazy}  
 Hình 6. GPU của NVIDIA[^6]
 
-[^6]: Hình lấy tại [Nvidia](https://photos.app.goo.gl/VXUFxhXxXAsF9d1z8){:target="_blank"}.
+[^6]: Hình lấy tại [Nvidia](https://www.nvidia.com/en-us/geforce/news/geforce-rtx-founders-graphics-card-breakdown){:target="_blank"}.
 
 ## Some English words
 
