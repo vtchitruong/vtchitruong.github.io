@@ -59,15 +59,30 @@ Hiện nay, CPU của nhiều máy tính cá nhân có tốc độ từ 1Ghz đ�
 ??? note "Kỷ lục về tốc độ CPU"
     Tính đến đầu tháng 01.2023, **13th-Generation Core i9-13900KS** là CPU đầu tiên đạt đến tốc độ 6Ghz. 
 
+![Image title](https://i.pcmag.com/imagery/articles/02InbmluflyOPmvBXM7NMBI-1.fit_lim.size_1600x900.v1616592951.jpg){loading=lazy}  
+Hình 1. CPU của Intel[^1]
+
+[^1]: Hình lấy tại [PC Magazine](https://www.pcmag.com/news/intels-7nm-pc-chip-will-arrive-in-2023-using-tsmcs-tech){:target="_blank"}.
+
+![Image title](https://b2c-contenthub.com/wp-content/uploads/2022/09/Intel-Raptor-Lake-platform-1.png?w=800){loading=lazy}  
+Hình 2. Thông số của CPU Intel Core i9-13900K Raptor Lake[^2]
+
+[^2]: Hình lấy tại [PC World](https://www.pcworld.com/article/1073245/intel-13th-gen-core-cpus-raptor-lake-reveal.html){:target="_blank"}.
+
 ### Bộ nhớ trong
 
 Còn gọi là **bộ nhớ chính**, gồm có RAM và ROM.
 
-#### RAM  
+#### RAM
 
 Lưu trữ những dữ liệu mà CPU đang xử lý. Việc lưu trữ chỉ là tạm thời, dữ liệu sẽ mất đi khi tắt máy hoặc máy mất điện.
 
-#### ROM  
+![Image title](https://content.crucial.com/content/dam/crucial/dram-products/laptop/images/product/crucial-ddr5-32gb-sodimm-image.psd.transform/medium-png/image.png){loading=lazy}  
+Hình 3. Thanh RAM 48 GB[^3]
+
+[^3]: Hình lấy tại [Crucial](https://www.crucial.com/memory/ddr5/ct48g56c46s5){:target="_blank"}.
+
+#### ROM
 
 Bộ nhớ này có thể lưu trữ lâu dài, nhưng chỉ dành cho dữ liệu của nhà sản xuất thiết bị, không dễ cho người dùng ghi đè lên.  
 
@@ -99,12 +114,17 @@ Những thiết bị lưu trữ gắn trong máy gồm có:
 2.  **SSD** (Solid-State Drive):  
     Sử dụng các chip nhớ flash để lưu trữ dữ liệu, tức không có những bộ phận cơ học như HDD. Việc này giúp truy xuất dữ liệu nhanh hơn và tin cậy hơn.
 
+![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9bSpTDl6XrxFRRqcFdWSq5h7zfCdz3JV9b57kUeQqn5C6hmoMiWyVpJnYscXqZeaXd-0JoI2qUexV4F2cyYwB3qynVyl5bKzxHrwNjXuxNe4w69vAM=w800){loading=lazy}  
+Hình 4. HDD và SSD[^4]
+
+[^4]: Hình lấy tại [medium.com](https://medium.com/@rodbauer/hdd-vs-ssd-what-does-the-future-for-storage-hold-dc8653f16366){:target="_blank"}.
+
 Hiện nay, nhiều máy tính cá nhân đã trang bị SSD. Dung lượng SSD phổ biến là 128GB, 256GB, 512GB, 1TB.  
 
 ??? note "Kỷ lục về dung lượng SSD"
-    Tính đến tháng 8.2023, dung lượng của một SSD đã đạt đến 100TB[^1]. 
+    Tính đến tháng 8.2023, dung lượng của một SSD đã đạt đến 100TB[^5]. 
 
-[^1]: Sản phẩm đã được bán ra thị trường tại [https://nimbusdata.com/products/exadrive/](https://nimbusdata.com/products/exadrive/){:target="_blank"}
+[^5]: Sản phẩm đã được bán ra thị trường tại [Nimbus Data](https://nimbusdata.com/products/exadrive/){:target="_blank"}.
 
 #### Đĩa quang
 
@@ -122,6 +142,11 @@ Ngoài ra, còn có một số thiết bị lưu trữ khác, được xem là *
 Viết tắt là **GPU**, dùng để xử lý hình ảnh và video, có vai trò quan trọng trong các tác vụ liên quan đến đồ họa và khía cạnh trực quan như chơi game, chỉnh sửa ảnh, biên tập video và tạo mô hình 3 chiều.  
 
 Bên cạnh đó, GPU còn góp phần trong các ứng dụng đòi hỏi sức mạnh tính toán lớn như khoa học kỹ thuật và trí tuệ nhân tạo.
+
+![Image title](https://images.nvidia.com/aem-dam/Solutions/geforce/news/geforce-rtx-graphics-cards/geforce-rtx-2080-technical-photography-pcb-front-001.png){loading=lazy}  
+Hình 6. GPU của NVIDIA[^6]
+
+[^6]: Hình lấy tại [Nvidia](https://photos.app.goo.gl/VXUFxhXxXAsF9d1z8){:target="_blank"}.
 
 ## Some English words
 

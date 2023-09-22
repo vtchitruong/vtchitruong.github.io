@@ -28,6 +28,8 @@ Output:
     <p style="text-align: center; margin: 0">Hình 1.</p>
 </div>
 
+![Image title](){loading=lazy}  
+Hình 6. 
 
 ## Google Colab
 
