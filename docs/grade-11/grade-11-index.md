@@ -37,6 +37,21 @@ It has been under development up until now.
 
 *(không có chủ đề B)*
 
+### Chủ đề C
+
+#### C.1. Tìm kiếm và trao đổi thông tin trên mạng
+
+1. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v...  
+2. Sử dụng được máy tìm kiếm, chẳng hạn máy tìm kiếm của Google, Yahoo, Bing, v.v... trên PC và thiết bị số thông minh để tìm kiếm thông tin bằng cách gõ từ khóa hoặc bằng tiếng nói.
+3. Xác lập được các lựa chọn theo tiêu chí tìm kiếm để nâng cao hiệu quả tìm kiếm thông tin.
+4. Sử dụng được những chức năng nâng cao của dịch vụ mạng xã hội.
+5. Biết cách phân loại và đánh dấu các email.
+
+#### C.2. Ứng xử văn hóa và an toàn trên mạng
+
+1. Nêu được một số dạng lừa đảo phổ biến trên mạng và những biện pháp phòng tránh.
+2. Giao tiếp được trên mạng qua email, chat, mạng xã hội, v.v... và trong môi trường số một cách văn minh, phù hợp với các quy tắc và văn hóa ứng xử.
+
 ### Chủ đề F
 
 #### F.1. Cơ sở dữ liệu
