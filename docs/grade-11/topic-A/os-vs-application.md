@@ -1,4 +1,11 @@
-# Phần cứng, hệ điều hành và phần mềm ứng dụng
+# Hệ điều hành và phần mềm ứng dụng
+
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày các nội dung sau:
+
+    - Những điểm khác nhau giữa hệ điều hành và phần mềm ứng dụng.
+    - Vai trò và mối quan hệ giữa ba yếu tố: phần cứng, hệ điều hành và phần mềm ứng dụng.
 
 ## Phân biệt hệ điều hành và phần mềm ứng dụng
 
@@ -31,14 +38,14 @@ Phần mềm ứng dụng đóng vai trò cung cấp cho người dùng các cô
 
 Mỗi phần mềm ứng dụng chỉ chạy được trên một nền tảng hệ điều hành nhất định. Muốn chạy được trên hệ điều hành khác, phần mềm ứng dụng cần được điều chỉnh, bổ sung hoặc lập trình lại cho phù hợp với nền tảng hệ điều hành mới.  
 
-:   Ví dụ:  
+:   Ví dụ 1:  
     Game A chạy được trên Windows và Android, nhưng không chạy được trên MacOS. Game B chạy được trên Nintendo nhưng không chắc chạy được trên Windows.  
 
 Các phần mềm ứng dụng muốn sử dụng CPU, bộ nhớ, v.v... cho công việc của mình thì phải thông qua hệ điều hành. Hệ điều hành có chức năng phân phối CPU, bộ nhớ, v.v... một cách hợp lý khi nhiều phần mềm ứng dụng yêu cầu cùng lúc.
 
 Phần cứng trước khi hoạt động được thì phải được hệ điều hành nhận biết.  
 
-:   Ví dụ:  
+:   Ví dụ 2:  
     Sau khi cắm vào máy tính, máy in mới muốn in được thì phải được hệ điều hành nhận biết. Hệ điều hành nhận biết máy in bằng driver[^2] đã có sẵn hoặc do người dùng cài đặt thêm vào.  
 
 [^2]: Driver, còn gọi là *trình điều khiển*, là chương trình gắn liền với một thiết bị cụ thể, giúp hệ điều hành và thiết bị này giao tiếp được với nhau và đảm bảo cho thiết bị hoạt động đúng chức năng. 

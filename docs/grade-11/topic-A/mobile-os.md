@@ -1,5 +1,11 @@
 # Hệ điều hành của thiết bị di động
 
+!!! abstract "Tóm lược nội dung"
+    Bài này trình bày hai nội dung:
+    
+    - Những điểm khác nhau giữa hệ điều hành dành cho máy tính để bàn và dành cho thiết bị di động.
+    - Những nét chính của hệ điều hành Android.
+
 ## Hệ điều hành của máy tính để bàn và của thiết bị di động
 
 Mặc dù hệ điều hành dành cho máy tính để bàn và hệ điều hành dành cho thiết bị di động đều là những phần mềm hệ thống quan trọng giúp quản lý và kiểm soát thiết bị, chúng vẫn có một số điểm khác nhau như sau:  

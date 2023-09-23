@@ -1,5 +1,12 @@
 # Phần mềm thương mại và phần mềm mã nguồn mở
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày:
+    
+    - Những khái niệm liên quan đến phần mềm mã nguồn mở.
+    - Phân biệt ba loại phần mềm: thương mại, mã nguồn mở và miễn phí.   
+
 ## Phần mềm mã nguồn mở
 
 ### Khái niệm
@@ -38,7 +45,7 @@ Là giấy phép đi kèm phần mềm mã nguồn mở, nêu rõ các điều k
     
 Một số giấy phép mã nguồn mở thông dụng là: GNU General Public License (GPL), Apache License, MIT License, v.v...  
 
-!!! abstract "GNU General Public License (GPL)"
+??? note "GNU General Public License (GPL)"
     GNU General Public License (GPL) là giấy phép phần mềm mã nguồn mở phổ biến và có tầm ảnh hưởng lớn. Nó được tổ chức Free Software Foundation (FSF) tạo ra, thuộc dự án GNU, là dự án phát triển hệ điều hành mã nguồn mở và tự do dựa trên nền tảng Unix, nhằm bảo vệ và khuyến khích các nguyên tắc của phần mềm tự do, trong đó có tự do sử dụng, bổ sung và phân phối.  
     
     Một số nguyên tắc của GNU GPL là:
@@ -79,13 +86,13 @@ Bảng sau so sánh một số đặc điểm của ba loại phần mềm này:
 
 Mỗi loại phần mềm đều có những ưu điểm và hạn chế riêng. Việc lựa chọn loại phần mềm nào tùy thuộc vào nhu cầu và điều kiện của mỗi cá nhân, tổ chức.  
 
-!!! success "Tản mạn về chữ free"
+??? success "Tản mạn về chữ free"
     Chữ **free** trong giấy phép GNU của phần mềm mã nguồn mở mang ý nghĩa tự do (freedom), đề cao quyền tự do xem, sử dụng, bổ sung và phân phối lại mã nguồn. Trong khi đó, chữ **free** của *freeware* mang ý nghĩa miễn phí (free of charge, no cost). Cho nên, dịch *freeware* là *phần mềm tự do* e là không ổn.
 
 
 Ví dụ cụ thể được nêu trong bảng dưới đây.  
 
-*Bảng 2: Tên các phần mềm thương mại, mã nguồn mở và miễn phí có cùng tính năng được*  
+*Bảng 2. Tên các phần mềm thương mại, mã nguồn mở và miễn phí có cùng tính năng*  
 
 | Chức năng chính | Phần mềm thương mại | Phần mềm mã nguồn mở | Phần mềm miễn phí |
 | --- | --- | --- | --- |

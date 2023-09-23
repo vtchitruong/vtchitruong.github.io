@@ -1,5 +1,9 @@
 # Bài toán và thuật toán tìm kiếm
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày hai thuật toán tìm kiếm là: tuần tự và nhị phân.
+
 ## Đặt vấn đề
 
 Nhu cầu về thông tin của con người là thiết yếu, trong khi lượng dữ liệu lưu trữ trên các hệ thống là rất lớn. Làm sao con người có thể truy xuất được ngay thông tin mình đang cần trong bể thông tin cực lớn đó?  
@@ -8,9 +12,9 @@ Nhu cầu về thông tin của con người là thiết yếu, trong khi lượ
 
 ### Phát biểu bài toán tìm kiếm
 
-Bài toán tìm kiếm là bài toán đề cập đến việc tìm ra một phần tử cụ thể trong một tập hợp cho trước.   
+Bài toán tìm kiếm là bài toán đề cập đến việc tìm ra một phần tử cụ thể trong một tập hợp cho trước. Ta có thể phát biểu một cách tổng quát như sau:
 
-!!! abstract "Bài toán tìm kiếm có thể được phát biểu tổng quát như sau:"
+!!! note "Bài toán tìm kiếm"
     Các yếu tố cho trước:  
     - Một tập hợp gồm hữu hạn phần tử.  
     - Một phần tử đích cần tìm đang nằm trong tập hợp này.  
@@ -21,7 +25,7 @@ Bài toán tìm kiếm là bài toán đề cập đến việc tìm ra một ph
 
 Trong bài viết này, phạm vi của bài toán tìm kiếm được giới hạn trong mảng một chiều, với phần tử đích cần tìm là phần tử có giá trị *key* nào đó.  
 
-!!! abstract "Phát biểu bài toán tìm kiếm trên mảng"
+!!! note "Phát biểu bài toán tìm kiếm trên mảng"
     Input:  
     - Mảng một chiều *A* gồm *n* phần tử đều là số nguyên.  
     - Giá trị *key* của phần tử cần tìm.  
@@ -84,7 +88,7 @@ else:
     print('Found at position', found_at)
 ```
 
-Output:  
+Output:
 ``` pycon
 Please enter the key to be searched for: 8
 Found at position 6
@@ -148,7 +152,6 @@ else:
 ```
 
 Output:
-
 ``` pycon
 Please enter the key to be searched for: 8
 Found at position 7
@@ -169,6 +172,5 @@ Một phiên bản của bài này được đặt trên <a href="https://colab.
 | bài toán và thuật toán tìm kiếm | searching problem, searching algorithm |
 | tìm kiếm nhị phân | binary search | 
 | tìm kiếm tuần tự | sequential search, linear search[^1] | 
-
 
  [^1]: Cả hai thuật ngữ này đều có thể được sử dụng thay thế cho nhau, trong đó *linear search*, nghĩa là *tìm kiếm tuyến tính*, được sử dụng rộng rãi hơn trong các tài liệu nước ngoài. Song bằng một cách nào đó, sách giáo khoa ở nước ta lại chỉ dịch là *tìm kiếm tuần tự*.  

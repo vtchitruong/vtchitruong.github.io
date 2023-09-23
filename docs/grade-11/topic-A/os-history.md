@@ -1,6 +1,11 @@
 # Lịch sử phát triển của hệ điều hành dành cho PC
 
-Bài viết sau đây trình bày sơ nét lịch sử phát triển của hai hệ điều hành tiêu biểu dành cho PC (hoặc laptop): một hệ điều hành thương mại—là Windows và một hệ điều hành mã nguồn mở—là Ubuntu.  
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày sơ nét lịch sử phát triển của hai hệ điều hành tiêu biểu dành cho máy tính cá nhân:
+    
+    - Hệ điều hành thương mại Windows
+    - Hệ điều hành mã nguồn mở Ubuntu
 
 ## Hệ điều hành Windows
 

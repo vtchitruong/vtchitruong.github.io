@@ -1,5 +1,9 @@
 # Mảng
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày những khái niệm liên quan đến mảng một chiều và mảng hai chiều.
+
 ## Đặt vấn đề
 
 Vấn đề của bài này đã được nêu ra trong bài [Kiểu dữ liệu list của Python](../../grade-10/topic-F/list.md){:target="_blank"}, hầu hết các ngôn ngữ lập trình đều có những *kiểu dữ liệu* giúp lưu trữ và xử lý một tập hợp nhiều phần tử.  
@@ -43,52 +47,52 @@ Python không có kiểu dữ liệu mảng chuẩn như những ngôn ngữ *tr
 
 Kiểu `list` của Python cho phép khởi tạo mảng một chiều bằng cách liệt kê các phần tử trong cặp ngoặc vuông `[ ]` và phân cách nhau bởi dấu phẩy `,`.
 
-Ví dụ 1:  
-Khởi tạo mảng một chiều bằng cách liệt kê phần tử.  
+:   Ví dụ 1:  
+    Khởi tạo mảng một chiều bằng cách liệt kê phần tử.
 
-``` py linenums="1"
-# Mảng gồm các số nguyên
-A = [1, 7, 4, 0, 9, 4, 8, 8]
-print(A)
+    ``` py linenums="1"
+    # Mảng gồm các số nguyên
+    A = [1, 7, 4, 0, 9, 4, 8, 8]
+    print(A)
 
-# Mảng gồm các chuỗi
-word_array =  ['vân tán', 'tuyết tiêu', 'hoa tàn', 'nguyệt khuyết']
-print(word_array)
-```
+    # Mảng gồm các chuỗi
+    word_array =  ['vân tán', 'tuyết tiêu', 'hoa tàn', 'nguyệt khuyết']
+    print(word_array)
+    ```
 
-Output:  
-``` pycon
-[1, 7, 4, 0, 9, 4, 8, 8]
-['vân tán', 'tuyết tiêu', 'hoa tàn', 'nguyệt khuyết']
-```
+    Output:
+    ``` pycon
+    [1, 7, 4, 0, 9, 4, 8, 8]
+    ['vân tán', 'tuyết tiêu', 'hoa tàn', 'nguyệt khuyết']
+    ```
 
-Ví dụ 2:  
-Khởi tạo mảng một chiều bằng toán tử `*`.
+:   Ví dụ 2:  
+    Khởi tạo mảng một chiều bằng toán tử `*`.
 
-``` py linenums="1"
-# Mảng gồm 8 phần tử đều mang giá trị 0
-zero_array = [0] * 8
-print(zero_array)
-```
+    ``` py linenums="1"
+    # Mảng gồm 8 phần tử đều mang giá trị 0
+    zero_array = [0] * 8
+    print(zero_array)
+    ```
 
-Output:  
-``` pycon
-[0, 0, 0, 0, 0, 0, 0, 0]
-```
+    Output:
+    ``` pycon
+    [0, 0, 0, 0, 0, 0, 0, 0]
+    ```
 
-Ví dụ 3:  
-Khởi tạo mảng một chiều bằng cú pháp [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.  
+:   Ví dụ 3:  
+    Khởi tạo mảng một chiều bằng cú pháp [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.  
 
-``` py linenums="1"
-# Mảng gồm 8 phần tử đều mang giá trị 1
-one_array = [1 for i in range(8)]
-print(one_array)
-```
+    ``` py linenums="1"
+    # Mảng gồm 8 phần tử đều mang giá trị 1
+    one_array = [1 for i in range(8)]
+    print(one_array)
+    ```
 
-Output:  
-``` pycon
-[1, 1, 1, 1, 1, 1, 1, 1]
-```
+    Output:
+    ``` pycon
+    [1, 1, 1, 1, 1, 1, 1, 1]
+    ```
 
 ### Truy xuất phần tử  
 
@@ -96,70 +100,70 @@ Mỗi phần tử của mảng một chiều được truy xuất thông qua ch�
 
 Chỉ số được đặt trong cặp ngoặc vuông `[ ]`.  
 
-Ví dụ 4:  
+:   Ví dụ 4:
 
-``` py linenums="1"
-A = [1, 7, 4, 0, 9, 4, 8, 8]
+    ``` py linenums="1"
+    A = [1, 7, 4, 0, 9, 4, 8, 8]
 
-print(A[0])           # In ra phần tử đầu tiên
-print(A[7])           # In ra phần tử cuối cùng
-print(A[len(A) - 1])  # In ra phần tử cuối cùng như lệnh trên
-print(A[8])           # Chương trình báo lỗi tại dòng lệnh này
-```
+    print(A[0])           # In ra phần tử đầu tiên
+    print(A[7])           # In ra phần tử cuối cùng
+    print(A[len(A) - 1])  # In ra phần tử cuối cùng như lệnh trên
+    print(A[8])           # Chương trình báo lỗi tại dòng lệnh này
+    ```
 
-Output:  
+    Output:
+    ``` pycon
+    1
+    8
+    8
+    ---------------------------------------------------------------------------
+    IndexError                                Traceback (most recent call last)
+    <ipython-input-26-83e6d2734f8f> in <cell line: 8>()
+        6 print(A[7])                  # In ra phần tử cuối cùng
+        7 print(A[len(A) - 1])   # In ra phần tử cuối cùng như lệnh trên
+    ----> 8 print(A[8])                 # Chương trình báo lỗi tại dòng lệnh này
 
-``` pycon
-1
-8
-8
----------------------------------------------------------------------------
-IndexError                                Traceback (most recent call last)
-<ipython-input-26-83e6d2734f8f> in <cell line: 8>()
-      6 print(A[7])                  # In ra phần tử cuối cùng
-      7 print(A[len(A) - 1])   # In ra phần tử cuối cùng như lệnh trên
-----> 8 print(A[8])                 # Chương trình báo lỗi tại dòng lệnh này
-
-IndexError: list index out of range
-```
+    IndexError: list index out of range
+    ```
 
 ### Duyệt mảng  
 
 Trong nhiều bài toán, các phần tử của mảng một chiều được xử lý *một loạt* tương tự nhau, theo thứ tự từ phần tử đầu đến phần tử cuối, hoặc từ phần tử cuối ngược về phần tử đầu. Do đó, ta thường sử dụng vòng lặp để duyệt mảng.  
 
-Ví dụ 5:  
-Duyệt mảng và in ra các phần tử từ đầu đến cuối.  
+:   Ví dụ 5:  
+    Duyệt mảng và in ra các phần tử từ đầu đến cuối.  
 
-``` py linenums="1"
-word_array = ['vân tán', 'tuyết tiêu', 'hoa tàn', 'nguyệt khuyết']
-for i in range(len(word_array)):
-    print(word_array[i])
-```
+    ``` py linenums="1"
+    word_array = ['vân tán', 'tuyết tiêu', 'hoa tàn', 'nguyệt khuyết']
+    for i in range(len(word_array)):
+        print(word_array[i])
+    ```
 
-Output:  
-``` pycon
-vân tán
-tuyết tiêu
-hoa tàn
-nguyệt khuyết
-```
+    Output:
+    ``` pycon
+    vân tán
+    tuyết tiêu
+    hoa tàn
+    nguyệt khuyết
+    ```
 
-Ví dụ 6:  
-Duyệt mảng và in ra các phần tử từ cuối ngược về đầu.  
-``` py linenums="1"
-word_array = ['vân tán', 'tuyết tiêu', 'hoa tàn', 'nguyệt khuyết']
-n = len(word_array)
-for i in range(n - 1, -1, -1):
-    print(word_array[i])
-```
+:   Ví dụ 6:  
+    Duyệt mảng và in ra các phần tử từ cuối ngược về đầu.
 
-Output:  
-``` pycon
-nguyệt khuyết
-hoa tàn
-tuyết tiêu
-vân tán
-```
+    ``` py linenums="1"
+    word_array = ['vân tán', 'tuyết tiêu', 'hoa tàn', 'nguyệt khuyết']
+    n = len(word_array)
+    for i in range(n - 1, -1, -1):
+        print(word_array[i])
+    ```
+
+    Output:
+    ``` pycon
+    nguyệt khuyết
+    hoa tàn
+    tuyết tiêu
+    vân tán
+    ```
 
 ## Mảng hai chiều
 
@@ -182,35 +186,35 @@ Bàn cờ vua, bảng số Sudoku là hình ảnh minh họa của mảng hai ch
 
 Tương tự mảng một chiều, kiểu `list` của Python cho phép khởi tạo bằng cách liệt kê phần tử hoặc [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.  
 
-Ví dụ 7:  
-Khởi tạo mảng hai chiều bằng cách liệt kê phần tử.  
+:   Ví dụ 7:  
+    Khởi tạo mảng hai chiều bằng cách liệt kê phần tử.
 
-``` py linenums="1"
-# Mảng B gồm 3 hàng và 4 cột
-B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
-print(B)
-```
+    ``` py linenums="1"
+    # Mảng B gồm 3 hàng và 4 cột
+    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+    print(B)
+    ```
 
-Output:  
-``` pycon
-[[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
-```
+    Output:
+    ``` pycon
+    [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+    ```
 
-Ví dụ 8:  
-Khởi tạo mảng hai chiều bằng cú pháp [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.  
+:   Ví dụ 8:  
+    Khởi tạo mảng hai chiều bằng cú pháp [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.
 
-``` py linenums="1"
-# Mảng gồm 3 hàng và 4 cột chứa toàn các phần tử 0
-rows = 3
-cols = 4
-zero_array = [[0 for c in range(cols)] for r in range(rows)]
-print(zero_array)
-```
+    ``` py linenums="1"
+    # Mảng gồm 3 hàng và 4 cột chứa toàn các phần tử 0
+    rows = 3
+    cols = 4
+    zero_array = [[0 for c in range(cols)] for r in range(rows)]
+    print(zero_array)
+    ```
 
-Output:  
-``` pycon
-[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-```
+    Output:
+    ``` pycon
+    [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+    ```
 
 ### Truy xuất phần tử  
 
@@ -218,37 +222,37 @@ Mỗi phần tử trong mảng hai chiều được truy xuất bằng hai chỉ
 
 Mỗi chỉ số hàng hoặc cột được đặt trong cặp ngoặc vuông `[ ]`, với chỉ số hàng trước, chỉ số cột sau.  
 
-Ví dụ 9:  
+:   Ví dụ 9:
 
-``` py linenums="1"
-B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+    ``` py linenums="1"
+    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
 
-print(B[0][0])  # In ra phần tử đầu tiên
-print(B[2][3])  # In ra phần tử cuối cùng
-print(B[1][2])  # In ra phần tử ở hàng giữa, có chỉ số cột là 2
-```
+    print(B[0][0])  # In ra phần tử đầu tiên
+    print(B[2][3])  # In ra phần tử cuối cùng
+    print(B[1][2])  # In ra phần tử ở hàng giữa, có chỉ số cột là 2
+    ```
 
-Output:  
-``` pycon
-1
-5
-8
-```
+    Output:
+    ``` pycon
+    1
+    5
+    8
+    ```
 
-Ví dụ 10:  
-In ra số hàng và số cột của mảng hai chiều.  
+:   Ví dụ 10:  
+    In ra số hàng và số cột của mảng hai chiều.
 
-``` py linenums="1"
-B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
-print(len(B))        # In số hàng
-print(len(B[0]))  # In số cột
-```
+    ``` py linenums="1"
+    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+    print(len(B))        # In số hàng
+    print(len(B[0]))  # In số cột
+    ```
 
-Output:  
-``` pycon
-3
-4
-```
+    Output:
+    ``` pycon
+    3
+    4
+    ```
 
 ### Duyệt mảng  
 
@@ -256,26 +260,26 @@ Khi duyệt mảng hai chiều, ta thường sử dụng hai vòng lặp lồng 
 - Vòng lặp ngoài dùng để duyệt các hàng.  
 - Vòng lặp trong dùng để duyệt các cột, tức các phần tử trong cùng một hàng.  
 
-Ví dụ 11:  
-In mảng hai chiều theo dạng hàng và cột bằng vòng lặp `for`.  
+:   Ví dụ 11:  
+    In mảng hai chiều theo dạng hàng và cột bằng vòng lặp `for`.
 
-``` py linenums="1"
-B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+    ``` py linenums="1"
+    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
 
-rows = 3
-cols = 4
-for r in range(rows):             # Duyệt từ hàng đầu đến hàng cuối
-    for c in range(cols):         # Ứng với mỗi hàng r, duyệt từ cột đầu đến cột cuối
-        print(B[r][c], end=' ')  # In ra phần tử nằm ở hàng r và cột c, kèm theo khoảng trắng
-    print()  # Xuống dòng sau mỗi hàng
-```
+    rows = 3
+    cols = 4
+    for r in range(rows):            # Duyệt từ hàng đầu đến hàng cuối
+        for c in range(cols):        # Ứng với mỗi hàng r, duyệt từ cột đầu đến cột cuối
+            print(B[r][c], end=' ')  # In ra phần tử nằm ở hàng r và cột c, kèm theo khoảng trắng
+        print()  # Xuống dòng sau mỗi hàng
+    ```
 
-Output:  
-``` pycon
-1 7 4 0 
-9 4 8 8 
-2 4 5 5 
-```
+    Output:
+    ``` pycon
+    1 7 4 0 
+    9 4 8 8 
+    2 4 5 5 
+    ```
 
 ## Google Colab
 

@@ -1,5 +1,12 @@
 # Quản lý dữ liệu
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày khái quát vấn đề quản lý dữ liệu, bao gồm:
+    
+    - Nhu cầu quản lý dữ liệu
+    - Những công việc chính khi quản lý dữ liệu
+
 ## Nhu cầu quản lý dữ liệu
 
 Dữ liệu đóng vai trò ngày càng quan trọng trong xã hội ngày nay. Dữ liệu là nguồn tài nguyên giúp các cá nhân, tổ chức làm việc và vận hành hiệu quả. 

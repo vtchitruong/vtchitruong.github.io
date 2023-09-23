@@ -1,5 +1,9 @@
 # Danh sách liên kết
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày khái niệm và một vài thao tác trên danh sách liên kết.
+
 ## Đặt vấn đề
 
 Khi lưu trữ và xử lý tập hợp gồm nhiều phần tử, mảng là một lựa chọn phù hợp. Song mảng vẫn có những hạn chế như:  
@@ -234,7 +238,7 @@ insert_before(L, 'd', 'y')
 print_linked_list(L, 'Danh sách liên kết sau khi chèn thêm')
 ```
 
-Output:  
+Output:
 ``` pycon
 Danh sách liên kết ban đầu
 o -> l -> d -> 
@@ -319,7 +323,7 @@ remove(L, 'y')
 print_linked_list(L, 'Danh sách liên kết sau khi  xóa node')
 ```
 
-Output:  
+Output:
 ``` pycon
 Danh sách liên kết ban đầu
 o -> l -> d -> 

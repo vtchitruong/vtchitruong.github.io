@@ -1,5 +1,14 @@
 # Bài toán và thuật toán sắp xếp
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày một vài thuật toán sắp xếp cơ bản:
+
+    - Sắp xếp chọn  
+    - Sắp xếp chèn  
+    - Sắp xếp nổi bọt  
+    - Sắp xếp tráo đổi  
+
 ## Đặt vấn đề
 
 Trong lập trình, sắp xếp dữ liệu là thao tác quan trọng vì nó làm cho tập dữ liệu trở nên dễ đọc hơn đối với mọi người. Đồng thời, sắp xếp cũng giúp cho việc tìm kiếm và xử lý dữ liệu được thuận tiện hơn.  
@@ -12,7 +21,7 @@ Sắp xếp là quy trình tổ chức lại dữ liệu theo một thứ tự c
 
 Trong bài học này, ta chỉ xét bài toán đơn giản là sắp xếp mảng các số nguyên theo thứ tự *không giảm*, nghĩa là phần tử liền sau lớn hơn hoặc bằng phần tử liền trước. Từ đây trở đi gọi là thứ tự *tăng dần*.
 
-!!! abstract "Phát biểu bài toán sắp xếp trên mảng"
+!!! note "Phát biểu bài toán sắp xếp trên mảng"
     Input:  
     - Mảng một chiều *A* gồm *n* phần tử đều là số nguyên.  
  
