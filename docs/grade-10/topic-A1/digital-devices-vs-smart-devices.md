@@ -1,5 +1,13 @@
 # Thiết bị số và thiết bị thông minh
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày các nội dung sau:
+
+    - Khái niệm về thiết bị số và thiết bị thông minh
+    - Những điểm ưu việt của thiết bị số
+    - Vai trò của thiết bị thông minh đối với xã hội
+
 ## Đặt vấn đề
 
 Người xưa lưu trữ dữ liệu trên các phương tiện như tre, phiến đá, giấy, v.v... Ngày nay, phần lớn dữ liệu được lưu trữ trên máy tính nói riêng và thiết bị số nói chung. Đó là nhờ những ưu điểm gì của thiết bị số?  

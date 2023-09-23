@@ -1,5 +1,9 @@
 # Chuyển đổi số giữa các hệ đếm
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày cách chuyển đổi qua lại giữa hệ thập phân và hệ nhị phân. 
+
 ## Hệ đếm
 
 Hệ thống số đếm, gọi tắt là hệ đếm, là cách thức biểu diễn các con số bằng các ký tự hình tượng hoặc chữ số.  
@@ -35,7 +39,7 @@ Hệ thập lục phân sử dụng 16 ký số: `0`, `1`, `2`, `3`, `4`, `5`, `
 
 ## Chuyển đổi từ hệ nhị phân sang hệ thập phân
 
-!!! abstract "Hệ 2 → hệ 10"
+!!! note "Hệ 2 → hệ 10"
 
     1. Lấy mỗi chữ số nhân với cơ số 2 và lũy thừa với số mũ tương ứng.
     2. Số mũ được tính từ phải sang trái, bắt đầu từ 0, 1, 2, v.v...
@@ -53,7 +57,7 @@ Hệ thập lục phân sử dụng 16 ký số: `0`, `1`, `2`, `3`, `4`, `5`, `
 
 ## Chuyển đổi từ hệ thập phân sang hệ nhị phân
 
-!!! abstract "Hệ 10 → hệ 2"
+!!! note "Hệ 10 → hệ 2"
 
     1. Lấy số ban đầu chia 2, ghi nhận số dư.
     2. Lấy thương chia tiếp cho 2, ghi nhận số dư.

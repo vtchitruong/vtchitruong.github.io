@@ -1,5 +1,12 @@
 # Lịch sử phát triển và sự đóng góp của tin học
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày hai nội dung:
+
+    - Sơ nét về lịch sử của tin học
+    - Những đóng góp của tin học đối với xã hội
+
 ## Đôi nét về lịch sử phát triển
 
 **Tin học**, hay còn gọi là **công nghệ thông tin** hoặc **khoa học máy tính**, là một lĩnh vực rộng lớn, tuy còn mới mẻ so với một số lĩnh vực khác, song vẫn có bề dày lịch sử nhất định. Có thể điểm qua một số cột mốc phát triển như sau:  

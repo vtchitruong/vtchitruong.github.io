@@ -177,14 +177,15 @@ nav:
     - Getting started: getting-started.md
   - Lớp 10:
     - Khái quát chương trình học: grade-10/grade-10-index.md
-    - Chủ đề A:
-      - grade-10/topic-A/data-vs-information.md
-      - grade-10/topic-A/data-measurement-unit.md      
-      - grade-10/topic-A/digital-devices-vs-smart-devices.md
-      - grade-10/topic-A/cs-timeline-and-roles.md
-      - grade-10/topic-A/data-representation-in-cs.md
-      - grade-10/topic-A/convert-numbers-to-different-systems.md
-      - grade-10/topic-A/operations-in-binary.md
+    - Chủ đề A1:
+      - grade-10/topic-A1/data-vs-information.md
+      - grade-10/topic-A1/data-measurement-unit.md      
+      - grade-10/topic-A1/digital-devices-vs-smart-devices.md
+      - grade-10/topic-A1/cs-timeline-and-roles.md
+    - Chủ đề A2:
+      - grade-10/topic-A2/data-representation-in-cs.md
+      - grade-10/topic-A2/convert-numbers-to-different-systems.md
+      - grade-10/topic-A2/operations-in-binary.md
     - Chủ đề B:
       - grade-10/topic-B/computer-network.md
     - Chủ đề F:

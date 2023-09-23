@@ -1,5 +1,9 @@
 # Đơn vị đo dữ liệu
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày về các đơn vị dùng cho việc định lượng dữ liệu.
+
 ## Đơn vị bit và byte
 
 Máy tính[^1] lưu trữ và xử lý dữ liệu ở **dạng nhị phân**, nghĩa là máy tính chỉ sử dụng hai tín hiệu đại diện cho hai trạng thái khác nhau của một sự vật hoặc sự kiện, ký hiệu là `0` và `1`. Những chữ số `0` và `1` này được gọi là **bit**.  
@@ -8,14 +12,14 @@ Máy tính[^1] lưu trữ và xử lý dữ liệu ở **dạng nhị phân**, n
 
 Như vậy, một cách hình tượng, bộ nhớ máy tính có thể chia nhỏ thành nhiều ô vuông, mỗi ô là một bit, và không thể chia nhỏ hơn được nữa. Tại một thời điểm, một bit chỉ chứa một trong hai trạng thái, hoặc là `0` hoặc là `1`, chứ không chứa hai trạng thái cùng lúc.  
 
-!!! abstract "bit"
+!!! note "bit"
     Đơn vị đo dữ liệu nhỏ nhất và cơ bản (nhất) là **bit**. Ký hiệu: **b**.
 
 Để tiện lợi và hiệu quả, người ta gom nhóm nhiều bit lại, tạo ra những đơn vị lớn hơn. Cụ thể, cứ mỗi 8 bit liên tiếp sẽ tạo thành 1 byte.  
 
 Byte có thể dùng để biểu diễn một ký tự, một số, một kênh màu.  
 
-!!! abstract "byte"
+!!! note "byte"
     Đơn vị đo dữ liệu thường dùng là **byte** (B). Ký hiệu: **B**.
 
 <div>
@@ -23,7 +27,7 @@ Byte có thể dùng để biểu diễn một ký tự, một số, một kênh
     <p style="text-align: center; margin: 0">Hình 1: Minh họa 1 byte gồm 8 bit liên tiếp trong bộ nhớ máy tính</p>
 </div>
 
-!!! abstract "Lưu ý về ký hiệu"
+!!! note "Lưu ý về ký hiệu"
     **B** in hoa là byte, **b** thường là bit.  
 
     Kích thước của tập tin và dung lượng của thiết bị lưu trữ thường ghi theo **B** -yte; tốc độ đường truyền mạng thường ghi theo **b** -it.

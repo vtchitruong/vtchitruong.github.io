@@ -96,7 +96,7 @@ It has been under development up until now.
     1. Biết được việc kiểm thử giúp lập trình viên phát hiện lỗi, làm tăng độ tin cậy của chương trình nhưng chưa chứng minh được tính đúng của chương trình.
     2. Trình bày được sơ lược khái niệm độ phức tạp thời gian của thuật toán và phép toán tích cực.
     Nêu được ví dụ minh họa.
-    3. Vận dụng được những qui tắc thực hành xác định độ phức tạp thời gian của một số thuật toán, chương trình đã biết.
+    3. Vận dụng được những quy tắc thực hành xác định độ phức tạp thời gian của một số thuật toán, chương trình đã biết.
 3. Phương pháp làm mịn dần và sử dụng module trong lập trình
     1. Giải thích và vận dụng được phương pháp làm mịn dần trong lập trình.
     2. Giải thích và vận dụng được phương pháp thiết kế chương trình thành các module cho một bài toán cụ thể.

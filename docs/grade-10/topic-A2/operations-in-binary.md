@@ -1,5 +1,9 @@
 # Phép toán trong hệ nhị phân
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày những phép toán dành cho số nhị phân gồm: cộng, nhân, NOT, AND, OR và XOR. 
+
 ## Phép toán số học
 
 Phần này trình bày hai phép toán số học là **cộng** và **nhân**.
@@ -15,7 +19,7 @@ Giá trị của phép cộng và nhân hai bit được thể hiện trong bả
 | 1 | 0 | 1 | 0 |
 | 1 | 1 | 10 | 1 |
 
-!!! abstract "Cộng và nhân hai bit"
+!!! note "Cộng và nhân hai bit"
     Trong hệ nhị phân, phép toán được thực hiện tương tự như cộng và nhân trong hệ thập phân, ngoại trừ $1 + 1 = 10$.
 
 ### Cách thực hiện
@@ -24,7 +28,7 @@ Ta có thể tính toán trên giấy bằng cách xếp các toán hạng[^1] t
 
 [^1]: Toán hạng là số hạng trong phép cộng hoặc thừa số trong phép nhân.
 
-!!! abstract "Cộng và nhân theo hàng dọc"
+!!! note "Cộng và nhân theo hàng dọc"
 
     1. Xếp các toán hạng theo hàng dọc theo hướng từ phải qua trái.
     2. Thực hiện cộng hoặc nhân tương tự như trong hệ thập phân, tức bắt đầu từ hàng đơn vị, rồi hàng chục, hàng trăm, v.v... Các chữ số của kết quả thành phần (đối với phép nhân) và kết quả cuối cùng cũng phải được căn phải và đúng vị trí so với các chữ số của toán hạng.
@@ -55,7 +59,7 @@ Phần này trình bày các phép toán logic gồm: **NOT**, **AND**, **OR** v
 | T | F | F | F | T | T |
 | T | T | F | T | T | F |
 
-!!! abstract "Tóm tắt các phép toán logic"
+!!! note "Tóm tắt các phép toán logic"
 
     - NOT là phép toán phủ định trạng thái hiện có.
     - AND chỉ cho kết quả True khi cả a và b đều True.

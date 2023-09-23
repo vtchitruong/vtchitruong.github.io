@@ -1,5 +1,11 @@
-
 # Biểu diễn dữ liệu trong máy tính
+
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày những nội dung sau:
+    
+    - Hệ nhị phân
+    - Một vài kiểu dữ liệu và ý tưởng biểu diễn chúng trong máy tính
 
 ## Một số kiểu dữ liệu
 
@@ -18,28 +24,34 @@ flowchart TD
 ```
 
 ### Dữ liệu số
-:   Có 2 kiểu số cơ bản:
 
-    - Số nguyên: là số không có phần thập phân.
-    - Số thực: là số có phần thập phân.
+Có 2 kiểu số cơ bản:
 
-    Ví dụ 1:  
+- Số nguyên: là số không có phần thập phân.
+- Số thực: là số có phần thập phân.
+
+:   Ví dụ 1:  
     `7` là số *bảy nguyên*, còn `7.0` là số *bảy thập phân*. Mặc dù đối với người, hai số này là như nhau, song máy tính lưu trữ khác nhau.  
 
 ### Dữ liệu văn bản
-:   Văn bản bao gồm cả *ký tự* lẫn *chuỗi*. Chuỗi là tập hợp gồm không, một hoặc nhiều ký tự.  
-    
-    Trong một số ngôn ngữ lập trình, ký tự thường đặt trong cặp dấu nháy đơn `''`, còn chuỗi đặt trong cặp dấu nháy kép/ngoặc kép `""`.  
 
-    Ví dụ 2:  
+Văn bản bao gồm cả *ký tự* lẫn *chuỗi*. Chuỗi là tập hợp gồm không, một hoặc nhiều ký tự.  
+    
+Trong một số ngôn ngữ lập trình, ký tự thường đặt trong cặp dấu nháy đơn `''`, còn chuỗi đặt trong cặp dấu nháy kép/ngoặc kép `""`.  
+
+:   Ví dụ 2:  
     `'7'` là ký tự, `"7"` là chuỗi gồm một ký tự. Cả ký tự lẫn chuỗi đều không thể tham gia các phép toán cộng, trừ, nhân, chia. Muốn tham gia tính toán, lập trình viên phải chuyển đổi kiểu dữ liệu từ kiểu văn bản sang kiểu số.  
 
-    Một số ngôn ngữ lập trình khác, trong đó có Python, dùng dấu nháy đơn hay nháy kép đều được xem là chuỗi.
+Một số ngôn ngữ lập trình khác, trong đó có Python, dùng dấu nháy đơn hay nháy kép đều được xem là chuỗi.
 
 ### Yếu tố môi trường
-:   Đây là tên gọi chung cho các dữ liệu liên quan đến môi trường tự nhiên xung quanh, bao gồm dữ liệu mang tính vật lý, hóa học và sinh học, chẳng hạn: ánh sáng, nhiệt độ, gia tốc, vị trí, góc quay, hướng, dữ liệu sinh trắc (vân tay, tròng mắt, v.v...).
 
-    Dữ liệu yếu tố môi trường được máy tính thu thập thông qua các thiết bị gọi là *cảm biến*.  
+Đây là tên gọi chung cho các dữ liệu liên quan đến môi trường tự nhiên xung quanh, bao gồm dữ liệu mang tính vật lý, hóa học và sinh học.
+
+:   Ví dụ 3:  
+    Những dữ liệu môi trường mà máy tính đã có thể lưu trữ và xử lý: ánh sáng, nhiệt độ, gia tốc, vị trí, góc quay, hướng, dữ liệu sinh trắc (vân tay, tròng mắt, v.v...).
+
+Dữ liệu yếu tố môi trường được máy tính thu thập thông qua các thiết bị gọi là *cảm biến*.  
 
 ## Hệ nhị phân
 
@@ -82,16 +94,16 @@ ASCII (American Standard Code for Information Interchange) là một trong nhữ
 
 ASCII sử dụng 8 bit để mã hóa một ký tự, và do đó, nó có thể mã hóa tối đa $2^8 = 256$ ký tự.  
 
-Ví dụ 3:  
+:   Ví dụ 4:  
 
-| Số thứ tự | Ký tự | Mã nhị phân |
-| --- | --- | --- |
-| 13 | Phím Enter | 00001101 |
-| 32 | Khoảng trắng | 00100000 |
-| 65 | A | 01000001 |
-| 97 | a | 01100001 |
+    | Số thứ tự | Ký tự | Mã nhị phân |
+    | --- | --- | --- |
+    | 13 | Phím Enter | 00001101 |
+    | 32 | Khoảng trắng | 00100000 |
+    | 65 | A | 01000001 |
+    | 97 | a | 01100001 |
 
-Bạn có thể tra cứu bảng mã ASCII tại [www.ascii-code.com](https://www.ascii-code.com/){:target="_blank"}.  
+    Bạn có thể tra cứu bảng mã ASCII tại [www.ascii-code.com](https://www.ascii-code.com/){:target="_blank"}.  
 
 #### Unicode
 
@@ -123,13 +135,13 @@ Có nhiều kỹ thuật mã hóa khác nhau (dẫn đến có nhiều định d
 
 Trong hệ màu RGB, màu sắc của mỗi pixel là sự kết hợp của ba kênh màu <span style="color: #f00">Red</span>, <span style="color: #0f0">Green</span> và <span style="color: #00f">Blue</span>. Cường độ của mỗi kênh màu được thể hiện bằng một số nguyên **từ 0 đến 255**.  
 
-Ví dụ 4:  
+:   Ví dụ 5:
 
-| Giá trị RGB | Màu |
-| --- | --- |
-| (255, 0, 0) | <span style="background-color: #f00; color: #fff">Đỏ</span> |
-| (255, 255, 0) | <span style="background-color: #ff0; color: #fff"">Vàng</span> |
-| (255, 0, 255) | <span style="background-color: #f0f; color: #fff"">Tím</span> |
+    | Giá trị RGB | Màu |
+    | --- | --- |
+    | (255, 0, 0) | <span style="background-color: #f00; color: #fff">Đỏ</span> |
+    | (255, 255, 0) | <span style="background-color: #ff0; color: #fff"">Vàng</span> |
+    | (255, 0, 255) | <span style="background-color: #f0f; color: #fff"">Tím</span> |
 
 [^4]: pixel = **pic**-ture **el**-ement.
 
@@ -141,15 +153,15 @@ Ví dụ 4:
 
 Giá trị màu của RGB còn có thể được thể hiện bằng **hệ thập lục phân**. Cụ thể, mỗi màu được ghi bằng một chuỗi, bắt đầu bằng ký tự dấu thăng `#`, theo sau đó là 6 chữ số thuộc hệ thập lục phân.
 
-Ví dụ 5:
+:   Ví dụ 6:
 
-| Giá trị màu trong hệ thập phân | Màu | Giá trị màu trong hệ thập lục phân |
-| --- | --- | --- |
-| (255, 0, 0) | <span style="background-color: #f00; color: #fff">Đỏ</span> | #FF0000 |
-| (255, 255, 0) | <span style="background-color: #ff0; color: #fff"">Vàng</span> | #FFFF00 |
-| (255, 0, 255) | <span style="background-color: #f0f; color: #fff"">Tím</span> | #FF00FF |
+    | Giá trị màu trong hệ thập phân | Màu | Giá trị màu trong hệ thập lục phân |
+    | --- | --- | --- |
+    | (255, 0, 0) | <span style="background-color: #f00; color: #fff">Đỏ</span> | #FF0000 |
+    | (255, 255, 0) | <span style="background-color: #ff0; color: #fff"">Vàng</span> | #FFFF00 |
+    | (255, 0, 255) | <span style="background-color: #f0f; color: #fff"">Tím</span> | #FF00FF |
 
-??? abstract "Hệ màu RGB"
+??? note "Hệ màu RGB"
     Giá trị của mỗi kênh màu là từ 0 đến 255, đồng nghĩa mỗi kênh màu chiếm 8 bit bộ nhớ. Như vậy, độ sâu màu của hệ màu RGB là $8 + 8 + 8 = 24$ bit.  
 
     Cũng vì mỗi kênh màu có 256 giá trị, nên số lượng màu mà RGB có thể mã hóa là $256 \times 256 \times 256 = 16,777,216$ màu.  
@@ -175,8 +187,8 @@ Trong hình 3, màu xanh là đường biểu diễn sóng âm, màu đỏ là �
 
 :   Là số lượng bit được dùng để lưu trữ một mẫu. Số lượng bit càng nhiều thì âm thanh càng rõ, càng chất lượng.
 
-Ví dụ 6:  
-Một file nhạc mp3 có bit rate 320 kbps[^5] thì có chất lượng âm thanh tốt hơn file có bit rate 128 kbps.   
+:   Ví dụ 7:  
+    Một file nhạc mp3 có bit rate 320 kbps[^5] thì có chất lượng âm thanh tốt hơn file có bit rate 128 kbps.   
 
 [^5]: kbps = kilobit per second
 
