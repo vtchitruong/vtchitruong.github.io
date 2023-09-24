@@ -65,7 +65,7 @@ Một vài đặc tính của thiết bị thông minh là:
 !!! note "Thiết bị số và thiết bị thông minh"
     Một vật là thiết bị số thì không chắc nó là thiết bị thông minh. Nhưng một thiết bị thông minh chắc chắn là thiết bị số.
     
-    Nói cách khác, tập hợp thiết bị thông minh là tập con của tập hợp thiết bị số thiết bị số.
+    Nói cách khác, tập hợp thiết bị thông minh là tập con của tập hợp thiết bị số.
 
 ## Những ưu điểm của thiết bị số
 
@@ -84,7 +84,7 @@ Thiết bị số:
 
 ### Về mặt xử lý
 
-Thiết bị số, đặc biệt là máy tính, có khả năng xử lý chinh xác và nhanh chóng.  
+Thiết bị số, đặc biệt là máy tính, có khả năng xử lý chính xác và nhanh chóng.  
 
 Các sai sót, nếu có, là do những yếu tố khách quan, chẳng hạn như dữ liệu đầu vào hoặc thao tác của người dùng.  
 
