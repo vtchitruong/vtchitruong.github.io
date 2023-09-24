@@ -1,5 +1,13 @@
 # Mạng máy tính
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày những khái niệm liên quan đến mạng máy tính:
+    
+    - Khái niệm về mạng cục bộ và mạng diện rộng
+    - Những điểm khác nhau giữa mạng cục bộ và Internet
+    - Vai trò của Internet đối với xã hội
+
 ### Mạng cục bộ
 
 **Mạng cục bộ** là mạng gồm các máy tính và thiết bị kết nối với nhau trong phạm vi địa lý giới hạn, chẳng hạn như gia đình, cơ quan, trường học, một tòa nhà hoặc một nhóm các tòa nhà cạnh nhau.  

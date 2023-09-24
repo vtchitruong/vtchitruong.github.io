@@ -1,5 +1,9 @@
 # Cấu trúc lặp while
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày vòng lặp while.
+
 ## Đặt vấn đề
 Lệnh `for` thường được viết như sau:  
 
@@ -18,123 +22,120 @@ Câu trả lời là sử dụng vòng lặp `while`.
 ## Khái niệm
 Câu lệnh `while` là câu lệnh lặp, áp dụng cho trường hợp người lập trình **không biết trước số lần lặp** của các thao tác liên quan.  
 
-Ví dụ 1:  
-Xét tình huống chia số nguyên dương *n* cho 2 nhiều lần, cho đến khi không còn chia được nữa (thương bằng 0).  
-Vì *n* là do người dùng nhập vào tùy ý, nên ta không thể biết trước thao tác chia cho 2 sẽ được thực hiện bao nhiêu lần.  
+:   Ví dụ 1:  
+    Xét tình huống chia số nguyên dương *n* cho 2 nhiều lần, cho đến khi không còn chia được nữa (thương bằng 0).  
+    Vì *n* là do người dùng nhập vào tùy ý, nên ta không thể biết trước thao tác chia cho 2 sẽ được thực hiện bao nhiêu lần.  
 
-## Cú pháp lệnh while
+## Câu lệnh while
 
-``` py 
-while điều_kiện:
-    lệnh_1
-    lệnh_2
-    ...
-    lệnh_n
-```
+!!! note "Cú pháp"
+    ``` py 
+    while điều_kiện:
+        lệnh_1
+        lệnh_2
+        ...
+        lệnh_n
+    ```
 
 Giải thích:  
+
 - Khi chương trình chạy đến lệnh `while`, chương trình sẽ kiểm tra biểu thức `điều_kiện`. Nếu `điều_kiện` là `True`, thì `lệnh_1 ... lệnh n` sẽ được thực hiện lần thứ nhất.  
 - Tiếp đó, chương trình *quay lại* kiểm tra `điều_kiện` lần nữa. Nếu `điều_kiện` vẫn là `True`, thì `lệnh_1 ... lệnh n` sẽ được thực hiện lần thứ hai.  
 - Cứ thế, `lệnh 1 ... lệnh n` được lặp đi lặp lại nhiều lần, cho đến khi `điều_kiện` là `False` thì dừng.  
-- Diễn nôm là, *trong khi* (while) còn đúng thì còn  làm.   
+- Nói cách khác, *"trong khi"* còn đúng thì còn làm.   
 
-Ví dụ 2:  
-Đoạn mã sau minh họa vòng lặp while. Trong đó, biểu thức điều kiện `i < n` là `True` nên lệnh `print` được lặp.  
-Hơn thế nữa, vì điều kiện này luôn `True`, nên lệnh `print` được lặp vô tận, vô số lần.  
+:   Ví dụ 2:  
+    Đoạn mã sau minh họa vòng lặp while. Trong đó, biểu thức điều kiện `i < n` là `True` nên lệnh `print` được lặp.  
+    Hơn thế nữa, vì điều kiện này luôn `True`, nên lệnh `print` được lặp vô tận, vô số lần.
+    ``` py linenums="1"
+    n = 10
+    i = 1
+    while i < n:
+        print('Coding is absolutely fun.')
+    ```
 
-``` py linenums="1"
-n = 10
-i = 1
-while i < n:
-    print('Coding is absolutely fun.')
-```
-
-!!! warning
-    Do đó, hãy cẩn thận khi bấm nút Run. Tác giả chỉ code minh họa, chứ *ảnh* không tin lắm vào độ can đảm của bạn. 
+    !!! warning
+        Do đó, hãy cẩn thận khi bấm nút Run. Tác giả chỉ code minh họa, chứ *ảnh* không tin lắm vào độ can đảm của bạn. 
 
 Để vòng lặp while dừng lại sau một số lần lặp nào đó, ta phải làm cho biểu thức điều kiện trở thành `False`.  
 Một trong những cách thường dùng là chèn thêm lệnh để thay đổi biến `i`.  
 
-Ví dụ 2 bis:  
-Chèn thêm lệnh tăng biến `i` để điều kiện bị `False`.  
+:   Ví dụ 2 bis:  
+    Chèn thêm lệnh tăng biến `i` để điều kiện bị `False`.
+    ``` py linenums="1" hl_lines="5"
+    n = 10
+    i = 1
+    while i < n:
+        print('Coding is absolutely fun.')
+        i = i + 1
+    ```
 
-``` py linenums="1" hl_lines="5"
-n = 10
-i = 1
-while i < n:
-    print('Coding is absolutely fun.')
-    i = i + 1
-```
+    Output:
+    ``` pycon
+    Coding is absolutely fun.
+    Coding is absolutely fun.
+    Coding is absolutely fun.
+    Coding is absolutely fun.
+    Coding is absolutely fun.
+    Coding is absolutely fun.
+    Coding is absolutely fun.
+    Coding is absolutely fun.
+    Coding is absolutely fun.
+    ```
 
-Output:  
-``` pycon
-Coding is absolutely fun.
-Coding is absolutely fun.
-Coding is absolutely fun.
-Coding is absolutely fun.
-Coding is absolutely fun.
-Coding is absolutely fun.
-Coding is absolutely fun.
-Coding is absolutely fun.
-Coding is absolutely fun.
-```
+    Trong ví dụ 2bis, mỗi lần `print` xong, biến `i` lại tăng thêm 1 đơn vị. Khi `i` tăng đến 10, biểu thức `i < n` sẽ bị `False` (vì 10 < 10 là sai quá sai!!!), vòng lặp kết thúc.  
 
-Trong ví dụ 2bis, mỗi lần `print` xong, biến `i` lại tăng thêm 1 đơn vị. Khi `i` tăng đến 10, biểu thức `i < n` sẽ bị `False` (vì 10 < 10 là sai quá sai!!!), vòng lặp kết thúc.  
+:   Ví dụ 3:  
+    Đoạn mã tính tổng $S = 1 + 2 + 3 + ... + n$ đã được viết bằng `for` ở bài trước như sau:
+    ``` py linenums="1"
+    S = 0
+    for i in range(n + 1):
+        S = S + i
+    ```
 
-Ví dụ 3:  
-Đoạn mã tính tổng $S = 1 + 2 + 3 + ... + n$ đã được viết bằng `for` ở bài trước như sau:  
+    Đoạn mã này có thể được viết lại bằng `while` như sau:
+    ``` py linenums="1"
+    n = int(input('Nhập n: '))
 
-``` py linenums="1"
-S = 0
-for i in range(n + 1):
-    S = S + i
-```
+    S = 0             # Khởi tạo biến S bằng 0
+    i = 1
+    while i < n + 1:  # Trong khi i vẫn nhỏ hơn n + 1, thì lặp các thao tác:
+        S = S + i     # Cộng dồn i vào S
+        i = i + 1     # Tăng i thêm 1
 
-Đoạn mã này có thể được viết lại bằng `while` như sau:  
+    print('Tổng là', S)
+    ```
 
-``` py linenums="1"
-n = int(input('Nhập n: '))
-
-S = 0             # Khởi tạo biến S bằng 0
-i = 1
-while i < n + 1:  # Trong khi i vẫn nhỏ hơn n + 1, thì lặp các thao tác:
-    S = S + i     # Cộng dồn i vào S
-    i = i + 1     # Tăng i thêm 1
-
-print('Tổng là', S)
-```
-
-Output:  
-``` pycon
-Nhập n: 10
-Tổng là 55
-```
+    Output:
+    ``` pycon
+    Nhập n: 10
+    Tổng là 55
+    ```
 
 ## Lệnh break
 
 Lệnh `break` dùng để ngắt vòng lặp, ngay cả khi biểu thức điều kiện vẫn còn `True`.  
 
-Ví dụ 4:
+:   Ví dụ 4:
+    ``` py linenums="1" hl_lines="5 6"
+    n = 10
+    i = 1
+    while i < n:
+        print(i)
+        if i == 4:  # Khi i đạt đến 4
+            break   # thì ngắt vòng lặp
+        i = i + 1
+    ```
 
-``` py linenums="1" hl_lines="5 6"
-n = 10
-i = 1
-while i < n:
-    print(i)
-    if i == 4:  # Khi i đạt đến 4
-        break   # thì ngắt vòng lặp
-    i = i + 1
-```
+    Output:
+    ``` pycon
+    1
+    2
+    3
+    4
+    ```
 
-Output:  
-``` pycon
-1
-2
-3
-4
-```
-
-!!! note
+!!! note "Lưu ý"
     Lệnh `break` cũng sử dụng được trong vòng lặp `for`.  
 
 ??? note "Nhận xét"
