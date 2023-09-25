@@ -55,6 +55,7 @@ Trong đó:
         print('Programming is my most favorite subject.')
     ```
     !!! warning
+        
         Tác giả chỉ code minh họa, và *ảnh* không nghĩ rằng bạn sẽ bấm *run* cái ví dụ này đâu.
 
 ## Lệnh range(n)
