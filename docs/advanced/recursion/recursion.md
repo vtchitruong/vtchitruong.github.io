@@ -70,7 +70,6 @@ Phân tích cụ thể như sau:
 - Hàm `factorial(2)` sẽ gọi đệ quy hàm `factorial(1)`.
 - Hàm `factorial(1)` không gọi đệ quy nữa, mà sẽ trả về giá trị là 1.
 
-
 Hàm `factorial` được viết như sau:
 
 ``` py linenums="1"
@@ -82,6 +81,10 @@ def factorial(n):
     # Trường hợp đệ quy
     return factorial(n - 1) * n
 ```
+
+## Google Colab
+
+Chương trình đầy đủ của các bài toán ví dụ được đặt trên <a href="https://colab.research.google.com/drive/14yRy1G-tFj5Fov1NgeT8_V8qtWGDPeaQ?usp=sharing" target="_blank">Google Colab</a> để người học có thể chạy và thử nghiệm chương trình của riêng mình. 
 
 ## Some English words
 
