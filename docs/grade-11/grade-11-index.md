@@ -57,7 +57,7 @@ It has been under development up until now.
 #### F.1. Cơ sở dữ liệu
     
 1. Giới thiệu các hệ cơ sở dữ liệu
-    1. Nhận biết được nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lí
+    1. Nhận biết được nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý
 	2. Diễn đạt được khái niệm hệ cơ sở dữ liệu, các khái niệm cơ bản trong mô hình cơ sở dữ liệu quan hệ như quan hệ (bảng), khóa, khóa ngoài, truy vấn, cập nhật dữ liệu, v.v...
 	3. Nêu được những khái niệm cơ bản của hệ cơ sở dữ liệu. Giải thích được các khái niệm đó qua ví dụ minh họa.
 	4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
@@ -106,9 +106,43 @@ It has been under development up until now.
     2. Tạo được một thư viện nhỏ và viết được chương trình có sử dụng thư viện vừa tạo ra.
     3. Viết được chương trình vận dụng những kiến thức tích hợp liên môn để giải quyết vấn đề.
 
+## Phần riêng dành cho ICT
+
+### Chủ đề E. Phần mềm chỉnh sửa ảnh và làm video
+
+#### E.1. Chỉnh sửa ảnh, tạo ảnh động
+
+Thực hiện được các thao tác xử lý ảnh cơ bản: cắt, phóng to, thu nhỏ, di chuyển, tẩy xóa ảnh và tạo ảnh động.
+
+#### E.2. Làm phim hoạt hình, video
+
+1. Tạo được các đoạn phim, nhập tư liệu từ ảnh và video có sẵn, biên tập được đoạn phim phục vụ học tập và giải trí.
+2. Sử dụng được một số công cụ cơ bản biên tập phim: chỉnh sửa hình ảnh, âm thanh, tạo phụ đề, tạo các hiệu ứng chuyển cảnh, căn chỉnh thời gian.
+3. Tạo được đoạn phim hoạt hình từ ảnh, có hội thoại giữa các nhân vật và có phụ đề.
+
+### Chủ đề F
+
+#### F.1. Cơ sở dữ liệu
+
+1. Thực hành tạo và cập nhật cơ sở dữ liệu
+
+    Thực hiện được việc tạo lập cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ Quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
+
+    1. Tạo được các bảng và chỉ định được khoá cho mỗi bảng, thiết lập được mối quan hệ giữa các bảng qua việc chỉ định khoá ngoài.
+    2. Thực hiện được việc cập nhật cơ sở dữ liệu.
+    3. Nêu được một vài tổ chức cần ứng dụng cơ sở dữ liệu để quản lý hoạt động của mình.
+    4. Thể hiện được tính cẩn thận, chăm chỉ, trách nhiệm trong việc lưu trữ và quản lý dữ liệu.
+
+2. Thực hành khai thác cơ sở dữ liệu
+
+    Thực hiện được việc khai thác thông tin trong cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
+
+    1. Sử dụng được các truy vấn để tìm kiếm và kết xuất thông tin từ cơ sở dữ liệu.
+    2. Nêu được một vài nhận xét so sánh kết quả bài thực hành với một phần mềm quản lý do giáo viên giới thiệu hoặc đã từng biết.
+    3. Giải thích được tính ưu việt của việc quản lý dữ liệu một cách khoa học nhờ ứng dụng cơ sở dữ liệu.
+    4. Tìm hiểu được thêm một vài chức năng của hệ quản trị cơ sở dữ liệu.
 
 
-
-
+*Chủ đề F.2. là phần riêng dành cho CS.*
 
 

@@ -217,6 +217,7 @@ nav:
     - grade-12/grade-12-index.md
   - Nâng cao:
     - advanced/advanced-index.md
+    - advanced/recursion/recursion.md
     - Đồ thị:
       - DFS: advanced/graph/dfs.md
       - BFS: advanced/graph/bfs.md
