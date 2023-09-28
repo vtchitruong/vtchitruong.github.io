@@ -176,3 +176,7 @@ table tr:nth-child(2n) {
     margin-bottom: 0.8rem;
     border-radius: 15px;
 }
+
+div.language-markmap.mkdocs-markmap  {
+    border: none;
+}

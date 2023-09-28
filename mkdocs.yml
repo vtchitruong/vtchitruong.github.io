@@ -167,8 +167,24 @@ extra_javascript:
   - javascripts/feedback.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - https://unpkg.com/d3@7/dist/d3.min.js
+  # - https://unpkg.com/markmap-lib@0.15.3/dist/browser/index.js
+  # - https://unpkg.com/markmap-view@0.15.3/dist/browser/index.js
+  - javascripts/markmap-d3.js
+  - javascripts/markmap-lib.js
+  - javascripts/markmap-view.js
+
 extra_css:
   - stylesheets/extra.css
+
+plugins:
+  - markmap:
+      base_path: docs
+      encoding: utf-8
+      file_extension: .mm.md
+      d3_version: '3.6.0'
+      lib_version: 0.15.3
+      view_version: 0.15.3
 
 # Page tree
 nav:
@@ -189,6 +205,7 @@ nav:
     - Chủ đề B:
       - grade-10/topic-B/computer-network.md
     - Chủ đề E:
+      - grade-10/topic-E/graphics-editor.md
       - grade-10/topic-E/vietnam-flag.md
     - Chủ đề F:
       - grade-10/topic-F/conditional-statement-if.md
@@ -215,6 +232,7 @@ nav:
       - grade-11/topic-F2/algorithmic-complexity.md
   - Lớp 12:
     - grade-12/grade-12-index.md
+    - grade-12/mindmaptest.mm.md
   - Nâng cao:
     - advanced/advanced-index.md
     - advanced/recursion/recursion.md
