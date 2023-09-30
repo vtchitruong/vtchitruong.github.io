@@ -85,7 +85,7 @@ Vì chuỗi cũng là danh sách, nên chuỗi có những đặc điểm tươn
     ```
 
 :   Ví dụ 4:  
-    In chuỗi trên cùng một dòng, các ký tự cách nhau bởi khoẳng trắng.
+    In chuỗi trên cùng một dòng, các ký tự cách nhau bởi khoảng trắng.
     ``` py linenums="1"
     s = 'Lê Quý Đôn'
     print(*s, sep=' ')

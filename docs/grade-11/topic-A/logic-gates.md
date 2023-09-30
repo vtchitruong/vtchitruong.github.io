@@ -26,7 +26,7 @@ Cổng NOT có một đầu vào và một đầu ra, dùng để đảo ngượ
 
 Ký hiệu:  
 
-![NOT Gate Symbol](../topic-A/logic-gates/not.svg)
+![NOT Gate Symbol](logic-gates/not.svg)
 
 Bảng chân trị:
 
@@ -41,7 +41,7 @@ Cổng AND có hai đầu vào và một đầu ra, tạo ra tín hiệu `1` khi
 
 Ký hiệu:  
 
-![AND Gate Symbol](../topic-A/logic-gates/and.svg)
+![AND Gate Symbol](logic-gates/and.svg)
 
 Bảng chân trị:
 
@@ -58,7 +58,7 @@ Cổng OR có hai đầu vào và một đầu ra, tạo ra tín hiệu `1` khi 
 
 Ký hiệu:  
 
-![OR Gate Symbol](../topic-A/logic-gates/or.svg)
+![OR Gate Symbol](logic-gates/or.svg)
 
 Bảng chân trị:
 
@@ -75,7 +75,7 @@ Cổng XOR có hai đầu vào và một đầu ra, tạo ra tín hiệu `1` khi
 
 Ký hiệu:  
 
-![XOR Gate Symbol](../topic-A/logic-gates/xor.svg)
+![XOR Gate Symbol](logic-gates/xor.svg)
 
 Bảng chân trị:
 
@@ -92,7 +92,7 @@ Cổng NAND là kết hợp cổng AND và cổng NOT, tạo ra kết quả đ�
 
 Ký hiệu:  
 
-![NAND Gate Symbol](../topic-A/logic-gates/nand.svg)
+![NAND Gate Symbol](logic-gates/nand.svg)
 
 Bảng chân trị:
 
@@ -109,7 +109,7 @@ Cổng NOR là kết hợp cổng OR và cổng NOT, tạo ra kết quả đảo
 
 Ký hiệu:  
 
-![NOR Gate Symbol](../topic-A/logic-gates/nor.svg)
+![NOR Gate Symbol](logic-gates/nor.svg)
 
 Bảng chân trị:
 
@@ -119,6 +119,11 @@ Bảng chân trị:
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |
 | 1 | 1 | 0 |
+
+### Tóm tắt các cổng logic
+
+{!grade-11/topic-A/logic-gates/logic-gates.mm.md!}
+Hình 1. Sơ đồ tóm tắt các cổng logic
 
 ## Vai trò của các cổng logic
 

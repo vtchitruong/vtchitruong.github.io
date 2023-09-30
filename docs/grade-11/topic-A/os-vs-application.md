@@ -53,9 +53,14 @@ Phần cứng trước khi hoạt động được thì phải được hệ đi
 Hình sau thể hiện mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng. Các mũi tên thể hiện hướng tương tác qua lại giữa các đối tượng này.  
 
 <div style="text-align: center">
-    <iframe height="325px" frameBorder=0 src="../os-vs-application/os-vs-application.html"></iframe>
+    <iframe height="325px" frameBorder=0 src="../softwares/os-vs-application.html"></iframe>
     <p style="text-align: center; margin: 0">Hình 1. Sơ đồ thể hiện mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng</p>
 </div>
+
+## Sơ đồ tóm tắt nội dung
+
+{!grade-11/topic-A/softwares/os-vs-application.mm.md!}
+Hình 2. Sơ đồ phân loại phần mềm
 
 ## Some English words
 

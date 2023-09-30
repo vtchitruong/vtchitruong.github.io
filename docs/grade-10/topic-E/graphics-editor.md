@@ -1,5 +1,11 @@
 # Phần mềm đồ họa
 
+# Lesson title
+
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày những nội dung xoay quanh hai loại đồ họa là bitmap và vector.
+
 ## Khái quát
 
 Phần mềm đồ họa là công cụ dùng để sáng tạo, hiệu chỉnh và xử lý các đối tượng hình ảnh kỹ thuật số.
@@ -29,9 +35,10 @@ Hình sau thể hiện một vài phần mềm đồ họa phổ biến ở Vi�
 
 {!grade-10/topic-E/graphics-editor.mm.md!}
 
+## Some English words
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
-| phần mềm đồ họa | graphics editor |
 | hình minh họa | illustration |
 | kiểu chữ | typography |
+| phần mềm đồ họa | graphics editor |

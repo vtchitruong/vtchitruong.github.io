@@ -148,6 +148,11 @@ Hình 6. GPU của NVIDIA[^6]
 
 [^6]: Hình lấy tại [Nvidia](https://www.nvidia.com/en-us/geforce/news/geforce-rtx-founders-graphics-card-breakdown){:target="_blank"}.
 
+## Sơ đồ tóm tắt nội dung
+
+{!grade-11/topic-A/hardwares/hardwares.mm.md!}
+Hình 7. Sơ đồ phân loại phần cứng theo bên trong và bên ngoài
+
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 

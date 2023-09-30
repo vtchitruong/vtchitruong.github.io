@@ -91,6 +91,6 @@ Phần này trình bày các phép toán logic gồm: **NOT**, **AND**, **OR** v
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
 | phép toán logic | logical operation |
-| phép toán số học | arithmetich operation |
+| phép toán số học | arithmetic operation |
 | toán hạng | operand |
 | toán tử (ví dụ: `+`, `&#215`, `AND`, `OR`, v.v...) | operator |

@@ -61,11 +61,15 @@ Một số giấy phép mã nguồn mở thông dụng là: GNU General Public L
 
 ## Phân biệt các loại phần mềm
 
+### Phân loại phần mềm
+
 Khi phân loại theo phương thức chuyển giao sử dụng, phần mềm được chia làm ba loại:  
 
 - Phần mềm thương mại
 - Phần mềm mã nguồn mở
 - Phần mềm miễn phí 
+
+### So sánh các loại phần mềm
 
 Bảng sau so sánh một số đặc điểm của ba loại phần mềm này:  
 
@@ -76,7 +80,7 @@ Bảng sau so sánh một số đặc điểm của ba loại phần mềm này:
 | Giấy phép sử dụng | Giấy phép độc quyền | Các loại phép mã nguồn mở | Không có giấy phép |
 | Quyền của người dùng | Được/bị ràng buộc bởi các điều khoản trong End-User License Agreement (EULA). | Tự do xem, bổ sung và phân phối lại mã nguồn theo điều khoản của giấy phép mã nguồn mở. | Tùy theo điều khoản của nhà phát triển.  |
 | Phát triển và sở hữu | Thường do một công ty phát triển và bảo trì.</br>Quy trình phát triển do công ty kiểm soát. | Có thể do cộng đồng phát triển.<br/>Quy trình phát triển cho phép bất kỳ ai cũng có thể đóng góp. | Quy trình phát triển do nhà phát triển kiểm soát. |  
-| Mã nguồn | Thường không công khai | Được công khai, cho phép truy xuất | Thường không công khai | 
+| Mã nguồn | Thường không công khai | Được công khai, cho phép truy xuất | Không công khai | 
 | Chi phí | Có phí sử dụng theo nhiều hình thức khác nhau. | Miễn phí khi tải và sử dụng. Người dùng phải trả phí thêm cho những yêu cầu khác. | Miễn phí khi tải và sử dụng. |
 | Hỗ trợ kỹ thuật | Người dùng được hỗ trợ chính thức từ nhà phát triển hoặc đại lý. | Người dùng được cộng đồng hỗ trợ thông qua các tài liệu hoặc diễn đàn trực tuyến. Một số sự hỗ trợ từ nhà phát triển có thể tốn phí. | Thường rất ít hoặc không có. |
 | Khả năng tùy biến | Giới hạn trong Settings do nhà phát triển cung cấp sẵn. | Mở rộng, tùy biến được cả mã nguồn. | Rất hạn chế. |
@@ -89,8 +93,7 @@ Mỗi loại phần mềm đều có những ưu điểm và hạn chế riêng.
 ??? success "Tản mạn về chữ free"
     Chữ **free** trong giấy phép GNU của phần mềm mã nguồn mở mang ý nghĩa tự do (freedom), đề cao quyền tự do xem, sử dụng, bổ sung và phân phối lại mã nguồn. Trong khi đó, chữ **free** của *freeware* mang ý nghĩa miễn phí (free of charge, no cost). Cho nên, dịch *freeware* là *phần mềm tự do* e là không ổn.
 
-
-Ví dụ cụ thể được nêu trong bảng dưới đây.  
+### Ví dụ phần mềm trong mỗi loại  
 
 *Bảng 2. Tên các phần mềm thương mại, mã nguồn mở và miễn phí có cùng tính năng*  
 
@@ -106,6 +109,13 @@ Ví dụ cụ thể được nêu trong bảng dưới đây.
 
 !!! note "Lưu ý"
     Một số phần mềm có cả phiên bản miễn phí với tính năng cơ bản lẫn phiên bản có phí với tính năng nâng cao.
+
+## Sơ đồ tóm tắt nội dung
+
+{!grade-11/topic-A/softwares/softwares.mm.md!}
+Hình 1. Sơ đồ phân loại phần mềm
+
+## Some English words
 
 | Vietnamese | Tiếng Anh |
 | --- | --- |
