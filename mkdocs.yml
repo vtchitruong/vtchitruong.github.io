@@ -59,8 +59,9 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.png
-  icon:
-    logo: logo
+  # icon:    
+  #   logo: logo
+  logo: assets/mr-school-logo.png 
 
 # Customization
 extra:
@@ -133,8 +134,8 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
       emoji_index: !!python/name:materialx.emoji.twemoji
       # options:
-        # custom_icons:
-        #   - overrides/.icons
+      #   custom_icons:
+      #     - overrides/.icons
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
