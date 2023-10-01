@@ -40,7 +40,7 @@ Hình 2 minh họa một góc nhỏ của mạng Internet[^1].
 
 Mặc dù một phần nào đó của Internet có thể được quản lý bởi một công ty, một tổ chức hoặc một quốc gia, nhưng về cơ bản, Internet là công cộng mà bất kỳ ai cũng có thể truy cập vào, với những quyền nhất định nào đó.  
 
-Internet hỗ trợ nhiều hình thức kết nối với tốc độ truyền dẫn từ thấp đến cao, trong đó cáp quang là phương tiện truyền dẫn tốc độ cao và có băng thông rộng. 
+Internet hỗ trợ nhiều hình thức kết nối với tốc độ truyền dẫn từ thấp đến cao, trong đó cáp quang là phương tiện truyền dẫn tốc độ cao và có băng thông rộng.  
 
 Internet được thiết kế hướng đến sự đảm bảo cho kết nối liên tục và tin cậy. Đó là vì, Internet sử dụng kiến trúc phân tán với nhiều tuyến di chuyển của dữ liệu và các kết nối dự phòng, đảm bảo cho dữ liệu luôn đến được đích ngay cả khi một số đường mạng bị gián đoạn.  
 
@@ -49,11 +49,12 @@ Internet được thiết kế hướng đến sự đảm bảo cho kết nối
 | Đặc điểm | Mạng cục bộ | Mạng Internet |
 | --- | --- | --- |
 | Phạm vi kết nối | Phủ được phạm vi nhỏ, giới hạn | Mở rộng ra toàn cầu |
+| Phương tiện kết nối | - Cáp Ethernet <br/> - Sóng WiFi | - Cáp quang <br/> - Vệ tinh | 
 | Quy mô | Số lượng máy tính và thiết bị giới hạn. Khả năng mở rộng cũng giới hạn. | Quy mô lớn hơn nhiều và có thể mở rộng, cho phép gia tăng số lượng máy tính và thiết bị kết nối vào. |
 | Sở hữu | Thuộc sở hữu một cá nhân, một tổ chức. | Không thuộc sở hữu của bất kỳ ai. |
 | Khả năng truy cập | Chỉ những người trong cùng tổ chức mới được truy cập. | Bất kỳ ai cũng có thể truy cập. |
 | Việc quản lý | Được quản lý bởi chủ sở hữu | Được quản lý bởi các thực thể khác nhau, bao gồm các nhà cung cấp dịch vụ Internet, các tổ chức, các quốc gia. |
-| Mục đích | Chủ yếu để chia sẻ file, dùng chung máy in, chia sẻ kết nối ra Internet. | Dùng để truy cập các website, các dịch vụ trực tuyến, giao tiếp với nhau với khoảng cách xa. | 
+| Ứng dụng | Chủ yếu để chia sẻ file, dùng chung máy in, chia sẻ kết nối ra Internet. | Dùng để truy cập các website, các dịch vụ trực tuyến, giao tiếp với nhau với khoảng cách xa. | 
 | Bảo mật | Thường dễ bảo mật hơn. | Thách thức về bảo mật là lớn hơn do tính mở và khả năng truy cập trên toàn cầu. |
 
 ## Vai trò của Internet đối với xã hội
@@ -93,6 +94,11 @@ Internet là phát minh mạng tính cách mạng, có tác động sâu sắc �
 Song hành với những lợi ích trên, Internet cũng tạo ra những thách thức lớn như quyền riêng tư, an ninh và an toàn thông tin, *khoảng cách số*[^3].
 
 [^3]:   *Khoảng cách số* đề cập đến sự chênh lệch trong việc tiếp cận và sử dụng công nghệ số giữa các cá nhân, cộng đồng hoặc lãnh thổ. Sự chênh lệch này bắt nguồn từ sự bất bình đẳng liên quan đến khả năng tiếp cận công nghệ, hiểu biết về kỹ thuật số và khả năng tận dụng hiệu quả các nguồn tài nguyên số.
+
+## Sơ đồ tóm tắt nội dung
+
+{!grade-10/topic-B/network/network.mm.md!}
+Hình 3. Sơ đồ khái quát phân loại mạng máy tính
 
 ## Some English words
 

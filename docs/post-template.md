@@ -33,9 +33,14 @@ Output:
 ![Image title](){loading=lazy}
 Hình 6. 
 
+## Sơ đồ tóm tắt nội dung
+
+{!grade-11/topic-A/softwares/os-vs-application.mm.md!}
+Hình 2. Sơ đồ phân loại phần mềm
+
 ## Google Colab
 
-Một phiên bản của bài này được đặt trên <a href="" target="_blank">Google Colab</a> để người học có thể chạy các đoạn mã ví dụ và thử nghiệm chương trình của riêng mình.  
+Một phiên bản của bài này được đặt trên <a href="" target="_blank">Google Colab</a> để người học có thể chạy các đoạn mã ví dụ và thử nghiệm chương trình của riêng mình.
 
 ## Some English words
 

@@ -86,6 +86,11 @@ Phần này trình bày các phép toán logic gồm: **NOT**, **AND**, **OR** v
         <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/xor.html"></iframe>
     </div>
 
+## Sơ đồ tóm tắt nội dung
+
+{!grade-10/topic-A2/operations-in-binary/operations.mm.md!}
+Hình 1. Sơ đồ tóm tắt các phép toán trên hệ nhị phân
+
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 

@@ -144,6 +144,11 @@ Ngoài ra, vai trò của thiết bị thông minh còn thể hiện ở các m�
 
 - Đối với khía cạnh nghề nghiệp, mặc dù thiết bị thông minh có thể vận hành tự động, chúng vẫn giúp tạo ra những công việc mới như: phân tích dữ liệu, phát triển phần mềm, bảo trì và hỗ trợ kỹ thuật cho các hệ sinh thái thiết bị thông minh. 
 
+## Sơ đồ tóm tắt nội dung
+
+{!grade-10/topic-A1/smart-devices/smart-devices.mm.md!}
+Hình 1. Sơ đồ khái quát về thiết bị thông minh
+
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
