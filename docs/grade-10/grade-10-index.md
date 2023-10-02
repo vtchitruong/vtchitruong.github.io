@@ -20,7 +20,7 @@
 
 ### Chủ đề B
 
-#### B.1. Internet hôm nay và ngày mai
+#### Internet hôm nay và ngày mai
 
 1. Khái niệm mạng máy tính, Internet, IoT. Phân loại mạng máy tính.
     1. Trình bày được những thay đổi về chất lượng cuộc sống, phương thức học tập và làm việc trong xã hội mà ở đó mạng máy tính được sử dụng phổ biến.
@@ -35,8 +35,6 @@
     4. Nêu được một vài cách phòng vệ khi bị bắt nạt trên mạng.
     5. Biết cách tự bảo vệ dữ liệu của cá nhân.
     6. Trình bày được sơ lược về phần mềm độc hại. Sử dụng được một số công cụ thông dụng để ngăn ngừa và diệt phần mềm độc hại.
-
-*Không có chủ đề B.2.*
 
 ## Phần riêng dành cho CS
 
@@ -55,9 +53,7 @@
 
 ### Chủ đề E
 
-#### E.1. Phần mềm thiết kế đồ họa		
+#### Phần mềm thiết kế đồ họa		
     
 1. Sử dụng được một số chức năng cơ bản của phần mềm thiết kế đồ họa.
 2. Tạo được sản phẩm số đơn giản, hữu ích và thực tế như thiết kế logo, tạo banner, topic quảng cáo, băng - rôn, áp phích, poster và thiệp chúc mừng, v.v...
-
-*Không có chủ đề E.2.*
