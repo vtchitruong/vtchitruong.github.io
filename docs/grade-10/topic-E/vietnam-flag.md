@@ -2,7 +2,14 @@
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này hướng dẫn cách vẽ lá cờ nước ta nhằm giúp người học nắm một số thao tác vẽ cơ bản.
+    Bài này hướng dẫn cách vẽ lá cờ nước ta nhằm giúp người học nắm một số thao tác vẽ cơ bản.  
+    Các thao tác đề cập:  
+
+    - Lưu tập tin
+    - Chọn màu bằng mục **Set stroke** và **Set fill**
+    - Nhập kích thước **Width** và **Height** của đối tượng
+    - Căn chỉnh đối tượng bằng bảng **Align and Distribute**
+    - Xoay đối tượng bằng chuột
 
 ## Bước 0. Tạo và lưu tập tin
 
