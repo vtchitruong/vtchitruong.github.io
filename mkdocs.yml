@@ -187,8 +187,7 @@ plugins:
       lib_version: 0.15.3
       view_version: 0.15.3
   # - meta
-        # enabled: true
-   
+        # enabled: true   
 
   - blog:
       enabled: true
@@ -213,8 +212,8 @@ plugins:
       categories_slugify_separator: "-"
       categories_toc: true
       categories_url_format: "category/{slug}"
-      # categories_allowed:
-      #   - Search
+      categories_allowed:
+        - Solve to surpass
       #   - Performance
       #   - Blog
       pagination: true
@@ -282,7 +281,6 @@ nav:
       - grade-11/topic-F2/algorithmic-complexity.md
   - Lớp 12:
     - grade-12/grade-12-index.md
-    - grade-12/mindmaptest.mm.md
   - Nâng cao:
     - advanced/advanced-index.md
     - advanced/recursion/recursion.md
@@ -324,15 +322,3 @@ nav:
  
   - Blog:
       - blog/index.md
-      - blog/posts/mypost.md
-    # - blog/posts/blog-support-just-landed.md
-    # - blog/posts/chinese-search-support.md
-    # - blog/posts/search-better-faster-smaller.md
-
-      # - 2022:
-      #   - blog/posts/blog-support-just-landed.md
-      #   - blog/posts/chinese-search-support.md
-      # - 2021:
-      #   - blog/posts/the-past-present-and-future.md
-      #   - blog/posts/excluding-content-from-search.md
-      #   - blog/posts/search-better-faster-smaller.md

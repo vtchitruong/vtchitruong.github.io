@@ -27,7 +27,7 @@ Thông tin là dữ liệu, nhưng đã xử lý để có ngữ cảnh, ý ngh�
     - Trình bày lại  
 
 <figure markdown>
-  ![Image title](../data-vs-information/data-vs-information.svg){loading=lazy}  
+  ![Image title](data-vs-information/data-vs-information.svg){loading=lazy}  
   <figcaption>Hình 1. Dữ liệu sau khi xử lý trở thành thông tin</figcaption>  
 </figure>
 

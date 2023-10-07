@@ -17,7 +17,7 @@ Ngoài máy tính, các thiết bị kết nối trong mạng cục bộ còn c�
 Hình 1 minh họa một mạng cục bộ có cấu trúc hình sao, sử dụng bộ định tuyến để kết nối các máy tính để bàn và máy in bằng cáp Ethernet, kết nối các thiết bị khác bằng sóng WiFi. Bộ định tuyến này vừa cho phép tạo mạng cục bộ, vừa cho phép các thiết bị cục bộ kết nối ra mạng ngoài, chẳng hạn ra Internet.  
 
 <figure markdown>
-  ![Image title](../network/lan.svg){loading=lazy}  
+  ![Image title](../topic-B/network/lan.svg){loading=lazy}  
   <figcaption>Hình 1. Minh họa mạng cục bộ</figcaption>  
 </figure>
 
