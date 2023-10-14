@@ -49,7 +49,7 @@ Output là đường đi từ ô của nhà thám hiểm ra đến bìa rừng.
 
 <div>
     <iframe width="100%" height="256px" frameBorder=0 src="../../../../posts/out-of-the-forest.html"></iframe>
-    <p style="margin: 0">Hình 1. Minh họa output</p>
+    <p style="margin: 0">Hình 1. Minh họa input và output</p>
 </div>
 
 ## Cách giải đề xuất
