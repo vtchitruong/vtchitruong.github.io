@@ -1,4 +1,4 @@
-# Khái quát về cơ sở dơ dữ liệu
+# Khái quát về cơ sở dữ liệu
 
 ## Cơ sở dữ liệu
 
@@ -12,67 +12,114 @@ Cơ sở dữ liệu được sử dụng để lưu trữ và quản lý lượ
 
 ### Tính chất
 
-
-Tính cấu trúc
+#### Tính cấu trúc
 Dữ liệu có cấu trúc là dữ liệu được tổ chức và lưu trữ theo một định dạng nhất định.
 
-Ví dụ:
+:   Ví dụ:  
+    Dữ liệu được tổ chức thành các bảng gồm nhiều hàng và nhiều cột, hàng và cột đều tuân theo những quy ước đặt ra ban đầu.
 
-Dữ liệu được tổ chức thành các bảng gồm nhiều hàng và nhiều cột, hàng và cột đều tuân theo những quy ước đặt ra ban đầu.
-
-
-Tính nhất quán
+#### Tính nhất quán
 
 Là một phần của tính chính xác và tính tin cậy của dữ liệu. Cụ thể, trong quá trình cập nhật, dữ liệu phải được đảm bảo không có lỗi, không sai lệch hay mâu thuẫn. 
 
-Ví dụ:
+:   Ví dụ:  
+    Khi bạn Tèo chuyển từ lớp 11A sang lớp 11D, thì dữ liệu của hai lớp này và dữ liệu liên quan đến Tèo đều phải được cập nhật sao cho không xảy ra mâu thuẫn, chẳng hạn cả hai lớp đều có dữ liệu về học sinh Tèo, hoặc kết quả thi đua vẫn tính cho lớp 11A mà lẽ ra phải tính cho lớp 11D.
 
-Khi bạn Tèo chuyển từ lớp 11A sang lớp 11D, thì dữ liệu của hai lớp này và dữ liệu liên quan đến Tèo đều phải được cập nhật sao cho không xảy ra mâu thuẫn, chẳng hạn cả hai lớp đều có dữ liệu về học sinh Tèo, hoặc kết quả thi đua vẫn tính cho lớp 11A mà lẽ ra phải tính cho lớp 11D.
-
-
-
-
- In the context of data and information, consistency refers to the accuracy and reliability of data over time and across various sources. Consistent data is free from errors, discrepancies, or contradictions
-
-1. Tính toàn vẹn
+#### Tính toàn vẹn
 
 Là tính đúng đắn, tính tin cậy và bao gồm cả tính nhất quán của dữ liệu. Cụ thể, trước khi chính thức được lưu vào cơ sở dữ liệu, dữ liệu phải tuân theo các quy định và ràng buộc để đảm bảo luôn đúng đắn, không có dữ liệu "*rác*".
 
+:   Ví dụ:  
+    Điểm số bài kiểm tra có giá trị từ 0 đến 10. Nếu người dùng nhập vào 11 điểm mà cơ sở dữ liệu vẫn cho phép lưu vào, thì vi phạm tính toàn vẹn.
 
-
-
-Tính an toàn 
+#### Tính an toàn 
 Là khả năng kiểm soát các truy xuất vào cơ sở dữ liệu nhằm đảm bảo không có truy xuất trái phép, giả mạo, đảm bảo ngăn chặn các thay đổi không hợp lệ đối với dữ liệu.
 
 
 ## Hệ quản trị cơ sở dữ liệu
 
-A Database Management System (DBMS) is a software system designed to manage, store, retrieve, and manipulate data in a database. It serves as an intermediary between users or applications and the database, providing an efficient and secure way to interact with and control access to the stored data. Here are the key components and functions of a DBMS:
+### Khái niệm
 
-1. **Data Storage:** DBMS manages the physical storage of data, including how data is stored on disk, data file organization, and data indexing to optimize data retrieval.
+!!! note "Hệ quản trị"
+    Hệ quản trị cơ sở dữ liệu (viết tắt là DBMS) là phần mềm dùng để lưu trữ, quản lý, xử lý và tìm kiếm dữ liệu trong cơ sở dữ liệu.  
 
-2. **Data Retrieval:** Users and applications can retrieve data from the database using query languages such as SQL (Structured Query Language). DBMS translates queries into low-level commands to access and retrieve data efficiently.
+:   Ví dụ:  
+    Một số hệ quản trị cơ sở dữ liệu phổ biến hiện nay:  
 
-3. **Data Manipulation:** DBMS allows users to insert, update, and delete data in the database. It enforces data integrity constraints (e.g., unique keys, foreign keys) to ensure data quality.
+    - Oracle
+    - MySQL
+    - Microsoft SQL Server
+    - PostgreSQL
+    - MongoDB
 
-4. **Data Security:** DBMS manages user authentication and authorization to control who can access and modify data. It ensures that sensitive data is protected and complies with security policies.
+### Chức năng
+DBMS đóng vai trò trung gian giữa phần mềm ứng dụng và cơ sở dữ liệu, cung cấp cách thức hiệu quả và an toàn để tương tác và kiểm soát dữ liệu. Cụ thể như sau:  
 
-5. **Concurrency Control:** When multiple users or applications access the database concurrently, DBMS ensures that transactions do not interfere with each other. It uses techniques like locking and multi-version concurrency control (MVCC) to maintain data consistency.
+#### Lưu trữ dữ liệu
+Quản lý việc lưu trữ dữ liệu về mặt vật lý, trong đó có cách thức dữ liệu lưu trên đĩa, tổ chức dữ liệu theo tập tin và indexing dữ liệu.
 
-6. **Backup and Recovery:** DBMS provides mechanisms for data backup and recovery to protect against data loss due to hardware failures, software errors, or other unforeseen events.
+#### Tìm kiếm dữ liệu
+DBMS giúp người dùng và phần mềm ứng dụng tìm kiếm dữ liệu thông qua các ngôn ngữ truy vấn dữ liệu, chẳng hạn như SQL, .
 
-7. **Data Definition:** DBMS allows the definition of the database schema, including tables, columns, data types, relationships, and integrity constraints. It supports schema evolution as application requirements change.
+#### Xử lý dữ liệu
+DBMS giúp người dùng thêm, cập nhật và xóa dữ liệu mà vẫn đảm bảo tính nhất quán và tính toàn vẹn của cơ sở dữ liệu. 
 
-8. **Query Optimization:** DBMS includes query optimization mechanisms to improve query performance by choosing efficient query execution plans.
+Ngoài ra còn có những chức năng khác như:
 
-9. **Data Integrity Constraints:** DBMS enforces data integrity constraints (e.g., primary keys, foreign keys, check constraints) to ensure that data remains accurate and consistent.
+- Đảm bảo an toàn dữ liệu
+- Đảm bảo tính toàn vẹn dữ liệu
+- Kiểm soát các truy xuất đồng thời
+- Quản lý giao tác
+- Sao lưu và khôi phục
+- Tối ưu hóa truy vấn
+- Thống kê, phân tích và báo cáo
+- Hỗ trợ đa người dùng
+- v.v...
 
-10. **Transaction Management:** Transactions are sequences of one or more database operations treated as a single unit of work. DBMS ensures that transactions adhere to the ACID properties (Atomicity, Consistency, Isolation, Durability) to maintain data reliability.
+## Hệ cơ sở dữ liệu
 
-11. **Reporting and Analytics:** DBMS often supports reporting and analytics tools that allow users to generate reports, perform data analysis, and visualize data from the database.
+### Các thành phần
 
-12. **Data Recovery:** In case of system crashes or failures, DBMS provides recovery mechanisms to bring the database back to a consistent state.
+Hệ cơ sở dữ liệu là hệ thống gồm có:
 
-13. **Multi-user Support:** DBMS handles multiple users and applications accessing the database concurrently, providing mechanisms to manage concurrent access and prevent data conflicts.
+- Cơ sở dữ liệu
+- Hệ quản trị cơ sở dữ liệu
+- Phần mềm ứng dụng
 
-Popular DBMS software includes both relational database management systems (RDBMS) like MySQL, Oracle, and PostgreSQL, as well as NoSQL databases like MongoDB, Cassandra, and Redis. The choice of DBMS depends on factors such as data structure, scalability requirements, and specific application needs. DBMS plays a critical role in modern information systems, enabling efficient and secure data management for a wide range of applications and industries.
+<div style="text-align: center">
+    <iframe height="368px" frameBorder=0 src="../database/database-system.html"></iframe>
+    <p style="text-align: center; margin: 0">Hình 1. Sơ đồ thể hiện mối quan hệ giữa các thành phần trong một hệ cơ sở dữ liệu</p>
+</div>
+
+Mặc dù đã có hệ quản trị cơ sở dữ liệu, nhưng phần mềm ứng dụng vẫn được tạo ra nhằm giúp người dùng dễ dàng và thuận tiện hơn trong các thao tác với cơ sở dữ liệu.
+
+### Kiến trúc của hệ cơ sở dữ liệu
+
+Có hai kiến trúc chủ yếu là **tập trung** và **phân tán**.
+
+#### Kiến trúc cơ sở dữ liệu tập trung
+
+Đây là kiến trúc cổ điển và đơn giản nhất. Toàn bộ dữ liệu được đặt tại một máy chủ, đóng vai trò là điểm trung tâm cho các hoạt động lưu trữ và quản lý dữ liệu. 
+
+Một số hệ quản trị cơ sở dữ liệu thường được sử dụng cho kiến trúc tập trung là Oracle, Microsoft SQL Server và MySQL.
+
+#### Kiến trúc cơ sở dữ liệu phân tán
+
+Đây là kiến trúc phức tạp. Dữ liệu nằm phân tán trên nhiều máy chủ đặt tại các vị trí địa lý khác nhau. Mỗi máy chủ lưu trữ và xử lý một phần dữ liệu, còn dữ liệu có thể được truy xuất từ những máy chủ khác.
+
+Kiến trúc này nhằm hướng đến những mục tiêu như khả năng chịu lỗi, khả năng mở rộng hệ thống và khả năng sẵn sàng đáp ứng.
+
+Một số hệ quản trị cơ sở dữ liệu thường được sử dụng cho kiến trúc phân tán Cassandra, MongoDB, Google Cloud Spanner.
+
+## Sơ đồ tóm tắt nội dung
+
+{!grade-11/topic-F1/database/database-basics.mm.md!}
+Hình 1. Sơ đồ tóm tắt những khái niệm về cơ sở dữ liệu
+
+## Some English words
+
+| Vietnamese | Tiếng Anh | 
+| --- | --- |
+| cơ sở dữ liệu | database |
+| hệ quản trị cơ sở dữ liệu | database management system (DBMS) |
+| phần mềm ứng dụng | application |
