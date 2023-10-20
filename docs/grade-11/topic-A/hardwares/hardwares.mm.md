@@ -1,6 +1,7 @@
 ---
 markmap:
     colorFreezeLevel: 4
+    maxWidth: 300
 ---
 
 # Phần cứng

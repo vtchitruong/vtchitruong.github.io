@@ -1,6 +1,7 @@
 ---
 markmap:
     colorFreezeLevel: 2
+    maxWidth: 300
     color:
         - grey
         - '#c36e6a'

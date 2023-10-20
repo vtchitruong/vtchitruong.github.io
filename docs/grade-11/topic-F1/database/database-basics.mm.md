@@ -1,7 +1,7 @@
 ---
 markmap:
     colorFreezeLevel: 3
-
+    maxWidth: 300
 ---
 
 # Hệ cơ sở dữ liệu

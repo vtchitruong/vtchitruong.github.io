@@ -179,4 +179,5 @@ table tr:nth-child(2n) {
 
 div.language-markmap.mkdocs-markmap  {
     border: none;
+    min-height: 500px;
 }

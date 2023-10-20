@@ -1,6 +1,7 @@
 ---
 markmap:
   colorFreezeLevel: 3
+  maxWidth: 300
 ---
 
 # Phần mềm đồ họa

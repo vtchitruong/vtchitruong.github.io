@@ -1,6 +1,7 @@
 ---
 markmap:
     colorFreezeLevel: 3
+    maxWidth: 300
 ---
 
 # Phép toán trên hệ nhị phân
