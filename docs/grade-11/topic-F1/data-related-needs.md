@@ -53,6 +53,11 @@ Công việc này bao gồm các thao tác: tìm kiếm, trích xuất, sắp x�
 
 Quản lý dữ liệu đòi hỏi sự kết hợp đồng bộ giữa công nghệ, quy trình và con người. Trong nhiều trường hợp, sử dụng máy tính cho hoạt động quản lý dữ liệu là một lựa chọn tốt và hợp lý.
 
+## Sơ đồ tóm tắt nội dung
+
+{!grade-11/topic-F1/database/data-related-needs.mm.md!}
+Hình 1. Sơ đồ tóm tắt về quản lý dữ liệu
+
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
