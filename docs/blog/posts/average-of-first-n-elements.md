@@ -53,8 +53,8 @@ No explanation available here.
 
 === "C++"
     ``` c++ linenums="1"
-    vector<int> b(n, 0);
-    b[0] = a[0];    
+        vector<int> b(n, 0);
+        b[0] = a[0];    
     ```
 === "Python"
     ``` py linenums="1"
