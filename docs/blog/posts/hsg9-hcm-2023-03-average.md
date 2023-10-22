@@ -5,15 +5,13 @@ authors: [mrschool]
 date: 2023-03-15
 ---
 
-# Trung bình cộng của n số đầu tiên
+# HSG9 HCM 03.2023: Trung bình cộng
 
-Bài toán trích từ đề thi Học sinh giỏi Lớp 9 Thành phố tháng 03.2023.
+Bài toán liên quan đến trung bình cộng của n phần tử đầu tiên trong mảng, trích từ đề thi Học sinh giỏi Lớp 9 Thành phố tháng 03.2023.
 
 <!-- more -->
 
 ## Khái quát về bài toán
-
-Bài toán liên quan đến trung bình cộng.
 
 ### Yêu cầu
 
@@ -44,32 +42,32 @@ No explanation available here.
 
 ## Cách giải đề xuất
 
-## Ý tưởng
+### Ý tưởng chính
 
-#### Bước 1
+Lấy tổng tất cả phần tử trừ đi tổng của những phần tử đã có sẽ ra được phần tử tiếp theo của mảng output.
+
+### Bước 1
 
 1. Khởi tạo mảng `b` gồm các phần tử `0`.
 2. Vì trung bình cộng của một phần tử là chính nó, nên gán `a[0]` cho `b[0]`.  
 
-=== "C++"
-    ``` c++ linenums="1"
-        vector<int> b(n, 0);
-        b[0] = a[0];    
-    ```
-=== "Python"
-    ``` py linenums="1"
+    === "C++"
+        ``` c++ linenums="1"
+            vector<int> b(n, 0);
+            b[0] = a[0];    
+        ```
+    === "Python"
+        ``` py linenums="1"
 
-    ```
+        ```
 
-#### Bước 2
+### Bước 2
 
-Lấy tổng tất cả phần tử trừ đi tổng của những phần tử đã có sẽ ra được phần tử `b[i]` tiếp theo.
+Duyệt mảng `a`, lặp các thao tác sau:  
 
-Cụ thể, duyệt các phần tử tiếp theo của mảng `a`, lặp các thao tác sau:  
+1. Lấy giá trị trung bình cộng (là `a[i]`) nhân với số lượng phần tử (là `i` phần tử), ra được tổng tất cả phần tử, đặt là `sum_all`.  
 
-1. Lấy giá trị trung bình cộng `a[i]` nhân với số phần tử để có được tổng tất cả phần tử, đặt là `sum_all`.  
-
-2. Tính tổng các phần tử đã có trước đó trong mảng `b`, đặt là `sum_before`.  
+2. Tính tổng của những phần tử đã có trước đó trong mảng `b`, đặt là `sum_before`.  
 
 3. Lấy **tổng tất cả** trừ đi **tổng các phần tử đã có**, ra được phần tử `b[i]` cần tìm.  
 
