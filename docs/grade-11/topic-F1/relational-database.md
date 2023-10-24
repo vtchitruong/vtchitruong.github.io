@@ -126,7 +126,6 @@ Quan hệ `students`:
 - Khóa chính là thuộc tính `student_id`.
 - Có 3 bộ trên hình.
 
-
 Quan hệ `scores`:
 
 - Có nhiều hơn 3 thuộc tính.
@@ -134,6 +133,10 @@ Quan hệ `scores`:
 - Có 5 bộ trên hình.
 - Khóa ngoại là thuộc tính `student_id`, được liên kết với `student_id` của quan hệ `students`.
 
+## Sơ đồ tóm tắt nội dung
+
+{!grade-11/topic-F1/database/relational-database.mm.md!}
+Hình 3. Sơ đồ phân loại phần mềm
 
 ## Some English words
 
