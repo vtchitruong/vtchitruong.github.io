@@ -6,7 +6,11 @@
 
 ## Khái niệm
 
+![Image title](https://upload.wikimedia.org/wikipedia/en/5/58/Edgar_F_Codd.jpg){loading=lazy align=right}
+
 Mô hình dữ liệu quan hệ được nhà khoa học người Mỹ gốc Anh đề xuất vào năm 1970. Mô hình này đã trở thành một trong những mô hình dữ liệu được sử dụng phổ biến nhất trong nhiều thập kỷ qua, từ những hệ thống nhỏ cho đến những doanh nghiệp quy mô lớn. 
+
+Hình 1. Chân dung nhà khoa học Edgar Frank Codd
 
 !!! note "Cơ sở dữ liệu quan hệ"
 
@@ -71,7 +75,7 @@ Miền giá trị của thuộc tính `gender` là tập hợp gồm hai giá tr
 
 <figure markdown>
   ![Image title](database/relation.svg){loading=lazy}  
-  <figcaption>Hình 1. Minh họa quan hệ, thuộc tính và bộ</figcaption>  
+  <figcaption>Hình 2. Minh họa quan hệ, thuộc tính và bộ</figcaption>  
 </figure>
 
 ### Khóa chính
@@ -108,35 +112,47 @@ Theo đó, `class_id` của bảng `students` là khóa ngoại, được liên 
 
 Ví dụ 6:
 
-Cơ sở dữ liệu trường học bao gồm hai quan hệ được thể hiện theo lược đồ và hình 1 dưới đây.
+Một phần của cơ sở dữ liệu trường học được thể hiện theo lược đồ và hình 3 dưới đây.
 
 - students(<ins>**student_id**</ins>, first_name, last_name, ..., class_id)
 - scores(<ins>**student_id, subject_id**</ins>, score)
 
 <figure markdown>
   ![Image title](database/school-database.svg){loading=lazy}  
-  <figcaption>Hình 2. Một phần cơ sở dữ liệu trường học</figcaption>  
+  <figcaption>Hình 3. Một phần cơ sở dữ liệu trường học</figcaption>  
 </figure>
 
-Trong đó:
+!!! Question "Câu hỏi"
 
-Quan hệ `students`:
+    Bạn hãy quan sát hình 3 và cho biết:
 
-- Có nhiều hơn 4 thuộc tính.
-- Khóa chính là thuộc tính `student_id`.
-- Có 3 bộ trên hình.
+    1. Hình 3 thể hiện mấy quan hệ?
+    2. Mỗi quan hệ có bao nhiêu thuộc tính?
+    3. Khóa chính của mỗi quan hệ có thể là thuộc tính nào?
+    4. Mỗi quan hệ có bao nhiêu bộ?
+    5. Có những khóa ngoại nào?
 
-Quan hệ `scores`:
+??? Tip "Đáp án"
 
-- Có nhiều hơn 3 thuộc tính.
-- Khóa chính gồm 2 thuộc tính là `student_id` và `subject_id`.
-- Có 5 bộ trên hình.
-- Khóa ngoại là thuộc tính `student_id`, được liên kết với `student_id` của quan hệ `students`.
+    Hình 3 thể hiện hai quan hệ của cơ sở dữ liệu trường học.
+
+    Quan hệ `students`:
+
+    - Có nhiều hơn 4 thuộc tính.
+    - Khóa chính là thuộc tính `student_id`.
+    - Có 3 bộ.
+
+    Quan hệ `scores`:
+
+    - Có nhiều hơn 3 thuộc tính.
+    - Khóa chính gồm 2 thuộc tính là `student_id` và `subject_id`.
+    - Có 5 bộ.
+    - Khóa ngoại là thuộc tính `student_id`, được liên kết với `student_id` của quan hệ `students`.
 
 ## Sơ đồ tóm tắt nội dung
 
 {!grade-11/topic-F1/database/relational-database.mm.md!}
-Hình 3. Sơ đồ phân loại phần mềm
+Hình 4. Sơ đồ tóm tắt cơ sở dữ liệu quan hệ
 
 ## Some English words
 

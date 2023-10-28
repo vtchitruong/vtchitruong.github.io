@@ -70,6 +70,9 @@ table {
     color: #448aff;
     content: "settings"}
 
+.md-typeset details:not([open])>summary {
+    border-radius: 15px;
+}
 
 /* Site width etc.*/
 .md-grid {
