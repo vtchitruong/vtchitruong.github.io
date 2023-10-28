@@ -1,6 +1,9 @@
 # Điện toán đám mây
 
 !!! abstract "Tóm lược nội dung"
+    
+    Bài này trình bày sơ nét những khái niệm về điện toán đám mây. 
+
 
 ## Khái niệm
 
@@ -10,57 +13,148 @@ Thay vì phải sở hữu và tự bảo trì cơ sở hạ tầng phần cứn
 
 ## Những đặc điểm của điện toán đám mây
 
-### Khả năng truy xuất trên phạm vi rộng
+1. **Khả năng truy xuất trên phạm vi rộng**:
 
-Các dịch vụ đám mây có thể truy xuất được qua Internet từ nhiều thiết bị khác nhau như máy tính, máy tính bảng và điện thoại thông minh.
+    Các dịch vụ đám mây có thể truy xuất được qua Internet từ nhiều thiết bị khác nhau như máy tính, máy tính bảng và điện thoại thông minh.
 
-### Khả năng tự phục vụ
+2. **Khả năng tự phục vụ**:
 
-Người dùng có thể cung cấp và quản lý tài nguyên mà không cần sự can thiệp của nhà cung cấp dịch vụ đám mây.
+    Người dùng có thể cung cấp và quản lý tài nguyên mà không cần sự can thiệp của nhà cung cấp dịch vụ đám mây.
 
-### Khả năng gom nhóm tài nguyên
+3. **Khả năng gom nhóm tài nguyên**:
 
-Các nhà cung cấp dịch vụ đám mây có thể gom nhóm và cấp phát động các tài nguyên để đáp ứng nhu cầu của người dùng hoặc yêu cầu của ứng dụng. Việc này giúp tận dụng cơ sở hạ tầng một cách hiệu quả, tiết kiệm chi phí và đảm bảo hiệu năng tốt hơn.
+    Các nhà cung cấp dịch vụ đám mây có thể gom nhóm và cấp phát động các tài nguyên để đáp ứng nhu cầu của người dùng hoặc yêu cầu của ứng dụng. Việc này giúp tận dụng cơ sở hạ tầng một cách hiệu quả, tiết kiệm chi phí và đảm bảo hiệu năng tốt hơn.
 
-### Khả năng co giãn nhanh chóng
+4. **Khả năng co giãn nhanh chóng**:
 
-Các tài nguyên đám mây có thể tăng hoặc giảm quy mô nhanh chóng phù hợp với khối lượng công việc. Khả năng này giúp người dùng chỉ cần chi trả cho những tài nguyên mà mình sử dụng.
+    Các tài nguyên đám mây có thể tăng hoặc giảm quy mô nhanh chóng phù hợp với khối lượng công việc. Khả năng này giúp người dùng chỉ cần chi trả cho những tài nguyên mà mình sử dụng.
 
-### Khả năng đo lường dịch vụ
+5. **Khả năng đo lường dịch vụ**:
 
-Các tài nguyên đám mây là đo lường được và người dùng chi trả theo mức sử dụng thực tế của mình. Việc này cũng giúp tiết kiệm chi phí và phân bổ hiệu quả tài nguyên.
+    Các tài nguyên đám mây là đo lường được và người dùng chi trả theo mức sử dụng thực tế của mình. Việc này cũng giúp tiết kiệm chi phí và phân bổ hiệu quả tài nguyên.
 
 ## Những mô hình dịch vụ của điện toán đám mây
 
-Cloud computing services are typically categorized into three main service models:
+Điện toán đám mây có ba mô hình dịch vụ tiêu biểu:
 
-Infrastructure as a Service (IaaS): In this model, cloud providers offer virtualized computing resources over the internet. Users can rent virtual machines, storage, and networking resources. They are responsible for managing the operating system and software applications.
+### Infrastructure as a Service (IaaS)
 
-Platform as a Service (PaaS): PaaS provides a platform with tools and services for developing, deploying, and managing applications. Users can focus on application development, while the cloud provider handles the underlying infrastructure, including the operating system and hardware.
+IaaS có thể tạm gọi là dịch vụ cho thuê cơ sở hạ tầng.
 
-Software as a Service (SaaS): SaaS delivers fully functional software applications over the internet on a subscription basis. Users access the software through a web browser or application interface. Popular examples of SaaS include email services like Gmail and productivity suites like Microsoft Office 365.
+Mô hình này giúp người dùng thuê máy ảo, nơi lưu trữ và tài nguyên mạng. Chúng chịu trách nhiệm về hệ điều hành và các phần mềm ứng dụng. 
 
-In addition to these service models, cloud computing also comes in deployment models, including:
+### Platform as a Service (PaaS)
 
-Public Cloud: Resources and services are provided by cloud service providers and shared among multiple organizations and users. Public clouds are cost-effective and highly scalable.
+Paas có thể tạm gọi là dịch vụ cho thuê nền tảng.
 
-Private Cloud: A private cloud is operated solely for a single organization. It provides greater control and security but may require more significant upfront investment.
+Mô hình này giúp người dùng tập trung vào việc phát triển ứng dụng, mà không cần quan tâm đến những phần cứng, hệ điều hành, công cụ và dịch vụ nền tảng bên dưới.
 
-Hybrid Cloud: A hybrid cloud combines both public and private cloud resources, allowing data and applications to be shared between them. This model provides flexibility and scalability while maintaining some control over sensitive data.
+### Software as a Service (SaaS)
 
-Multi-Cloud: Organizations use multiple cloud providers for different services or resources. This can help avoid vendor lock-in and improve redundancy and performance.
+SaaS có thể tạm gọi là dịch vụ cho thuê phần mềm.
 
-Cloud computing has transformed the way businesses and individuals use and manage computing resources, enabling them to scale, innovate, and reduce infrastructure costs more effectively. It has become a fundamental component of modern IT ecosystems and plays a critical role in various industries, from startups to large enterprises.
+Mô hình này giúp người dùng sử dụng những phần mềm ứng dụng đầy đủ tính năng thông qua Internet, điển hình là bộ phần mềm Google Workspace, Microsoft 365.
 
+## Một số dịch vụ điện toán đám mây phổ biến
 
+1. Tính toán:
+    - Amazon EC2 (Elastic Compute Cloud)
+    - Microsoft Azure Virtual Machines
+    - Google Compute Engine
+
+2. Cơ sở dữ liệu:
+    - Amazon RDS (Relational Database Service)
+    - Azure SQL Database
+    - Google Cloud SQL
+
+3. Serverless computing:
+    - AWS Lambda
+    - Azure Functions
+    - Google Cloud Functions
+
+4. Container orchestration:
+    - Amazon ECS (Elastic Container Service)
+    - Azure Kubernetes Service (AKS)
+    - Google Kubernetes Engine (GKE)
+
+5. Phân phối nội dung và CDN:
+    - Amazon CloudFront
+    - Azure Content Delivery Network (CDN)
+    - Google Cloud CDN
+
+6. AI và machine learning:
+    - Amazon SageMaker
+    - Azure Machine Learning
+    - Google AI Platform
+
+7. Quản lý truy xuất và định danh:
+    - Amazon IAM (Identity and Access Management)
+    - Azure Active Directory
+    - Google Cloud Identity and Access Management
+
+8. Phân tích và dữ liệu lớn:
+    - Amazon Redshift
+    - Azure Synapse Analytics
+    - Google BigQuery
+
+9. IoT:
+    - AWS IoT
+    - Azure IoT Hub
+    - Google Cloud IoT Core
+
+10. DevOps và CI/CD:
+    - AWS CodePipeline
+    - Azure DevOps
+    - Google Cloud Build
+
+!!! question "Câu hỏi"
+    Bạn hãy kể tên một dịch vụ điện toán đám mây mà mình đang sử dụng và trình bày đôi nét về dịch vụ này.
+
+??? tip "Gợi ý"
+
+    Lưu trữ tập tin: Dropbox, Google Drive, Microsoft OneDrive.
+
+    Lữu trữ hình ảnh: Google Photos, Amazon Photos.
+
+    Chỉnh sửa hình ảnh: Photoshop on the web của Adobe.
+
+    Stream nhạc, phim: Netflix, Hulu, Disney+, Spotify.
+
+    v.v...
+
+## Những lợi ích của điện toán đám mây
+
+Điện toán đám mây đem lại nhiều lợi ích cho cá nhân, tổ chức. Có thể kể ra một vài lợi ích chủ yếu sau:
+
+1. **Tiết kiệm chi phí**:
+
+    Người dùng chỉ chi trả cho những tài nguyên và dịch vụ mà mình sử dụng.
+
+2. **Co giãn được**:
+
+    Các dịch vụ điện toán đám mây có thể nhanh chóng tăng hoặc giảm quy mô theo yêu cầu, đáp ứng được sự thay đổi của khối lượng công việc.
+
+3. **Luôn sẵn sàng, tin cậy và có dự phòng**:
+
+    Các nhà cung cấp điện toán đám mây có những trung tâm dữ liệu tại nhiều nơi trên thế giới, cho nên cung cấp được khả năng dự phòng, giảm được tối đa gián đoạn, đảm bảo sự liên tục của công việc.
+
+4. **An toàn**:
+
+    Các nhà cung cấp điện toán đám mây có triển khai nhiều kỹ thuật mã hóa tiên tiến để bảo vệ dữ liệu tại chỗ lẫn trên đường truyền.
+
+5. **Đến được mọi nơi**:
+
+    Các nhà cung cấp điện toán đám mây có những trung tâm dữ liệu tại nhiều nơi trên thế giới, cho phép người dùng có thể tiếp cận khách hàng của mình nhanh chóng và hiệu quả.
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-11/topic-A/softwares/os-vs-application.mm.md!}
-Hình 2. Sơ đồ
+{!grade-10/topic-B/network/cloud-computing.mm.md!}
+Hình 1. Sơ đồ tóm tắt về điện toán đám mây
 
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
+| điện toán đám mây | cloud computing |
 | trả phí theo hạn mức sử dụng | pay-as-you-go |
+| dịch vụ | service |
