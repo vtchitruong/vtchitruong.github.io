@@ -287,6 +287,7 @@ nav:
   - Nâng cao:
     - advanced/advanced-index.md
     - advanced/recursion/recursion.md
+    - advanced/back-tracking/back-tracking.md
     - Đồ thị:
       - DFS: advanced/graph/dfs.md
       - BFS: advanced/graph/bfs.md

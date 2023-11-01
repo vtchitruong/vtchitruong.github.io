@@ -2,7 +2,7 @@
 
 ## Khái niệm
 
-Nhiều bài toán thực tế có thể được phân tách thành những bài toán con tương tự nhưng có kích thước nhỏ hơn.
+Có những bài toán có thể được phân tách thành những bài toán con tương tự nhưng có kích thước nhỏ hơn.
 
 Tận dung đặc điểm này, kỹ thuật đệ quy có thể giúp giải quyết bài toán ban đầu bằng cách giải quyết những bài toán con, rồi sau đó kết hợp các lời giải lại.
 
