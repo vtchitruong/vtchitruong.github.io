@@ -42,6 +42,8 @@ Hình 2. Sơ đồ phân loại phần mềm
 
 Một phiên bản của bài này được đặt trên <a href="" target="_blank">Google Colab</a> để người học có thể chạy các đoạn mã ví dụ và thử nghiệm chương trình của riêng mình.
 
+Code đầy đủ được đặt tại [GitHub](){:target="_blank"}.
+
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 

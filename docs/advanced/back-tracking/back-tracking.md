@@ -154,9 +154,14 @@ Như vậy, hàm phát sinh số nhị phân `generate_binary` được viết n
             binary.pop()
     ```
 
-## Google Colab
+## Toàn bộ chương trình
 
-Chương trình đầy đủ của các bài toán ví dụ được đặt trên <a href="https://colab.research.google.com/drive/1ertt7ZYcFs8GVdloIbY3VZgjTQEdBKLQ?usp=sharing" target="_blank">Google Colab</a> để người học có thể chạy và thử nghiệm chương trình của riêng mình. 
+=== "C++"
+    Chương trình C++ hoàn chỉnh của các bài toán ví dụ được đặt tại [Gist](https://gist.github.com/vtchitruong/a14d6686411b210f7623e66a5b66fa8a){:target="_blank"}.
+
+=== "Python"
+
+    Chương trình Python hoàn chỉnh của các bài toán ví dụ được đặt tại <a href="https://colab.research.google.com/drive/1ertt7ZYcFs8GVdloIbY3VZgjTQEdBKLQ?usp=sharing" target="_blank">Google Colab</a> để người học có thể chạy và thử nghiệm chương trình của riêng mình. 
 
 ## Some English words
 
