@@ -153,9 +153,18 @@ def fibonacci(n):
     return fibonacci(n - 1) + fibonacci(n - 2)
 ```
 
-## Google Colab
+## Toàn bộ chương trình
 
-Chương trình đầy đủ của các bài toán ví dụ được đặt trên <a href="https://colab.research.google.com/drive/14yRy1G-tFj5Fov1NgeT8_V8qtWGDPeaQ?usp=sharing" target="_blank">Google Colab</a> để người học có thể chạy và thử nghiệm chương trình của riêng mình. 
+=== "C++"
+
+    Chương trình C++ hoàn chỉnh của các bài toán ví dụ đặt tại Gist của GitHub:
+
+    - [Bài toán ví dụ 1](https://gist.github.com/vtchitruong/100ceaaf9b4f6742d583866950c2628d){:target="_blank"}
+    - [Bài toán ví dụ 2](https://gist.github.com/vtchitruong/c71114739d742b80c51b45081a429694){:target="_blank"}
+
+=== "Python"
+
+    Chương trình Python hoàn chỉnh của các bài toán ví dụ đặt tại <a href="https://colab.research.google.com/drive/14yRy1G-tFj5Fov1NgeT8_V8qtWGDPeaQ?usp=sharing" target="_blank">Google Colab</a>. 
 
 ## Some English words
 
