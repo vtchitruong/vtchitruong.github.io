@@ -7,7 +7,7 @@ site_description: >-
   Tiếp thu dễ dàng. Tra cứu thuận tiện. Xem được ở mọi nơi có net, trên nhiều loại máy, bất kể tư thế.
 
 # Repository
-repo_name: vtchitruong.github.io
+repo_name: GitHub để chữa lành
 repo_url: https://github.com/vtchitruong/vtchitruong.github.io
 
 # Copyright
@@ -188,7 +188,8 @@ plugins:
       view_version: 0.15.3
   # - meta
         # enabled: true   
-
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - blog:
       enabled: true
       blog_dir: blog
