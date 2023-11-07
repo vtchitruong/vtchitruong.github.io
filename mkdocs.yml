@@ -289,9 +289,11 @@ nav:
     - advanced/advanced-index.md
     - advanced/recursion/recursion.md
     - advanced/back-tracking/back-tracking.md
+
     - Đồ thị:
       - DFS: advanced/graph/dfs.md
       - BFS: advanced/graph/bfs.md
+      - Dijkstra: advanced/graph/dijkstra.md
   - MOS:
     - MOS 2016: mos/mos-2016-index.md
     # - Word 2016: word-2016-index.md

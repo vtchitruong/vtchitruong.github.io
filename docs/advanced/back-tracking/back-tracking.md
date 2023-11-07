@@ -107,6 +107,8 @@ flowchart TD
 
 Như vậy, hàm phát sinh số nhị phân `generate_binary` được viết như sau:
 
+Lưu ý: Do cách quản lý bộ nhớ của Python, trước khi nạp một đáp án vào mảng `solution`, ta không nạp trực tiếp `binary` vào, mà phải nạp bản sao bằng cách dùng hàm `copy()`.
+
 === "C++"
     ``` c++ linenums="1"
     void generateBinary(vector<int> binary, int length, int current)
@@ -134,7 +136,7 @@ Như vậy, hàm phát sinh số nhị phân `generate_binary` được viết n
     }
     ```
 === "Python"
-    ``` py linenums="1"
+    ``` py linenums="1" hl_lines="5"
     def generate_binary(binary, length, current):
         # Nếu độ dài số nhị phân đã đủ theo yêu cầu,
         # thì nạp vào mảng solution
