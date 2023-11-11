@@ -125,8 +125,24 @@ div.doc-contents:not(.first) {
     box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
 }
 
+.md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
+}
+
 /* line number column */
 .md-typeset .tabbed-block>.highlight:first-child>.highlighttable>tbody>tr>.filename span.filename, .md-typeset .tabbed-block>.highlight:first-child>.highlighttable>tbody>tr>.linenos {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* margin: 0; */
+    background-color: #fff;
+    border-left: 10px solid #1d9ded;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
+}
+
+.highlighttable .linenos {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     /* margin: 0; */
@@ -140,10 +156,10 @@ div.doc-contents:not(.first) {
     box-shadow: none;
 }
 
-.md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
+/* .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-}
+} */
 
 @media screen and (max-width: 44.9375em) {
     .md-content__inner>.highlight>.highlighttable>tbody>tr>.linenos {
