@@ -287,13 +287,15 @@ nav:
     - grade-12/grade-12-index.md
   - Nâng cao:
     - advanced/advanced-index.md
-    - advanced/recursion/recursion.md
-    - advanced/back-tracking/back-tracking.md
-
+    - Đệ quy:
+      - advanced/recursion/recursion.md
+      - advanced/back-tracking/back-tracking.md
     - Đồ thị:
       - DFS: advanced/graph/dfs.md
       - BFS: advanced/graph/bfs.md
       - Dijkstra: advanced/graph/dijkstra.md
+    - Quy hoạch động:
+      - Chia phần thưởng: advanced/dynamic-programming/reward-student.md
   - MOS:
     - MOS 2016: mos/mos-2016-index.md
     # - Word 2016: word-2016-index.md

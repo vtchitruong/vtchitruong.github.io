@@ -196,6 +196,15 @@ table tr:nth-child(2n) {
     background-color: transparent;
 }
 
+.md-typeset table:not([class]) {
+    border-radius: 15px;
+}
+
+/* --- table header --- */
+.md-typeset table:not([class]) th {
+    min-width: 1.5rem;
+}
+
 /* ------------------- posts background ------------------- */
 .md-main {
     background-color: #f7f9fc;
