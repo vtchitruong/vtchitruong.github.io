@@ -23,7 +23,6 @@ Hình 1. Minh họa trò chơi có 4 đĩa
 In ra màn hình chỉ dẫn từng bước di chuyển đĩa để đáp ứng thể lệ của trò chơi nêu trên.[^1]
 
 [^1]: Nội dung chính được tham khảo tại:
-    
 
 ### Input
 4 1 3

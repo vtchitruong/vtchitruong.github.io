@@ -1,4 +1,4 @@
-# Đệ quy
+# Khái quát về đệ quy
 
 ## Khái niệm
 
