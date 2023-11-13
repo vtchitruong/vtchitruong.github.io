@@ -288,8 +288,10 @@ nav:
   - Nâng cao:
     - advanced/advanced-index.md
     - Đệ quy:
-      - advanced/recursion/recursion.md
-      - advanced/back-tracking/back-tracking.md
+      - Khái quát về đệ quy: advanced/recursion/recursion.md
+      - Tháp Hà Nội: advanced/recursion/hanoitower.md
+    - Quay lui:
+      - Khái quát về quay lui: advanced/back-tracking/back-tracking.md
     - Đồ thị:
       - DFS: advanced/graph/dfs.md
       - BFS: advanced/graph/bfs.md
