@@ -115,7 +115,7 @@ div.doc-contents:not(.first) {
 /* ------------------- Code blocks ------------------- */
 /* This is for output block */
 .md-typeset pre>code {
-    border-radius: 15px;    
+    border-radius: 15px;
 }
 
 .md-typeset .tabbed-block>.highlight:first-child>.highlighttable>tbody>tr>.code>div>pre>code {
