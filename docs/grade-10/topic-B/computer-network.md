@@ -59,7 +59,7 @@ Internet được thiết kế hướng đến sự đảm bảo cho kết nối
 
 ## Vai trò của Internet đối với xã hội
 
-Internet là phát minh mạng tính cách mạng, có tác động sâu sắc đến xã hội bằng việc làm thay đổi cách con người sống, làm việc và tương tác với nhau. Có thể kể ra những lợi ích chủ yếu của Internet như sau:  
+Internet là phát minh mang tính cách mạng, có tác động sâu sắc đến xã hội bằng việc làm thay đổi cách con người sống, làm việc và tương tác với nhau. Có thể kể ra những lợi ích chủ yếu của Internet như sau:  
 
 1. **Kết nối và giao tiếp**
 
