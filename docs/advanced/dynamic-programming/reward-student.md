@@ -174,6 +174,6 @@ Do đó, ta chỉ cần lập mảng một chiều, tức bảng chỉ có một
                 l[r] = l[r] + l[r - s]
     ```
 
-## Toàn bộ chương trình¶
+## Toàn bộ chương trình
 
 Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/DynamicProgramming/tree/main/RewardStudent){:target="_blank"}.
