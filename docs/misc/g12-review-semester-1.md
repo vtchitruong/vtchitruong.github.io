@@ -53,7 +53,7 @@ Xem bài lý thuyết [tại đây](https://vtchitruong.github.io/grade-11/topic
 6. Một bảng dữ liệu có chứa 2 cột là Năm sinh và Tuổi. Bảng này có thể vi phạm tính chất gì của cơ sở dữ liệu?
 
     ??? tip "Gợi ý"
-        Tính dư thừa
+        Tính không dư thừa
 
 7. Việc chia dữ liệu thành nhiều bảng, nhiều cột, nhiều dòng có thể được gọi là tính chất gì của cơ sở dữ liệu?
 
@@ -103,7 +103,7 @@ Xem bài lý thuyết [tại đây](https://vtchitruong.github.io/grade-11/topic
     ??? tip "Gợi ý"
         Tính toàn vẹn
 
-12. Trong khung nhìn của học sinh, tiết 1 học môn Tin, còn khung nhìn của giáo viên bộ môn lại là môn Thể dục. Cơ sở dữ liệu này đã vi phạm tính chất gì?
+12. Trong thời khóa biểu của học sinh, tiết 1 học môn Tin, còn thời khóa biểu của giáo viên bộ môn lại là môn Thể dục. Cơ sở dữ liệu này đã vi phạm tính chất gì?
 
     ??? tip "Gợi ý"
         Tính nhất quán
@@ -291,13 +291,9 @@ Movies(<ins>**MovieID**</ins>, Title, ReleaseYear, Genre, Director)
 
 10. Trong cơ sở dữ liệu, thuộc tính gì thường được dùng để xác định một thực thể nào đó là duy nhất?
 
-    1. Họ tên
-    2. Ngày sinh và nơi sinh
-    3. Nhan sắc
-    4. Mã định danh ID
-
     ??? tip "Gợi ý"
-        Đáp án: D  
+    
+        Đáp án: Mã định danh ID  
 
 ## Tạo bảng trong Access
 
@@ -363,7 +359,7 @@ Xem bài lý thuyết [tại đây](https://vtchitruong.github.io/grade-11/topic
     ??? tip "Gợi ý"
         Đáp án: D
 
-8. Trong Acces, Kiểu dữ liệu Short Text trong Microsoft Access chứa tối đa bao nhiêu kí tự?
+8. Trong Access, kiểu dữ liệu Short Text chứa tối đa bao nhiêu ký tự?
 
     1. 252
     2. 225
