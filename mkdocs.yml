@@ -301,6 +301,7 @@ nav:
     - Quy hoạch động:
       - Chia phần thưởng: advanced/dynamic-programming/reward-student.md
       - Dãy con tăng dài nhất: advanced/dynamic-programming/lis.md
+      - Balo: advanced/dynamic-programming/knapsack.md
   - MOS:
     - MOS 2016: mos/mos-2016-index.md
     # - Word 2016: word-2016-index.md
