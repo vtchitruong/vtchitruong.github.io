@@ -159,6 +159,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.snippets
+  - attr_list
 
 
 ## Custom theme additions
@@ -238,7 +239,7 @@ plugins:
 nav:
   - Home: index.md
   - Getting started:
-    - Getting started: getting-started.md
+    - Tính năng: features.md
   - Lớp 10:
     - Khái quát chương trình học: grade-10/grade-10-index.md
     - Chủ đề A1:
