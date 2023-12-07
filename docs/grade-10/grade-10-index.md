@@ -105,5 +105,5 @@ Phần mềm thiết kế đồ họa
 
 Sơ đồ dưới đây chỉ mang ý nghĩa khái quát, không trình bày chi tiết những nội dung cần học.
 
-{!grade-10/grade-10-overall curriculum.mm.md!}
+{!grade-10/grade-10-overall-curriculum.mm.md!}
 
