@@ -241,7 +241,7 @@ nav:
   - Getting started:
     - Tính năng: features.md
   - Lớp 10:
-    - Khái quát chương trình học: grade-10/grade-10-index.md
+    - Chương trình khung: grade-10/grade-10-index.md
     - Chủ đề A1:
       - grade-10/topic-A1/data-vs-information.md
       - grade-10/topic-A1/data-measurement-unit.md      
@@ -266,7 +266,7 @@ nav:
       - grade-10/topic-F/list.md
       - grade-10/topic-F/string.md
   - Lớp 11:
-    - Khái quát chương trình học: grade-11/grade-11-index.md
+    - Chương trình khung: grade-11/grade-11-index.md
     - Chủ đề A:
       - grade-11/topic-A/os-vs-application.md
       - grade-11/topic-A/open-source-software.md
@@ -287,7 +287,7 @@ nav:
       - grade-11/topic-F2/sorting-algorithm.md
       - grade-11/topic-F2/algorithmic-complexity.md
   - Lớp 12:
-    - grade-12/grade-12-index.md
+    - Chương trình khung: grade-12/grade-12-index.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Đệ quy:

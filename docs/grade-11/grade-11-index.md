@@ -1,6 +1,4 @@
-It has been under development up until now.
-
-# Chương trình khung theo Chương trình GDPT 2018
+# Chương trình khung lớp 11 theo Chương trình GDPT 2018
 
 ## Phần chung
 
@@ -88,7 +86,7 @@ Nghề quản trị cơ sở dữ liệu
     - Yêu cầu thiết yếu về kiến thức và kĩ năng cần có để làm nghề.
     - Ngành học có liên quan ở các bậc học tiếp theo.
     - Nhu cầu nhân lực hiện tại và tương lai của nhóm nghề đó.
-    
+
 2. Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực, v.v...) về một vài ngành nghề khác trong lĩnh vực tin học.
 3. Giao lưu được với bạn bè qua các kênh truyền thông tin số để tham khảo và trao đổi ý kiến về những thông tin trên.
 

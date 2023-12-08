@@ -1,4 +1,4 @@
-# Chương trình khung theo Chương trình GDPT 2018
+# Chương trình khung lớp 10 theo Chương trình GDPT 2018
 
 ## Phần chung
 
