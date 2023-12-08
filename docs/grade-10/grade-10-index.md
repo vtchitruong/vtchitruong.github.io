@@ -18,7 +18,9 @@ Tin học và xử lý thông tin
     3. Nhận biết được một vài thiết bị số thông dụng khác ngoài máy tính để bàn và laptop, giải thích được các thiết bị đó cũng là những hệ thống xử lý thông tin.
     4. Giới thiệu được các thành tựu nổi bật ở một số mốc thời gian để minh họa sự phát triển của ngành tin học.
 
-*Chủ đề A.2. là phần riêng của CS.*
+#### Chủ đề A-2
+
+*Chủ đề A-2. là phần riêng của CS.*
 
 ### Chủ đề B
 
@@ -81,7 +83,9 @@ Lập trình cơ bản
 
 ### Chủ đề A
 
-*Chủ đề A.1. là phần chung.*
+#### Chủ đề A-1
+
+*Chủ đề A-1 là phần chung.*
 
 #### Chủ đề A-2 
 

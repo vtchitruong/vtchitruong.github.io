@@ -13,11 +13,11 @@ markmap:
 #### A-1: Tin học và xử lý thông tin
 
 - Dữ liệu và thông tin
-- Đơn vi đo
+- Đơn vị đo
 - Thiết bị số và thiết bị thông minh
 - Lịch sử phát triển
 
-#### A-2: Đây là phần riêng của CS
+#### A-2: Đây là phần riêng của CS.
 
 ### Chủ đề B
 
