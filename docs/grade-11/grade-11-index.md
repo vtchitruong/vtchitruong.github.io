@@ -6,7 +6,9 @@ It has been under development up until now.
 
 ### Chủ đề A
 
-#### A.1. Hệ điều hành và phần mềm ứng dụng
+#### Chủ đề A-1
+
+Hệ điều hành và phần mềm ứng dụng
 
 1. Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng
     1. Trình bày được sơ lược lịch sử phát triển của hai hệ điều hành thông dụng cho PC, một hệ điều hành là phần mềm thương mại và hệ điều hành còn lại là phần mềm nguồn mở. Sử dụng được một số chức năng cơ bản của một trong hai hệ điều hành đó.
@@ -18,7 +20,9 @@ It has been under development up until now.
     3. Sử dụng được một số tiện ích có sẵn của hệ điều hành để nâng cao hiệu suất sử dụng máy tính.
     4. Kích hoạt và sử dụng được một vài chức năng cơ bản của một phần mềm soạn thảo văn bản, một phần mềm bảng tính và một phần mềm trình chiếu chạy trên Internet. Ví dụ các phần mềm trong gói Google Docs.
 
-#### A.2. Thế giới thiết bị số
+#### Chủ đề A-2
+
+Thế giới thiết bị số
 
 1. Những bộ phận chính bên trong máy tính
 
@@ -35,11 +39,13 @@ It has been under development up until now.
 
 ### Chủ đề B
 
-*(không có chủ đề B)*
+*Không có chủ đề B.*
 
 ### Chủ đề C
 
-#### C.1. Tìm kiếm và trao đổi thông tin trên mạng
+#### Chủ đề C-1
+
+Tìm kiếm và trao đổi thông tin trên mạng
 
 1. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v...  
 2. Sử dụng được máy tìm kiếm, chẳng hạn máy tìm kiếm của Google, Yahoo, Bing, v.v... trên PC và thiết bị số thông minh để tìm kiếm thông tin bằng cách gõ từ khóa hoặc bằng tiếng nói.
@@ -47,14 +53,18 @@ It has been under development up until now.
 4. Sử dụng được những chức năng nâng cao của dịch vụ mạng xã hội.
 5. Biết cách phân loại và đánh dấu các email.
 
-#### C.2. Ứng xử văn hóa và an toàn trên mạng
+#### Chủ đề C-2
+
+Ứng xử văn hóa và an toàn trên mạng
 
 1. Nêu được một số dạng lừa đảo phổ biến trên mạng và những biện pháp phòng tránh.
 2. Giao tiếp được trên mạng qua email, chat, mạng xã hội, v.v... và trong môi trường số một cách văn minh, phù hợp với các quy tắc và văn hóa ứng xử.
 
 ### Chủ đề F
 
-#### F.1. Cơ sở dữ liệu
+#### Chủ đề F-1
+
+Cơ sở dữ liệu
     
 1. Giới thiệu các hệ cơ sở dữ liệu
     1. Nhận biết được nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý
@@ -62,31 +72,37 @@ It has been under development up until now.
 	3. Nêu được những khái niệm cơ bản của hệ cơ sở dữ liệu. Giải thích được các khái niệm đó qua ví dụ minh họa.
 	4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
 	5. Nêu được tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu.
-2. *(không có)*
+2. *Không có.*
 
-*Chủ đề F.2. là phần riêng của CS.*
+#### Chủ đề F-2
+
+*Chủ đề F-2 là phần riêng của CS.*
 
 ### Chủ đề G
 
-#### Hướng nghiệp
+Nghề quản trị cơ sở dữ liệu
 
-1. Nghề quản trị cơ sở dữ liệu
-    1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v...):
-        - Những nét sơ lược về công việc chính mà người làm nghề phải thực hiện.
-        - Yêu cầu thiết yếu về kiến thức và kĩ năng cần có để làm nghề.
-        - Ngành học có liên quan ở các bậc học tiếp theo.
-        - Nhu cầu nhân lực hiện tại và tương lai của nhóm nghề đó.
-    2. Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực, v.v...) về một vài ngành nghề khác trong lĩnh vực tin học.
-    3. Giao lưu được với bạn bè qua các kênh truyền thông tin số để tham khảo và trao đổi ý kiến về những thông tin trên.
-2. *(không có)*
+1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v...):
+
+    - Những nét sơ lược về công việc chính mà người làm nghề phải thực hiện.
+    - Yêu cầu thiết yếu về kiến thức và kĩ năng cần có để làm nghề.
+    - Ngành học có liên quan ở các bậc học tiếp theo.
+    - Nhu cầu nhân lực hiện tại và tương lai của nhóm nghề đó.
+    
+2. Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực, v.v...) về một vài ngành nghề khác trong lĩnh vực tin học.
+3. Giao lưu được với bạn bè qua các kênh truyền thông tin số để tham khảo và trao đổi ý kiến về những thông tin trên.
 
 ## Phần riêng dành cho CS
 
 ### Chủ đề F
 
-*Chủ đề F.1. là phần chung.*
+#### Chủ đề F-1
 
-#### F.2. Kỹ thuật lập trình
+*Chủ đề F-1 là phần chung.*
+
+#### Chủ đề F-2
+
+Kỹ thuật lập trình
 
 1. Viết chương trình cho một số thuật toán sắp xếp, tìm kiếm cơ bản
     1. Phát biểu được bài toán sắp xếp và bài toán tìm kiếm.
@@ -108,13 +124,19 @@ It has been under development up until now.
 
 ## Phần riêng dành cho ICT
 
-### Chủ đề E. Phần mềm chỉnh sửa ảnh và làm video
+### Chủ đề E
 
-#### E.1. Chỉnh sửa ảnh, tạo ảnh động
+Phần mềm chỉnh sửa ảnh và làm video
 
-Thực hiện được các thao tác xử lý ảnh cơ bản: cắt, phóng to, thu nhỏ, di chuyển, tẩy xóa ảnh và tạo ảnh động.
+#### Chủ đề E-1
 
-#### E.2. Làm phim hoạt hình, video
+Chỉnh sửa ảnh, tạo ảnh động
+
+&emsp;&emsp;Thực hiện được các thao tác xử lý ảnh cơ bản: cắt, phóng to, thu nhỏ, di chuyển, tẩy xóa ảnh và tạo ảnh động.
+
+#### Chủ đề E-2
+
+Làm phim hoạt hình, video
 
 1. Tạo được các đoạn phim, nhập tư liệu từ ảnh và video có sẵn, biên tập được đoạn phim phục vụ học tập và giải trí.
 2. Sử dụng được một số công cụ cơ bản biên tập phim: chỉnh sửa hình ảnh, âm thanh, tạo phụ đề, tạo các hiệu ứng chuyển cảnh, căn chỉnh thời gian.
@@ -122,13 +144,15 @@ Thực hiện được các thao tác xử lý ảnh cơ bản: cắt, phóng to
 
 ### Chủ đề F
 
-#### F.1. Cơ sở dữ liệu
+#### Chủ đề F-1
+
+Cơ sở dữ liệu
 
 1. Thực hành tạo và cập nhật cơ sở dữ liệu
 
     Thực hiện được việc tạo lập cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ Quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
 
-    1. Tạo được các bảng và chỉ định được khoá cho mỗi bảng, thiết lập được mối quan hệ giữa các bảng qua việc chỉ định khoá ngoài.
+    1. Tạo được các bảng và chỉ định được khóa cho mỗi bảng, thiết lập được mối quan hệ giữa các bảng qua việc chỉ định khóa ngoài.
     2. Thực hiện được việc cập nhật cơ sở dữ liệu.
     3. Nêu được một vài tổ chức cần ứng dụng cơ sở dữ liệu để quản lý hoạt động của mình.
     4. Thể hiện được tính cẩn thận, chăm chỉ, trách nhiệm trong việc lưu trữ và quản lý dữ liệu.
@@ -142,7 +166,12 @@ Thực hiện được các thao tác xử lý ảnh cơ bản: cắt, phóng to
     3. Giải thích được tính ưu việt của việc quản lý dữ liệu một cách khoa học nhờ ứng dụng cơ sở dữ liệu.
     4. Tìm hiểu được thêm một vài chức năng của hệ quản trị cơ sở dữ liệu.
 
+#### Chủ đề F-2
 
-*Chủ đề F.2. là phần riêng dành cho CS.*
+*Chủ đề F-2 là phần riêng dành cho CS.*
 
+## Sơ đồ tóm tắt
 
+Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
+
+{!grade-11/grade-11-overall-curriculum.mm.md!}

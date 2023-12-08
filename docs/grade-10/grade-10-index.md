@@ -42,7 +42,7 @@ Internet hôm nay và ngày mai
 
 ### Chủ đề C
 
-*(không có chủ đề C)*
+*Không có chủ đề C.*
 
 ### Chủ đề D
 
@@ -107,7 +107,7 @@ Phần mềm thiết kế đồ họa
 
 ## Sơ đồ tóm tắt
 
-Sơ đồ dưới đây chỉ mang ý nghĩa khái quát, không trình bày chi tiết những nội dung cần học.
+Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
 
 {!grade-10/grade-10-overall-curriculum.mm.md!}
 
