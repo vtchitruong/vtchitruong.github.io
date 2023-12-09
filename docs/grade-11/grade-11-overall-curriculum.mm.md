@@ -26,13 +26,15 @@ markmap:
 
 ### Chủ đề C
 
-#### Chủ đề C-1
-
 - Máy tìm kiếm, mạng xã hội, email
 
-#### Chủ đề C-2
+### Chủ đề D
 
 - Lừa đảo trên mạng
+
+### Chủ đề E
+
+- Đây là phần riêng của ICT.
 
 ### Chủ đề F
 
@@ -50,7 +52,7 @@ markmap:
 
 ### Chủ đề F
 
-#### F-1: Đây là phần chung.
+#### F-1: Đây là phần chung cơ sở dữ liệu.
 
 #### F-2: Kỹ thuật lập trình
 

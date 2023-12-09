@@ -79,6 +79,20 @@ Lập trình cơ bản
     - Kiểm thử và gỡ lỗi được chương trình.
     - Viết và thực hiện được chương trình giải quyết bài toán đơn giản có vận dụng kiến thức liên môn.
 
+### Chủ đề G
+
+Giới thiệu nhóm nghề thiết kế và lập trình		
+
+1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v...):
+
+    - Những nét sơ lược về công việc chính mà người làm nghề phải thực hiện.
+    - Yêu cầu thiết yếu về kiến thức và kỹ năng cần có để làm nghề.
+    - Ngành học có liên quan ở các bậc học tiếp theo.
+    - Nhu cầu nhân lực hiện tại và tương lai của nhóm nghề đó.
+
+2. Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực, v.v...) về một vài ngành nghề khác trong lĩnh vực tin học.
+3. Giao lưu được với bạn bè qua các kênh truyền thông tin số để tham khảo và trao đổi ý kiến về những thông tin trên.
+
 ## Phần riêng dành cho CS
 
 ### Chủ đề A
@@ -91,7 +105,7 @@ Lập trình cơ bản
 
 Biểu diễn thông tin
 
-1. Kĩ năng sử dụng thiết bị số của mỗi công dân  
+1. Kỹ năng sử dụng thiết bị số của mỗi công dân  
     1. Thực hiện được các phép tính cơ bản AND, OR, NOT, giải thích được ứng dụng của hệ nhị phân trong tin học. Giải thích được sơ lược việc số hóa văn bản, hình ảnh, âm thanh.  
 	2. Giải thích được sơ lược về chức năng của bảng mã chuẩn quốc tế. (Ví dụ: Unicode) 
 2. *(không có)*
@@ -103,7 +117,7 @@ Biểu diễn thông tin
 Phần mềm thiết kế đồ họa		
     
 1. Sử dụng được một số chức năng cơ bản của phần mềm thiết kế đồ họa.
-2. Tạo được sản phẩm số đơn giản, hữu ích và thực tế như thiết kế logo, tạo banner, topic quảng cáo, băng - rôn, áp phích, poster và thiệp chúc mừng, v.v...
+2. Tạo được sản phẩm số đơn giản, hữu ích và thực tế như thiết kế logo, tạo banner, topic quảng cáo, banderole, áp phích, poster và thiệp chúc mừng, v.v...
 
 ## Sơ đồ tóm tắt
 

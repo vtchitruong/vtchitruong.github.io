@@ -21,24 +21,26 @@ markmap:
 
 ### Chủ đề B
 
-#### Internet hôm nay và ngày mai
-
-- LAN và Internet
-- IoT, điện toán đám mây
-- Phần mềm độc hại
+- Internet
+    - LAN và Internet
+    - IoT, điện toán đám mây
+    - Phần mềm độc hại
 
 ### Chủ đề C
 
-- không có
+- Không có.
 
 ### Chủ đề D
 
-#### Nghĩa vụ tuân thủ pháp lý trong môi trường số
+- Tuân thủ pháp lý trong môi trường số
+    - Giao tiếp trên mạng
+    - Chia sẻ thông tin trên mạng
+    - Tôn trọng bản quyền
+    - Một số luật liên quan
 
-- Giao tiếp trên mạng
-- Chia sẻ thông tin trên mạng
-- Tôn trọng bản quyền
-- Một số luật liên quan
+### Chủ đề E
+
+- Đây là phần riêng của ICT.
 
 ### Chủ đề F
 
@@ -47,6 +49,10 @@ markmap:
 - Biến, toán tử, nhập, xuất, cấu trúc điều khiển, kiểu dữ liệu, mảng
 - Thư viện và hàm
 - Vận dụng kiến thức liên môn
+
+### Chủ đề G
+
+- Nhóm nghề thiết kế và lập trình
 
 ## Phần riêng dành cho CS
 

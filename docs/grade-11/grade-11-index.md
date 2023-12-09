@@ -41,8 +41,6 @@ Thế giới thiết bị số
 
 ### Chủ đề C
 
-#### Chủ đề C-1
-
 Tìm kiếm và trao đổi thông tin trên mạng
 
 1. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v...  
@@ -51,12 +49,16 @@ Tìm kiếm và trao đổi thông tin trên mạng
 4. Sử dụng được những chức năng nâng cao của dịch vụ mạng xã hội.
 5. Biết cách phân loại và đánh dấu các email.
 
-#### Chủ đề C-2
+### Chủ đề D
 
 Ứng xử văn hóa và an toàn trên mạng
 
 1. Nêu được một số dạng lừa đảo phổ biến trên mạng và những biện pháp phòng tránh.
 2. Giao tiếp được trên mạng qua email, chat, mạng xã hội, v.v... và trong môi trường số một cách văn minh, phù hợp với các quy tắc và văn hóa ứng xử.
+
+### Chủ đề E
+
+*Chủ đề E là phần riêng của ICT.*
 
 ### Chủ đề F
 
