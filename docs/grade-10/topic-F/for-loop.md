@@ -232,7 +232,7 @@ Nếu đặt `step` là số âm thì biến `i` sẽ chạy *từ số lớn ng
 
 ## Google Colab
 
-Một phiên bản của bài này được đặt trên <a href="https://colab.research.google.com/drive/1jr872x9_by5xO53MJSmrbEueqQazBe37?usp=sharing" target="_blank">Google Colab</a> để người học có thể chạy các đoạn mã ví dụ và thử nghiệm chương trình của riêng mình.  
+Các đoạn mã trong bài này được đặt tại <a href="https://colab.research.google.com/drive/1jr872x9_by5xO53MJSmrbEueqQazBe37?usp=sharing" target="_blank">Google Colab</a> để bạn có thể thử nghiệm theo cách của riêng mình.  
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |

@@ -38,7 +38,7 @@ Hình 2. Sơ đồ phân loại phần mềm
 
 ## Google Colab
 
-Một phiên bản của bài này đặt tại <a href="" target="_blank">Google Colab</a> để người học có thể chạy các đoạn mã ví dụ và thử nghiệm chương trình của riêng mình.
+Các đoạn mã trong bài này được đặt tại <a href="" target="_blank">Google Colab</a> để bạn có thể thử nghiệm theo cách của riêng mình.  
 
 Code đầy đủ được đặt tại [GitHub](){:target="_blank"}.
 
