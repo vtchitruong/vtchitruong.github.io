@@ -1,6 +1,6 @@
 ---
 markmap:
-  colorFreezeLevel: 3
+  colorFreezeLevel: 2
   maxWidth: 300
 ---
 
