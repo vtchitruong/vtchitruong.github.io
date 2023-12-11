@@ -16,7 +16,7 @@ Câu lệnh `for` là câu lệnh **lặp**, áp dụng cho trường hợp ngư
 
 Các loại vòng lặp, trong đó có `for`, được sử dụng nhằm tận dụng sức mạnh "*trâu bò*" của máy tính, thực hiện lặp đi lặp lại những thao tác nào đó cho đến khi ra được kết quả.
 
-## Câu lệnh for cơ bản
+## Cú pháp
 
 !!! note "Cú pháp"
     ``` py
@@ -226,9 +226,9 @@ Trường hợp `range` có đầy đủ ba tham số:
 for i in range(start, stop, step):
 ```
 
-Trường hợp này áp dụng khi ta không muốn biến `i` tăng 1 đơn vị sau mỗi lần lặp, mà tăng theo `step` nào đó.
+Trường hợp này áp dụng khi ta không muốn biến `i` tăng 1 sau mỗi lần lặp, mà tăng theo `step` nào đó.
 
-Chẳng hạn, nếu muốn `i` tăng 2 đơn vị, ta thiết lập tham số `step` là 2.
+Chẳng hạn, nếu muốn `i` tăng 2, ta thiết lập tham số `step` là 2.
 
 Một cách tổng quát, nếu muốn `i` ***nhảy*** $x$ bước, ta thiết lập `step` là $x$.  
 
@@ -286,7 +286,7 @@ Output:
 ## Sơ đồ tóm tắt nội dung
 
 {!grade-10/topic-F/for-loop.mm.md!}
-Hình 1. Sơ đồ tóm tắt câu lệnh for
+Hình 1. Sơ đồ tóm tắt lệnh for
 
 ## Google Colab
 

@@ -196,7 +196,7 @@ Bạn đã vào tuổi hưu.
 ## Sơ đồ tóm tắt nội dung
 
 {!grade-10/topic-F/conditional-statement-if.mm.md!}
-Hình 1. Sơ đồ tóm tắt câu lệnh if
+Hình 1. Sơ đồ tóm tắt lệnh if
 
 ## Google Colab
 

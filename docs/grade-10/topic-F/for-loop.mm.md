@@ -12,7 +12,7 @@ markmap:
 
 ## Cú pháp cơ bản
 
-- `for i range(n): do_somthing`
+- `for i range(n): do_something`
 
 ## Lệnh range
 
