@@ -2,243 +2,299 @@
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày kiểu dữ liệu chuỗi và một số hàm xử lý chuỗi của Python.
+    Bài này trình bày kiểu dữ liệu chuỗi của Python.
 
 ## Khái niệm
 
-**Chuỗi** là một dãy các ký tự. Một số tài liệu khác sử dụng thuật ngữ *xâu*.  
+**Chuỗi** là một dãy các ký tự. Một số tài liệu khác sử dụng thuật ngữ *xâu*. Trong Python, kiểu dữ liệu chuỗi là `str`. 
 
-Trong Python, kiểu dữ liệu chuỗi là `str`. Một chuỗi được đặt trong **cặp nháy đơn** `' '` hoặc **cặp nháy kép** `" "`.  
+Một chuỗi được đặt trong **cặp nháy đơn** `' '` hoặc **cặp nháy kép** `" "`.
 
-Chuỗi cũng là danh sách mà mỗi phần tử là một *ký tự*.
+Chuỗi cũng là danh sách mà mỗi phần tử là một **ký tự**.
 
-## Truy xuất ký tự trong chuỗi
+## Truy xuất ký tự
 
-Vì chuỗi cũng là danh sách, nên chuỗi có những đặc điểm tương tự danh sách như:  
+Vì chuỗi cũng là danh sách, nên chuỗi có những đặc điểm tương tự danh sách như:
+
 - Độ dài của chuỗi là số ký tự có trong chuỗi, biết được nhờ hàm `len()`.  
 - Mỗi ký tự được truy xuất dựa trên chỉ số của ký tự đó, chẳng hạn `s[7]` là ký tự có chỉ số 7 của chuỗi `s`.  
-- Ký tự đầu tiên có chỉ số là ***0***.  
+- Ký tự đầu tiên có chỉ số là **0**.  
 - Ký tự cuối cùng có chỉ số là `len(s) - 1`.
 
-:   Ví dụ 1:
-    ``` py linenums="1"
-    s = 'Lê Quý Đôn'
-    print(s[0])           # In ra ký tự đầu tiên (chữ L)
-    print(s[0])           # In ra ký tự có chỉ số 3 (khoảng trắng)
-    print(s[7])           # In ra ký tự có chỉ số 7 (chữ Đ)
-    print(s[len(s) - 1])  # In ra ký tự cuối cùng (chữ n)
-    ```
+Ví dụ 1:
+``` py linenums="1"
+s = 'Lê Quý Đôn'
+print(s[0])           # In ra ký tự đầu tiên
+print(s[7])           # In ra ký tự có chỉ số 7
+print(s[len(s) - 1])  # In ra ký tự cuối cùng
+```
 
-    Output:
-    ``` pycon
-    L
-    L
-    Đ
-    n
-    ```
+Output:
+``` pycon
+L
+Đ
+n
+```
 
-:   Ví dụ 2:  
-    In mỗi ký tự của chuỗi trên một dòng.
-    ``` py linenums="1"
-    s = 'Lê Quý Đôn'
+!!! question "Câu hỏi 1"
 
-    n = len(s)
-    for i in range(n):
-        print(s[i])
-    ```
+    `print(s[2])` in ra màn hình ký tự gì?
 
-    Output:  
-    ``` pycon
-    L
-    ê
-    
-    Q
-    u
-    ý
-    
-    Đ
-    ô
-    n
-    ```
+    ??? tip "Đáp án"
 
-:   Ví dụ 3:  
-    In mỗi ký tự của chuỗi trên một dòng, viết theo cách sử dụng toán tử `in`.
-    ``` py linenums="1"
-    s = 'Lê Quý Đôn'
+        Ký tự có chỉ số 2 là khoảng trắng.
 
-    for c in s:
-        print(c)
-    ```
+Ví dụ 2:  
+In mỗi ký tự của chuỗi trên một dòng.
+``` py linenums="1"
+s = 'Lê Quý Đôn'
 
-    Output:
-    ``` pycon
-    L
-    ê
-    
-    Q
-    u
-    ý
-    
-    Đ
-    ô
-    n
-    ```
+n = len(s)
+for i in range(n):
+    print(s[i])
+```
 
-:   Ví dụ 4:  
-    In chuỗi trên cùng một dòng, các ký tự cách nhau bởi khoảng trắng.
-    ``` py linenums="1"
-    s = 'Lê Quý Đôn'
-    print(*s, sep=' ')
-    ```
+Output:  
+``` pycon
+L
+ê
 
-    Output:
-    ``` pycon
-    L ê   Q u ý   Đ ô n
-    ```
+Q
+u
+ý
 
-## Một số hàm xử lý chuỗi của Python
+Đ
+ô
+n
+```
 
-Python cung cấp sẵn nhiều hàm giúp cho việc xử lý chuỗi được tiện lợi hơn. Dưới đây là một số hàm xử lý chuỗi phổ biến.
+!!! question "Câu hỏi 2"
+
+    Bạn hãy viết đoạn mã có tác dụng tương tự ví dụ 2 nhưng sử dụng toán tử `in`.   
+
+    ??? tip "Đáp án"
+
+        ``` py
+        for c in s:
+            print(c)
+        ```
+
+Hàm `print()` của Python cung cấp tham số `sep` dùng để truyền vào **ký tự phân cách** khi in chuỗi.
+
+Ví dụ 3:  
+In chuỗi trên cùng một dòng, các ký tự cách nhau bởi ký tự gạch ngang.
+``` py linenums="1"
+s = 'Lê Quý Đôn'
+print(*s, sep='-')
+```
+
+Output:
+``` pycon
+L-ê- -Q-u-ý- -Đ-ô-n
+```
+
+## Một vài hàm xử lý chuỗi
+
+Python cung cấp nhiều hàm giúp cho việc xử lý chuỗi được tiện lợi hơn. Sau đây là một số hàm phổ biến.
 
 ### split()
-Hàm `split()` có tham số là *ký tự phân cách* các từ trong chuỗi, và *giá trị trả về* là một danh sách mà mỗi phần tử là một từ của chuỗi.
 
-:   Ví dụ 5:  
-    Đế biết chuỗi có bao nhiêu từ, trước hết ta tách chuỗi thành một danh sách các từ. Sau đó tính số phần tử có trong danh sách này.
-    ``` py linenums="1"
-    s = 'Trường trung học phổ thông Lê Quý Đôn'
-    
-    word_list = s.split(' ')         # (1) Tách chuỗi s thành danh sách word_list chứa các từ
-    print(word_list)                 # In danh sách
-    print('Số từ:', len(word_list))  # In ra số phần tử của word_list
-    ```
+Hàm `split()` dùng để cắt chuỗi ban đầu thành các chuỗi con dựa trên **ký tự phân cách**.
 
-    Output:
-    ``` pycon
-    ['Trường', 'trung', 'học', 'phổ', 'thông', 'Lê', 'Quý', 'Đôn']
-    Số từ: 8
-    ```
+Hàm này có *tham số* là **ký tự phân cách** và *giá trị trả về* là một danh sách gồm các phần tử là chuỗi con.
+
+Ví dụ 4:  
+Đế biết chuỗi có bao nhiêu từ, trước hết ta tách chuỗi thành một danh sách các từ. Sau đó tính số phần tử có trong danh sách này.
+
+``` py linenums="1"
+s = 'Ngọc bất trác bất thành khí. Nhân bất học bất tri lý.'
+
+word_list = s.split(' ')         # Tách chuỗi s dựa trên ký tự khoảng trắng
+print(word_list)                 # In danh sách
+print('Số từ:', len(word_list))  # In số phần tử của word_list
+```
+
+Output:
+``` pycon
+['Ngọc', 'bất', 'trác', 'bất', 'thành', 'khí.', 'Nhân', 'bất', 'học', 'bất', 'tri', 'lý.']
+Số từ: 12
+```
 
 Nếu hàm `split()` không có tham số, thì mặc định Python sẽ tách chuỗi theo *khoảng trắng*. Do đó, dòng lệnh này có thể viết là `word_list = s.split()`.
+
+!!! question "Câu hỏi 3"
+
+    Bạn hãy chỉnh sửa hàm `split()` để tách chuỗi `s` của ví dụ 4 thành các câu riêng biệt.
+
+    ??? tip "Đáp án"
+
+        ``` py
+        sentences = s.split('.')
+        print(sentences)
+        ```
 
 ### join()
 Hàm `join()` dùng để ghép các phần tử của danh sách lại thành một chuỗi.
 
-:   Ví dụ 6:  
-    Ghép các phần tử trong danh sách `word_list` lại thành chuỗi `s`.
-    ``` py linenums="1"
-    word_list = ['Dĩ', 'bất', 'biến', 'ứng', 'vạn', 'biến']
+Ví dụ 5:  
+Ghép các phần tử trong danh sách `word_list` lại thành chuỗi `s`.
+``` py linenums="1"
+word_list = ['Dĩ', 'bất', 'biến', 'ứng', 'vạn', 'biến']
 
-    s = ' '.join(word_list)
-    print(s)
-    ```
+s = ' '.join(word_list)
+print(s)
+```
 
-    Output:
-    ``` pycon
-    Dĩ bất biến ứng vạn biến
-    ```
+Output:
+``` pycon
+Dĩ bất biến ứng vạn biến
+```
+
+!!! question "Câu hỏi 4"
+
+    Bạn hãy chỉnh sửa ví dụ 5 để ghép các từ bằng ký tự gạch ngang `-`.
+
+    ??? tip "Đáp án"
+
+        ``` py
+        s = '-'.join(word_list)
+        ```
 
 ### Toán tử cộng `+`
-Toán tử `+` cũng được dùng để nối chuỗi.  
 
+Toán tử `+` cũng được dùng để nối chuỗi.
 
-:   Ví dụ 7:  
-    ``` py linenums="1"
-    phrase_1 = 'Many thanks'
-    phrase_2 = 'for reading my website'
+Ví dụ 6:  
+``` py linenums="1"
+phrase_1 = 'Many thanks'
+phrase_2 = 'for reading my website'
 
-    s = phrase_1 + ' ' + phrase_2
-    print(s)
-    ```
+s = phrase_1 + ' ' + phrase_2
+print(s)
+```
 
-    Output:
-    ``` pycon
-    Many thanks for reading my website
-    ```
+Output:
+``` pycon
+Many thanks for reading my website
+```
+
+!!! question "Câu hỏi 5"
+
+    Nếu dòng lệnh nối chuỗi của ví dụ 6 được sửa lại thành `s = phrase_2 + ' ' + phrase_1` thì kết quả in ra màn hình là gì?
+
+    ??? tip "Đáp án"
+
+        for reading my website Many thanks
 
 ###  title(), upper(), lower()
-- Hàm `title()`: in hoa ký tự đầu tiên của các từ.  
-- Hàm `upper()`: in hoa tất cả ký tự.  
-- Hàm `lower()`: chuyển tất cả ký tự thành dạng viết thường.  
 
-:   Ví dụ 8:
-    ``` py linenums="1"
-    s = 'Phi điểu tận, lương cung tàng. Giảo thố tử, tẩu cẩu phanh.'
+| Hàm | Công dụng | Cú pháp |
+| --- | --- | --- |
+| `title()` | In hoa ký tự đầu tiên của các từ. | `s.title()` |  
+| `upper()` | In hoa tất cả ký tự. | `s.upper()` |
+| `lower()` | Chuyển tất cả ký tự thành dạng viết thường. | `s.lower()` |  
 
-    s1 = s.title()
-    print('Hàm title():', s1)
+Ví dụ 7:
+``` py linenums="1"
+s = 'Phi điểu tận, lương cung tàng. Giảo thố tử, tẩu cẩu phanh.'
 
-    s2 = s.upper()
-    print('Hàm upper():', s2)
+s1 = s.title()
+print('Hàm title():', s1)
 
-    s3 = s.lower()
-    print('Hàm lower():', s3)
-    ```
+s2 = s.upper()
+print('Hàm upper():', s2)
 
-    Output:
-    ``` pycon
-    Hàm title(): Phi Điểu Tận, Lương Cung Tàng. Giảo Thố Tử, Tẩu Cẩu Phanh.
-    Hàm upper(): PHI ĐIỂU TẬN, LƯƠNG CUNG TÀNG. GIẢO THỐ TỬ, TẨU CẨU PHANH.
-    Hàm lower(): phi điểu tận, lương cung tàng. giảo thố tử, tẩu cẩu phanh.
-    ```
+s3 = s.lower()
+print('Hàm lower():', s3)
+```
+
+Output:
+``` pycon
+Hàm title(): Phi Điểu Tận, Lương Cung Tàng. Giảo Thố Tử, Tẩu Cẩu Phanh.
+Hàm upper(): PHI ĐIỂU TẬN, LƯƠNG CUNG TÀNG. GIẢO THỐ TỬ, TẨU CẨU PHANH.
+Hàm lower(): phi điểu tận, lương cung tàng. giảo thố tử, tẩu cẩu phanh.
+```
 
 ### find()
 
-Hàm `find()` dùng để tìm tìm chuỗi trong chuỗi. *Giá trị trả về* của hàm này là ***vị trí xuất hiện đầu tiên*** của *chuỗi con* cần tìm trong chuỗi gốc, hoặc ***-1*** nếu không tìm thấy *chuỗi con*.  
+Hàm `find()` dùng để tìm tìm chuỗi trong chuỗi.
 
-Ta cũng có thể chỉ định ***vị trí bắt đầu*** và ***vị trí kết thúc*** tìm kiếm. Mặc định, hàm `find()` luôn bắt đầu từ vị trí ***0***, nghĩa là bắt đầu từ ký tự đầu tiên, và tìm hết chuỗi, nghĩa là kết thúc ở ký tự cuối cùng.  
+Hàm này có *giá trị trả về* là **vị trí xuất hiện đầu tiên** của *chuỗi con* cần tìm trong chuỗi gốc, hoặc **-1** nếu không tìm thấy *chuỗi con*.  
 
-:   Ví dụ 9:  
-    Xác định xem có chuỗi con `'chi'` có trong chuỗi gốc hay không.
+Ta cũng có thể chỉ định **vị trí bắt đầu** và **vị trí kết thúc** tìm kiếm. Mặc định, hàm `find()` luôn bắt đầu tìm từ vị trí **0** và tìm hết chuỗi, tức kết thúc ở vị trị cuối cùng.
+
+Ví dụ 8:  
+Xác định xem có chuỗi con `'chi'` có trong chuỗi gốc hay không.
+``` py linenums="1"
+s = 'Hợp bao chi mộc, sinh vu hào mạt; Cửu tằng chi thái, khỏi vu lũy thổ; Thiên lý chi hành, thủy vu túc hạ.'
+
+position = s.find('chi')
+print(position)
+```
+
+Output:
+``` pycon
+8
+```
+
+Trong ví dụ 8, chuỗi con `'chi'` xuất hiện 3 lần trong chuỗi gốc. Tuy nhiên, hàm `find()` chỉ cho biết vị trí xuất hiện đầu tiên, là 8.  
+
+Ví dụ 9:  
+Xác định xem từ dấu phẩy đầu tiên trở đi, chuỗi con `'chi'` còn xuất hiện hay không.
+``` py linenums="1"
+s = 'Hợp bao chi mộc, sinh vu hào mạt; Cửu tằng chi thái, khỏi vu lũy thổ; Thiên lý chi hành, thủy vu túc hạ.'
+start = 15
+
+position = s.find('chi', start)
+print(position)
+```
+
+Output:
+``` pycon
+43
+```
+
+Trong ví dụ 9, hàm `find()` bắt đầu tìm từ ký tự có chỉ số 15, là dấu phẩy, cho đến hết chuỗi. Lúc này, chuỗi con `'chi'` xuất hiện hai lần, trong đó lần đầu tiên tại vị trí 43.   
+
+!!! question "Câu hỏi 6"
+
+    Thực hiện đoạn mã sau với chuỗi `s` của ví dụ 9, kết quả in ra màn hình là gì?
+
     ``` py linenums="1"
-    s = 'Hợp bao chi mộc, sinh vu hào mạt; Cửu tằng chi thái, khỏi vu lũy thổ; Thiên lý chi hành, thủy vu túc hạ.”'
-
-    position = s.find('chi')
-    print(position)
+    start = s.find(';')
+    pos = s.find('vu', start)
+    print(pos)
     ```
 
-    Output:
-    ``` pycon
-    8
-    ```
+    ??? tip "Đáp án"
+        
+        Dòng lệnh 1: Tìm vị trí của ký tự `;`, `start` được gán giá trị 32.  
+        Dòng lệnh 2: Tìm chuỗi `vu` bắt đầu từ vị trí 32, `pos` được gán giá trị 58.
 
-Trong ví dụ 9, chuỗi con `'chi'` xuất hiện 3 lần trong chuỗi gốc. Tuy nhiên, hàm `find()` chỉ cho biết vị trí xuất hiện đầu tiên, là 8.  
+Ví dụ 10:  
+Xác định xem có ký tự `'T'` trong chuỗi hay không.
 
-:   Ví dụ 10:  
-    Xác định xem từ dấu phẩy đầu tiên trở đi, chuỗi con `'chi'` còn xuất hiện hay không.
-    ``` py linenums="1"
-    s = 'Hợp bao chi mộc, sinh vu hào mạt; Cửu tằng chi thái, khỏi vu lũy thổ; Thiên lý chi hành, thủy vu túc hạ.'
-    start = 15
+``` py linenums="1"
+s = 'Hợp bao chi mộc, sinh vu hào mạt; Cửu tằng chi thái, khỏi vu lũy thổ; Thiên lý chi hành, thủy vu túc hạ.'
 
-    position = s.find('chi', start)
-    print(position)
-    ```
+position = s.find('T')
+print(position)
+```
 
-    Output:
-    ``` pycon
-    43
-    ```
-    Trong ví dụ 10, hàm `find()` bắt đầu tìm từ ký tự có chỉ số 15, là dấu phẩy, cho đến hết chuỗi. Lúc này, chuỗi con `'chi'` xuất hiện 2 lần, trong đó lần đầu tiên tại vị trí 43.   
+Output:
+``` pycon
+70
+```
+Trong ví dụ 10, chuỗi gốc có nhiều ký tự `'t'`, song ký tự cần tìm là `'T'` in hoa. Chỉ có một ký tự `'T'` in hoa trong chuỗi gốc, xuất hiện tại vị trí 70.  
 
-:   Ví dụ 11:  
-    Xác định xem có ký tự `'T'` trong chuỗi hay không.
+## Sơ đồ tóm tắt nội dung
 
-    ``` py linenums="1"
-    s = 'Hợp bao chi mộc, sinh vu hào mạt; Cửu tằng chi thái, khỏi vu lũy thổ; Thiên lý chi hành, thủy vu túc hạ.'
-
-    position = s.find('T')
-    print(position)
-    ```
-
-    Output:
-    ``` pycon
-    70
-    ```
-    Trong ví dụ 11, chuỗi gốc có nhiều ký tự `'t'`, song ký tự cần tìm là `'T'` in hoa. Chỉ có một ký tự `'T'` in hoa trong chuỗi gốc, xuất hiện tại vị trí 70.  
+{!grade-10/topic-F/string.mm.md!}
+Hình 1. Sơ đồ tóm tắt kiểu dữ liệu chuỗi
 
 ## Google Colab
 
-Một phiên bản của bài này được đặt trên <a href="https://colab.research.google.com/drive/1wo26gDR7lTDnUH9aMLgAv_UuETyY0KbQ?usp=sharing" target="_blank">Google Colab</a> để người học có thể chạy các đoạn mã ví dụ và thử nghiệm chương trình của riêng mình.  
+Các đoạn mã trong bài này được đặt tại <a href="https://colab.research.google.com/drive/1wo26gDR7lTDnUH9aMLgAv_UuETyY0KbQ?usp=sharing" target="_blank">Google Colab</a> để bạn có thể thử nghiệm theo cách của riêng mình.
 
 ## Some English words
 
