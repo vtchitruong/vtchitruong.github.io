@@ -135,9 +135,10 @@ Tổng là 55
     ??? tip "Đáp án"
 
         | | for | while |
+        | --- | --- | --- |
         | 1. Khởi tạo biến `i` | Do lệnh `range` | `i = 1` trước `while` |
-        | 2. Tăng `i` | Do lệnh 'range` | `i = i + 1` nằm ở khối lệnh lặp của `while` |
-        | 3. Điều kiện dừng lặp | Do lệnh 'range` | `i < n + 1` nằm ngay dòng `while` | 
+        | 2. Tăng `i` | Do lệnh `range` | `i = i + 1` nằm ở khối lệnh lặp của `while` |
+        | 3. Điều kiện dừng lặp | Do lệnh `range` | `i < n + 1` nằm ngay dòng `while` | 
 
 !!! question "Câu hỏi 3"
 

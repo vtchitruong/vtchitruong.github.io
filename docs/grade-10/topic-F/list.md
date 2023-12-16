@@ -54,6 +54,16 @@ Output:
 
     `print(bangdiem[0])` in ra màn hình giá trị gì?
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_1">Lời giải của bạn:</label><br>
+        <textarea id="userInput_1" name="userInput_1" required></textarea>
+        <textarea id="solution_1">8</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_1', 'solution_1', 'appreciate_1')">Submit</button>
+        <div id="appreciate_1"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
         `bangdiem[0]` là phần tử đầu tiên của danh sách `bangdiem`. Kết quả in ra màn hình là 8.
@@ -106,9 +116,21 @@ Output:
     Giả sử học sinh áp cuối trong danh sách đã làm bài gỡ điểm, được nâng thành 6.  
     Bạn hãy viết lệnh để gán giá trị 6 cho điểm áp cuối này.
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_2">Lời giải của bạn:</label><br>
+        <textarea id="userInput_2" name="userInput_2" required></textarea>
+        <textarea id="solution_2">bangdiem[len(bangdiem) - 2] = 6</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_2', 'solution_2', 'appreciate_2')">Submit</button>
+        <div id="appreciate_2"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
-        `bangdiem[len(bangdiem) - 2] = 6`
+        ``` py linenums="1"
+        bangdiem[len(bangdiem) - 2] = 6
+        ```
 
 ## Duyệt phần tử trong danh sách
 
@@ -152,9 +174,21 @@ Output:
     8  
     ...
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_3">Lời giải của bạn:</label><br>
+        <textarea id="userInput_3" name="userInput_3" required></textarea>
+        <textarea id="solution_3">for i in range(len(bangdiem) - 1, -1, -1):</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_3', 'solution_3', 'appreciate_3')">Submit</button>
+        <div id="appreciate_3"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
-        `for i in range(len(bangdiem) - 1, -1, -1):`
+        ``` py linenums="1"
+        for i in range(len(bangdiem) - 1, -1, -1):
+        ```
 
 ### Sử dụng toán tử in
 
@@ -208,6 +242,16 @@ Output:
 
     Với bảng điểm như ví dụ 6, giả sử ta cần tuyên dương những học sinh đạt điểm 10.  
     Bạn hãy in ra chỉ số của những phần tử có giá trị 10 trong `bang_diem` này.
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_4">Lời giải của bạn:</label><br>
+        <textarea id="userInput_4" name="userInput_4" style="height:3rem" required></textarea>
+        <textarea id="solution_4">for i in range(len(bangdiem)):.newline.    if bangdiem[i] == 10:.newline.        print(i)</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_4', 'solution_4', 'appreciate_4')">Submit</button>
+        <div id="appreciate_4"></div>
+    </form>
+    </div>
 
     ??? tip "Đáp án"
 

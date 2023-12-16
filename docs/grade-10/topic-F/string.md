@@ -86,7 +86,7 @@ n
     <form id="answer-form">
         <label for="userInput_2">Lời giải của bạn:</label><br>
         <textarea id="userInput_2" name="userInput_2" required></textarea>
-        <textarea id="solution_2">for c in s:#newline#    print&#40;c&#41;</textarea><br>
+        <textarea id="solution_2">for c in s:.newline.    print&#40;c&#41;</textarea><br>
         <button class="submitButton" type="button" onclick="process_answer('userInput_2', 'solution_2', 'appreciate_2')">Submit</button>
         <div id="appreciate_2"></div>
     </form>

@@ -52,6 +52,16 @@ Pass. Good job!
     Biết rằng biến `diem_thi_mos` có giá trị là 700.  
     Sau khi thực hiện đoạn mã của ví dụ 1, kết quả hiển thị trên màn hình là gì?
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_1">Lời giải của bạn:</label><br>
+        <textarea id="userInput_1" name="userInput_1" required></textarea>
+        <textarea id="solution_1">Pass. Good job!</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_1', 'solution_1', 'appreciate_1')">Submit</button>
+        <div id="appreciate_1"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
         Pass. Good job!
@@ -60,6 +70,16 @@ Pass. Good job!
 
     Biết rằng biến `diem_thi_mos` có giá trị là 669.  
     Sau khi thực hiện đoạn mã của ví dụ 1, kết quả hiển thị trên màn hình là gì?
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_2">Lời giải của bạn:</label><br>
+        <textarea id="userInput_2" name="userInput_2" required></textarea>
+        <textarea id="solution_2">Không hiển thị kết quả</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_2', 'solution_2', 'appreciate_2')">Submit</button>
+        <div id="appreciate_2"></div>
+    </form>
+    </div>
 
     ??? tip "Đáp án"
 
@@ -123,6 +143,16 @@ Output:
 
     Sau khi thực hiện đoạn mã của ví dụ 3, kết quả hiển thị trên màn hình là gì?
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_3">Lời giải của bạn:</label><br>
+        <textarea id="userInput_3" name="userInput_3" required></textarea>
+        <textarea id="solution_3">0 is an even number.</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_3', 'solution_3', 'appreciate_3')">Submit</button>
+        <div id="appreciate_3"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
         0 is an even number.
@@ -171,6 +201,16 @@ Bạn đã vào tuổi hưu.
     Biết rằng biến `age` có giá trị là 1.  
     Sau khi thực hiện đoạn mã của ví dụ 4, kết quả hiển thị trên màn hình là gì?
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_4">Lời giải của bạn:</label><br>
+        <textarea id="userInput_4" name="userInput_4" required></textarea>
+        <textarea id="solution_4">Bạn chưa đủ tuổi lao động.</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_4', 'solution_4', 'appreciate_4')">Submit</button>
+        <div id="appreciate_4"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
         Bạn chưa đủ tuổi lao động.  
@@ -180,6 +220,16 @@ Bạn đã vào tuổi hưu.
 
     Dòng lệnh `elif` của ví dụ 4 có thể được viết lại thành `elif 15 <= age <= 62:` được không?
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_5">Lời giải của bạn:</label><br>
+        <textarea id="userInput_5" name="userInput_5" required></textarea>
+        <textarea id="solution_5">Được</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_5', 'solution_5', 'appreciate_5')">Submit</button>
+        <div id="appreciate_5"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
         Được. Python cho phép diễn đạt giống như biểu thức toán học.  
@@ -188,6 +238,16 @@ Bạn đã vào tuổi hưu.
 !!! question "Câu hỏi 6"
 
     Nếu bài toán có $n$ trường hợp thì ta cần viết bao nhiêu lệnh `if` lẫn `elif`?
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_6">Lời giải của bạn:</label><br>
+        <textarea id="userInput_6" name="userInput_6" required></textarea>
+        <textarea id="solution_6">n - 1</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_6', 'solution_6', 'appreciate_6')">Submit</button>
+        <div id="appreciate_6"></div>
+    </form>
+    </div>
 
     ??? tip "Đáp án"
 

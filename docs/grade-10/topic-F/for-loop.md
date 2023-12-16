@@ -127,6 +127,16 @@ Trong ví dụ 4, để *lấy* được số 10, ta phải viết là `range(n 
         print(i)
     ```
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_1">Lời giải của bạn:</label><br>
+        <textarea id="userInput_1" name="userInput_1" style="height:4rem" required></textarea>
+        <textarea id="solution_1">0.newline.1.newline.2.newline.3</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_1', 'solution_1', 'appreciate_1')">Submit</button>
+        <div id="appreciate_1"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
         0  
@@ -213,6 +223,16 @@ Tổng là 26
     Biết rằng m và n vẫn được nhập giá trị lần lượt là 5 và 8.  
     Nếu dòng lệnh for của ví dụ 6 được sửa lại thành `for i in range(m, n):` thì kết quả in ra màn hình là gì?
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_2">Lời giải của bạn:</label><br>
+        <textarea id="userInput_2" name="userInput_2" required></textarea>
+        <textarea id="solution_2">18</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_2', 'solution_2', 'appreciate_2')">Submit</button>
+        <div id="appreciate_2"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
         Lúc này, biến `i` chạy từ 5 đến 7. Biến `S` sẽ lần lượt được cộng dồn với 5, 6 và 7.  
@@ -254,9 +274,21 @@ Tổng là 12
 
     Bạn hãy điều chỉnh dòng lệnh for của ví dụ 7 để đoạn mã trở thành tính tổng các số lẻ.
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_3">Lời giải của bạn:</label><br>
+        <textarea id="userInput_3" name="userInput_3" required></textarea>
+        <textarea id="solution_3">for i in range(1, n + 1, 2):</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_3', 'solution_3', 'appreciate_3')">Submit</button>
+        <div id="appreciate_3"></div>
+    </form>
+    </div>
+    
     ??? tip "Đáp án"
 
-        `for i in range(1, n + 1, 2):`
+        ``` py linenums="1"
+        for i in range(1, n + 1, 2):
+        ```
 
 ### Tham số step có giá trị âm
 

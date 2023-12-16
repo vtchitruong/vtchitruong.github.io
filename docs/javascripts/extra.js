@@ -11,7 +11,7 @@ function process_answer(userInputID, solutionID, appreciateID) {
     // Get the input value
     var input = document.getElementById(userInputID).value;
 
-    var formattedInput = input.replace(/\n/g,'#newline#').trim();
+    var formattedInput = input.replace(/\n/g,'.newline.').trim();
 
     var solution = document.getElementById(solutionID).innerHTML;
 
