@@ -230,3 +230,52 @@ div.language-markmap.mkdocs-markmap  {
     border: none;
     min-height: 500px;
 }
+
+/* ------------------- user answer input ------------------- */
+textarea[id^="userInput_"] {
+    font-family: consolas, 'Courier New';
+    border-radius: 15px;
+    width: 50%;
+    height: 2rem;
+    resize: vertical;
+    padding: 0.2rem;
+}
+
+textarea[id^="solution_"] {
+    display: none;
+}
+
+div[id^="appreciate_"] {
+    margin: 0.5rem;
+}
+
+.submitButton {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #00D775, #00BD68);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 44px;
+    line-height: 44px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100px;
+    z-index: 0;
+    border: 0;
+ }
+  
+.submitButton:hover {
+    background: #00bd68;
+}

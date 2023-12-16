@@ -40,6 +40,16 @@ n
 
     `print(s[2])` in ra màn hình ký tự gì?
 
+    <div>
+    <form id="answer-form">
+        <label for="userInput_1">Lời giải của bạn:</label><br>
+        <textarea id="userInput_1" name="userInput_1" required></textarea>
+        <textarea id="solution_1">khoảng trắng</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_1', 'solution_1', 'appreciate_1')">Submit</button>
+        <div id="appreciate_1"></div>
+    </form>
+    </div>
+
     ??? tip "Đáp án"
 
         Ký tự có chỉ số 2 là khoảng trắng.
@@ -71,6 +81,16 @@ n
 !!! question "Câu hỏi 2"
 
     Bạn hãy viết đoạn mã có tác dụng tương tự ví dụ 2 nhưng sử dụng toán tử `in`.   
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_2">Lời giải của bạn:</label><br>
+        <textarea id="userInput_2" name="userInput_2" required></textarea>
+        <textarea id="solution_2">for c in s:#newline#    print&#40;c&#41;</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_2', 'solution_2', 'appreciate_2')">Submit</button>
+        <div id="appreciate_2"></div>
+    </form>
+    </div>
 
     ??? tip "Đáp án"
 
@@ -124,13 +144,27 @@ Nếu hàm `split()` không có tham số, thì mặc định Python sẽ tách 
 
 !!! question "Câu hỏi 3"
 
-    Bạn hãy chỉnh sửa hàm `split()` để tách chuỗi `s` của ví dụ 4 thành các câu riêng biệt.
+    Bạn hãy chỉnh sửa hàm `split()` để tách chuỗi `s` của ví dụ 4 thành các câu riêng biệt.  
+    Gợi ý:  
+    ``` py
+    sentences = ...
+    print(sentences)
+    ```
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_3">Lời giải của bạn:</label><br>
+        <textarea id="userInput_3" name="userInput_3" required></textarea>
+        <textarea id="solution_3">sentences = s.split('.')</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_3', 'solution_3', 'appreciate_3')">Submit</button>
+        <div id="appreciate_3"></div>
+    </form>
+    </div>
 
     ??? tip "Đáp án"
 
         ``` py
         sentences = s.split('.')
-        print(sentences)
         ```
 
 ### join()
@@ -153,6 +187,16 @@ Dĩ bất biến ứng vạn biến
 !!! question "Câu hỏi 4"
 
     Bạn hãy chỉnh sửa ví dụ 5 để ghép các từ bằng ký tự gạch ngang `-`.
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_4">Lời giải của bạn:</label><br>
+        <textarea id="userInput_4" name="userInput_4" required></textarea>
+        <textarea id="solution_4">s = '-'.join(word_list)</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_4', 'solution_4', 'appreciate_4')">Submit</button>
+        <div id="appreciate_4"></div>
+    </form>
+    </div>
 
     ??? tip "Đáp án"
 
@@ -181,6 +225,16 @@ Many thanks for reading my website
 !!! question "Câu hỏi 5"
 
     Nếu dòng lệnh nối chuỗi của ví dụ 6 được sửa lại thành `s = phrase_2 + ' ' + phrase_1` thì kết quả in ra màn hình là gì?
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_5">Lời giải của bạn:</label><br>
+        <textarea id="userInput_5" name="userInput_5" required></textarea>
+        <textarea id="solution_5">for reading my website Many thanks</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_5', 'solution_5', 'appreciate_5')">Submit</button>
+        <div id="appreciate_5"></div>
+    </form>
+    </div>
 
     ??? tip "Đáp án"
 
@@ -265,6 +319,16 @@ Trong ví dụ 9, hàm `find()` bắt đầu tìm từ ký tự có chỉ số 1
     pos = s.find('vu', start)
     print(pos)
     ```
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_6">Lời giải của bạn:</label><br>
+        <textarea id="userInput_6" name="userInput_6" required></textarea>
+        <textarea id="solution_6">58</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_6', 'solution_6', 'appreciate_6')">Submit</button>
+        <div id="appreciate_6"></div>
+    </form>
+    </div>
 
     ??? tip "Đáp án"
         
