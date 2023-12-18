@@ -16,7 +16,13 @@ markmap:
 
 ## Mảng trong Python
 
-- Thường dùng kiểu `list` để biểu diễn mảng
+- Dùng kiểu `list` để biểu diễn mảng
+
+## Khai báo
+
+- Liệt kê phần tử
+- Toán tử `*`
+- List comprehension
 
 ## Truy xuất phần tử
 
@@ -24,6 +30,9 @@ markmap:
 
 - Phần tử đầu được đánh chỉ số là `0`
 - Phần tử cuối có chỉ số là `len(n) - 1`
+- Ví dụ:
+    - `a[0]` là phần tử đầu tiên
+    - `a[n - 2]` là phần tử áp cuối.
 
 ## Duyệt mảng
 

@@ -8,32 +8,26 @@
 
 Vấn đề của bài này đã được nêu ra trong bài [Kiểu dữ liệu list](../../grade-10/topic-F/list.md){:target="_blank"}, đó là hầu hết các ngôn ngữ lập trình đều có những *kiểu dữ liệu* giúp lưu trữ và xử lý một tập hợp gồm nhiều phần tử.  
 
-## Khái niệm chung về mảng
+## Khái niệm
 
 **Mảng** là cấu trúc dữ liệu cho phép lưu trữ và xử lý một tập hợp gồm **hữu hạn** phần tử có **cùng kiểu dữ liệu**.
-
-Giá trị của mỗi phần tử được truy xuất thông qua **chỉ số** của phần tử đó.
-
-**Kích thước** của mảng là **số lượng phần tử** có trong mảng.
 
 Về tổng quát, mảng có thể là một chiều hoặc đa chiều. Bài này chỉ đề cập **mảng một chiều**.
 
 ??? note "Việc lưu trữ mảng trong bộ nhớ"
     Về mặt khái niệm, các phần tử của một mảng được lưu trữ liên tiếp nhau trong bộ nhớ. Tuy nhiên, khác với những hệ thống trước đây, một số kiến trúc máy tính hiện đại lưu trữ mảng phức tạp hơn, các phần tử có thể không thực sự nằm liên tiếp nhau trên bộ nhớ vật lý. 
 
-## Mảng một chiều
-
-Mảng một chiều là **dãy hữu hạn** các phần tử có **cùng kiểu dữ liệu**.
-
-Mảng một chiều có thể dùng để biểu diễn một hàng hoặc một cột nào đó trong bảng.
+Mảng một chiều có thể dùng để biểu diễn một dãy phần tử liên tiếp nhau, hoặc một hàng, hoặc một cột nào đó trong bảng.
 
 Hình ảnh mảng một chiều trong thực tế: một dãy các phòng học, một dãy ghế trong rạp chiếu phim.
 
-Giá trị của phần tử được truy xuất thông qua **chỉ số** của phần tử đó. Mỗi ngôn ngữ lập trình có cách đánh chỉ số khác nhau: có thể bắt đầu từ **0** hoặc từ **1**.  
+**Kích thước** của mảng là **số lượng phần tử** có trong mảng.
+
+Giá trị của mỗi phần tử được truy xuất thông qua **chỉ số** của phần tử đó. Mỗi ngôn ngữ lập trình có cách đánh chỉ số khác nhau: có thể bắt đầu từ **0** hoặc từ **1**.  
 
 <figure markdown>
-  ![Image title](array/array-1d.svg){loading=lazy}  
-  <figcaption>Hình 1. Minh họa mảng một chiều A</figcaption>  
+  ![Image title](array/array-1d.svg){loading=lazy}
+  <figcaption>Hình 1. Minh họa mảng một chiều A</figcaption>
 </figure>
 
 Python không có kiểu dữ liệu mảng chuẩn như những ngôn ngữ *truyền thống* (C/C++, Java), mà thay vào đó là kiểu dữ liệu `list` linh hoạt hơn. Ta có thể sử dụng kiểu `list` để giải quyết những bài toán liên quan đến mảng. Các ví dụ trong bài này đều sử dụng `list` để minh họa mảng.

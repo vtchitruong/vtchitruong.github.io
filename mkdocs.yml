@@ -281,7 +281,8 @@ nav:
       - grade-11/topic-F1/create-table-in-ms-access.md
       - grade-11/topic-F1/sql.md
     - Chủ đề F2:
-      - grade-11/topic-F2/array.md
+      - grade-11/topic-F2/array-1d.md
+      - grade-11/topic-F2/array-2d.md
       - grade-11/topic-F2/linked-list.md
       - grade-11/topic-F2/searching-algorithm.md
       - grade-11/topic-F2/sorting-algorithm.md
