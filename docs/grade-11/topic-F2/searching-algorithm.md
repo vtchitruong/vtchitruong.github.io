@@ -10,8 +10,6 @@ Nhu cầu về thông tin của con người là thiết yếu, trong khi lượ
 
 ## Bài toán tìm kiếm
 
-### Phát biểu bài toán tìm kiếm
-
 Bài toán tìm kiếm đề cập đến việc tìm ra những phần tử cụ thể trong một tập hợp cho trước.
 
 Trong bài này, phạm vi của bài toán tìm kiếm được giới hạn trong mảng một chiều và chỉ tìm một phần tử có giá trị *k* cho trước.  
@@ -60,6 +58,12 @@ Có nhiều thuật toán tìm kiếm khác nhau ứng với các yếu tố kh�
   ![Image title](searching-algorithm/sequential-search.svg){loading=lazy}
   <figcaption>Hình 1. Lưu đồ thuật toán tìm kiếm tuần tự</figcaption>
 </figure>
+
+#### Trực quan hóa thuật toán
+
+<div>
+    <iframe width="100%" height="810px" frameBorder=0 src="../search-visualize/linear-search.html"></iframe>
+</div>
 
 #### Chương trình minh họa
 ``` py linenums="1"
@@ -142,6 +146,12 @@ Cụ thể như sau:
   ![Image title](searching-algorithm/binary-search.svg){loading=lazy}
   <figcaption>Hình 2. Lưu đồ thuật toán tìm kiếm nhị phân</figcaption>
 </figure>
+
+#### Trực quan hóa thuật toán
+
+<div>
+    <iframe width="100%" height="830px" frameBorder=0 src="../search-visualize/binary-search.html"></iframe>
+</div>
 
 #### Chương trình minh họa
 
