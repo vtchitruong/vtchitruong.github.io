@@ -22,8 +22,8 @@ h1 {
 .array-bar {
     width: 24px;
     margin: 0 1px;
-    background-color: #0099cc;
-    border: solid 1px #ffffff00;
+    background-color: #0000;
+    border: solid 2px #0099cc;
     transition: height 0.2s;
     border-radius: 0.3rem;
 }
@@ -140,26 +140,26 @@ h1 {
 }
 
 .select {
-  width: 200px;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 100px;  
+    width: 200px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 100px;  
 }
 
 .my-label {
-  width: 180px;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
-  display: inline-block;
+    width: 200px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    display: inline-block;
 
-  box-sizing: border-box;
-  border-radius: 100px;  
+    box-sizing: border-box;
+    border-radius: 100px;  
 }
 
 .footnote {
-  margin: .2rem 0;
-  font-size: smaller;
+    margin: .2rem 0;
+    font-size: smaller;
 }

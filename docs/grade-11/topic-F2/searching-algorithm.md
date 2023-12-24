@@ -23,11 +23,11 @@ Trong bài này, phạm vi của bài toán tìm kiếm được giới hạn tr
     Output:  
     - Vị trí của phần tử *k* trong mảng *A*. Nếu không tìm thấy, trả về *-1*.  
 
-??? info "Lợi ích và ứng dụng của bài toán tìm kiếm"
+??? info "Lợi ích và ứng dụng của thuật toán tìm kiếm"
 
-    Tìm kiếm là hoạt động tương tác với dữ liệu đem lại nhiều lợi ích, chẳng hạn như giúp phát hiện ra thông tin liên quan, giúp hiểu rõ hơn về sự vật từ lượng dữ liệu khổng lồ, giúp đưa ra quyết định. Bài toán và thuật toán tìm kiếm giúp cải thiện khả năng tương tác với thông tin trong thế giới số ngày nay.
+    Tìm kiếm là hoạt động tương tác với dữ liệu đem lại nhiều lợi ích, chẳng hạn như giúp phát hiện ra thông tin liên quan, giúp hiểu rõ hơn về sự vật từ lượng dữ liệu có được, giúp đưa ra quyết định. Tìm kiếm giúp cải thiện khả năng tương tác với thông tin trong thế giới số ngày nay.
 
-    Bài toán tìm kiếm diễn ra trong những tình huống sau:  
+    Các thuật toán tìm kiếm nói chung có thể áp dụng trong những tình huống sau:  
     - Tìm một mẫu thông tin trong hệ thống. Đó có thể là từ ngữ trong tài liệu, số điện thoại trong danh bạ, tập tin trong máy, quyển sách trong thư viện.
     - Truy vấn cơ sở dữ liệu để lấy được các mẫu tin liên quan. Chẳng hạn, khách hàng truy vấn cơ sở dữ liệu của sàn thương mại điện tử để tìm sản phẩm, giá cả, khuyến mãi.
     - Bộ máy tìm kiếm giúp người dùng *truy hồi* thông tin theo nhu cầu, chẳng hạn *truy hồi* những tài liệu hoặc trang web liên quan từ các tài nguyên trên mạng.  

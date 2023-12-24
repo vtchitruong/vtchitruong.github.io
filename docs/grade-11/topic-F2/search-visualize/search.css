@@ -150,16 +150,16 @@ h1 {
 }
 
 .my-label {
-  width: 200px;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
-  display: inline-block;
+    width: 200px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    display: inline-block;
 
-  box-sizing: border-box;
-  border-radius: 100px;  
+    box-sizing: border-box;
+    border-radius: 100px;  
 }
 
 .footnote {
-  margin: .2rem 0;
-  font-size: smaller;
+    margin: .2rem 0;
+    font-size: smaller;
 }
