@@ -76,15 +76,16 @@ def linear_search(A, k):
 
 
 # Chương trình chính
-array = [1, 7, 4, 0, 9, 4, 8, 8, 2, 4]
-key = int(input('Please enter the key to be searched for: '))
+if __name__ == '__main__':
+    array = [1, 7, 4, 0, 9, 4, 8, 8, 2, 4]
+    key = int(input('Please enter the key to be searched for: '))
 
-found_position = linear_search(array, key)  # Gọi hàm linear_search
+    found_position = linear_search(array, key)  # Gọi hàm linear_search
 
-if found_position == -1:
-    print('Not found')
-else:
-    print('Found at position', found_position)
+    if found_position == -1:
+        print('Not found')
+    else:
+        print('Found at position', found_position)
 ```
 
 Output:
@@ -175,15 +176,16 @@ def binary_search(A, k):
 
 
 # Chương trình chính
-array = [0, 1, 2, 4, 4, 4, 7, 8, 8, 9]
-key = int(input('Please enter the key to be searched for: '))
+if __name__ == '__main__':
+    array = [0, 1, 2, 4, 4, 4, 7, 8, 8, 9]
+    key = int(input('Please enter the key to be searched for: '))
 
-found_position = binary_search(array, key)  # Gọi hàm binary_search
+    found_position = binary_search(array, key)  # Gọi hàm binary_search
 
-if found_position == -1:
-    print('Not found')
-else:
-    print('Found at position', found_position)
+    if found_position == -1:
+        print('Not found')
+    else:
+        print('Found at position', found_position)
 ```
 
 Output:
