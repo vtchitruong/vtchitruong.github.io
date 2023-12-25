@@ -17,6 +17,10 @@ const pink = "#ff748c";
 const green = "#00e673";
 const transparent = "transparent";
 
+const startButton = document.getElementById("startButton");
+const pauseButton = document.getElementById("pauseButton");
+const stopButton = document.getElementById("stopButton");
+
 function generateRandomArray(size) {
     const array = [];
 
@@ -89,18 +93,18 @@ function displayLinearSearch(array, currentIndex, found) {
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
-        bar.style.height = `${value * 5}px`;        
-
-        bar.style.borderColor = transparent;
+        bar.style.height = `${value * 5}px`;
 
         if (index == found) {
-            bar.style.backgroundColor = pink;            
-        }
-        else if (index == currentIndex) {
-            bar.style.backgroundColor = yellow;
+            bar.style.backgroundColor = pink;
+            bar.style.borderColor = transparent;
+        } else if (index == currentIndex) {
+            bar.style.backgroundColor = orange;
+            bar.style.borderColor = transparent;
         }
         else {
-            bar.style.backgroundColor = blue;          
+            bar.style.backgroundColor = transparent;
+            bar.style.borderColor = blue;
         }
 
         const indexDiv = document.createElement("div");
@@ -154,10 +158,6 @@ async function startSearching() {
     k = parseInt(keyInput.value, 10) || 37;
 
     // Disable the start button and enable the pause button initially
-    const startButton = document.getElementById("startButton");
-    const pauseButton = document.getElementById("pauseButton");
-    const stopButton = document.getElementById("stopButton");
-
     initButton.setAttribute("disabled", "true");
     startButton.setAttribute("disabled", "true");
     pauseButton.removeAttribute("disabled");

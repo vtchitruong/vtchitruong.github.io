@@ -55,7 +55,7 @@ Có nhiều thuật toán tìm kiếm khác nhau ứng với các yếu tố kh�
 #### Lưu đồ thuật toán
 
 <figure markdown>
-  ![Image title](searching-algorithm/sequential-search.svg){loading=lazy}
+  ![Image title](searching-algorithm/linear-search-flowchart.svg){loading=lazy}
   <figcaption>Hình 1. Lưu đồ thuật toán tìm kiếm tuần tự</figcaption>
 </figure>
 
@@ -144,7 +144,7 @@ Cụ thể như sau:
 #### Lưu đồ thuật toán
 
 <figure markdown>
-  ![Image title](searching-algorithm/binary-search.svg){loading=lazy}
+  ![Image title](searching-algorithm/binary-search-flowchart.svg){loading=lazy}
   <figcaption>Hình 2. Lưu đồ thuật toán tìm kiếm nhị phân</figcaption>
 </figure>
 

@@ -22,6 +22,10 @@ const pink = "#ff748c";
 const green = "#00e673";
 const transparent = "transparent";
 
+const startButton = document.getElementById("startButton");
+const pauseButton = document.getElementById("pauseButton");
+const stopButton = document.getElementById("stopButton");
+
 function generateRandomArray(size) {
     const array = [];
     flagArray = [];
@@ -96,27 +100,26 @@ function displayBinarySearch(array) {
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
-        bar.style.height = `${value * 5}px`;        
-
-        bar.style.borderColor = transparent;
+        bar.style.height = `${value * 5}px`;
 
         if (flagArray[index] == 2) {
             bar.style.backgroundColor = pink;
-        }
-        else if (index == left) {
+            bar.style.borderColor = transparent;
+        } else if (index == left) {
             bar.style.backgroundColor = green;
-        }
-        else if (index == right) {
+            bar.style.borderColor = transparent;
+        } else if (index == right) {
             bar.style.backgroundColor = green;
-        }
-        else if (index == mid) {
+            bar.style.borderColor = transparent;
+        } else if (index == mid) {
             bar.style.backgroundColor = yellow;
-        }
-        else if (flagArray[index] == 1) {
-            bar.style.backgroundColor = blue;
-        }
-        else if (flagArray[index] == 0) {
+            bar.style.borderColor = transparent;
+        } else if (flagArray[index] == 1) {
             bar.style.backgroundColor = transparent;
+            bar.style.borderColor = blue;
+        } else if (flagArray[index] == 0) {
+            bar.style.backgroundColor = transparent;
+            bar.style.borderColor = transparent;
         }
 
         const indexDiv = document.createElement("div");
@@ -194,10 +197,6 @@ async function startSearching() {
     k = parseInt(keyInput.value, 10) || 37;
 
     // Disable the start button and enable the pause button initially
-    const startButton = document.getElementById("startButton");
-    const pauseButton = document.getElementById("pauseButton");
-    const stopButton = document.getElementById("stopButton");
-
     initButton.setAttribute("disabled", "true");
     startButton.setAttribute("disabled", "true");
     pauseButton.removeAttribute("disabled");
