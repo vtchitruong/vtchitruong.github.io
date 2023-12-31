@@ -5,7 +5,7 @@
     Bài này trình bày những khái niệm liên quan đến độ phức tạp của thuật toán, trong đó có:
     
     - Giải thích ý nghĩa của Big O.
-    - Một số kỹ thuật xác định nhanh độ phức tạp của thuật toán.
+    - Một số kỹ thuật xác định nhanh độ phức tạp.
 
 ## Đặt vấn đề
 
