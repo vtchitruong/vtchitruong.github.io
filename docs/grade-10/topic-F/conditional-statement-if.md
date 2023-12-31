@@ -14,7 +14,7 @@ Trên thực tế, rất nhiều con đường có *nhánh rẽ*, rất nhiều 
 
 Câu lệnh `if` là câu lệnh dùng để giải quyết bài toán có nhiều trường hợp.  
 
-Câu lệnh `if`` được gọi là *cấu trúc điều kiện*, hoặc một số sách giáo khoa gọi là *cấu trúc rẽ nhánh*.  
+Câu lệnh `if` được gọi là *cấu trúc điều kiện*, hoặc một số sách giáo khoa gọi là *cấu trúc rẽ nhánh*.  
 
 ## Lệnh if thiếu
 

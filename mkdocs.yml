@@ -240,6 +240,8 @@ nav:
   - Home: index.md
   - Getting started:
     - Tính năng: features.md
+    - Nhật ký thay đổi: changelog.md
+    - Giấy phép: license.md
   - Lớp 10:
     - Chương trình khung: grade-10/grade-10-index.md
     - Chủ đề A1:

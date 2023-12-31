@@ -96,7 +96,7 @@ Found at position 6
 
 !!! note "Nhận xét"
     
-    Nếu `k` xuất hiện nhiều lần trong mảng, thì thuật toán tìm kiếm tuần tự sẽ trả về **vị trí xuất hiện đầu tiên** của `k` theo trình tự duyệt mảng.  
+    Nếu `k` xuất hiện nhiều lần trong mảng, thì thuật toán tìm kiếm tuần tự sẽ trả về **vị trí xuất hiện đầu tiên** của `k` theo trình tự duyệt mảng.
 
 !!! question "Câu hỏi 1"
 
