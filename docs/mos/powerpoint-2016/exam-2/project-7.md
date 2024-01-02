@@ -5,7 +5,7 @@ You work for a tourism center near a popular lake in Arizona. You are developing
 
 ## Task 1
  
-Place the photograph Boat and Canoe.jpg from the GMetrixTemplates folder into the placeholder located on the right of slide 4.
+Place the photograph Boat and Canoe.jpg from the **GMetrix Templates** folder into the placeholder located on the right of slide 4.
 
 ???+ Tip "Hint"
 

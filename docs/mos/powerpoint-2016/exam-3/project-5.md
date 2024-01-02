@@ -11,13 +11,13 @@ Insert the chart from the file NFRTicketPrices.xlsx, located in the GMetrixTem
 
     1. Select the last slide and select the placeholder.
 
-    2. In the **INSERT** tab, **Text** group, select **Object**.
+    2. In the **Insert** tab, **Text** group, select **Object**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV86UDsQBhoc5iBR10ahW0FnmhNGYvQt7pixwGQE7NSk4RQQJ9d-o8mhgCwGRWd3S9SGNCxY61LxGDg6mawhZfed6mafJs2chsca2LzTnsL_Yshm1DG9n=w600){ loading=lazy }
 
     3. In the **Insert Object** window, on the left side, select the option for **Create from File**. Then click **Browse...**
 
-    4. Navigate to the **GMetrixTemplates** folder and double click on **NFRTicketPrices.xlsx**.
+    4. Navigate to the **GMetrix Templates** folder and double click on **NFRTicketPrices.xlsx**.
 
     5. Click **OK**.
 
@@ -81,11 +81,11 @@ Add the video, BroncRide.wmv from the GmetrixTemplates folder, to slide 4.
 
     3. In the **Insert Video** pop-up, next to **From a file**, click **Browse**.
     
-        (Hint: Alternatively, you could click anywhere inside the placeholder, then on the **INSERT** tab, in the **Media** group, click **Video** and select **Video on My PC…**)
+        (Hint: Alternatively, you could click anywhere inside the placeholder, then on the **Insert** tab, in the **Media** group, click **Video** and select **Video on My PC…**)
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV86P1ezgav59fJ8O6HvH5woCqu2vZVY_Jb3zRjFLpxwM5vaL9yU0Ck3Sxo6SQDRmMue1HW8eghMhXhaiD1dxUQ2aYoUiPCoX2258n-QhQOKC9NdjZSRJ=w540){ loading=lazy }
 
-    4. Browse to your **GMetrixTemplates** folder and select **BroncRide.wmv**.
+    4. Browse to your **GMetrix Templates** folder and select **BroncRide.wmv**.
 
     5. Click **Insert**.
 

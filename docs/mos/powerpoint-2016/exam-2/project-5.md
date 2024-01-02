@@ -79,7 +79,7 @@ Use a feature in PowerPoint to correct all of the spelling errors in this presen
 
 ## Task 5
 
-Create a handout by using a feature in PowerPoint to paste the slides into Microsoft Word. Display blank lines next to each slide on the handout. Name the document Handout.docx and save it into the GMetrixTemplates folder. Close the Handout document after it has been saved.
+Create a handout by using a feature in PowerPoint to paste the slides into Microsoft Word. Display blank lines next to each slide on the handout. Name the document Handout.docx and save it into the **GMetrix Templates** folder. Close the Handout document after it has been saved.
 
 ???+ Tip "Hint"
 

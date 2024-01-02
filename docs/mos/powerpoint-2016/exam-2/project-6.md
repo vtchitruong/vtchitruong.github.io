@@ -11,7 +11,7 @@ Import Marketing.rtf located in the **GMetrix Templates** folder to create two
 
     1. In the **Navigation Pane** on the left, select slide 1.
 
-    2. On the **HOME** tab, in the **Slides** group, click **New Slide** and select **Slides from Outline...**
+    2. On the **Home** tab, in the **Slides** group, click **New Slide** and select **Slides from Outline...**
 
         ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9NjCwOidcmIGPo-POKugdjxYMFMo6oX4PNe9vdH9eDuQAb5czhqxlkONQQKZZQgKg3YJOeN9iAH5cK6SZXVCPZ-bLxO4y3TdZLzMOKpLEGnbEAy6If=w480){ loading=lazy }
 

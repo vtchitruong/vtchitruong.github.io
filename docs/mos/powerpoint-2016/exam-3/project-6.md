@@ -11,7 +11,7 @@ Add a Wipe transition to occur only between slide 1 and slide 2.
 
     1. In the **Navigation Pane** on the left, select slide 2.
 
-    2. Click the **TRANSITIONS** tab.
+    2. Click the **Transitions** tab.
 
     3. In the **Transistions to This Slide** group, click the More button to open the gallery.
 
@@ -31,7 +31,7 @@ Animate the list on slide 3 so each item will Appear individually when the mouse
 
     2. On slide 3, click the text placeholder to select it.
 
-    3. Click the **ANIMATIONS** tab.
+    3. Click the **Animations** tab.
 
     4. In the **Animation** group, click the More button to open the gallery.
 
@@ -51,9 +51,9 @@ Set the Duration to 1 second for the transition on slide two.
 
 ???+ Tip "Hint"
 
-    1. Select slide 2 and click the **TRANSITIONS** tab.
+    1. Select slide 2 and click the **Transitions** tab.
 
-    2. In the **Timing** group, click the **Duration spinner down-arrow** to change it to **01.00**.
+    2. In the **Timing** group, click the **Duration** spinner down-arrow to change it to **01.00**.
 
         (Hint: You can also type the value into the window.)
 
@@ -67,9 +67,9 @@ Configure the transition between slide 4 and slide 5 to begin after 5 seconds if
 
     1. In the **Navigation Pane** on the left, select slide 4.
 
-    2. Click the **TRANSITIONS** tab.
+    2. Click the **Transitions** tab.
 
-    3. In the **Timing** group, click the **After spinner up-arrow** to change it to **00:05.00**.
+    3. In the **Timing** group, click the **After** spinner up-arrow to change it to **00:05.00**.
 
         (Hint: You can also type the value into the window.)
 

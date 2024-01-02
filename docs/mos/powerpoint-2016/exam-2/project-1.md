@@ -53,7 +53,7 @@ On the last slide, insert a text box in the lower-right quarter of the slide. Re
 
     1. In the **Navigation Pane** on the left, select the slide 7.
 
-    2. On the **INSERT** tab, in the **Text** group, click **Text** Box. Hold down the mouse left-button and click drag to draw a text box in the empty space located in the lower-right quarter of the slide.
+    2. On the **Insert** tab, in the **Text** group, click **Text** Box. Hold down the mouse left-button and click drag to draw a text box in the empty space located in the lower-right quarter of the slide.
 
         ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc9aqevmHeErTB14XQBBmPymncvrtElROQ_yWMZpJuvHm0QMcIs4cur0eHGa1i-BLFAKtiFaVEfFuan46f_MDx1kEDl6fgvneKIKU_ej1376UBDCMtuq=w720){ loading=lazy }
 
@@ -74,7 +74,7 @@ Change the layout of slide 3 to Two Content. Apply an Intense Effect - Lavender
 
     1. In the **Navigation Pane** on the left, select the slide 3.
 
-    2. On the **HOME** tab, in the **Slides** group, click **Layout** and select **Two Content**.
+    2. On the **Home** tab, in the **Slides** group, click **Layout** and select **Two Content**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc84lxi9lmdz-6xD8EzOFAd9IXjpEyn7uUaOSJytV5vZzp9rk7ApUTzUpX6a9ONPjUx4naa8a8tHzhNX0XrpaauhBUVrzWfB07lMLhFnNoaia5QyqFF3=w600){ loading=lazy }
 
@@ -98,7 +98,7 @@ Apply a Blue, Solid Fill background to slide 2.
 
     1. In the **Navigation Pane** on the left, select the slide 2.
 
-    2. On the **DESIGN** tab, in the **Customize** group, click **Format Background**.
+    2. On the **Design** tab, in the **Customize** group, click **Format Background**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc-vuHLMDseTk437h1kDLu1E78y6g-dDU8HUc_hf_-Ft7hHaoyAt1ACQqCeiS5NR-aox9mPd0Fc55gRgYE5Wi15sVfESwwkFGaWLPy3gnpssB3pJa5-k=w600){ loading=lazy }
 

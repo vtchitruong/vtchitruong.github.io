@@ -71,7 +71,7 @@ Change the duration of the transition to ".75" and apply it to all the slides in
 
 ## Task 5
 
-Merge this presentation with PoliceAuction_2.pptx located in the GmetrixTemplates folder. Accept only the change made to slide 4.
+Merge this presentation with PoliceAuction_2.pptx located in the **GMetrix Templates** folder. Accept only the change made to slide 4.
 
 ???+ Tip "Hint"
 

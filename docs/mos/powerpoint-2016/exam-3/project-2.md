@@ -34,7 +34,7 @@ Configure printing to print this presentation with notes.
 
 ???+ Tip "Hint"
 
-    1. Click the **FILE** tab.
+    1. Click the **File** tab.
 
     2. Select **Print**.
 
@@ -72,7 +72,7 @@ On Slide 4, use Hollow Square Bullets to create a list from the seven lines of t
 
     2. Select the the seven lines of text beginning with **Waterproofing…** and ending with **… Folding Displays**.
 
-    3. In the **HOME** tab, **Paragraph** group, click the **Bullets** down-arrow and select **Hollow Square Bullets**.
+    3. In the **Home** tab, **Paragraph** group, click the **Bullets** down-arrow and select **Hollow Square Bullets**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV84Q--iiUC_9jaKSVvM1zLQhyFueHqJq0p07Yu79sVOjGcxykMul0QmUvcj50eC12db6QOWYddjV9HgkLc5ItHN9KW7LMUn6GAlaLlTOZ_2m3w69yPPe=w600){ loading=lazy }
 

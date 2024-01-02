@@ -13,7 +13,7 @@ Hyperlink the text on slide 2, Custom Construction, to the website address cus
 
     2. Select the text **Custom Construction**.
 
-    3. On the **INSERT** tab, in the **Links** group, click **Hyperlink**.
+    3. On the **Insert** tab, in the **Links** group, click **Hyperlink**.
 
         (Hint: You can also right-click and select **Hyperlink** … )
 
@@ -37,7 +37,7 @@ Insert a Down Ribbon shape, 1 high and 2.5 wide (2.54 cm x 6.35 cm) on sli
 
     1. In the **Navigation Pane** on the left, select slide 2.
 
-    2. Click the **INSERT** tab.
+    2. Click the **Insert** tab.
 
     3. In the **Illustrations** group, click the **Shapes** down-arrow to open the gallery.
 
@@ -85,11 +85,11 @@ Insert barn.jpg from the GMetrixTemplates folder into the empty placeholder 
 
     2. In the empty placeholder on the slide, click the **Pictures** icon.
 
-        (Hint: You could also go to the **INSERT** tab, in the **Images** group, click **Pictures**.)
+        (Hint: You could also go to the **Insert** tab, in the **Images** group, click **Pictures**.)
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV84AMmGdYBC2ym50zqm2T5B0V6rLIz0ZM_5aEskVmnvprTaMuBCpvinzfcheypSmjBNeuOn0fIoQ4MYP8xH4ERgyGaFMqL3N8cAaGSINsq1TLNL2itOD=w600){ loading=lazy }
 
-    3. Browse to the **GMetrixTemplates** folder and select **Barn.jpg**.
+    3. Browse to the **GMetrix Templates** folder and select **Barn.jpg**.
 
     4. Click the **Insert** button.
 

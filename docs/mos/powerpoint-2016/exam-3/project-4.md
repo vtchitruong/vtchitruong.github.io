@@ -27,11 +27,11 @@ On slide 3, create a table in the left placeholder with 1 columns and 10 rows. 
 
     1. In the **Navigation Pane** on the left, select slide 3.
 
-    2. In the left pane, click the **INSERT** table icon.
+    2. In the left pane, click the **Insert** table icon.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV87q8ywNrC-iqw9O9LGjjEKVuCowMndNtmQMlncpOnBJkIAFHBorEr7HejAlesm5Om73sMjn5Ig_CMFTON_Veo_a34jb96KfrqT-I2Arxs7iIuv7x361=w600){ loading=lazy }        
 
-    3. Configure the **INSERT** table pop-up window for **Columns**: **1** and **Rows**: **10**.
+    3. Configure the **Insert** table pop-up window for **Columns**: **1** and **Rows**: **10**.
 
     4. Click **OK**.
 
@@ -53,13 +53,13 @@ On slide 3, import the Flavors.xlsx table from the GMetrixTemplates folder in
 
     2. Click in the right pane to select it.
 
-    3. On the **INSERT** tab, in the **Text** group, click **Object**.
+    3. On the **Insert** tab, in the **Text** group, click **Object**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV85GCjQh73NjaUcrBeUP8Hy6pppBGIbleuKOk9_pEIySJzGFr5Yry97ncEWw2oM6B0Qk3BPvbJpGAPAW4SlFM3c2-yfKXxc5nbBR2rdE9EifwIAn7vY4=w600){ loading=lazy }
 
     4. In the **Insert Object** pop-up window, click **Create from file**.
 
-    5. Click **Browse** and navigate to the **GMetrixTemplates** folder.
+    5. Click **Browse** and navigate to the **GMetrix Templates** folder.
     
     6. Select the **Flavors.xlsx** file and click **Open**.
     
@@ -99,7 +99,7 @@ Use the list on slide 6 to create a Basic Timeline SmartArt diagram.
 
     2. Select all of the list items.
 
-    3. On the **HOME** tab, in the **Paragraph** group, click **Convert to SmartArt**.
+    3. On the **Home** tab, in the **Paragraph** group, click **Convert to SmartArt**.
 
         (Hint: You can also right-click and select **Convert to SmartArt**.)
 

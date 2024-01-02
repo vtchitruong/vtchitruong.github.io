@@ -13,11 +13,11 @@ Insert the last slide titled, Certifications Can Launch Careers, using the Cert
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV85Z7VIjrUaIW235DuHBYTnQLH7lCyz-uQQHUlp9tcLEtPCufAqTS-d_CWStBXK0GI-Q4Z_zL11VaYkT6EuY7_rbYIKpeRPippYmwnVYkkknwoI_pCYl=w600){ loading=lazy }
 
-    2. In the **HOME** tab, **Slides** group, click **New Slide** and select **Reuse Slides…**
+    2. In the **Home** tab, **Slides** group, click **New Slide** and select **Reuse Slides…**
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV8644p81EENTmu4hAVAALqR8_tG_ihe-gxvqCuSafT9_cDj40D2eTzd5lZpNabd7t4is315w9Agfd4jDfVa2RWr0FwQITtm9uAlggEAfzUXX8gA8ZPb2=w600){ loading=lazy }
 
-    3. The **Reuse Slides** pane will appear on the right. Click **Browse** then **Browse File...** and locate the **GMetrixTemplates** folder. Select **Certifications.pptx** and click **Open**. All of the slides contained in the presentation will list in the **Reuse Slides** pane.
+    3. The **Reuse Slides** pane will appear on the right. Click **Browse** then **Browse File...** and locate the **GMetrix Templates** folder. Select **Certifications.pptx** and click **Open**. All of the slides contained in the presentation will list in the **Reuse Slides** pane.
 
     4. At the bottom of the list, click the box **Keep source formatting**.
 
@@ -39,7 +39,7 @@ On slide 3, insert the comment Update this screenshot.
 
     2. On slide, select the image.
 
-    3. Click the **REVIEW** tab.
+    3. Click the **Review** tab.
 
     4. In the **Comments** group, click **New Comment**.
 
@@ -59,7 +59,7 @@ Mark this presentation as Final.
 
 ???+ Tip "Hint"
 
-    1. On the **FILE** tab, in the Info pane, click the button **Protect Presentation**.
+    1. On the **File** tab, in the Info pane, click the button **Protect Presentation**.
 
     2. Select **Mark as Final**.
 
@@ -75,13 +75,13 @@ Save the presentation into the GMetrixTemplates folder as an XPS file named, Ce
 
 ???+ Tip "Hint"
 
-    1. On the **FILE** tab, select **Export**. 
+    1. On the **File** tab, select **Export**. 
 
     2. In the **Export** pane, click **Create PDF/XPS Document**. In the pane on the right, click the **Create PDF/XPS** button. 
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV86EVU952xMc-VYiS2yZZ_pzWKti2qlsjy70GXvE25sQaFA_LTKeftVPbV0DZK0hnLZIk7BAQed8W7kf41WzTkEc9WMllO5jb_p1QYihuyF3YXylf_IV=w600){ loading=lazy }
 
-    3. In the **Publish as PDF or XPS** pop-up window, browse to the **GMetrixTemplates** folder and select it. Configure the following:
+    3. In the **Publish as PDF or XPS** pop-up window, browse to the **GMetrix Templates** folder and select it. Configure the following:
 
         File name: **Certify**      
         Save as type: **XPS Document (*.xps)**

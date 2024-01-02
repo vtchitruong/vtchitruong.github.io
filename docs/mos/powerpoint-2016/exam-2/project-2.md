@@ -43,7 +43,7 @@ Configure printing option to print Notes Pages for the presentation.
 
 ???+ Tip "Hint"
 
-    1. Click the **FILE** tab.
+    1. Click the **File** tab.
 
     2. Select **Print**.
 
@@ -83,11 +83,11 @@ Create a Upward Arrow Process SmartArt graphic on the last slide.
 
     1. In the **Navigation Pane** on the left, select the last slide.
 
-    2. On the **INSERT** tab, in the **Illustrations** group, click **SmartArt**.
+    2. On the **Insert** tab, in the **Illustrations** group, click **SmartArt**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc99hQuH1inT_2boUB5lF2ikuCtkhJrDMVtUc6M8kcZRo70A92PeDQsMKI_TObylHXZr1kY-1u25uyc5-hhIjUPHl2gY1EENWuKytVOsq0L0D5VlaWOU=w480){ loading=lazy }
 
-    3. In the **Choose a SmartArt Graphic pop-up** window, in the left pane select **Process**.
+    3. In the **Choose a SmartArt Graphic** pop-up window, in the left pane select **Process**.
 
     4. In the list of **Process** graphics, click **Upward Arrow**.
 

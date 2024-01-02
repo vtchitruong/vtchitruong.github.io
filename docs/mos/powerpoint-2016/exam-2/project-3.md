@@ -9,7 +9,7 @@ Configure printing options to print slides 1, 3, and 4 as full page slides.
 
 ???+ Tip "Hint"
 
-    1. Select **slides 1, 3 and 4** by holding down the **CTRL** button and clicking on them individually.
+    1. Select slides 1, 3 and 4 by holding down the **CTRL** button and clicking on them individually.
 
     2. Click the **File** tab to select it.
 
@@ -51,7 +51,7 @@ Format the text on slide 4 into two columns with 0.5" (1.27 cm) spacing between 
 
     2. Select the border of the content area.
 
-    3. On the **HOME** tab, in the **Paragraph** group, click Add or Remove Columns and select **More Columns**.
+    3. On the **Home** tab, in the **Paragraph** group, click Add or Remove Columns and select **More Columns**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/AIL4fc_8wf0K5zXS_VJz4xW3syjJtmC2nyweItwF7cnU-HV-JvzBUymI7Qj7MI00-JW0pxWt6NXQ002GwNf0c7mZWgzWG8s83cE6Jq0l6vconREeGnKF8qTx=w600){ loading=lazy }
 

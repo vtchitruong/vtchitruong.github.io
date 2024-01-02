@@ -12,11 +12,11 @@ Add the outline BeeBooks.docx from the GMetrixTemplates folder as a new slide
 
     1. In the **Navigation Pane** on the left, select the last slide.
 
-    2. On the **HOME** tab, in the **Slides** group, click **New Slide** and select **Slides from Outline...**
+    2. On the **Home** tab, in the **Slides** group, click **New Slide** and select **Slides from Outline...**
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV84ze3freRsUtemEY9G7me1rPRx50ueOx0TA9b7Yt57bbVSTfxVwGylD9ZVF9ZpVRUy6_KRDJZDN463pixUm2j4yExLmQDWOwRKKDOJG_x03D-2aV-9V=w480){ loading=lazy }
 
-    3. In **GMetrixTemplates** folder, select **BeeBooks.docx**.
+    3. In **GMetrix Templates** folder, select **BeeBooks.docx**.
 
     4. Click **Insert**.
 
@@ -30,10 +30,9 @@ Apply the Two Content layout to slide 2.
 
     1. In the **Navigation Pane** on the left, select slide 2.
 
-    2. On the **HOME** tab, in the **Slides** group, click **Layout** and select **Two Content**.
+    2. On the **Home** tab, in the **Slides** group, click **Layout** and select **Two Content**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV84zGXxw5IEd3UsC-70boa1D1afE9Xv8u6WXtADBIAcSAi_P0i97TJvN9T2Pjcty6XzrBT2UGGAeqIIlx6ZzDJj8VACjhKxpu1THTrqJna6gDzuG5J5h=w600){ loading=lazy }
-
 
 ## Task 3
 
@@ -43,7 +42,7 @@ Apply page numbering to all the slides except the title slide.
 
     1. In the **Navigation Pane** on the left, select any slide.
 
-    2. On the **INSERT** tab, in the **Text** group, click **Slide Number**.  
+    2. On the **Insert** tab, in the **Text** group, click **Slide Number**.  
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV840tKrDwyLNSyeJFte6JZ63YGfNCp8MVJMUgcHPtg6UKA_zmjyPxS3eoXb3BjBirTFjj0s8A_avaWBN2CkMzj5FzHa2ploDpkJkd8iQtl4M8AVhrpdY=w600){ loading=lazy }
 
@@ -67,11 +66,11 @@ Create a new Custom Layout in the Slide Master that contains only a Picture
 
     1. In the **Navigation Pane** on the left, select any slide.
 
-    2. On the **VIEW** tab, in the **Master Views** group, click **Slide Master**.
+    2. On the **View** tab, in the **Master Views** group, click **Slide Master**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV84b824eJkGTJHc3A-pwM80OW7mc_TbwrXZPLyBEjegVve-CXZtjtTq7-a8kwAULzoyCJaaXO8dQTexVGZywZXQBbbdOwhHXcJj-Sp2YJgXJbi1mLAog=w600){ loading=lazy }
 
-    3. On the **SLIDE MASTER** tab, in the **Edit Master** group, click **Insert Layout**.
+    3. On the **Slide Master** tab, in the **Edit Master** group, click **Insert Layout**.
     
         (Hint:  A new layout will be inserted named, **Custom Layout Layout**.)
     
@@ -83,7 +82,7 @@ Create a new Custom Layout in the Slide Master that contains only a Picture
 
     5. In the space between the title and footer, click-drag to fill the space with the **Picture** placeholder.
 
-    6. On the **SLIDE MASTER** tab, click **Close Master View**.
+    6. On the **Slide Master** tab, click **Close Master View**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV87geqLlF3uns6jcwuha5KgRn5VoSpyqY226FtCHH6t_tUWX-fQeDbBXuDCq6F0V7acnckcm6y9Bq8ctK7vAJXzWN5ixcZMQypWys2I0ZXuyoGNU5CtX=w600){ loading=lazy }
 
@@ -95,7 +94,7 @@ Remove the Footer, Date, and Page Number placeholders from the Blank Layout in
 
     1. In the **Navigation Pane** on the left, select any slide.
 
-    2. On the **VIEW** tab, in the **Master Views** group, click **Slide Master**.
+    2. On the **View** tab, in the **Master Views** group, click **Slide Master**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV85zzH0Rj-oRxMYc_jzsapeLCsPQAgjCuDV3Ik40zY3zBfs4NjnrfKKOdJzr1wh6diYK1L3Zz5y98JSuYrl5P9XTB1Nm2_B_lkkjNtHNnVkywoCfI-t6=w600){ loading=lazy }
 
@@ -105,7 +104,7 @@ Remove the Footer, Date, and Page Number placeholders from the Blank Layout in
 
     5. Press **Delete** on your keyboard.
 
-    6. On the **SLIDE MASTER** tab, click **Close Master View**.
+    6. On the **Slide Master** tab, click **Close Master View**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV8648GNs37E9qPyjdfiRqftvC-i8_hxNvHm2jEDSE-L5I0E9rPTzHNztZnRHN5jv-62aB-fbzmH-O3h6woyamnvOuYToYNNrqPIBmfUfU6aSTVNzr3au=w600){ loading=lazy }
 
@@ -115,7 +114,7 @@ Modify the left Header of the Handout Master to read Beekeeping.
 
 ???+ Tip "Hint"
 
-    1. In the **VIEW** tab, in the **Master Views** group, click **Handout Master**.
+    1. In the **View** tab, in the **Master Views** group, click **Handout Master**.
 
         ![Image title](https://lh3.googleusercontent.com/pw/ABLVV86NrAgpYTBn3veSp5Ho3yzYTc3PZvgCRhPGnr4HOqG4j6aGd0utKENfb7GDbBpZbrphuLJJs0s27bT_pX8WfO7-7c6PfMxiN539UYsaaxx2esiwXBMD=w480){ loading=lazy }
 
@@ -135,7 +134,7 @@ Change the view of this presentation to Slide Sorter before submitting this pro
 
 ???+ Tip "Hint"
 
-    1. In the **VIEW** tab, in the **Presentation Views** group, click **Slide Sorter**.
+    1. In the **View** tab, in the **Presentation Views** group, click **Slide Sorter**.
 
     2. Submit this project for scoring.
 
