@@ -1,3 +1,7 @@
+### v23.08.12 <small>06-01-2024</small> { id="24.01.06" }
+
+- Blog toàn là chữ nên quyết định thêm ảnh thumbnail cho gọi là có trang trí.
+
 ### v23.08.11 <small>31-12-2023</small> { id="23.08.11" }
 
 - Thêm câu hỏi đọc hiểu dạng trắc nghiệm một lựa chọn.

@@ -85,6 +85,6 @@ Duyệt mảng `a`, lặp các thao tác sau:
 
         ```
 
-## Toàn bộ chương trình¶
+## Toàn bộ chương trình
 
 Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/HSG-UnknownSource/tree/main/TrungBinhCong){:target="_blank"}.
