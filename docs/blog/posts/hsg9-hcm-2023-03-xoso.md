@@ -7,11 +7,20 @@ date: 2023-03-27
 
 # HSG9 HCM 03.2023: Xổ số
 
+<div class="result" markdown>
+![Image title](./thumbnails/students-coding.jpg){ align=left width=360 }
 Bài toán trích từ đề thi Học sinh giỏi Lớp 9 Thành phố tháng 03.2023.
 
 Tựa là *xổ số* nhưng không phải là xổ số truyền thống hay Vietlott, mà chỉ là cái cớ để thử lòng chúng sanh về back-tracking.
 
+</div>
+
+<br>
+<br>
+
 <!-- more -->
+
+<br>
 
 ## Khái quát về bài toán
 

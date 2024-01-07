@@ -7,9 +7,18 @@ date: 2021-12-11
 
 # Tìm đường thoát khỏi khu rừng
 
+<div class="result" markdown>
+![Image title](./thumbnails/graph.svg){ align=left width=360 }
+
 Đôi khi vì quá đam mê cái gì đó mà ta bị lầm đường lạc trôi or lạc lối. Nếu lỡ bị hút vào trận đồ và cảm thấy tuyệt vọng không lối thoát, bạn hãy học Tin học, nó sẽ cho bạn ánh sáng cuối đường hầm, giống như nhà thám hiểm trong bài toán sau đây. Anh đã sử dụng thuật toán DFS để thoát khỏi khu rừng.
 
+</div>
+
+<br>
+
 <!-- more -->
+
+<br>
 
 ## Khái quát về bài toán
 

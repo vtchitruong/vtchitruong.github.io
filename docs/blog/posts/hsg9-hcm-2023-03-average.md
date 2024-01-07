@@ -7,9 +7,21 @@ date: 2023-03-15
 
 # HSG9 HCM 03.2023: Trung bình cộng
 
+<div class="result" markdown>
+![Image title](./thumbnails/students-coding.jpg){ align=left width=360 }
+
 Bài toán liên quan đến trung bình cộng của n phần tử đầu tiên trong mảng, trích từ đề thi Học sinh giỏi Lớp 9 Thành phố tháng 03.2023.
 
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
 <!-- more -->
+
+<br>
 
 ## Khái quát về bài toán
 

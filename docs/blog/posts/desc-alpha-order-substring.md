@@ -7,9 +7,22 @@ date: 2023-03-23
 
 # Chuỗi con chấp nhận được
 
+<div class="result" markdown>
+![Image title](./thumbnails/students-coding.jpg){ align=left width=360 }
+
 Một bài toán liên quan đến chuỗi con và thứ tự theo bảng chữ cái.
 
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <!-- more -->
+
+<br>
 
 ## Khái quát về bài toán
 

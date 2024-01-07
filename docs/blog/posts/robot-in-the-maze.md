@@ -7,11 +7,16 @@ date: 2021-12-06
 
 # Tìm đường cho robot trong mê cung
 
+<div class="result" markdown>
+![Image title](./thumbnails/graph.svg){ align=left width=360 }
+
 Robot là loại đồ chơi thời thượng hiện nay. Trào lưu robot có vẻ đang lên khi thầy thầy chơi robot, trò trò chơi robot. Mặc dù không phải cuộc thi robot nào của học sinh phổ thông cũng đều ứng dụng thuật toán tìm đường, đây vẫn là một thuật toán thú vị nên tìm hiểu khi chơi robot.  
 
 Đu theo trend này, bài viết mô tả bài toán tìm đường di chuyển của robot di chuyển trong mê cung. Đây cũng là ví dụ minh họa cho thuật toán BFS, mà giang hồ gọi *thuật toán loang*.
 
 <!-- more -->
+
+<br>
 
 ## Khái quát về bài toán
 

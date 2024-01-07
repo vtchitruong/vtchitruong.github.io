@@ -8,21 +8,17 @@ date: 2023-07-28
 # Một vài bài tập về mảng hai chiều
 
 <div class="result" markdown>
-![Image title](./thumbnails/array-1d-2d.svg){ align=left width=300 }
-Các bài tập sau đây dùng để luyện ngón đối với mảng hai chiều.
+![Image title](./thumbnails/array-1d-2d.svg){ align=left width=360 }
+Đây là những bài tập dùng để luyện ngón đối với mảng hai chiều.
 
+Các chương trình C++ trong bài này sử dụng kiểu `array` hoặc con trỏ `int**`, còn các chương trình Python sử dụng kiểu `list`, thế nên cách viết có thể khác nhau. Nếu muốn viết gần giống với Python, bạn có thể dụng kiểu `vector` của C++.
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 
 <!-- more -->
 
-Các chương trình C++ trong bài này sử dụng kiểu `array` hoặc con trỏ `int**`, còn các chương trình Python sử dụng kiểu `list`, thế nên cách viết có thể khác nhau. Nếu muốn viết gần giống với Python, bạn có thể dụng kiểu `vector` của C++.
+<br>
 
 ## Khởi tạo ma trận vuông
 

@@ -7,9 +7,19 @@ date: 2023-11-03
 
 # Chuỗi vòng tròn
 
+<div class="result" markdown>
+![Image title](./thumbnails/students-coding.jpg){ align=left width=360 }
+
 Bài toán bịa ra tình huống rằng, trên gác nhà, chợt ai đó tìm thấy một đống chuỗi, mỗi chuỗi là một chùm các vòng tròn đeo tay. Phải làm thế nào để mở những vòng tròn ra và nối các chuỗi lại với nhau đỡ tốn công nhất.
 
+</div>
+
+<br>
+<br>
+
 <!-- more -->
+
+<br>
 
 ## Khái quát về bài toán
 
