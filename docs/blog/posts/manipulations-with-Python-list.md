@@ -1,6 +1,6 @@
 ---
 categories:
-    - Solve to surpass
+    - Moron in Python
 authors: [mrschool]
 date: 2023-06-10
 ---

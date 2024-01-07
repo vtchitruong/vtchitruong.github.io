@@ -215,6 +215,7 @@ plugins:
       categories_toc: true
       categories_url_format: "category/{slug}"
       categories_allowed:
+        - Moron in Python
         - Solve to surpass
       #   - Performance
       #   - Blog
