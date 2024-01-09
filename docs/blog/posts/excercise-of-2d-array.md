@@ -1,6 +1,8 @@
 ---
 categories:
-    - Solve to surpass
+    - CPP to see sharply
+    - Moron in Python
+    - To code or not to code
 authors: [mrschool]
 date: 2023-07-28
 ---

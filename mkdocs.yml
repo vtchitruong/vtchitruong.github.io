@@ -215,8 +215,10 @@ plugins:
       categories_toc: true
       categories_url_format: "category/{slug}"
       categories_allowed:
+        - CPP to see sharply
         - Moron in Python
         - Solve to surpass
+        - To code or not to code
       #   - Performance
       #   - Blog
       pagination: true

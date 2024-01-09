@@ -1,6 +1,7 @@
 ---
 categories:
     - Moron in Python
+    - To code or not to code
 authors: [mrschool]
 date: 2023-06-10
 ---
