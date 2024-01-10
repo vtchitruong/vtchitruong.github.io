@@ -14,8 +14,8 @@
 
 Mở Access và thực hiện các thao tác sau:
 
-1. Chọn **Home**
-2. Click vào **Blank database**
+1. Chọn **Home**.
+2. Click vào **Blank database**.
 
     ![Image title sdsd](https://lh3.googleusercontent.com/PKOmSA5kDRP_GTQo1Iz24_Wh_CD0X04CT2CEW1LE7bhhNTbVD9QSTB3BpW_jgdBe7ceBSvahwx0ghC86P-P1Hn8EOTiqD18_hJP_0R-YqmXK9ws96BCm3tg_3vqK2tOQlN7pXGRokQE=w360){loading=lazy}
 

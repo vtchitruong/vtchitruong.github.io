@@ -373,7 +373,7 @@ order by DonGia, TenMon desc
 
     ??? tip "Đáp án"
 
-        `DonGia` không được chỉ định thứ tự, nên mặc định là tăng dần. Nếu DonGia trùng nhau, tức đồng giá, thì mới sắp xếp `TenMon` giảm dần. Kết quả cụ thể như sau:
+        `DonGia` không được chỉ định thứ tự, nên mặc định là tăng dần. Nếu `DonGia` trùng nhau, tức đồng giá, thì mới sắp xếp `TenMon` giảm dần. Kết quả cụ thể như sau:
 
         | TenMon | LoaiMon | DonGia |
         | --- | --- | --- |
