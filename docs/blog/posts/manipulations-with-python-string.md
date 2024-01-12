@@ -1,7 +1,7 @@
 ---
 categories:
     - Moron in Python
-    - To code or not to code
+    - Set up & Code down
 authors: [mrschool]
 date: 2023-06-11
 ---

@@ -1,6 +1,6 @@
 # Practice Exam 1 - Project 1
 
-## Fusion Tomo  
+## Fusion Tomo
 You are developing a presentation showing the benefits of using the FusionTomo business model.
 
 ## Task 1

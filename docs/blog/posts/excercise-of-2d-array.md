@@ -2,7 +2,7 @@
 categories:
     - CPP to see sharply
     - Moron in Python
-    - To code or not to code
+    - Set up & Code down
 authors: [mrschool]
 date: 2023-07-28
 ---
