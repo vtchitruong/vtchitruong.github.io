@@ -62,7 +62,7 @@ Lấy interface nào đang kết nối mạng.
 
 Để lấy được tên của interface, ta cần xóa các chuỗi và khoảng trắng dư thừa.
 
-``` py linenums="1"
+``` py linenums="26"
     interface_name = ''
     if connected_interface:
         interface_name = connected_interface[0]

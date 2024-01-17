@@ -54,10 +54,14 @@ Bạn chỉ cần gõ từ khóa vào ô **Search**, tất cả bài viết có 
   <figcaption>Minh họa hiển thị kết quả tìm kiếm</figcaption>
 </figure>
 
-
 ## Câu hỏi tự luyện tập
 
-Mỗi bài học có thể có những câu hỏi nhỏ giúp bạn củng cố kiến thức. Bạn hãy luyện tập bằng cách tự trả lời trước khi bấm vào nút <span class="result" markdown>[Đáp án](##){ .md-button .md-button--primary }</span>
+Mỗi bài học có thể có những câu hỏi nhỏ giúp bạn kiểm tra khả năng đọc hiểu và củng cố kiến thức. Bạn hãy luyện tập bằng cách tự trả lời trước khi bấm vào xem **Đáp án**.
+
+<figure markdown>
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV867hDLboa5bCCVIlfWhnQwAmQXnI6Pg826D_zUAY4ebWbfw-H9tAU8rC17loQMGQhs_EkhPWMHJDYo7c87dvDrcgxssfTGYVQ9wWUyHouXHJupRGa1g=w800){loading=lazy}
+  <figcaption>Minh họa câu hỏi tự luyện tập</figcaption>
+</figure>
 
 ## Sơ đồ tư duy
 
@@ -71,7 +75,6 @@ Bên cạnh chức năng tóm tắt, sơ đồ tư duy còn là liệu pháp tâ
 </figure>
 
 Mặc dù trò đánh lừa cảm giác trên là có ích trong một số trường hợp, chúng tôi luôn khuyến khích bạn đọc kỹ những đoạn diễn giải nhằm hiểu rõ bài học.
-
 
 ## Mã lệnh đầy đủ của chương trình
 
