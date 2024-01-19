@@ -268,3 +268,9 @@ Các đoạn mã trong bài này được đặt tại <a href="https://colab.re
 | --- | --- |
 | câu lệnh điều kiện | conditional statement |
 | trường hợp | case |
+
+## Bài tập thực hành
+
+1. [Bài tập if-1](https://colab.research.google.com/drive/1w-ApSwPvQSO37KzMEIgZtZeK2Qa9maXZ?usp=sharing){:target="_blank"}
+
+2. [Bài tập if-2](https://colab.research.google.com/drive/1cuiRHPxRMJHtNJvcnB8ITl5mezuvWgjL?usp=sharing){:target="_blank"}

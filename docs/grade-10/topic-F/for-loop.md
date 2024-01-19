@@ -20,7 +20,7 @@ Các loại vòng lặp, trong đó có `for`, được sử dụng nhằm tận
 
 !!! note "Cú pháp"
     ``` py
-    for i range(số_lần_lặp):
+    for i in range(số_lần_lặp):
         khối_lệnh
     ```
 
@@ -38,22 +38,38 @@ Trong đó:
 
 Ví dụ 1:  
 Đoạn mã sau *giúp chép phạt* 100 lần.
+
 ``` py linenums="1"
 n = 100
 for i in range(n):
     print('Programming is my most favorite subject.')
 ```
 
-Ví dụ 2:  
-Đoạn mã sau *giúp chép phạt* 10 ngàn lần.
-``` py linenums="1"
-n = 10000
-for i in range(n):
-    print('Programming is my most favorite subject.')
-```
-!!! warning
-    
-    Tác giả chỉ code minh họa, và *ảnh* không nghĩ rằng bạn sẽ bấm *run* cái ví dụ này đâu.
+!!! question "Câu hỏi 1"
+
+    ``` py linenums="1"
+    n = 10000
+    for i in range(n):
+        print('Programming is my most favorite subject.')
+    ```
+
+    Dòng lệnh `print` trong đoạn mã trên sẽ được thực hiện bao nhiêu lần?
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_1">Lời giải của bạn:</label><br>
+        <textarea id="userInput_1" name="userInput_1" required></textarea>
+        <textarea id="solution_1">10000</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_1', 'solution_1', 'appreciate_1')">Submit</button>
+        <div id="appreciate_1"></div>
+    </form>
+    </div>
+
+    ??? tip "Đáp án"
+
+        Tương tự ví dụ 1, `range(10000)` đồng nghĩa `print` được thực hiện 10000 lần.
+        
+        Tuy nhiên, tác giả chỉ code minh họa, chứ *ảnh* không nghĩ là bạn sẽ bấm *run* đoạn mã này đâu.
 
 ## Lệnh range
 
@@ -69,8 +85,9 @@ Khi lệnh này được thực hiện, biến `i` chạy **từ `0` đến `sto
 
 Diễn giải theo toán học là: $i \in [0, stop)$. Nói cách khác, lấy mốc đầu (là `0`), nhưng không lấy mốc cuối (là `stop`).  
 
-Ví dụ 3:  
+Ví dụ 2:  
 In ra các số từ 0 đến 9.
+
 ``` py linenums="1"
 n = 10
 for i in range(n):
@@ -91,7 +108,7 @@ Output:
 9
 ```
 
-Ví dụ 4:  
+Ví dụ 3:  
 In ra các số từ 0 đến 10.
 
 ``` py linenums="1"
@@ -115,9 +132,9 @@ Output:
 10
 ```
 
-Trong ví dụ 4, để *lấy* được số 10, ta phải viết là `range(n + 1)`.
+Trong ví dụ 3, để *lấy* được số 10, ta phải viết là `range(n + 1)`.
 
-!!! question "Câu hỏi 1"
+!!! question "Câu hỏi 2"
 
     Sau khi thực hiện đoạn mã dưới đây, kết quả in trên màn hình là gì?
 
@@ -129,11 +146,11 @@ Trong ví dụ 4, để *lấy* được số 10, ta phải viết là `range(n 
 
     <div>
     <form id="answer-form">
-        <label for="userInput_1">Lời giải của bạn:</label><br>
-        <textarea id="userInput_1" name="userInput_1" style="height:4rem" required></textarea>
-        <textarea id="solution_1">0.newline.1.newline.2.newline.3</textarea><br>
-        <button class="submitButton" type="button" onclick="process_answer('userInput_1', 'solution_1', 'appreciate_1')">Submit</button>
-        <div id="appreciate_1"></div>
+        <label for="userInput_2">Lời giải của bạn:</label><br>
+        <textarea id="userInput_2" name="userInput_2" style="height:4rem" required></textarea>
+        <textarea id="solution_2">0.newline.1.newline.2.newline.3</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_2', 'solution_2', 'appreciate_2')">Submit</button>
+        <div id="appreciate_2"></div>
     </form>
     </div>
 
@@ -144,8 +161,9 @@ Trong ví dụ 4, để *lấy* được số 10, ta phải viết là `range(n 
         2  
         3  
 
-Ví dụ 5:  
+Ví dụ 4:  
 Tính tổng $S = 1 + 2 + 3 + ... + n$.
+
 ``` py linenums="1"
 n = int(input('Nhập n: '))
 
@@ -162,7 +180,7 @@ Nhập n: 7
 Tổng là 28
 ```
 
-Trong ví dụ 5, `S = S + i` được gọi là thao tác *cộng dồn*, cộng dồn `i` vào `S`.  
+Trong ví dụ 4, `S = S + i` được gọi là thao tác **cộng dồn**, cộng dồn `i` vào `S`.  
 
 ### range(start, stop)
 
@@ -176,30 +194,48 @@ Trường hợp này áp dụng khi ta không muốn `i` chạy từ `0`, mà t�
 
 Diễn giải theo toán học là: $[start, stop)$. Nói cách khác, lấy mốc bắt đầu là `start` và mốc kết thúc là `stop - 1`, tức ngay trước `stop`.  
 
-Ví dụ 5 bis:  
-Vẫn là tính tổng $S = 1 + 2 + 3 + ... + n$.
+!!! question "Câu hỏi 3"
 
-Lệnh `range` trong ví dụ 5 có thể được sửa lại thành `range(1, n + 1)` để bỏ qua thao tác thừa là cộng dồn số 0.
+    Vẫn là tính tổng $S = 1 + 2 + 3 + ... + n$.  
+    
+    Bạn hãy viết lại dòng lệnh `for` và điều chỉnh hàm `range` của ví dụ 4 sao cho chương trình không thực hiện thao tác thừa là cộng dồn với `0`.
 
-``` py linenums="1" hl_lines="4"
-n = int(input('Nhập n: '))
+    <div>
+    <form id="answer-form">
+        <label for="userInput_3">Lời giải của bạn:</label><br>
+        <textarea id="userInput_3" name="userInput_3" required></textarea>
+        <textarea id="solution_3">for i in range(1, n + 1):</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_3', 'solution_3', 'appreciate_3')">Submit</button>
+        <div id="appreciate_3"></div>
+    </form>
+    </div>
 
-S = 0                      # Khởi tạo biến S bằng 0
-for i in range(1, n + 1):  # Cho i chạy từ 1 đến n:
-    S = S + i              # Thực hiện lặp thao tác S = S + i
+    ??? tip "Đáp án"
 
-print('Tổng là', S)        # In kết quả ra màn hình
-```
+        Trong ví dụ 4, `range(n + 1)` nghĩa là `i` chạy từ `0`, và `0` sẽ được cộng dồn vào `S`. Đây là thao tác thừa.
 
-Output:
-``` pycon
-Nhập n: 7
-Tổng là 28
-```
+        Để bỏ qua thao tác này, ta sửa lại thành `range(1, n + 1)`, cụ thể như sau:
 
-Ví dụ 6:  
+        ``` py linenums="1" hl_lines="4"
+        n = int(input('Nhập n: '))
+
+        S = 0
+        for i in range(1, n + 1):  # Cho i chạy từ 1 đến n:
+            S = S + i
+
+        print('Tổng là', S)
+        ```
+
+        Output:
+        ``` pycon
+        Nhập n: 7
+        Tổng là 28
+        ```
+
+Ví dụ 5:  
 Tính tổng các số từ m đến n, với m, n đều là số nguyên dương.  
 Chẳng hạn, với m = 5, n = 8, thì tổng bằng 5 + 6 + 7 + 8 = 26.
+
 ``` py linenums="1"
 m = int(input('Nhập m: '))
 n = int(input('Nhập n: '))
@@ -218,18 +254,18 @@ Nhập n: 8
 Tổng là 26
 ```
 
-!!! question "Câu hỏi 2"
+!!! question "Câu hỏi 4"
 
     Biết rằng m và n vẫn được nhập giá trị lần lượt là 5 và 8.  
     Nếu dòng lệnh for của ví dụ 6 được sửa lại thành `for i in range(m, n):` thì kết quả in ra màn hình là gì?
 
     <div>
     <form id="answer-form">
-        <label for="userInput_2">Lời giải của bạn:</label><br>
-        <textarea id="userInput_2" name="userInput_2" required></textarea>
-        <textarea id="solution_2">18</textarea><br>
-        <button class="submitButton" type="button" onclick="process_answer('userInput_2', 'solution_2', 'appreciate_2')">Submit</button>
-        <div id="appreciate_2"></div>
+        <label for="userInput_4">Lời giải của bạn:</label><br>
+        <textarea id="userInput_4" name="userInput_4" required></textarea>
+        <textarea id="solution_4">18</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_4', 'solution_4', 'appreciate_4')">Submit</button>
+        <div id="appreciate_4"></div>
     </form>
     </div>
 
@@ -252,8 +288,9 @@ Chẳng hạn, nếu muốn `i` tăng 2, ta thiết lập tham số `step` là 2
 
 Một cách tổng quát, nếu muốn `i` ***nhảy*** $x$ bước, ta thiết lập `step` là $x$.  
 
-Ví dụ 7:  
+Ví dụ 6:  
 Tính tổng các số chẵn từ 0 đến n.
+
 ``` py linenums="1"
 n = int(input('Nhập n: '))
 
@@ -270,17 +307,17 @@ Nhập n: 6
 Tổng là 12
 ```
 
-!!! question "Câu hỏi 3"
+!!! question "Câu hỏi 5"
 
-    Bạn hãy điều chỉnh dòng lệnh for của ví dụ 7 để đoạn mã trở thành tính tổng các số lẻ.
+    Bạn hãy điều chỉnh dòng lệnh for của ví dụ 6 để đoạn mã trở thành tính tổng các số lẻ.
 
     <div>
     <form id="answer-form">
-        <label for="userInput_3">Lời giải của bạn:</label><br>
-        <textarea id="userInput_3" name="userInput_3" required></textarea>
-        <textarea id="solution_3">for i in range(1, n + 1, 2):</textarea><br>
-        <button class="submitButton" type="button" onclick="process_answer('userInput_3', 'solution_3', 'appreciate_3')">Submit</button>
-        <div id="appreciate_3"></div>
+        <label for="userInput_5">Lời giải của bạn:</label><br>
+        <textarea id="userInput_5" name="userInput_5" required></textarea>
+        <textarea id="solution_5">for i in range(1, n + 1, 2):</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_5', 'solution_5', 'appreciate_5')">Submit</button>
+        <div id="appreciate_5"></div>
     </form>
     </div>
     
@@ -294,8 +331,9 @@ Tổng là 12
 
 Nếu đặt `step` là số âm thì biến `i` sẽ chạy ***từ số lớn ngược về số nhỏ***.  
 
-Ví dụ 8:  
-In các số từ 10 giảm dần về 2.  
+Ví dụ 7:  
+In các số từ 10 giảm dần về 2.
+
 ``` py linenums="1"
 n = 10
 for i in range(n, 1, -1):
@@ -331,3 +369,11 @@ Các đoạn mã trong bài này được đặt tại <a href="https://colab.re
 | lặp đi lặp lại | repeatedly |
 | số lần lặp | number of iterations |
 | vòng lặp | loop |
+
+## Bài tập thực hành
+
+1. [Bài tập for-1](https://colab.research.google.com/drive/19DqezCNqTgMl9P2Uk4jp6lPO4Fg-GnqK?usp=sharing){:target="_blank"}
+
+2. [Bài tập for-2](https://colab.research.google.com/drive/1bLq1sReLdIPR_xdDxWF9mMXqyhVudUal?usp=sharing){:target="_blank"}
+
+3. [Bài tập for-3](https://colab.research.google.com/drive/13FiksfMbinKxv304sQV3RCJ16o5dUT6Q?usp=sharing){:target="_blank"}

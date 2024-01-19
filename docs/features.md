@@ -92,3 +92,9 @@ Phần lớn các bài đều đính kèm mục thuật ngữ tiếng Anh nhằm
 ![Image title](https://lh3.googleusercontent.com/pw/ADCreHf0MNexbStYKdla2Q0uyM-W5OzN-HoqeDrQKRDeE_zg83-Kus3NhZ8ByKBmCFco4uAUZFR9uXfWMnnBk066ocdWiilCc-PFC549m62ZY4OX9ZptoNjQ=w360){loading=lazy}
   <figcaption></figcaption>
 </figure>
+
+## Bài tập thực hành
+
+Phần này dùng để luyện viết chương trình, tạo cơ hội cho bạn vận dụng sáng tạo các nội dung lý thuyết đã học. Bạn có thể viết và chạy chương trình ngay trên Google Colab.
+
+Chúng tôi chưa có dự định viết bài giải ở đây. Bạn có thể nhờ trợ giúp từ giáo viên, bạn bè hoặc... AI.
