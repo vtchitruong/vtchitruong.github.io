@@ -9,11 +9,12 @@ date: 2021-12-19
 # Vẽ hình xoắn ốc bằng Python
 
 <div class="result" markdown>
-![Image title](./thumbnails/python.jpg){ align=left width=360 }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV840_jrLtz6RZYCl_I1VAWyEOJeknTcaNfEMEfDfxnrLLrLqu5Rv4bUmKhtPQGVcfVgJ3qqaNKiEjtirjkRKqJ7FwWUTdbdO6twbobb9XeCzbF5z0oEl=w360){ align=left }
 
 Hình xoắn ốc là đường cong xoay quanh một điểm cố định và tăng dần khoảng cách với điểm đó. Bài viết này hướng dẫn cách tạo hình trông giống xoắn ốc, được ghép từ các lục giác.
 
 Ý tưởng chủ yếu là vẽ các hình lục giác với kích thước tăng dần và xếp chúng lệch nhau. Đồng thời thêm mắm dặm muối bằng cách thiết lập cho các cạnh của lục giác các màu khác nhau.
+</div>
 
 <!-- more -->
 

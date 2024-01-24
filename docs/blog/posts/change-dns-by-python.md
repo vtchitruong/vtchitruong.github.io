@@ -14,10 +14,10 @@ date: 2021-11-14
 Đã có nhiều bài viết trên mạng chỉ cách đổi DNS. Vấn đề là đổi sao cho ngầu.
 
 Bài này hướng dẫn cách thiết lập DNS bằng mã lệnh Python, cool ngầu.
+</div>
 
+*Cập nhật: 20.01.2024*
 
-
-<br>
 <br>
 
 <!-- more -->
