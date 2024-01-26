@@ -196,3 +196,9 @@ Các đoạn mã trong bài này được đặt tại <a href="https://colab.re
 | hàng | row |
 | mảng của mảng | array of arrays |
 | mảng hai chiều | two-dimensional array |
+
+## Bài tập thực hành
+
+1. [Bài tập 2D-array-1](https://colab.research.google.com/drive/1TtnLVtu1H6N9bG6b23oo5PiWfukcks_p?usp=sharing){:target="_blank"}
+
+2. *Chưa có*
