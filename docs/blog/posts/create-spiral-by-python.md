@@ -13,16 +13,21 @@ date: 2021-12-19
 
 Hình xoắn ốc là đường cong xoay quanh một điểm cố định và tăng dần khoảng cách với điểm đó. Bài viết này hướng dẫn cách tạo hình trông giống xoắn ốc, được ghép từ các lục giác.
 
-Ý tưởng chủ yếu là vẽ các hình lục giác với kích thước tăng dần và xếp chúng lệch nhau. Đồng thời thêm mắm dặm muối bằng cách thiết lập cho các cạnh của lục giác các màu khác nhau.
 </div>
+
+*Cập nhật: 25.01.2024*
 
 <!-- more -->
 
 <br>
 
+Ý tưởng chủ yếu là vẽ các hình lục giác với kích thước tăng dần và xếp chúng lệch nhau. Đồng thời thêm mắm dặm muối bằng cách thiết lập cho các cạnh của lục giác các màu khác nhau.
+
 ## Cài đặt
 
-Ta cài đặt thư viện đồ họa Turtle như sau:
+Xem hướng dẫn cài đặt và khai báo thư viện [tại đây](create-overlapping-circles-by-python.md/#khởi-tạo){:target="_blank"}.
+
+Hoặc nếu cần, ta có thể cài đặt thư viện đồ họa Turtle như sau:
 
 ``` ps1
 pip install PythonTurtle
@@ -77,6 +82,10 @@ Trước khi lặp lại các thao tác trên cho cạnh tiếp theo, ta cho bú
 
 Tất cả thao tác trên được đặt vào một vòng lặp với `range` có tham số chia hết cho 6.
 
+Output như sau:
+
+![Image title](https://lh3.googleusercontent.com/76NUV4ZJjbBgBPWvig4gOEgO5h1Y_R0g6JJW689Ecwhrm_KK4NmKepxmsEbK8pT5OyqDeU135yY6Bt44flNgJVz_CWVBEQb3iS-84X-UeIC-3rr0Iwe116Wop7TMociFVErzYZEsZXQ=w600){ loading=lazy }
+
 ## Cách làm khác
 
 Cách này sử dụng hai vòng lặp lồng nhau, trong đó vòng lặp trong vẽ hình bát giác (octagon), còn vòng lặp ngoài làm cho các bát giác lệch nhau 10 độ nhằm tạo hiệu ứng xoắn ốc.
@@ -99,6 +108,10 @@ for x in range(10, 120):
     # Turn left by 10 degrees for spiral effect
     p.left(10)
 ```
+
+Output như sau:
+
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV84uivhCzDuosHvaInF1nsAq-1Zi3iFEg3bQScKo2faRPMt-c7gDYBIG2v0TjEZhrKhfcUE4pdANCZ3fLqAQfUP7_uFClQktWrIon2dTmW6Ifhe2szA4=w600){ loading=lazy }
 
 ## Toàn bộ chương trình¶
 

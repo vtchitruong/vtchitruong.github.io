@@ -13,12 +13,17 @@ date: 2021-11-18
 
 Cầm bút để vẽ cho đẹp trên giấy thực sự khó. Cho nên bạn có thể chuyển sang sống ảo, điều khiển máy tính vẽ giùm.
 
-Đây là ví dụ mẫu, cũng là ví dụ mở đầu cho các bài tập mang tính giải trí vẽ các hình cơ bản bằng Python. Bằng một cách nào đó, nó dễ thở hơn vẽ bằng bút rất nhiều.
 </div>
+
+*Cập nhật: 25.01.2024*
+
+<br>
 
 <!-- more -->
 
 <br>
+
+Đây là ví dụ mẫu, cũng là ví dụ mở đầu cho các bài tập mang tính giải trí vẽ các hình cơ bản bằng Python. Bằng một cách nào đó, nó dễ thở hơn vẽ bằng bút rất nhiều.
 
 ## Khái quát
 
@@ -75,7 +80,9 @@ p.screen.mainloop()
 
 Nếu không có lệnh này, cửa sổ sẽ đóng ngay khi vẽ xong.
 
-![Image title](https://lh3.googleusercontent.com/zkfen52HfHD2cvLSkcESb4w-69mzv7L7DytJWPM37_KcjxrEgnX8cPfpWLNQyjYGSNMZSeWsPtNiOVzvLDrFFKZGPVPwYWACHxLu3yOirgadXdUOx-QoZM-OUbixkahgbFBq6YshG80=w720){ loading=lazy }
+Output như sau:
+
+![Image title](https://lh3.googleusercontent.com/zkfen52HfHD2cvLSkcESb4w-69mzv7L7DytJWPM37_KcjxrEgnX8cPfpWLNQyjYGSNMZSeWsPtNiOVzvLDrFFKZGPVPwYWACHxLu3yOirgadXdUOx-QoZM-OUbixkahgbFBq6YshG80=w600){ loading=lazy }
 
 ## Toàn bộ chương trình¶
 
