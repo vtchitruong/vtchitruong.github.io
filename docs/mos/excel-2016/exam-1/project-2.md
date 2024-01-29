@@ -8,8 +8,9 @@ Join cells A1:E1 of the Tackle worksheet. Do not change the alignment of the con
 
 ???+ Tip "Hint"
 
-    1. Select cell range A1:E1 on the Tackle worksheet.
-    2. On the **Home** tab, in the Alignment group, click the Merge & Center drop-down arrow and select Merge Across.
+    1. Select cell range **A1:E1** on the **Tackle** worksheet.
+
+    2. On the **Home** tab, in the **Alignment** group, click the **Merge & Center** drop-down arrow and select **Merge Across**.
 
  
 

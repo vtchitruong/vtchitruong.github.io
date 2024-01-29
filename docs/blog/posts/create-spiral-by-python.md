@@ -27,18 +27,6 @@ Hình xoắn ốc là đường cong xoay quanh một điểm cố định và t
 
 Xem hướng dẫn cài đặt và khai báo thư viện [tại đây](create-overlapping-circles-by-python.md/#khởi-tạo){:target="_blank"}.
 
-Hoặc nếu cần, ta có thể cài đặt thư viện đồ họa Turtle như sau:
-
-``` ps1
-pip install PythonTurtle
-```
-
-Khai báo thư viện Turtle:
-
-``` py linenums="1"
-import turtle
-```
-
 ## Khởi tạo
 
 Khởi tạo danh sách `colors` gồm 6 màu.

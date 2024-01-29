@@ -31,6 +31,20 @@ Cầm bút để vẽ cho đẹp trên giấy thực sự khó. Cho nên bạn c
 
 Lúc chạy chương trình, một cửa sổ sẽ hiện ra như bức tranh ảo, bút vẽ sẽ di chuyển theo code của mình trong bức tranh để tạo hình. Bút vẽ này gọi là `turtle`, cùng tên với module.
 
+## Cài đặt
+
+Hoặc nếu cần, ta có thể cài đặt thư viện đồ họa Turtle như sau:
+
+``` ps1
+pip install PythonTurtle
+```
+
+Khai báo thư viện Turtle:
+
+``` py linenums="1"
+import turtle
+```
+
 ## Khởi tạo
 
 Đầu tiên, ta khai báo thư viện `turtle`.
