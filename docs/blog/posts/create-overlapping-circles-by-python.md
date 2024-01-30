@@ -27,13 +27,13 @@ Cầm bút để vẽ cho đẹp trên giấy thực sự khó. Cho nên bạn c
 
 ## Khái quát
 
-Để vẽ hình trong Python, ta sử dụng module `turtle`, có sẵn khi cài đặt Python.
+Để vẽ hình trong Python, ta sử dụng module `turtle`.
 
 Lúc chạy chương trình, một cửa sổ sẽ hiện ra như bức tranh ảo, bút vẽ sẽ di chuyển theo code của mình trong bức tranh để tạo hình. Bút vẽ này gọi là `turtle`, cùng tên với module.
 
 ## Cài đặt
 
-Hoặc nếu cần, ta có thể cài đặt thư viện đồ họa Turtle như sau:
+`turtle` là thư viện đồ họa có sẵn khi cài đặt Python. Nhưng nếu cần, ta có thể cài đặt như sau:
 
 ``` ps1
 pip install PythonTurtle
