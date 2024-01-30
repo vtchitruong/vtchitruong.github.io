@@ -1,10 +1,10 @@
-<!-- ---
+---
 categories:
     - Solve to surpass
     - Set up & Code down
 authors: [mrschool]
 date: 2024-01-30
---- -->
+---
 
 # Olympic HCM 04.2021 lớp 10: Đoạn quảng cáo
 
