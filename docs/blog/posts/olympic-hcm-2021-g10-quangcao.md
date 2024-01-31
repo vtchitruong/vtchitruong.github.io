@@ -78,15 +78,15 @@ Tìm thời điểm đi vào của khách hàng đầu tiên. Đây là thời �
 === "C++"
 
     ``` c++ linenums="1"
-    // Find the minimum value of check-in points
-    vector<pair<int, int>>::iterator firstCheckInCustomer = min_element(customers.begin(), customers.end(),
-                                    [](const pair<int, int>& a, const pair<int, int>& b) {return a.first < b.first; });
+        // Find the minimum value of check-in points
+        vector<pair<int, int>>::iterator firstCheckInCustomer = min_element(customers.begin(), customers.end(),
+                                        [](const pair<int, int>& a, const pair<int, int>& b) {return a.first < b.first; });
 
-    // The first customer, i.e the first check-in point
-    int firstCheckIn = (*firstCheckInCustomer).first;
+        // The first customer, i.e the first check-in point
+        int firstCheckIn = (*firstCheckInCustomer).first;
 
-    // Store this point
-    adSchedule.push_back(firstCheckIn);
+        // Store this point
+        adSchedule.push_back(firstCheckIn);
     ```
 === "Python"
 
@@ -100,39 +100,50 @@ Sắp xếp mảng `customers` theo thứ tự tăng dần của thời điểm 
 
 === "C++"
     ``` c++ linenums="1"
-    // Sort by check-in of customers in ascending order
-    sort(customers.begin(), customers.end(), Compare);
+        // Sort by check-in of customers in ascending order
+        sort(customers.begin(), customers.end(), Compare);
     ```
 === "Python"
     ``` py linenums="1"
 
     ```
 
-Trước đó, ta cần viết hàm `Compare()` để phục vụ cho việc sắp xếp.
+Đối với C++, ta cần viết hàm `Compare()` trước để phục vụ cho việc sắp xếp; còn đối với Python, ta đã chèn *lambda function* vào hàm `sort()`. 
 
-=== "C++"
-    ``` c++ linenums="1"
-    bool Compare(const pair<int, int>& a, const pair<int, int>& b)
-    {
-        return a.second < b.second;
-    }
-    ```
-=== "Python"
-    ``` py linenums="1"
-
-    ```
+``` c++ linenums="1"
+bool Compare(const pair<int, int>& a, const pair<int, int>& b)
+{
+    return a.second < b.second;
+}
+```
 
 ### Bước 3
 
-Đặt `lastCheckOut` là thời điểm cuối cùng đi ra khỏi siêu thị của tất cả khách hàng. Ta khởi tạo `lastCheckOut` mang giá trị âm vô cực.
+Đặt `lastBroadcast` là thời điểm cuối cùng phát quảng cáo. Ta khởi tạo `lastBroadcast` mang giá trị âm vô cực.
 
-Duyệt mảng `customers`, ứng với mỗi khách hàng, nếu thời điểm đi ra của người này là trước thời điểm đi ra cuối cùng (của mọi khách) 
+Duyệt mảng `customers`, ứng với mỗi khách hàng, nếu thời điểm đi ra của người này diễn ra sau thời điểm cuối cùng phát quảng cáo, thì ta ghi nhận thời điểm phát quảng cáo mới, chính là thời điểm người này đi ra, nhằm đảm bảo người này nghe quảng cáo thêm một lần nữa.
 
-            === "C++"
-        ``` c++ linenums="1"
- 
-        ```
-    === "Python"
-        ``` py linenums="1"
 
-        ```
+=== "C++"
+    ``` c++ linenums="1"
+        // The last ad broadcast
+        // Init by getting the minimum value of int data type
+        int lastBroadcast = numeric_limits<int>::min();
+
+        for (pair<int, int> customer : customers)
+        {
+            // Get the check-out point of each customer
+            int checkOut = customer.second;
+
+            // If the check-out point happens after the latest ad broadcast
+            // then store this check-out point as the new-latest ad broadcast
+            if (checkOut <= lastBroadcast) continue;
+
+            adSchedule.push_back(checkOut);
+            lastBroadcast = checkOut;
+        }
+    ```
+=== "Python"
+    ``` py linenums="1"
+
+    ```
