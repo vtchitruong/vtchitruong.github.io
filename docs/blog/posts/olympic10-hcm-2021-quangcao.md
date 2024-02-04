@@ -13,7 +13,7 @@ date: 2024-01-30
 
 Viết chương trình phân bố thời gian các đoạn quảng cáo sao cho đạt được các yêu cầu trong đề.
 
-Đề bài trích từ đề thi Olympic Thành phố tháng 04.2021 dành cho lớp 10.
+Bài toán trích từ đề thi Olympic Thành phố tháng 04.2021 dành cho lớp 10.
 
 </div>
 

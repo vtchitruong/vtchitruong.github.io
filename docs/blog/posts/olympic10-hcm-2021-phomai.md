@@ -13,7 +13,7 @@ date: 2024-02-01
 
 Viết chương trình tính số lần cáo chia phô mai cho hai gấu con.
 
-Đề bài trích từ đề thi Olympic Thành phố tháng 04.2021 dành cho lớp 10.
+Bài toán trích từ đề thi Olympic Thành phố tháng 04.2021 dành cho lớp 10.
 
 </div>
 
