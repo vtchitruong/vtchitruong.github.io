@@ -216,6 +216,7 @@ plugins:
       categories_url_format: "category/{slug}"
       categories_allowed:
         - Algorithmic frolic
+        - Chase the database
         - CPP to see sharply
         - Moron in Python
         - Solve to surpass
