@@ -10,13 +10,13 @@ date: 2023-03-27
 
 <div class="result" markdown>
 ![Image title](./thumbnails/students-coding.jpg){ align=left width=360 }
+
 Tựa là *xổ số* nhưng không phải là xổ số truyền thống hay Vietlott, mà chỉ là cái cớ để thử lòng chúng sanh về back-tracking.
 
 Bài toán trích từ đề thi Học sinh giỏi lớp 9 Thành phố tháng 03.2023.
 
 </div>
 
-<br>
 <br>
 
 <!-- more -->

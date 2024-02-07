@@ -10,6 +10,7 @@ date: 2021-10-26
 
 <div class="result" markdown>
 ![Image title](https://lh3.googleusercontent.com/pw/ABLVV84UNK0R0ILZZphCU9j0zeCh0W3KfD7pgwuoGAdJxOnY1UKOjvWZt9tsMOOh2wOr9FMFW2q-HCTtA6Ksfh7uV41nFw8OOrARWIStjaToIVFfQeadt_7h=w360){ align=left }
+
 Thông thường để mở cơ sở dữ liệu SQLite, ta có thể sử dụng các chương trình gọn nhẹ như [DB Browser for SQLite](https://sqlitebrowser.org/){:target="_blank"}, [SQLiteStudio](https://sqlitestudio.pl/){:target="_blank"} hoặc [DBeaver Community](https://dbeaver.io/){:target="_blank"}.
 
 Bài này đề xuất một chiêu khác, kiểu búa tạ đập ruồi, đó là mở SQLite bằng công cụ SQL Server Management Studio (SSMS).
