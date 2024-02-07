@@ -9,7 +9,7 @@ date: 2021-12-30
 # Hiển thị dữ liệu từ Google Sheets lên trang web
 
 <div class="result" markdown>
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV86WPJXM4IDZhOXy--rqB9TdRFa3k1G6eHrZBe_yr2iq29mjMk2guvu3S6cxSKsffLdshmiBEPuMOO6IwH6CGqJ6pxcSmV496mVse1Fb_CGIDGxBxvcb=w360){ align=left }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV86WPJXM4IDZhOXy--rqB9TdRFa3k1G6eHrZBe_yr2iq29mjMk2guvu3S6cxSKsffLdshmiBEPuMOO6IwH6CGqJ6pxcSmV496mVse1Fb_CGIDGxBxvcb=w1200){ width=360 align=left }
 
 Google Sheets là công cụ phổ biến và thuận tiện để chia sẻ dữ liệu dạng bảng.
 

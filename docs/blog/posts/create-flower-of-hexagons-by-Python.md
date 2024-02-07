@@ -9,7 +9,7 @@ date: 2021-12-08
 # Vẽ hoa từ các hình lục giác bằng Python
 
 <div class="result" markdown>
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV876yM16jGYzR-Uj1a8cqCrxbEOOPtp3Ha-71W_RVFQWd8dZL2gl6c8bFJFw_cwf3oWIuUQoJKDadQ6p7_-7QOsA81GcKhCO3RRXshEOxyd3alBiY7Yy=w360){ align=left }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV876yM16jGYzR-Uj1a8cqCrxbEOOPtp3Ha-71W_RVFQWd8dZL2gl6c8bFJFw_cwf3oWIuUQoJKDadQ6p7_-7QOsA81GcKhCO3RRXshEOxyd3alBiY7Yy=w1200){ width=360 align=left }
 Chơi hoa là một thú vui tao nhã. Vấn đề là chơi sao cho ngầu? Trả lời rằng: chơi bằng code, dùng mã lệnh để chăm hoa.
 
 Bài viết này hướng dẫn cách ghép các lục giác quanh một tâm, cũng là gốc tọa độ, để tạo hình một bông hoa.
@@ -45,7 +45,7 @@ turtle.bgcolor('black')
 
 Output như sau:
 
-![Image title](https://lh3.googleusercontent.com/oXbX0pT5sCbhnRttzVNdY85hKbjhM-WPSGAX_GCnRXcQI7jfFsk_FqF0dNtRIm5qycquZ95A3xiuly5gyXicFLqBeIwT2_GKWnZXMXkVt2KE4vFonWh4V8Nh0w_gj5DLdEnwU--RALs=w600){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/oXbX0pT5sCbhnRttzVNdY85hKbjhM-WPSGAX_GCnRXcQI7jfFsk_FqF0dNtRIm5qycquZ95A3xiuly5gyXicFLqBeIwT2_GKWnZXMXkVt2KE4vFonWh4V8Nh0w_gj5DLdEnwU--RALs=w1200){ width=600 loading=lazy }
 
 Dựa vào các đường chéo của hai lục giác, ta dễ dàng tính được góc ở tâm của phần giao nhau là 20°.
 
@@ -59,7 +59,7 @@ for i in range(18):
 
 Output như sau:
 
-![Image title](https://lh3.googleusercontent.com/lVTLDAadLPxVAyPWjPfhcpvf_1Z5-gj0-Q5DNLUebDFv14TYXEzt2S1MzAX_1wzppK92s8LY4wuIp12ZLthzpk_DfYxqlDetS4yoAyQG9vQEzupmyUBJtiPqPrZIIGN1Hs3VsXJTAP4=w600){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/lVTLDAadLPxVAyPWjPfhcpvf_1Z5-gj0-Q5DNLUebDFv14TYXEzt2S1MzAX_1wzppK92s8LY4wuIp12ZLthzpk_DfYxqlDetS4yoAyQG9vQEzupmyUBJtiPqPrZIIGN1Hs3VsXJTAP4=w1200){ width=600 loading=lazy }
 
 ## Toàn bộ chương trình¶
 

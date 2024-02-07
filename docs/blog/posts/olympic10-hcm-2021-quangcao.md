@@ -25,7 +25,7 @@ Bài toán trích từ đề thi Olympic Thành phố tháng 04.2021 dành cho l
 
 ## Đề bài
 
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV86ieS1k2CuG2GTzP9g8XHKW5659sZ7IkDfoPdPSJZMpEeSGD1NpBjUfKDCc0HlA5tmfjsmv634DYBZuF9roxYUYgje70ENsCqSDOFZWIVjUvWKagW3e=w800){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV86ieS1k2CuG2GTzP9g8XHKW5659sZ7IkDfoPdPSJZMpEeSGD1NpBjUfKDCc0HlA5tmfjsmv634DYBZuF9roxYUYgje70ENsCqSDOFZWIVjUvWKagW3e=w1200){ width=800 loading=lazy }
 
 ## Cách giải đề xuất
 

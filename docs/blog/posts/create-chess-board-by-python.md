@@ -9,7 +9,7 @@ date: 2023-11-17
 # Vẽ bàn cờ vua bằng Python
 
 <div class="result" markdown>
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV87AuilmZngr7ttCUvjCOsVTLiXKnizVA1ie0i8-Tvt71gaJwZ1Gy1yhszH_Z7yNiE0g-Qjausdrt5j3eVO2Od_4Ix8DX78ei6_E0rljVE5AQbbFuZog=w360){ align=left }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV87AuilmZngr7ttCUvjCOsVTLiXKnizVA1ie0i8-Tvt71gaJwZ1Gy1yhszH_Z7yNiE0g-Qjausdrt5j3eVO2Od_4Ix8DX78ei6_E0rljVE5AQbbFuZog=w1200){ width=360 align=left }
 
 Với chương trình phổ thông, ta có thể biểu diễn bàn cờ vua bằng mảng hai chiều, trong đó các phần tử `0` và `1` đan xen lẫn nhau.
 
@@ -102,7 +102,7 @@ def draw_board():
 
 Output như sau:
 
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV84lyT6yyMTNPJikIaLkOiiOfA5Hb64b4ilCWMvA6lAJAtwzD30lY_D3rJyOMwg1poEpDknQlIEDRXl3_qHaQuLQLIbbxiIisecRk9gAT66WFCwDtb-2=w600){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV84lyT6yyMTNPJikIaLkOiiOfA5Hb64b4ilCWMvA6lAJAtwzD30lY_D3rJyOMwg1poEpDknQlIEDRXl3_qHaQuLQLIbbxiIisecRk9gAT66WFCwDtb-2=w1200){ width=600 loading=lazy }
 
 ## Toàn bộ chương trình¶
 

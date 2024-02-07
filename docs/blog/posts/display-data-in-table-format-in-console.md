@@ -9,7 +9,7 @@ date: 2021-11-20
 # Hiển thị dữ liệu theo dạng bảng trong console
 
 <div class="result" markdown>
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV84rdNDtp174FmUgYbOwIqKKnXLuBT3pA76fGsK14get9HB9GSUNw0Z6cDFmLP_EiwMtRr9ZJFRNT_K_S8MhJuafq2HynUsY87Z11l99h7GGZeVPjLuv=w360){ align=left }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV84rdNDtp174FmUgYbOwIqKKnXLuBT3pA76fGsK14get9HB9GSUNw0Z6cDFmLP_EiwMtRr9ZJFRNT_K_S8MhJuafq2HynUsY87Z11l99h7GGZeVPjLuv=w1200){ width=360 align=left }
 
 Bài viết này hướng dẫn thực hiện truy vấn SQL đối với cơ sở dữ liệu SQLite và hiển thị kết quả lên bảng được kẻ bằng các ký tự `-` và `|` trong màn hình console.
 </div>

@@ -9,7 +9,7 @@ date: 2021-12-19
 # Vẽ hình xoắn ốc bằng Python
 
 <div class="result" markdown>
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV840_jrLtz6RZYCl_I1VAWyEOJeknTcaNfEMEfDfxnrLLrLqu5Rv4bUmKhtPQGVcfVgJ3qqaNKiEjtirjkRKqJ7FwWUTdbdO6twbobb9XeCzbF5z0oEl=w360){ align=left }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV840_jrLtz6RZYCl_I1VAWyEOJeknTcaNfEMEfDfxnrLLrLqu5Rv4bUmKhtPQGVcfVgJ3qqaNKiEjtirjkRKqJ7FwWUTdbdO6twbobb9XeCzbF5z0oEl=w1200){ width=360 align=left }
 
 Hình xoắn ốc là đường cong xoay quanh một điểm cố định và tăng dần khoảng cách với điểm đó. Bài viết này hướng dẫn cách tạo hình trông giống xoắn ốc, được ghép từ các lục giác.
 
@@ -72,7 +72,7 @@ Tất cả thao tác trên được đặt vào một vòng lặp với `range` 
 
 Output như sau:
 
-![Image title](https://lh3.googleusercontent.com/76NUV4ZJjbBgBPWvig4gOEgO5h1Y_R0g6JJW689Ecwhrm_KK4NmKepxmsEbK8pT5OyqDeU135yY6Bt44flNgJVz_CWVBEQb3iS-84X-UeIC-3rr0Iwe116Wop7TMociFVErzYZEsZXQ=w600){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/76NUV4ZJjbBgBPWvig4gOEgO5h1Y_R0g6JJW689Ecwhrm_KK4NmKepxmsEbK8pT5OyqDeU135yY6Bt44flNgJVz_CWVBEQb3iS-84X-UeIC-3rr0Iwe116Wop7TMociFVErzYZEsZXQ=w1200){ width=600 loading=lazy }
 
 ## Cách làm khác
 
@@ -99,7 +99,7 @@ for x in range(10, 120):
 
 Output như sau:
 
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV84uivhCzDuosHvaInF1nsAq-1Zi3iFEg3bQScKo2faRPMt-c7gDYBIG2v0TjEZhrKhfcUE4pdANCZ3fLqAQfUP7_uFClQktWrIon2dTmW6Ifhe2szA4=w600){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV84uivhCzDuosHvaInF1nsAq-1Zi3iFEg3bQScKo2faRPMt-c7gDYBIG2v0TjEZhrKhfcUE4pdANCZ3fLqAQfUP7_uFClQktWrIon2dTmW6Ifhe2szA4=w1200){ width=600 loading=lazy }
 
 ## Toàn bộ chương trình¶
 

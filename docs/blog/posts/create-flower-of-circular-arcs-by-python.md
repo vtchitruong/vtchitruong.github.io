@@ -9,7 +9,7 @@ date: 2021-12-16
 # Vẽ hoa từ các cung tròn bằng Python
 
 <div class="result" markdown>
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV87CgUbJkLnJ2zp1Jm5B_X_Sj3bV9V03_zevHIzk9OncHINiG6Npm22BSv3am6l3nFvj5F_vKxqoOCYkMFDE08WCAwfCIuFtOzxnUN64rdPttXIdqzQQ=w360){ align=left }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV87CgUbJkLnJ2zp1Jm5B_X_Sj3bV9V03_zevHIzk9OncHINiG6Npm22BSv3am6l3nFvj5F_vKxqoOCYkMFDE08WCAwfCIuFtOzxnUN64rdPttXIdqzQQ=w1200){ width=360 align=left }
 Tiếp tục thú vui tao nhã *chơi hoa* bằng code, bài viết này hướng dẫn cách tạo hình bông hoa từ các cung tròn. Cụ thể, mỗi cánh hoa được dựng nên từ hai cung.
 
 Hoa này cũng chưa biết nên gọi là gì cho đúng, bởi nó phảng phất một chút hoa cúc và một chút hoa đồng tiền.
@@ -54,7 +54,7 @@ Tiếp theo, xoay bút vẽ về hướng trái 100° rồi tạo **nét trên**
 
 Output như sau:
 
-![Image title](https://lh3.googleusercontent.com/FDMIiqN4JIwXfhultC5pvrpIaKWZfGVR6RGPIsNUgO9f3B20xmMvjG6aqBaaqB5xxFoqvU7Z_dIc75j2lm6Ma_Oy9azd9YZpud28RwyLNmFKvRUoda1ExgurJYRVPwMPjGkhSMQDsbc=w600){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/FDMIiqN4JIwXfhultC5pvrpIaKWZfGVR6RGPIsNUgO9f3B20xmMvjG6aqBaaqB5xxFoqvU7Z_dIc75j2lm6Ma_Oy9azd9YZpud28RwyLNmFKvRUoda1ExgurJYRVPwMPjGkhSMQDsbc=w1200){ width=600 loading=lazy }
 
 ## Toàn bộ chương trình¶
 

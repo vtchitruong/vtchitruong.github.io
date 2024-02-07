@@ -10,6 +10,7 @@ date: 2015-01-25
 
 <div class="result" markdown>
 ![Image title](./thumbnails/algorithm.jpg){ align=left width=360 }
+
 Sàng Eratosthenes (The Sieve of Eratosthenes) là thuật toán cổ do nhà toán học Hy Lạp Eratosthenes, sống trong khoảng 276-194 BCE, phát triển nên, dùng để tìm ra tất cả số nguyên tố trong một phạm vi nhất định.
 </div>
 

@@ -8,7 +8,7 @@ date: 2021-11-25
 # Tạo GitHub repository với Visual Studio Code
 
 <div class="result" markdown>
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV854HuqDfekYYzbtOrMhmxgkZ_6l8gC-f4bCyAmevwUZtIcr_X_uRdX_iW4g8Q36gpnPBVfFigPGK9r5KpmDSZAi5hMZ22-M34JkYHF51XTrTMk20oUc=w360){ align=left }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV854HuqDfekYYzbtOrMhmxgkZ_6l8gC-f4bCyAmevwUZtIcr_X_uRdX_iW4g8Q36gpnPBVfFigPGK9r5KpmDSZAi5hMZ22-M34JkYHF51XTrTMk20oUc=w1200){ width=360 align=left }
 
 GitHub là nền tảng hàng đầu thế giới có chức năng hỗ trợ việc phát triển phần mềm và quản lý mã nguồn (version control).
 
@@ -21,7 +21,7 @@ Bài này hướng dẫn các thao tác cơ bản tạo repository bằng comman
 
 <br>
 
-**Repository** được hiểu là nơi lưu lữu riêng cho một project nào đó, trong đó chứa các tập tin, thư mục, hình ảnh, dataset, v.v...
+**Repository** được hiểu là nơi lưu trữ riêng cho một project nào đó, trong đó bao gồm các tập tin, thư mục, hình ảnh, dataset, v.v...
 
 Để tạo repository, bạn thực hiện theo các công đoạn sau.
 
@@ -31,15 +31,15 @@ Bài này hướng dẫn các thao tác cơ bản tạo repository bằng comman
 
 Vào trang [github.com](https://github.com/){:target="_blank} > Nhấn nút **New** bên trái hoặc nút dấu **+** bên phải để tạo repository mới.
 
-![Image title](https://lh3.googleusercontent.com/ABTjXWF4NzfQ20Ytwkvc3eoOkhUF_QJtbzilmzphqvBKij4HtM1MY_v_f6SkgN4uOVwCd7Jv0fKLDgd2HvNCB61wJOJ7HkhQd1Qy5Sc3LJPkUfDmLhXcDqlpONTzaYG1a3uwUkynzZU=w360){ align=left loading=lazy }
+![Image title](https://lh3.googleusercontent.com/ABTjXWF4NzfQ20Ytwkvc3eoOkhUF_QJtbzilmzphqvBKij4HtM1MY_v_f6SkgN4uOVwCd7Jv0fKLDgd2HvNCB61wJOJ7HkhQd1Qy5Sc3LJPkUfDmLhXcDqlpONTzaYG1a3uwUkynzZU=w1200){ width=360 align=left loading=lazy }
 
-![Image title](https://lh3.googleusercontent.com/5IVjAgD6Bm80uv_CqdNloOOmxI9HOJDyB8RgBhS9F_SjzQ7OB4NfHVS9in35WOI468VcAcgw6UDr_VUu3AyBYRu0zP6H0tz-fkhYb2ohpCw92SYPZaUCGvpPEfw-Bf2ezJvwMSMjHHM=w360){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/5IVjAgD6Bm80uv_CqdNloOOmxI9HOJDyB8RgBhS9F_SjzQ7OB4NfHVS9in35WOI468VcAcgw6UDr_VUu3AyBYRu0zP6H0tz-fkhYb2ohpCw92SYPZaUCGvpPEfw-Bf2ezJvwMSMjHHM=w1200){ width=360 loading=lazy }
 
 **Bước 2**
 
 Tại ô **Repository name**, gõ tên repository tùy thích > Chọn **Public** > Check mục **Add a README file** nếu cần >  Bấm nút **Create repository**.
 
-![Image title](https://lh3.googleusercontent.com/oWbaquzflFPA5YSZaSzTUy54Ib2Pilkjg7DGiN-OEardddSao2MVFN_wwzvZ9f-AfveFKKkXkpYOuGDXSBAc3OZJnkgGxp7_dczLTiT6ln5U7pgt-GMxhxk5TeGW7XJ8u-MNQOOqUFg=w720){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/oWbaquzflFPA5YSZaSzTUy54Ib2Pilkjg7DGiN-OEardddSao2MVFN_wwzvZ9f-AfveFKKkXkpYOuGDXSBAc3OZJnkgGxp7_dczLTiT6ln5U7pgt-GMxhxk5TeGW7XJ8u-MNQOOqUFg=w1200){ width=720 loading=lazy }
 
 Vậy là bạn đã tạo xong repository trên server, gọi là **remote repository**.
 
@@ -103,7 +103,7 @@ Initialized empty Git repository in C:/CPP/MyGitDemo/.git/
 
 Quay lại trang GitHub, sao chép URL của remote repository đã tạo ở trên.
 
-![Image title](https://lh3.googleusercontent.com/mbJibu1dxSfuZ-2q4YYcRKoVexrlSIvmjXPSFXgVtdJEmSGswS7CpJvRriMnJM2nlLzcrCOnto5_m-y4WSpZB6xs8pROywS_tjYsBv4HAirQfhR8u7_1osmLmVKM0X_WKwYSOcZkuwE=w720){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/mbJibu1dxSfuZ-2q4YYcRKoVexrlSIvmjXPSFXgVtdJEmSGswS7CpJvRriMnJM2nlLzcrCOnto5_m-y4WSpZB6xs8pROywS_tjYsBv4HAirQfhR8u7_1osmLmVKM0X_WKwYSOcZkuwE=w1200){ width=720 loading=lazy }
 
 **Bước 3**
 
@@ -176,4 +176,4 @@ To https://github.com/vtchitruong/MyGitDemo.git
 
 Load lại trang GitHub để thấy tập tin vừa tải lên. Nhấn vào tập tin để xem mã nguồn.
 
-![Image title](https://lh3.googleusercontent.com/2ZDEVDr3JSBVK-XIviQ_gj2iod_g2uTtRfMPcXIjmKegTsTiCZgTYm6-R4KEgc1O0FGUU1DLJ-dbHsLmqz7Jr_qHmfaBxdRFN1C0migM2Ph-IOsooWsxNLSR7Ep_CnGb8Iz3hLJUuoo=w720){ loading=lazy }
+![Image title](https://lh3.googleusercontent.com/2ZDEVDr3JSBVK-XIviQ_gj2iod_g2uTtRfMPcXIjmKegTsTiCZgTYm6-R4KEgc1O0FGUU1DLJ-dbHsLmqz7Jr_qHmfaBxdRFN1C0migM2Ph-IOsooWsxNLSR7Ep_CnGb8Iz3hLJUuoo=w1200){ width=720 loading=lazy }

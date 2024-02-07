@@ -9,6 +9,7 @@ date: 2021-07-10
 
 <div class="result" markdown>
 ![Image title](./thumbnails/setup-codedown.jpg){ align=left width=360 }
+
 Visual Studio Code cho phép biên dịch và chạy từng file một. Nếu bạn đã tách chương trình của mình thành nhiều file khác nhau thì có thể thử biên dịch theo hướng dẫn trong bài.
 
 Hướng dẫn này áp dụng cho C++ và trình biên dịch GNU C++ Compiler (g++).
