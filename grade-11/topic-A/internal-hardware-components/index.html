@@ -1,0 +1,2365 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Giúp bạn nắm bắt kiến thức cơ bản của môn Tin học cấp trung học phổ thông.   Tiếp thu dễ dàng. Tra cứu thuận tiện. Xem được ở mọi nơi có net, trên nhiều loại máy, bất kể tư thế." name="description"/>
+<meta content="Mr School" name="author"/>
+<link href="https://vtchitruong.github.io/grade-11/topic-A/internal-hardware-components/" rel="canonical"/>
+<link href="../os-history/" rel="prev"/>
+<link href="../logic-gates/" rel="next"/>
+<link href="../../../assets/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.5.8" name="generator"/>
+<title>Phần cứng bên trong máy tính - Mr School's documentation for Tin học GDPT 2018</title>
+<link href="../../../assets/stylesheets/main.f2e4d321.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-406896385"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-406896385",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-406896385",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+<!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+<link href="../../../assets/stylesheets/custom.css" rel="stylesheet">
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QqYBUQwKtpBHq0bDfzJ9jMb2N5+8w/RcZ1Rqxq43+3Qp8sdsO6T7XbuK+LzYQ4M4Zg8q3yY2Wg9p6aa+MglbHA==" rel="stylesheet">
+</link></link><script src="../../../js/unpkg.com/d3@3.6.0.js" type="text/javascript"></script><script src="../../../js/unpkg.com/markmap-lib@0.15.3.js" type="text/javascript"></script><script src="../../../js/unpkg.com/markmap-view@0.15.3.js" type="text/javascript"></script><style type="text/css">div.mkdocs-markmap {
+    width: 100%;
+    min-height: 1em;
+    border: 1px solid grey;
+}
+.mkdocs-markmap > svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+</style></head>
+<body data-md-color-accent="light-blue" data-md-color-primary="green" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#phan-cung-ben-trong-may-tinh">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+<aside class="md-banner">
+<div class="md-banner__inner md-grid md-typeset">
+<button aria-label="Don't show this again" class="md-banner__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+            
+            
+    Nơi đây có 10 cái bình <svg height="1.25em" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+<style>
+            svg {
+                fill: #68a0a1
+            }
+        </style>
+<path d="M120 0h80c13.3 0 24 10.7 24 24V64H96V24c0-13.3 10.7-24 24-24zM32 151.7c0-15.6 9-29.8 23.2-36.5l24.4-11.4c11-5.1 23-7.8 35.1-7.8h90.6c12.1 0 24.1 2.7 35.1 7.8l24.4 11.4c14.1 6.6 23.2 20.8 23.2 36.5c0 14.4-7.5 27-18.9 34.1c11.5 8.8 18.9 22.6 18.9 38.2c0 16.7-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48c0-16.7 8.5-31.4 21.5-40C40.5 415.4 32 400.7 32 384s8.5-31.4 21.5-40C40.5 335.4 32 320.7 32 304s8.5-31.4 21.5-40C40.5 255.4 32 240.7 32 224c0-15.6 7.4-29.4 18.9-38.2C39.5 178.7 32 166.1 32 151.7zM96 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z"></path>
+</svg>: Bình tĩnh và bình dân Tin học vụ.
+
+          </div>
+<script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+</aside>
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Mr School's documentation for Tin học GDPT 2018" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Mr School's documentation for Tin học GDPT 2018">
+<img alt="logo" src="../../../assets/mr-school-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Mr School's documentation for Tin học GDPT 2018
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Phần cứng bên trong máy tính
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-hidden="true" class="md-option" data-md-color-accent="light-blue" data-md-color-media="" data-md-color-primary="green" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<input aria-hidden="true" class="md-option" data-md-color-accent="lime" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+</form>
+<script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+        
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../features/">
+          
+  
+    
+  
+  Getting started
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../grade-10/grade-10-index/">
+          
+  
+    
+  
+  Lớp 10
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../../grade-11-index/">
+          
+  
+    
+  
+  Lớp 11
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../grade-12/grade-12-index/">
+          
+  
+    
+  
+  Lớp 12
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../advanced/advanced-index/">
+          
+  
+    
+  
+  Nâng cao
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../mos/mos-2016-index/">
+          
+  
+    
+  
+  MOS
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../blog/">
+          
+  
+    
+  
+  Blog
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Mr School's documentation for Tin học GDPT 2018" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Mr School's documentation for Tin học GDPT 2018">
+<img alt="logo" src="../../../assets/mr-school-logo.png"/>
+</a>
+    Mr School's documentation for Tin học GDPT 2018
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    Getting started
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../features/">
+<span class="md-ellipsis">
+    Tính năng
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../changelog/">
+<span class="md-ellipsis">
+    Nhật ký thay đổi
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../license/">
+<span class="md-ellipsis">
+    Giấy phép
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    Lớp 10
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Lớp 10
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/grade-10-index/">
+<span class="md-ellipsis">
+    Chương trình khung
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề A1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề A1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A1/data-vs-information/">
+<span class="md-ellipsis">
+    Dữ liệu và thông tin
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A1/data-measurement-unit/">
+<span class="md-ellipsis">
+    Đơn vị đo dữ liệu
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A1/digital-devices-vs-smart-devices/">
+<span class="md-ellipsis">
+    Thiết bị số và thiết bị thông minh
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A1/cs-timeline-and-roles/">
+<span class="md-ellipsis">
+    Lịch sử phát triển và sự đóng góp của tin học
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề A2
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề A2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A2/data-representation-in-cs/">
+<span class="md-ellipsis">
+    Biểu diễn dữ liệu trong máy tính
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A2/convert-numbers-to-different-systems/">
+<span class="md-ellipsis">
+    Chuyển đổi số giữa các hệ đếm
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A2/operations-in-binary/">
+<span class="md-ellipsis">
+    Phép toán trong hệ nhị phân
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề B
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề B
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-B/computer-network/">
+<span class="md-ellipsis">
+    Mạng máy tính
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-B/cloud-computing/">
+<span class="md-ellipsis">
+    Điện toán đám mây
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-B/iot/">
+<span class="md-ellipsis">
+    Internet vạn vật
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề E
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề E
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-E/graphics-editor/">
+<span class="md-ellipsis">
+    Phần mềm đồ họa
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-E/vietnam-flag/">
+<span class="md-ellipsis">
+    Vẽ cờ Tổ quốc
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-E/olympic-circles/">
+<span class="md-ellipsis">
+    Vẽ vòng tròn Olympic
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề F
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề F
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/conditional-statement-if/">
+<span class="md-ellipsis">
+    Cấu trúc điều kiện if
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/for-loop/">
+<span class="md-ellipsis">
+    Cấu trúc lặp for
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/while-loop/">
+<span class="md-ellipsis">
+    Cấu trúc lặp while
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/list/">
+<span class="md-ellipsis">
+    Kiểu dữ liệu list
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/string/">
+<span class="md-ellipsis">
+    Kiểu dữ liệu chuỗi
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    Lớp 11
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Lớp 11
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../grade-11-index/">
+<span class="md-ellipsis">
+    Chương trình khung
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề A
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề A
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../os-vs-application/">
+<span class="md-ellipsis">
+    Hệ điều hành và phần mềm ứng dụng
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../open-source-software/">
+<span class="md-ellipsis">
+    Phần mềm thương mại và phần mềm mã nguồn mở
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mobile-os/">
+<span class="md-ellipsis">
+    Hệ điều hành của thiết bị di động
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../os-history/">
+<span class="md-ellipsis">
+    Lịch sử phát triển của hệ điều hành dành cho PC
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Phần cứng bên trong máy tính
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Phần cứng bên trong máy tính
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#khai-quat">
+<span class="md-ellipsis">
+      Khái quát
+    </span>
+</a>
+<nav aria-label="Khái quát" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phan-cung-ben-trong">
+<span class="md-ellipsis">
+      Phần cứng bên trong
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phan-cung-ben-ngoai">
+<span class="md-ellipsis">
+      Phần cứng bên ngoài
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mot-so-thanh-phan-phan-cung-ben-trong-may-tinh">
+<span class="md-ellipsis">
+      Một số thành phần phần cứng bên trong máy tính
+    </span>
+</a>
+<nav aria-label="Một số thành phần phần cứng bên trong máy tính" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bo-xu-ly-trung-tam">
+<span class="md-ellipsis">
+      Bộ xử lý trung tâm
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bo-nho-trong">
+<span class="md-ellipsis">
+      Bộ nhớ trong
+    </span>
+</a>
+<nav aria-label="Bộ nhớ trong" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ram">
+<span class="md-ellipsis">
+      RAM
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rom">
+<span class="md-ellipsis">
+      ROM
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thiet-bi-luu-tru">
+<span class="md-ellipsis">
+      Thiết bị lưu trữ
+    </span>
+</a>
+<nav aria-label="Thiết bị lưu trữ" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ia-cung">
+<span class="md-ellipsis">
+      Đĩa cứng
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ia-quang">
+<span class="md-ellipsis">
+      Đĩa quang
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bo-xu-ly-o-hoa">
+<span class="md-ellipsis">
+      Bộ xử lý đồ họa
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#so-o-tom-tat-noi-dung">
+<span class="md-ellipsis">
+      Sơ đồ tóm tắt nội dung
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#some-english-words">
+<span class="md-ellipsis">
+      Some English words
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../logic-gates/">
+<span class="md-ellipsis">
+    Cổng logic
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề F1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề F1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/data-related-needs/">
+<span class="md-ellipsis">
+    Quản lý dữ liệu
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/database-basics/">
+<span class="md-ellipsis">
+    Khái quát về cơ sở dữ liệu
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/relational-database/">
+<span class="md-ellipsis">
+    Cơ sở dữ liệu quan hệ
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/create-table-in-ms-access/">
+<span class="md-ellipsis">
+    Tạo bảng trong Microsoft Access
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/create-1-table-in-mysql-workbench/">
+<span class="md-ellipsis">
+    Tạo bảng trong MySQL Workbench
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/sql/">
+<span class="md-ellipsis">
+    Ngôn ngữ truy vấn dữ liệu
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề F2
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề F2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F2/array-1d/">
+<span class="md-ellipsis">
+    Mảng một chiều
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F2/array-2d/">
+<span class="md-ellipsis">
+    Mảng hai chiều
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F2/linked-list/">
+<span class="md-ellipsis">
+    Danh sách liên kết
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F2/searching-algorithm/">
+<span class="md-ellipsis">
+    Thuật toán tìm kiếm
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F2/sorting-algorithm-selection-insertion/">
+<span class="md-ellipsis">
+    Thuật toán sắp xếp chọn và sắp xếp chèn
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F2/sorting-algorithm-bubble-exchange/">
+<span class="md-ellipsis">
+    Thuật toán sắp xếp nổi bọt và sắp xếp tráo đổi
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F2/algorithmic-complexity/">
+<span class="md-ellipsis">
+    Độ phức tạp thuật toán
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+<span class="md-ellipsis">
+    Lớp 12
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Lớp 12
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-12/grade-12-index/">
+<span class="md-ellipsis">
+    Chương trình khung
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+<span class="md-ellipsis">
+    Nâng cao
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Nâng cao
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/advanced-index/">
+<span class="md-ellipsis">
+    Kiến thức nâng cao
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="">
+<span class="md-ellipsis">
+    Đệ quy
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_2">
+<span class="md-nav__icon md-icon"></span>
+            Đệ quy
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/recursion/recursion/">
+<span class="md-ellipsis">
+    Khái quát về đệ quy
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/recursion/hanoitower/">
+<span class="md-ellipsis">
+    Tháp Hà Nội
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="">
+<span class="md-ellipsis">
+    Quay lui
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_3">
+<span class="md-nav__icon md-icon"></span>
+            Quay lui
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/back-tracking/back-tracking/">
+<span class="md-ellipsis">
+    Khái quát về quay lui
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="">
+<span class="md-ellipsis">
+    Đồ thị
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_4">
+<span class="md-nav__icon md-icon"></span>
+            Đồ thị
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/graph/dfs/">
+<span class="md-ellipsis">
+    DFS
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/graph/bfs/">
+<span class="md-ellipsis">
+    BFS
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/graph/dijkstra/">
+<span class="md-ellipsis">
+    Dijkstra
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="">
+<span class="md-ellipsis">
+    Quy hoạch động
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_5">
+<span class="md-nav__icon md-icon"></span>
+            Quy hoạch động
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/dynamic-programming/reward-student/">
+<span class="md-ellipsis">
+    Chia phần thưởng
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/dynamic-programming/lis/">
+<span class="md-ellipsis">
+    Dãy con tăng dài nhất
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/dynamic-programming/knapsack/">
+<span class="md-ellipsis">
+    Balo
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+<span class="md-ellipsis">
+    MOS
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            MOS
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/mos-2016-index/">
+<span class="md-ellipsis">
+    MOS 2016
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="">
+<span class="md-ellipsis">
+    Word 2016
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+            Word 2016
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_1" id="__nav_7_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_1">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_2" id="__nav_7_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 2
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 3
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 3
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="">
+<span class="md-ellipsis">
+    Excel 2016
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+            Excel 2016
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_3_1" id="__nav_7_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/excel-2016/exam-1/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="">
+<span class="md-ellipsis">
+    PowerPoint 2016
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_4">
+<span class="md-nav__icon md-icon"></span>
+            PowerPoint 2016
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_4_1" id="__nav_7_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_4_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_4_1">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_4_2" id="__nav_7_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 2
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_4_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_4_3" id="__nav_7_4_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 3
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_4_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_4_3">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 3
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="">
+<span class="md-ellipsis">
+    PowerPoint 2019
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_5">
+<span class="md-nav__icon md-icon"></span>
+            PowerPoint 2019
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_5_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_5_1" id="__nav_7_5_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_5_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_5_1">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2019/exam-1/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../blog/">
+<span class="md-ellipsis">
+    Blog
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="">
+<span class="md-ellipsis">
+    Archive
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_2">
+<span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2024/">
+<span class="md-ellipsis">
+    2024
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2023/">
+<span class="md-ellipsis">
+    2023
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2022/">
+<span class="md-ellipsis">
+    2022
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2021/">
+<span class="md-ellipsis">
+    2021
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2015/">
+<span class="md-ellipsis">
+    2015
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="">
+<span class="md-ellipsis">
+    Categories
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/algorithmic-frolic/">
+<span class="md-ellipsis">
+    Algorithmic frolic
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/cpp-to-see-sharply/">
+<span class="md-ellipsis">
+    CPP to see sharply
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/chase-the-database/">
+<span class="md-ellipsis">
+    Chase the database
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/moron-in-python/">
+<span class="md-ellipsis">
+    Moron in Python
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/set-up--code-down/">
+<span class="md-ellipsis">
+    Set up &amp; Code down
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/solve-to-surpass/">
+<span class="md-ellipsis">
+    Solve to surpass
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/work-wild-web/">
+<span class="md-ellipsis">
+    Work wild web
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#khai-quat">
+<span class="md-ellipsis">
+      Khái quát
+    </span>
+</a>
+<nav aria-label="Khái quát" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phan-cung-ben-trong">
+<span class="md-ellipsis">
+      Phần cứng bên trong
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phan-cung-ben-ngoai">
+<span class="md-ellipsis">
+      Phần cứng bên ngoài
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mot-so-thanh-phan-phan-cung-ben-trong-may-tinh">
+<span class="md-ellipsis">
+      Một số thành phần phần cứng bên trong máy tính
+    </span>
+</a>
+<nav aria-label="Một số thành phần phần cứng bên trong máy tính" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bo-xu-ly-trung-tam">
+<span class="md-ellipsis">
+      Bộ xử lý trung tâm
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bo-nho-trong">
+<span class="md-ellipsis">
+      Bộ nhớ trong
+    </span>
+</a>
+<nav aria-label="Bộ nhớ trong" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ram">
+<span class="md-ellipsis">
+      RAM
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rom">
+<span class="md-ellipsis">
+      ROM
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thiet-bi-luu-tru">
+<span class="md-ellipsis">
+      Thiết bị lưu trữ
+    </span>
+</a>
+<nav aria-label="Thiết bị lưu trữ" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ia-cung">
+<span class="md-ellipsis">
+      Đĩa cứng
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ia-quang">
+<span class="md-ellipsis">
+      Đĩa quang
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bo-xu-ly-o-hoa">
+<span class="md-ellipsis">
+      Bộ xử lý đồ họa
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#so-o-tom-tat-noi-dung">
+<span class="md-ellipsis">
+      Sơ đồ tóm tắt nội dung
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#some-english-words">
+<span class="md-ellipsis">
+      Some English words
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/vtchitruong/vtchitruong.github.io/edit/master/docs/grade-11/topic-A/internal-hardware-components.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
+</a>
+<a class="md-content__button md-icon" href="https://github.com/vtchitruong/vtchitruong.github.io/raw/master/docs/grade-11/topic-A/internal-hardware-components.md" title="View source of this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"></path></svg>
+</a>
+<h1 id="phan-cung-ben-trong-may-tinh">Phần cứng bên trong máy tính<a class="headerlink" href="#phan-cung-ben-trong-may-tinh" title="Permanent link">¶</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Tóm lược nội dung</p>
+<p>Bài này đề cập một số thành phần phần cứng chủ yếu của máy tính.</p>
+</div>
+<h2 id="khai-quat">Khái quát<a class="headerlink" href="#khai-quat" title="Permanent link">¶</a></h2>
+<p><strong>Phần cứng</strong> là những thiết bị vật lý của máy tính. Nói cách khác, phần cứng là những bộ phận mà ta có thể cầm, nắm hoặc chạm được.  </p>
+<div class="admonition note">
+<p class="admonition-title">Phần cứng và phần mềm</p>
+<p>Bản thân phần cứng không tự hoạt động được, mà phải có phần mềm. Phần mềm là những chương trình dùng để điều khiển phần cứng hoạt động.</p>
+<p>Một cách hình tượng, phần cứng là thể xác, phần mềm là linh hồn. Cả hai hợp lại tạo thành một thể thống nhất của một hệ thống tin học.</p>
+</div>
+<p>Phần cứng có thể tạm chia thành hai loại:</p>
+<h3 id="phan-cung-ben-trong">Phần cứng bên trong<a class="headerlink" href="#phan-cung-ben-trong" title="Permanent link">¶</a></h3>
+<dl>
+<dt>Là những thiết bị gắn trực tiếp trên bo mạch chính hoặc trên các bảng mạch mở rộng. Chúng nằm "<em>trong hộp</em>" (case) của máy tính, thông thường từ ngoài nhìn vào sẽ không thấy.  </dt>
+<dd>
+<p>Ví dụ:<br/>
+CPU, RAM, ROM, GPU, bộ cấp nguồn, hệ thống làm mát, v.v...</p>
+</dd>
+</dl>
+<h3 id="phan-cung-ben-ngoai">Phần cứng bên ngoài<a class="headerlink" href="#phan-cung-ben-ngoai" title="Permanent link">¶</a></h3>
+<dl>
+<dt>Còn được gọi Là <strong>thiết bị ngoại vi</strong>, là những thiết bị nằm bên ngoài hộp của máy tính và kết nối với máy tính thông qua các cổng trên thân máy.  </dt>
+<dd>
+<p>Ví dụ:  <br/>
+Bàn phím, chuột, màn hình, máy in, máy quét, camera, v.v...</p>
+</dd>
+</dl>
+<h2 id="mot-so-thanh-phan-phan-cung-ben-trong-may-tinh">Một số thành phần phần cứng bên trong máy tính<a class="headerlink" href="#mot-so-thanh-phan-phan-cung-ben-trong-may-tinh" title="Permanent link">¶</a></h2>
+<p>Những thành phần này là cần thiết, tối thiểu để tạo nên một máy tính. Cụ thể như sau:  </p>
+<h3 id="bo-xu-ly-trung-tam">Bộ xử lý trung tâm<a class="headerlink" href="#bo-xu-ly-trung-tam" title="Permanent link">¶</a></h3>
+<p>Viết tắt là <strong>CPU</strong>, được xem là bộ não của máy tính, chịu trách nhiệm thực thi các tính toán và chỉ thị.</p>
+<details class="note">
+<summary>Chỉ thị</summary>
+<p>Mỗi chỉ thị là một dãy bit nhị phân mà CPU trực tiếp hiểu và thực hiện theo.  </p>
+<p>Một số loại chỉ thị của CPU là: </p>
+<ul>
+<li>Phép toán số học: cộng, trừ, nhân, chia, v.v...    </li>
+<li>Phép toán logic: AND, OR, XOR, các phép toán so sánh, các phép dịch chuyển bit (shift).</li>
+<li>Điều khiển luồng: Rẽ nhánh và lặp.</li>
+<li>Di chuyển dữ liệu: Sao chép dữ liêu qua lại giữa các ô nhớ, thanh ghi, thiết bị vào, ra.</li>
+<li>Xử lý dữ liệu: nạp, lưu trữ và biến đổi dữ liệu.</li>
+</ul>
+</details>
+<dl>
+<dt>Đơn vị dùng để đo tốc độ của CPU là Ghz (gigahertz), trong đó hertz có thể hiểu là số lượng chỉ thị mà máy tính thực hiện trong một giây. Đồng nghĩa rằng, GHz càng cao thì hiệu năng của máy tính càng lớn.</dt>
+<dd>
+<p>Ví dụ:<br/>
+1 Ghz = 1 tỷ Hertz. CPU 1Ghz nghĩa là trong một giây, CPU có thể thực hiện 1 tỷ chỉ thị.</p>
+</dd>
+</dl>
+<p>Hiện nay, CPU của nhiều máy tính cá nhân có tốc độ từ 1Ghz đến 3Ghz, đủ dùng cho các tác vụ cơ bản như duyệt web, xem video, soạn thảo văn bản, lập trình cơ bản.</p>
+<details class="note">
+<summary>Kỷ lục về tốc độ CPU</summary>
+<p>Tính đến đầu tháng 01.2023, <strong>13<sup>th</sup>-Generation Core i9-13900KS</strong> là CPU đầu tiên đạt đến tốc độ 6Ghz. </p>
+</details>
+<p><img alt="Image title" loading="lazy" src="https://i.pcmag.com/imagery/articles/02InbmluflyOPmvBXM7NMBI-1.fit_lim.size_1600x900.v1616592951.jpg"><br/>
+Hình 1. CPU của Intel<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></img></p>
+<p><img alt="Image title" loading="lazy" src="https://b2c-contenthub.com/wp-content/uploads/2022/09/Intel-Raptor-Lake-platform-1.png?w=800"><br/>
+Hình 2. Thông số của CPU Intel Core i9-13900K Raptor Lake<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></img></p>
+<h3 id="bo-nho-trong">Bộ nhớ trong<a class="headerlink" href="#bo-nho-trong" title="Permanent link">¶</a></h3>
+<p>Còn gọi là <strong>bộ nhớ chính</strong>, gồm có RAM và ROM.</p>
+<h4 id="ram">RAM<a class="headerlink" href="#ram" title="Permanent link">¶</a></h4>
+<p>Lưu trữ những dữ liệu mà CPU đang xử lý. Việc lưu trữ chỉ là tạm thời, dữ liệu sẽ mất đi khi tắt máy hoặc máy mất điện.</p>
+<p><img alt="Image title" loading="lazy" src="https://content.crucial.com/content/dam/crucial/dram-products/laptop/images/product/crucial-ddr5-32gb-sodimm-image.psd.transform/medium-png/image.png"/><br/>
+Hình 3. Thanh RAM 48 GB<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<h4 id="rom">ROM<a class="headerlink" href="#rom" title="Permanent link">¶</a></h4>
+<p>Bộ nhớ này có thể lưu trữ lâu dài, nhưng chỉ dành cho dữ liệu của nhà sản xuất thiết bị, không dễ cho người dùng ghi đè lên.  </p>
+<details class="note">
+<summary>Sự nhập nhằng của thuật ngữ ROM giữa máy tính để bàn và điện thoại thông minh</summary>
+<p>ROM của điện thoại thông minh không hoàn toàn giống khái niệm ở mục 2, vốn dành cho máy tính để bàn. ROM của điện thoại thông minh là một loại bộ nhớ flash, còn có thể gọi là <em>thiết bị lưu trữ bên trong</em>. Nó gồm hai phần: Một phần dùng để lưu trữ hệ điều hành, người dùng không dễ chỉnh sửa được; phần còn lại dành cho dữ liệu và ứng dụng của người dùng, người dùng có thể tùy nghi lưu trữ hoặc cài đặt theo nhu cầu.</p>
+</details>
+<h3 id="thiet-bi-luu-tru">Thiết bị lưu trữ<a class="headerlink" href="#thiet-bi-luu-tru" title="Permanent link">¶</a></h3>
+<p>Là những thiết bị dùng để lưu trữ lâu dài. Dữ liệu chứa trong thiết bị lưu trữ sẽ không bị mất đi khi mất điện hoặc tắt máy.</p>
+<details class="note">
+<summary>Dữ liệu trong thiết bị lưu trữ không thực sự bị xóa mất</summary>
+<p>Khi ta nhấn xóa hoặc định dạng thiết bị lưu trữ, dữ liệu không hoàn toàn bị mất, mà là ta mất khả năng tham chiếu đến dữ liệu đó.</p>
+<p>Để thực sự xóa dữ liệu, người khác không thể truy hồi được, ta có một vài cách sau:</p>
+<ol>
+<li>Ghi đè dữ liệu cần xóa bằng dữ liệu ngẫu nhiên, và thực hiện nhiều lần, trên toàn bộ diện tích lưu trữ.</li>
+<li>Mã hóa dữ liệu trước khi lưu trữ, để khi cần xóa, thì xóa các khóa dùng cho việc mã hóa, làm cho dữ liệu không còn truy xuất được nữa.</li>
+<li>Phá hủy thiết bị về mặt vật lý, chẳng hạn đập nát hoặc đốt, để không còn sửa chữa được, làm cho dữ liệu không thể phục hồi. </li>
+</ol>
+</details>
+<p>Những thiết bị lưu trữ gắn trong máy gồm có:  </p>
+<h4 id="ia-cung">Đĩa cứng<a class="headerlink" href="#ia-cung" title="Permanent link">¶</a></h4>
+<ol>
+<li>
+<p><strong>HDD</strong> (Hard Disk Drive):<br/>
+    Là đĩa cứng truyền thống, sử dụng từ tính để lưu trữ dữ liệu. HDD có một ổ đĩa quay và một đầu đọc/ghi dữ liệu cơ học.  </p>
+</li>
+<li>
+<p><strong>SSD</strong> (Solid-State Drive):<br/>
+    Sử dụng các chip nhớ flash để lưu trữ dữ liệu, tức không có những bộ phận cơ học như HDD. Việc này giúp truy xuất dữ liệu nhanh hơn và tin cậy hơn.</p>
+</li>
+</ol>
+<p><img alt="Image title" loading="lazy" src="https://lh3.googleusercontent.com/pw/AIL4fc9bSpTDl6XrxFRRqcFdWSq5h7zfCdz3JV9b57kUeQqn5C6hmoMiWyVpJnYscXqZeaXd-0JoI2qUexV4F2cyYwB3qynVyl5bKzxHrwNjXuxNe4w69vAM=w800"/><br/>
+Hình 4. HDD và SSD<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<p>Hiện nay, nhiều máy tính cá nhân đã trang bị SSD. Dung lượng SSD phổ biến là 128GB, 256GB, 512GB, 1TB.  </p>
+<details class="note">
+<summary>Kỷ lục về dung lượng SSD</summary>
+<p>Tính đến tháng 8.2023, dung lượng của một SSD đã đạt đến 100TB<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>. </p>
+</details>
+<h4 id="ia-quang">Đĩa quang<a class="headerlink" href="#ia-quang" title="Permanent link">¶</a></h4>
+<p>Gồm có CD, DVD và Blu-ray. Loại đĩa này sử dụng tia laser để đọc và ghi dữ liệu. Hiện nay, chúng dần không còn phổ biến trên máy tính.</p>
+<p>Ngoài ra, còn có một số thiết bị lưu trữ khác, được xem là <em>phần cứng bên ngoài</em>, đó là: đĩa flash, thẻ nhớ, đĩa cứng gắn ngoài.</p>
+<details class="note">
+<summary>USB flash drive</summary>
+<p>Đĩa flash là thiết bị lưu trữ gắn ngoài, kết nối vào máy tính thông qua cổng USB. Do nó là một trong những thiết bị dùng cổng USB đầu tiên có mặt ở thị trường nước ta, nên người ta quen gọi là USB.</p>
+<p>Mặc dù hiện nay có nhiều thiết bị kết nối vào máy tính thông qua cổng USB, cách gọi này vẫn còn khá phổ biến.</p>
+</details>
+<h3 id="bo-xu-ly-o-hoa">Bộ xử lý đồ họa<a class="headerlink" href="#bo-xu-ly-o-hoa" title="Permanent link">¶</a></h3>
+<p>Viết tắt là <strong>GPU</strong>, dùng để xử lý hình ảnh và video, có vai trò quan trọng trong các tác vụ liên quan đến đồ họa và khía cạnh trực quan như chơi game, chỉnh sửa ảnh, biên tập video và tạo mô hình 3 chiều.  </p>
+<p>Bên cạnh đó, GPU còn góp phần trong các ứng dụng đòi hỏi sức mạnh tính toán lớn như khoa học kỹ thuật và trí tuệ nhân tạo.</p>
+<p><img alt="Image title" loading="lazy" src="https://lh3.googleusercontent.com/pw/AIL4fc_OQmstGEWx7I-4dKbm9mQ4pf6pXRtOFClvH7ar7-zSx3Sq-ldwadmIoVJmRwymqYhC5vbbS0_Bv_ckIBJ2Ep6NBJW3EPFG_JuZ2exoo0G_0ZLWFj_X=w800"/><br/>
+Hình 6. GPU của NVIDIA<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
+<h2 id="so-o-tom-tat-noi-dung">Sơ đồ tóm tắt nội dung<a class="headerlink" href="#so-o-tom-tat-noi-dung" title="Permanent link">¶</a></h2>
+<p><div class="language-markmap mkdocs-markmap"><markmap-data hidden="true">---
+
+markmap:
+
+    colorFreezeLevel: 4
+
+    maxWidth: 300
+
+---
+
+
+
+# Phần cứng
+
+
+
+## Thành phần bên trong
+
+
+
+### Bộ xử lý trung tâm
+
+
+
+- Thực thi các tính toán và chỉ thị.
+
+- Dùng đơn vị Ghz để thể hiện năng lực xử lý.
+
+
+
+### Bộ nhớ trong
+
+
+
+- Làm việc trực tiếp với CPU.
+
+- Gồm hai loại:
+
+    - RAM
+
+        - Chứa dữ liệu hiện đang xử lý.
+
+        - Dữ liệu lưu trữ tạm thời, sẽ mất đi khi mất điện.
+
+    - ROM
+
+        - Chứa dữ liệu của nhà sản xuất phần cứng.
+
+        - Không dễ cho người dùng chỉnh sửa.
+
+        - Không bị mất đi khi mất điện.
+
+
+
+### Thiết bị lưu trữ
+
+
+
+- Lưu trữ dữ liệu của người dùng.
+
+- Dung lượng phổ biến hiện nay ở mức GB và TB.
+
+- Gồm hai loại:
+
+    - HDD
+
+        - Đĩa cứng ổ quay truyền thống.
+
+    - SSD
+
+        - Đĩa cứng thể rắn dùng chip nhớ flash.
+
+        - Tốc độ nhanh và tin cậy hơn HDD.
+
+
+
+### Bộ xử lý đồ họa
+
+
+
+- Xử lý các tác vụ nặng liên quan đến đồ họa.
+
+- Gồm hai loại:
+
+    - Card đồ họa tích hợp
+
+        - Gắn dính trên bảng mạch chính.
+
+    - Card đồ họa chuyên dụng
+
+        - Có thể dễ dàng tháo rời khỏi bảng mạch chính.
+
+
+
+## Thành phần bên ngoài
+
+
+
+### Thiết bị vào
+
+
+
+- Đưa dữ liệu từ bên ngoài vào máy tính.
+
+- Bao gồm:
+
+    - Bàn phím
+
+    - Chuột    
+
+    - Camera
+
+    - Microphone
+
+    - Máy quét
+
+    - Cảm biến
+
+    - Màn hình cảm ứng
+
+    - Bút stylus
+
+
+
+### Thiết bị ra
+
+
+
+- Đưa dữ liệu từ trong máy tính ra bên ngoài.
+
+- Bao gồm:
+
+    - Màn hình
+
+    - Loa, tai nghe
+
+    - Máy in
+
+    - Máy chiếu
+
+
+
+### Thiết bị lưu trữ
+
+
+
+- Lưu trữ dữ liệu của người dùng.
+
+- Bao gồm:
+
+    - USB flash drive
+
+    - Thẻ nhớ
+
+    - Đĩa cứng gắn ngoài
+</markmap-data></div>
+Hình 7. Sơ đồ phân loại phần cứng theo bên trong và bên ngoài</p>
+<h2 id="some-english-words">Some English words<a class="headerlink" href="#some-english-words" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Vietnamese</th>
+<th>Tiếng Anh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cổng</td>
+<td>port</td>
+</tr>
+<tr>
+<td>chỉ thị</td>
+<td>instruction</td>
+</tr>
+<tr>
+<td>bộ nhớ truy xuất ngẫu nhiên</td>
+<td>Random Access Memory (RAM)</td>
+</tr>
+<tr>
+<td>bộ nhớ chỉ đọc (chỉ cho phép đọc)</td>
+<td>Read-Only Memory (ROM)</td>
+</tr>
+<tr>
+<td>bộ xử lý trung tâm</td>
+<td>Central Processing Unit (CPU)</td>
+</tr>
+<tr>
+<td>bộ xử lý đồ họa</td>
+<td>Graphics Processing Unit (GPU)</td>
+</tr>
+<tr>
+<td>đĩa cứng thể rắn</td>
+<td>solid-state drive</td>
+</tr>
+<tr>
+<td>đĩa cứng ổ quay truyền thống</td>
+<td>hard disk drive</td>
+</tr>
+<tr>
+<td>đĩa quang học</td>
+<td>optical disc</td>
+</tr>
+<tr>
+<td>hộp, thân máy</td>
+<td>case</td>
+</tr>
+<tr>
+<td>phần cứng</td>
+<td>hardware</td>
+</tr>
+<tr>
+<td>thiết bị lưu trữ</td>
+<td>storage device</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>Hình lấy tại <a href="https://www.pcmag.com/news/intels-7nm-pc-chip-will-arrive-in-2023-using-tsmcs-tech" target="_blank">PC Magazine</a>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Hình lấy tại <a href="https://www.pcworld.com/article/1073245/intel-13th-gen-core-cpus-raptor-lake-reveal.html" target="_blank">PC World</a>. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>Hình lấy tại <a href="https://www.crucial.com/memory/ddr5/ct48g56c46s5" target="_blank">Crucial</a>. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>Hình lấy tại <a href="https://medium.com/@rodbauer/hdd-vs-ssd-what-does-the-future-for-storage-hold-dc8653f16366" target="_blank">medium.com</a>. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p>Sản phẩm đã được bán ra thị trường tại <a href="https://nimbusdata.com/products/exadrive/" target="_blank">Nimbus Data</a>. <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:6">
+<p>Hình lấy tại <a href="https://www.nvidia.com/en-us/geforce/news/geforce-rtx-founders-graphics-card-breakdown" target="_blank">Nvidia</a>. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Lịch sử phát triển của hệ điều hành dành cho PC" class="md-footer__link md-footer__link--prev" href="../os-history/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Lịch sử phát triển của hệ điều hành dành cho PC
+              </div>
+</div>
+</a>
+<a aria-label="Next: Cổng logic" class="md-footer__link md-footer__link--next" href="../logic-gates/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Cổng logic
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2023 Mr School
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/vtchitruong/vtchitruong.github.io" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.facebook.com/vothachchitruong" rel="noopener" target="_blank" title="www.facebook.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+<script src="../../../javascripts/extra.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="../../../javascripts/feedback.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="../../../javascripts/markmap-d3.js"></script>
+<script src="../../../javascripts/markmap-lib.js"></script>
+<script src="../../../javascripts/markmap-view.js"></script>
+<!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+<script src="../../../assets/javascripts/custom.js"></script>
+<script type="text/javascript">(function initializeMarkmap() {
+    const transformer = new markmap.Transformer();
+    const assets = transformer.getAssets();
+    const loading = Promise.all([
+        assets.styles && markmap.loadCSS(assets.styles),
+        assets.scripts && markmap.loadJS(assets.scripts),
+    ]);
+
+    function parseData(content) {
+        const { root, frontmatter } = transformer.transform(content);
+        let options = markmap.deriveOptions(frontmatter?.markmap);
+        options = Object.assign({
+            fitRatio: 0.85,
+        }, options);
+        return { root, options };
+    }
+
+    function resetMarkmap(m, el) {
+        const { minX, maxX, minY, maxY } = m.state;
+        const height = el.clientWidth * (maxX - minX) / (maxY - minY);
+        el.style.height = height + "px";
+        m.fit();
+    }
+
+    function renderMarkmap(el) {
+        let svg = el.querySelector('svg');
+        if (svg) return;
+        const content = el.textContent;
+        el.innerHTML = '<svg>';
+        svg = el.firstChild;
+        const { root, options } = parseData(content);
+        const m = markmap.Markmap.create(svg, options, root);
+        resetMarkmap(m, el);
+        transformer.hooks.retransform.tap(() => {
+            const { root, options } = parseData(content);
+            m.setData(root, options);
+            resetMarkmap(m, el);
+        });
+    }
+
+    function updateMarkmaps(node) {
+        for (const el of node.querySelectorAll('.mkdocs-markmap')) {
+            renderMarkmap(el);
+        }
+    }
+
+    loading.then(() => {
+        const observer = new MutationObserver((mutationList) => {
+            for (const mutation of mutationList) {
+                if (mutation.type === 'childList') {
+                    for (const node of mutation.addedNodes) {
+                        updateMarkmaps(node);
+                    }
+                }
+            }
+        });
+
+        observer.observe(document.body, { childList: true });
+
+        updateMarkmaps(document);
+    });
+})();
+</script></body>
+</html>

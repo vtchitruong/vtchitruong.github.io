@@ -1,0 +1,2850 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Giúp bạn nắm bắt kiến thức cơ bản của môn Tin học cấp trung học phổ thông.   Tiếp thu dễ dàng. Tra cứu thuận tiện. Xem được ở mọi nơi có net, trên nhiều loại máy, bất kể tư thế." name="description"/>
+<meta content="Mr School" name="author"/>
+<link href="https://vtchitruong.github.io/grade-11/topic-F2/algorithmic-complexity/" rel="canonical"/>
+<link href="../sorting-algorithm-bubble-exchange/" rel="prev"/>
+<link href="../../../grade-12/grade-12-index/" rel="next"/>
+<link href="../../../assets/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.5.8" name="generator"/>
+<title>Độ phức tạp thuật toán - Mr School's documentation for Tin học GDPT 2018</title>
+<link href="../../../assets/stylesheets/main.f2e4d321.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-406896385"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-406896385",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-406896385",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+<!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+<link href="../../../assets/stylesheets/custom.css" rel="stylesheet">
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QqYBUQwKtpBHq0bDfzJ9jMb2N5+8w/RcZ1Rqxq43+3Qp8sdsO6T7XbuK+LzYQ4M4Zg8q3yY2Wg9p6aa+MglbHA==" rel="stylesheet">
+</link></link><script src="../../../js/unpkg.com/d3@3.6.0.js" type="text/javascript"></script><script src="../../../js/unpkg.com/markmap-lib@0.15.3.js" type="text/javascript"></script><script src="../../../js/unpkg.com/markmap-view@0.15.3.js" type="text/javascript"></script><style type="text/css">div.mkdocs-markmap {
+    width: 100%;
+    min-height: 1em;
+    border: 1px solid grey;
+}
+.mkdocs-markmap > svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+</style></head>
+<body data-md-color-accent="light-blue" data-md-color-primary="green" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#o-phuc-tap-thuat-toan">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+<aside class="md-banner">
+<div class="md-banner__inner md-grid md-typeset">
+<button aria-label="Don't show this again" class="md-banner__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+            
+            
+    Nơi đây có 10 cái bình <svg height="1.25em" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+<style>
+            svg {
+                fill: #68a0a1
+            }
+        </style>
+<path d="M120 0h80c13.3 0 24 10.7 24 24V64H96V24c0-13.3 10.7-24 24-24zM32 151.7c0-15.6 9-29.8 23.2-36.5l24.4-11.4c11-5.1 23-7.8 35.1-7.8h90.6c12.1 0 24.1 2.7 35.1 7.8l24.4 11.4c14.1 6.6 23.2 20.8 23.2 36.5c0 14.4-7.5 27-18.9 34.1c11.5 8.8 18.9 22.6 18.9 38.2c0 16.7-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48c0-16.7 8.5-31.4 21.5-40C40.5 415.4 32 400.7 32 384s8.5-31.4 21.5-40C40.5 335.4 32 320.7 32 304s8.5-31.4 21.5-40C40.5 255.4 32 240.7 32 224c0-15.6 7.4-29.4 18.9-38.2C39.5 178.7 32 166.1 32 151.7zM96 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z"></path>
+</svg>: Bình tĩnh và bình dân Tin học vụ.
+
+          </div>
+<script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+</aside>
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Mr School's documentation for Tin học GDPT 2018" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Mr School's documentation for Tin học GDPT 2018">
+<img alt="logo" src="../../../assets/mr-school-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Mr School's documentation for Tin học GDPT 2018
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Độ phức tạp thuật toán
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-hidden="true" class="md-option" data-md-color-accent="light-blue" data-md-color-media="" data-md-color-primary="green" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<input aria-hidden="true" class="md-option" data-md-color-accent="lime" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+</form>
+<script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+        
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../features/">
+          
+  
+    
+  
+  Getting started
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../grade-10/grade-10-index/">
+          
+  
+    
+  
+  Lớp 10
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../../grade-11-index/">
+          
+  
+    
+  
+  Lớp 11
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../grade-12/grade-12-index/">
+          
+  
+    
+  
+  Lớp 12
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../advanced/advanced-index/">
+          
+  
+    
+  
+  Nâng cao
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../mos/mos-2016-index/">
+          
+  
+    
+  
+  MOS
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../blog/">
+          
+  
+    
+  
+  Blog
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Mr School's documentation for Tin học GDPT 2018" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Mr School's documentation for Tin học GDPT 2018">
+<img alt="logo" src="../../../assets/mr-school-logo.png"/>
+</a>
+    Mr School's documentation for Tin học GDPT 2018
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    Getting started
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../features/">
+<span class="md-ellipsis">
+    Tính năng
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../changelog/">
+<span class="md-ellipsis">
+    Nhật ký thay đổi
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../license/">
+<span class="md-ellipsis">
+    Giấy phép
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    Lớp 10
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Lớp 10
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/grade-10-index/">
+<span class="md-ellipsis">
+    Chương trình khung
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề A1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề A1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A1/data-vs-information/">
+<span class="md-ellipsis">
+    Dữ liệu và thông tin
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A1/data-measurement-unit/">
+<span class="md-ellipsis">
+    Đơn vị đo dữ liệu
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A1/digital-devices-vs-smart-devices/">
+<span class="md-ellipsis">
+    Thiết bị số và thiết bị thông minh
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A1/cs-timeline-and-roles/">
+<span class="md-ellipsis">
+    Lịch sử phát triển và sự đóng góp của tin học
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề A2
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề A2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A2/data-representation-in-cs/">
+<span class="md-ellipsis">
+    Biểu diễn dữ liệu trong máy tính
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A2/convert-numbers-to-different-systems/">
+<span class="md-ellipsis">
+    Chuyển đổi số giữa các hệ đếm
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-A2/operations-in-binary/">
+<span class="md-ellipsis">
+    Phép toán trong hệ nhị phân
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề B
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề B
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-B/computer-network/">
+<span class="md-ellipsis">
+    Mạng máy tính
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-B/cloud-computing/">
+<span class="md-ellipsis">
+    Điện toán đám mây
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-B/iot/">
+<span class="md-ellipsis">
+    Internet vạn vật
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề E
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề E
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-E/graphics-editor/">
+<span class="md-ellipsis">
+    Phần mềm đồ họa
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-E/vietnam-flag/">
+<span class="md-ellipsis">
+    Vẽ cờ Tổ quốc
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-E/olympic-circles/">
+<span class="md-ellipsis">
+    Vẽ vòng tròn Olympic
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề F
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề F
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/conditional-statement-if/">
+<span class="md-ellipsis">
+    Cấu trúc điều kiện if
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/for-loop/">
+<span class="md-ellipsis">
+    Cấu trúc lặp for
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/while-loop/">
+<span class="md-ellipsis">
+    Cấu trúc lặp while
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/list/">
+<span class="md-ellipsis">
+    Kiểu dữ liệu list
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-10/topic-F/string/">
+<span class="md-ellipsis">
+    Kiểu dữ liệu chuỗi
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    Lớp 11
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Lớp 11
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../grade-11-index/">
+<span class="md-ellipsis">
+    Chương trình khung
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề A
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề A
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-A/os-vs-application/">
+<span class="md-ellipsis">
+    Hệ điều hành và phần mềm ứng dụng
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-A/open-source-software/">
+<span class="md-ellipsis">
+    Phần mềm thương mại và phần mềm mã nguồn mở
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-A/mobile-os/">
+<span class="md-ellipsis">
+    Hệ điều hành của thiết bị di động
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-A/os-history/">
+<span class="md-ellipsis">
+    Lịch sử phát triển của hệ điều hành dành cho PC
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-A/internal-hardware-components/">
+<span class="md-ellipsis">
+    Phần cứng bên trong máy tính
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-A/logic-gates/">
+<span class="md-ellipsis">
+    Cổng logic
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề F1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề F1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/data-related-needs/">
+<span class="md-ellipsis">
+    Quản lý dữ liệu
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/database-basics/">
+<span class="md-ellipsis">
+    Khái quát về cơ sở dữ liệu
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/relational-database/">
+<span class="md-ellipsis">
+    Cơ sở dữ liệu quan hệ
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/create-table-in-ms-access/">
+<span class="md-ellipsis">
+    Tạo bảng trong Microsoft Access
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/create-1-table-in-mysql-workbench/">
+<span class="md-ellipsis">
+    Tạo bảng trong MySQL Workbench
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../topic-F1/sql/">
+<span class="md-ellipsis">
+    Ngôn ngữ truy vấn dữ liệu
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+<span class="md-ellipsis">
+    Chủ đề F2
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+            Chủ đề F2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../array-1d/">
+<span class="md-ellipsis">
+    Mảng một chiều
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../array-2d/">
+<span class="md-ellipsis">
+    Mảng hai chiều
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../linked-list/">
+<span class="md-ellipsis">
+    Danh sách liên kết
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../searching-algorithm/">
+<span class="md-ellipsis">
+    Thuật toán tìm kiếm
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sorting-algorithm-selection-insertion/">
+<span class="md-ellipsis">
+    Thuật toán sắp xếp chọn và sắp xếp chèn
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sorting-algorithm-bubble-exchange/">
+<span class="md-ellipsis">
+    Thuật toán sắp xếp nổi bọt và sắp xếp tráo đổi
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Độ phức tạp thuật toán
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Độ phức tạp thuật toán
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#at-van-e">
+<span class="md-ellipsis">
+      Đặt vấn đề
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#khai-niem">
+<span class="md-ellipsis">
+      Khái niệm
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#y-tuong-xac-inh-o-phuc-tap">
+<span class="md-ellipsis">
+      Ý tưởng xác định độ phức tạp
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#big-o">
+<span class="md-ellipsis">
+      Big O
+    </span>
+</a>
+<nav aria-label="Big O" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ky-hieu-big-o">
+<span class="md-ellipsis">
+      Ký hiệu Big O
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cach-xac-inh-big-o">
+<span class="md-ellipsis">
+      Cách xác định Big O
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#y-nghia-cua-big-o">
+<span class="md-ellipsis">
+      Ý nghĩa của Big O
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mot-so-big-o-pho-bien">
+<span class="md-ellipsis">
+      Một số Big O phổ biến
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quy-tac-xac-inh-o-phuc-tap">
+<span class="md-ellipsis">
+      Quy tắc xác định độ phức tạp
+    </span>
+</a>
+<nav aria-label="Quy tắc xác định độ phức tạp" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quy-tac-hang-so">
+<span class="md-ellipsis">
+      Quy tắc hằng số
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quy-tac-cong">
+<span class="md-ellipsis">
+      Quy tắc cộng
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quy-tac-nhan">
+<span class="md-ellipsis">
+      Quy tắc nhân
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#o-phuc-tap-cua-nhung-thuat-toan-tim-kiem-va-sap-xep">
+<span class="md-ellipsis">
+      Độ phức tạp của những thuật toán tìm kiếm và sắp xếp
+    </span>
+</a>
+<nav aria-label="Độ phức tạp của những thuật toán tìm kiếm và sắp xếp" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thuat-toan-tim-kiem-tuan-tu">
+<span class="md-ellipsis">
+      Thuật toán tìm kiếm tuần tự
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thuat-toan-tim-kiem-nhi-phan">
+<span class="md-ellipsis">
+      Thuật toán tìm kiếm nhị phân
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thuat-toan-sap-xep-noi-bot">
+<span class="md-ellipsis">
+      Thuật toán sắp xếp nổi bọt
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#so-o-tom-tat-noi-dung">
+<span class="md-ellipsis">
+      Sơ đồ tóm tắt nội dung
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#some-english-words">
+<span class="md-ellipsis">
+      Some English words
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+<span class="md-ellipsis">
+    Lớp 12
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Lớp 12
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../grade-12/grade-12-index/">
+<span class="md-ellipsis">
+    Chương trình khung
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+<span class="md-ellipsis">
+    Nâng cao
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Nâng cao
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/advanced-index/">
+<span class="md-ellipsis">
+    Kiến thức nâng cao
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="">
+<span class="md-ellipsis">
+    Đệ quy
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_2">
+<span class="md-nav__icon md-icon"></span>
+            Đệ quy
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/recursion/recursion/">
+<span class="md-ellipsis">
+    Khái quát về đệ quy
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/recursion/hanoitower/">
+<span class="md-ellipsis">
+    Tháp Hà Nội
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="">
+<span class="md-ellipsis">
+    Quay lui
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_3">
+<span class="md-nav__icon md-icon"></span>
+            Quay lui
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/back-tracking/back-tracking/">
+<span class="md-ellipsis">
+    Khái quát về quay lui
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="">
+<span class="md-ellipsis">
+    Đồ thị
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_4">
+<span class="md-nav__icon md-icon"></span>
+            Đồ thị
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/graph/dfs/">
+<span class="md-ellipsis">
+    DFS
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/graph/bfs/">
+<span class="md-ellipsis">
+    BFS
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/graph/dijkstra/">
+<span class="md-ellipsis">
+    Dijkstra
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="">
+<span class="md-ellipsis">
+    Quy hoạch động
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_5">
+<span class="md-nav__icon md-icon"></span>
+            Quy hoạch động
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/dynamic-programming/reward-student/">
+<span class="md-ellipsis">
+    Chia phần thưởng
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/dynamic-programming/lis/">
+<span class="md-ellipsis">
+    Dãy con tăng dài nhất
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../advanced/dynamic-programming/knapsack/">
+<span class="md-ellipsis">
+    Balo
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+<span class="md-ellipsis">
+    MOS
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            MOS
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/mos-2016-index/">
+<span class="md-ellipsis">
+    MOS 2016
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="">
+<span class="md-ellipsis">
+    Word 2016
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+            Word 2016
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_1" id="__nav_7_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_1">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-1/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_2" id="__nav_7_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 2
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-2/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 3
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 3
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/word-2016/exam-3/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="">
+<span class="md-ellipsis">
+    Excel 2016
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+            Excel 2016
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_3_1" id="__nav_7_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/excel-2016/exam-1/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="">
+<span class="md-ellipsis">
+    PowerPoint 2016
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_4">
+<span class="md-nav__icon md-icon"></span>
+            PowerPoint 2016
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_4_1" id="__nav_7_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_4_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_4_1">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-1/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_4_2" id="__nav_7_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 2
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_4_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 2
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-2/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_4_3" id="__nav_7_4_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 3
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_4_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_4_3">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 3
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-2/">
+<span class="md-ellipsis">
+    Project 2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-3/">
+<span class="md-ellipsis">
+    Project 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-4/">
+<span class="md-ellipsis">
+    Project 4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-5/">
+<span class="md-ellipsis">
+    Project 5
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-6/">
+<span class="md-ellipsis">
+    Project 6
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2016/exam-3/project-7/">
+<span class="md-ellipsis">
+    Project 7
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="">
+<span class="md-ellipsis">
+    PowerPoint 2019
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_5">
+<span class="md-nav__icon md-icon"></span>
+            PowerPoint 2019
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_5_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_5_1" id="__nav_7_5_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Practice Exam 1
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_5_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_5_1">
+<span class="md-nav__icon md-icon"></span>
+            Practice Exam 1
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mos/powerpoint-2019/exam-1/project-1/">
+<span class="md-ellipsis">
+    Project 1
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../blog/">
+<span class="md-ellipsis">
+    Blog
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="">
+<span class="md-ellipsis">
+    Archive
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_2">
+<span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2024/">
+<span class="md-ellipsis">
+    2024
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2023/">
+<span class="md-ellipsis">
+    2023
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2022/">
+<span class="md-ellipsis">
+    2022
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2021/">
+<span class="md-ellipsis">
+    2021
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/archive/2015/">
+<span class="md-ellipsis">
+    2015
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="">
+<span class="md-ellipsis">
+    Categories
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/algorithmic-frolic/">
+<span class="md-ellipsis">
+    Algorithmic frolic
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/cpp-to-see-sharply/">
+<span class="md-ellipsis">
+    CPP to see sharply
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/chase-the-database/">
+<span class="md-ellipsis">
+    Chase the database
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/moron-in-python/">
+<span class="md-ellipsis">
+    Moron in Python
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/set-up--code-down/">
+<span class="md-ellipsis">
+    Set up &amp; Code down
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/solve-to-surpass/">
+<span class="md-ellipsis">
+    Solve to surpass
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../blog/category/work-wild-web/">
+<span class="md-ellipsis">
+    Work wild web
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#at-van-e">
+<span class="md-ellipsis">
+      Đặt vấn đề
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#khai-niem">
+<span class="md-ellipsis">
+      Khái niệm
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#y-tuong-xac-inh-o-phuc-tap">
+<span class="md-ellipsis">
+      Ý tưởng xác định độ phức tạp
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#big-o">
+<span class="md-ellipsis">
+      Big O
+    </span>
+</a>
+<nav aria-label="Big O" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ky-hieu-big-o">
+<span class="md-ellipsis">
+      Ký hiệu Big O
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cach-xac-inh-big-o">
+<span class="md-ellipsis">
+      Cách xác định Big O
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#y-nghia-cua-big-o">
+<span class="md-ellipsis">
+      Ý nghĩa của Big O
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mot-so-big-o-pho-bien">
+<span class="md-ellipsis">
+      Một số Big O phổ biến
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quy-tac-xac-inh-o-phuc-tap">
+<span class="md-ellipsis">
+      Quy tắc xác định độ phức tạp
+    </span>
+</a>
+<nav aria-label="Quy tắc xác định độ phức tạp" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quy-tac-hang-so">
+<span class="md-ellipsis">
+      Quy tắc hằng số
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quy-tac-cong">
+<span class="md-ellipsis">
+      Quy tắc cộng
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quy-tac-nhan">
+<span class="md-ellipsis">
+      Quy tắc nhân
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#o-phuc-tap-cua-nhung-thuat-toan-tim-kiem-va-sap-xep">
+<span class="md-ellipsis">
+      Độ phức tạp của những thuật toán tìm kiếm và sắp xếp
+    </span>
+</a>
+<nav aria-label="Độ phức tạp của những thuật toán tìm kiếm và sắp xếp" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thuat-toan-tim-kiem-tuan-tu">
+<span class="md-ellipsis">
+      Thuật toán tìm kiếm tuần tự
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thuat-toan-tim-kiem-nhi-phan">
+<span class="md-ellipsis">
+      Thuật toán tìm kiếm nhị phân
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#thuat-toan-sap-xep-noi-bot">
+<span class="md-ellipsis">
+      Thuật toán sắp xếp nổi bọt
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#so-o-tom-tat-noi-dung">
+<span class="md-ellipsis">
+      Sơ đồ tóm tắt nội dung
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#some-english-words">
+<span class="md-ellipsis">
+      Some English words
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/vtchitruong/vtchitruong.github.io/edit/master/docs/grade-11/topic-F2/algorithmic-complexity.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
+</a>
+<a class="md-content__button md-icon" href="https://github.com/vtchitruong/vtchitruong.github.io/raw/master/docs/grade-11/topic-F2/algorithmic-complexity.md" title="View source of this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"></path></svg>
+</a>
+<h1 id="o-phuc-tap-thuat-toan">Độ phức tạp thuật toán<a class="headerlink" href="#o-phuc-tap-thuat-toan" title="Permanent link">¶</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Tóm lược nội dung</p>
+<p>Bài này trình bày những khái niệm liên quan đến độ phức tạp của thuật toán, trong đó có:</p>
+<ul>
+<li>Giải thích ý nghĩa của Big O.</li>
+<li>Một số kỹ thuật xác định nhanh độ phức tạp.</li>
+</ul>
+</div>
+<h2 id="at-van-e">Đặt vấn đề<a class="headerlink" href="#at-van-e" title="Permanent link">¶</a></h2>
+<p>Giả sử mảng gồm 100 phần tử đã sắp xếp tăng dần.</p>
+<p>Khi cần kiểm tra xem giá trị nào đó có tồn tại trong mảng hay không, ta nên sử dụng thuật toán <em>tìm kiếm tuần tự</em> hay <em>tìm kiếm nhị phân</em>? Căn cứ vào đâu mà ta cho rằng thuật toán này nhanh hơn thuật toán kia?</p>
+<p>Một cách khái quát, khi nhiều thuật toán giải quyết cùng một bài toán, thì thuật toán nào <em>tốt hơn</em>?</p>
+<h2 id="khai-niem">Khái niệm<a class="headerlink" href="#khai-niem" title="Permanent link">¶</a></h2>
+<p>Ta luôn muốn chương trình của mình thực thi một thuật toán <em>tốt</em>, theo nghĩa chạy nhanh và chiếm ít bộ nhớ. Có nhiều yếu tố dùng để đánh giá thuật toán tốt hay chưa tốt. Một trong số đó có tên gọi là <strong>độ phức tạp của thuật toán</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Độ phức tạp thuật toán</p>
+<p>Độ phức tạp thuật toán là <em>cách thức đánh giá thuật toán</em> dựa trên lượng tài nguyên cần có để thực hiện thuật toán.</p>
+</div>
+<p>Theo đó, độ phức tạp thuật toán được phân thành hai loại: <strong>độ phức tạp không gian</strong> và <strong>độ phức tạp thời gian</strong>, ứng với hai dạng tài nguyên chính là bộ nhớ và thời gian.</p>
+<ul>
+<li>
+<p><strong>Độ phức tạp không gian</strong>:</p>
+<p>Dùng để xác định dung lượng bộ nhớ cần thiết để thực hiện thuật toán dựa trên kích thước dữ liệu đầu vào.</p>
+</li>
+<li>
+<p><strong>Độ phức tạp thời gian</strong>:</p>
+<p>Dùng để xác định thời gian thực hiện thuật toán dựa trên kích thước dữ liệu đầu vào.  </p>
+</li>
+</ul>
+<p>Cũng có tài liệu nêu rằng, độ phức tạp của thuật toán là <strong>độ đo</strong> đánh giá hiệu quả của thuật toán, chứ không phải <strong>cách thức đo</strong>.  </p>
+<p>Với sự phát triển của phần cứng ngày nay, các máy tính thường có đủ bộ nhớ để chạy chương trình. Do đó, độ phức tạp không gian có thể ít được đề cập hơn so với độ phức tạp thời gian. Và bài này chỉ trình bày về độ phức tạp thời gian của thuật toán, từ nay gọi tắt là <em>độ phức tạp thuật toán</em>.  </p>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 1</p>
+<p>Có bao nhiêu loại độ phức tạp thuật toán?</p>
+<p><div>
+<form id="option-quiz-form">
+<label class="container"><input class="option-input radio" name="userInput_1" type="radio" value="A">A. 3<span class="checkmark"></span></input></label>
+<label class="container"><input class="option-input radio" name="userInput_1" type="radio" value="B">B. 1<span class="checkmark"></span></input></label>
+<label class="container"><input class="option-input radio" name="userInput_1" type="radio" value="C">C. 2<span class="checkmark"></span></input></label>
+<label class="container"><input class="option-input radio" name="userInput_1" type="radio" value="D">D. 4<span class="checkmark"></span></input></label>
+<button class="submitButton" onclick="process_options_quiz('userInput_1', 'C', 'appreciate_1')" type="button">Submit</button>
+<div id="appreciate_1"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Có hai loại là không gian và thời gian. Đáp án: C.</p>
+</details>
+</div>
+<h2 id="y-tuong-xac-inh-o-phuc-tap">Ý tưởng xác định độ phức tạp<a class="headerlink" href="#y-tuong-xac-inh-o-phuc-tap" title="Permanent link">¶</a></h2>
+<div class="admonition note inline end">
+<p class="admonition-title">Ý tưởng xác định độ phức tạp</p>
+<p>Độ phức tạp phải được tính dựa trên sự tương quan giữa <strong>số lượng phép toán</strong> và <strong>kích thước của dữ liệu đầu vào</strong>.</p>
+</div>
+<p>Thời gian để thực hiện một chương trình được tính theo đơn vị giây (hoặc milli-giây), phụ thuộc vào nhiều yếu tố khác nhau như ngôn ngữ lập trình, trình biên dịch, hệ điều hành, tốc độ CPU, v.v... Vì thế, khi đánh giá thuật toán của chương trình, ta không dựa vào thời gian thực, mà cần một đơn vị tính khác, độc lập với những yếu tố trên. Cụ thể hơn, thuật toán cần được đánh giá trên cơ sở là bản thân thuật toán và dữ liệu đầu vào.  </p>
+<div class="admonition note inline end">
+<p class="admonition-title">Phép toán tích cực</p>
+<p><strong>Phép toán tích cực</strong> là phép toán được thực hiện <strong>thường xuyên nhất</strong> trong thuật toán.  </p>
+</div>
+<p>Theo ý tưởng này, độ phức tạp thời gian được xác định bằng cách ước lượng số phép toán tích cực cần thực hiện.</p>
+<p><br/>
+<br/>
+<br/></p>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 2</p>
+<p>Phép toán tích cực trong đoạn mã sau nằm ở dòng nào?</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>        <span class="n">S</span> <span class="o">=</span> <span class="n">S</span> <span class="o">+</span> <span class="n">i</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>        <span class="n">P</span> <span class="o">=</span> <span class="n">P</span> <span class="o">*</span> <span class="n">i</span>
+</span></code></pre></div></td></tr></table></div>
+<p><div>
+<form id="option-quiz-form">
+<label class="container"><input class="option-input radio" name="userInput_2" type="radio" value="A">A. Dòng 2<span class="checkmark"></span></input></label>
+<label class="container"><input class="option-input radio" name="userInput_2" type="radio" value="B">B. Dòng 3<span class="checkmark"></span></input></label>
+<label class="container"><input class="option-input radio" name="userInput_2" type="radio" value="C">C. Dòng 5<span class="checkmark"></span></input></label>
+<button class="submitButton" onclick="process_options_quiz('userInput_2', 'A', 'appreciate_2')" type="button">Submit</button>
+<div id="appreciate_2"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Ta thấy <em>phép toán so sánh bằng ==</em> (dòng 2) luôn được thực hiện dù <code>i</code> chẵn hay lẻ, trong khi phép gán cho biến <code>S</code> (dòng 3) chỉ thực hiện khi <code>i</code> chẵn và phép gán cho biến <code>P</code> (dòng 5) chỉ thực hiện khi <code>i</code> lẻ.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="hll">    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>        <span class="n">S</span> <span class="o">=</span> <span class="n">S</span> <span class="o">+</span> <span class="n">i</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>        <span class="n">P</span> <span class="o">=</span> <span class="n">P</span> <span class="o">*</span> <span class="n">i</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Như vậy, phép toán tích cực trong vòng lặp trên là phép toán so sánh.</p>
+</details>
+</div>
+<p>Phép toán tích cực bao gồm các phép toán sau:</p>
+<ul>
+<li>Phép so sánh</li>
+<li>Phép gán</li>
+<li>Phép toán số học</li>
+</ul>
+<h2 id="big-o">Big O<a class="headerlink" href="#big-o" title="Permanent link">¶</a></h2>
+<h3 id="ky-hieu-big-o">Ký hiệu Big O<a class="headerlink" href="#ky-hieu-big-o" title="Permanent link">¶</a></h3>
+<p>Có ba loại trường hợp khác nhau khi thực hiện thuật toán:</p>
+<ul>
+<li>Trường hợp tốt nhất</li>
+<li>Trường hợp trung bình</li>
+<li>Trường hợp xấu nhất<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+</ul>
+<div class="admonition note inline end">
+<p class="admonition-title">Ký hiệu Big O</p>
+<p>Độ phức tạp thời gian của thuật toán được ký hiệu là <span class="arithmatex">\(O(g(n))\)</span>. Trong đó, <span class="arithmatex">\(g(n)\)</span> là một hàm số theo <span class="arithmatex">\(n\)</span>, với <span class="arithmatex">\(n\)</span> là kích thước của dữ liệu đầu vào.</p>
+</div>
+<p>Mỗi trường hợp có một ký hiệu riêng. Trong đó, ký hiệu <span class="arithmatex">\(O\)</span>, đọc là <strong>Big-Oh</strong>, có thể xem là phổ biến nhất và thường áp dụng cho trường hợp xấu nhất.</p>
+<p><br/></p>
+<h3 id="cach-xac-inh-big-o">Cách xác định Big O<a class="headerlink" href="#cach-xac-inh-big-o" title="Permanent link">¶</a></h3>
+<p>Gọi <span class="arithmatex">\(p\)</span> là thời gian thực hiện một phép toán tích cực,<br/>
+  <span class="arithmatex">\(n\)</span> là kích thước của dữ liệu đầu vào,<br/>
+  <span class="arithmatex">\(c(n)\)</span> là hàm số theo <span class="arithmatex">\(n\)</span> cho biết số lần thực hiện phép toán tích cực,</p>
+<p>thì thời gian thực hiện thuật toán được định nghĩa là:  </p>
+<div class="arithmatex">\[
+T(n) = p . c(n)
+\]</div>
+<p>Ví dụ 1:<br/>
+Áp dụng cho đoạn mã ở câu hỏi 2:</p>
+<p>Giả sử mỗi phép toán tích cực được thực hiện trong một đơn vị thời gian, nghĩa là <span class="arithmatex">\(p = 1\)</span>;<br/>
+  và phép toán tích cực được thực hiện <span class="arithmatex">\(c(n) = n\)</span> lần.</p>
+<p>Như vậy, thời gian thực hiện đoạn mã là: <span class="arithmatex">\(T(n) = p . c(n) = 1 . n = n\)</span></p>
+<p>Ví dụ 2:<br/>
+Cho đoạn mã:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>        <span class="n">S</span> <span class="o">=</span> <span class="n">S</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Phép toán tích cực trong đoạn mã này là phép cộng dồn cho biến <code>S</code>.</p>
+<p>Vì số lần lặp của <code>for i</code> là <span class="arithmatex">\(n\)</span> lần và số lần lặp của <code>for j</code> là <span class="arithmatex">\(n\)</span> lần, nên phép toán tích cực được thực hiện <span class="arithmatex">\(c(n) = n^2\)</span> lần.</p>
+<p>Như vậy, thời gian thực hiện đoạn mã là <span class="arithmatex">\(T(n) = p . c(n) = 1 . n^2 = n^2\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Cách xác định Big O</p>
+<p>Xét hàm <span class="arithmatex">\(g(n)\)</span> không âm với mọi số nguyên <span class="arithmatex">\(n \ge 0\)</span>.</p>
+<p>Nếu <span class="arithmatex">\(\exists n_0 \in \mathrm{Z}, \exists c \gt 0: \forall n \ge n_0\)</span>, <span class="arithmatex">\(g(n) \le c.f(n)\)</span> thì ta nói rằng “<strong>g(n) là Big-Oh f(n)</strong>”, viết là <span class="arithmatex">\(g(n) = O(f(n))\)</span>.</p>
+</div>
+<p>Theo đó, Big O của các đoạn mã trên như sau:</p>
+<ul>
+<li>Trong ví dụ 1, vì <span class="arithmatex">\(T(n) = n\)</span> nên <span class="arithmatex">\(g(n) = O(n)\)</span></li>
+<li>Trong ví dụ 2, vì <span class="arithmatex">\(T(n) = n^2\)</span> nên <span class="arithmatex">\(g(n) = O(n^2)\)</span></li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 3</p>
+<p>Giả sử một đoạn mã có thời gian thực hiện là <span class="arithmatex">\(T(n) = 3n^2 + 7n + 5\)</span>.</p>
+<p>Bạn hãy cho biết Big O của đoạn mã này.</p>
+<p><div>
+<form id="answer-form">
+<label for="userInput_3">Lời giải của bạn:</label><br/>
+<textarea id="userInput_3" name="userInput_3" required=""></textarea>
+<textarea id="solution_3">O(n^2)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_3', 'solution_3', 'appreciate_3')" type="button">Submit</button>
+<div id="appreciate_3"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Ta có: <span class="arithmatex">\(3n^2 + 7n + 5 = n^2(3 + \frac{7}{n} + \frac{5}{n^2}) \le 5n^2\)</span> khi <span class="arithmatex">\(n &gt; 7\)</span></p>
+<p>Chọn <span class="arithmatex">\(c = 5, n_0 = 7, f(n) = n^2\)</span> thì <span class="arithmatex">\(T(n) \le 5.f(n)\)</span>.</p>
+<p>Vậy <span class="arithmatex">\(T(n) = O(n^2)\)</span>, hay Big O của đoạn mã là <span class="arithmatex">\(O(n^2)\)</span>.</p>
+</details>
+</div>
+<h3 id="y-nghia-cua-big-o">Ý nghĩa của Big O<a class="headerlink" href="#y-nghia-cua-big-o" title="Permanent link">¶</a></h3>
+<p>Khi phân tích độ phức tạp, ta thường tập trung vào trường hợp xấu nhất, là trường hợp cho thấy được <em>giới hạn cận trên</em> của thuật toán. Ký hiệu <strong>Big O</strong> cũng thường được sử dụng để chỉ trường hợp xấu nhất này.</p>
+<p>Do đó, Big O được dùng để khái quát độ phức tạp của các thuật toán. Dựa vào Big O, ta có thể phân loại các thuật toán khi kích thước dữ liệu vào là như nhau. Nói cách khác,</p>
+<div class="admonition note">
+<p class="admonition-title">Ý nghĩa của Big O</p>
+<p>Với hai thuật toán có độ phức tạp lần lượt là <span class="arithmatex">\(O(f_1(n))\)</span> và <span class="arithmatex">\(O(f_2(n))\)</span>:</p>
+<p>Khi <span class="arithmatex">\(n\)</span> đủ lớn, nếu <span class="arithmatex">\(f_1(n) &lt; f_2(n)\)</span> thì thuật toán có <span class="arithmatex">\(O(f_1(n))\)</span> nhanh hơn thuật toán có <span class="arithmatex">\(O(f_2(n))\)</span>.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 4</p>
+<p>Bảng sau đây so sánh độ phức tạp của hai thuật toán tìm kiếm tuần tự và nhị phân. Dữ liệu đầu vào là mảng gồm <span class="arithmatex">\(n\)</span> phần tử đã sắp xếp tăng dần.</p>
+<table>
+<thead>
+<tr>
+<th>Nội dung so sánh</th>
+<th>Kích thước dữ liệu đầu vào</th>
+<th style="text-align: right;">Tìm kiếm tuần tự</th>
+<th style="text-align: right;">Tìm kiếm nhị phân</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Số lần thực hiện phép toán tích cực</td>
+<td><span class="arithmatex">\(n = 10\)</span></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Số lần thực hiện phép toán tích cực</td>
+<td><span class="arithmatex">\(n = 100\)</span></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td></td>
+<td>Độ phức tạp</td>
+<td style="text-align: right;"><span class="arithmatex">\(O(n)\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(O(log n)\)</span> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+</tr>
+</tbody>
+</table>
+<p>Dựa vào bảng này, bạn hãy cho biết thuật toán nào nhanh hơn?</p>
+<p><div>
+<form id="option-quiz-form">
+<label class="container"><input class="option-input radio" name="userInput_4" type="radio" value="A">A. Tìm kiếm tuần tự<span class="checkmark"></span></input></label>
+<label class="container"><input class="option-input radio" name="userInput_4" type="radio" value="B">B. Tìm kiếm nhị phân<span class="checkmark"></span></input></label>
+<button class="submitButton" onclick="process_options_quiz('userInput_4', 'B', 'appreciate_4')" type="button">Submit</button>
+<div id="appreciate_4"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Dễ thấy, <span class="arithmatex">\(log n &lt; n\)</span> nên thuật toán tìm kiếm nhị phân nhanh hơn thuật toán tìm kiếm tuần tự.</p>
+</details>
+</div>
+<h3 id="mot-so-big-o-pho-bien">Một số Big O phổ biến<a class="headerlink" href="#mot-so-big-o-pho-bien" title="Permanent link">¶</a></h3>
+<p><em>Bảng 1. Một số Big O phổ biến và tên gọi của chúng.</em></p>
+<table>
+<thead>
+<tr>
+<th>Big O</th>
+<th>Tên gọi về thời gian thực thi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(O(1)\)</span></td>
+<td>Constant Time</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(O(logn)\)</span></td>
+<td>Logarithmic Time</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(O(n)\)</span></td>
+<td>Linear Time</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(O(n logn)\)</span></td>
+<td>Log Linear Time</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(O(n^2)\)</span></td>
+<td>Quadratic Time</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(O(n^p)\)</span></td>
+<td>Polynomial Time</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(O(c^n)\)</span></td>
+<td>Exponential Time</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(O(n!)\)</span></td>
+<td>Factorial Time</td>
+</tr>
+</tbody>
+</table>
+<p>Biểu đồ dưới đây biểu diễn các Big O trên, trừ <span class="arithmatex">\(O(n^p)\)</span> nhằm tránh bị rối. Trong đó, các Big O được minh họa từ màu xanh, nghĩa là thuật toán <em>chạy nhanh</em>, chuyển dần cho đến màu đỏ, nghĩa là <em>chạy rất chậm</em>. Cũng xin lưu ý, biểu đồ chỉ là phác thảo mang tính minh họa, giúp người học dễ hình dung về các độ phức tạp, chứ không chính xác một cách chi tiết.</p>
+<div>
+<iframe frameborder="0" height="480px" src="../complexity/big-o-chart.html" width="100%"></iframe>
+<p style="margin: 0"><em>Hình 1. Biểu đồ minh họa sự tương quan giữa một số Big O</em></p>
+</div>
+<h2 id="quy-tac-xac-inh-o-phuc-tap">Quy tắc xác định độ phức tạp<a class="headerlink" href="#quy-tac-xac-inh-o-phuc-tap" title="Permanent link">¶</a></h2>
+<p>Việc xác định độ phức tạp của một thuật toán bất kỳ là tương đối... phức tạp (!!!). Tuy nhiên, ta có thể áp dụng những quy tắc sau đây để tính Big O.</p>
+<h3 id="quy-tac-hang-so">Quy tắc hằng số<a class="headerlink" href="#quy-tac-hang-so" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p>Độ phức tạp của mỗi câu lệnh <strong>gán</strong>, <strong>đọc</strong> và <strong>ghi</strong> là <span class="arithmatex">\(O(1)\)</span>. Đây là độ phức tạp hằng số và không phụ thuộc dữ liệu đầu vào.</p>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 5</p>
+<p>Dòng lệnh <code>x = 5</code> có độ phức tạp là gì?</p>
+<p><div>
+<form id="answer-form">
+<label for="userInput_5">Lời giải của bạn:</label><br/>
+<textarea id="userInput_5" name="userInput_5" required=""></textarea>
+<textarea id="solution_5">O(1)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_5', 'solution_5', 'appreciate_5')" type="button">Submit</button>
+<div id="appreciate_5"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p><code>x = 5</code> là lệnh gán, độ phức tạp là <span class="arithmatex">\(O(1)\)</span>.</p>
+</details>
+</div>
+</li>
+<li>
+<p><span class="arithmatex">\(O(c.f(n)) = O(f(n))\)</span>, với <span class="arithmatex">\(c\)</span> là hằng số. Nói cách khác, ta có thể <strong>bỏ đi hằng số</strong> <span class="arithmatex">\(c\)</span>.</p>
+<p>Hệ quả là, khi có nhiều lệnh gán, thì độ phức tạp vẫn được tính là <span class="arithmatex">\(O(1)\)</span>.</p>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 6</p>
+<p>Đoạn mã hoán vị hai biến <code>a</code> và <code>b</code> sau có độ phức tạp là?</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">t</span> <span class="o">=</span> <span class="n">a</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">b</span> <span class="o">=</span> <span class="n">t</span>
+</span></code></pre></div></td></tr></table></div>
+<p><div>
+<form id="answer-form">
+<label for="userInput_6">Lời giải của bạn:</label><br/>
+<textarea id="userInput_6" name="userInput_6" required=""></textarea>
+<textarea id="solution_6">O(1)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_6', 'solution_6', 'appreciate_6')" type="button">Submit</button>
+<div id="appreciate_6"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Độ phức tạp của đoạn mã trên là <span class="arithmatex">\(3.O(1) = O(1)\)</span>.</p>
+</details>
+</div>
+</li>
+</ol>
+<h3 id="quy-tac-cong">Quy tắc cộng<a class="headerlink" href="#quy-tac-cong" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p>Đối với thuật toán có một vòng lặp, độ phức tạp được tính <strong>dựa trên số lần lặp</strong>.  </p>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 7</p>
+<p>Đoạn mã tính tổng từ <code>1</code> đến <code>n</code> sau có độ phức tạp là gì?</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="hll">    <span class="n">S</span> <span class="o">=</span> <span class="n">S</span> <span class="o">+</span> <span class="n">i</span>
+</span></span></code></pre></div></td></tr></table></div>
+<p><div>
+<form id="answer-form">
+<label for="userInput_7">Lời giải của bạn:</label><br/>
+<textarea id="userInput_7" name="userInput_7" required=""></textarea>
+<textarea id="solution_7">O(n)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_7', 'solution_7', 'appreciate_7')" type="button">Submit</button>
+<div id="appreciate_7"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Dòng lệnh 2 có độ phức tạp là <span class="arithmatex">\(O(1)\)</span> và lệnh này được thực hiện <span class="arithmatex">\(n\)</span> lần.</p>
+<p>Do đó, độ phức tạp là <span class="arithmatex">\(n.O(1) = O(n)\)</span>.</p>
+</details>
+</div>
+</li>
+<li>
+<p>Đối với thuật toán gồm hai đoạn mã tuần tự F<sub>1</sub> và F<sub>2</sub>, nếu F<sub>1</sub> có độ phức tạp <span class="arithmatex">\(O(f_1(n))\)</span> và F<sub>2</sub> có độ phức tạp <span class="arithmatex">\(O(f_2(n))\)</span> thì độ phức tạp của cả thuật toán được xác định bằng đoạn mã có độ phức tạp lớn hơn.</p>
+<div class="arithmatex">\[
+O(f_1(n)) + O(f_2(n)) = O(max(f_1(n), f_2(n)))
+\]</div>
+<p>Theo đó, quy tắc này còn được gọi là <strong>quy tắc lấy max</strong>.</p>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 8</p>
+<p>Đoạn mã tính tổng các số chẵn và tổng các số lẻ từ 0 đến n sau có độ phức tạp là gì?</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span>
+<span class="normal"><a href="#__codelineno-5-7">7</a></span>
+<span class="normal"><a href="#__codelineno-5-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="n">sum_even</span><span class="p">,</span> <span class="n">sum_odd</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="hll"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>      <span class="c1"># Đoạn mã F1 gồm dòng lệnh 4 và 5</span>
+</span></span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>    <span class="n">sum_even</span> <span class="o">=</span> <span class="n">tong_even</span> <span class="o">+</span> <span class="n">i</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="hll"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>      <span class="c1"># Đoạn mã F2 gồm dòng lệnh 7 và 8</span>
+</span></span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a>    <span class="n">sum_odd</span> <span class="o">=</span> <span class="n">sum_odd</span>  <span class="o">+</span> <span class="n">i</span>
+</span></code></pre></div></td></tr></table></div>
+<p><div>
+<form id="answer-form">
+<label for="userInput_8">Lời giải của bạn:</label><br/>
+<textarea id="userInput_8" name="userInput_8" required=""></textarea>
+<textarea id="solution_8">O(n)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_8', 'solution_8', 'appreciate_8')" type="button">Submit</button>
+<div id="appreciate_8"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Vòng lặp F<sub>1</sub> có <span class="arithmatex">\(\frac{n}{2}\)</span> lần lặp, nên độ phức tạp là <span class="arithmatex">\(O(n)\)</span>. (Do hệ số <span class="arithmatex">\(\frac{1}{2}\)</span> trong <span class="arithmatex">\(\frac{n}{2}\)</span> được lược bỏ).</p>
+<p>Tương tự, vòng lặp F<sub>2</sub> có <span class="arithmatex">\(\frac{n}{2}\)</span> lần lặp, nên độ phức tạp là <span class="arithmatex">\(O(n)\)</span>.</p>
+<p>Thuật toán này có hai vòng lặp tuần tự F<sub>1</sub> và F<sub>2</sub> nên có độ phức tạp là <span class="arithmatex">\(max(O(n), O(n)) = O(n)\)</span>.</p>
+</details>
+</div>
+</li>
+<li>
+<p>Đối với cấu trúc điều kiện if có dạng</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">if</span> <span class="n">điều_kiện</span><span class="p">:</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>    <span class="n">khối_lệnh_1</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>    <span class="n">khối_lệnh_2</span>
+</span></code></pre></div>
+<p>vì độ phức tạp của câu lệnh kiểm tra <code>điều_kiện</code> thường là <span class="arithmatex">\(O(1)\)</span> nên độ phức tạp sẽ là độ phức tạp lớn nhất của <code>khối_lệnh_1</code> hoặc <code>khối_lệnh_2</code>.</p>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 9</p>
+<p>Đoạn mã tính tổng dương và tổng âm theo điều kiện của <code>x</code> sau có độ phức tạp là gì?</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="hll">    <span class="n">sum_positive</span> <span class="o">=</span> <span class="n">sum_positive</span> <span class="o">+</span> <span class="n">x</span>
+</span></span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="hll">    <span class="n">sum_negative</span> <span class="o">=</span> <span class="n">sum_negative</span> <span class="o">+</span> <span class="n">x</span>
+</span></span></code></pre></div></td></tr></table></div>
+<p><div>
+<form id="answer-form">
+<label for="userInput_9">Lời giải của bạn:</label><br/>
+<textarea id="userInput_9" name="userInput_9" required=""></textarea>
+<textarea id="solution_9">O(1)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_9', 'solution_9', 'appreciate_9')" type="button">Submit</button>
+<div id="appreciate_9"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Dòng lệnh 2 và 4 đều có độ phức tạp là <span class="arithmatex">\(O(1)\)</span>, nên độ phức tạp của thuật toán này là <span class="arithmatex">\(O(1)\)</span>.</p>
+</details>
+</div>
+</li>
+</ol>
+<h3 id="quy-tac-nhan">Quy tắc nhân<a class="headerlink" href="#quy-tac-nhan" title="Permanent link">¶</a></h3>
+<p>Đối với thuật toán gồm hai cấu trúc lặp lồng nhau F<sub>1</sub> và F<sub>2</sub>, nếu F<sub>1</sub> có độ phức tạp <span class="arithmatex">\(O(f_1(n))\)</span> và F<sub>2</sub> có độ phức tạp <span class="arithmatex">\(O(f_2(n))\)</span> thì độ phức tạp của thuật toán được xác định bằng độ phức tạp của tích <span class="arithmatex">\(f_1\)</span> và <span class="arithmatex">\(f_2\)</span>.</p>
+<div class="arithmatex">\[
+O(f_1(n)).O(f_2(n)) = O(f_1(n).f_2(n))
+\]</div>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 10</p>
+<p>Chương trình sau in ra các số nguyên tố nhỏ hơn n. Bạn hãy cho biết độ phức tạp của chương trình này.</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-8-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">def</span> <span class="nf">print_prime_numbers</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>      <span class="c1"># Vòng lặp F1</span>
+</span></span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a>        <span class="n">prime</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="hll">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>  <span class="c1"># Vòng lặp F2</span>
+</span></span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6"></a>            <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7"></a>                <span class="n">prime</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9"></a>        <span class="k">if</span> <span class="n">prime</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10"></a>            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p><div>
+<form id="answer-form">
+<label for="userInput_10">Lời giải của bạn:</label><br/>
+<textarea id="userInput_10" name="userInput_10" required=""></textarea>
+<textarea id="solution_10">O(n^2)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_10', 'solution_10', 'appreciate_10')" type="button">Submit</button>
+<div id="appreciate_10"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Vòng lặp F<sub>1</sub> có <span class="arithmatex">\(n – 1\)</span> lần lặp, nên độ phức tạp là <span class="arithmatex">\(O(n)\)</span>.</p>
+<p>Vòng lặp F<sub>2</sub> có <span class="arithmatex">\(i – 1\)</span> lần lặp, nên độ phức tạp là <span class="arithmatex">\(O(i)\)</span>. Vì <span class="arithmatex">\(i = 1, 2, ..., n\)</span> nên độ phức tạp của vòng lặp F<sub>2</sub> sẽ là <span class="arithmatex">\(O(n)\)</span>.</p>
+<p>Thuật toán này có hai vòng lặp, trong đó F<sub>2</sub> lồng trong F<sub>1</sub>, nên độ phức tạp là <span class="arithmatex">\(O(n) × O(n) = O(n^2)\)</span>.</p>
+</details>
+</div>
+<h2 id="o-phuc-tap-cua-nhung-thuat-toan-tim-kiem-va-sap-xep">Độ phức tạp của những thuật toán tìm kiếm và sắp xếp<a class="headerlink" href="#o-phuc-tap-cua-nhung-thuat-toan-tim-kiem-va-sap-xep" title="Permanent link">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Tóm tắt trình tự xác định độ phức tạp</p>
+<ol>
+<li>Xác định phép toán tích cực.  </li>
+<li>Tính số lần thực hiện phép toán tích cực.  </li>
+<li>Áp dụng các quy tắc ở mục trên để xác định độ phức tạp.  </li>
+</ol>
+</div>
+<h3 id="thuat-toan-tim-kiem-tuan-tu">Thuật toán tìm kiếm tuần tự<a class="headerlink" href="#thuat-toan-tim-kiem-tuan-tu" title="Permanent link">¶</a></h3>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">def</span> <span class="nf">linear_search</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="hll">        <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">k</span><span class="p">:</span>
+</span></span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a>            <span class="k">return</span> <span class="n">i</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 11</p>
+<p>Bạn hãy cho biết phép toán tích cực của chương trình trên nằm ở dòng số mấy?</p>
+<p><div>
+<form id="answer-form">
+<label for="userInput_11">Lời giải của bạn:</label><br/>
+<textarea id="userInput_11" name="userInput_11" required=""></textarea>
+<textarea id="solution_11">3</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_11', 'solution_11', 'appreciate_11')" type="button">Submit</button>
+<div id="appreciate_11"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Chủ thớt không tin rằng bạn không nhìn thấy phép toán tích cực, là phép so sánh, đã được làm nổi bật sẵn, ở dòng 3.</p>
+</details>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 12</p>
+<p>Dựa vào phép toán tích cực đó, bạn hãy cho biết độ phức tạp của thuật toán tìm kiếm tuần tự.</p>
+<p><div>
+<form id="answer-form">
+<label for="userInput_12">Lời giải của bạn:</label><br/>
+<textarea id="userInput_12" name="userInput_12" required=""></textarea>
+<textarea id="solution_12">O(n)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_12', 'solution_12', 'appreciate_12')" type="button">Submit</button>
+<div id="appreciate_12"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Trong trường hợp xấu nhất, phần tử có giá trị bằng <code>k</code> nằm ở vị trí cuối cùng của mảng, phép toán tích cực được thực hiện <span class="arithmatex">\(n\)</span> lần.</p>
+<p>Vậy độ phức tạp của thuật toán tìm kiếm tuần tự là <span class="arithmatex">\(n.O(1) = O(n)\)</span>.</p>
+</details>
+</div>
+<h3 id="thuat-toan-tim-kiem-nhi-phan">Thuật toán tìm kiếm nhị phân<a class="headerlink" href="#thuat-toan-tim-kiem-nhi-phan" title="Permanent link">¶</a></h3>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span>
+<span class="normal"><a href="#__codelineno-10-14">14</a></span>
+<span class="normal"><a href="#__codelineno-10-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a>    <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a>    <span class="n">right</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a>    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">:</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a>        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="hll">        <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">k</span><span class="p">:</span>
+</span></span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a>            <span class="k">return</span> <span class="n">mid</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a>        <span class="k">elif</span> <span class="n">A</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">k</span><span class="p">:</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a>            <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13"></a>            <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14"></a>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15"></a>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 13</p>
+<p>Bạn hãy cho biết phép toán tích cực của chương trình trên nằm ở dòng số mấy?</p>
+<p><div>
+<form id="answer-form">
+<label for="userInput_13">Lời giải của bạn:</label><br/>
+<textarea id="userInput_13" name="userInput_13" required=""></textarea>
+<textarea id="solution_13">8</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_13', 'solution_13', 'appreciate_13')" type="button">Submit</button>
+<div id="appreciate_13"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Phép toán tích cực, là phép so sánh, cũng đã được tô sẵn ở dòng 8.</p>
+</details>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 14</p>
+<p>Bạn hãy đoán xem độ phức tạp của thuật toán tìm kiếm nhị phân là gì.</p>
+<p><div>
+<form id="answer-form">
+<label for="userInput_14">Lời giải của bạn:</label><br/>
+<textarea id="userInput_14" name="userInput_14" required=""></textarea>
+<textarea id="solution_14">O(logn)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_14', 'solution_14', 'appreciate_14')" type="button">Submit</button>
+<div id="appreciate_14"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Giả sử phép toán tích cực này phải được thực hiện <span class="arithmatex">\(t\)</span> lần thì mới tìm thấy <code>k</code>.</p>
+<ul>
+<li>Lần 1: Số phần tử còn lại cần xét là <span class="arithmatex">\(\frac{n}{2}=\frac{n}{2^1}\)</span>.</li>
+<li>Lần 2: Số phần tử còn lại cần xét là <span class="arithmatex">\(\frac{n}{4}=\frac{n}{2^2}\)</span>.</li>
+<li>Lần 3: Số phần tử còn lại cần xét là <span class="arithmatex">\(\frac{n}{8}=\frac{n}{2^3}\)</span>.</li>
+<li>...</li>
+</ul>
+<p>Suy ra, đối với lần <span class="arithmatex">\(t\)</span>, số phần tử còn lại cần xét là <span class="arithmatex">\(\frac{n}{2^t}\)</span>.</p>
+<p>Mà ở lần <span class="arithmatex">\(t\)</span>, là lần tìm thấy <code>k</code>, số phần tử còn lại là <span class="arithmatex">\(1\)</span>.</p>
+<p>Ta có:<br/>
+<span class="arithmatex">\(\frac{n}{2^t} = 1 \Rightarrow 2^t = n \Rightarrow t = log_2(n)\)</span></p>
+<p>Vậy độ phức tạp của thuật toán tìm kiếm nhị phân là <span class="arithmatex">\(O(log n)\)</span>.  </p>
+</details>
+</div>
+<h3 id="thuat-toan-sap-xep-noi-bot">Thuật toán sắp xếp nổi bọt<a class="headerlink" href="#thuat-toan-sap-xep-noi-bot" title="Permanent link">¶</a></h3>
+<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span>
+<span class="normal"><a href="#__codelineno-11-6">6</a></span>
+<span class="normal"><a href="#__codelineno-11-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a>            <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a>                <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 15</p>
+<p>Bạn hãy cho biết phép toán tích cực của chương trình trên nằm ở dòng số mấy?</p>
+<p><div>
+<form id="answer-form">
+<label for="userInput_15">Lời giải của bạn:</label><br/>
+<textarea id="userInput_15" name="userInput_15" required=""></textarea>
+<textarea id="solution_15">6</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_15', 'solution_15', 'appreciate_15')" type="button">Submit</button>
+<div id="appreciate_15"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Phép toán tích cực là phép so sánh ở dòng 6.</p>
+</details>
+</div>
+<details class="note">
+<summary>Mẹo vặt</summary>
+<p>Với các đoạn mã gồm nhiều vòng lặp lồng nhau, phép toán tích cực thường nằm ở vòng lặp trong cùng.</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Câu hỏi 16</p>
+<p>Bạn hãy dựa vào <a href="#quy-tac-nhan">quy tắc nhân</a> để tính độ phức tạp của thuật toán sắp xếp nổi bọt.</p>
+<p><div>
+<form id="answer-form">
+<label for="userInput_16">Lời giải của bạn:</label><br/>
+<textarea id="userInput_16" name="userInput_16" required=""></textarea>
+<textarea id="solution_16">O(n^2)</textarea><br/>
+<button class="submitButton" onclick="process_answer('userInput_16', 'solution_16', 'appreciate_16')" type="button">Submit</button>
+<div id="appreciate_16"></div>
+</form>
+</div></p>
+<details class="tip">
+<summary>Đáp án</summary>
+<p>Xét vòng lặp của biến <code>j</code>, trong trường hợp <code>i</code> = 0, phép so sánh sẽ được thực hiện <span class="arithmatex">\(n – 1\)</span> lần. Theo quy tắc hằng số, ta có thể bỏ qua <span class="arithmatex">\(-1\)</span>. Như vậy, độ phức tạp của vòng lặp này là <span class="arithmatex">\(O(n)\)</span>.  </p>
+<p>Xét vòng lặp của <code>i</code>, thân của vòng lặp này có thể được thực hiện <span class="arithmatex">\(n\)</span> lần.  </p>
+<p>Do đó, theo quy tắc nhân, độ phức tạp của thuật toán sắp xếp nổi bọt là <span class="arithmatex">\(O(n).O(n) = O(n.n) = O(n^2)\)</span>.</p>
+</details>
+</div>
+<h2 id="so-o-tom-tat-noi-dung">Sơ đồ tóm tắt nội dung<a class="headerlink" href="#so-o-tom-tat-noi-dung" title="Permanent link">¶</a></h2>
+<p><div class="language-markmap mkdocs-markmap"><markmap-data hidden="true">---
+
+markmap:
+
+  colorFreezeLevel: 4
+
+  maxWidth: 300
+
+---
+
+
+
+# Độ phức tạp thuật toán
+
+
+
+## Khái niệm
+
+
+
+- Là cách thức để đánh giá thuật toán
+
+
+
+## Phân loại
+
+
+
+### Độ phức tạp không gian
+
+
+
+### Độ phức tạp thời gian
+
+
+
+#### Ký hiệu: $O(f(n))$
+
+
+
+#### Ý nghĩa
+
+
+
+- Hàm Big O nhỏ hơn thì thuật toán nhanh hơn
+
+
+
+#### Cách xác định
+
+
+
+##### Cơ sở
+
+
+
+- Số lượng phép toán
+
+    - Phép toán tích cực
+
+- Kích thước của dữ liệu đầu vào
+
+
+
+##### Quy tắc
+
+
+
+- Quy tắc hằng số
+
+- Quy tắc cộng
+
+- QUy tắc nhân
+
+
+</markmap-data></div>
+<em>Hình 2. Sơ đồ tóm tắt độ phức tạp thuật toán</em></p>
+<h2 id="some-english-words">Some English words<a class="headerlink" href="#some-english-words" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Vietnamese</th>
+<th>Tiếng Anh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>độ phức tạp thuật toán</td>
+<td>algorithmic complexity</td>
+</tr>
+<tr>
+<td>độ phức tạp không gian</td>
+<td>space complexity</td>
+</tr>
+<tr>
+<td>độ phức tạp thời gian</td>
+<td>time complexity</td>
+</tr>
+<tr>
+<td>giây, milli-giây</td>
+<td>second, millisecond</td>
+</tr>
+<tr>
+<td>ký hiệu <span class="arithmatex">\(O\)</span></td>
+<td>Big O notation</td>
+</tr>
+<tr>
+<td>phép toán tích cực</td>
+<td>basic operation, elementary operation</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>Trường hợp tốt nhất: tạm hiểu là thuật toán hoàn tất nhiệm vụ trong thời gian ngắn nhất có thể.<br/>
+Trường hợp trung bình: tạm hiểu là khả năng thực hiện trung bình của thuật toán đối với một lượng lớn dữ liệu đầu vào.<br/>
+Trường hợp xấu nhất: là trường hợp mà số lần thực hiện phép toán tích cực nhiều nhất. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Trong tin học, <span class="arithmatex">\(log n\)</span> thường được hiểu là hàm logarit cơ số 2 của <span class="arithmatex">\(n\)</span>. Chẳng hạn ở ví dụ 5, <span class="arithmatex">\(log_2{100} = 7\)</span>. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Thuật toán sắp xếp nổi bọt và sắp xếp tráo đổi" class="md-footer__link md-footer__link--prev" href="../sorting-algorithm-bubble-exchange/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Thuật toán sắp xếp nổi bọt và sắp xếp tráo đổi
+              </div>
+</div>
+</a>
+<a aria-label="Next: Chương trình khung" class="md-footer__link md-footer__link--next" href="../../../grade-12/grade-12-index/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Chương trình khung
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2023 Mr School
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/vtchitruong/vtchitruong.github.io" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.facebook.com/vothachchitruong" rel="noopener" target="_blank" title="www.facebook.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+<script src="../../../javascripts/extra.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="../../../javascripts/feedback.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="../../../javascripts/markmap-d3.js"></script>
+<script src="../../../javascripts/markmap-lib.js"></script>
+<script src="../../../javascripts/markmap-view.js"></script>
+<!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+<script src="../../../assets/javascripts/custom.js"></script>
+<script type="text/javascript">(function initializeMarkmap() {
+    const transformer = new markmap.Transformer();
+    const assets = transformer.getAssets();
+    const loading = Promise.all([
+        assets.styles && markmap.loadCSS(assets.styles),
+        assets.scripts && markmap.loadJS(assets.scripts),
+    ]);
+
+    function parseData(content) {
+        const { root, frontmatter } = transformer.transform(content);
+        let options = markmap.deriveOptions(frontmatter?.markmap);
+        options = Object.assign({
+            fitRatio: 0.85,
+        }, options);
+        return { root, options };
+    }
+
+    function resetMarkmap(m, el) {
+        const { minX, maxX, minY, maxY } = m.state;
+        const height = el.clientWidth * (maxX - minX) / (maxY - minY);
+        el.style.height = height + "px";
+        m.fit();
+    }
+
+    function renderMarkmap(el) {
+        let svg = el.querySelector('svg');
+        if (svg) return;
+        const content = el.textContent;
+        el.innerHTML = '<svg>';
+        svg = el.firstChild;
+        const { root, options } = parseData(content);
+        const m = markmap.Markmap.create(svg, options, root);
+        resetMarkmap(m, el);
+        transformer.hooks.retransform.tap(() => {
+            const { root, options } = parseData(content);
+            m.setData(root, options);
+            resetMarkmap(m, el);
+        });
+    }
+
+    function updateMarkmaps(node) {
+        for (const el of node.querySelectorAll('.mkdocs-markmap')) {
+            renderMarkmap(el);
+        }
+    }
+
+    loading.then(() => {
+        const observer = new MutationObserver((mutationList) => {
+            for (const mutation of mutationList) {
+                if (mutation.type === 'childList') {
+                    for (const node of mutation.addedNodes) {
+                        updateMarkmaps(node);
+                    }
+                }
+            }
+        });
+
+        observer.observe(document.body, { childList: true });
+
+        updateMarkmaps(document);
+    });
+})();
+</script></body>
+</html>

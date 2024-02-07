@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Schools's binary searching algorithm visualization</title>
+  <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+  <div class="array-container" id="array-container"></div>
+  <div class="form-group">
+    <label for="array-size" class="my-label">Kích thước mảng:</label>
+    <input type="number" id="array-size" value="12" class="input-text">
+  </div>
+
+  <div class="form-group">
+    <label for="key" class="my-label">Giá trị cần tìm k:</label>
+    <input type="number" id="key" value="37" class="input-text">
+  </div>
+
+  <div class="form-group">
+    <label for="delay" class="my-label">Delay (millisecond):</label>
+    <input type="number" id="delay" value="1000" class="input-text">
+  </div>
+
+  <div class="form-group">
+    <button id="initButton" onclick="init()" class="button-17">New</button>
+    <button id="startButton" onclick="startSearching()" class="button-17">Search</button>
+    <button id="pauseButton" onclick="togglePause()" class="button-17">Pause</button>
+    <button id="reloadButton" onclick="reloadPage()" class="button-17">Reset</button>
+  </div>
+
+  <div style="text-align: left;">
+    <p class="footnote">Thứ tự thao tác:</p>
+    <p class="footnote">- Bước 1: Nhập kích thước mảng.</p>
+    <p class="footnote">- Bước 2: Bấm New để tạo mảng ngẫu nhiên.</p>
+    <p class="footnote">- Bước 3: Nhập giá trị cần tìm k.</p>
+    <br>
+    <p class="footnote">Quy ước màu sắc:</p>
+    <p class="footnote"><span style="background-color: #0099cc; border-radius: .3rem;">Màu xanh</span> dùng để chỉ các phần tử của mảng.</p>
+    <p class="footnote"><span style="background-color: #ffcc3b; border-radius: .3rem;">Màu vàng</span> dùng để chỉ phần
+      tử có chỉ số i đang xét.</p>
+    <p class="footnote"><span style="background-color: #ff748c; border-radius: .3rem;">Màu đỏ</span> dùng để chỉ
+      phần tử có giá trị k tìm thấy.</p>
+  </div>
+
+  <script src="linear-search.js"></script>
+</body>
+</html>

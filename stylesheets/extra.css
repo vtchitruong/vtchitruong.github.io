@@ -1,0 +1,347 @@
+/* Active tab bold & color */
+.md-tabs__link {
+    font-size: .75rem !important;
+}
+.md-tabs__link--active {
+    font-weight: bold !important;
+    color: var(--md-accent-fg-color);
+}
+.md-tabs__link:hover {
+    color: var(--md-accent-fg-color);
+}
+
+
+/* navigation bar active color*/
+.md-nav__item .md-nav__link--active {
+    font-weight: bold !important;
+    color: var(--md-accent-fg-color);
+}
+.md-nav__item .md-nav__link--active {
+    font-weight: bold !important;
+    font-size: .75rem !important;
+    color: var(--md-accent-fg-color);
+}
+
+
+/* frontpage elements */
+.tx-hero h1 {
+    font-size: 2.41rem !important;
+}
+
+
+
+/*Table styling*/
+table {
+  padding: 0; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 0px solid #cccccc;
+      text-align: centre;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 0px solid #cccccc;
+      text-align: centre;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+
+
+/* Admonition settings option*/
+.md-typeset .admonition.settings, .md-typeset details.settings {
+    border-left: .22rem solid #448aff;
+}
+.md-typeset .admonition.settings>.admonition-title, .md-typeset details.settings>.admonition-title, .md-typeset details.settings>summary {
+    border-bottom: .1rem solid rgba(236, 243, 255), .1;
+    background-color: rgba(236, 243, 255), .1;
+}
+.md-typeset .admonition.settings>.admonition-title:before, .md-typeset details.settings>.admonition-title:before, .md-typeset details.settings>summary:before {
+    color: #448aff;
+    content: "settings"}
+
+.md-typeset details:not([open])>summary {
+    border-radius: 15px;
+}
+
+/* Site width etc.*/
+.md-grid {
+    max-width: 64rem !important;
+}
+
+
+/* mkdocstrings styling
+/* Indentation. */
+div.doc-contents:not(.first) {
+  padding-left: 25px;
+  border-left: 4px solid rgba(230, 230, 230);
+  margin-bottom: 80px;
+}
+
+/* ------------------- admonition ------------------- */
+.md-typeset .admonition {
+    border-radius: 15px;
+}
+
+[dir=ltr] .md-typeset .admonition-title {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.md-typeset .admonition, .md-typeset details {
+    border-radius: 15px;
+}
+
+[dir=ltr] .md-typeset summary {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Images */
+.md-typeset img, .md-typeset svg, .md-typeset video {
+    border-radius: 15px;
+}
+
+/* ------------------- Code blocks ------------------- */
+/* This is for output block */
+.md-typeset pre>code {
+    border-radius: 15px;
+}
+
+.md-typeset .tabbed-block>.highlight:first-child>.highlighttable>tbody>tr>.code>div>pre>code {
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
+}
+
+.md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
+}
+
+/* line number column */
+.md-typeset .tabbed-block>.highlight:first-child>.highlighttable>tbody>tr>.filename span.filename, .md-typeset .tabbed-block>.highlight:first-child>.highlighttable>tbody>tr>.linenos {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* margin: 0; */
+    background-color: #fff;
+    border-left: 10px solid #1d9ded;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
+}
+
+.highlighttable .linenos {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* margin: 0; */
+    background-color: #fff;
+    border-left: 10px solid #1d9ded;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.16);
+}
+
+/* tab */
+.md-typeset .tabbed-labels {
+    box-shadow: none;
+}
+
+/* .md-typeset .highlighttable>tbody>tr>.code>div>pre>code {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+} */
+
+@media screen and (max-width: 44.9375em) {
+    .md-content__inner>.highlight>.highlighttable>tbody>tr>.linenos {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .md-content__inner>.highlight>.highlighttable>tbody>tr>.code>div>pre>code {
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .md-content__inner>.highlight>pre>code {
+        border-radius: 15px;
+    }
+}
+
+/* line number column of code blocks */
+/* .highlighttable .linenos {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;    
+} */
+
+.highlight span.filename {
+    background-color: transparent;
+    border-bottom: transparent;
+}
+
+.highlighttable tr {
+    border: hidden;
+}
+
+table tr:nth-child(2n) {
+    background-color: transparent;
+}
+
+.md-typeset table:not([class]) {
+    border-radius: 15px;
+}
+
+/* --- table header --- */
+.md-typeset table:not([class]) th {
+    min-width: 1.5rem;
+}
+
+/* ------------------- posts background ------------------- */
+.md-main {
+    background-color: #f7f9fc;
+}
+
+.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+    background: #f7f9fc;
+    box-shadow: none !important;
+}
+
+.md-nav--secondary .md-nav__title {
+    background: #f7f9fc;
+    box-shadow: none !important; 
+}
+
+.md-content {
+    background-color: #fff;
+    margin-bottom: 0.8rem;
+    border-radius: 15px;
+}
+
+div.language-markmap.mkdocs-markmap  {
+    border: none;
+    min-height: 500px;
+}
+
+/* ------------------- user answer input ------------------- */
+textarea[id^="userInput_"] {
+    font-family: consolas, 'Courier New';
+    border-radius: 15px;
+    width: 50%;
+    height: 2rem;
+    resize: vertical;
+    padding: 0.2rem;
+}
+
+textarea[id^="solution_"] {
+    display: none;
+}
+
+div[id^="appreciate_"] {
+    margin: 0.5rem;
+}
+
+.submitButton {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #00D775, #00BD68);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 44px;
+    line-height: 44px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100px;
+    z-index: 0;
+    border: 0;
+ }
+  
+.submitButton:hover {
+    background: #00bd68;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 1.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+    border: none;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #00D775;
+    border: none;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: center;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 0.3rem;
+	left: 0.3rem;
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 50%;
+	background: #fff;
+}
