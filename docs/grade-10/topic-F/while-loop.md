@@ -235,3 +235,7 @@ Các đoạn mã trong bài này được đặt tại <a href="https://colab.re
 | lặp với số lần không biết trước | indefinite iteration |
 | ngắt (vòng lặp, chương trình) | break |
 | vòng lặp vô tận | infinite loop |
+
+## Bài tập thực hành
+
+1. [Bài tập while](https://colab.research.google.com/drive/107qCYpxO_ILdTQHxMzY_LKUYKnBfbwp4?usp=sharing){:target="_blank"}
