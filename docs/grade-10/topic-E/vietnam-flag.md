@@ -127,7 +127,7 @@
 
 ## Tải bản vẽ hoàn chỉnh
 
-Bản vẽ hoàn chỉnh được tải tại [Google Drive](https://drive.google.com/file/d/1AZJJiwU6rAWcKVrXOQHZ60rCXuN-m0Ce/view?usp=sharing){:target="_blank"}.
+Bản vẽ hoàn chỉnh đặt tại [Google Drive](https://drive.google.com/file/d/1AZJJiwU6rAWcKVrXOQHZ60rCXuN-m0Ce/view?usp=sharing){:target="_blank"}.
 
 ## Some English words
 
