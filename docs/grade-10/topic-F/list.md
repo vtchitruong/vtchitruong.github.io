@@ -354,3 +354,9 @@ Các đoạn mã trong bài này được đặt tại <a href="https://colab.re
 | giá trị | value |
 | phần tử | element, item |
 | phân cách, ký tự phân cách | delimit, delimiter |
+
+## Bài tập thực hành
+
+1. [Bài tập list 1](https://colab.research.google.com/drive/1xh2Db9apAnRbYQJdMSNQOyzKu-fi344V?usp=sharing){:target="_blank"}
+
+2. [Bài tập list 2](https://colab.research.google.com/drive/11bOGQPBTpOQcroYQlad_Fn-vKfHGuGXv?usp=sharing){:target="_blank"}
