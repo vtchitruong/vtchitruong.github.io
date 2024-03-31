@@ -18,9 +18,11 @@ Bài toán trích từ đề thi Olympic Thành phố tháng 04.2015 dành cho l
 </div>
 
 <br>
+<br>
 
 <!-- more -->
 
+<br>
 <br>
 
 ## Đề bài

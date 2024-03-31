@@ -18,9 +18,11 @@ Bài này giới thiệu một vài cách viết mã lệnh đối với kiểu 
 
 <br>
 <br>
+<br>
 
 <!-- more -->
 
+<br>
 <br>
 
 ## Chuyển đổi chuỗi thành danh sách
