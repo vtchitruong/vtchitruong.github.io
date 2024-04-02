@@ -18,8 +18,6 @@ Bài viết này hướng dẫn cách sử dụng hàm sort() có sẵn để s�
 
 </div>
 
-<br>
-
 <!-- more -->
 
 <br>
@@ -75,7 +73,7 @@ Một điểm hay của `sort()` là cho phép sắp xếp chỉ một phần n�
 
 === "C++"
 
-    ``` c++ linenums="1"
+    ``` c++ linenums="1" hl_lines="1"
         sort(v.begin(), v.begin() + 5);
         show("Sắp xếp 5 phần tử đầu tiên tăng dần:");
     ```
@@ -95,7 +93,7 @@ Sắp xếp 5 phần tử đầu tiên tăng dần:
 
 === "C++"
 
-    ``` c++ linenums="1"
+    ``` c++ linenums="1" hl_lines="1"
         sort(v.begin(), v.end());
         show("Sắp xếp toàn bộ vector tăng dần:");
     ```
@@ -117,7 +115,7 @@ Mặc định, hàm `sort()` sắp xếp theo thứ tự tăng dần. Để sắ
 
 === "C++"
 
-    ``` c++ linenums="1"
+    ``` c++ linenums="1" hl_lines="1"
         sort(v.begin(), v.end(), greater<int>());
         show("Sắp xếp toàn bộ vector giảm dần:");
     ```
@@ -204,7 +202,7 @@ Sau đó, ta truyền hàm `compare1()` vừa viết vào hàm `sort()`.
 
 === "C++"
 
-    ``` c++ linenums="1"
+    ``` c++ linenums="1" hl_lines="1"
         sort(pv.begin(), pv.end(), compare1);
         show_pairs("Sắp xếp giảm dần theo thành phần thứ nhất:");
     ```
@@ -230,7 +228,7 @@ Tương tự như trên, ta cũng viết hàm so sánh hai cặp số với nhau
 === "C++"
 
     ``` c++ linenums="1"
-    bool compare(const pair<int, int>& a, const pair<int, int>& b)
+    bool compare2(const pair<int, int>& a, const pair<int, int>& b)
     {
         // Nếu thành phần thứ nhất khác nhau thì so sánh thành phần thứ nhất
         if (a.first != b.first)
@@ -252,7 +250,7 @@ Truyền hàm `compare2()` vừa viết vào hàm `sort()`.
 
 === "C++"
 
-    ``` c++ linenums="1"
+    ``` c++ linenums="1" hl_lines="1"
         sort(pv.begin(), pv.end(), compare2);
         show_pairs("Sắp xếp tăng dần thành phần thứ nhất, giảm dần thành phần thứ hai:");
     ```
