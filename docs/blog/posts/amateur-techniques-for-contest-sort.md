@@ -12,7 +12,7 @@ date: 2024-03-30
 <div class="result" markdown>
 ![Image title](./thumbnails/sorting.svg){ align=left width=360 }
 
-Trong quá trình luyện công, người học phải tự mình viết những hàm sắp xếp nhằm rèn luyện tư duy và kỹ thuật lập trình. Tuy nhiên, khi làm bài thi, thời gian là yếu tố quan trọng, thí sinh nên sử dụng những công cụ có sẵn của ngôn ngữ, hạn chế viết lại hoặc tạo lại nhằm dành thời giờ và công sức cho ý tưởng.
+Trong quá trình luyện công, người học phải tự mình viết những hàm **sắp xếp** nhằm rèn luyện tư duy và kỹ thuật lập trình. Tuy nhiên, khi làm bài thi, thời gian là yếu tố quan trọng, thí sinh nên sử dụng những công cụ có sẵn của ngôn ngữ, hạn chế viết lại hoặc tạo lại nhằm dành thời giờ và công sức cho ý tưởng.
 
 Bài viết này hướng dẫn cách sử dụng hàm sort() có sẵn để sắp xếp các phần tử trong một vector.
 
@@ -89,7 +89,7 @@ Sắp xếp 5 phần tử đầu tiên tăng dần:
 0 1 4 7 9 4 8 8 2 4 5 5 1
 ```
 
-Đoạn mã sau sắp xếp toàn bộ vector. Cần lưu ý, `v.end()` là con duyệt (iterator) trỏ ra ***sau*** vector, chứ không phải trỏ vào phần tử cuối cùng.
+Đoạn mã sau sắp xếp toàn bộ vector. 
 
 === "C++"
 
@@ -107,6 +107,10 @@ Output:
 Sắp xếp toàn bộ vector tăng dần:
 0 1 1 2 4 4 4 5 5 7 8 8 9
 ```
+
+!!! note "Lưu ý"
+
+    `v.end()` là con duyệt (iterator) trỏ ra ***sau*** vector, chứ không phải trỏ vào phần tử cuối cùng.
 
 Mặc định, hàm `sort()` sắp xếp theo thứ tự tăng dần. Để sắp xếp giảm dần, ta truyền thêm tham số thứ ba là `greater<int>()` (1).
 { .annotate }

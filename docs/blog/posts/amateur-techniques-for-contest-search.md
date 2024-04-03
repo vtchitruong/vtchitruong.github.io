@@ -12,7 +12,7 @@ date: 2024-04-01
 <div class="result" markdown>
 ![Image title](./thumbnails/searching.svg){ align=left width=360 }
 
-Trong quá trình luyện công, người học phải tự mình viết những hàm tìm kiếm nhằm rèn luyện tư duy và kỹ thuật lập trình. Tuy nhiên, khi làm bài thi, thời gian là yếu tố quan trọng, thí sinh nên sử dụng những công cụ có sẵn của ngôn ngữ, hạn chế viết lại hoặc tạo lại nhằm dành thời giờ và công sức cho ý tưởng.
+Trong quá trình luyện công, người học phải tự mình viết những hàm **tìm kiếm** nhằm rèn luyện tư duy và kỹ thuật lập trình. Tuy nhiên, khi làm bài thi, thời gian là yếu tố quan trọng, thí sinh nên sử dụng những công cụ có sẵn của ngôn ngữ, hạn chế viết lại hoặc tạo lại nhằm dành thời giờ và công sức cho ý tưởng.
 
 Bài viết này hướng dẫn cách sử dụng một số hàm có sẵn liên quan đến *tìm kiếm* trên một vector.
 
