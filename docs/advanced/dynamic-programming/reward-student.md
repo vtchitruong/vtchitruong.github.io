@@ -18,10 +18,16 @@ Có bao nhiêu cách để chia *r* phần thưởng cho *s* học sinh, sao cho
     Nguyễn Xuân Huy. *(2015) Sáng tạo trong thuật toán và lập trình - Tập 1*. Hà Nội: Nhà xuất bản Thông tin và Truyền thông. Trang 247 - 255.
 
 ### Input
+
+```pycon
 7 4
+```
 
 ### Ouput
+
+```pycon
 11
+```
 
 ### Giải thích
 

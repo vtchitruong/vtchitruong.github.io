@@ -88,21 +88,27 @@ Tìm một đường đi từ đỉnh xuất phát đến đỉnh đích. Trả 
     Lê Minh Hoàng. *Giải thuật & lập trình*. Đại học Sư phạm Hà Nội, 1999-2002. 
 
 ### Input
-10 11 1 5  
-1 2  
-1 3  
-2 3  
-2 4  
-3 5  
-3 7  
-3 8  
-4 6  
-7 8  
-8 5  
-9 10  
+
+```pycon
+10 11 1 5
+1 2
+1 3
+2 3
+2 4
+3 5
+3 7
+3 8
+4 6
+7 8
+8 5
+9 10
+```
 
 ### Output
-1 3 5  
+
+```pycon
+1 3 5
+```
 
 ### Giải thích
 

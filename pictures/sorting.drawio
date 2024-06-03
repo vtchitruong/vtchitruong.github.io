@@ -1,0 +1,34 @@
+<mxfile host="Electron" modified="2024-03-31T03:37:04.333Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="hMmx9mukWsBjdRJCXEv3" version="24.1.0" type="device">
+  <diagram name="Page-1" id="3HNNUvmI26e6U34l2Z3O">
+    <mxGraphModel dx="1146" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="690" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q-ZejeubLX4BjsPiB8f2-21" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232b28;arcSize=5;fontColor=#2a2b2e;glass=0;shadow=0;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="171" y="94.26" width="638.61" height="425.74" as="geometry" />
+        </mxCell>
+        <mxCell id="q-ZejeubLX4BjsPiB8f2-1" value="7" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.infographic.circularCallout;dy=15;fillColor=#00994D;strokeColor=none;labelPosition=center;align=center;fontColor=#00994D;fontStyle=1;fontSize=24;whiteSpace=wrap;fontFamily=Aptos;" vertex="1" parent="1">
+          <mxGeometry x="440" y="277.13" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q-ZejeubLX4BjsPiB8f2-12" value="8" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.infographic.circularCallout;dy=15;fillColor=#3399FF;strokeColor=none;labelPosition=center;align=center;fontColor=#3399FF;fontStyle=1;fontSize=24;whiteSpace=wrap;fontFamily=Aptos;rotation=-60;" vertex="1" parent="1">
+          <mxGeometry x="320" y="237.13" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q-ZejeubLX4BjsPiB8f2-13" value="1" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.infographic.circularCallout;dy=15;fillColor=#00FF80;strokeColor=none;labelPosition=center;align=center;fontColor=#00FF80;fontStyle=1;fontSize=24;whiteSpace=wrap;fontFamily=Aptos;" vertex="1" parent="1">
+          <mxGeometry x="200" y="277.13" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q-ZejeubLX4BjsPiB8f2-14" value="3" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.infographic.circularCallout;dy=15;fillColor=#f0a30a;strokeColor=none;labelPosition=center;align=center;fontStyle=1;fontSize=24;whiteSpace=wrap;fontColor=#FF9933;fontFamily=Aptos;rotation=-195;" vertex="1" parent="1">
+          <mxGeometry x="560" y="297.13" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q-ZejeubLX4BjsPiB8f2-15" value="9" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.infographic.circularCallout;dy=15;fillColor=#FF3399;strokeColor=none;labelPosition=center;align=center;fontColor=#FF3399;fontStyle=1;fontSize=24;whiteSpace=wrap;fontFamily=Aptos;" vertex="1" parent="1">
+          <mxGeometry x="680" y="257.13" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q-ZejeubLX4BjsPiB8f2-17" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=15;dx=38;arrowHead=55;rotation=30;fillColor=#99CCFF;gradientColor=#3399FF;strokeColor=none;gradientDirection=north;opacity=75;" vertex="1" parent="1">
+          <mxGeometry x="367.71999999999997" y="143.8" width="222.28" height="153.33" as="geometry" />
+        </mxCell>
+        <mxCell id="q-ZejeubLX4BjsPiB8f2-18" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=15;dx=38;arrowHead=55;rotation=120;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=none;direction=south;opacity=75;" vertex="1" parent="1">
+          <mxGeometry x="367.72" y="273.19" width="153.33" height="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -21,18 +21,24 @@ Cho biết tổng giá trị lớn nhất của các vật được chọn, đ�
 [^2]: Nội dung chính được tham khảo từ tài liệu lập trình của Võ Ngọc Hà Sơn vnhason@gmail.com.
 
 ### Input
-6 10  
-6 12  
-3 1  
-3 8  
-7 1  
-4 10  
-3 3  
+
+```pycon
+6 10
+6 12
+3 1
+3 8
+7 1
+4 10
+3 3
+```
 
 ### Ouput
-22  
-1 6 12  
-5 4 10  
+
+```pycon
+22
+1 6 12
+5 4 10
+```
 
 ### Giải thích
 

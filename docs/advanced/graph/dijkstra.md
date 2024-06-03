@@ -19,21 +19,27 @@ Tìm đường đi ngắn nhất từ đỉnh *start* đến đỉnh *finish* b�
 [^1]: Phần lớn nội dung của bài toán này được tham khảo từ tài liệu lập trình của Võ Ngọc Hà Sơn vnhason@gmail.com nhưng giả vờ quên xin phép tác giả.
 
 ### Input
-6 10 1 5  
-1 2 1  
-2 3 5  
-2 4 2  
-2 6 7  
-3 6 1  
-4 1 2  
-4 3 1  
-4 5 4  
-5 4 3  
-6 5 1  
+
+```pycon
+6 10 1 5
+1 2 1
+2 3 5
+2 4 2
+2 6 7
+3 6 1
+4 1 2
+4 3 1
+4 5 4
+5 4 3
+6 5 1
+```
 
 ### Output
-6  
-1 2 4 3 6 5 
+
+```pycon
+6
+1 2 4 3 6 5
+```
 
 ### Giải thích
 

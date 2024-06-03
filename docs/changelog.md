@@ -1,3 +1,9 @@
+### v23.08.12 <small>03-06-2024</small> { id="24.06.03" }
+
+- Tổ chức lại vài chỗ. Mục Chuyên đề dành cho chương trình chuyên đề của GDPT 2018. Mục Nâng cao dành cho những học sinh muốn tìm hiểu sâu công nghệ thông tin hoặc bước đầu muốn dự thi học sinh giỏi.
+
+- Thêm chú thích, ẩn trong nút hình dấu cộng (+), để gợi ý cho những người đọc muốn đi xa hơn.
+
 ### v23.08.12 <small>06-01-2024</small> { id="24.01.06" }
 
 - Blog toàn là chữ nên quyết định thêm ảnh thumbnail cho gọi là có trang trí.

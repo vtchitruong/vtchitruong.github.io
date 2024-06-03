@@ -8,7 +8,7 @@ You own a small SCUBA diving concession in the Caribbean. You need to update you
  
 Beginning at cell A16 on Sheet1, import the list from the comma delimited source file MoreToys.csv located in the **GMetrix Templates** folder. (Accept all other defaults)
 
-???+ Tip "Hint"
+???+ Tip "Hint"  
 
     1. On the **Sheet1** worksheet, click cell **A16** to select it.
     

@@ -345,3 +345,16 @@ div[id^="appreciate_"] {
 	border-radius: 50%;
 	background: #fff;
 }
+
+/* GLightbox */
+h4[id^="gSlideTitle_"].gslide-title {
+    color: #d6d6d6;
+}
+
+div.gslide-description.description-bottom {
+    background: #141414;
+}
+
+.glightbox-container div.gslide-inner-content {
+    width: 85%;
+}

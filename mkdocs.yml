@@ -218,6 +218,7 @@ plugins:
         - Algorithmic frolic
         - Chase the database
         - CPP to see sharply
+        - Giáo dục dầm dề truyện
         - Moron in Python
         - Solve to surpass
         - Set up & Code down
@@ -240,6 +241,22 @@ plugins:
   #       as_creation: date
   #     categories:
   #       - categories
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: false
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: true
+      caption_position: bottom
+      background: #74b9ff
+      shadow: true
+      manual: false  
 
 # Page tree
 nav:
@@ -296,16 +313,31 @@ nav:
       - grade-11/topic-F2/searching-algorithm.md
       - grade-11/topic-F2/sorting-algorithm-selection-insertion.md
       - grade-11/topic-F2/sorting-algorithm-bubble-exchange.md
-      - grade-11/topic-F2/algorithmic-complexity.md
+      - grade-11/topic-F2/algorithmic-complexity.md      
   - Lớp 12:
     - Chương trình khung: grade-12/grade-12-index.md
+    - Chủ đề F:
+      - grade-12/topic-F/html-vs-web-page.md
+      - grade-12/topic-F/basic-structure-of-an-html-web-page.md
+      - grade-12/topic-F/paragraph-formatting.md
+      - grade-12/topic-F/headings-vs-lists.md
+      - grade-12/topic-F/table-vs-link-vs-iframe.md
+      - grade-12/topic-F/multimedia.md
+      - grade-12/topic-F/form.md
+  - Chuyên đề:
+    - major/major-index.md
+    - Đệ quy:
+      - Khái quát về đệ quy: major/recursion/recursion.md
+      - Tháp Hà Nội: major/recursion/hanoitower.md
+    - Quay lui:
+      - Khái quát về quay lui: major/back-tracking/back-tracking.md  
   - Nâng cao:
     - advanced/advanced-index.md
-    - Đệ quy:
-      - Khái quát về đệ quy: advanced/recursion/recursion.md
-      - Tháp Hà Nội: advanced/recursion/hanoitower.md
-    - Quay lui:
-      - Khái quát về quay lui: advanced/back-tracking/back-tracking.md
+    - Kỹ thuật cơ bản:
+      - Đếm và tần số: advanced/basic-techniques/count-frequency.md
+      - Tìm kiếm: advanced/basic-techniques/search.md
+      - Sắp xếp: advanced/basic-techniques/sort.md
+      - Hợp và trộn: advanced/basic-techniques/union-merge.md
     - Đồ thị:
       - DFS: advanced/graph/dfs.md
       - BFS: advanced/graph/bfs.md

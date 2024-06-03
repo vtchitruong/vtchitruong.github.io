@@ -27,12 +27,18 @@ Một vài đặc điểm chung của dạng bài này là:
 Cho mảng a gồm các số nguyên. Tìm ra dãy con thỏa hai điều kiện: tăng dần và có độ dài lớn nhất.
 
 ### Input
-7  
+
+```pycon
+7
 3 4 -1 0 6 2 3
+```
 
 ### Output
-4  
+
+```pycon
+4
 -1 0 2 3
+```
 
 ### Giải thích
 
