@@ -27,5 +27,11 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material
       - run: pip install mkdocs-markmap
+      - name: List directory contents (for debugging)
+        run: ls -la
+
+      - name: Build MkDocs Site
+        run: mkdocs build --clean
+      
       - run: mkdocs gh-deploy --force
       
