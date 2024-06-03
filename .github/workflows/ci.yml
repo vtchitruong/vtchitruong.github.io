@@ -27,7 +27,7 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material
       - run: pip install mkdocs-markmap
-      - run: pip install mkdocs-glitchbox
+      - run: pip install mkdocs-glightbox
       - name: List directory contents (for debugging)
         run: ls -la
       - name: Build MkDocs Site
