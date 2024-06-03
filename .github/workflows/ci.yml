@@ -29,9 +29,10 @@ jobs:
       - run: pip install mkdocs-markmap
       - name: List directory contents (for debugging)
         run: ls -la
-
       - name: Build MkDocs Site
-        run: mkdocs build --clean
-      
-      - run: mkdocs gh-deploy --force
+        run: mkdocs build --clean      
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
