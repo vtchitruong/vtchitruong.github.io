@@ -219,6 +219,7 @@ plugins:
         - Chase the database
         - CPP to see sharply
         - Giáo dục dầm dề truyện
+        - Improvised & Inspired
         - Moron in Python
         - Solve to surpass
         - Set up & Code down
@@ -317,8 +318,9 @@ nav:
   - Lớp 12:
     - Chương trình khung: grade-12/grade-12-index.md
     - Chủ đề F:
-      - grade-12/topic-F/html-vs-web-page.md
-      - grade-12/topic-F/basic-structure-of-an-html-web-page.md
+      - grade-12/topic-F/concepts-of-web-page.md
+      - grade-12/topic-F/text-editors-for-html.md
+      - grade-12/topic-F/structure-of-an-html-web-page.md
       - grade-12/topic-F/paragraph-formatting.md
       - grade-12/topic-F/headings-vs-lists.md
       - grade-12/topic-F/table-vs-link-vs-iframe.md

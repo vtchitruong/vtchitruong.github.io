@@ -1,4 +1,4 @@
-# Ngôn ngữ HTML và trang web
+# Những khái niệm về trang web
 
 !!! abstract "Tóm lược nội dung"
 
@@ -10,41 +10,44 @@
     - HTML
     - Trình duyệt web
 
-## Khái niệm
+## Siêu văn bản
 
-!!! note "Siêu văn bản"
+Siêu văn bản là văn bản
 
-    Siêu văn bản là văn bản
-    
-    - hiển thị trên máy tính và những thiết bị số khác
-    - và có chứa các siêu liên kết cho phép người đọc truy xuất ngay đến những thông tin hữu quan khác.
+- hiển thị trên máy tính và những thiết bị số khác
+- và có chứa các [siêu liên kết](#sieu-lien-ket) cho phép người đọc truy xuất ngay đến những thông tin hữu quan khác.
 
 Văn bản có chứa video hoặc ảnh động thì vẫn không phải là siêu văn bản.
 
-!!! note "Siêu liên kết"
+## Siêu liên kết
 
-    Siêu liên kết, có thể gọi tắt là *liên kết*, là một tham chiếu hoặc một kết nối giữa hai phần thông tin trong cùng một siêu văn bản hoặc giữa các văn bản khác nhau.
+Siêu liên kết, có thể gọi tắt là *liên kết*, là một tham chiếu hoặc một kết nối giữa hai phần thông tin trong cùng một siêu văn bản hoặc giữa các văn bản khác nhau.
 
 Nói cách khác, siêu liên kết có thể dẫn đến phần nội dung khác của cùng siêu văn bản hoặc dẫn đến một văn bản khác.
 
 ![Minh hoạ siêu văn bản và siêu liên kết](./html-vs-web-page/hypertext.svg){ loading=lazy }
 
-!!! note "Trang web"
+## Trang web
 
-    Trang web là một ví dụ của siêu văn bản. 
+Trang web là một tài liệu nằm trên hệ thống World Wide Web (1) và được hiển thị trên trình duyệt web.
+{ .annotate }
 
-Khi đang truy xuất một trang web, người dùng có thể nhấn vào siêu liên kết nào đó để truy xuất ngay phần nội dung khác của cùng trang web hoặc trang web khác.
+1.  World Wide Web, viết tắt là www, là hệ thống thông tin mà trong đó mỗi tài liệu hoặc mỗi tài nguyên web được xác định bằng một URL (Uniform Resource Locators) và có thể được truy cập qua Internet.
 
-!!! note "Website"
+Trang web là một ví dụ của siêu văn bản. 
 
-    Website là tập hợp các trang web hữu quan và đứng chung dưới một tên miền.
+Khi đang truy cập một trang web, người dùng có thể nhấn vào siêu liên kết nào đó để truy cập ngay phần nội dung khác của cùng trang web hoặc trang web khác.
+
+## Website
+
+Website là tập hợp các trang web hữu quan và đứng chung dưới một tên miền.
 
 Ví dụ:  
 Website của Samsung là tập hợp các trang web liên quan đến các sản phẩm của Samsung và đứng chung dưới tên miền [samsung.com](https://www.samsung.com/){:target="_blank"}.
 
-!!! note "HTML"
+## HTML
 
-    HTML (Hypertext Markup Language) là ngôn ngữ cơ bản dùng để tạo nên một trang web.
+HTML (Hypertext Markup Language) là ngôn ngữ cơ bản dùng để tạo nên một trang web.
 
 Phiên bản mới nhất hiện nay là [HTML5](https://html.spec.whatwg.org/multipage/){:target="_blank"}.
 
@@ -56,62 +59,46 @@ Ngoài HTML, còn có những ngôn ngữ hoặc công nghệ khác góp phần 
     - **CSS**: xử lý bố cục và cách thể hiện của trang web, giúp trang web thêm trực quan và đẹp mắt.
     - **JavaScript**: xử lý hành vi của trang web, làm cho trang web tương tác được với người dùng.
 
-## Cách thức hoạt động của HTML
+### Phần tử HTML
 
-!!! note "Phần tử HTML"
-
-    HTML định nghĩa cấu trúc của trang web bằng cách sử dụng các **phần tử**.
+Ngôn ngữ HTML định nghĩa cấu trúc của trang web bằng cách sử dụng các phần tử HTML.
 
 Các phần tử HTML này có tác dụng tổ chức những nội dung sẽ hiển thị trên trang web.
 
 Nói cách khác, mỗi thành phần của trang web như văn bản, hình ảnh, âm thanh, video, v.v... đều được xác định bởi những phần tử HTML tương ứng.
 
-!!! note "Thẻ và thuộc tính"
+### Thẻ và thuộc tính
 
-    Mỗi phần tử HTML gồm có một **thẻ** và có thể nhiều **thuộc tính**. 
+Mỗi phần tử HTML được đại diện bằng một thẻ HTML (1) và có thể có nhiều thuộc tính. 
+{ .annotate }
 
-Thẻ là thành phần cốt lõi của thuộc tính. Tên thẻ đặt trong cặp ngoặc `< >`.
+1.  Trong nhiều tài liệu, thuật ngữ **phần tử** và **thẻ** được sử dụng thay thế cho nhau.
 
-Có hai loại thẻ: **thẻ mở** và **thẻ đóng**. Thẻ mở đánh dấu chỗ bắt đầu và thẻ đóng đánh dấu chỗ kết thúc của phần tử.
+Tên thẻ đặt trong cặp ngoặc `< >`.
 
-Bên cạnh đó, còn có một số thẻ không cần thẻ đóng, có thể gọi là *thẻ tự đóng*.
+Có hai loại thẻ:
 
-!!! example "Ví dụ"
+- **Thẻ mở**: đánh dấu chỗ bắt đầu phần tử.
+- **Thẻ đóng**: đánh dấu chỗ kết thúc phần tử.
 
-    === "Cặp thẻ đóng mở"
+Ngoài ra, còn có các phần tử không cần thẻ đóng, có thể gọi là *thẻ tự đóng*.
 
-        `<h1> </h1>` `<h2> </h2>` ... `<h6> </h6>`
-        
-        `<div> </div>`
-        
-        `<p> </p>`
+| Cặp thẻ đóng mở | Thẻ tự đóng | 
+| --- | --- |
+| `<h1> </h1>` `<h2> </h2>` ... `<h6> </h6>` <br> `<div> </div>` <br> `<p> </p>` | `<img>` <br> `<br>` <br> `<hr>` <br> `<link>` |
 
-    === "Thẻ tự đóng"
+## Trình duyệt web
 
-        `<img>`
-        
-        `<br>`
-        
-        `<hr>`
-        
-        `<link>`
+Trình duyệt web là phần mềm giúp truy cập và khám phá các website.
 
+Ví dụ:  
+Những trình duyệt phổ biến hiện nay: Microsoft Edge, Google Chrome, Mozilla Firefox, Opera, Samsung Internet, v.v...
 
-!!! note "Trình duyệt web và HTML"
+Khi người dùng truy cập một trang web bằng trình duyệt web, có ba công đoạn diễn ra:
 
-    Khi ta truy cập một trang web bằng trình duyệt web (1), có ba công đoạn diễn ra:
-    { .annotate }
-
-    1.  Trình duyệt web là phần mềm giúp truy cập và khám phá các website, giống như một hướng dẫn viên du lịch trên Internet.
-    
-        Những trình duyệt phổ biến hiện nay: Microsoft Edge, Google Chrome, Mozilla Firefox, Opera, Samsung Internet, v.v...
-
-    &nbsp;
-
-    1. Trình duyệt tải xuống mã nguồn HTML của trang web này từ máy chủ chứa website liên quan. (Minh hoạ tại hình ngay bên dưới)
-    2. Trình duyệt phân tích mã nguồn HTML để hiểu cấu trúc và nội dung của trang web.
-    3. Trình duyệt tiến hành kết xuất trang web, bao gồm việc thông dịch các phần tử HTML, áp dụng mã CSS và thực thi mã javascript.[^1]
-
+1. Trình duyệt tải xuống mã nguồn HTML của trang web này từ máy chủ chứa website. Công đoạn này được minh hoạ tại hình ngay bên dưới.
+2. Trình duyệt phân tích mã nguồn HTML để hiểu cấu trúc và nội dung của trang web.
+3. Trình duyệt kết xuất trang web, trong đó bao gồm các thao tác như: thông dịch các phần tử HTML, áp dụng mã CSS và thực thi mã javascript.[^1]
 
 [^1]: CSS được đề cập trong những bài sau, còn Javascript không có trong chương trình học.
 
@@ -139,7 +126,7 @@ Vì vậy, các nhà phát triển web phải kiểm thử trang web của mình
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-12/topic-F/html-vs-web-page.mm.md!}
+{!grade-12/topic-F/concepts-of-web-page.mm.md!}
 *Sơ đồ tóm tắt những khái niệm về trang web*
 
 ## Some English words
