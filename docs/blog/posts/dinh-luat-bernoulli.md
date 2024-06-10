@@ -39,6 +39,6 @@ Nói ngắn gọn, định luật Bernoulli lý giải cả độ dốc lẫn s�
 
 ![Roberto Carlos's free kick in art](https://lh3.googleusercontent.com/pw/AP1GczPJJ52kLGW_nr9qXkyY7zA7zQTtkKeam4vgX0IrqWlOjf1Y-zYUtk_PGHH2AuN0E3DDX-NSiJey14EdSRgpfDzX8wgMscJzqnMec9rFPHRYM1zbaeKc=w2400){ width=600 }
 
-<span style="font-size: 0.5em;">Ảnh lấy từ [Facebook HD.FootballNews](facebook.com/HD.FootballNews/photos/23-years-ago-today-roberto-carlos-scored-that-iconic-free-kick-for-brazil-vs-fra/1379695788890835/)</span>
+<span style="font-size: 0.5em;">Ảnh lấy từ [Facebook HD.FootballNews](https://facebook.com/HD.FootballNews/photos/23-years-ago-today-roberto-carlos-scored-that-iconic-free-kick-for-brazil-vs-fra/1379695788890835/)</span>
 
 Và rồi nhiều năm sau, bằng một cách nào đó, một số nhà vật lý thế giới bảo rằng, mấy cú sút này chẳng tuân theo định luật nào cả.

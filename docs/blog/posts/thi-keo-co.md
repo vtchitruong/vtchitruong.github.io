@@ -8,7 +8,7 @@ date: 2016-10-16
 # Thi kéo co
 
 <div class="result" markdown>
-![Kéo co](https://lh3.googleusercontent.com/pw/AP1GczPaTrRhlg70Qw_qjcLxOBrXBor20G9YkFnKHeydFAYnidZOzAie1PsSuJd-g3-5cFgX6CT7TB2OwAwqStvazBX77ACDtJlybJYPcLNr_owkKdiHDmHp=w2400){ align=left width=360 }
+![Kéo co](https://lh3.googleusercontent.com/pw/AP1GczO5I-9O35bjkjEHlzf-ysCTyAqID9kotEV9VOgoSQs1DN_RJOKVhoBTjy7ubZObW_IEwIJ6juVQThD6VR3hJk9LDS873C7WOinVp1qshdZnpsAbtw7l=w2400){ align=left width=360 }
 
 Đội trường mình đi thi kéo co.
 
