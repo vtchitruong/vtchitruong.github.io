@@ -1,5 +1,11 @@
 # Chương trình khung lớp 10 theo Chương trình GDPT 2018
 
+## Sơ đồ tóm tắt
+
+Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
+
+{!grade-10/grade-10-overall-curriculum.mm.md!}
+
 ## Phần chung
 
 ### Chủ đề A
@@ -118,10 +124,3 @@ Phần mềm thiết kế đồ họa
     
 1. Sử dụng được một số chức năng cơ bản của phần mềm thiết kế đồ họa.
 2. Tạo được sản phẩm số đơn giản, hữu ích và thực tế như thiết kế logo, tạo banner, topic quảng cáo, banderole, áp phích, poster và thiệp chúc mừng, v.v...
-
-## Sơ đồ tóm tắt
-
-Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
-
-{!grade-10/grade-10-overall-curriculum.mm.md!}
-

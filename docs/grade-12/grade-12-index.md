@@ -1,5 +1,11 @@
 # Chương trình khung lớp 12 theo Chương trình GDPT 2018
 
+## Sơ đồ tóm tắt
+
+Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
+
+{!grade-12/grade-12-overall-curriculum.mm.md!}
+
 ## Phần chung
 
 ### Chủ đề A
@@ -166,9 +172,3 @@ Thực hành sử dụng phần mềm tạo trang web
 - Tạo được một trang web tĩnh đơn giản gồm một vài thành phần cơ bản:
     - Menu: bảng chọn chính để liên kết đến các trang web tĩnh khác.
     - Content: tiêu đề trang, khung hiển thị các bài viết, ảnh đại diện, mẫu biểu (form).
-
-## Sơ đồ tóm tắt
-
-Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
-
-{!grade-12/grade-12-overall-curriculum.mm.md!}

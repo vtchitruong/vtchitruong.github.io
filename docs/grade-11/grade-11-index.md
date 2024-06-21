@@ -1,5 +1,11 @@
 # Chương trình khung lớp 11 theo Chương trình GDPT 2018
 
+## Sơ đồ tóm tắt
+
+Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
+
+{!grade-11/grade-11-overall-curriculum.mm.md!}
+
 ## Phần chung
 
 ### Chủ đề A
@@ -169,9 +175,3 @@ Cơ sở dữ liệu
 #### Chủ đề F-2
 
 *Chủ đề F-2 là phần riêng dành cho CS.*
-
-## Sơ đồ tóm tắt
-
-Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
-
-{!grade-11/grade-11-overall-curriculum.mm.md!}

@@ -26,7 +26,7 @@ Bài viết cũng nằm trong loạt bài vẽ hình học đơn giản bằng P
 
 ## Cài đặt
 
-Xem hướng dẫn cài đặt và khai báo thư viện [tại đây](create-overlapping-circles-by-python.md/#khởi-tạo){:target="_blank"}.
+Xem hướng dẫn cài đặt và khai báo thư viện [tại đây](create-overlapping-circles-by-python.md/#khoi-tao){:target="_blank"}.
 
 ## Khởi tạo
 

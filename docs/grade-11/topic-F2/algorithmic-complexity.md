@@ -671,4 +671,4 @@ def bubble_sort(A):
 | độ phức tạp thời gian | time complexity |
 | giây, milli-giây | second, millisecond |
 | ký hiệu $O$ | Big O notation |
-| phép toán tích cực | basic operation, elementary operation |
+| phép toán tích cực | dominant operation |

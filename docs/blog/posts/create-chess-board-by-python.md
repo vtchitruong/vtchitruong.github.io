@@ -23,7 +23,7 @@ Với chương trình phổ thông, ta có thể biểu diễn bàn cờ vua b�
 
 ## Cài đặt
 
-Xem hướng dẫn cài đặt và khai báo thư viện [tại đây](create-overlapping-circles-by-python.md/#khởi-tạo){:target="_blank"}.
+Xem hướng dẫn cài đặt và khai báo thư viện [tại đây](create-overlapping-circles-by-python.md/#khoi-tao){:target="_blank"}.
 
 ## Khởi tạo
 
