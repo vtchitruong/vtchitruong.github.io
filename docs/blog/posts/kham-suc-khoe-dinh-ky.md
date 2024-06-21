@@ -18,7 +18,7 @@ Cơ quan cho kiểm tra sức khỏe định kỳ. Thầy nọ cầm giấy khá
 <!-- more -->
 <br>
 <br>
-<span style="font-size: 0.5em;">Ảnh lấy từ [www.weareteachers.com](https://https://www.weareteachers.com/teacher-overtime//)</span>
+<span style="font-size: 0.5em;">Ảnh lấy từ [www.weareteachers.com](https://www.weareteachers.com/teacher-overtime/)</span>
 
 Tại phòng siêu âm, bác sĩ vừa rà máy lên bụng vừa thông báo: Mỡ dư. Nói đoạn, bác sĩ ghi vào giấy: Sống ích kỷ. Ăn cơm gà xối mỡ một mình -> gan xối mỡ.
 
