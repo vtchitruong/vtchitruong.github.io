@@ -18,7 +18,7 @@ Ngồi một đống đó, trước mặt không sách, không truyện, không 
 <!-- more -->
 <br>
 <br>
-<span style="font-size: 0.5em;">Ảnh lấy từ [Tumblr](https://meme-templates.tumblr.com/post/183063285267/people-cheating-on-tests-templates-requested-by)</span>
+<span style="font-size: 0.5em;">Ảnh lấy đâu đó từ Internet</span>
 
 Giáo viên buổi gác buổi nghỉ đã như thế, giáo sinh còn kinh hơn, bao trọn sô, bữa nào cũng phải vô. Giáo viên nhìn giáo sinh ngủ thấy tội, mà không nỡ kêu. Cướp giấc ngủ của người khác là tội ác. Có điều, lỡ ban giám hiệu đi ngang thì sao nhỉ. Thôi kệ nó đi.
 

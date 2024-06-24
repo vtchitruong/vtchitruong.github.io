@@ -33,7 +33,7 @@ theme:
     # - navigation.instant
     # - navigation.instant.prefetch
     - navigation.prune
-    - navigation.sections
+    # - navigation.sections
     - navigation.path
     - navigation.tabs
     - navigation.tabs.sticky

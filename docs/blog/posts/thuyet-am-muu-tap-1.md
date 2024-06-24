@@ -12,7 +12,7 @@ date: 2016-03-22
 
 Ngày nay, học sinh phải học quá nhiều môn thiên về tư duy logic và tư duy ngôn ngữ, chưa kể phải phụ đạo, chính đạo, học thêm, học bớt. Do đó, trong hầu hết thời gian, các em phải ngồi một chỗ, không có điều kiện vận động cơ thể.
 </div>
-
+<br>
 <!-- more -->
 <br>
 

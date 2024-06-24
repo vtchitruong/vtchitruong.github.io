@@ -17,7 +17,7 @@ Chuyện chẳng có gì nếu không có bọn con gái. Con ông thầy vốn 
 
 <!-- more -->
 <br>
-<span style="font-size: 0.5em;">Ảnh lấy từ [tamlinhdaiviet.com](https://tamlinhdaiviet.com/2020/12/28/8237.html)</span>
+<span style="font-size: 0.5em;">Ảnh lấy đâu đó từ Internet</span>
 
 Ẻm tìm cách phát hiện coi người nào anh người nào em. Sau, ẻm và người anh crush nhau
 
