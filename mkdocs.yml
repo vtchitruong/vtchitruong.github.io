@@ -332,14 +332,16 @@ nav:
       - grade-12/topic-F/multimedia.md
       - grade-12/topic-F/form.md
   - Chuyên đề:
-    - major/major-index.md
+    - special-topics/special-topics-index.md
     - Đệ quy:
-      - Khái quát về đệ quy: major/recursion/recursion.md
-      - Tháp Hà Nội: major/recursion/hanoitower.md
+      - Khái quát về đệ quy: special-topics/recursion/recursion.md
+      - Tháp Hà Nội: special-topics/recursion/hanoitower.md
     - Quay lui:
-      - Khái quát về quay lui: major/back-tracking/back-tracking.md  
+      - Khái quát về quay lui: special-topics/back-tracking/back-tracking.md  
   - Nâng cao:
     - advanced/advanced-index.md
+    - Mảng:
+      - Mảng một chiều tĩnh: advanced/1d-array/static-array.md
     - Kỹ thuật cơ bản:
       - Đếm và tần số: advanced/basic-techniques/count-frequency.md
       - Tìm kiếm: advanced/basic-techniques/search.md
@@ -349,6 +351,7 @@ nav:
       - DFS: advanced/graph/dfs.md
       - BFS: advanced/graph/bfs.md
       - Dijkstra: advanced/graph/dijkstra.md
+      - Bellman-Ford: advanced/graph/bellman-ford.md
     - Quy hoạch động:
       - Chia phần thưởng: advanced/dynamic-programming/reward-student.md
       - Dãy con tăng dài nhất: advanced/dynamic-programming/lis.md
