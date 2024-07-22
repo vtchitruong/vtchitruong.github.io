@@ -7,6 +7,7 @@
 ### v23.08.13 <small>15-05-2024</small> { id="24.05.15" }
 
 - Thêm GLightbox để hiển thị ảnh dạng slideshow.
+- Thiết lập luôn hiển thị toàn bộ menu khi website mở trên màn hình laptop.
 
 ### v23.08.12 <small>03-06-2024</small> { id="24.06.03" }
 

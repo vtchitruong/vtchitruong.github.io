@@ -290,6 +290,6 @@ Output:
 a > c
 ```
 
-## Toàn bộ chương trình
+## Mã nguồn
 
 Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/Struct/blob/main/fraction.cpp" target="_blank">GitHub</a>.

@@ -348,6 +348,7 @@ nav:
     - Kiểu dữ liệu cấu trúc:
       - Phân số: advanced/struct/fraction.md
     - Kỹ thuật cơ bản:
+      - Kiểm tra số nguyên tố: advanced/basic-techniques/is-prime.md
       - Đếm và tần số: advanced/basic-techniques/count-frequency.md
       - Tìm kiếm: advanced/basic-techniques/search.md
       - Sắp xếp: advanced/basic-techniques/sort.md
