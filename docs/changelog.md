@@ -1,3 +1,13 @@
+### v23.08.14 <small>21-07-2024</small> { id="24.07.21" }
+
+- Đổi font chữ của website thành Noto Sans cho trông mới mẻ.
+- Điều chỉnh màu chữ của các đoạn code cho gần giống với Monokai Light theme.
+- Điều chỉnh font chữ của các đoạn code thành Consolas.
+
+### v23.08.13 <small>15-05-2024</small> { id="24.05.15" }
+
+- Thêm GLightbox để hiển thị ảnh dạng slideshow.
+
 ### v23.08.12 <small>03-06-2024</small> { id="24.06.03" }
 
 - Tổ chức lại vài chỗ. Mục Chuyên đề dành cho chương trình chuyên đề của GDPT 2018. Mục Nâng cao dành cho những học sinh muốn tìm hiểu sâu công nghệ thông tin hoặc bước đầu muốn dự thi học sinh giỏi.

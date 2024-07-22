@@ -45,21 +45,24 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
-    - scheme: default
+    # - scheme: default
+    #   primary: green
+    #   accent: light blue
+    #   toggle:
+    #   #   icon: material/lightbulb-outline
+    #   #   name: Switch to dark mode
+    # - scheme: slate
+    #   primary: teal
+    #   accent: lime
+    #   toggle:
+    - scheme: vtct_theme
       primary: green
       accent: light blue
-      toggle:
-      #   icon: material/lightbulb-outline
-      #   name: Switch to dark mode
-    - scheme: slate
-      primary: teal
-      accent: lime
-      toggle:
       #   icon: material/lightbulb
       #   name: Switch to light mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Noto Sans
+    code: Consolas Mono
   favicon: assets/favicon.png
   # icon:    
   #   logo: logo
@@ -342,6 +345,8 @@ nav:
     - advanced/advanced-index.md
     - Mảng:
       - Mảng một chiều tĩnh: advanced/1d-array/static-array.md
+    - Kiểu dữ liệu cấu trúc:
+      - Phân số: advanced/struct/fraction.md
     - Kỹ thuật cơ bản:
       - Đếm và tần số: advanced/basic-techniques/count-frequency.md
       - Tìm kiếm: advanced/basic-techniques/search.md

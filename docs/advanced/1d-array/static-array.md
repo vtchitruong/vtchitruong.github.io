@@ -318,3 +318,7 @@ Remove last:
 Remove:
 7 4 0 9 4 8 8 2 4
 ```
+
+## Toàn bộ chương trình
+
+Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/Array/blob/main/static_1d_array.cpp" target="_blank">GitHub</a>.
