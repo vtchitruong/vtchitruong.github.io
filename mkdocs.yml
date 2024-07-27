@@ -320,8 +320,10 @@ nav:
       - grade-11/topic-F2/array-2d.md
       - grade-11/topic-F2/linked-list.md
       - grade-11/topic-F2/searching-algorithm.md
-      - grade-11/topic-F2/sorting-algorithm-selection-insertion.md
-      - grade-11/topic-F2/sorting-algorithm-bubble-exchange.md
+      - grade-11/topic-F2/sorting-algorithm-selection-sort.md
+      - grade-11/topic-F2/sorting-algorithm-insertion-sort.md
+      - grade-11/topic-F2/sorting-algorithm-bubble-sort.md
+      - grade-11/topic-F2/sorting-algorithm-exchange-sort.md
       - grade-11/topic-F2/algorithmic-complexity.md      
   - Lớp 12:
     - Chương trình khung: grade-12/grade-12-index.md

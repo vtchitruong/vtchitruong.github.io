@@ -61,6 +61,7 @@ function displayArray(array) {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
+        valueDiv.style.color = blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
@@ -93,27 +94,32 @@ function displayInsert(array, iIndex, jIndex, emptyIndex, tmpHeight, tmpBackgr, 
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
+        valueDiv.style.color = blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
         bar.style.height = `${value * 5}px`;
 
         if (index < sortedIndex) {
-            bar.style.backgroundColor = yellow;
-            bar.style.borderColor = transparent;
+            bar.style.backgroundColor = transparent;
+            bar.style.borderColor = yellow;
+            valueDiv.style.color = yellow;
         }
         
         if (index === emptyIndex) {
             bar.style.backgroundColor = transparent;
             bar.style.borderColor = transparent;
+            valueDiv.style.color = transparent;
         }
 
         if (index === iIndex) {
-            bar.style.backgroundColor = orange;
+            bar.style.backgroundColor = blue;
             bar.style.borderColor = transparent;
+            valueDiv.style.color = blue;
         } else if (index === jIndex) {
-            bar.style.backgroundColor = green;
+            bar.style.backgroundColor = pink;
             bar.style.borderColor = transparent;
+            valueDiv.style.color = pink;
         } 
 
         const container = document.createElement("div");
@@ -128,6 +134,7 @@ function displayInsert(array, iIndex, jIndex, emptyIndex, tmpHeight, tmpBackgr, 
     const tmpValueDiv = document.createElement("div");
     tmpValueDiv.className = "value-label tmp-value-label";
     tmpValueDiv.textContent = tmpHeight;
+    tmpValueDiv.style.color = tmpBackgr;
 
     const tmpBar = document.createElement("div");    
     tmpBar.className = "array-bar tmp-bar"; // Apply separate-bar class
@@ -155,23 +162,23 @@ async function insertionSort() {
         let tmp = currentArray[i];
         
         // display tmp
-        displayInsert(currentArray, -1, -1, i, tmp, orange, transparent, sortedIndex);
+        displayInsert(currentArray, -1, -1, i, tmp, blue, transparent, sortedIndex);
         await sleep(delay);
 
         let j = i - 1;
 
         // display i and j
-        displayInsert(currentArray, -1, j, i, tmp, orange, transparent, sortedIndex);
+        displayInsert(currentArray, -1, j, i, tmp, blue, transparent, sortedIndex);
         await sleep(delay);
 
         while (j >= 0 && currentArray[j] > tmp) {
-            displayInsert(currentArray, -1, j, j + 1, tmp, orange, transparent, sortedIndex);
+            displayInsert(currentArray, -1, j, j + 1, tmp, blue, transparent, sortedIndex);
             await sleep(delay);
 
             currentArray[j + 1] = currentArray[j];
 
             // display step back 
-            displayInsert(currentArray, -1, j + 1, j, tmp, orange, transparent, sortedIndex);
+            displayInsert(currentArray, -1, j + 1, j, tmp, blue, transparent, sortedIndex);
             await sleep(delay);
 
             j = j - 1;
@@ -182,7 +189,7 @@ async function insertionSort() {
             }
         }
 
-        displayInsert(currentArray, -1, j, j + 1, tmp, orange, transparent, sortedIndex);
+        displayInsert(currentArray, -1, j, j + 1, tmp, blue, transparent, sortedIndex);
         await sleep(delay);
 
         currentArray[j + 1] = tmp;

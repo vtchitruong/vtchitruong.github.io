@@ -6,10 +6,7 @@
 :root {
     --md-text-font: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-
-
 }
-
 
 [data-md-color-scheme="vtct_theme"] {
 
@@ -106,6 +103,16 @@ table {
 /* Site width etc.*/
 .md-grid {
     max-width: 64rem !important;
+}
+
+.admonition,
+details {
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+.md-typeset .admonition, .md-typeset details {
+    font-size: 0.8rem;
 }
 
 

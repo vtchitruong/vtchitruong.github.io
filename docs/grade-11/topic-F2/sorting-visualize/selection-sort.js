@@ -62,6 +62,7 @@ function displayArray(array) {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
+        valueDiv.style.color = blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
@@ -94,23 +95,28 @@ function displaySelect(array, firstIndex, secondIndex, minIndex) {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
+        valueDiv.style.color = blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
         bar.style.height = `${value * 5}px`;
 
         if (index < firstIndex) {
-            bar.style.backgroundColor = yellow;
-            bar.style.borderColor = transparent;
+            bar.style.backgroundColor = transparent;
+            bar.style.borderColor = yellow;
+            valueDiv.style.color = yellow;
         } else if (index == firstIndex) {
-            bar.style.backgroundColor = orange;
-            bar.style.borderColor = transparent;
-        } else if (index == secondIndex) {
-            bar.style.backgroundColor = green;
-            bar.style.borderColor = transparent;
-        } else if (index == minIndex) {
             bar.style.backgroundColor = pink;
             bar.style.borderColor = transparent;
+            valueDiv.style.color = pink;
+        } else if (index == secondIndex) {
+            bar.style.backgroundColor = blue;
+            bar.style.borderColor = transparent;
+            valueDiv.style.color = blue;
+        } else if (index == minIndex) {
+            bar.style.backgroundColor = green;
+            bar.style.borderColor = transparent;
+            valueDiv.style.color = green;
         }
 
         const container = document.createElement("div");

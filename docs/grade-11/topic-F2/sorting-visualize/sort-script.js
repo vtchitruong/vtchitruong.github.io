@@ -347,7 +347,9 @@ function displayExchange(array, iIndex, jIndex) {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
-
+        valueDiv.style.color = blue;
+        valueDiv.style.font.color = blue;
+        
         const bar = document.createElement("div");
         bar.className = "array-bar";
         bar.style.height = `${value * 5}px`;
@@ -355,6 +357,7 @@ function displayExchange(array, iIndex, jIndex) {
         if (index < iIndex) {
             bar.style.backgroundColor = yellow;
             bar.style.borderColor = transparent;
+            valueDiv.style.color = yellow;
         }
         
         if (index === iIndex) {

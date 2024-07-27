@@ -60,6 +60,7 @@ function displayArray(array) {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
+        valueDiv.style.color = blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
@@ -93,25 +94,32 @@ function displayBubble(array, jIndex, nextjIndex, lastjIndex, sortediIndex) {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
+        valueDiv.style.color = blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
         bar.style.height = `${value * 5}px`;
 
         if (index == lastjIndex) {
-            bar.style.backgroundColor = orange;
+            bar.style.backgroundColor = blue;
             bar.style.borderColor = transparent;
-        } else if (index == jIndex) {
+            valueDiv.style.color = blue;
+        }
+        
+        if (index == jIndex) {
             bar.style.backgroundColor = green;
             bar.style.borderColor = transparent;
+            valueDiv.style.color = green;
         } else if (index == nextjIndex) {
-            bar.style.backgroundColor = green;
+            bar.style.backgroundColor = pink;
             bar.style.borderColor = transparent;
+            valueDiv.style.color = pink;
         }
 
         if (index >= sortediIndex) {
-            bar.style.backgroundColor = yellow;
-            bar.style.borderColor = transparent;
+            bar.style.backgroundColor = transparent;
+            bar.style.borderColor = yellow;
+            valueDiv.style.color = yellow;
         }
         
         const container = document.createElement("div");
