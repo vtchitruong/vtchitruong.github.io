@@ -57,7 +57,7 @@ Như vậy, ý tưởng của thuật toán sắp xếp chọn như sau:
 
 !!! note "Thuật toán sắp xếp chọn"
     
-    Duyệt mảng `A` từ vị trí đầu đến cuối bằng biến `i`. Ứng với mỗi `i`, thực hiện:
+    Duyệt mảng `A` từ vị trí đầu đến áp cuối bằng biến `i`. Ứng với mỗi `i`, thực hiện:
 
     - Tìm phần tử nhỏ nhất `A[min]` trong mảng con từ vị trí `i` đến cuối mảng.  
     - Hoán vị `A[i]` và `A[min]`.  
@@ -81,7 +81,7 @@ Như vậy, ý tưởng của thuật toán sắp xếp chọn như sau:
 ### Trực quan hóa thuật toán
 
 <div>
-    <iframe width="100%" height="690px" frameBorder=0 src="../sorting-visualize/selection-sort.html"></iframe>
+    <iframe width="100%" height="690px" frameBorder=0 src="../visualize/selection-sort.html"></iframe>
 </div>  
 
 ### Chương trình minh họa

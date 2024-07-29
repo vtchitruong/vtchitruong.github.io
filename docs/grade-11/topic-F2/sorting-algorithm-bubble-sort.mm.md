@@ -6,20 +6,24 @@ markmap:
 
 # Sắp xếp
 
-## Bài toán sắp xếp
+## Bài toán
 
-### Input
+- Input: Mảng `A` gồm `n` phần tử
+- Output: Mảng `A` có thứ tự tăng dần
 
-- Mảng `A` gồm `n` phần tử
+## Thuật toán
 
-### Output
+### Sắp xếp chọn
 
-- Mảng `A` có thứ tự tăng dần
+### Sắp xếp chèn
 
-## Thuật toán sắp xếp nổi bọt
+### Sắp xếp nổi bọt
 
-### Vòng lặp ngoài: duyệt mảng từ vị trí `0` đến áp cuối bằng biến `i`
+#### Duyệt `A` từ đầu đến áp cuối bằng biến `i`:
 
-### Vòng lặp trong: duyệt mảng từ vị trí `0` đến `n - 1 - i` bằng biến `j`
+- Duyệt `A` từ đầu đến `n - 1 - i` bằng biến `j`:
+    - So sánh và hoán vị `A[j]` và `A[j + 1]`
 
-- So sánh và hoán vị `A[j]` và `A[j + 1]`
+### Sắp xếp tráo đổi
+
+

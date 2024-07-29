@@ -6,22 +6,22 @@ markmap:
 
 # Sắp xếp
 
-## Bài toán sắp xếp
+## Bài toán
 
-### Input
+- Input: Mảng `A` gồm `n` phần tử
+- Output: Mảng `A` có thứ tự tăng dần
 
-- Mảng `A` gồm `n` phần tử
+## Thuật toán
 
-### Output
+### Sắp xếp chọn
 
-- Mảng `A` có thứ tự tăng dần
+#### Duyệt `A` từ đầu đến áp cuối bằng biến `i`:
 
-## Thuật toán sắp xếp chọn
+- Duyệt mảng con từ `i` đến cuối để tìm `A[min]`.
+- Hoán vị `A[min]` và `A[i]`.
 
-### Vòng lặp ngoài: duyệt mảng từ đầu đến áp cuối bằng biến `i`
+### Sắp xếp chèn
 
-- Hoán vị `A[min]` tìm được với `A[i]`.
+### Sắp xếp nổi bọt
 
-### Vòng lặp trong: duyệt mảng từ `i + 1` đến cuối bằng biến `j`
-
-- Tìm phần tử nhỏ nhất `A[min]`.
+### Sắp xếp tráo đổi

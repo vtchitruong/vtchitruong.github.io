@@ -6,7 +6,7 @@
 
 ## Bài toán và thuật toán sắp xếp
 
-Tương tự [bài học trước](../topic-F2/sorting-algorithm-selection-sort.md/#bài-toán-và-thuật-toán-sắp-xếp){:target="_blank"}, ta chỉ xét bài toán đơn giản là sắp xếp mảng một chiều các số nguyên theo thứ tự **tăng dần**.
+Tương tự [bài học trước](../topic-F2/sorting-algorithm-selection-sort.md/#bai-toan-va-thuat-toan-sap-xep){:target="_blank"}, ta chỉ xét bài toán đơn giản là sắp xếp mảng một chiều các số nguyên theo thứ tự **tăng dần**.
 
 ## Thuật toán sắp xếp tráo đổi
 
@@ -43,7 +43,7 @@ Như vậy, sau mỗi lần duyệt của vòng lặp ngoài (biến `i`), phầ
 ### Trực quan hóa thuật toán
 
 <div>
-    <iframe width="100%" height="690px" frameBorder=0 src="../sorting-visualize/exchange-sort.html"></iframe>
+    <iframe width="100%" height="690px" frameBorder=0 src="../visualize/exchange-sort.html"></iframe>
 </div>   
 
 ### Chương trình minh họa

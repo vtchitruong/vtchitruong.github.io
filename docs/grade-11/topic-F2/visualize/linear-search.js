@@ -3,14 +3,9 @@ const arrayContainer = document.getElementById("array-container");
 let arraySize = 13;
 let originalArray = []; // Declare a global array variable
 
-let flagArray = []
 let k = 37;
 
 let delay = 1000;
-
-let left;
-let right;
-let mid;
 
 // This variable to keep track of the pause state
 let paused = false;
@@ -28,11 +23,9 @@ const stopButton = document.getElementById("stopButton");
 
 function generateRandomArray(size) {
     const array = [];
-    flagArray = [];
 
     for (let i = 0; i < size; i++) {
-        array.push(Math.floor(Math.random() * 45) + 10); // Adjust range as needed
-        flagArray.push(1); // 1 means visible, displayed
+        array.push(Math.floor(Math.random() * 45) + 10);
     }
 
     return array;
@@ -50,7 +43,7 @@ function init() {
 
     // generate random array
     originalArray = generateRandomArray(arraySize);
-    originalArray.sort(function(a, b) {return a - b});
+    // originalArray.sort(function(a, b) {return a - b});
     displayArray(originalArray);
 
     // enable start button
@@ -67,6 +60,7 @@ function displayArray(array) {
       const valueDiv = document.createElement("div");
       valueDiv.className = "value-label";
       valueDiv.textContent = value;
+      valueDiv.style.color = blue;
 
       const bar = document.createElement("div");
       bar.className = "array-bar";
@@ -90,36 +84,32 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function displayBinarySearch(array) {
+function displayLinearSearch(array, currentIndex, found) {
     arrayContainer.innerHTML = ""; // Clear the container
 
     array.forEach ((value, index) => {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
+        valueDiv.style.color = blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
         bar.style.height = `${value * 5}px`;
 
-        if (flagArray[index] == 2) {
+        if (index == found) {
             bar.style.backgroundColor = pink;
             bar.style.borderColor = transparent;
-        } else if (index == left) {
-            bar.style.backgroundColor = green;
+            valueDiv.style.color = pink;
+        } else if (index == currentIndex) {
+            bar.style.backgroundColor = blue;
             bar.style.borderColor = transparent;
-        } else if (index == right) {
-            bar.style.backgroundColor = green;
-            bar.style.borderColor = transparent;
-        } else if (index == mid) {
-            bar.style.backgroundColor = yellow;
-            bar.style.borderColor = transparent;
-        } else if (flagArray[index] == 1) {
+            valueDiv.style.color = blue;
+        }
+        else {
             bar.style.backgroundColor = transparent;
             bar.style.borderColor = blue;
-        } else if (flagArray[index] == 0) {
-            bar.style.backgroundColor = transparent;
-            bar.style.borderColor = transparent;
+            valueDiv.style.color = blue;
         }
 
         const indexDiv = document.createElement("div");
@@ -137,55 +127,31 @@ function displayBinarySearch(array) {
     });
 }
 
-function setFalse(begin, end) {
-    for (let i = begin; i < end + 1; ++i) {
-        flagArray[i] = 0; // 0 means invisible, un-displayed
-    }
-}
-
-async function binarySearch() {
+async function linearSearch() {
     const n = arraySize;
-
-    left = 0;
-    right = n - 1;
-    
-    while (left <= right) {
-        mid = Math.floor((left + right) / 2);
+    let found = -1;
+    for (let i = 0; i < arraySize; ++i) {
+        displayLinearSearch(originalArray, i, found);
+        await sleep(delay);    
         
-        displayBinarySearch(originalArray);
-        await sleep(delay);
-
-        if (originalArray[mid] == k) {
-            flagArray[mid] = 2; // 2 means found
-            displayBinarySearch(originalArray);
-            await sleep(delay);
-            break;
+        if (originalArray[i] == k) {
+            found = i;
+            break;            
         }
-        else if (originalArray[mid] < k) {
-            setFalse(left, mid);
-            displayBinarySearch(originalArray);
-            await sleep(delay);
-            
-            left = mid + 1;
-                        
-            displayBinarySearch(originalArray);
-            await sleep(delay);
-        }
-        else {
-            setFalse(mid, right);
-            displayBinarySearch(originalArray);
-            await sleep(delay);
+    }   
+   
+    if (found == -1) {
+        displayLinearSearch(originalArray, -1, found);
+        await sleep(delay);        
+    }
+    else {
+        displayLinearSearch(originalArray, -1, found);
+        await sleep(delay);       
+    }
 
-            right = mid - 1;
-
-            displayBinarySearch(originalArray);
-            await sleep(delay);
-        }
-
-        // Check the pause state
-        while (paused) {
-            await new Promise(resolve => setTimeout(resolve, 100)); // Check every 100ms
-        }
+    // Check the pause state
+    while (paused) {
+        await new Promise(resolve => setTimeout(resolve, 100)); // Check every 100ms
     }
 
     initButton.removeAttribute("disabled");
@@ -201,7 +167,7 @@ async function startSearching() {
     startButton.setAttribute("disabled", "true");
     pauseButton.removeAttribute("disabled");
 
-    await binarySearch();
+    await linearSearch();
 }
 
 // Function to toggle pause and continue
