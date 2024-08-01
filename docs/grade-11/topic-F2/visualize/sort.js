@@ -1,6 +1,5 @@
 const arrayContainer = document.getElementById("array-container");
 
-
 let arraySize = 10;
 let delay = 1000;
 let originalArray = []; // Declare a global array variable
@@ -15,6 +14,7 @@ const blue = "#0099cc";
 const orange = "#ff8433";
 const pink = "#ff748c";
 const green = "#00e673";
+const grey = "#cfcfcf";
 const transparent = "transparent";
 
 function generateRandomArray(size) {
@@ -29,6 +29,7 @@ function generateRandomArray(size) {
 }
 
 // initButton
+/*
 function init() {
   // Stop the current sorting process
   // stopSorting();
@@ -51,34 +52,38 @@ function init() {
   paused = false;
   finished = false;
 }
+*/
 
 function displayArray(array) {
-  arrayContainer.innerHTML = ""; // Clear the container
+    arrayContainer.innerHTML = ""; // Clear the container
 
-  array.forEach(value => {
-    const valueDiv = document.createElement("div");
-    valueDiv.className = "value-label";
-    valueDiv.textContent = value;
+    array.forEach(value => {
+        const valueDiv = document.createElement("div");
+        valueDiv.className = "value-label";
+        valueDiv.textContent = value;
+        valueDiv.style.color = blue;
 
-    const bar = document.createElement("div");
-    bar.className = "array-bar";
-    bar.style.height = `${value * 5}px`;
+        const bar = document.createElement("div");
+        bar.className = "array-bar";
+        bar.style.height = `${value * 5}px`;
 
-    const container = document.createElement("div");
-    container.className = "bar-container";
-    container.appendChild(valueDiv);
-    container.appendChild(bar);
+        const container = document.createElement("div");
+        container.className = "bar-container";
+        container.appendChild(valueDiv);
+        container.appendChild(bar);
 
-    arrayContainer.appendChild(container);
-  });
+        arrayContainer.appendChild(container);
+    });
 }
 
+/*
 async function swap(idx1, idx2) {
     // await new Promise(resolve => setTimeout(resolve, delay)); // Wait for the delay
     const tmp = currentArray[idx1];
     currentArray[idx1] = currentArray[idx2];
     currentArray[idx2] = tmp;
 }
+*/
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -449,3 +454,4 @@ function togglePause() {
 function reloadPage() {
     window.location.reload();
 }
+

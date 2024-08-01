@@ -20,28 +20,41 @@ h1 {
 }
 
 .array-bar {
-    width: 24px;
-    margin: 0 1px;
-    background-color: #0000;
-    border: solid 2px #0099cc;
-    transition: height 0.2s;
-    border-radius: 0.3rem;
+  width: 24px;
+  margin: 0 1px;
+  background-color: #0000;
+  border: solid 2px #0099cc;
+  transition: height 0.2s;
+  border-radius: 0.3rem;
 }
 
 .tmp-bar {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .value-label {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 3px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.index-label {
+  text-align: center;
+  font-size: 16px;
+  /* margin-bottom: 3px; */
 }
 
 .tmp-value-label {
-    margin-left: 20px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 20px;
 }
 
+.tmp-index-label {
+  text-align: center;
+  font-size: 16px;
+  margin-left: 20px;
+}
 
 .bar-container {
     display: flex;

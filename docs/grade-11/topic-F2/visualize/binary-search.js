@@ -39,7 +39,7 @@ function generateRandomArray(size) {
     return array;
 }
 
-// initButton
+// New button
 function init() {
     // get array size input
     const arraySizeInput = document.getElementById("array-size");

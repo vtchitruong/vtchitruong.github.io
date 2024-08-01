@@ -1,91 +1,47 @@
-const arrayContainer = document.getElementById("array-container");
+import * as vsl from "./visualize.js";
 
-let arraySize = 10;
+let n = 10; // arraySize
 let delay = 1000;
+let animation_sleep_time = delay / 50;
+
 let originalArray = []; // Declare a global array variable
 let currentArray = [];
 
-// This variable to keep track of the pause state
+// pause state
 let paused = false;
-// let finished = false; // sorting accomplish state
 
-const yellow = "#ffcc3b";
-const blue = "#0099cc";
-const orange = "#ff8433";
-const pink = "#ff748c";
-const green = "#00e673";
-const transparent = "transparent";
+const arrayContainer = document.getElementById("array-container");
 
+const initButton = document.getElementById("initButton");
 const startButton = document.getElementById("startButton");
 const pauseButton = document.getElementById("pauseButton");
-const stopButton = document.getElementById("stopButton");
 
-function generateRandomArray(size) {
-    const array = [];
-    for (let i = 0; i < size; i++) {
-        array.push(Math.floor(Math.random() * 30) + 10); // Adjust range as needed
-    }
+window.init = init;
+window.startSorting = startSorting;
+window.displayBubble = displayBubble;
+window.bubbleSort = bubbleSort;
+window.togglePause = togglePause;
+window.reloadPage = reloadPage;
 
-    return array;
-}
-
-// initButton
+// New button
 function init() {
-    // Stop the current sorting process
-    // stopSorting();
-
     // get array size input
     const arraySizeInput = document.getElementById("array-size");
-    arraySize = parseInt(arraySizeInput.value, 10) || 10;
+    n = parseInt(arraySizeInput.value, 10) || 10;
 
     // get delay input
     const delayInput = document.getElementById("delay");
     delay = parseInt(delayInput.value, 10) || 1000;
 
     // generate random array
-    originalArray = generateRandomArray(arraySize);
-    displayArray(originalArray);
+    originalArray = vsl.generateRandomArray(n);
+    vsl.displayArray(originalArray, arrayContainer);
 
     // enable start button
     startButton.removeAttribute("disabled");
 
     paused = false;
-    finished = false;
 }
-
-function displayArray(array) {
-    arrayContainer.innerHTML = ""; // Clear the container
-
-    array.forEach(value => {
-        const valueDiv = document.createElement("div");
-        valueDiv.className = "value-label";
-        valueDiv.textContent = value;
-        valueDiv.style.color = blue;
-
-        const bar = document.createElement("div");
-        bar.className = "array-bar";
-        bar.style.height = `${value * 5}px`;
-
-        const container = document.createElement("div");
-        container.className = "bar-container";
-        container.appendChild(valueDiv);
-        container.appendChild(bar);
-
-        arrayContainer.appendChild(container);
-    });
-}
-
-async function swap(idx1, idx2) {
-    // await new Promise(resolve => setTimeout(resolve, delay)); // Wait for the delay
-    const tmp = currentArray[idx1];
-    currentArray[idx1] = currentArray[idx2];
-    currentArray[idx2] = tmp;
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 
 function displayBubble(array, jIndex, nextjIndex, lastjIndex, sortediIndex) {
     arrayContainer.innerHTML = ""; // Clear the container
@@ -94,57 +50,69 @@ function displayBubble(array, jIndex, nextjIndex, lastjIndex, sortediIndex) {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
-        valueDiv.style.color = blue;
+        valueDiv.style.color = vsl.blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
         bar.style.height = `${value * 5}px`;
 
+        const indexDiv = document.createElement("div");
+        indexDiv.className = "index-label";
+        indexDiv.textContent = index;
+        indexDiv.style.color = valueDiv.style.color;
+
         if (index == lastjIndex) {
-            bar.style.backgroundColor = blue;
-            bar.style.borderColor = transparent;
-            valueDiv.style.color = blue;
+            valueDiv.style.color = vsl.blue;
+            bar.style.backgroundColor = valueDiv.style.color;
+            bar.style.borderColor = vsl.transparent;
+            indexDiv.style.color = valueDiv.style.color;
         }
         
         if (index == jIndex) {
-            bar.style.backgroundColor = green;
-            bar.style.borderColor = transparent;
-            valueDiv.style.color = green;
+            valueDiv.style.color = vsl.green;
+            bar.style.backgroundColor = valueDiv.style.color;
+            bar.style.borderColor = vsl.transparent;
+            valueDiv.style.color = valueDiv.style.color;
+            indexDiv.style.color = valueDiv.style.color;
+            indexDiv.textContent = 'j';
         } else if (index == nextjIndex) {
-            bar.style.backgroundColor = pink;
-            bar.style.borderColor = transparent;
-            valueDiv.style.color = pink;
+            valueDiv.style.color = vsl.pink;
+            bar.style.backgroundColor = valueDiv.style.color;
+            bar.style.borderColor = vsl.transparent;
+            valueDiv.style.color = valueDiv.style.color;
+            indexDiv.style.color = valueDiv.style.color;
+            indexDiv.textContent = 'j+1';
         }
 
         if (index >= sortediIndex) {
-            bar.style.backgroundColor = transparent;
-            bar.style.borderColor = yellow;
-            valueDiv.style.color = yellow;
+            valueDiv.style.color = vsl.yellow;
+            bar.style.backgroundColor = vsl.transparent;
+            bar.style.borderColor = valueDiv.style.color;
+            indexDiv.style.color = valueDiv.style.color;
         }
         
         const container = document.createElement("div");
         container.className = "bar-container";
         container.appendChild(valueDiv);
         container.appendChild(bar);
+        container.appendChild(indexDiv);
 
         arrayContainer.appendChild(container);
     });
 }
 
 async function bubbleSort() {
-    const n = arraySize;
-
     for (let i = 0; i < n - 1; i++) {
         for (let j = 0; j < n - i - 1; j++) {
             // display j
             displayBubble(currentArray, j, j + 1, n - i - 1, n - i);
-            await sleep(delay);
+            await vsl.sleep(delay);
 
             if (currentArray[j] > currentArray[j + 1]) {
-                await swap(j, j + 1);
+                await vsl.swap(currentArray, j, j + 1);
 
                 displayBubble(currentArray, j + 1, j, n - i - 1, n - i);
-                await sleep(delay);
+                await vsl.sleep(delay);
 
                 // Check the pause state
                 while (paused) {
@@ -155,7 +123,7 @@ async function bubbleSort() {
 
         // display after every j-loop
         displayBubble(currentArray, -1, -1, -1, n - i - 1);
-        await sleep(delay);
+        await vsl.sleep(delay);
     }
 
     initButton.removeAttribute("disabled");
@@ -173,13 +141,13 @@ async function startSorting() {
     await bubbleSort();
 }
 
-// Function to toggle pause and continue
+// Pause button
 function togglePause() {
     paused = !paused; // Toggle the paused state
-    const pauseButton = document.getElementById("pauseButton");
     pauseButton.textContent = paused ? "Resume" : "Pause";
 }
 
+// Reset button
 function reloadPage() {
-    window.location.reload();
+    window.location.reload();   
 }
