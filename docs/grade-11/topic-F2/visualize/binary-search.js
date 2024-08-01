@@ -1,95 +1,50 @@
-const arrayContainer = document.getElementById("array-container");
+import * as vsl from "./visualize.js";
 
-let arraySize = 13;
+let n = 13; // arraySize
+let delay = 1000;
+
 let originalArray = []; // Declare a global array variable
 
 let flagArray = []
 let k = 37;
 
-let delay = 1000;
-
 let left;
 let right;
 let mid;
 
-// This variable to keep track of the pause state
+// pause state
 let paused = false;
 
-const yellow = "#ffcc3b";
-const blue = "#0099cc";
-const orange = "#ff8433";
-const pink = "#ff748c";
-const green = "#00e673";
-const transparent = "transparent";
-const grey = "#cfcfcf";
+const arrayContainer = document.getElementById("array-container");
 
+const initButton = document.getElementById("initButton");
 const startButton = document.getElementById("startButton");
 const pauseButton = document.getElementById("pauseButton");
-const stopButton = document.getElementById("stopButton");
 
-function generateRandomArray(size) {
-    const array = [];
-    flagArray = [];
-
-    for (let i = 0; i < size; i++) {
-        array.push(Math.floor(Math.random() * 45) + 10); // Adjust range as needed
-        flagArray.push(1); // 1 means visible, displayed
-    }
-
-    return array;
-}
+window.init = init;
+window.startSearching = startSearching;
+window.displayBinarySearch = displayBinarySearch;
+window.binarySearch = binarySearch;
+window.togglePause = togglePause;
+window.reloadPage = reloadPage;
 
 // New button
 function init() {
     // get array size input
     const arraySizeInput = document.getElementById("array-size");
-    arraySize = parseInt(arraySizeInput.value, 10) || 13;
-
-    // get delay input
-    const delayInput = document.getElementById("delay");
-    delay = parseInt(delayInput.value, 10) || 1000;
+    n = parseInt(arraySizeInput.value, 10) || 13;
 
     // generate random array
-    originalArray = generateRandomArray(arraySize);
+    originalArray = vsl.generateRandomArray(n);
     originalArray.sort(function(a, b) {return a - b});
-    displayArray(originalArray);
+    vsl.displayArray(originalArray, arrayContainer);
+
+    setVisible(0, n - 1);
 
     // enable start button
     startButton.removeAttribute("disabled");
 
     paused = false;
-    finished = false;
-}
-
-function displayArray(array) {
-    arrayContainer.innerHTML = ""; // Clear the container
-
-    array.forEach((value, index) => {
-      const valueDiv = document.createElement("div");
-      valueDiv.className = "value-label";
-      valueDiv.textContent = value;
-      valueDiv.style.color = blue;      
-
-      const bar = document.createElement("div");
-      bar.className = "array-bar";
-      bar.style.height = `${value * 5}px`;
-
-      const indexDiv = document.createElement("div");
-      indexDiv.className = "value-label";
-      indexDiv.textContent = index;
-
-      const container = document.createElement("div");
-      container.className = "bar-container";
-      container.appendChild(valueDiv);
-      container.appendChild(bar);
-      container.appendChild(indexDiv);
-
-      arrayContainer.appendChild(container);
-    });
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function displayBinarySearch(array) {
@@ -99,41 +54,48 @@ function displayBinarySearch(array) {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
+        valueDiv.style.color = vsl.blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
         bar.style.height = `${value * 5}px`;
 
-        if (flagArray[index] == 2) {
-            bar.style.backgroundColor = pink;
-            bar.style.borderColor = transparent;
-            valueDiv.style.color = pink;
-        } else if (index == left) {
-            bar.style.backgroundColor = blue;
-            bar.style.borderColor = transparent;
-            valueDiv.style.color = blue;
-        } else if (index == right) {
-            bar.style.backgroundColor = blue;
-            bar.style.borderColor = transparent;
-            valueDiv.style.color = blue;
-        } else if (index == mid) {
-            bar.style.backgroundColor = green;
-            bar.style.borderColor = transparent;
-            valueDiv.style.color = green;
-        } else if (flagArray[index] == 1) {
-            bar.style.backgroundColor = transparent;
-            bar.style.borderColor = blue;
-            valueDiv.style.color = blue;
-        } else if (flagArray[index] == 0) {
-            bar.style.backgroundColor = transparent;
-            bar.style.borderColor = grey;
-            valueDiv.style.color = grey;
-        }
-
         const indexDiv = document.createElement("div");
-        indexDiv.className = "value-label";
+        indexDiv.className = "index-label";
         indexDiv.textContent = index;
-        indexDiv.style.color = bar.style.backgroundColor;
+        indexDiv.style.color = valueDiv.style.color;
+
+        if (flagArray[index] == 2) {
+            valueDiv.style.color = vsl.pink;
+            bar.style.backgroundColor = valueDiv.style.color;
+            bar.style.borderColor = vsl.transparent;
+            indexDiv.style.color = valueDiv.style.color;
+        } else if (index == left) {
+            valueDiv.style.color = vsl.blue;
+            bar.style.backgroundColor = valueDiv.style.color;
+            bar.style.borderColor = vsl.transparent;
+            indexDiv.style.color = valueDiv.style.color;
+        } else if (index == right) {
+            valueDiv.style.color = vsl.blue;
+            bar.style.backgroundColor = valueDiv.style.color;
+            bar.style.borderColor = vsl.transparent;
+            indexDiv.style.color = valueDiv.style.color;
+        } else if (index == mid) {
+            valueDiv.style.color = vsl.green;
+            bar.style.backgroundColor = valueDiv.style.color;
+            bar.style.borderColor = vsl.transparent;
+            indexDiv.style.color = valueDiv.style.color;
+        } else if (flagArray[index] == 1) {
+            valueDiv.style.color = vsl.blue;
+            bar.style.backgroundColor = vsl.transparent;
+            bar.style.borderColor = valueDiv.style.color;
+            indexDiv.style.color = valueDiv.style.color;
+        } else if (flagArray[index] == 0) {
+            valueDiv.style.color = vsl.grey;
+            bar.style.backgroundColor = vsl.transparent;
+            bar.style.borderColor = valueDiv.style.color;
+            indexDiv.style.color = valueDiv.style.color;
+        }
 
         const container = document.createElement("div");
         container.className = "bar-container";
@@ -145,15 +107,19 @@ function displayBinarySearch(array) {
     });
 }
 
-function setFalse(begin, end) {
+function setInvisible(begin, end) {
     for (let i = begin; i < end + 1; ++i) {
         flagArray[i] = 0; // 0 means invisible, un-displayed
     }
 }
 
-async function binarySearch() {
-    const n = arraySize;
+function setVisible(begin, end) {
+    for (let i = begin; i < end + 1; ++i) {
+        flagArray[i] = 1; // 1 means visible, un-displayed
+    }
+}
 
+async function binarySearch() {
     left = 0;
     right = n - 1;
     
@@ -161,34 +127,26 @@ async function binarySearch() {
         mid = Math.floor((left + right) / 2);
         
         displayBinarySearch(originalArray);
-        await sleep(delay);
+        await vsl.sleep(delay);
 
         if (originalArray[mid] == k) {
             flagArray[mid] = 2; // 2 means found
             displayBinarySearch(originalArray);
-            await sleep(delay);
+            await vsl.sleep(delay);
             break;
         }
-        else if (originalArray[mid] < k) {
-            setFalse(left, mid);
-            displayBinarySearch(originalArray);
-            await sleep(delay);
-            
+        
+        if (originalArray[mid] < k) {
+            setInvisible(left, mid);           
             left = mid + 1;
-                        
-            displayBinarySearch(originalArray);
-            await sleep(delay);
         }
         else {
-            setFalse(mid, right);
-            displayBinarySearch(originalArray);
-            await sleep(delay);
-
+            setInvisible(mid, right);
             right = mid - 1;
-
-            displayBinarySearch(originalArray);
-            await sleep(delay);
         }
+
+        displayBinarySearch(originalArray);
+        await vsl.sleep(delay);
 
         // Check the pause state
         while (paused) {
@@ -197,12 +155,17 @@ async function binarySearch() {
     }
 
     initButton.removeAttribute("disabled");
+    startButton.removeAttribute("disabled");
 }
 
 async function startSearching() {
     // get k to find
     const keyInput = document.getElementById("key");
     k = parseInt(keyInput.value, 10) || 37;
+
+    // get delay input
+    const delayInput = document.getElementById("delay");
+    delay = parseInt(delayInput.value, 10) || 1000;
 
     // Disable the start button and enable the pause button initially
     initButton.setAttribute("disabled", "true");
@@ -212,13 +175,14 @@ async function startSearching() {
     await binarySearch();
 }
 
-// Function to toggle pause and continue
+// Pause button
 function togglePause() {
     paused = !paused; // Toggle the paused state
-    const pauseButton = document.getElementById("pauseButton");
+    // const pauseButton = document.getElementById("pauseButton");
     pauseButton.textContent = paused ? "Resume" : "Pause";
 }
 
+// Reset button
 function reloadPage() {
-    window.location.reload();
+    window.location.reload();   
 }

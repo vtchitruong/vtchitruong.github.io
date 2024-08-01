@@ -1,87 +1,42 @@
-const arrayContainer = document.getElementById("array-container");
+import * as vsl from "./visualize.js";
 
-let arraySize = 13;
+let n = 13; // arraySize
+let delay = 1000;
+
 let originalArray = []; // Declare a global array variable
 
 let k = 37;
-
-let delay = 1000;
-
-// This variable to keep track of the pause state
+// pause state
 let paused = false;
 
-const yellow = "#ffcc3b";
-const blue = "#0099cc";
-const orange = "#ff8433";
-const pink = "#ff748c";
-const green = "#00e673";
-const transparent = "transparent";
+const arrayContainer = document.getElementById("array-container");
 
+const initButton = document.getElementById("initButton");
 const startButton = document.getElementById("startButton");
 const pauseButton = document.getElementById("pauseButton");
-const stopButton = document.getElementById("stopButton");
 
-function generateRandomArray(size) {
-    const array = [];
+window.init = init;
+window.startSearching = startSearching;
+window.displayLinearSearch = displayLinearSearch;
+window.linearSearch = linearSearch;
+window.togglePause = togglePause;
+window.reloadPage = reloadPage;
 
-    for (let i = 0; i < size; i++) {
-        array.push(Math.floor(Math.random() * 45) + 10);
-    }
-
-    return array;
-}
-
-// initButton
+// New button
 function init() {
     // get array size input
     const arraySizeInput = document.getElementById("array-size");
-    arraySize = parseInt(arraySizeInput.value, 10) || 13;
-
-    // get delay input
-    const delayInput = document.getElementById("delay");
-    delay = parseInt(delayInput.value, 10) || 1000;
+    n = parseInt(arraySizeInput.value, 10) || 13;
 
     // generate random array
-    originalArray = generateRandomArray(arraySize);
-    // originalArray.sort(function(a, b) {return a - b});
-    displayArray(originalArray);
+    originalArray = vsl.generateRandomArray(n);
+    originalArray.sort(function(a, b) {return a - b});
+    vsl.displayArray(originalArray, arrayContainer);
 
     // enable start button
     startButton.removeAttribute("disabled");
 
     paused = false;
-    finished = false;
-}
-
-function displayArray(array) {
-    arrayContainer.innerHTML = ""; // Clear the container
-
-    array.forEach((value, index) => {
-      const valueDiv = document.createElement("div");
-      valueDiv.className = "value-label";
-      valueDiv.textContent = value;
-      valueDiv.style.color = blue;
-
-      const bar = document.createElement("div");
-      bar.className = "array-bar";
-      bar.style.height = `${value * 5}px`;
-
-      const indexDiv = document.createElement("div");
-      indexDiv.className = "value-label";
-      indexDiv.textContent = index;
-
-      const container = document.createElement("div");
-      container.className = "bar-container";
-      container.appendChild(valueDiv);
-      container.appendChild(bar);
-      container.appendChild(indexDiv);
-
-      arrayContainer.appendChild(container);
-    });
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function displayLinearSearch(array, currentIndex, found) {
@@ -91,31 +46,28 @@ function displayLinearSearch(array, currentIndex, found) {
         const valueDiv = document.createElement("div");
         valueDiv.className = "value-label";
         valueDiv.textContent = value;
-        valueDiv.style.color = blue;
+        valueDiv.style.color = vsl.blue;
 
         const bar = document.createElement("div");
         bar.className = "array-bar";
         bar.style.height = `${value * 5}px`;
-
-        if (index == found) {
-            bar.style.backgroundColor = pink;
-            bar.style.borderColor = transparent;
-            valueDiv.style.color = pink;
-        } else if (index == currentIndex) {
-            bar.style.backgroundColor = blue;
-            bar.style.borderColor = transparent;
-            valueDiv.style.color = blue;
-        }
-        else {
-            bar.style.backgroundColor = transparent;
-            bar.style.borderColor = blue;
-            valueDiv.style.color = blue;
-        }
-
+        
         const indexDiv = document.createElement("div");
         indexDiv.className = "value-label";
         indexDiv.textContent = index;
-        indexDiv.style.color = bar.style.backgroundColor;
+        indexDiv.style.color = valueDiv.style.color;
+
+        if (index == found) {
+            valueDiv.style.color = vsl.pink;
+            bar.style.backgroundColor = valueDiv.style.color;
+            bar.style.borderColor = vsl.transparent;
+            indexDiv.style.color = valueDiv.style.color;
+        } else if (index == currentIndex) {
+            valueDiv.style.color = vsl.blue;
+            bar.style.backgroundColor = valueDiv.style.color;
+            bar.style.borderColor = vsl.transparent;
+            indexDiv.style.color = valueDiv.style.color;
+        }
 
         const container = document.createElement("div");
         container.className = "bar-container";
@@ -128,39 +80,37 @@ function displayLinearSearch(array, currentIndex, found) {
 }
 
 async function linearSearch() {
-    const n = arraySize;
     let found = -1;
-    for (let i = 0; i < arraySize; ++i) {
+    for (let i = 0; i < n; ++i) {
         displayLinearSearch(originalArray, i, found);
-        await sleep(delay);    
+        await vsl.sleep(delay);    
         
         if (originalArray[i] == k) {
             found = i;
             break;            
         }
-    }   
-   
-    if (found == -1) {
-        displayLinearSearch(originalArray, -1, found);
-        await sleep(delay);        
-    }
-    else {
-        displayLinearSearch(originalArray, -1, found);
-        await sleep(delay);       
+
+        // Check the pause state
+        while (paused) {
+            await new Promise(resolve => setTimeout(resolve, 100)); // Check every 100ms
+        }
     }
 
-    // Check the pause state
-    while (paused) {
-        await new Promise(resolve => setTimeout(resolve, 100)); // Check every 100ms
-    }
+    displayLinearSearch(originalArray, -1, found);
+    await vsl.sleep(delay);
 
     initButton.removeAttribute("disabled");
+    startButton.removeAttribute("disabled");
 }
 
 async function startSearching() {
     // get k to find
     const keyInput = document.getElementById("key");
     k = parseInt(keyInput.value, 10) || 37;
+
+    // get delay input
+    const delayInput = document.getElementById("delay");
+    delay = parseInt(delayInput.value, 10) || 1000;
 
     // Disable the start button and enable the pause button initially
     initButton.setAttribute("disabled", "true");
@@ -170,13 +120,14 @@ async function startSearching() {
     await linearSearch();
 }
 
-// Function to toggle pause and continue
+// Pause button
 function togglePause() {
     paused = !paused; // Toggle the paused state
-    const pauseButton = document.getElementById("pauseButton");
+    // const pauseButton = document.getElementById("pauseButton");
     pauseButton.textContent = paused ? "Resume" : "Pause";
 }
 
+// Reset button
 function reloadPage() {
-    window.location.reload();
+    window.location.reload();   
 }
