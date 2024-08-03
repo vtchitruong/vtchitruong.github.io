@@ -48,7 +48,7 @@ Lặp lại nhiều lần hai thao tác này cho đến khi tìm thấy `k` ho�
 ### Trực quan hóa thuật toán
 
 <div>
-    <iframe width="100%" height="680px" frameBorder=0 src="../visualize/binary-search.html"></iframe>
+    <iframe width="100%" height="720px" frameBorder=0 src="../visualize/binary-search.html"></iframe>
 </div>
 
 ### Chương trình minh họa

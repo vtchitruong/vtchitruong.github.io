@@ -8,6 +8,8 @@
 
 Tương tự [bài học trước](../topic-F2/sorting-algorithm-selection-sort.md/#bai-toan-va-thuat-toan-sap-xep){:target="_blank"}, ta chỉ xét bài toán đơn giản là sắp xếp mảng một chiều các số nguyên theo thứ tự **tăng dần**.
 
+Về thuật toán, bài học này đề cập thuật toán sắp xếp nổi bọt.
+
 ## Thuật toán sắp xếp nổi bọt
 
 ### Ý tưởng

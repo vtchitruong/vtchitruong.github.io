@@ -2,38 +2,52 @@
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày những khái niệm liên quan đến mảng hai chiều.
+    Bài này trình bày những khái niệm về mảng hai chiều.
 
 ## Đặt vấn đề
 
-Làm thế nào xử lý khi dữ liệu không phải là một dãy, mà là một bảng?  
+Làm thế nào xử lý khi dữ liệu không phải là một dãy, mà là một bảng số liệu? 
 
-## Khái niệm
+## Khái quát về mảng
 
-**Mảng hai chiều** dùng để lưu trữ và xử lý dữ liệu theo dạng **lưới**, **bảng** hoặc **ma trận**, gồm nhiều hàng và nhiều cột. Chẳng hạn, bàn cờ vua, bảng số Sudoku, bảng tính Excel là hình ảnh của mảng hai chiều.  
+Tương tự [bài học trước](../topic-F2/array-1d.md/#khai-quat-ve-mang){:target="_blank"}, **mảng** là cấu trúc dữ liệu dùng để lưu trữ và xử lý tập hợp các phần tử.
+
+Bài học này đề cập **mảng hai chiều**.
+
+## Mảng hai chiều
+
+**Mảng hai chiều** dùng để lưu trữ và xử lý dữ liệu theo dạng **lưới**, dạng **bảng** hoặc **ma trận**, gồm nhiều hàng và nhiều cột.
+
+Ví dụ:  
+Một số hình ảnh của mảng hai chiều là:
+
+- Bàn cờ vua
+- Bảng số Sudoku
+- Bảng tính Excel
 
 Trong mảng hai chiều, số phần tử của mỗi hàng ứng với số cột của mảng. Nói cách khác, các hàng đều có số phần tử bằng nhau, hoặc các hàng đều có số cột như nhau.  
 
 <figure markdown>
-  ![Image title](array/array-2d.svg){loading=lazy}
-  <figcaption>Hình 1. Minh họa mảng hai chiều B</figcaption>
+  ![Minh họa mảng hai chiều B](array/array-2d.svg){loading=lazy}
+  <figcaption>Minh họa mảng hai chiều B</figcaption>
 </figure>
 
-Mảng hai chiều có thể được xem là **mảng của các mảng**, nghĩa là, mảng chứa các phần tử mà mỗi phần tử là mảng một chiều.  
+Mảng hai chiều có thể được xem là **mảng của các mảng**, nghĩa là, mỗi phần tử của mảng hai chiều là mảng một chiều.  
 
-## Khởi tạo  
+### Khởi tạo  
 
 Tương tự mảng một chiều, kiểu `list` của Python cho phép khởi tạo bằng cách liệt kê phần tử hoặc [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.  
 
-Để liệt kê, ta sử dụng các cặp ngoặc vuông lồng nhau: `[[ ], [ ], ... ]`
+Khi liệt kê, ta sử dụng các cặp ngoặc vuông lồng nhau: `[[ ], [ ], ... ]`
 
 Ví dụ 1:  
 Khởi tạo mảng hai chiều bằng cách liệt kê phần tử.
 
 ``` py linenums="1"
-# Mảng B gồm 3 hàng và 4 cột
-B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
-print(B)
+if __name__ == '__main__':
+    # Mảng B gồm 3 hàng và 4 cột
+    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+    print(B)
 ```
 
 Output:
@@ -42,14 +56,17 @@ Output:
 ```
 
 Ví dụ 2:  
-Khởi tạo mảng hai chiều bằng cú pháp [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.
+Khởi tạo mảng một chiều bằng toán tử `*`.
 
 ``` py linenums="1"
-# Mảng gồm 3 hàng và 4 cột chứa toàn các phần tử 0
-rows = 3
-cols = 4
-zero_array = [[0 for c in range(cols)] for r in range(rows)]
-print(zero_array)
+if __name__ == '__main__':
+    # Khai báo số hàng và số cột
+    rows = 3
+    cols = 4
+
+    # Mảng zero_array gồm các phần tử có giá trị 0
+    zero_array = [[0] * cols] * rows
+    print(zero_array)
 ```
 
 Output:
@@ -57,19 +74,42 @@ Output:
 [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 ```
 
-## Truy xuất phần tử  
-
-Mỗi phần tử trong mảng hai chiều được truy xuất bằng hai chỉ số, gọi là **chỉ số hàng** và **chỉ số cột**.  
-
-Chỉ số hàng và cột được đặt trong hai cặp ngoặc vuông `[][]`, chỉ số hàng nằm trước, chỉ số cột nằm sau.
-
-Ví dụ 3:
+Ví dụ 3:  
+Khởi tạo mảng hai chiều bằng cú pháp [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.
 
 ``` py linenums="1"
-B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+if __name__ == '__main__':
+    # Khai báo số hàng và số cột
+    rows = 3
+    cols = 4
 
-print(B[0][0])  # In ra phần tử đầu tiên
-print(B[2][3])  # In ra phần tử cuối cùng
+    # Mảng zero_array gồm các phần tử có giá trị 0
+    one_array = [[1 for c in range(cols)] for r in range(rows)]
+    print(one_array)
+```
+
+Output:
+``` pycon
+[[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
+```
+
+### Truy xuất phần tử  
+
+Mỗi phần tử của mảng hai chiều được truy xuất bằng hai chỉ số, gọi là **chỉ số hàng** và **chỉ số cột**, đặt trong hai cặp ngoặc vuông `[][]`, chỉ số hàng nằm trước, chỉ số cột nằm sau.
+
+Ví dụ 4:  
+In ra màn hình giá trị của một vài phần tử.
+
+``` py linenums="1"
+if __name__ == '__main__':
+    # Khởi tạo mảng B
+    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+
+    # In ra phần tử đầu tiên
+    print(B[0][0])
+
+    # In ra phần tử cuối cùng
+    print(B[2][3])
 ```
 
 Output:
@@ -96,13 +136,19 @@ Output:
 
         `B[1][2]` là phần tử ở hàng giữa, có chỉ số cột là 2. Như vậy, kết quả in ra là 8.
 
-Ví dụ 4:  
+Ví dụ 5:  
 In ra số hàng và số cột của mảng hai chiều.
 
 ``` py linenums="1"
-B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
-print(len(B))     # In số hàng
-print(len(B[0]))  # In số cột
+if __name__ == '__main__':
+    # Khởi tạo mảng B
+    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+    
+    # In ra số hàng của mảng B
+    print(len(B))
+
+    # In ra số cột của mảng B
+    print(len(B[0]))
 ```
 
 Output:
@@ -130,24 +176,33 @@ Output:
         `B[1]` là hàng có chỉ số 1 của mảng B. Vì các hàng đều có số cột bằng nhau, nên lệnh `len(B[1])` là tương đương với `len(B[0])`.  
         Như vậy, kết quả in ra là 4.
 
-## Duyệt mảng  
+### Duyệt mảng  
 
-Khi duyệt mảng hai chiều, ta thường sử dụng hai vòng lặp lồng nhau:  
-- *Vòng lặp ngoài* dùng để duyệt các hàng.  
-- *Vòng lặp trong* dùng để duyệt các cột, tức các phần tử của hàng đang duyệt.  
+Khi duyệt mảng hai chiều, ta thường sử dụng hai vòng lặp lồng nhau:
 
-Ví dụ 5:  
+- *Vòng lặp ngoài* dùng để duyệt các hàng.
+- *Vòng lặp trong* dùng để duyệt các cột, tức các phần tử của hàng đang duyệt.
+
+Ví dụ 6:  
 In mảng hai chiều theo dạng hàng và cột.
 
 ``` py linenums="1"
-B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+if __name__ == '__main__':
+    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
 
-rows = 3
-cols = 4
-for r in range(rows):            # Duyệt từ hàng đầu đến hàng cuối
-    for c in range(cols):        # Ứng với mỗi hàng r, duyệt từ cột đầu đến cột cuối
-        print(B[r][c], end=' ')  # In ra phần tử nằm ở hàng r và cột c, kết thúc là khoảng trắng
-    print()  # Xuống dòng sau mỗi hàng
+    # Khai báo số hàng và số cột
+    rows = 3
+    cols = 4
+
+    # Duyệt từ hàng đầu đến hàng cuối. Ứng với mỗi hàng r:
+    # Duyệt từ cột đầu đến cột cuối
+    for r in range(rows):        
+        for c in range(cols):       
+            # In ra phần tử nằm ở hàng r và cột c, kèm theo khoảng trắng
+            print(B[r][c], end=' ')
+        
+        # Xuống dòng sau khi đã in hết các cột
+        print()
 ```
 
 Output:
@@ -182,7 +237,7 @@ Output:
 ## Sơ đồ tóm tắt nội dung
 
 {!grade-11/topic-F2/array-2d.mm.md!}
-*Hình 2. Sơ đồ tóm tắt mảng hai chiều*
+*Sơ đồ tóm tắt mảng hai chiều*
 
 ## Google Colab
 

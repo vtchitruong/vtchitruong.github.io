@@ -30,7 +30,7 @@ Có nhiều thuật toán sắp xếp khác nhau, hầu hết trong số đó th
 
 Mỗi thuật toán có ưu điểm và hạn chế riêng. Tuỳ vào loại dữ liệu và yêu cầu, ta sẽ chọn thuật toán phù hợp.
 
-Bài viết này đề cập thuật toán sắp xếp chọn.
+Bài học này đề cập thuật toán sắp xếp chọn.
 
 ??? info "Lợi ích và ứng dụng của thuật toán sắp xếp"
         

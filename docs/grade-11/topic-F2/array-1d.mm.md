@@ -1,39 +1,47 @@
 ---
 markmap:
-  colorFreezeLevel: 2
+  colorFreezeLevel: 3
   maxWidth: 300
 ---
 
-# Mảng một chiều
+# Mảng
 
-## Là cấu trúc dữ liệu
+## Khái quát
 
-### Gồm các phần tử
+- Là cấu trúc dữ liệu dùng để xử lý tập hợp nhiều phần tử.
+- Các phần tử nằm liên tiếp nhau trên bộ nhớ.
+- **Kích thước**:
+  - Là số phần tử của mảng.
+  - Là hữu hạn.
+- Mỗi phần tử:
+  - **Giá trị**
+    - Các phần tử đều cùng kiểu dữ liệu.
+  - **Chỉ số**
+    - Dùng để truy xuất phần tử.
+- Trong Python, dùng `list` để biểu diễn mảng.
 
-- Số lượng hữu hạn
-- Nằm liên tiếp nhau trên bộ nhớ
-- Cùng kiểu dữ liệu
+## Phân loại
 
-## Mảng trong Python
+### Mảng một chiều
 
-- Dùng kiểu `list` để biểu diễn mảng
+- Dùng để xử lý:
+  - Một dãy số
+  - Một hàng hoặc một cột trong bảng.
+- Chỉ số: được đánh từ **0** hoặc từ **1**.
 
-## Khai báo
+#### Khởi tạo
 
 - Liệt kê phần tử
 - Toán tử `*`
 - List comprehension
 
-## Truy xuất phần tử
+#### Truy xuất phần tử
 
-### Thông qua chỉ số
+- `a[0]` là phần tử đầu tiên.
+- `a[n - 2]` là phần tử áp cuối.
 
-- Phần tử đầu được đánh chỉ số là `0`
-- Phần tử cuối có chỉ số là `len(n) - 1`
-- Ví dụ:
-    - `a[0]` là phần tử đầu tiên
-    - `a[n - 2]` là phần tử áp cuối.
-
-## Duyệt mảng
+#### Duyệt mảng
 
 - Dùng vòng lặp
+
+### Mảng hai chiều
