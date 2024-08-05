@@ -20,7 +20,7 @@ Bảng 1. Những điểm khác nhau cơ bản giữa mảng tĩnh và mảng đ
 
 Bài viết này chỉ đề cập đến mảng tĩnh (static array).
 
-## Một số thao tác trên mảng một chiều
+## Một số thao tác xử lý
 
 ### Khai báo biến
 
@@ -91,7 +91,7 @@ int main()
 
 Output:
 
-```
+```pycon
 Initial array:
 1 7 4 0 9 4 8 8 2 4
 ```
@@ -133,7 +133,7 @@ float average(int a[], int n)
 
 Hàm `append()` dùng để thêm một phần tử vào cuối mảng.
 
-Hàm này kiểm tra xem số phần tử thực dùng, là `num`, có vượt quá sức chứa tối đa của mảng hay chưa. Nếu chưa, nghĩa là vẫn còn chỗ để thêm phần tử mới, thì thêm bằng cách: gán giá trị mới cho phần tử tại vị trí `num` và tăng `num` thêm một đơn vị. 
+Hàm này kiểm tra xem số phần tử thực dùng, là `num`, có vượt quá sức chứa tối đa của mảng hay chưa. Nếu chưa, nghĩa là vẫn còn chỗ để thêm phần tử mới, thì thêm bằng cách: gán giá trị mới cho phần tử tại vị trí `num` và tăng `num` thêm một đơn vị.
 
 ``` c++ linenums="1"
 void append(int value)
@@ -242,7 +242,7 @@ void removeLast()
 
 Hàm `removeFirst()` dùng để xoá phần tử có chỉ số 0 ở đầu mảng.
 
-Ý tưởng chính là dịch chuyển từng phần tử trong phạm vi [`1..num - 1`] lên trước một vị trí nhằm *ghi đè* phần tử đầu tiên.
+Ý tưởng chính là dịch chuyển từng phần tử trong phạm vi `[1..num - 1]` lên trước một vị trí nhằm *ghi đè* phần tử đầu tiên.
 
 ``` c++ linenums="1"
 void removeFirst()

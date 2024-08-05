@@ -172,13 +172,13 @@ def print_linked_list(l, message):
 
 Trong chương trình chính, ta gọi hàm vừa viết trên.  
 
-``` py linenums="79"
+```py linenums="79"
     # Gọi hàm print_linked_list để in ra danh sách liên kết
     print_linked_list(L, 'Danh sách liên kết ban đầu:')
 ```
 
 Output:
-``` pycon
+```pycon
 Danh sách liên kết ban đầu:
 o -> l -> d -> 
 ```
@@ -197,11 +197,11 @@ Duyệt danh sách liên kết bằng hai biến `previous` và `current` cho đ
 
 - **Bước 1.1:** Cho `current` trỏ đến node đầu tiên.
 - **Bước 1.2:** Dùng vòng lặp để tìm node có dữ liệu `key`:
-
+  
     - Nếu tìm thấy `key` thì ngắt vòng lặp. Chuyển sang bước 2.
     - Ngược lại, chưa tìm thấy, thì cho `previous` thay thế `current` và cho `current` di chuyển đến node tiếp theo.
 
-    Bước 1.2 mang ý nghĩa rằng, biến `previous` luôn bước *nối gót* theo biến `current`.
+  Bước 1.2 mang ý nghĩa rằng, biến `previous` luôn bước *nối gót* theo biến `current`.
 
 <figure markdown>
 ![Bước 1 của thao tác chèn](linked-list/insert-step-1.svg){loading=lazy}
@@ -283,11 +283,10 @@ Duyệt danh sách liên kết bằng hai biến `previous` và `current` cho đ
 
 - **Bước 1.1:** Cho `current` trỏ đến node đầu tiên.
 - **Bước 1.2:** Dùng vòng lặp để tìm node có dữ liệu `key`:
-
     - Nếu tìm thấy `key` thì ngắt vòng lặp. Chuyển sang bước 2.
     - Ngược lại, chưa tìm thấy, thì cho `previous` thay thế `current` và cho `current` di chuyển đến node tiếp theo.
 
-    Tương tự thao tác chèn, tại bước 1.2 này, ta cũng cho `previous` di chuyển *nối gót* `current`. 
+    Tương tự thao tác chèn, tại bước 1.2 này, ta cũng cho `previous` di chuyển *nối gót* `current`.
 
 <figure markdown>
 ![Bước 1 của thao tác xoá](linked-list/remove-step-1.svg){loading=lazy}

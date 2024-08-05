@@ -1,122 +1,9 @@
----
-categories:
-    - CPP to see sharply
-    - Moron in Python
-    - Set up & Code down
-authors: [mrschool]
-date: 2023-07-28
----
+# Bài tập về mảng hai chiều
 
-# Một vài bài tập về mảng hai chiều
-
-<div class="result" markdown>
-![Image title](./thumbnails/array-1d-2d.svg){ align=left width=360 }
+![Chuyển đổi qua lại giữa mảng một chiều và mảng hai chiều](./array-1d-2d.svg){ align=left width=360 }
 Đây là những bài tập dùng để luyện ngón đối với mảng hai chiều.
 
 Các chương trình C++ trong bài này sử dụng kiểu `array` hoặc con trỏ `int**`, còn các chương trình Python sử dụng kiểu `list`, thế nên cách viết có thể khác nhau. Nếu muốn viết gần giống với Python, bạn có thể dụng kiểu `vector` của C++.
-</div>
-
-<br>
-
-<!-- more -->
-
-<br>
-
-## Khởi tạo ma trận vuông
-
-### Yêu cầu  
-
-1. Khởi tạo ma trận vuông gồm các phần tử đều là 0.
-2. Gán các phần tử nằm trên đường chéo chính là 1.
-3. Gán các phần tử nằm trong tam giác dưới đường chéo chính là 2.
-
-### Input
-
-n = 8 là kích thước của ma trận vuông.  
-
-### Output
-
-``` pycon
-1 0 0 0 0 0 0 0
-2 1 0 0 0 0 0 0
-2 2 1 0 0 0 0 0
-2 2 2 1 0 0 0 0
-2 2 2 2 1 0 0 0
-2 2 2 2 2 1 0 0
-2 2 2 2 2 2 1 0
-2 2 2 2 2 2 2 1
-```
-
-### Cách giải đề xuất
-
-Chương trình C++ dưới đây sử dụng kiểu `array`
-
-``` c++
-int a[MAX][MAX];
-```
-
-và thực hiện theo hướng gán `0` trước cho mọi phần tử, sau đó mới gán `1` và `2` vào đường chéo chính và tam giác dưới.
-
-1. Khởi tạo ma trận vuông gồm các phần tử đều là `0`.
-
-    ``` c++ linenums="1"
-    void Init(int size)
-    {
-        for (int r = 0; r < size; r++)
-        {
-            for (int c = 0; c < size; c++)
-            {
-                a[r][c] = 0;
-            }
-        }
-    }
-    ```
-
-2. Gán các phần tử nằm trên đường chéo chính là `1`.
-
-    ``` c++ linenums="1"
-    void FillMainDiagonal(int size, int value)
-    {
-        for (int i = 0; i < size; i++)
-        {
-            a[i][i] = value;
-        }
-    }
-    ```
-
-3. Gán các phần tử nằm trong tam giác dưới đường chéo chính là `2`.  
-
-    ``` c++ linenums="1"
-    void FillLowerTriangle(int size, int value)
-    {
-        for (int r = 0; r < size; r++)
-        {
-            for (int c = 0; c < r; c++)
-            {
-                a[r][c] = value;
-            }
-        }
-    }
-    ```
-
-Khác với chương trình C++ trên, chương trình Python không khởi tạo ma trận toàn `0`, mà thực hiện *gắn* các phần tử `0`, `1`, `2` và `3` vào đúng vị trí của ma trận.
-
-``` py linenums="1"
-def init_matrix(size, value_main_diagonal, value_lower, value_upper):
-    matrix = []
-    
-    for r in range(size):
-        # Các ô thuộc tam giác dưới
-        matrix.append([value_lower for c in range(r)])
-        
-        # Các ô nằm trên đường chéo chính 
-        matrix[r].append(value_main_diagonal)
-        
-        # Các ô thuộc tam giác trên
-        matrix[r].extend([value_upper for c in range(r + 1, size)])
-
-    return matrix
-```
 
 ## Bàn cờ vua
 
@@ -146,8 +33,7 @@ n = 8 là kích thước của bàn cờ.
 Vì trong bàn cờ, các ô 0 và 1 xen kẽ nhau theo chiều ngang lẫn chiều dọc, nên ta chỉ cần lấy tổng của chỉ số hàng và chỉ số cột của mỗi ô, chia 2 lấy dư, sẽ nhận được giá trị 0 hoặc 1 để gán cho ô đó.
 
 === "C++"
-    ``` c++ linenums="1"
-
+    ```c++ linenums="1"
     void FillChessBoard(int size)
     {
         for (int r = 0; r < size; r++)
@@ -161,7 +47,6 @@ Vì trong bàn cờ, các ô 0 và 1 xen kẽ nhau theo chiều ngang lẫn chi�
     ```
 === "Python"
     ``` py linenums="1"
-
     def fill_chess_board(size):
         board = [[(r + c) % 2 for c in range(size)] for r in range(size)]
         return board
@@ -352,7 +237,6 @@ Viết chương trình tạo ma trận chuyển vị của ma trận đã cho, n
 
 === "C++"
     ``` c++ linenums="1"
-
     int** Transpose(int rows, int cols)
     {
         int newRows = cols;
@@ -377,8 +261,8 @@ Viết chương trình tạo ma trận chuyển vị của ma trận đã cho, n
     }
     ```
 === "Python"
-    ``` py linenums="1"
-    
+    ```py linenums="1"
+   
     def transpose_matrix(m):
         rows = len(m)
         cols = len(m[0])
@@ -421,8 +305,8 @@ Mỗi hàng của tam giác Pascal có đặc điểm sau:
 - Mỗi phần tử ở giữa là tổng của hai phần tử thuộc hàng liền bên trên: một nằm ở cùng cột và một ở cột liền trước. Cụ thể: `a[r][c] =  a[r - 1][c] +  a[r  -  1][c  -  1] `
 
 === "C++"
-    ``` c++ linenums="1"
-
+    ```c++ linenums="1"
+    
     void FillPascalTriangle(int size)
     {
         // Khởi tạo hàng đầu tiên của tam giác Pascal
@@ -685,6 +569,6 @@ Vòng lặp dừng khi số điền vào bằng với số lượng phần tử 
         return M
     ```
 
-## Toàn bộ chương trình¶
+## Mã nguồn
 
 Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/2DArray){:target="_blank"}.

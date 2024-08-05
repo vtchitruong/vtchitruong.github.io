@@ -61,6 +61,7 @@ On the Employee Bonuses worksheet, disable the headings on the Rates table.
     2. On the TABLE TOOLS DESIGN tab, in the Table Styles Options group, click the Header Row box to clear it and disable the option.
 
 ## Task 5
+
 In cell F4 on the Parts worksheet, insert a line that graphs the trend of sales from Jan through Mar.
 
 ???+ Tip "Hint"

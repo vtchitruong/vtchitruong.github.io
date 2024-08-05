@@ -347,9 +347,11 @@ nav:
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:
-      - Mảng một chiều tĩnh: advanced/1d-array/static-array.md
+      - advanced/array/static-1d-array.md
+      - advanced/array/static-2d-array.md
+      - advanced/array/excercises-of-2d-array.md
     - Kiểu dữ liệu cấu trúc:
-      - Phân số: advanced/struct/fraction.md
+      - advanced/struct/fraction.md
     - Kỹ thuật cơ bản:
       - Kiểm tra số nguyên tố: advanced/basic-techniques/is-prime.md
       - Đếm và tần số: advanced/basic-techniques/count-frequency.md
