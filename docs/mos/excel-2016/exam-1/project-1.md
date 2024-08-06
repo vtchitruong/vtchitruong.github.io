@@ -1,6 +1,6 @@
 # Practice Exam 1 - Project 1
 
-## SCUBA
+## Scuba
 
 You own a small SCUBA diving concession in the Caribbean. You need to update your Inventory workbook to include new items.
 

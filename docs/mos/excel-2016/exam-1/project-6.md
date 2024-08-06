@@ -10,9 +10,9 @@ Enable the Total Row for the table located on the Qtr 1 worksheet.
 
 ???+ Tip "Hint"
 
-    1. On the Qtr 1 worksheet, click on any cell in the table to select the table.
+    1. On the **Qtr 1** worksheet, click on any cell in the table to select the table.
 
-    2. On the TABLE TOOLS DESIGN tab, in the Table Style Options group, click the Total Row to enable it.
+    2. On the **Table Tools Design** tab, in the **Table Style Options** group, click the **Total Row** to enable it.
 
 ## Task 2
 
@@ -20,15 +20,16 @@ On the Qtr 1 worksheet, in the Maximum row, insert a formula in column B that re
 
 ???+ Tip "Hint"
 
-    1. On the Qtr 1 worksheet, select the cell in the Maximum row, column B. (This will be B16 if you have not done Task 1 and B17 if you have.)
+    1. On the **Qtr 1** worksheet, select the cell in the **Maximum** row, column **B**. (This will be B16 if you have not done Task 1 and B17 if you have.)
 
     2. Click the **Formulas** tab.
 
-    3. In the Function Library group, click the AutoSum down-arrow and select MAX.
+    3. In the **Function Library** group, click the **AutoSum** down-arrow and select **MAX**.
 
-    4. Above the worksheet, in the Formula Bar, adjust the selected cell range to include only cells B10:B14.
+    4. Above the worksheet, in the **Formula Bar**, adjust the selected cell range to include only cells **B10:B14**.
 
     5. Press the Enter key to accept the formula and calculate the results.
+
     (Hint: the result displayed should be 632.00)
 
 ## Task 3
@@ -37,11 +38,11 @@ On the Qtr 1 worksheet, use the data contained only in the Trail, Jan, Feb and M
 
 ???+ Tip "Hint"
 
-    1. On the Qtr 1 worksheet, select cell range A9:D14.
+    1. On the **Qtr 1** worksheet, select cell range **A9:D14**.
 
     2. Click the **Insert** tab.
 
-    3. In the Charts group, click the Insert Column Chart icon and select 3-D Clustered Column.
+    3. In the **Charts** group, click the **Insert Column Chart** icon and select **3-D Clustered Column**.
 
     4. Click-drag the new chart and position it to the right of the table.
 
@@ -51,16 +52,18 @@ On the Qtr 2 worksheet, create a table from cell range A9:E14 by applying Table 
 
 ???+ Tip "Hint"
 
-    1. On the Qtr 2 worksheet, select cell range A9:E14.
+    1. On the **Qtr 2** worksheet, select cell range **A9:E14**.
 
-    2. On the **Home** tab, in the Styles group, click Format as Table to open the gallery.
+    2. On the **Home** tab, in the **Styles** group, click **Format as Table** to open the gallery.
 
-    3. Under the Medium section, click Table Style Medium 18.
+    3. Under the **Medium** section, click **Table Style Medium 18**.
 
-    4. In the Format As Table pop-up window, do the following:
+    4. In the **Format As Table** pop-up window, do the following:
     
-        a. Confirm the data field contains =$A$9:$E$14.
-        b. Confirm the My table has headers box is enabled.
+        a. Confirm the data field contains **=\$A\$9:\$E\$14**.
+
+        b. Confirm the **My table has headers** box is enabled.
+
         c. Click **OK**.
 
 ## Task 5
@@ -68,10 +71,8 @@ On the Qtr 2 worksheet, create a table from cell range A9:E14 by applying Table 
 Apply Style 3 to the pie chart on the Qtr 2 worksheet.
 ???+ Tip "Hint"
 
-    1. On the Qtr 2 worksheet, click anywhere on the chart to select it.
+    1. On the **Qtr 2** worksheet, click anywhere on the chart to select it.
 
-    2. On the **Chart Tools Design** tab, in the Chart Styles group, click the More drop-down arrow to open the Chart Styles gallery.
+    2. On the **Chart Tools Design** tab, in the **Chart Styles** group, click the **More** drop-down arrow to open the **Chart Styles** gallery.
 
-    3. Select Style 3.
-
-
+    3. Select **Style 3**.
