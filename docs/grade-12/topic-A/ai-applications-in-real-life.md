@@ -177,33 +177,33 @@ AI mang lại nhiều lợi ích nhưng cùng với đó là những mối nguy 
 
 ### Việc làm
 
-    - **Thất nghiệp và thay thế lao động**: AI có năng lực tự động hóa, nhất là trong những công việc lặp đi lặp lại và không đòi hỏi kỹ năng cao. Điều này có thể dẫn đến mất việc làm ở quy mô lớn.
-    
-    - **Chênh lệch kỹ năng**: Sự phát triển của AI tạo ra nhu cầu mới về các kỹ năng cao cấp, đồng thời làm gia tăng khoảng cách kỹ năng giữa những người có trình độ công nghệ cao và những người không có kỹ năng này.
+- **Thất nghiệp và thay thế lao động**: AI có năng lực tự động hóa, nhất là trong những công việc lặp đi lặp lại và không đòi hỏi kỹ năng cao. Điều này có thể dẫn đến mất việc làm ở quy mô lớn.
+
+- **Chênh lệch kỹ năng**: Sự phát triển của AI tạo ra nhu cầu mới về các kỹ năng cao cấp, đồng thời làm gia tăng khoảng cách kỹ năng giữa những người có trình độ công nghệ cao và những người không có kỹ năng này.
 
 ### Đạo đức
 
-    - **Thiên vị**: AI có thể học và sao chép các thành kiến từ dữ liệu mà nó được huấn luyện, dẫn đến các quyết định không công bằng hoặc phân biệt đối xử.
+- **Thiên vị**: AI có thể học và sao chép các thành kiến từ dữ liệu mà nó được huấn luyện, dẫn đến các quyết định không công bằng hoặc phân biệt đối xử.
 
-    - **Quyết định**: Năng lực tự chủ, tự ra quyết định mà không có sự giám sát của con người có thể dẫn đến việc ra quyết định thiếu nhân văn hoặc thiếu cân nhắc các yếu tố đạo đức.
+- **Quyết định**: Năng lực tự chủ, tự ra quyết định mà không có sự giám sát của con người có thể dẫn đến việc ra quyết định thiếu nhân văn hoặc thiếu cân nhắc các yếu tố đạo đức.
 
 ### An ninh
 
-    - **Vũ khí được "AI hoá"**: AI có thể bị sử dụng cho các mục đích quân sự hoặc khủng bố, chẳng hạn như: vũ khí tự động, các hệ thống giám sát có tính năng nhận diện và theo dõi.
+- **Vũ khí được "AI hoá"**: AI có thể bị sử dụng cho các mục đích quân sự hoặc khủng bố, chẳng hạn như: vũ khí tự động, các hệ thống giám sát có tính năng nhận diện và theo dõi.
 
-    - **Chiến tranh thông tin**: AI có thể bị sử dụng để tạo ra và lan truyền thông tin sai lệch, làm tăng nguy cơ chiến tranh thông tin.
+- **Chiến tranh thông tin**: AI có thể bị sử dụng để tạo ra và lan truyền thông tin sai lệch, làm tăng nguy cơ chiến tranh thông tin.
 
 ### An ninh mạng
 
-    - **Tấn công mạng**: AI có thể bị sử dụng để phát triển các cuộc tấn công mạng phức tạp hơn, khó phát hiện và phòng chống.
+- **Tấn công mạng**: AI có thể bị sử dụng để phát triển các cuộc tấn công mạng phức tạp hơn, khó phát hiện và phòng chống.
 
-    - **Chạy đua vũ trang công nghệ**: Khi các tổ chức an ninh lẫn các tổ chức tội phạm sử dụng AI, cuộc đua vũ trang trong an ninh mạng có thể trở nên khốc liệt, gây ra môi trường ngày càng phức tạp và nguy hiểm.
+- **Chạy đua vũ trang công nghệ**: Khi các tổ chức an ninh lẫn các tổ chức tội phạm sử dụng AI, cuộc đua vũ trang trong an ninh mạng có thể trở nên khốc liệt, gây ra môi trường ngày càng phức tạp và nguy hiểm.
 
 ### Quyền riêng tư
 
-    - **Giám sát hàng loạt**: AI có năng lực xử lý và phân tích dữ liệu từ hàng tỷ thiết bị, dẫn đến việc giám sát hàng loạt, vi phạm quyền riêng tư cá nhân.
+- **Giám sát hàng loạt**: AI có năng lực xử lý và phân tích dữ liệu từ hàng tỷ thiết bị, dẫn đến việc giám sát hàng loạt, vi phạm quyền riêng tư cá nhân.
 
-    - **Dữ liệu nhạy cảm**: Sử dụng AI để thu thập và xử lý dữ liệu cá nhân có thể dẫn đến việc bị lộ hoặc sử dụng sai mục đích dữ liệu nhạy cảm, gây ra hậu quả nghiêm trọng cho cá nhân và tổ chức.
+- **Dữ liệu nhạy cảm**: Sử dụng AI để thu thập và xử lý dữ liệu cá nhân có thể dẫn đến việc bị lộ hoặc sử dụng sai mục đích dữ liệu nhạy cảm, gây ra hậu quả nghiêm trọng cho cá nhân và tổ chức.
 
 Cần có các quy định và biện pháp quản lý để kiểm soát các rủi ro trên, bảo đảm bảo AI được phát triển và ứng dụng một cách có trách nhiệm, phù hợp với các giá trị đạo đức và lợi ích của xã hội.
 
