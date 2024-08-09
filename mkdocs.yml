@@ -328,8 +328,11 @@ nav:
       - grade-11/topic-F2/algorithmic-complexity.md      
   - Lớp 12:
     - Chương trình khung: grade-12/grade-12-index.md
+    - Chủ đề A:
+      - grade-12/topic-A/ai-a-simplified-overview.md
+      - grade-12/topic-A/ai-applications-in-real-life.md
     - Chủ đề F:
-      - grade-12/topic-F/concepts-of-web-page.md
+      - grade-12/topic-F/web-page-an-introduction-to-the-fundamentals.md
       - grade-12/topic-F/text-editors-for-html.md
       - grade-12/topic-F/structure-of-an-html-web-page.md
       - grade-12/topic-F/paragraph-formatting.md
@@ -337,6 +340,7 @@ nav:
       - grade-12/topic-F/table-vs-link-vs-iframe.md
       - grade-12/topic-F/multimedia.md
       - grade-12/topic-F/form.md
+      - grade-12/topic-F/what-is-css.md
   - Chuyên đề:
     - special-topics/special-topics-index.md
     - Đệ quy:

@@ -126,7 +126,7 @@ Vì vậy, các nhà phát triển web phải kiểm thử trang web của mình
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-12/topic-F/concepts-of-web-page.mm.md!}
+{!grade-12/topic-F/web-page-an-introduction-to-the-fundamentals.mm.md!}
 *Sơ đồ tóm tắt những khái niệm về trang web*
 
 ## Some English words
