@@ -331,6 +331,9 @@ nav:
     - Chủ đề A:
       - grade-12/topic-A/ai-a-simplified-overview.md
       - grade-12/topic-A/ai-applications-in-real-life.md
+    - Chủ đề B:
+      - grade-12/topic-B/network-devices.md
+      - grade-12/topic-B/network-protocols.md
     - Chủ đề F:
       - grade-12/topic-F/web-page-an-introduction-to-the-fundamentals.md
       - grade-12/topic-F/text-editors-for-html.md

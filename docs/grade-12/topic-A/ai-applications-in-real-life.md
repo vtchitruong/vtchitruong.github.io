@@ -207,6 +207,8 @@ AI mang lại nhiều lợi ích nhưng cùng với đó là những mối nguy 
 
 Cần có các quy định và biện pháp quản lý để kiểm soát các rủi ro trên, bảo đảm bảo AI được phát triển và ứng dụng một cách có trách nhiệm, phù hợp với các giá trị đạo đức và lợi ích của xã hội.
 
+## Some English words
+
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
 | AI tạo sinh | Generative AI |
