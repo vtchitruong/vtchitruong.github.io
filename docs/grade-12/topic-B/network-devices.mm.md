@@ -8,7 +8,7 @@ markmap:
 
 ## Modem
 
-- Nhận tín hiệu Internet từ ISP đến hộ gia đình.
+- Truyền dẫn tín hiệu Internet giữa ISP và hộ gia đình.
 
 ## Switch
 

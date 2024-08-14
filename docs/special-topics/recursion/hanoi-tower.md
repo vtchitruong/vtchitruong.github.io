@@ -1,4 +1,4 @@
-# Bài toán tháp Hà Nội
+# Tháp Hà Nội
 
 ## Khái quát về bài toán
 
@@ -12,23 +12,23 @@ Mục tiêu của trò chơi là di chuyển toàn bộ đĩa đến cột đíc
 - Mỗi lần chỉ di chuyển đĩa nằm trên cùng của một cột và đặt đĩa này lên trên cùng của một cột khác.
 - Đĩa nhỏ phải luôn nằm trên đĩa lớn.
 
-![Image title](../recursion/ha-noi-tower.svg){width="75%" loading=lazy}
+![Minh họa trò chơi có 4 đĩa](../recursion/ha-noi-tower.svg){width="75%" loading=lazy}
 
-Hình 1. Minh họa trò chơi có 4 đĩa
+*Minh họa trò chơi có 4 đĩa*
 
-## Bài toán ví dụ
+## Yêu cầu
 
-### Yêu cầu
+In ra màn hình chỉ dẫn từng bước di chuyển đĩa để đáp ứng thể lệ của trò chơi nêu trên.
 
-In ra màn hình chỉ dẫn từng bước di chuyển đĩa để đáp ứng thể lệ của trò chơi nêu trên.[^1]
+## Input
 
-[^1]: Nội dung chính được tham khảo tại:
-
-### Input
+```pycon
 4 1 3
+```
 
-### Ouput
+## Ouput
 
+```pycon
 Move disc 1 from rod 1 to rod 2  
 Move disc 2 from rod 1 to rod 3  
 Move disc 1 from rod 2 to rod 3  
@@ -44,14 +44,15 @@ Move disc 3 from rod 2 to rod 3
 Move disc 1 from rod 1 to rod 2  
 Move disc 2 from rod 1 to rod 3  
 Move disc 1 from rod 2 to rod 3  
+```
 
-### Giải thích
+## Giải thích
 
 Input gồm ba số, lần lượt là số lượng đĩa, cột bắt đầu và cột đích.
 
-### Cách giải đề xuất
+## Cách giải đề xuất
 
-#### Ý tưởng chính
+### Ý tưởng chính
 
 Gọi **đĩa thứ 1** là đĩa nhỏ nhất (nằm trên cùng) và **đĩa thứ n** là đĩa lớn nhất (nằm dưới cùng). 
 
@@ -65,7 +66,7 @@ Như vậy, ta thực hiện di chuyển hai nhóm đĩa này theo trình tự s
 
 Dễ nhận thấy, tại thao tác 1 và thao tác 3, bài toán được lặp lại với kích thước nhỏ hơn. Đây là chỗ để gọi thực hiện đệ quy. 
 
-#### Các bước thực hiện
+### Các bước thực hiện
 
 1. Tạo chỉ dẫn cho mỗi lần di chuyển đĩa:
 
@@ -74,14 +75,14 @@ Dễ nhận thấy, tại thao tác 1 và thao tác 3, bài toán được lặp
     Công dụng của hàm này là in ra một dòng thông báo chỉ dẫn di chuyển đĩa `d` từ cột `s` sang cột `t`.
 
     === "C++"
-        ``` c++ linenums="1"
+        ```c++ linenums="1"
         void guide(int d, int s, int t)
         {
             cout << "Move disk " << d << " from rod " << s << " to rod " << t << endl;
         }
         ```
     === "Python"
-        ``` py linenums="1"
+        ```py linenums="1"
         def guide(d, s, t):
             print(f'Move disc {d} from rod {s} to rod {t}')
         ```
@@ -91,7 +92,7 @@ Dễ nhận thấy, tại thao tác 1 và thao tác 3, bài toán được lặp
     Đây là trường hợp mà trong đó, ta chỉ di chuyển một đĩa từ cột bắt đầu đến cột đích.
 
     === "C++"
-        ``` c++ linenums="1"
+        ```c++ linenums="1"
         if (disk == 1)
         {
             guide(disk, source, target);
@@ -99,7 +100,7 @@ Dễ nhận thấy, tại thao tác 1 và thao tác 3, bài toán được lặp
         }
         ```
     === "Python"
-        ``` py linenums="1"
+        ```py linenums="1"
         if disc == 1:
             guide(disc, source, target)
             return
@@ -118,7 +119,7 @@ Dễ nhận thấy, tại thao tác 1 và thao tác 3, bài toán được lặp
     Như vậy, ta có thể viết lệnh gọi đệ quy như sau:
 
     === "C++"
-        ``` c++ linenums="1"
+        ```c++ linenums="1"
             spare = 6 - (source + target);
             
             // Di chuyển n - 1 đĩa nằm trên sang cột trung gian
@@ -131,7 +132,7 @@ Dễ nhận thấy, tại thao tác 1 và thao tác 3, bài toán được lặp
             HaNoiTower(disk - 1, spare, target);
         ```
     === "Python"
-        ``` py linenums="1"
+        ```py linenums="1"
             spare = 6 - (source + target)
 
             # Di chuyển n - 1 đĩa nằm trên sang cột trung gian
@@ -144,16 +145,8 @@ Dễ nhận thấy, tại thao tác 1 và thao tác 3, bài toán được lặp
             hanoi_tower(disc - 1, spare, target)
         ```
 
-## Toàn bộ chương trình
+## Mã nguồn
 
-=== "C++"
+- Chương trình C++ hoàn chỉnh đặt tại [Gist của GitHub](https://gist.github.com/vtchitruong/d13701c239e3d31af412a8c3e2a4c009){:target="_blank"}
 
-    Chương trình C++ hoàn chỉnh đặt tại <a href="https://gist.github.com/vtchitruong/d13701c239e3d31af412a8c3e2a4c009" target="_blank">Gist của GitHub</a>.
-
-=== "Python"
-
-    Chương trình Python hoàn chỉnh đặt tại <a href="https://gist.github.com/vtchitruong/cecd9ffc66c520b9402a57943c9a7745" target="_blank">Gist của GitHub</a>.
-
-
-
-    
+- Chương trình Python hoàn chỉnh đặt tại [Google Colab](https://colab.research.google.com/drive/1MDK_03352u5FH6YLMl37J3pHSFF7YWXe?usp=sharing){:target="_blank"}

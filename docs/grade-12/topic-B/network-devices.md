@@ -26,7 +26,7 @@ Những thiết bị mạng thông dụng trong gia đình bao gồm:
 
 - Vai trò:
 
-    Là thiết bị nhận tín hiệu Internet từ ISP (1) đến hộ gia đình thông qua các loại đường truyền khác nhau (2).
+    Là thiết bị truyền dẫn tín hiệu Internet giữa ISP (1) và hộ gia đình thông qua các loại đường truyền khác nhau (2).
     { .annotate }
 
     1.  Viết tắt của Internet Service Provider, tạm dịch là nhà cung cấp dịch vụ Internet. Một số ISP lớn ở Việt Nam là: VNPT, Viettel, FPT, CMC Telecom, SCTV.

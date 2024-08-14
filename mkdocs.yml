@@ -347,8 +347,10 @@ nav:
   - Chuyên đề:
     - special-topics/special-topics-index.md
     - Đệ quy:
-      - Khái quát về đệ quy: special-topics/recursion/recursion.md
-      - Tháp Hà Nội: special-topics/recursion/hanoitower.md
+      - special-topics/recursion/an-overview-of-recursion.md
+      - special-topics/recursion/factorial-recursion.md
+      - special-topics/recursion/fibonacci-with-recursion.md
+      - special-topics/recursion/hanoi-tower.md
     - Quay lui:
       - Khái quát về quay lui: special-topics/back-tracking/back-tracking.md  
   - Nâng cao:
