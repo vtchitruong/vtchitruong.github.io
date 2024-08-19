@@ -1,3 +1,8 @@
+### v23.08.15 <small>19-08-2024</small> { id="24.08.19" }
+
+- Thêm icon cho danh mục bài học.
+- Thêm câu hỏi dạng so khớp giữa hai cột.
+
 ### v23.08.14 <small>21-07-2024</small> { id="24.07.21" }
 
 - Đổi font chữ của website thành Noto Sans cho trông mới mẻ.

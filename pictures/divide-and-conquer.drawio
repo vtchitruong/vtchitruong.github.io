@@ -1,0 +1,73 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram id="pNT9SRjVBCD1HjnkE_dN" name="so-do-chia-de-tri">
+    <mxGraphModel dx="1481" dy="1083" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="690" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-1" value="Bài toán P" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSize=24;fillColor=#0099CC;strokeColor=none;fontColor=#FFFFFF;arcSize=30;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="340" y="140" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-2" value="Bài toán con" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=none;fillColor=#00CC66;arcSize=30;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="230" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-4" value="Bài toán con" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=none;fillColor=#00CC66;arcSize=30;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="510" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-6" value="Lời giải&lt;div&gt;bài toán con&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=none;fillColor=#00CC66;imageHeight=24;arcSize=30;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="230" y="400" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-19" value="Kết quả&lt;div style=&quot;font-size: 22px;&quot;&gt;bài toán P&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSize=22;fontColor=#FFFFFF;strokeColor=none;fillColor=#FFB570;arcSize=30;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="340" y="520" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-22" value="" style="endArrow=classic;html=1;rounded=1;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=#00CC66;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;startArrow=oval;startFill=1;" parent="1" source="rtsjo7yzXaN0EVxBtjKS-2" target="rtsjo7yzXaN0EVxBtjKS-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="255" y="420" as="sourcePoint" />
+            <mxPoint x="300" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-25" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=#FFB570;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;startArrow=oval;startFill=1;" parent="1" source="rtsjo7yzXaN0EVxBtjKS-6" target="rtsjo7yzXaN0EVxBtjKS-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="285" y="470" as="sourcePoint" />
+            <mxPoint x="265" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-27" value="" style="endArrow=classic;html=1;rounded=1;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=#00CC66;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;startArrow=oval;startFill=1;" parent="1" source="rtsjo7yzXaN0EVxBtjKS-4" target="rtsjo7yzXaN0EVxBtjKS-40" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="305" y="470" as="sourcePoint" />
+            <mxPoint x="580" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-35" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=#0099CC;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;startArrow=oval;startFill=1;" parent="1" source="rtsjo7yzXaN0EVxBtjKS-1" target="rtsjo7yzXaN0EVxBtjKS-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="385" y="550" as="sourcePoint" />
+            <mxPoint x="365" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-36" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=#0099CC;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;startArrow=oval;startFill=1;" parent="1" source="rtsjo7yzXaN0EVxBtjKS-1" target="rtsjo7yzXaN0EVxBtjKS-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="395" y="560" as="sourcePoint" />
+            <mxPoint x="375" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-40" value="Lời giải&lt;div&gt;bài toán con&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=none;fillColor=#00CC66;imageHeight=24;arcSize=30;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="510" y="400" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rtsjo7yzXaN0EVxBtjKS-41" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Noto Sans;fontSize=18;fontColor=#FFFFFF;strokeColor=#FFB570;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;startArrow=oval;startFill=1;" parent="1" source="rtsjo7yzXaN0EVxBtjKS-40" target="rtsjo7yzXaN0EVxBtjKS-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="450" as="sourcePoint" />
+            <mxPoint x="450" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aafCwkUC6j0KVs_p5gbx-2" value="Chia" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#0099CC;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;fontSize=20;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="310" y="230" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-m3vnNA3PFdZJp_CfS-1" value="Trị" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00CC66;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;fontSize=20;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="270" y="350" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-m3vnNA3PFdZJp_CfS-2" value="Kết hợp" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFB570;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;fontSize=20;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;spacing=0;" parent="1" vertex="1">
+          <mxGeometry x="280" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

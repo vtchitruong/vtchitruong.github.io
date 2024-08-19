@@ -1,3 +1,7 @@
+---
+icon: material/router-network-wireless
+---
+
 # Thiết bị mạng
 
 !!! abstract "Tóm lược nội dung"
@@ -79,6 +83,12 @@ Những thiết bị mạng thông dụng trong gia đình bao gồm:
     Hiện nay, phần lớn các thiết bị mạng đều được tích hợp nhiều chức năng khác nhau. Do đó, việc gọi tên thiết bị có thể chỉ mang tính tương đối.
 
 Trong các doanh nghiệp, đặc biệt là những doanh nghiệp có quy mô lớn và nhu cầu sử dụng mạng phức tạp, người ta còn sử dụng những thiết bị mạng khác như: core switch, load balancer, firewall, VPN concentrator.
+
+!!! question "Câu hỏi 1"
+
+    <div>
+        <iframe style="width: 100%; height: 740px" frameBorder=0 src="../network-devices/matching-quiz.html">Câu hỏi so khớp</iframe>
+    </div>
 
 ## Mạng cục bộ
 

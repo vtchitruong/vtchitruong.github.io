@@ -66,7 +66,8 @@ theme:
   favicon: assets/favicon.png
   # icon:    
   #   logo: logo
-  logo: assets/mr-school-logo.png 
+  logo: assets/mr-school-logo.png
+  # language: vi
 
 # Customization
 extra:
@@ -118,7 +119,10 @@ extra:
     #   link: https://fosstodon.org/@squidfunk
     # - icon: fontawesome/brands/twitter
     #   link: https://twitter.com/squidfunk
-
+  # alternate:
+  #   - name: English
+  #     link: /en/
+  #     lang: en
 # Extensions
 markdown_extensions:
   - abbr
@@ -136,8 +140,10 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      # emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      # emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
       # options:
       #   custom_icons:
       #     - overrides/.icons
@@ -332,6 +338,7 @@ nav:
       - grade-12/topic-A/ai-a-simplified-overview.md
       - grade-12/topic-A/ai-applications-in-real-life.md
     - Chủ đề B:
+      - grade-12/topic-B/topic-b-index.md
       - grade-12/topic-B/network-devices.md
       - grade-12/topic-B/network-protocols.md
     - Chủ đề F:
@@ -351,8 +358,11 @@ nav:
       - special-topics/recursion/factorial-recursion.md
       - special-topics/recursion/fibonacci-with-recursion.md
       - special-topics/recursion/hanoi-tower.md
+    - Chia để trị:
+      - special-topics/divide-and-conquer/an-overview-of-divide-and-conquer.md
     - Quay lui:
-      - Khái quát về quay lui: special-topics/back-tracking/back-tracking.md  
+      - special-topics/back-tracking/an-overview-of-back-tracking.md
+      - special-topics/back-tracking/binary-string-with-back-tracking.md  
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:
