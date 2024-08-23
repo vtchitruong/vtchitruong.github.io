@@ -412,3 +412,8 @@ div.gslide-description.description-bottom {
 .glightbox-container div.gslide-inner-content {
     width: 85%;
 }
+
+/* --- tooltip --- */
+.md-tooltip--active {
+    border-radius: 0 15px 15px 15px;
+}

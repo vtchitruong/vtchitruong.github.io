@@ -1,3 +1,7 @@
+---
+icon: material/language-css3
+---
+
 # Giới thiệu CSS
 
 !!! abstract "Tóm lược nội dung"
@@ -180,7 +184,7 @@ Các bước cụ thể của cách 3 như sau:
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-12/topic-F/what-is-css.mm.md!}
+{!grade-12/topic-F/css-what-is.mm.md!}
 *Sơ đồ tóm tắt về CSS*
 
 ## Some English words
