@@ -1,5 +1,5 @@
 ---
-icon: material/border-radius
+icon: material/rectangle-outline
 ---
 
 # Định kiểu đường viền, lề, vùng đệm và nền

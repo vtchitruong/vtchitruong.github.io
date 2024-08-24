@@ -1,3 +1,7 @@
+---
+icon: material/form-select
+---
+
 # Biểu mẫu
 
 !!! abstract "Tóm lược nội dung"
@@ -8,10 +12,10 @@
 
 Biểu mẫu web là thành phần để người dùng tương tác với trang web, chẳng hạn:
 
-- nhập dữ liệu văn bản, số, email, mật khẩu
-- chọn một phương án
-- chọn nhiều phương án
-- click chuột vào nút nhấn
+- nhập dữ liệu văn bản, số, email, mật khẩu.
+- chọn một phương án.
+- chọn nhiều phương án.
+- click chuột vào nút nhấn.
 
 Một số biểu mẫu phổ biến:
 
@@ -20,27 +24,28 @@ Một số biểu mẫu phổ biến:
 - Biểu mẫu góp ý
 - Biểu mẫu nhận xét, đánh giá
 
-## Những thành phần thông dụng trong biểu mẫu
+## Những thành phần thông dụng
 
 ### Biểu mẫu rỗng
 
-Ban đầu, để tạo biểu mẫu không chứa thành phần nào, ta sử dụng phần tử `<form>`. Cú pháp như sau:
+Để bắt đầu tạo biểu mẫu, ta sử dụng phần tử `<form>`:
 
 ``` html
-<form action="địa_chỉ_trang_nhận_dữ_liệu" method="cách_gửi_dữ_liệu">
+<form action="địa_chỉ_trang_nhận_dữ_liệu" method="cách_gửi_dữ_liệu"> <!-- (1)! -->
     Các thành phần của biểu mẫu
 </form>
 ```
+{ .anootate }
 
-*Bảng 1. Những thuộc tính của thẻ `<form>`*
+1.  `action`: chỉ định địa chỉ trang mà biểu mẫu sẽ gửi dữ liệu đến để xử lý.
 
-| Thuộc tính | Ý nghĩa |
-| --- | --- |
-| `action` | Chỉ định địa chỉ trang mà biểu mẫu sẽ gửi dữ liệu đến để xử lý. |
-| `method` | Chỉ định phương thức gửi dữ liệu. <br> - `GET`: Dữ liệu biểu mẫu sẽ gắn kèm vào địa chỉ trang nhận dữ liệu và hiển thị trên thanh địa chỉ của trình duyệt. <br> - `POST`: Dữ liệu biểu mẫu sẽ được gửi dưới dạng gói tin đến trang nhận dữ liệu. |
+    `method`: chỉ định phương thức gửi dữ liệu.
+    
+    - `GET`: Dữ liệu biểu mẫu sẽ gắn kèm vào địa chỉ trang nhận dữ liệu và hiển thị trên thanh địa chỉ của trình duyệt. 
+    - `POST`: Dữ liệu biểu mẫu sẽ được gửi dưới dạng gói tin đến trang nhận dữ liệu.
 
-Ví dụ 1:  
-Đoạn mã trong tập tin **portfolio.html** minh họa biểu mẫu góp ý. Biểu mẫu này chưa có thành phần nào và không chỉ định trang xử lý.
+Ví dụ:  
+Trong tập tin **portfolio.html**, ta tạo thêm biểu mẫu góp ý nằm ở cuối trang. Biểu mẫu này không chỉ định trang xử lý.
 
 ``` html title="portfolio.html" linenums="101"
     <hr>
@@ -51,29 +56,27 @@ Ví dụ 1:
     </form>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](form/portfolio-1.html#end){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-1.html#end){:target="_blank"}
 
 ### Nhãn tên và ô nhập liệu 
 
-Để tạo nhãn tên và thành phần nhập liệu, ta sử dụng các phần tử trong bảng 2.
-
-*Bảng 2. Phần tử tạo nhãn tên và thành phần nhập liệu*
+Các phần tử tạo nhãn tên và thành phần nhập liệu:
 
 | Phần tử | Công dụng |
 | --- | --- |
 | `<label>` | Định nghĩa nhãn tên |
 | `<input>` | Định nghĩa thành phần nhập liệu |
 
-Ví dụ 2:  
-Đoạn mã trong tập tin **portfolio.html** minh họa thành phần nhập liệu là hộp văn bản để người dùng gõ chữ, kèm theo nhãn tên tương ứng. 
+Ví dụ:  
+Thêm hộp văn bản vào biểu mẫu để người dùng gõ họ tên, kèm theo nhãn tên tương ứng. 
 
 ``` html title="portfolio.html" linenums="101" hl_lines="5 6"
     <hr>
     <h2>Biểu mẫu góp ý</h2>
     <p>Xin bạn vui lòng bỏ ít thời gian góp ý cho trang portfolio của mình</p>
     <form method="POST">
-        <label for="realname">Tên của bạn</label><br>
-        <input type="text" id="realname" name="realname" value=""> <!-- (1) -->
+        <label for="realname">Tên của bạn</label><br> <!-- (1)! -->
+        <input type="text" id="realname" name="realname" value="">
     </form>
 ```
 { .annotate }
@@ -82,24 +85,23 @@ Ví dụ 2:
 
     Thuộc tính `id` dùng cho việc thao tác với CSS hoặc JavaScript, còn thuộc tính `name` dùng cho việc gửi biểu mẫu lên máy chủ.
 
+[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-2.html#end){:target="_blank"}
 
-[Click để xem kết xuất trang portfolio trong tab mới](form/portfolio-2.html#end){:target="_blank"}
+Ngoài `type="text"` để tạo hộp văn bản, `type` còn nhiều giá trị khác giúp tạo ra các thành phần nhập liệu khác nhau. 
 
-Ngoài hộp văn bản (do `type="text"`), phần tử `input` còn tạo được nhiều loại thành phần nhập liệu khác, một số được liệt kê trong bảng 3.
-
-*Bảng 3. Một số giá trị của thuộc tính `type`*
+Một số giá trị của thuộc tính `type`:
 
 | Giá trị | Ý nghĩa |
 | --- | --- |
-| `email` | Tạo ô nhập địa chỉ email |
+| `email` | Tạo ô nhập email |
 | `password` | Tạo ô nhập mật khẩu |
 | `radio` | Tạo nút tròn chỉ cho phép chọn một phương án duy nhất |
 | `checkbox` | Tạo hộp kiểm cho phép chọn nhiều phương án |
 | `button` | Tạo nút nhấn |
 | `submit` | Tạo nút nộp biểu mẫu |
 
-Ví dụ 3:  
-Đoạn mã trong tập tin **portfolio.html** minh họa thành phần nhập liệu là hộp văn bản dùng để nhập email, kèm theo nhãn tên tương ứng. 
+Ví dụ:  
+Thêm ô nhập email và nhãn đính kèm vào biểu mẫu. 
 
 ``` html title="portfolio.html" linenums="101" hl_lines="8 9"
     <hr>
@@ -115,14 +117,14 @@ Ví dụ 3:
     </form>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](form/portfolio-3.html#end){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-3.html#end){:target="_blank"}
 
 ### Hộp văn bản nhiều dòng
 
-Thuộc tính `type="text"` tạo hộp văn bản chỉ cho phép nhập một dòng. Để tạo hộp văn bản cho phép nhập nhiều dòng, ta sử dụng phần tử `<textarea>`.
+Hộp văn bản `type="text"` chỉ cho phép nhập một dòng. Để có thể nhập nhiều dòng, ta sử dụng phần tử `<textarea>`.
 
-Ví dụ 4:  
-Đoạn mã trong tập tin **portfolio.html** minh họa hộp văn bản nhiều dòng để người dùng gõ vào ý kiến đóng góp. 
+Ví dụ:  
+Thêm hộp văn bản nhiều dòng vào biểu mẫu. 
 
 ``` html title="portfolio.html" linenums="101" hl_lines="11 12"
     <hr>
@@ -136,20 +138,20 @@ Ví dụ 4:
         <input type="email" id="gmail" name="gmail" value="@gmail.com">
         <br>
         <label for="feedback">Ý kiến đóng góp của bạn</label><br>
-        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea> <!-- (1) -->
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea> <!-- (1)! -->
     </form>
 ```
 { .annotate }
 
 1.  Thuộc tính `required` dùng để bắt buộc người dùng nhập dữ liệu, không được để trống.
 
-[Click để xem kết xuất trang portfolio trong tab mới](form/portfolio-4.html#end){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-4.html#end){:target="_blank"}
 
 ### Nút nhấn nộp biểu mẫu
 
 Có hai cách tạo nút nhấn nộp dữ liệu của biểu mẫu:
 
-- Cách 1: sử dụng phần tử `<input>` như đề cập ở bảng 3. Chẳng hạn:
+- Cách 1: sử dụng phần tử `<input>`.
 
     ``` html
         <input type="submit" value="Gửi ý kiến">
@@ -157,10 +159,10 @@ Có hai cách tạo nút nhấn nộp dữ liệu của biểu mẫu:
 
 - Cách 2: sử dụng phần tử `<button>`.
 
-Ví dụ 5:  
-Đoạn mã trong tập tin **portfolio.html** minh họa nút nộp biểu mẫu theo cách 2. 
+Ví dụ:  
+Thêm nút nộp vào biểu mẫu theo cách 2. 
 
-``` html title="portfolio.html" linenums="101" hl_lines="13 14"
+``` html title="portfolio.html" linenums="101" hl_lines="14"
     <hr>
     <h2>Biểu mẫu góp ý</h2>
     <p>Xin bạn vui lòng bỏ ít thời gian góp ý cho trang portfolio của mình</p>
@@ -178,11 +180,11 @@ Ví dụ 5:
     </form>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](form/portfolio-5.html#end){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-5.html#end){:target="_blank"}
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-12/topic-F/form.mm.md!}
+{!grade-12/topic-F/html-form.mm.md!}
 *Sơ đồ tóm tắt cách tạo biểu mẫu web*
 
 ## Some English words

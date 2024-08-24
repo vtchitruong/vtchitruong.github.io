@@ -2,6 +2,7 @@
 markmap:
   colorFreezeLevel: 3
   maxWidth: 300
+  initialExpandLevel: 3
 ---
 
 # `<form>`
@@ -14,7 +15,13 @@ markmap:
 
 - `<input>`
     - `type="..."`
-        - `text`, `email`, `radio`, `checkbox`
+        - `text`
+        - `email`
+        - `password`
+        - `radio`
+        - `checkbox`
+        - `submit`
+        - `button`
 
 ## Nút nhấn
 

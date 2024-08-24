@@ -349,7 +349,7 @@ nav:
       - grade-12/topic-F/headings-vs-lists.md
       - grade-12/topic-F/table-vs-link-vs-iframe.md
       - grade-12/topic-F/multimedia.md
-      - grade-12/topic-F/form.md
+      - grade-12/topic-F/html-form.md
       - grade-12/topic-F/css-what-is.md
       - grade-12/topic-F/css-font-text.md
       - grade-12/topic-F/css-border-margin-padding-background.md
@@ -357,6 +357,8 @@ nav:
       - grade-12/topic-F/css-link.md
       - grade-12/topic-F/css-list.md
       - grade-12/topic-F/css-table.md
+      - grade-12/topic-F/css-div.md
+      - grade-12/topic-F/css-form.md
   - Chuyên đề:
     - special-topics/special-topics-index.md
     - Đệ quy:

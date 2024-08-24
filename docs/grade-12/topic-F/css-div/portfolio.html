@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
     
 <body>
     <h1>Chào mừng bạn ghé thăm portfolio</h1>
-    <p>Trang web này tự tay mình dệt nên.</p>
+    <p class="my-class">Trang web này tự tay mình dệt nên.</p>
     <br>
     <p>Đây là đường đời bằng phẳng mà bạn ao ước...</p>
     <hr>
@@ -33,23 +34,28 @@ Ngược lòng mình tìm về nông nổi
         1/2mv<sup>2</sup> + mgh</p>
 
     <p>Đây là một góc của thế giới mà mình sống trong đó</p>
-    <h1>Kỷ nguyên Trí tuệ nhân tạo</h1>
+    <h1 class="my-class">Kỷ nguyên Trí tuệ nhân tạo</h1>
     <h2>Thời đại Máy học (Machine Learning)</h2>
     <h3>Sự trỗi dậy của Mạng nơron (Neural networks)</h3>
     <h4>Kiến trúc Học sâu (Deep Learning)</h4>
     <h5>Mô hình Ngôn ngữ lớn (Large Language Models), một ứng dụng Deep Learning</h5>
     <h6>Transformer và Attention, kỹ thuật quan trọng trong Mô hình Ngôn ngữ lớn</h6>
     
-    <h2>Những ngôn ngữ giúp mình giỏi hơn trong môn... bơi lội</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>PHP</li>
-        <li>Python</li>
-        <li>C#</li>
-        <li>Typescript</li>    
-    </ul>
+    <h2 id="langlist">Những ngôn ngữ giúp mình giỏi hơn trong môn... bơi lội</h2>
+    <div style="border: 2px solid #30839f; border-radius: 10px;
+    height: auto; width: 360px;
+    margin: 25px auto 25px 100px; padding: 20px 30px;
+    background: radial-gradient(ellipse, #53adcb, #80c2d9);">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>PHP</li>
+            <li class="my-class">Python</li>
+            <li>C#</li>
+            <li>Typescript</li>    
+        </ul>
+    </div>
 
     <h2>Những môn thể thao mà mình yêu thích từ nhiều nhất đến ít nhất</h2>
     <ol>
@@ -60,7 +66,7 @@ Ngược lòng mình tìm về nông nổi
         <li>Búng thun</li>
     </ol>
 
-    <h2>Một vài bạn bè thân thiết</h2>
+    <h2 id="friendlist">Một vài bạn bè thân thiết</h2>
     <table border="1">
         <tr>
             <th>Hạng</th>
@@ -88,11 +94,18 @@ Ngược lòng mình tìm về nông nổi
         </tr>
     </table>
 
-    <h2>Một vài website tham khảo</h2>
-    <p><a href="https://htmlreference.io/" target="my_iframe">HTML</a></p>
-    <p><a href="https://htmlcheatsheet.com/css/" target="my_iframe">CSS</a></p>
-    <p><a href="https://www.fullstackpython.com/" target="my_iframe">Python</a></p>
-    <p><iframe src="https://htmlreference.io/" width="80%" height="300" name="my_iframe"></iframe></p>
+    <h2 id="website">Một vài website tham khảo</h2>
+    <div class="container">
+        <div class="nav-bar">
+            <p><a href="https://htmlreference.io/" target="my_iframe">HTML</a></p>
+            <p><a href="https://htmlcheatsheet.com/css/" target="my_iframe">CSS</a></p>
+            <p><a href="https://www.fullstackpython.com/" target="my_iframe">Python</a></p>
+        </div>
+        
+        <div class="iframe-container">
+            <iframe src="https://htmlreference.io/" width="100%" height="300" name="my_iframe"></iframe>
+        </div>
+    </div>
     
     <h2>Ảnh mình thích trên Pinterest</h2>
     <img src="https://i.pinimg.com/736x/43/f5/59/43f559c452d2dd745b8dba5ee23c854f.jpg"
@@ -113,6 +126,6 @@ Ngược lòng mình tìm về nông nổi
         <br>
         <button type="submit">Gửi ý kiến</button>
     </form>
-    <a name="end"></a>
+    <a name="end"></a>    
 </body>
 </html>
