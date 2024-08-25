@@ -1,12 +1,15 @@
-# Đoạn văn bản và định dạng đơn giản
+---
+icon: material/format-paragraph
+---
+
+# Tạo đoạn văn bản và định dạng đơn giản
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách:
+    Bài này trình bày:
     
-    - Tạo đoạn văn bản
-    - Ngắt dòng
-    - Định dạng phần văn bản bên trong đoạn 
+    - Những phần tử liên quan đến đoạn văn bản, ngắt dòng và khoảng trắng
+    - Những phần tử dùng để định dạng văn bản đơn giản 
 
 ## Đoạn, ngắt dòng và khoảng trắng
 
@@ -14,17 +17,15 @@ Không giống với *đoạn* trong văn học, một **đoạn văn bản** tr
 
 Đoạn văn bản luôn bắt đầu trên một dòng mới và có phần không gian trống nằm ở trước và sau nhằm phân cách với những nội dung khác.
 
-Bảng 1 và bảng 2 dưới đây liệt kê các phần tử và thực thể liên quan đến đoạn, ngắt dòng và khoảng trắng.
-
-*Bảng 1. Đoạn và ngắt dòng*
+Các phần tử dùng để tạo đoạn và ngắt dòng:
 
 | Phần tử | Công dụng |
 | --- | --- |
-| `<p>` | Định nghĩa một đoạn văn bản |
+| `<p>` | Tạo một đoạn văn bản |
 | `<br>` | Ngắt dòng nhưng vẫn nằm cùng đoạn văn bản |
 | `<hr>` | Gạch ngang giúp phân rõ hai phần nội dung |
 
-*Bảng 2. Các thực thể ký tự dùng để tạo khoảng trắng*
+Các thực thể ký tự dùng để tạo khoảng trắng:
 
 | Thực thể | Công dụng |
 | --- | --- |
@@ -32,8 +33,8 @@ Bảng 1 và bảng 2 dưới đây liệt kê các phần tử và thực thể
 | `&ensp;` | 2 khoảng trắng |
 | `&emsp;` | 4 khoảng trắng |
 
-Ví dụ 1:  
-Đoạn mã sau trong tập tin **portfolio.html** minh họa đoạn, khoảng trắng và ngắt dòng trong đoạn.
+Ví dụ:  
+Trong tập tin **portfolio.html**, ta tạo thêm đoạn, khoảng trắng và ngắt dòng.
 
 ``` html title="portfolio-1.html" linenums="8" hl_lines="4-8"
 <body>
@@ -43,7 +44,7 @@ Ví dụ 1:
     <p>Đây là đường đời bằng phẳng mà bạn ao ước...</p>
     <hr>
     <p>... cho đến khi<br>&emsp;&emsp;&emsp;
-        &ensp;&ensp;&nbsp;bạn sụp ổ gà :)</p> <!-- (1) -->
+        &ensp;&ensp;&nbsp;bạn sụp ổ gà :)</p> <!-- (1)! -->
 </body>
 ```
 { .annotation }
@@ -57,7 +58,7 @@ Ví dụ 1:
 
     Để tránh bị như vậy, nên viết là: `<p>Số nhỏ nhất có bảy chữ số là 1&nbsp;000&nbsp;000</p>`
 
-[Click để xem kết xuất trang portfolio trong tab mới](paragraph-formatting/portfolio-1.html){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-paragraph-formatting/portfolio-1.html){:target="_blank"}
 
 ## Giữ nguyên văn bản như đã viết trong mã lệnh
 
@@ -67,14 +68,12 @@ Một cách để kết xuất dòng trống và khoảng trắng là dùng các
 
 Một cách khác là dùng phần tử `<pre>`.
 
-*Bảng 3. Giữ nguyên văn bản như đã viết trong mã lệnh*
-
 | Phần tử | Công dụng |
 | --- | --- |
 | `<pre>` | Giữ nguyên ngắt dòng và khoảng trắng như trong mã lệnh |
 
-Ví dụ 2:  
-Đoạn mã trong tập tin **portfolio.html** minh họa chức năng của thẻ `<pre>` là giữ nguyên văn bản như đã viết trong mã lệnh HTML.
+Ví dụ:  
+Thêm bài thơ và sử dụng phần tử `<pre>`.
 
 ``` html title="portfolio.html" linenums="8" hl_lines="9-15"
 <body>
@@ -95,13 +94,11 @@ Ngược lòng mình tìm về nông nổi
 </body>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](paragraph-formatting/portfolio-2.html){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-paragraph-formatting/portfolio-2.html){:target="_blank"}
 
 ## Định dạng văn bản
 
-HTML có nhiều phần tử giúp định dạng văn bản, liệt kê trong bảng 3.
-
-*Bảng 4. Một số phần tử định dạng văn bản đơn giản*
+Một số phần tử giúp định dạng văn bản đơn giản:
 
 | Phần tử | Công dụng |
 | --- | --- |
@@ -113,8 +110,7 @@ HTML có nhiều phần tử giúp định dạng văn bản, liệt kê trong b
 | `<mark>` | Tô nổi (highlight) |
 | `<small>` | Làm nhỏ cỡ chữ |
 
-Ví dụ 3:  
-Đoạn mã trong tập tin **portfolio.html** minh họa một vài định dạng đơn giản.
+Ví dụ:  
 
 ``` html title="portfolio.html" linenums="8" hl_lines="17-27"
 <body>
@@ -143,19 +139,19 @@ Ngược lòng mình tìm về nông nổi
         <u>remains constant</u></em>.</p>
     <p>For example,</p>
     <p>E<sub>total</sub> = E<sub>kinetic</sub> + E<sub>gravitational</sub> =
-        1/2mv<sup>2</sup> + mgh</p> <!-- (1) -->
+        1/2mv<sup>2</sup> + mgh</p> <!-- (1)! -->
 </body>
 ```
 { .annotate}
 
 1.  Để viết phân số hoặc những công thức toán học khác trong HTML, ta cần *độ* thêm *đồ chơi*, chẳng hạn như [MathJax](https://www.mathjax.org/){:target="_blank"}. Nội dung này nằm ngoài chương trình chính khóa.
 
-[Click để xem kết xuất trang portfolio trong tab mới](paragraph-formatting/portfolio-3.html){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-paragraph-formatting/portfolio-3.html){:target="_blank"}
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-12/topic-F/paragraph-formatting.mm.md!}
-*Sơ đồ tóm tắt các phần tử đánh dấu đoạn và định dạng văn bản*
+{!grade-12/topic-F/html-paragraph-formatting.mm.md!}
+*Sơ đồ tóm tắt các phần tử tạo đoạn và định dạng văn bản*
 
 ## Some English words
 

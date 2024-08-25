@@ -2,6 +2,7 @@
 markmap:
   colorFreezeLevel: 2
   maxWidth: 300
+  initialExpandLevel: 3
 ---
 
 # Trang web 

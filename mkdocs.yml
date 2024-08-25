@@ -342,11 +342,11 @@ nav:
       - grade-12/topic-B/network-devices.md
       - grade-12/topic-B/network-protocols.md
     - Chủ đề F:
-      - grade-12/topic-F/web-page-an-introduction-to-the-fundamentals.md
-      - grade-12/topic-F/text-editors-for-html.md
-      - grade-12/topic-F/structure-of-an-html-web-page.md
-      - grade-12/topic-F/paragraph-formatting.md
-      - grade-12/topic-F/headings-vs-lists.md
+      - grade-12/topic-F/html-web-fundamentals.md
+      - grade-12/topic-F/html-text-editors.md
+      - grade-12/topic-F/html-web-page-structure.md
+      - grade-12/topic-F/html-paragraph-formatting.md
+      - grade-12/topic-F/html-headings-vs-lists.md
       - grade-12/topic-F/table-vs-link-vs-iframe.md
       - grade-12/topic-F/multimedia.md
       - grade-12/topic-F/html-form.md

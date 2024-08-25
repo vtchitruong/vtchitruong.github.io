@@ -2,6 +2,7 @@
 markmap:
   colorFreezeLevel: 3
   maxWidth: 300
+  initialExpandLevel: 3
 ---
 
 # HTML

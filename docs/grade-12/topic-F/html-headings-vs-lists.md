@@ -1,3 +1,7 @@
+---
+icon: octicons/list-ordered-24
+---
+
 # Đề mục và danh sách
 
 !!! abstract "Tóm lược nội dung"
@@ -9,11 +13,11 @@
 
 ## Đề mục
 
-**Headings**, có thể tạm dịch là *đề mục* hoặc *tiêu đề con*, đóng vai trò làm tựa đề cho những phần nội dung khác nhau trong tài liệu.
+**Headings**, tạm dịch là **đề mục** hoặc **tiêu đề con**, đóng vai trò làm tựa đề cho những phần nội dung khác nhau trong tài liệu.
 
 Headings chủ yếu dùng để giúp người đọc hiểu được cách tổ chức nội dung, từ đó định hướng tốt hơn khi đọc tài liệu.
 
-*Bảng 1. Sáu cấp độ của đề mục*
+Các phần tử dùng để tạo sáu cấp độ của đề mục:
 
 | Phần tử | Công dụng |
 | --- | --- |
@@ -26,10 +30,10 @@ Headings chủ yếu dùng để giúp người đọc hiểu được cách t�
 
 Khi được đánh dấu bằng các thẻ này, văn bản sẽ có định dạng khác với những phần văn bản còn lại, chẳng hạn, cỡ chữ lớn hơn, in đậm, có khoảng trống so với dòng trên và dưới.
 
-Do đó, ta không nên định dạng cỡ chữ lớn hoặc đậm cho các headings, chỉ thay đổi font hoặc màu sắc nếu muốn.
+Do đó, ta chưa vội định dạng cỡ chữ lớn hoặc đậm cho các đề mục, chỉ thay đổi font hoặc màu sắc nếu muốn.
 
-Ví dụ 1:  
-Đoạn mã trong tập tin **portfolio.html** minh họa các đề mục bằng các thẻ từ `<h1>` đến `<h6>`.
+Ví dụ:  
+Trong tập tin **portfolio.html**, ta tạo cả sáu đề mục từ `<h1>` đến `<h6>`.
 
 ``` html title="portfolio.html" linenums="35"
     <p>Đây là một góc của thế giới mà mình sống trong đó</p>
@@ -41,7 +45,7 @@ Ví dụ 1:
     <h6>Transformer và Attention, kỹ thuật quan trọng trong mô hình Ngôn ngữ lớn</h6>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](headings-vs-lists/portfolio-1.html#end){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-1.html#end){:target="_blank"}
 
 ## Danh sách
 
@@ -52,7 +56,7 @@ HTML hỗ trợ hai loại danh sách: **không có thứ tự** và **có thứ
 
 1.  HTML còn hỗ trợ loại danh sách thứ ba là [description list](https://www.w3schools.com/html/html_lists_other.asp){:target="_blank"}.
 
-*Bảng 2. Danh sách*
+Các phần tử dùng để tạo danh sách:
 
 | Phần tử | Công dụng |
 | --- | --- |
@@ -60,12 +64,12 @@ HTML hỗ trợ hai loại danh sách: **không có thứ tự** và **có thứ
 | `<ol>` | Định nghĩa danh sách có thứ tự |
 | `<li>` | Định nghĩa từng mục bên trong cả hai loại danh sách |
 
-### Danh sách không có thứ tự
+### Không có thứ tự
 
 Kiểu danh sách này thường dùng ký hiệu **đĩa tròn màu đen** &#8226; để đánh dấu đầu dòng cho các mục. Ký hiệu này sẽ thay đổi khi cấp độ của đề mục thay đổi.
 
-Ví dụ 2:  
-Đoạn mã trong tập tin **portfolio.html** minh họa danh sách không có thứ tự.
+Ví dụ:  
+Tạo một danh sách mà thứ tự của các mục không quan trọng.
 
 ``` html title="portfolio.html" linenums="43"
     <h2>Những ngôn ngữ giúp mình giỏi hơn trong môn... bơi lội</h2>
@@ -80,18 +84,22 @@ Ví dụ 2:
     </ul>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](headings-vs-lists/portfolio-2.html#end){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-2.html#end){:target="_blank"}
 
-### Danh sách có thứ tự
+### Có thứ tự
 
 Kiểu danh sách này dùng các ký hiệu số hoặc chữ như: **1**, **A**, **a**, **I**, **i** để đánh số đầu dòng cho các mục.
 
-Để chọn kiểu đánh số thứ tự, ta chỉ định giá trị cho thuộc tính `type`, chẳng hạn `type="1"`, `type="A"`, v.v...
+Để chọn kiểu đánh số thứ tự, ta chỉ định giá trị cho thuộc tính `type`:
 
-Nếu không muốn thứ tự bắt đầu từ 1 hoặc A, ta cũng chỉ rõ trong `type`, chẳng hạn: `type="3"`, `type="C"`, v.v...
+- `type="1"`
+- `type="A"`
+- `type="3"`
+- `type="C"`
+- v.v...
 
-Ví dụ 3:  
-Đoạn mã trong tập tin **portfolio.html** minh họa danh sách có thứ tự, đánh số theo số La Mã.
+Ví dụ:  
+Tạo danh sách đánh thứ tự bằng số bình thường.
 
 ``` html title="portfolio.html" linenums="54"
     <h2>Những môn thể thao mà mình yêu thích từ nhiều nhất đến ít nhất</h2>
@@ -104,12 +112,12 @@ Ví dụ 3:
     </ol>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](headings-vs-lists/portfolio-3.html#end){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-3.html#end){:target="_blank"}
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-12/topic-F/headings-vs-lists.mm.md!}
-*Sơ đồ tóm tắt các phần tử đánh dấu đề mục và danh sách*
+{!grade-12/topic-F/html-headings-vs-lists.mm.md!}
+*Sơ đồ tóm tắt các phần tử tạo đề mục và danh sách*
 
 ## Some English words
 

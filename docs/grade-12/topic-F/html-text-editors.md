@@ -1,22 +1,26 @@
-# Công cụ viết mã lệnh HTML
+---
+icon: material/microsoft-visual-studio-code
+---
+
+# Công cụ viết mã lệnh
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này giới thiệu:
+    Bài này trình bày:
     
-    - Một số công cụ dùng để viết mã lệnh HTML
-    - Sơ nét thao tác tạo tập tin .html
+    - Một số công cụ dùng để viết mã lệnh HTML (và cả CSS cho phần tiếp theo)
+    - Sơ lược thao tác tạo tập tin .html
 
 ## Những công cụ đề xuất
 
-Để viết mã lệnh HTML, ta có thể sử dụng bất kỳ chương trình soạn thảo văn bản (1) nào tùy ý, chẳng hạn những chương trình phổ biến hiện nay là:
+Để viết mã lệnh HTML, ta có thể sử dụng bất kỳ chương trình soạn thảo văn bản (1) nào tùy ý.
 { .annotate }
 
 1.  Mặc dù **text editor** và **word processor** đều là chương trình làm việc với văn bản, chúng vẫn khác nhau về tính năng và mục đích.
 
     Bằng một cách nào đó, một số tài liệu tiếng Việt, bao gồm sách giáo khoa, dịch chung là **chương trình soạn thảo văn bản**, nên có thể dẫn tới một vài nhầm lẫn nho nhỏ.
 
-&nbsp;
+Một số chương trình phổ biến hiện nay:
 
 - [Visual Studio Code](https://code.visualstudio.com/){:target="_blank}
 - [VS Code for the Web](https://vscode.dev/){:target="_blank} (là bản web của Visual Studio Code)
@@ -27,30 +31,25 @@
 - [Phoenix Code](https://phcode.dev/){:target="_blank} (chạy online)
 - [CodePen](https://codepen.io/){:target="_blank} (chạy online)
 - [PlayCode](https://playcode.io/){:target="_blank} (chạy online)
-- v.v...
 
-## Thao tác trên các công cụ online
+## Thao tác online
 
-Phần lớn các trình soạn thảo online đều có các khung để viết mã lệnh HTML, CSS và Javascript, và một khung kết xuất trang web ngay tức thì.
+Phần lớn các trình soạn thảo online đều có các khung để viết mã lệnh HTML, CSS và JavaScript, và một khung kết xuất trang web ngay tức thì.
 
-Do đó, ta chỉ cần gõ mã lệnh HTML, không cần cài đặt thêm gì.
+Do đó, ta chỉ cần gõ mã lệnh, không cần cài đặt thêm gì.
 
-!!! info "Gợi ý về công cụ dùng làm minh họa"
+## Thao tác trên máy cá nhân
 
-    Trong bối cảnh của chương trình lớp 12, chủ thớt nhận thấy [PlayCode](https://playcode.io/){:target="_blank} là công cụ minh họa phù hợp.
-
-## Thao tác trên các công cụ cài đặt desktop
-
-**Bước 1: Tạo thư mục chứa website**
+### Bước 1
 
 Tạo thư mục có tên tùy ý, ví dụ **mysite**. Không nên gõ dấu tiếng Việt và khoảng trắng.
 
-**Bước 2: Tạo tập tin .html**
+### Bước 2
 
 Chọn một trình soạn thảo tùy ý, tạo tập tin có phần tên mở rộng là **.html**, ví dụ **portfolio.html** (1).
 { .annotate }
 
-1.  Portfolio là trang web dùng để *flex* về bản thân, bao gồm thông tin cá nhân và những dự án hoặc sản phẩm mà mình đã thực hiện.
+1.  **Portfolio** là trang web dùng để *flex* về bản thân, bao gồm thông tin cá nhân và những dự án hoặc sản phẩm mà mình đã thực hiện.
 
 Thao tác tạo là tương tự nhau giữa các trình soạn thảo: chọn menu **File** > chọn mục **New**.
 
@@ -60,9 +59,9 @@ Thao tác lưu cũng vậy: chọn menu **File** > chọn mục **Save**, hoặc
 
     Nhớ ==thường xuyên **save**== để thể hiện sự trân trọng thành quả của mình.
 
-**Bước 3: Xem trang web sản phẩm**
+### Bước 3
 
-Sau mỗi lần lưu, ta xem trang web bằng một trong hai cách:
+Xem trang web bằng một trong hai cách:
 
 - Click đôi vào tập tin .html để mở bằng trình duyệt mặc định trên máy.
 - Trong trình duyệt, nhấn phím ++f5++ để làm mới lại trang web.
