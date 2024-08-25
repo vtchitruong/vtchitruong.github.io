@@ -143,4 +143,15 @@ li a {
     /* Inherit the text color */
 }
 
+@media screen and (max-width: 575px) {
+    .vtct-list-container {
+      flex-direction: column;
+      gap: 10px; /* Adjust spacing between stacked lists */
+    }
+  
+    .vtct-list {
+      max-width: 100%; /* Lists take full width */
+    }
+  }
+
   
