@@ -2,14 +2,11 @@
 icon: material/format-paragraph
 ---
 
-# Tạo đoạn văn bản và định dạng đơn giản
+# Tạo đoạn văn bản
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày:
-    
-    - Những phần tử liên quan đến đoạn văn bản, ngắt dòng và khoảng trắng
-    - Những phần tử dùng để định dạng văn bản đơn giản 
+    Bài này trình bày các phần tử HTML liên quan đến đoạn văn bản, ngắt dòng và khoảng trắng.
 
 ## Đoạn, ngắt dòng và khoảng trắng
 
@@ -58,9 +55,9 @@ Trong tập tin **portfolio.html**, ta tạo thêm đoạn, khoảng trắng và
 
     Để tránh bị như vậy, nên viết là: `<p>Số nhỏ nhất có bảy chữ số là 1&nbsp;000&nbsp;000</p>`
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-paragraph-formatting/portfolio-1.html){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-paragraph/portfolio-1.html){:target="_blank"}
 
-## Giữ nguyên văn bản như đã viết trong mã lệnh
+## Giữ nguyên như mã lệnh
 
 Dù mã lệnh HTML có nhiều khoảng trắng hoặc dòng trống dư thừa, trình duyệt vẫn xóa hết các khoảng trắng và dòng trống này.
 
@@ -94,70 +91,17 @@ Ngược lòng mình tìm về nông nổi
 </body>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-paragraph-formatting/portfolio-2.html){:target="_blank"}
-
-## Định dạng văn bản
-
-Một số phần tử giúp định dạng văn bản đơn giản:
-
-| Phần tử | Công dụng |
-| --- | --- |
-| `<strong>` hoặc `<b>` | In đậm |
-| `<em>` hoặc `<i>` | In nghiêng |
-| `<u>` | Gạch chân |
-| `<sup>` | Tạo chỉ số trên |
-| `<sub>` | Tạo chỉ số dưới |
-| `<mark>` | Tô nổi (highlight) |
-| `<small>` | Làm nhỏ cỡ chữ |
-
-Ví dụ:  
-
-``` html title="portfolio.html" linenums="8" hl_lines="17-27"
-<body>
-    <h1>Chào mừng bạn ghé thăm portfolio</h1>
-    <p>Trang web này tự tay mình dệt nên.</p>
-    <br>
-    <p>Đây là đường đời bằng phẳng mà bạn ao ước...</p>
-    <hr>
-    <p>... cho đến khi<br>&emsp;&emsp;&emsp;
-        &ensp;&ensp;&nbsp;bạn sụp ổ gà :)</p>
-    <br>
-    <br>
-    <p>Khi sụp rồi thì bạn thường tìm đến những thứ self-help hoặc chữa lành.</p>
-    <h2>Một chiều ngược gió</h2>
-    <pre>Em ngược đường, ngược nắng để yêu anh
-    Ngược phố tan tầm, ngược chiều gió thổi
-Ngược lòng mình tìm về nông nổi
-    Lãng du đi vô định cánh chim trời.</pre>
-    <br>
-    <p>Một cách <em>chữa lành</em> tốt là hãy <em>"tựa"</em> vào khoa học.</p>
-    <p><strong>The law of conservation of energy</strong> states that 
-        <em>energy cannot be created <small>or</small> destroyed, 
-        <mark>only transformed from one form to another 
-        or transferred from one system to another</mark>, 
-        <small>but</small> the total energy of the system 
-        <u>remains constant</u></em>.</p>
-    <p>For example,</p>
-    <p>E<sub>total</sub> = E<sub>kinetic</sub> + E<sub>gravitational</sub> =
-        1/2mv<sup>2</sup> + mgh</p> <!-- (1)! -->
-</body>
-```
-{ .annotate}
-
-1.  Để viết phân số hoặc những công thức toán học khác trong HTML, ta cần *độ* thêm *đồ chơi*, chẳng hạn như [MathJax](https://www.mathjax.org/){:target="_blank"}. Nội dung này nằm ngoài chương trình chính khóa.
-
-[Click để xem kết xuất trang portfolio trong tab mới](html-paragraph-formatting/portfolio-3.html){:target="_blank"}
+[Click để xem kết xuất trang portfolio trong tab mới](html-paragraph/portfolio-2.html){:target="_blank"}
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-12/topic-F/html-paragraph-formatting.mm.md!}
-*Sơ đồ tóm tắt các phần tử tạo đoạn và định dạng văn bản*
+{!grade-12/topic-F/html-paragraph.mm.md!}
+*Sơ đồ tóm tắt các phần tử tạo đoạn văn bản*
 
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
-| định dạng | format |
 | đoạn | paragraph |
 | đường gạch ngang | horizontal line |
 | khoảng trắng | non-breaking space |

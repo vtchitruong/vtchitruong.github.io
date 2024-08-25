@@ -2,14 +2,11 @@
 icon: octicons/list-ordered-24
 ---
 
-# Đề mục và danh sách
+# Tạo đề mục và danh sách
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách tạo:
-
-    - Các đề mục của một bài viết
-    - Nội dung theo dạng danh sách
+    Bài này trình bày các phần tử HTML dùng để tạo đề mục và danh sách.
 
 ## Đề mục
 

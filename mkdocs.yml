@@ -335,6 +335,7 @@ nav:
   - Lớp 12:
     - Chương trình khung: grade-12/grade-12-index.md
     - Chủ đề A:
+      - grade-12/topic-A/topic-a-index.md
       - grade-12/topic-A/ai-a-simplified-overview.md
       - grade-12/topic-A/ai-applications-in-real-life.md
     - Chủ đề B:
@@ -342,13 +343,17 @@ nav:
       - grade-12/topic-B/network-devices.md
       - grade-12/topic-B/network-protocols.md
     - Chủ đề F:
+      - grade-12/topic-F/topic-f-index.md
       - grade-12/topic-F/html-web-fundamentals.md
       - grade-12/topic-F/html-text-editors.md
       - grade-12/topic-F/html-web-page-structure.md
-      - grade-12/topic-F/html-paragraph-formatting.md
+      - grade-12/topic-F/html-paragraph.md
+      - grade-12/topic-F/html-formatting.md
       - grade-12/topic-F/html-headings-vs-lists.md
-      - grade-12/topic-F/table-vs-link-vs-iframe.md
-      - grade-12/topic-F/multimedia.md
+      - grade-12/topic-F/html-table.md
+      - grade-12/topic-F/html-link.md
+      - grade-12/topic-F/html-iframe.md
+      - grade-12/topic-F/html-multimedia.md
       - grade-12/topic-F/html-form.md
       - grade-12/topic-F/css-what-is.md
       - grade-12/topic-F/css-font-text.md

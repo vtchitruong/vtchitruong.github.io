@@ -1,3 +1,8 @@
+---
+icon: material/robot-industrial-outline
+---
+
+
 # Trí tuệ nhân tạo và cuộc sống
 
 !!! abstract "Tóm lược nội dung"

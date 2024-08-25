@@ -1,3 +1,7 @@
+---
+icon: octicons/ai-model-24
+---
+
 # Giới thiệu trí tuệ nhân tạo
 
 !!! abstract "Tóm lược nội dung"

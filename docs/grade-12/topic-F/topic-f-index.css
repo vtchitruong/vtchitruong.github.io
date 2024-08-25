@@ -1,7 +1,8 @@
 :root {
-    --first-color: #03a9f4;
-    --second-color: #25bcff;
+    --first-color: #f16529;
+    --second-color: #28a9df;
 }
+
 
 * {
     margin: 0;
@@ -17,20 +18,45 @@ body {
     /* min-height: 100vh; */
 }
 
+.vtct-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align the lists at the top */
+    gap: 20px; /* Optional: Adds some space between the lists */
+  }
+
 .vtct-list {
-    width: 300px;
-    border-bottom: 20px solid var(--first-color);
+    width: 360px;    
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+
+    flex: 1; /* Makes each list take up equal space */
+    max-width: 45%; /* Ensures the lists don't stretch too wide */
+}
+
+.vtct-first-list {
+    border-bottom: 20px solid var(--first-color);
+}
+
+.vtct-second-list {
+    border-bottom: 20px solid var(--second-color);
 }
 
 .vtct-list h2 {
     color: #fff;
-    background: var(--first-color);
+    
     padding: 10px 20px;
     font-weight: 700;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+#h2-html {
+    background: var(--first-color);
+}
+
+#h2-css {
+    background: var(--second-color);
 }
 
 .vtct-list ul {
@@ -54,11 +80,21 @@ body {
 .vtct-list ul li:hover {
     transform: scale(1.1);
     z-index: 5;
-    background: var(--second-color);
+    /* background: #25bcff; */
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    
     opacity: 1;
     border-radius: 15px;
+}
+
+.vtct-first-list ul li:hover {
+    background: var(--first-color);
+    color: #fff;
+}
+
+.vtct-second-list ul li:hover {
+    background: var(--second-color);
+    color: #fff;
 }
 
 .vtct-list ul li span {
@@ -66,7 +102,7 @@ body {
     height: 20px;
     text-align: center;
     line-height: 20px;
-    background: var(--second-color);
+    /* background: #25bcff; */
     color: #fff;
     display: inline-block;
     border-radius: 50%;
@@ -76,9 +112,22 @@ body {
     transform: translateY(-2px);
 }
 
-.vtct-list ul li:hover span {
+.vtct-first-list ul li span {
+    background: var(--first-color);
+}
+
+.vtct-second-list ul li span {
+    background: var(--second-color);
+}
+
+.vtct-first-list ul li:hover span {
+    color: var(--first-color);
     background: #fff;
+}
+
+.vtct-second-list ul li:hover span {
     color: var(--second-color);
+    background: #fff;
 }
 
 li a {
@@ -93,3 +142,5 @@ li a {
     color: #696969;
     /* Inherit the text color */
 }
+
+  
