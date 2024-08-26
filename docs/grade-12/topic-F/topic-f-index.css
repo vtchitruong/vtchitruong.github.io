@@ -3,7 +3,6 @@
     --second-color: #28a9df;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -23,10 +22,10 @@ body {
     justify-content: space-between;
     align-items: flex-start; /* Align the lists at the top */
     gap: 20px; /* Optional: Adds some space between the lists */
-  }
+}
 
 .vtct-list {
-    width: 360px;    
+    width: 300px;    
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
@@ -40,6 +39,17 @@ body {
 
 .vtct-second-list {
     border-bottom: 20px solid var(--second-color);
+}
+
+@media screen and (max-width: 768px) {
+    .vtct-list-container {
+      flex-direction: column;
+      gap: 10px; /* Adjust spacing between stacked lists */
+    }
+  
+    .vtct-list {
+      max-width: 100%; /* Lists take full width */
+    }
 }
 
 .vtct-list h2 {
@@ -142,16 +152,3 @@ li a {
     color: #696969;
     /* Inherit the text color */
 }
-
-@media screen and (max-width: 768px) {
-    .vtct-list-container {
-      flex-direction: column;
-      gap: 10px; /* Adjust spacing between stacked lists */
-    }
-  
-    .vtct-list {
-      max-width: 100%; /* Lists take full width */
-    }
-  }
-
-  
