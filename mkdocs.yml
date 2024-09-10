@@ -375,7 +375,9 @@ nav:
       - special-topics/divide-and-conquer/an-overview-of-divide-and-conquer.md
     - Quay lui:
       - special-topics/back-tracking/an-overview-of-back-tracking.md
-      - special-topics/back-tracking/binary-string-with-back-tracking.md  
+      - special-topics/back-tracking/binary-string-with-back-tracking.md
+    - Hàng đợi:
+      - special-topics/queue/an-overview-of-queue.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:
@@ -400,6 +402,16 @@ nav:
       - Dãy con tăng dài nhất: advanced/dynamic-programming/lis.md
       - Balo: advanced/dynamic-programming/knapsack.md
   - MOS:
+    - MOS 2019: mos/mos-2019-index.md
+    - PowerPoint 2019:
+      - Practice Exam 1:
+        - Project 1: mos/powerpoint-2019/exam-1/project-1.md
+        - Project 2: mos/powerpoint-2019/exam-1/project-2.md
+        - Project 3: mos/powerpoint-2019/exam-1/project-3.md
+        - Project 4: mos/powerpoint-2019/exam-1/project-4.md
+        - Project 5: mos/powerpoint-2019/exam-1/project-5.md
+        - Project 6: mos/powerpoint-2019/exam-1/project-6.md
+        - Project 7: mos/powerpoint-2019/exam-1/project-7.md
     - MOS 2016: mos/mos-2016-index.md
     - Word 2016:
       - Practice Exam 1:
@@ -476,8 +488,6 @@ nav:
         - Project 5: mos/powerpoint-2016/exam-3/project-5.md
         - Project 6: mos/powerpoint-2016/exam-3/project-6.md
         - Project 7: mos/powerpoint-2016/exam-3/project-7.md
-    - PowerPoint 2019:
-      - Practice Exam 1:
-        - Project 1: mos/powerpoint-2019/exam-1/project-1.md
+    
   - Blog:
       - blog/index.md

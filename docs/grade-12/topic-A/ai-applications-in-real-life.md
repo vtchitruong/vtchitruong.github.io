@@ -2,7 +2,6 @@
 icon: material/robot-industrial-outline
 ---
 
-
 # Trí tuệ nhân tạo và cuộc sống
 
 !!! abstract "Tóm lược nội dung"
@@ -74,45 +73,45 @@ icon: material/robot-industrial-outline
 ## Những ứng dụng AI thực tế
 
 1. **Công cụ tìm kiếm**:
-    - Google Search
-    - Microsoft Bing
-    - SearchGPT
+    - [Google Search](https://www.google.com/){target="_blank"}
+    - [Microsoft Bing](https://www.bing.com/){target="_blank"}
+    - [SearchGPT](https://openai.com/index/searchgpt-prototype/){target="_blank"}
 
 2. **Hệ thống dịch thuật**:
-    - Google Translate
-    - DeepL Translator
+    - [Google Translate](https://translate.google.com/){target="_blank"}
+    - [DeepL Translator](https://www.deepl.com/en/translator/){target="_blank"}
 
 3. **Trợ lý ảo**:
     - Apple Siri
     - Google Assistant (sẽ ngừng trong tương lai)
     - Amazon Alexa
     - Microsoft Cortana (đã ngừng)
-    - Samsung Bixby
+    - [Samsung Bixby](https://www.samsung.com/uk/support/mobile-devices/what-is-bixby-and-how-do-i-use-it/?msockid=307c133adcbe6d9e139800f1ddfb6c54){target="_blank"}
 
 4. **Hệ thống đề xuất**:
-    - Netflix (gợi ý phim/series)
-    - Spotify (gợi ý nhạc)
-    - Amazon (gợi ý sản phẩm)
+    - [Netflix](https://www.netflix.com/){target="_blank"} (gợi ý phim/series)
+    - [Spotify](https://open.spotify.com/){target="_blank"} (gợi ý nhạc)
+    - [Amazon](https://www.amazon.com/){target="_blank"} (gợi ý sản phẩm)
     - Hệ thống đề xuất nội dung (hoặc news feed) của các mạng xã hội
 
 5. **Hệ thống nhận diện khuôn mặt**:
     - Face ID của Apple
-    - Clearview AI (sử dụng trong an ninh)
+    - [Clearview AI](https://www.clearview.ai/){target="_blank"} (sử dụng trong an ninh)
 
 6. **Hệ thống xử lý ảnh**:
-    - Google Photos (nhận diện và phân loại ảnh)
-    - Adobe Sensei (trong các sản phẩm Adobe)
+    - [Google Photos](https://photos.google.com/){target="_blank"} (nhận diện và phân loại ảnh)
+    - [Adobe Sensei](https://www.adobe.com/vn_vi/sensei/){target="_blank"} (trong các sản phẩm Adobe)
 
 7. **Hệ thống xe tự hành**:
-    - Tesla Autopilot
-    - Waymo (Google)
-    - Uber ATG
+    - [Tesla Autopilot](https://www.tesla.com/autopilot){target="_blank"}
+    - [Waymo](https://waymo.com/){target="_blank"} (Google)
+    - [Uber ATG](https://www.uber.com/en-VN/blog/machine-learning-model-life-cycle-version-control/){target="_blank"}
 
 8. **Chatbot và mô hình ngôn ngữ lớn**:
-    - ChatGPT (OpenAI)
-    - Claude (Anthropic)
-    - Gemini (Google)
-    - CoPilot (Microsoft)
+    - [ChatGPT](https://chatgpt.com/){target="_blank"} (OpenAI)
+    - [Claude](https://claude.ai/){target="_blank"} (Anthropic)
+    - [CoPilot](https://copilot.microsoft.com/){target="_blank"} (Microsoft)
+    - [Gemini](https://gemini.google.com/app){target="_blank"} (Google)
 
 9. **Game**:
     - Deep Blue (IBM)
@@ -120,7 +119,7 @@ icon: material/robot-industrial-outline
     - AI trong các game
 
 10. **Hệ thống phát hiện gian lận**:
-    - PayPal có hệ thống phát hiện giao dịch đáng ngờ
+    - [PayPal](https://www.paypal.com/){target="_blank"} có hệ thống phát hiện giao dịch đáng ngờ
 
 11. **Hệ thống hỗ trợ y tế**:
     - IBM Watson for Oncology (hỗ trợ chẩn đoán ung thư)
@@ -131,11 +130,11 @@ icon: material/robot-industrial-outline
     - GE Predix
 
 13. **Hệ thống dự báo thời tiết**:
-    - IBM GRAF (Global High-Resolution Atmospheric Forecasting System)
+    - [IBM GRAF](https://www.weathercompany.com/global-high-resolution-atmospheric-forecasting/){target="_blank"} (Global High-Resolution Atmospheric Forecasting System)
 
 14. **Hệ thống an ninh mạng**:
-    - Darktrace
-    - CrowdStrike Falcon
+    - [Darktrace](https://darktrace.com/){target="_blank"}
+    - [CrowdStrike Falcon](https://www.crowdstrike.com/){target="_blank"}
 
 Những hệ thống này chỉ là một phần nhỏ trong số rất nhiều ứng dụng AI đang hoạt động trong thực tế. AI đang được tích hợp vào nhiều khía cạnh của cuộc sống, âm thầm cải thiện hiệu suất và trải nghiệm của người dùng.
 
@@ -172,9 +171,9 @@ AI tạo sinh sử dụng những công nghệ sau:
 
 ### Ứng dụng thực tế
 
-   - Tạo văn bản: ChatGPT, Claude, Gemini, CoPilot, v.v...
-   - Tạo hình ảnh: DALL-E, MidJourney, Stable Diffusion, Adobe Firefly, v.v...
-   - Tạo âm thanh: AIVA, Jukedeck, AudioJungle, v.v...
+   - Tạo văn bản: [ChatGPT](https://chatgpt.com/){target="_blank"}, [Claude](https://claude.ai/){target="_blank"}, [CoPilot](https://gemini.google.com/app){target="_blank"}, [Gemini](https://gemini.google.com/app){target="_blank"} v.v...
+   - Tạo hình ảnh: [DALL-E](https://openai.com/index/dall-e-3/){target="_blank"}, [MidJourney](https://docs.midjourney.com/){target="_blank"}, [Stable Diffusion](https://stability.ai/news/stable-diffusion-3){target="_blank"}, [Adobe Firefly](https://www.adobe.com/vn_en/products/firefly.html){target="_blank"}, v.v...
+   - Tạo âm thanh: [AIVA](https://www.aiva.ai/){target="_blank"}, [Jukedeck](https://soundcloud.com/jukedeck){target="_blank"}, v.v...
 
 ## Những cảnh báo về mặt trái của AI
 

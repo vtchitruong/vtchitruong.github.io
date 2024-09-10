@@ -6,30 +6,23 @@ You are developing a presentation showing the benefits of using the FusionTomo b
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/3WeOg30TnvA?si=CIgAOuTG4Pzbn-jB&amp;start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ## Task 1
 
 On the Slide Master, change the theme colors to Blue.
 
 ??? Tip "Hint"
 
-    1. Select the **Design** tab.  
+    1. Chọn tab **Design**.
+    2. Trong nhóm **Variants**, click nút mũi tên **More** rồi chọn **Colors**.
+    3. Dưới hàng màu **Office**, chọn hàng màu **Blue**.
 
-    2. In the **Variants** group, click the More down-arrow and select **Colors**.
+    -hoặc-
 
-    3. Below the **Office** section of colors, select **Blue**.
-
-    -OR-
-
-    1. Click on the **View** tab.
-
-    2. In the **Master Views** group, click **Slide Master**.
-    
-    3. In the **Background** group, select **Colors**.
-
-    4. Below the **Office** section of colors, select **Blue**.
-
-        (Hint: When you apply a theme or modify theme elements (i.e. Colors, Fonts or Effects) these automatically modify the Slide Masters, so it is not necessary to open the Slide Master view to apply these types of changes.)
+    1. Chọn tab **View**.
+    2. Trong nhóm **Master Views**, click **Slide Master**.    
+    3. Trong nhóm **Background**, chọn **Colors**.
+    4. Dưới hàng màu **Office**, chọn hàng màu **Blue**.
+        (Gợi ý: Khi bạn áp dụng một theme hoặc chỉnh sửa các thành phần của theme (chẳng hạn như: Colors, Fonts, Effects) thì nó sẽ tự động chỉnh sửa luôn Slide Master. Do đó, không cần mở Slide Master để chỉnh những cái như vầy).
 
 ## Task 2
 
@@ -37,18 +30,12 @@ On Slide 2, create a bulleted list from the text Leading . . . recognition. For 
 
 ??? Tip "Hint"
 
-    1. In the **Navigation Pane** on the left, select **Slide 2**.
-
-    2. Below the heading **About FusionTomo**, select all of the text **Leading** . . . **recognition**.
-    
-    3. In the **Home** tab, **Paragraph** group, click the **Bullets** down arrow and select **Bullets and Numbering**.
-    
-    4. In the **Bullets and Numbering** pop-up, on the **Bulleted** tab, click the **Picture** button.
-
-    5. On the **Insert Pictures** pop-up, click the **Browse** link to the right of **From a file** and browse to your **GMetrixTemplates** folder.
-
-    6. Select **TomoLogo.png** and click **Insert**.
-
+    1. Trong **Navigation Pane** bên trái, chọn **Slide 2**.
+    2. Dưới tiêu đề **About FusionTomo**, chọn tất cả văn bản từ **Leading** đến **recognition**.
+    3. Trong tab **Home**, nhóm **Paragraph**, click nút mũi tên **Bullets** rồi chọn mục **Bullets and Numbering**.    
+    4. Trong cửa số pop-up **Bullets and Numbering**, chọn tab **Bulleted**, click nút **Picture**.
+    5. Trong cửa số pop-up **Insert Pictures**, click **Browse**, nằm bên phải mục **From a file**, tìm đến thư mục **GMetrixTemplates**.
+    6. Chọn file **TomoLogo.png** rồi click nút **Insert**.
 
 ## Task 3
 
@@ -56,19 +43,13 @@ Insert a new slide 3 using the slide titled Board of Directors from FT_Draft.ppt
 
 ??? Tip "Hint"
 
-    1. In the **Navigation Pane**, select **Slide 2**.
-        
-        (Hint: Select the slide that appears before the location where you want to insert the new slide.)
-
-    2. In the **Insert** tab, **Slides** group, click **New Slide** and select **Reuse Slides...**
-    
-    3. The **Reuse Slides** pane will appear on the right. Click **Browse** then **Browse File...** and locate the **GMetrixTemplates** folder. Select **FT_Draft.pptx** and click **Open**. All of the slides contained in the presentation will list in the **Reuse Slides** pane.
-    
-    4. At the bottom of the list, make sure the box next to **Keep source formatting** is disabled (clear).
-    
-    5. Right-click **Board of Directors** (**Slide 3**) and select **Insert Slide**. (Hint: Alternatively, you can also click on the slide to insert it.)
-
-    6. Close the **Reuse Slides** pane by clicking the **X** in the upper-right corner of the pane.
+    1. Trong **Navigation Pane**, chọn **Slide 2**.        
+        (Gợi ý: Hãy chọn cái slide nằm trước vị trí mà bạn muốn chèn slide mới.)
+    2. Trong tab **Insert**, nhóm **Slides**, click **New Slide** rồi chọn mục **Reuse Slides...**    
+    3. Bảng **Reuse Slides** sẽ xuất hiện bên phải màn hình. Click **Browse**, rồi click **Browse File...** và tìm thư mục **GMetrixTemplates**. Chọn file **FT_Draft.pptx** rồi click nút **Open**. Tất cả slide của file **FT_Draft.pptx** sẽ hiện ra trong bảng **Reuse Slides**.    
+    4. Ở dưới cùng, bỏ dấu check của mục **Keep source formatting**.    
+    5. Click phải lên slide **Board of Directors** (tức **Slide 3**) rồi chọn **Insert Slide**. (Gợi ý: Cách làm khác, click luôn vào slide đó để chèn vào.)
+    6. Click nút **X** ở góc phải trên để đóng bảng **Reuse Slides**.
 
 ## Task 4
 
@@ -76,17 +57,12 @@ In the right pane of the slide titled FusionTomo, insert the video FusionTomo.mp
 
 ??? Tip "Hint"
 
-    1. In the **Navigation Pane**, select the slide near the bottom titled **FusionTomo**.
-    
-    2. In the content placeholder on the right side of the slide, click the **Insert Video** icon.
-
-    3. In the **Insert Video** pop-up, next to **From a file**, click **Browse**.
-
-        (Hint: Alternatively, you could click anywhere inside the placeholder, then on the **Insert** tab, in the **Media** group, click **Video** and select **Video on My PC...**)
-
-    4. Browse to your **GMetrixTemplates** folder and select **FusionTomo.mp4**.
-
-    5. Click **Insert**.
+    1. Trong **Navigation Pane**, chọn slide gần cuối có tựa đề là **FusionTomo**.    
+    2. Trong cái placeholder nằm bên phải của slide, click biểu tượng **Insert Video**.
+    3. Trong cửa số pop-up **Insert Video**, kế mục **From a file**, click **Browse**.
+        (Gợi ý: Cách làm khác, là click đại đâu đó  you bên trong cái placeholder, sau đó trong tab **Insert**, nhóm **Media**, click **Video** rồi chọn **Video on My PC...**)
+    4. Tìm đến thư mục **GMetrixTemplates** rồi chọn file **FusionTomo.mp4**.
+    5. Click nút **Insert**.
 
 ## Task 5
 
@@ -94,12 +70,8 @@ Inspect this presentation and remove only Document Properties and Personal Infor
 
 ??? Tip "Hint"
 
-    1. On the **File** tab, in the **Info** pane, click **Check for Issues** and select **Inspect Document**.
-
-    2. When prompted to save your changes, click **Yes**.
-    
-    3. On the **Document Inspector** pop-up window, accept the default settings and click the **Inspect** button.
-
-    4. Review the inspection results, but only click the **Remove All** button associated with **Document Properties** and **Personal Information**.
-
-    5. Click the **Close** button.
+    1. Trong tab **File**, bảng **Info**, click nút **Check for Issues** rồi chọn **Inspect Document**.
+    2. Khi thấy thông báo lưu file thì click **Yes**.    
+    3. Trong cửa sổ pop-up **Document Inspector**, giữ nguyên các lựa chọn (các dấu check) và click nút **Inspect**.
+    4. Xem kết quả, nhưng chỉ click nút **Remove All** nằm ở chỗ **Document Properties** và **Personal Information**.
+    5. Click nút **Close**.
