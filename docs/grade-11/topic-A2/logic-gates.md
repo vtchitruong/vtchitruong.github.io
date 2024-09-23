@@ -1,13 +1,23 @@
+---
+icon: material/gate-xor
+---
+
 # Cổng logic
 
 !!! abstract "Tóm lược nội dung"
-    Bài này giới thiệu một số cổng logic.
+
+    Bài này trình bày một số cổng logic.
 
 ## Khái niệm
 
-**Cổng logic** là một mạch điện tử có một hoặc nhiều đầu vào, và một đầu ra duy nhất, dùng để thực hiện các biến đổi logic trên các tín hiệu nhị phân.  
+**Cổng logic** là một mạch điện tử có:
 
-Các cổng logic đóng vai trò quan trọng trong thiết kế và vận hành của một hệ thống kỹ thuật số như máy tính hoặc bộ vi điều khiển (microcontroller).  
+- một hoặc nhiều đầu vào
+- một đầu ra duy nhất
+
+dùng để thực hiện các biến đổi logic trên các tín hiệu nhị phân.  
+
+Các cổng logic đóng vai trò quan trọng trong thiết kế và vận hành của một hệ thống kỹ thuật số như máy tính hoặc bộ vi điều khiển (microcontroller). Chúng là nền tảng cho lĩnh vực điện toán và điện tử trong các thao tác xử lý dữ liệu nhị phân. Người ta kết hợp các cổng theo nhiều cách khác nhau để thực hiện các chức năng kỹ thuật số phức tạp.
 
 Một số cổng logic phổ biến là:
 
@@ -30,7 +40,7 @@ Ký hiệu:
 
 Bảng chân trị:
 
-| Input a | Output x |
+| a | x |
 | --- | --- |
 | 0 | 1 |
 | 1 | 0 |
@@ -45,7 +55,7 @@ Ký hiệu:
 
 Bảng chân trị:
 
-| Input a | Input b | Output x |
+| a | b | x |
 | --- | --- | --- |
 | 0 | 0 | 0 |
 | 0 | 1 | 0 |
@@ -62,7 +72,7 @@ Ký hiệu:
 
 Bảng chân trị:
 
-| Input a | Input b | Output x |
+| a | b | x |
 | --- | --- | --- |
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
@@ -79,7 +89,7 @@ Ký hiệu:
 
 Bảng chân trị:
 
-| Input a | Input b | Output x |
+| a | b | x |
 | --- | --- | --- |
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
@@ -96,7 +106,7 @@ Ký hiệu:
 
 Bảng chân trị:
 
-| Input a | Input b | Output x |
+| a | b | x |
 | --- | --- | --- |
 | 0 | 0 | 1 |
 | 0 | 1 | 1 |
@@ -113,7 +123,7 @@ Ký hiệu:
 
 Bảng chân trị:
 
-| Input a | Input b | Output x |
+| a | b | x |
 | --- | --- | --- |
 | 0 | 0 | 1 |
 | 0 | 1 | 0 |
@@ -122,12 +132,8 @@ Bảng chân trị:
 
 ### Tóm tắt các cổng logic
 
-{!grade-11/topic-A/logic-gates/logic-gates.mm.md!}
-Hình 1. Sơ đồ tóm tắt các cổng logic
-
-## Vai trò của các cổng logic
-
-Các cổng logic là nền tảng cho lĩnh vực điện toán và điện tử trong các thao tác xử lý dữ liệu nhị phân. Người ta kết hợp các cổng theo nhiều cách khác nhau để thực hiện các chức năng kỹ thuật số phức tạp.
+{!grade-11/topic-A2/logic-gates/logic-gates.mm.md!}
+*Sơ đồ tóm tắt các cổng logic*
 
 ## Some English words
 

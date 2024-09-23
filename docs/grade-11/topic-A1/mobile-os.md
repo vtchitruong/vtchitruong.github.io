@@ -1,18 +1,21 @@
+---
+icon: material/android
+---
+
 # Hệ điều hành của thiết bị di động
 
 !!! abstract "Tóm lược nội dung"
-    Bài này trình bày hai nội dung:
+
+    Bài này trình bày:
     
     - Những điểm khác nhau giữa hệ điều hành dành cho máy tính để bàn và dành cho thiết bị di động.
     - Những nét chính của hệ điều hành Android.
 
 ## Hệ điều hành của máy tính để bàn và của thiết bị di động
 
-Mặc dù hệ điều hành dành cho máy tính để bàn và hệ điều hành dành cho thiết bị di động đều là những phần mềm hệ thống quan trọng giúp quản lý và kiểm soát thiết bị, chúng vẫn có một số điểm khác nhau như sau:  
+Bảng sau thể hiện những điểm khác nhau giữa hệ điều hành trên máy tính để bàn và trên thiết bị di động.
 
-Bảng 1: So sánh hệ điều hành trên máy tính để bàn và thiết bị di động  
-
-| Đặc điểm  | Hệ điều hành máy tính để bàn | Hệ điều hành thiết bị di động |
+| Đặc điểm | Hệ điều hành máy tính để bàn | Hệ điều hành thiết bị di động |
 | --- | ---- | ---- |
 | Ngoại hình thiết bị | Dành cho các máy tính có kích thước lớn như máy tính để bàn, máy tính để đùi. | Dành cho các thiết bị di động có kích thước nhỏ hơn như điện thoại thông minh, máy tính bảng, đồng hồ thông minh. |
 | Tác vụ | Thiên về các tác vụ như sáng tạo nội dung, chơi game "nặng", phát triển phần mềm. | Thiên về các tác vụ giao tiếp, giải trí, định hướng, tìm vị trí. |
@@ -23,23 +26,25 @@ Bảng 1: So sánh hệ điều hành trên máy tính để bàn và thiết b�
 | Hệ sinh thái phần mềm| Được thiết kế để đáp ứng các ứng dụng phức tạp và giàu tính năng.| Được thiết kế để đáp ứng các ứng dụng có tác vụ đơn giản và thao tác nhanh chóng. |
 | Kết nối mạng| Cho phép kết nối có dây.| Phần lớn thiên về kết nối không dây: WiFi, dữ liệu di động, Bluetooth, NFC. |
 
-## Một số nét chính về hệ điều hành Android
+## Hệ điều hành Android
 
-Android là hệ điều hành dành cho thiết bị di động. Ban đầu Android được thiết kế cho điện thoại thông minh, sau này mở rộng ra cho các thiết bị khác như: máy tính bảng, đồng hồ thông minh, tivi thông minh, máy chơi game, set-top box, hệ thống hỗ trợ xe hơi, máy đọc sách, máy thanh toán POS, các thiết bị công nghiệp và thiết bị IoT.
+**Android** là hệ điều hành dành cho thiết bị di động.
 
-Android có một số đặc điểm sau:  
+Thời gian đầu, Android được thiết kế tập trung cho điện thoại thông minh. Về sau mở rộng ra cho các thiết bị khác như: máy tính bảng, đồng hồ thông minh, tivi thông minh, máy chơi game, set-top box, hệ thống hỗ trợ xe hơi, máy đọc sách, máy thanh toán POS, các thiết bị công nghiệp và thiết bị IoT.
+
+Android có một số đặc điểm sau:
 
 1. Mã nguồn mở:
 
-    Các lập trình viên có thể tải mã nguồn của Android về một cách miễn phí để bổ sung, chỉnh sửa.
+    Các lập trình viên có thể tải miễn phí mã nguồn của Android để bổ sung, chỉnh sửa.
 
 2. Khả năng tùy biến:
 
-    Android có thể được tùy biến ở mức độ cao, giúp người dùng cá nhân hóa được thiết bị của mình.
+    Android có thể được tùy biến ở mức độ cao, giúp người dùng *cá nhân hóa* được thiết bị của mình.
 
 3. Hệ sinh thái ứng dụng:
 
-    Android có hệ sinh thái ứng dụng khổng lồ, phần lớn được tải từ chợ ứng dụng chính thức là Google Play, bên cạnh nhiều chợ ứng dụng khác.
+    Android có hệ sinh thái ứng dụng khổng lồ, phần lớn được tải từ chợ ứng dụng chính thức là [Google Play](https://play.google.com/store/apps){:target="_blank"}, bên cạnh nhiều chợ ứng dụng khác.
 
 4. Khả năng tích hợp Google
 
@@ -59,15 +64,15 @@ Android có một số đặc điểm sau:
 
 8. Đa dạng thiết bị:
 
-    Như đã đề cập ở trên, Android có thể chạy trên nhiều loại thiết bị khác nhau, trở thành một nền tảng linh hoạt cho các nhà phát triển.
+    Android có thể chạy trên nhiều loại thiết bị khác nhau và là một nền tảng linh hoạt cho các nhà phát triển.
 
 9. Thân thiện với lập trình viên:
 
-    Android cung cấp nhiều công cụ và tài nguyên cho các nhà phát triển ứng dụng, trong đó bao gồm Android Studio IDE, API và nhiều tài liệu mở rộng.
+    Android cung cấp nhiều công cụ và tài nguyên cho các nhà phát triển ứng dụng, trong đó bao gồm [Android Studio IDE](https://developer.android.com/studio){:target="_blank"}, API và nhiều tài liệu mở rộng.
 
 10. Sự phân mảnh:
 
-    Android chạy trên rất nhiều thiết bị của các nhà phát triển khác nhau, dẫn đến sự phân mảnh về cả phần cứng lẫn phần mềm, tạo nên thách thức cho lập trình viên khi phát triển ứng dụng trên các thiết bị Android.
+    Android chạy trên rất nhiều thiết bị của các nhà sản xuất khác nhau, dẫn đến sự phân mảnh về cả phần cứng lẫn phần mềm, tạo nên thách thức cho lập trình viên khi phát triển các ứng dụng.
 
 ## Some English words
 
