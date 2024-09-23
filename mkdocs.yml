@@ -307,13 +307,16 @@ nav:
       - grade-10/topic-F/string.md
   - Lớp 11:
     - Chương trình khung: grade-11/grade-11-index.md
-    - Chủ đề A:
-      - grade-11/topic-A/os-vs-application.md
-      - grade-11/topic-A/open-source-software.md
-      - grade-11/topic-A/mobile-os.md
-      - grade-11/topic-A/os-history.md
-      - grade-11/topic-A/internal-hardware-components.md
-      - grade-11/topic-A/logic-gates.md      
+    - Chủ đề A1:
+      - grade-11/topic-A1/topic-a1-index.md
+      - grade-11/topic-A1/os-vs-application.md
+      - grade-11/topic-A1/open-source-software.md
+      - grade-11/topic-A1/mobile-os.md
+      - grade-11/topic-A1/os-history.md
+    - Chủ đề A2:
+      - grade-11/topic-A2/topic-a2-index.md
+      - grade-11/topic-A2/internal-hardware-components.md
+      - grade-11/topic-A2/logic-gates.md
     - Chủ đề F1:
       - grade-11/topic-F1/data-related-needs.md
       - grade-11/topic-F1/database-basics.md

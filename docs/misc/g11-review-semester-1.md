@@ -49,7 +49,7 @@ Xem bài lý thuyết [tại đây](https://vtchitruong.github.io/grade-11/topic
 
 5. Sơ đồ nào sau đây thể hiện mối quan hệ giữa phần mềm ứng dụng, hệ điều hành và phần cứng? 
 
-    ![A](../grade-11/topic-A/os-vs-application/os-vs-application-for-quiz.svg){loading=lazy}
+    ![A](../grade-11/topic-A1/os-vs-application/os-vs-application-for-quiz.svg){loading=lazy}
 
     ??? tip "Gợi ý"
         Hệ điều hành đóng vai trò trung gian giữa phần mềm ứng dụng và phần cứng. Chẳng hạn, các phần mềm muốn sử dụng CPU và RAM để xử lý thì phải thông qua hệ điều hành. Hệ điều hành làm nhiệm vụ phân phối CPU và RAM giữa các phần mềm ứng dụng sao cho hợp lý.

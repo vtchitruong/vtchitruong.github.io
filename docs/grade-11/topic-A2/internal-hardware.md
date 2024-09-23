@@ -165,7 +165,7 @@ Bên cạnh đó, GPU còn góp phần trong các ứng dụng đòi hỏi sức
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-11/topic-A2/hardwares/hardwares.mm.md!}
+{!grade-11/topic-A2/internal-hardware.mm.md!}
 *Sơ đồ phân loại phần cứng theo bên trong và bên ngoài*
 
 ## Some English words

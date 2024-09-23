@@ -132,7 +132,7 @@ Bảng chân trị:
 
 ### Tóm tắt các cổng logic
 
-{!grade-11/topic-A2/logic-gates/logic-gates.mm.md!}
+{!grade-11/topic-A2/logic-gates.mm.md!}
 *Sơ đồ tóm tắt các cổng logic*
 
 ## Some English words

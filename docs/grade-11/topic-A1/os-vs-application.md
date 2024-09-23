@@ -77,7 +77,7 @@ Hình sau thể hiện mối quan hệ giữa phần cứng, hệ điều hành 
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-11/topic-A1/softwares/os-vs-application.mm.md!}
+{!grade-11/topic-A1/os-vs-application.mm.md!}
 *Sơ đồ phân loại phần mềm*
 
 ## Some English words

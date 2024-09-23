@@ -137,7 +137,7 @@ Mỗi loại phần mềm đều có những ưu điểm và hạn chế riêng.
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-11/topic-A1/softwares/softwares.mm.md!}
+{!grade-11/topic-A1/open-source-software.mm.md!}
 *Sơ đồ phân loại phần mềm*
 
 ## Some English words
