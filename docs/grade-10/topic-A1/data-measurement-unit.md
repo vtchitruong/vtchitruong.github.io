@@ -26,12 +26,18 @@ Như vậy, một cách hình tượng, bộ nhớ máy tính có thể chia nh�
 
     1.  bit là viết tắt của **b** -inary dig- **it** (chữ số nhị phân).
 
+!!! question "Hỏi chút chơi - phần 1"
+    
+    <div>
+        <iframe style="width: 100%; height: 380px" frameBorder=0 src="../data-measurement-unit/quiz1.html">Hỏi chút chơi - phần 1</iframe>
+    </div>
+
 ## Đơn vị byte
 
 Để tiện lợi và hiệu quả, người ta gom nhóm nhiều bit lại, tạo ra những đơn vị lớn hơn. Cụ thể, cứ mỗi 8 bit liên tiếp được gom thành 1 byte.  
 
 <div>
-    <iframe width="100%" height="150px" frameBorder=0 src="../bit-byte/bit-byte.html"></iframe>
+    <iframe width="100%" height="150px" frameBorder=0 src="../data-measurement-unit/bit-byte.html"></iframe>
 </div>
 
 !!! note "byte"
@@ -49,6 +55,12 @@ Byte có thể dùng để biểu diễn:
     **B** in hoa là byte, **b** thường là bit.  
 
     Kích thước của tập tin và dung lượng của thiết bị lưu trữ thường ghi theo **B** -yte; trong khi đó, tốc độ đường truyền mạng thường ghi theo **b** -it.
+
+!!! question "Hỏi chút chơi - phần 2"
+    
+    <div>
+        <iframe style="width: 100%; height: 320px" frameBorder=0 src="../data-measurement-unit/quiz2.html">Hỏi chút chơi - phần 2</iframe>
+    </div>
 
 ## Các đơn vị bội của byte
 
@@ -78,6 +90,12 @@ Byte có thể dùng để biểu diễn:
     Vì các nhà sản xuất thiết bị lưu trữ tính theo cách này, cộng thêm vài lý do khác, nên dung lượng của thiết bị lưu trữ mà máy tính nhận biết sẽ có sự chênh lệch với dung lượng ghi trên bao bì sản phẩm.  
 
     Trong các chương trình học ở Việt Nam, bạn nên sử dụng $2^{10}$ để quy đổi.
+
+!!! question "Hỏi chút chơi - phần 3"
+    
+    <div>
+        <iframe style="width: 100%; height: 320px" frameBorder=0 src="../data-measurement-unit/quiz3.html">Hỏi chút chơi - phần 3</iframe>
+    </div>
 
 ## Sơ đồ tóm tắt nội dung
 

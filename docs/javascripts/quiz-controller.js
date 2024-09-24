@@ -1,51 +1,37 @@
 // Creating questionss and answers
-var part1 = [{
-  question: "Hệ thống AI là hệ thống như thế nào?",
-  answers: ["Hoạt động không cần quá nhiều đến sự can thiệp của con người.", "Một nhánh của khoa học máy tính tập trung vào phân tích dữ liệu.", "Có cài đặt phần mềm đồ hoạ Adobe Illustrator."],
-  correct: 0
-}];
+// var part1 = [{
+//   question: "1 bit bộ nhớ máy tính có thể lưu trữ dữ liệu như thế nào?",
+//   answers: ["Hoặc lưu trạng thái 0 hoặc lưu trạng thái 1.", "Lưu đồng thời cả hai trạng thái 0 và 1", "Lưu bất kỳ số tự nhiên nào."],
+//   correct: 0
+// }];
 
-var part2 = [{
-  question: "Hiểu và diễn giải môi trường xung quanh là năng lực nào của AI?",
-  answers: ["Tự động hoá", "Biết điều", "Nhận thức"],
-  correct: 2
-  },
-  {
-    question: "Thích nghi và cải thiện hiệu suất của mình theo thời gian là năng lực nào của AI?",
-    answers: ["Học tập", "Tự chủ", "Thích cãi"],
-    correct: 0
-  },
-  {
-    question: "Tạo ra các ý tưởng và tác phẩm mới là năng lực nào của AI?",
-    answers: ["Biến hình", "Sáng tạo", "Khái quát hoá"],
-    correct: 1
-  },
-  {
-    question: "Đánh giá các lựa chọn, cân nhắc các phương án và lựa chọn hướng đi thích hợp nhất là năng lực nào của AI?",
-    answers: ["Ra quyết định", "Tìm đường đi", "Tự chủ"],
-    correct: 0
-  },
+// var part2 = [{
+//   question: "8 byte bằng bao nhiêu bit?",
+//   answers: ["1", "Cần phải biết số lượng bit 1 mới tính được", "64"],
+//   correct: 2
+// }];
 
-];
-
-var part3 = [{
-    question: "Có mấy loại AI",
-    answers: ["1 loại", "2 loại", "4 loại"],
-    correct: 1
-  }
-];
-
-var part4 = [{
-    question: "Giúp máy tính đạt được hiểu biết từ hình ảnh là nhánh nghiên cứu nào của AI?",
-    answers: ["Đồ hoạ máy tính", "Thị giác máy tính", "Tính toán tiến hoá"],
-    correct: 1
-  },
-  {
-    question: "Nhánh nghiên cứu nào của AI lấy cảm hứng từ mạng thần kinh sinh học của não động vật?",
-    answers: ["Biểu diễn tri ​​thức và lý luận", "Xử lý ngôn ngữ tự nhiên", "Neural network"],
-    correct: 2
-  }
-];
+// var part3 = [{
+//     question: "1 terabyte bằng bao nhiêu gigabyte?",
+//     answers: ["1024", "1,048,576", "8"],
+//     correct: 0
+//   },
+//   {
+//     question: "Giả sử mỗi ký tự chiếm 1 byte bộ nhớ. Vùng nhớ tối thiểu 2 KB có lưu trữ được một văn bản gồm 1536 ký tự hay không?",
+//     answers: ["Được", "Không được"],
+//     correct: 0
+//   },
+//   {
+//     question: "Một máy nghe nhạc MP3 có dung lượng bộ nhớ là 128 GB. Máy này lưu trữ 11 ngàn bài hát được không? Giả sử mỗi bài hát đều có dung lượng là 11 MB.",
+//     answers: ["Được", "Không được"],
+//     correct: 0
+//   },
+//   {
+//     question: "Trong hệ màu RGB, màu sắc của mỗi điểm ảnh (pixel) được tổng hợp từ 3 thành phần là red, green và blue. Trong đó, mỗi thành phần chiếm 8 bit bộ nhớ. Như vậy màu của mỗi điểm ảnh chiếm 24 bit trên bộ nhớ máy tính đúng không?",
+//     answers: ["Sai", "Đúng"],
+//     correct: 1
+//   }
+// ];
 
 var currentIndex = 0;
 var currentQuestion; // questions[currentIndex];
@@ -102,7 +88,7 @@ function showQuestions() {
   if (currentIndex != 0) {
     // create again submit button only for next pages
     ulTag.innerHTML = '';
-    button.innerHTML = 'Submit';
+    button.innerHTML = 'Chốt';
     button.className = 'submit';
     button.id = 'submit';
 
@@ -154,7 +140,7 @@ function showQuestions() {
         //store information to check answer
         tags = $liTags[i].id;
         // tagsClass = $LiTags.className;
-        console.log(tags);
+        // console.log(tags);
         tagsClassName = $liTags[i];
       }
     }

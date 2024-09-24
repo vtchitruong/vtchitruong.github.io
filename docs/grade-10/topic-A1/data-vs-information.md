@@ -55,7 +55,7 @@ flowchart LR
 !!! question "Hỏi chút chơi - phần 1"
     
     <div>
-        <iframe style="width: 100%; height: 480px" frameBorder=0 src="../data-vs-information/quiz1.html">Hỏi chút chơi - phần 1</iframe>
+        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../data-vs-information/quiz1.html">Hỏi chút chơi - phần 1</iframe>
     </div>
 
 ## Mối quan hệ giữa dữ liệu và thông tin
@@ -83,7 +83,7 @@ Ví dụ:
 !!! question "Hỏi chút chơi - phần 2"
     
     <div>
-        <iframe style="width: 100%; height: 480px" frameBorder=0 src="../data-vs-information/quiz2.html">Hỏi chút chơi - phần 2</iframe>
+        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../data-vs-information/quiz2.html">Hỏi chút chơi - phần 2</iframe>
     </div>
 
 ## Phân biệt dữ liệu và thông tin
@@ -112,7 +112,7 @@ Ví dụ:
 !!! question "Hỏi chút chơi - phần 3"
     
     <div>
-        <iframe style="width: 100%; height: 480px" frameBorder=0 src="../data-vs-information/quiz3.html">Hỏi chút chơi - phần 3</iframe>
+        <iframe style="width: 100%; height: 240px" frameBorder=0 src="../data-vs-information/quiz3.html">Hỏi chút chơi - phần 3</iframe>
     </div>
 
 ## Tầm quan trọng của dữ liệu và thông tin
@@ -138,9 +138,8 @@ Bài báo đọc thêm nhằm làm rõ ý kiến trên: [The world’s most valu
 !!! question "Hỏi chút chơi - phần 4"
     
     <div>
-        <iframe style="width: 100%; height: 480px" frameBorder=0 src="../data-vs-information/quiz4.html">Hỏi chút chơi - phần 4</iframe>
+        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../data-vs-information/quiz4.html">Hỏi chút chơi - phần 4</iframe>
     </div>
-
 
 ## Sơ đồ tóm tắt nội dung
 
