@@ -19,7 +19,7 @@ Nghĩa là, máy tính chỉ sử dụng hai tín hiệu đại diện cho hai t
 
 Như vậy, một cách hình tượng, bộ nhớ máy tính có thể chia nhỏ thành nhiều ô vuông, mỗi ô là một bit, và không thể chia nhỏ hơn được nữa. Tại một thời điểm, một bit chỉ chứa một trong hai trạng thái, hoặc là `0` hoặc là `1`, chứ không chứa hai trạng thái cùng lúc.  
 
-!!! abstract "bit"
+!!! note "bit"
 
     Đơn vị đo dữ liệu nhỏ nhất và cơ bản (nhất) là **bit** (1). Ký hiệu: **b**.
     { .annotate }
@@ -34,7 +34,7 @@ Như vậy, một cách hình tượng, bộ nhớ máy tính có thể chia nh�
     <iframe width="100%" height="150px" frameBorder=0 src="../bit-byte/bit-byte.html"></iframe>
 </div>
 
-!!! abstract "byte"
+!!! note "byte"
 
     Đơn vị đo dữ liệu thường dùng là **byte** (B). Ký hiệu: **B**.
 
@@ -44,7 +44,7 @@ Byte có thể dùng để biểu diễn:
 - số nguyên hoặc số có phần thập phân
 - kênh màu
 
-!!! note "Lưu ý về ký hiệu"
+!!! info "Lưu ý về ký hiệu"
 
     **B** in hoa là byte, **b** thường là bit.  
 
@@ -65,7 +65,7 @@ Byte có thể dùng để biểu diễn:
 | zettabyte | ZB | 1 ZB = $2^{10}$ EB |
 | yottabyte | YB | 1 YB = $2^{10}$ ZB |
 
-??? note "Cách quy đổi khác"
+??? info "Cách quy đổi khác"
 
     Trên thực tế, người ta còn một cách quy đổi khác, đó là **đơn vị sau** bằng $10^3$ **đơn vị trước**, thay vì $2^{10}$ như bảng trên. Chẳng hạn:   
 

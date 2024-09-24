@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Google Sans, Roboto, Arial, sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 html {
@@ -140,7 +140,7 @@ body {
     transform: scale(0.97);
 }
 
-@media(max-width: 790px) {
+@media(max-width: 576px) {
     .wrapper .center-line {
         left: 40px;
     }
@@ -164,13 +164,19 @@ body {
 
 @media(max-width: 440px) {
 
-    .wrapper .center-line,
+    /* .wrapper .center-line, */
     .row section::before,
-    .row section .icon {
+    .row
+    /* section .icon */ {
         display: none;
     }
 
     .wrapper .row {
         margin: 10px 0;
+    }
+
+    .wrapper .row section {
+        width: 100%;
+        margin-left: 60px;
     }
 }

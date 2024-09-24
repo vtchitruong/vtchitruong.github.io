@@ -25,4 +25,3 @@ markmap:
 - Chức năng: Thực hiện một công việc cụ thể nào đó.
 - Cài đặt: Tùy nhu cầu.
 - Phụ thuộc: Nền tảng hệ điều hành.
-

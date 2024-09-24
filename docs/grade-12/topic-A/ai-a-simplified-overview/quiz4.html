@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <!-- Number of question  -->
+        <div class="wrapper" id="pages">
+            Câu <span id="quizNumber">1</span><span>/2:</span>
+        </div>
+        <!-- Quiz question -->
+        <div class="quiz-questions" id="display-area">
+            <p id="question"></p>
+            <ul id="answer">
+            </ul>
+            <div id="quiz-results">
+            <button type="button" name="button" class="submit" id="submit">Chốt</button>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="quiz.js"></script>
+</body>
+</html>
+

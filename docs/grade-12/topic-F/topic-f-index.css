@@ -25,12 +25,11 @@ body {
 }
 
 .vtct-list {
-    width: 300px;    
+    width: 280px;    
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-
     flex: 1; /* Makes each list take up equal space */
-    max-width: 45%; /* Ensures the lists don't stretch too wide */
+    max-width: 100%; /* Ensures the lists don't stretch too wide */
 }
 
 .vtct-first-list {
@@ -41,7 +40,7 @@ body {
     border-bottom: 20px solid var(--second-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .vtct-list-container {
       flex-direction: column;
       gap: 10px; /* Adjust spacing between stacked lists */
@@ -53,10 +52,10 @@ body {
 }
 
 .vtct-list h2 {
-    color: #fff;
-    
+    color: #fff;    
     padding: 10px 20px;
-    font-weight: 700;
+    font-weight: normal;
+    font-size: 1.4rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -118,7 +117,6 @@ body {
     border-radius: 50%;
     margin-right: 10px;
     font-size: 1rem;
-    font-weight: 600;
     transform: translateY(-2px);
 }
 
