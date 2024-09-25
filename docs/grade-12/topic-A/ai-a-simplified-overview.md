@@ -20,7 +20,7 @@ icon: octicons/ai-model-24
 !!! question "Hỏi chút chơi - phần 1"
     
     <div>
-        <iframe style="width: 100%; height: 420px" frameBorder=0 src="../ai-a-simplified-overview/quiz1.html">Hỏi chút chơi - phần 1</iframe>
+        <iframe style="width: 100%; height: 450px" frameBorder=0 src="../ai-a-simplified-overview/quiz1.html">Hỏi chút chơi - phần 1</iframe>
     </div>
 
 ## Những năng lực chủ yếu
@@ -90,7 +90,7 @@ Một hệ thống AI thường có những năng lực chủ yếu sau:
 !!! question "Hỏi chút chơi - phần 2"
     
     <div>
-        <iframe style="width: 100%; height: 320px" frameBorder=0 src="../ai-a-simplified-overview/quiz2.html">Hỏi chút chơi - phần 2</iframe>
+        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../ai-a-simplified-overview/quiz2.html">Hỏi chút chơi - phần 2</iframe>
     </div>
 
 ## Phân loại
@@ -133,7 +133,7 @@ Tất cả hệ thống AI hiện tại, bao gồm cả những hệ thống ti�
 !!! question "Hỏi chút chơi - phần 3"
     
     <div>
-        <iframe style="width: 100%; height: 280px" frameBorder=0 src="../ai-a-simplified-overview/quiz3.html">Hỏi chút chơi - phần 3</iframe>
+        <iframe style="width: 100%; height: 300px" frameBorder=0 src="../ai-a-simplified-overview/quiz3.html">Hỏi chút chơi - phần 3</iframe>
     </div>
 
 ## Những nhánh nghiên cứu AI chủ yếu 
@@ -193,7 +193,7 @@ Các nhánh này thường chồng chéo và tương tác qua lại trong các h
 !!! question "Hỏi chút chơi - phần 4"
     
     <div>
-        <iframe style="width: 100%; height: 320px" frameBorder=0 src="../ai-a-simplified-overview/quiz4.html">Hỏi chút chơi - phần 4</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../ai-a-simplified-overview/quiz4.html">Hỏi chút chơi - phần 4</iframe>
     </div>
 
 ## Sơ đồ tóm tắt nội dung

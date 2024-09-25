@@ -26,6 +26,12 @@ Ví dụ:
 
 [Chromium](https://www.chromium.org/chromium-projects/){:target="_blank"} là trình duyệt web mã nguồn mở. Mã nguồn của Chromium có thể xem tại [https://chromium.googlesource.com/chromium/src/](https://chromium.googlesource.com/chromium/src/){:target="_blank"}
 
+!!! question "Hỏi chút chơi - phần 1"
+    
+    <div>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../open-source-software/quiz1.html">Hỏi chút chơi - phần 1</iframe>
+    </div>
+
 ### Đặc điểm
 
 1. Tính minh bạch  
@@ -48,6 +54,12 @@ Ví dụ:
     !!! note "Về chi phí sử dụng"
 
         Điều này không đồng nghĩa phần mềm mã nguồn mở luôn miễn phí hay người dùng sẽ luôn tiết kiệm được chi phí đối với phần mềm mã nguồn mở, bởi vì nhiều yếu tố khác có thể xuất hiện trong quá trình sử dụng khiến chi phí phát sinh.
+
+!!! question "Hỏi chút chơi - phần 2"
+    
+    <div>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../open-source-software/quiz2.html">Hỏi chút chơi - phần 2</iframe>
+    </div>
 
 ### Giấy phép
 
@@ -84,6 +96,12 @@ Một số giấy phép mã nguồn mở thông dụng là:
 
     Toàn văn của GPLv3: [https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html){:target="_blank"}
 
+!!! question "Hỏi chút chơi - phần 3"
+    
+    <div>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../open-source-software/quiz3.html">Hỏi chút chơi - phần 3</iframe>
+    </div>
+
 ## Các loại phần mềm
 
 ### Phân loại
@@ -112,6 +130,12 @@ Bảng sau kể tên một số phần mềm thương mại, mã nguồn mở v�
     
     Một số phần mềm có cả phiên bản miễn phí với tính năng cơ bản lẫn phiên bản có phí với tính năng nâng cao.
 
+!!! question "Hỏi chút chơi - phần 4"
+    
+    <div>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../open-source-software/quiz4.html">Hỏi chút chơi - phần 4</iframe>
+    </div>
+
 ### So sánh
 
 Bảng sau thể hiện những điểm khác biệt giữa ba loại phần mềm:  
@@ -134,6 +158,12 @@ Mỗi loại phần mềm đều có những ưu điểm và hạn chế riêng.
 ??? success "Tản mạn về chữ free"
 
     Chữ **free** trong giấy phép GNU của phần mềm mã nguồn mở mang ý nghĩa tự do (freedom), đề cao quyền tự do xem, sử dụng, bổ sung và phân phối lại mã nguồn. Trong khi đó, chữ **free** của *freeware* mang ý nghĩa miễn phí (free of charge, no cost). Cho nên, dịch *freeware* là *phần mềm tự do* là không đúng.
+
+!!! question "Hỏi chút chơi - phần 5"
+    
+    <div>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../open-source-software/quiz5.html">Hỏi chút chơi - phần 5</iframe>
+    </div>
 
 ## Sơ đồ tóm tắt nội dung
 

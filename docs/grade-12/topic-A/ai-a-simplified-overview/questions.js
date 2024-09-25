@@ -29,7 +29,7 @@ var part2 = [{
 ];
 
 var part3 = [{
-    question: "Có mấy loại AI",
+    question: "Có mấy loại AI?",
     answers: ["1 loại", "2 loại", "4 loại"],
     correct: 1
   }

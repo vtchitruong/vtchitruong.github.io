@@ -29,7 +29,7 @@ Như vậy, một cách hình tượng, bộ nhớ máy tính có thể chia nh�
 !!! question "Hỏi chút chơi - phần 1"
     
     <div>
-        <iframe style="width: 100%; height: 380px" frameBorder=0 src="../data-measurement-unit/quiz1.html">Hỏi chút chơi - phần 1</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../data-measurement-unit/quiz1.html">Hỏi chút chơi - phần 1</iframe>
     </div>
 
 ## Đơn vị byte
@@ -94,7 +94,7 @@ Byte có thể dùng để biểu diễn:
 !!! question "Hỏi chút chơi - phần 3"
     
     <div>
-        <iframe style="width: 100%; height: 320px" frameBorder=0 src="../data-measurement-unit/quiz3.html">Hỏi chút chơi - phần 3</iframe>
+        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../data-measurement-unit/quiz3.html">Hỏi chút chơi - phần 3</iframe>
     </div>
 
 ## Sơ đồ tóm tắt nội dung

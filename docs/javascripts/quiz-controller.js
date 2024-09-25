@@ -51,6 +51,9 @@ function loadQuiz() {
   } else if (path.includes('quiz4.html')) {
     questions = part4;
   }
+  else if (path.includes('quiz5.html')) {
+    questions = part5;
+  }
 
   // Ensure questions has been assigned before accessing it
   if (questions) {
@@ -162,7 +165,7 @@ function checkAnswer() {
 
   // check that an answer has been selected
   if (selectedItem == undefined) {
-    alert("Please selected an answer!")
+    alert("Bạn chưa chọn gì hết mà đã bấm Chốt.")
     return
   } else {
     // get user answer if form of text
