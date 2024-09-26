@@ -417,3 +417,7 @@ div.gslide-description.description-bottom {
 .md-tooltip--active {
     border-radius: 0 15px 15px 15px;
 }
+
+strong {
+    font-weight: bold !important;
+}

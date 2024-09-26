@@ -1,40 +1,30 @@
-// Creating questionss and answers
-// var part1 = [{
-//   question: "1 bit bộ nhớ máy tính có thể lưu trữ dữ liệu như thế nào?",
-//   answers: ["Hoặc lưu trạng thái 0 hoặc lưu trạng thái 1.", "Lưu đồng thời cả hai trạng thái 0 và 1", "Lưu bất kỳ số tự nhiên nào."],
-//   correct: 0
-// }];
-
-// var part2 = [{
-//   question: "8 byte bằng bao nhiêu bit?",
-//   answers: ["1", "Cần phải biết số lượng bit 1 mới tính được", "64"],
-//   correct: 2
-// }];
-
-// var part3 = [{
-//     question: "1 terabyte bằng bao nhiêu gigabyte?",
-//     answers: ["1024", "1,048,576", "8"],
-//     correct: 0
-//   },
-//   {
-//     question: "Giả sử mỗi ký tự chiếm 1 byte bộ nhớ. Vùng nhớ tối thiểu 2 KB có lưu trữ được một văn bản gồm 1536 ký tự hay không?",
-//     answers: ["Được", "Không được"],
-//     correct: 0
-//   },
-//   {
-//     question: "Một máy nghe nhạc MP3 có dung lượng bộ nhớ là 128 GB. Máy này lưu trữ 11 ngàn bài hát được không? Giả sử mỗi bài hát đều có dung lượng là 11 MB.",
-//     answers: ["Được", "Không được"],
-//     correct: 0
-//   },
-//   {
-//     question: "Trong hệ màu RGB, màu sắc của mỗi điểm ảnh (pixel) được tổng hợp từ 3 thành phần là red, green và blue. Trong đó, mỗi thành phần chiếm 8 bit bộ nhớ. Như vậy màu của mỗi điểm ảnh chiếm 24 bit trên bộ nhớ máy tính đúng không?",
-//     answers: ["Sai", "Đúng"],
-//     correct: 1
-//   }
-// ];
-
 var currentIndex = 0;
 var currentQuestion; // questions[currentIndex];
+
+function simpleShuffleAnswers(question) {
+  const answers = question.answers;
+  const correctIndex = question.correct;
+
+  // A very simple shuffle using addition and modulo
+  const shuffledAnswers = [];
+  const numAnswers = answers.length;
+  const randomOffset = (Math.floor(Math.random() * 10) + 1) % numAnswers; // Get a random offset between 1 and length of answers
+
+  // Shift the answers by the random offset
+  for (let i = 0; i < numAnswers; i++) {
+    shuffledAnswers[(i + randomOffset) % numAnswers] = answers[i];
+  }
+
+  // Update the correct index based on the shift
+  const newCorrectIndex = (correctIndex + randomOffset) % numAnswers;
+
+  // Return the updated question with shuffled answers and new correct index
+  return {
+    ...question,
+    answers: shuffledAnswers,
+    correct: newCorrectIndex
+  };
+}
 
 // Function to determine which quiz is embedded
 function loadQuiz() {
@@ -46,6 +36,8 @@ function loadQuiz() {
     questions = part1;
   } else if (path.includes('quiz2.html')) {
     questions = part2;
+    // Randomize answers for all questions
+part2 = part2.map(simpleShuffleAnswers);
   } else if (path.includes('quiz3.html')) {
     questions = part3;
   } else if (path.includes('quiz4.html')) {
@@ -55,11 +47,14 @@ function loadQuiz() {
     questions = part5;
   }
 
+  // Randomize answers for all questions
+  questions = questions.map(simpleShuffleAnswers);
+
   // Ensure questions has been assigned before accessing it
   if (questions) {
     // var currentIndex = 0; // Example index
     currentQuestion = questions[currentIndex];
-    console.log(currentQuestion); // Output the current question
+    // console.log(currentQuestion); // Output the current question
   } else {
     console.error("Questions not defined.");
   }

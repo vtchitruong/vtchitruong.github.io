@@ -75,6 +75,8 @@ Hình sau thể hiện mối quan hệ giữa phần cứng, hệ điều hành 
 
 ![Mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng](./os-vs-application/os-and-application.svg){ loading=lazy width=240 }
 
+*Mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng*
+
 ## Sơ đồ tóm tắt nội dung
 
 {!grade-11/topic-A1/os-vs-application.mm.md!}
