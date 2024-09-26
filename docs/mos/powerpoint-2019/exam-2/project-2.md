@@ -1,4 +1,4 @@
-# Practice Exam 2 - Project 1
+# Practice Exam 2 - Project 2
 
 ## Online sales
 

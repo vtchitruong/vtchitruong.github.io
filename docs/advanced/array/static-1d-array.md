@@ -30,7 +30,7 @@ Song tuỳ vào bài toán, chỉ sử dụng một số lượng phần tử n�
 
 Các biến trên có thể khai báo ở dạng toàn cục, nhằm cho phép truy xuất từ nhiều hàm khác nhau.
 
-``` c++ linenums="1"
+```c++ linenums="1"
 const int MAX = 1000; // hằng số, đồng thời là kích thước tối đa của mảng
 int Arr[MAX]; // khai báo mảng Arr có MAX phần tử
 int num; // số phần tử thực dùng
@@ -42,15 +42,15 @@ int num; // số phần tử thực dùng
 
 Hàm `initArrray()` sau đây khởi tạo giá trị ngẫu nhiên cho tất cả phần tử. Hàm này có hai tham số cần truyền vào: thứ nhất là tên mảng cần khởi tạo, thứ hai là số phần tử thực dùng.
 
-``` c++ linenums="1"
+```c++ linenums="1"
 void initArray(int a[], int n)
 {
     // Seed the random number generator
-    srand(time(0)); // (1)
+    srand(time(0)); // (1)!
 
     for (int i = 0; i < n; i++)
     {
-        a[i] = rand() % 10; // (2)
+        a[i] = rand() % 10; // (2)!
     }
 }
 ```
@@ -66,7 +66,7 @@ void initArray(int a[], int n)
 
 Hàm `showArray()` in các phần tử ra màn hình trên cùng một dòng, phân cách nhau bằng khoảng trắng. Tham số `message` kèm theo dùng để chứa thông điệp tương ứng với mỗi lần in ra.
 
-``` c++ linenums="1"
+```c++ linenums="1"
 void showArray(int a[], int n, const string& message)
 {
     cout << message << endl;
@@ -74,13 +74,13 @@ void showArray(int a[], int n, const string& message)
     {
         cout << a[i] << ' ';
     }
-    cout << endl;
+    cout << '\n';
 }
 ```
 
 Trong hàm `main()`, ta gọi các hàm vừa viết ra thực hiện.
 
-``` c++ linenums="1"
+```c++ linenums="1"
 int main()
 { 
     num = 10; 
@@ -102,7 +102,7 @@ Hàm `sumArray()` dùng để tính tổng các phần tử trong mảng bằng 
 
 Hàm này được viết theo dạng truyền vào hai tham số, do đó, có thể áp dụng cho mảng một chiều khác bất kỳ.
 
-``` c++ linenums="1"
+```c++ linenums="1"
 int sumArray(int a[], int n)
 {
     int s = 0;
@@ -116,10 +116,10 @@ int sumArray(int a[], int n)
 
 Hàm `average()` dùng để tính trung bình cộng của các phần tử, bằng cách gọi lại hàm `sumArray()`, rồi chia cho `n` là số lượng phần tử thực dùng.
 
-``` c++ linenums="1"
+```c++ linenums="1"
 float average(int a[], int n)
 {
-    float res = (float) sumArray(a, n) / n; // (1)
+    float res = (float) sumArray(a, n) / n; // (1)!
     return res;
 }
 ```
@@ -135,17 +135,15 @@ Hàm `append()` dùng để thêm một phần tử vào cuối mảng.
 
 Hàm này kiểm tra xem số phần tử thực dùng, là `num`, có vượt quá sức chứa tối đa của mảng hay chưa. Nếu chưa, nghĩa là vẫn còn chỗ để thêm phần tử mới, thì thêm bằng cách: gán giá trị mới cho phần tử tại vị trí `num` và tăng `num` thêm một đơn vị.
 
-``` c++ linenums="1"
-void append(int value)
+```c++ linenums="1"
+void append(int a[], int *n, int value)
 {
-    if (num < MAX)
+    if (*n == MAX)
     {
-        Arr[num++] = value; // (1)
+        cout << "The array is full.\n";
     }
-    else
-    {
-        cout << "The array is full." << endl;
-    }
+    
+    a[(*n)++] = value; // (1)!
 }
 ```
 { .annotate. }
@@ -160,49 +158,49 @@ Hàm `insert()` dùng để thêm một phần tử mới có giá trị `value`
 
 Ý tưởng chính của hàm này là dịch chuyển từng phần tử trong phạm vi `pos..num` về cuối mảng một vị trí nhằm để chỗ trống `pos` cho phần tử mới chèn vào.
 
-``` c++ linenums="1"
-void insert(int value, int pos)
+```c++ linenums="1"
+void insert(int a[], int *n, int position, int value)
 {
-    // Kiểm tra pos nằm ngoài phạm vi cho phép
-    if (pos < 0 || pos > num)
+    // Kiểm tra position nằm ngoài phạm vi cho phép
+    if (position < 0 || position > *n)
     {
-        cout << "Position out of range." << endl;
+        cout << "Position out of range.\n";
         return;
     }
 
     // Kiểm tra mảng đã đầy
-    if (num >= MAX)
+    if (*n >= MAX)
     {
-        cout << "Array is full." << endl;
+        cout << "Array is full.\n";
         return;
     }
 
     // Đẩy các phần tử ra sau một vị trí
-    for (int i = num; i > pos; i--)
+    for (int i = *n; i > position; i--)
     {
-        Arr[i] = Arr[i - 1];
+        a[i] = a[i - 1];
     }
 
     // Chèn phần tử mới vào vị trí trống
-    Arr[pos] = value;
-    num++;
+    a[position] = value;
+    (*n)++;
 }
 ```
 
 Trong hàm `main()`, ta gọi các hàm vừa viết ra thực hiện.
 
-``` c++ linenums="1"
+```c++ linenums="1"
 int main()
 { 
     // ...
 
     int valueToAppend = 999;
-    append(valueToAppend);
+    append(Arr, &num, valueToAppend);
     showArray(Arr, num, "Append:");
 
     int valueToInsert = 777;
     int positionToInsert = 6;
-    insert(valueToInsert, positionToInsert);
+    insert(Arr, &num, positionToInsert, valueToInsert);
     showArray(Arr, num, "Insert:");
 
     return 0;
@@ -226,81 +224,55 @@ Hàm `removeLast()` dùng để xoá phần tử cuối cùng trong mảng.
 
 Trong hàm này, ta chỉ cần giảm `num` đi một đơn vị, do `num` là biến dùng để kiểm soát số lượng phần tử thực dùng.
 
-``` c++ linenums="1"
-void removeLast()
+```c++ linenums="1"
+void removeLast(int a[], int *n)
 {
-    if (num == 0)
+    if (*n == 0)
     {
-        cout << "Array is empty";
+        cout << "Array is already empty.\n";
         return;
     }
     
     // Giảm số phần tử
-    num--;
+    (*n)--;
 }
 ```
 
-Hàm `removeFirst()` dùng để xoá phần tử có chỉ số 0 ở đầu mảng.
+Hàm `removeAt()` dùng để xoá phần tử tại vị trí `position` cho trước.
 
-Ý tưởng chính là dịch chuyển từng phần tử trong phạm vi `[1..num - 1]` lên trước một vị trí nhằm *ghi đè* phần tử đầu tiên.
+Ý tưởng chính là dịch chuyển từng phần tử trong phạm vi `[position + 1..n - 1]` lên trước một vị trí nhằm *ghi đè* phần tử tại `position`.
 
-``` c++ linenums="1"
-void removeFirst()
+```c++ linenums="1"
+void removeAt(int a[], int *n, int position)
 {
-    if (num == 0)
+    if (position < 0 || position >= *n)
     {
-        cout << "Array is empty";
-        return;
-    }
-
-    // Đẩy các phần tử về trước một vị trí
-    for (int i = 1; i < num; i++)
-    {
-        Arr[i - 1] = Arr[i];
-    }
-
-    num--;
-}
-```
-
-Hàm `removeAt()` dùng để xoá phần tử tại vị trí `pos` cho trước.
-
-Ý tưởng chính tương tự như hàm `removeFirst()`, đó là ghi đè các phần tử nằm sau lên phần tử cần xoá.
-
-``` c++ linenums="1"
-void removeAt(int pos)
-{
-    if (pos < 0 || pos >= num)
-    {
-        cout << "Position out of range." << endl;
+        cout << "Position out of range.\n";
     }
 
     // Đẩy các phần tử qua trái một vị trí
-    for (int i = pos; i < num - 1; i++)
+    for (int i = position; i < *n - 1; i++)
     {
-        Arr[i] = Arr[i + 1];
+        a[i] = a[i + 1];
     }
 
-    num--;
+    (*n)--;
 }
 ```
 
 Trong hàm `main()`, ta gọi các hàm vừa viết ra thực hiện.
 
-``` c++ linenums="1"
+```c++ linenums="1"
 int main()
 { 
     // ...
 
-    removeFirst();
-    showArray(Arr, num, "Remove first:");
-
-    removeLast();
+    removeLast(Arr, &num);
     showArray(Arr, num, "Remove last:");
 
-    int positionToRemove = 5;
-    removeAt(positionToRemove);
-    showArray(Arr, num, "Remove:");
+    int positionToRemove = 6;
+    removeAt(Arr, &num, positionToRemove);
+    showArray(Arr, num, "Remove at some position:");
 
     return 0;
 }
@@ -311,12 +283,10 @@ Output:
 ```pycon
 Mảng trước đó:
 1 7 4 0 9 4 777 8 8 2 4 999
-Remove first:
-7 4 0 9 4 777 8 8 2 4 999
 Remove last:
-7 4 0 9 4 777 8 8 2 4
-Remove:
-7 4 0 9 4 8 8 2 4
+1 7 4 0 9 4 777 8 8 2 4
+Remove at some position:
+1 7 4 0 9 4 8 8 2 4
 ```
 
 ## Mã nguồn

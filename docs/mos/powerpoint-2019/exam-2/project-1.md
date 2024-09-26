@@ -12,7 +12,7 @@ On slide 4, crop the image to an Oval shape and resize it to a Height of 3.5" (8
 
 ??? Tip "Hint"
 
-    1. Trong bảng **Navigation Pane** bên trái, chọn **Slide 4**.
+    1. Trong bảng **Navigation Pane** bên trái, chọn **slide 4**.
     2. Click chọn hình.
     3. Chọn tab **Picture Tools Format**.
     4. Trong nhóm **Size**, click nút mũi tên **Crop** rồi chọn **Crop to Shape**.
@@ -26,7 +26,7 @@ Center align the equal (=) shapes on slide 5 to the top shape and then group the
 
 ??? Tip "Hint"
 
-    1. Trong bảng **Navigation Pane** bên trái, chọn **Slide 5.
+    1. Trong bảng **Navigation Pane** bên trái, chọn **slide 5**.
     2. Chọn cùng lúc các hình dấu bằng (=). (Gợi ý: Nhấn giữ phím CTRL và click chọn các dấu bằng.)
     3. Trong tab **Drawing Tools Format**, trong nhóm **Arrange**, click vào **Align** để mở menu.  
     4. Trong menu **Align**, bảo đảm **Align Selected Objects** đang được bật.
@@ -39,7 +39,7 @@ Insert a legend above the chart on slide 6.
 
 ??? Tip "Hint"
 
-    1. Trong bảng **Navigation Pane** bên trái, chọn **Slide 6.
+    1. Trong bảng **Navigation Pane** bên trái, chọn **slide 6**.
     2. Click chọn biểu đồ.  
     3. Trong tab **Chart Tools Design**, trong nhóm **Chart Layouts**, click vào **Add Chart Element**.  
     4. Chọn **Legend** và click chọn **Top**.
@@ -50,7 +50,7 @@ Convert the text on slide 7 to a Target List graphic.
 
 ??? Tip "Hint"
 
-    1. Trong bảng **Navigation Pane** bên trái, chọn **Slide 7**.
+    1. Trong bảng **Navigation Pane** bên trái, chọn **slide 7**.
     2. Chọn tất cả ba mục của danh sách.
     3. Trong tab **Home**, trong nhóm **Paragraph**, click **Convert to SmartArt**. Chọn **Target List**.
 

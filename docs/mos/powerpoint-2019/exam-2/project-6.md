@@ -1,4 +1,4 @@
-# Practice Exam 6 - Project 1
+# Practice Exam 2 - Project 6
 
 ## Eco-Friendly Stocks
 

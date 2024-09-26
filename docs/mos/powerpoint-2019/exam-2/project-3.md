@@ -1,4 +1,4 @@
-# Practice Exam 3 - Project 1
+# Practice Exam 2 - Project 3
 
 ## Backcountry Tours
 
@@ -13,7 +13,7 @@ Rename the Untitled Section to Intro.
 ??? Tip "Hint"
 
     1. Trong bảng **Navigation Pane** bên trái, ngay bên dưới slide tiêu đề, click vào phần có tên **Untitled Section**.
-    2. Right-click vào nó và chọn **Rename Section**.
+    2. Click phải vào và chọn **Rename Section**.
     3. Gõ tên **Intro**.
     4. Click nút **Rename**.
 
