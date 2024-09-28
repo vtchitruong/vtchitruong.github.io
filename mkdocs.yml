@@ -405,6 +405,8 @@ nav:
       - Chia phần thưởng: advanced/dynamic-programming/reward-student.md
       - Dãy con tăng dài nhất: advanced/dynamic-programming/lis.md
       - Balo: advanced/dynamic-programming/knapsack.md
+    - Lập lịch:
+      - Johnson: advanced/scheduling/johnson.md
   - MOS:
     - MOS 2019: mos/mos-2019-index.md
     - PowerPoint 2019:
