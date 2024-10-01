@@ -382,6 +382,7 @@ nav:
       - special-topics/back-tracking/binary-string-with-back-tracking.md
     - Hàng đợi:
       - special-topics/queue/an-overview-of-queue.md
+      - special-topics/queue/customer-service-simulation.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:

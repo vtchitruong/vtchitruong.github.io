@@ -10,7 +10,7 @@ markmap:
 
 ### Ưu điểm
 
-#### Khả năng lưu trữ lớn
+#### Năng lực lưu trữ lớn
 
 #### Xử lý nhanh chóng và chính xác
 
@@ -18,17 +18,17 @@ markmap:
 
 ## Đặc điểm
 
-### Khả năng kết nối
+### Năng lực kết nối
 
-### Khả năng điểu khiển từ xa
+### Năng lực điểu khiển từ xa
 
-### Khả năng tương tác
+### Năng lực tương tác
 
-### Khả năng tự động
+### Năng lực tự động
 
-### Khả năng xử lý và phân tích dữ liệu
+### Năng lực xử lý và phân tích dữ liệu
 
-## Vai trò đối với xã hội
+## Vai trò
 
 ### Thu thập và phân tích dữ liệu
 

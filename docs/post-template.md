@@ -33,10 +33,10 @@ Hình 6.
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-11/topic-A/softwares/os-vs-application.mm.md!}
+{!grade-11/topic-A1/os-vs-application.mm.md!}
 Hình 2. Sơ đồ phân loại phần mềm
 
-## Google Colab
+## Mã nguồn
 
 Các đoạn mã trong bài này được đặt tại <a href="" target="_blank">Google Colab</a> để bạn có thể thử nghiệm theo cách của riêng mình.  
 
