@@ -138,6 +138,10 @@ icon: material/robot-industrial-outline
 
 Những hệ thống này chỉ là một phần nhỏ trong số rất nhiều ứng dụng AI đang hoạt động trong thực tế. AI đang được tích hợp vào nhiều khía cạnh của cuộc sống, âm thầm cải thiện hiệu suất và trải nghiệm của người dùng.
 
+!!! info "Google Cloud Blog: real-world gen AI use cases"
+
+    Đọc thêm tại [185 real-world gen AI use cases from the world's leading organizations](https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders){:target="_blank"}
+
 ## AI tạo sinh
 
 ### Khái niệm

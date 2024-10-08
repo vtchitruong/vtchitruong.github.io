@@ -129,11 +129,9 @@ Mà để có được thông tin, ta phải dựa trên dữ liệu.
 
 Vì thế, dữ liệu và thông tin là vô cùng quan trọng đối với mọi lĩnh vực của đời sống. Cùng với những tài nguyên quan trọng khác, chẳng hạn như dầu mỏ, thì dữ liệu cũng như thông tin đã và đang là nguồn tài nguyên quan trọng bậc nhất.
 
-!!! tip "Đây là một lưu ý... cần lưu ý"
+!!! info "Dữ liệu là mỏ dầu của kỷ nguyên kỹ thuật số"
 
-    Dữ liệu là mỏ dầu của kỷ nguyên kỹ thuật số.
-
-Bài báo đọc thêm nhằm làm rõ ý kiến trên: [The world’s most valuable resource is no longer oil, but data](https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data)
+    Đọc thêm tại [The world’s most valuable resource is no longer oil, but data](https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data){:target="_blank"}
 
 !!! question "Hỏi chút chơi - phần 4"
     
