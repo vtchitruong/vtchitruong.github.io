@@ -383,6 +383,8 @@ nav:
     - Hàng đợi:
       - special-topics/queue/an-overview-of-queue.md
       - special-topics/queue/customer-service-simulation.md
+    - Ngăn xếp:
+      - special-topics/stack/an-overview-of-stack.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:

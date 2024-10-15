@@ -8,26 +8,8 @@ Nói cách khác, trong hàng đợi, phần tử đầu tiên được thêm v�
 
 Hình dưới đây minh hoạ hàng đợi gồm 5 phần tử. Mỗi phần tử chứa dữ liệu là một chuỗi.
 
-```mermaid
-graph LR
-    F[front]
-    subgraph queue
-        direction LR
-        A['Bernard Arnault']:::element --> B['Elon Musk']:::element
-        B:::element --> C['Jeff Bezos']:::element
-        C:::element --> D['Mark Zuckerberg']:::element
-        D:::element --> E['Larry Ellison']:::element
-    end
-    R[rear]
-
-    F --> A
-    E --> R
-
-    style F fill:#0cc167,stroke:none,rx:30px;
-    style R fill:#f96,stroke:none,rx:30px;
-    classDef element fill:#72bcd4,color:#434343,stroke:none,rx:20px
-    style queue fill:#e0f7fa,stroke:#00796b,stroke-width:1px,rx:20px;
-```
+![Minh hoạ hàng đợi](queue.svg){loading=lazy }  
+<figcaption>Minh hoạ hàng đợi</figcaption>  
 
 ## Ứng dụng
 
@@ -41,10 +23,8 @@ Một số ứng dụng của hàng đợi là:
 
 Các thao tác cơ bản trên hàng đợi bao gồm:
 
-- Thêm phần tử vào cuối hàng đợi
-- Xóa phần tử ở đầu hàng đợi.
-
-và một số thao tác khác.
+- Thêm phần tử vào cuối hàng đợi: enqueue, put.
+- Lấy ra phần tử ở đầu hàng đợi: dequeue, get.
 
 ## Biểu diễn hàng đợi
 
@@ -89,7 +69,7 @@ Output:
 Hàng đợi khi mới khởi tạo: []
 ```
 
-### Thêm phần tử
+### Thêm phần tử vào
 
 Để thêm phần tử vào cuối hàng đợi, ta dùng hàm `put()`.
 
@@ -111,7 +91,7 @@ Output:
 Hàng đợi sau khi thêm phần tử: ['Bernard Arnault', 'Elon Musk', 'Jeff Bezos', 'Mark Zuckerberg', 'Larry Ellison']
 ```
 
-### Lấy ra phần tử đầu
+### Lấy phần tử ra
 
 Để lấy ra phần tử nằm ở đầu hàng đợi, ta dùng hàm `get()`.
 

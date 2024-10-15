@@ -383,7 +383,7 @@ Bước 0: Trong C++, tạo cấu trúc point gồm hai thành phần `x` và `m
 
 Bước 1: Sắp xếp mảng `P` gồm các điểm theo thứ tự toạ độ tăng dần.
 
-Bước 2: Khởi tạo `last_green = -1`, `last_red = -1` và `last_yellow = -1`. Các biến này dùng để ghi nhận toạ độ cuối cùng tìm thấy các màu xanh, đỏ và vàng tương ứng.
+Bước 2: Khởi tạo `last_green = -1`, `last_red = -1` và `last_yellow = -1`. Các biến này dùng để ghi nhận toạ độ mới nhất tìm thấy các màu xanh, đỏ và vàng tương ứng.
 
 Bước 3: Duyệt mảng `P`:
 
