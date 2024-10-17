@@ -273,9 +273,9 @@ Vì mỗi phần tử của mảng input có giới hạn giá trị lên đến
             A = list(map(lambda x: 1 if int(x) > 0 else 0, f.readline().split()))
     ```
 
-Bước 1: Khởi tạo bộ đếm số dương `count_positive = 0` (đếm các phần tử `1`) và bộ đếm số âm `count_negative = 0` (đếm các phần tử `0`).
+**Bước 1:** Khởi tạo bộ đếm số dương `count_positive = 0` (đếm các phần tử `1`) và bộ đếm số âm `count_negative = 0` (đếm các phần tử `0`).
 
-Bước 2: Duyệt mảng `A` (chứa các phần tử `0` và `1`):
+**Bước 2:** Duyệt mảng `A` (chứa các phần tử `0` và `1`):
 
 - Nếu phần tử tiếp theo là âm hoặc dương thì tăng 1 cho bộ đếm tương ứng và gán 0 cho bộ đếm còn lại.
 - Ghi nhận độ dài âm lớn nhất và độ dài dương lớn nhất.
@@ -323,7 +323,7 @@ Bước 2: Duyệt mảng `A` (chứa các phần tử `0` và `1`):
             max_negative = max(max_negative, count_negative)
     ```
 
-Bước 3: So sánh hai độ dài lớn nhất để trả về độ dài lớn hơn.
+**Bước 3:** So sánh hai độ dài lớn nhất để trả về độ dài lớn hơn.
 
 ### Mã nguồn
 
@@ -369,7 +369,7 @@ Ràng buộc:
 
 ### Bài giải tham khảo
 
-Bước 0: Trong C++, tạo cấu trúc point gồm hai thành phần `x` và `m`.
+**Bước 0:** Trong C++, tạo cấu trúc point gồm hai thành phần `x` và `m`.
 
 === "C++"
 
@@ -381,11 +381,11 @@ Bước 0: Trong C++, tạo cấu trúc point gồm hai thành phần `x` và `m
         };
     ```
 
-Bước 1: Sắp xếp mảng `P` gồm các điểm theo thứ tự toạ độ tăng dần.
+**Bước 1:** Sắp xếp mảng `P` gồm các điểm theo thứ tự toạ độ tăng dần.
 
-Bước 2: Khởi tạo `last_green = -1`, `last_red = -1` và `last_yellow = -1`. Các biến này dùng để ghi nhận toạ độ mới nhất tìm thấy các màu xanh, đỏ và vàng tương ứng.
+**Bước 2:** Khởi tạo `last_green = -1`, `last_red = -1` và `last_yellow = -1`. Các biến này dùng để ghi nhận toạ độ mới nhất tìm thấy các màu xanh, đỏ và vàng tương ứng.
 
-Bước 3: Duyệt mảng `P`:
+**Bước 3:** Duyệt mảng `P`:
 
 - Mỗi khi tìm thấy màu nào thì ghi nhận toạ độ mới của màu đó.
 - Nếu tìm thấy đủ cả ba toạ độ của ba màu thì tính độ dài của đoạn thẳng tương ứng (bằng cách lấy toạ độ cuối trừ toạ độ đầu). Đây chính là độ dài nhỏ nhất cần tìm.

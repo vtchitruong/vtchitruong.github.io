@@ -3,14 +3,13 @@ categories:
     - Solve to surpass
     - Set up & Code down
 authors: [mrschool]
-date: 2024-10-12
+date: 2024-10-17
 ---
 
 # HSG12 Vĩnh Phúc 2023-2024
 
 <div class="result" markdown>
 ![Picture by AI](./thumbnails/students-coding.jpg){ align=left width=360 }
----
 
 SỞ GIÁO DỤC VÀ ĐÀO TẠO VĨNH PHÚC  
 KỲ THI CHỌN HSG LỚP 12 CHƯƠNG TRÌNH THPT NĂM HỌC 2023-2024  
@@ -29,17 +28,17 @@ Thời gian làm bài: 150 phút (không kể thời gian phát đề)
 
 ### Truy vấn đoạn
 
-Cho dãy gồm N số nguyên dương đôi một phân biệt a₁, a₂, ..., aₙ. Tèo cần trả lời Q truy vấn, truy vấn thứ i cho ba số nguyên dương lᵢ, rᵢ, dᵢ với yêu cầu xác định xem có bao nhiêu số từ vị trí lᵢ đến rᵢ trong dãy là ước số hoặc bội số của dᵢ. Bạn hãy lập trình giúp Tèo trả lời các truy vấn nhé!
+Cho dãy gồm N số nguyên dương đôi một phân biệt $a_1, a_2, ..., a_n$. Tèo cần trả lời $Q$ truy vấn, truy vấn thứ $i$ cho ba số nguyên dương $l_i, r_i, d_i$ với yêu cầu xác định xem có bao nhiêu số từ vị trí $l_i$ đến $r_i$ trong dãy là ước số hoặc bội số của $d_i$. Bạn hãy lập trình giúp Tèo trả lời các truy vấn nhé!
 
 Dữ liệu:
 
-- Dòng 1: Gồm hai số nguyên N, Q (1 ≤ N, Q ≤ 10⁵);
-- Dòng 2: Gồm N số nguyên dương đôi một phân biệt a₁, a₂, ..., aₙ (1 ≤ aᵢ ≤ 2⋅10⁵, 1 ≤ i ≤ N);
-- Tiếp theo là Q dòng, mỗi dòng mô tả một truy vấn gồm ba số nguyên lᵢ, rᵢ, dᵢ (1 ≤ lᵢ ≤ rᵢ ≤ N; 1 ≤ dᵢ ≤ 2⋅10⁵, 1 ≤ i ≤ Q).
+- Dòng 1: Gồm hai số nguyên $N, Q (1 \le N, Q \le 10^5)$;
+- Dòng 2: Gồm $N$ số nguyên dương đôi một phân biệt $a_1, a_2, ..., a_n (1 \le a_i \le 2 \cdot 10^5, 1 \le i \le N)$;
+- Tiếp theo là $Q$ dòng, mỗi dòng mô tả một truy vấn gồm ba số nguyên $l_i, r_i, d_i \quad (1 \leq l_i \leq r_i \leq N, \ 1 \leq d_i \leq 2 \cdot 10^5, \ 1 \leq i \leq Q)$.
 
 Kết quả:
 
-- Ghi trên một dòng duy nhất gồm Q số nguyên, số thứ i (1 ≤ i ≤ Q) là câu trả lời cho truy vấn thứ i.
+- Ghi trên một dòng duy nhất gồm $Q$ số nguyên, số thứ $i (1 \le i \le Q)$ là câu trả lời cho truy vấn thứ i.
 
 Ví dụ:
 
@@ -49,8 +48,8 @@ Ví dụ:
 
 Ràng buộc:
 
-- 80% số điểm có Q = 1;
-- 10% số điểm có N, Q ≤ 1000;
+- 80% số điểm có $Q = 1$;
+- 10% số điểm có $N, Q \le 1000$;
 - 10% số điểm không có ràng buộc bổ sung.
 
 ### Bài giải tham khảo
@@ -92,103 +91,279 @@ Ràng buộc:
         return cnt
     ```
 
+### Mã nguồn
+
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg12-tinh/2023-2024-vinhphuc/squery){:target="_blank"}.
+
 ## Bài 2
 
 ### Triển lãm tranh
 
-Tèo có N bức tranh được đánh số từ 1 đến N. Bức tranh thứ i (1 ≤ i ≤ N) có kích thước Sᵢ và giá trị Vᵢ.  
-Ngoài ra, Tèo có M khung tranh được đánh số từ 1 đến M. Khung tranh thứ j (1 ≤ j ≤ M) có kích thước Cⱼ chỉ chứa được một bức tranh có kích thước không vượt quá kích thước của khung tranh.
+Tèo có N bức tranh được đánh số từ 1 đến $N$. Bức tranh thứ $i (1 \le i \le N)$ có kích thước $S_i$ và giá trị $V_i$.  
+
+Ngoài ra, Tèo có $M$ khung tranh được đánh số từ 1 đến $M$. Khung tranh thứ $j (1 \le j \le M)$ có kích thước $C_j$ chỉ chứa được một bức tranh có kích thước không vượt quá kích thước của khung tranh.
 
 Tèo cần chọn ra một số bức tranh để trưng bày sao cho thỏa mãn các điều kiện sau:
+
 - Tranh phải được đặt vào trong khung tranh;
 - Kích thước của khung tranh bên phải luôn lớn hơn hoặc bằng kích thước bức tranh bên trái;
 - Giá trị của bức tranh bên phải luôn lớn hơn hoặc bằng giá trị của bức tranh bên trái;
-- Một khung tranh chỉ chứa được một bức tranh;
-- Không bắt buộc chọn tất cả các bức tranh.
+- Số bức tranh được chọn là nhiều nhất có thể.
 
 Hãy lập trình tính xem Tèo có thể trưng bày nhiều nhất bao nhiêu bức tranh.
 
-#### Dữ liệu:
-- Dòng 1: Gồm hai số nguyên N, M (1 ≤ N, M ≤ 10⁵) tương ứng với số bức tranh và số khung tranh;
-- Tiếp theo là N dòng, mỗi dòng gồm hai số nguyên dương Sᵢ, Vᵢ (1 ≤ Sᵢ, Vᵢ ≤ 10⁹) là kích thước và giá trị của bức tranh thứ i;
-- Cuối cùng là M dòng, mỗi dòng gồm một số nguyên Cⱼ (1 ≤ Cⱼ ≤ 10⁹) là kích thước của khung tranh thứ j.
+Dữ liệu:
 
-#### Kết quả:
+- Dòng 1: Gồm hai số nguyên $N, M (1 \le N, M \le 10^5)$ tương ứng với số bức tranh và số khung tranh;
+- Tiếp theo là $N$ dòng, mỗi dòng gồm hai số nguyên dương $S_i, V_i (1 \le S_i, V_i \le 10^9, 1 \le i \le N)$ là kích thước và giá trị của bức tranh thứ $i$;
+- Cuối cùng là $M$ dòng, mỗi dòng gồm một số nguyên $C_j (1 \le C_j \le 10^9, 1 \le j \le M)$ là kích thước của khung tranh thứ $j$.
+
+Kết quả:
+
 - In ra một số nguyên là số lượng bức tranh nhiều nhất mà Tèo có thể trưng bày.
 
-#### Ví dụ:
+Ví dụ:
 
-```
-picture.inp
-3 4
-10 20
-5 15
-1 5
-5 6 3 7
+| picture.inp | picture.out | Giải thích |
+| --- | --- | --- |
+| 3 4 <br> 10 20 <br> 5 1 <br> 3 5 <br> 4 <br> 6 <br> 10 <br> 4 | 2 | Tèo có thể trưng bày nhiều nhất 2 bức tranh, trong đó có một cách trưng bày theo thứ tự như sau: <br> \[Tranh 2 đặt trong Khung 2\] và \[Tranh 1 đặt trong Khung 3\] |
 
-picture.out
-2
-```
+Ràng buộc:
 
-**Giải thích:**  
-Tèo có thể trưng bày nhiều nhất 2 bức tranh, trong đó có một cách trưng bày theo thứ tự như sau:  
-[Tranh 2 đặt trong Khung 2] và [Tranh 1 đặt trong Khung 3]
+- 50% số điểm có $N, M \le 10$;
+- 30% số điểm có $N, M \le 1000$;
+- 20% số điểm không có ràng buộc bổ sung.
 
-#### Ràng buộc:
-- Subtask 1: 50% số điểm có N, M ≤ 10;
-- Subtask 2: 30% số điểm có N, M ≤ 1000;
-- Subtask 3: 20% số điểm không có ràng buộc bổ sung.
+### Bài giải tham khảo
 
----
+**Bước 1:** Sắp xếp các bức tranh và khung tranh theo thứ tự nhằm chuẩn bị thực hiện tham lam (greedy).
+
+=== "C++"
+
+    ```c++ linenums="44"
+        // Sắp xếp các bức tranh theo kích thước tăng dần
+        // Nếu cùng kích thước thì sắp xếp theo giá trị tăng dần
+        sort(pictures.begin(), pictures.end());
+
+        // Sắp xếp các khung tranh theo kích thước tăng dần
+        sort(frames.begin(), frames.end());
+    ```
+
+=== "Python"
+
+    ```py linenums="30"
+        # Sắp xếp các bức tranh theo kích thước tăng dần
+        # Nếu cùng kích thước thì sắp xếp theo giá trị tăng dần
+        pictures.sort(key=lambda x: (x[0], x[1])) # (1)!
+        
+        # Sắp xếp các khung tranh theo kích thước tăng dần
+        frames.sort()
+    ```
+    { .annotate }
+
+    1.  Có thể được viết gọn lại thành `pictures.sort()`.
+
+**Bước 2:** Thực hiện tham lam như sau:
+
+Duyệt các khung tranh `frames[j]`, lặp thao tác:
+
+&emsp;Dùng while để duyệt các bức tranh `pictures[i]` có kích thước nhỏ hơn hoặc bằng khung tranh `frames[j]`.
+
+&emsp;&emsp;Nếu bức tranh `pictures[i]` có giá trị lớn hơn hoặc bằng bức tranh vừa đặt vào khung trước đó (được lưu lại trong biến `previous_value`) thì:
+
+&emsp;&emsp;&emsp;Đặt tranh vào khung, đồng nghĩa tăng biến đếm.  
+&emsp;&emsp;&emsp;Ghi nhận giá trị `previous_value` mới.  
+&emsp;&emsp;&emsp;Tăng `i` để chuẩn bị xét tiếp bức tranh tiếp theo.  
+&emsp;&emsp;&emsp;Ngắt vòng lặp while để duyệt tiếp khung tranh tiếp theo.
+
+&emsp;&emsp;Ngược lại, giá trị không lớn hơn, thì chỉ tăng `i` để xét bức tranh tiếp theo.
+
+=== "C++"
+
+    ```c++ linenums="51"
+        // Biến i dùng để duyệt các bức tranh
+        int i = 0;
+
+        // Giá trị của bức tranh đặt vào khung trước đó
+        int previous_value = 0;
+
+        // Duyệt các khung tranh
+        for (int j = 0; j < m; ++j)
+        {
+            // Duyệt các bức tranh có kích thước phù hợp với khung
+            while (i < n && pictures[i].first <= frames[j])
+            {
+                // Nếu tìm thấy bức tranh thoả về kích thước lẫn giá trị
+                if (pictures[i].second >= previous_value)
+                {
+                    // Đặt tranh vào khung
+                    cnt += 1;
+
+                    // Lưu giá trị của bức tranh vừa đặt vào khung
+                    previous_value = pictures[i].second;
+
+                    // Xét bức tranh tiếp theo
+                    i += 1;
+
+                    // Ngắt vòng lặp while để xét khung tranh tiếp theo
+                    break;
+                }
+
+                // Xét bức tranh tiếp theo
+                i += 1;
+            }
+        }
+    ```
+
+=== "Python"
+
+    ```py linenums="37"
+        # Biến i dùng để duyệt các bức tranh
+        i = 0
+        
+        # Giá trị của bức tranh đặt vào khung trước đó
+        previous_value = 0
+
+        # Duyệt các khung tranh
+        for f in frames:
+            # uyệt các bức tranh có kích thước phù hợp với khung
+            while i < n and pictures[i][0] <= f:
+                # Nếu tìm thấy bức tranh thoả về kích thước lẫn giá trị
+                if pictures[i][1] >= previous_value:
+                    # Đặt tranh vào khung
+                    cnt += 1
+
+                    # Lưu giá trị của bức tranh vừa đặt vào khung
+                    previous_value = pictures[i][1]
+
+                    # Xét bức tranh tiếp theo
+                    i += 1
+
+                    # Ngắt vòng lặp while để xét khung tranh tiếp theo
+                    break
+
+                # Xét bức tranh tiếp theo
+                i += 1
+    ```
+
+### Mã nguồn
+
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg12-tinh/2023-2024-vinhphuc/picture){:target="_blank"}.
 
 ## Bài 3
 
 ### Thám hiểm
 
-Khu rừng nguyên sinh X nằm trên một trục đường thẳng dài mà ta có thể coi như trục tọa độ. Chỉ có thể di chuyển vào cảnh rừng bằng cách sử dụng trực thăng để bay tới một trong m điểm tập kết đã được xây dựng sẵn trong khu rừng. Điểm tập kết thứ i nằm ở tọa độ aᵢ, chuyến bay tới đó tốn bᵢ đơn vị nhiên liệu. Mỗi đội thám hiểm sau khi hạ cánh ở một điểm tập kết sẽ tiếp tục sử dụng phương tiện đường bộ để di chuyển đến điểm thám hiểm. Chỉ chi phí di chuyển bằng phương tiện đường bộ là c đơn vị nhiên liệu cho mỗi đơn vị khoảng cách.
+Khu rừng nguyên sinh X nằm trên một trục đường thẳng dài mà ta có thể coi như trục tọa độ. Chỉ có thể di chuyển vào cảnh rừng bằng cách sử dụng trực thăng để bay tới một trong $n$ điểm tập kết đã được xây dựng sẵn trong khu rừng. Điểm tập kết thứ $i$ nằm ở tọa độ $a_i$, chuyến bay tới đó tốn $b_i$ đơn vị nhiên liệu. Mỗi đội thám hiểm sau khi hạ cánh ở một điểm tập kết sẽ tiếp tục sử dụng phương tiện đường bộ để di chuyển đến điểm thám hiểm. Chi phí di chuyển bằng phương tiện đường bộ là $c$ đơn vị nhiên liệu cho mỗi đơn vị khoảng cách.
 
-Tèo có n đội thám hiểm, đội thứ j (1 ≤ j ≤ n) muốn đến thám hiểm ở vị trí tọa độ dⱼ, họ có thể chọn bay tới một điểm tập kết bất kỳ, sau đó di chuyển đến vị trí họ lựa chọn.
+Có $m$ đội thám hiểm, đội thứ $j (1 \le j \le m)$ muốn đến thám hiểm ở vị trí tọa độ $d_j$, họ có thể chọn bay tới một điểm tập kết bất kỳ, sau đó di chuyển tiến hoặc lùi trên bộ để đến đích.
 
-Mỗi đội thám hiểm, hãy tính xem họ tốn ít nhất bao nhiêu đơn vị nhiên liệu để tới được điểm thám hiểm của mình.
+Với mỗi đội thám hiểm, hãy tính xem họ tốn ít nhất bao nhiêu đơn vị nhiên liệu để tới được điểm thám hiểm của mình.
 
-#### Dữ liệu:
-- Dòng 1: chứa ba số nguyên n, m, c (1 ≤ n, m ≤ 10⁵; 1 ≤ c ≤ 10⁹);
-- Tiếp theo là m dòng, mỗi dòng mô tả một điểm tập kết gồm hai số nguyên aᵢ, bᵢ (0 ≤ aᵢ, bᵢ ≤ 10⁹), không có hai điểm tập kết nào cùng tọa độ;
-- Cuối cùng là n dòng, mỗi dòng gồm một số nguyên dⱼ (0 ≤ dⱼ ≤ 10⁹) mô tả tọa độ cần đến của các đội thám hiểm.
+Dữ liệu:
 
-#### Kết quả:
-- Ghi trên m dòng, dòng thứ j (1 ≤ j ≤ m) ghi tổng chi phí nhỏ nhất để đội thám hiểm thứ i đến được tọa độ dⱼ.
+- Dòng 1: chứa ba số nguyên $n, m, c (1 \le n, m \le 10^5; 1 \le c \le 10^9)$;
+- Tiếp theo là $n$ dòng, mỗi dòng mô tả một điểm tập kết gồm hai số nguyên $a_i, b_i (0 \le a_i, b_i \le 10^9)$, không có hai điểm tập kết nào cùng tọa độ;
+- Cuối cùng là $m$ dòng, mỗi dòng gồm một số nguyên $d_j (0 \le d_j \le 10^9)$ mô tả tọa độ cần đến của các đội thám hiểm.
 
-#### Ví dụ:
+Kết quả:
 
-```
-expfuel.inp
-3 2 1
-200 100
-300 100
-100 250
-150
+- Ghi trên $m$ dòng, dòng thứ $j (1 \le j \le m)$ ghi tổng chi phí nhỏ nhất để đội thám hiểm thứ $i$ đến được tọa độ $d_j$.
 
-expfuel.out
-250
-260
-```
+Ví dụ:
 
-**Giải thích:**  
-- Đội 1: bay đến điểm tập kết tọa độ 300, tiêu tốn 100 đơn vị nhiên liệu, sau đó di chuyển tới 150, tốn thêm 150 đơn vị nhiên liệu.  
-- Đội 2: bay đến điểm tập kết tọa độ 300, tiêu tốn 100 đơn vị nhiên liệu, sau đó di chuyển tới 110, tốn thêm 10 đơn vị nhiên liệu.
+| expfuel.inp | expfuel.out | Giải thích |
+| --- | --- | --- |
+| 3 2 1 <br> 200 300 <br> 300 100 <br> 100 250 <br> 150 <br> 110 | 250 <br> 260 | - Đội 1: bay đến điểm tập kết tọa độ 300, tiêu tốn 100 đơn vị nhiên liệu, sau đó di chuyển tới 150, tốn thêm 150 đơn vị nhiên liệu. <br> - Đội 2: bay đến điểm tập kết tọa độ 100, tiêu tốn 250 đơn vị nhiên liệu, sau đó di chuyển tới 110, tốn thêm 10 đơn vị nhiên liệu. |
 
-#### Ràng buộc
+Ràng buộc:
 
-:
-- Subtask 1: 40% số điểm có n, m ≤ 20;
-- Subtask 2: 20% số điểm có n, m ≤ 1000;
-- Subtask 3: 40% số điểm không có ràng buộc bổ sung.
+- 40% số điểm có $n, m \le 20$;
+- 20% số điểm có $n, m \le 1000$;
+- 40% số điểm không có ràng buộc bổ sung.
 
 ---
 
 ### Bài giải tham khảo
 
+Ta có tổng nhiên liệu (chi phí) tiêu tốn là:
+
+$fuel = b_i + c \times | a_i - d_j |$
+
+Trong đó:
+
+- $b_i$ là nhiên liệu để bay đến điểm tập kết $a_i$.
+- $c$ là hằng số.
+- $c \times | a_i - d_j |$ là nhiên liệu để đi bộ từ điểm tập kết $a_i$ đến điểm thám hiểm $d_j$.
+
+Theo đó, ta viết hàm tính tổng nhiên liệu là:
+
 === "C++"
 
-    ```c++ linenums="43"
+    ```c++ linenums="42"
+        int fuel(int flying_fuel, int ai, int dj)
+        {
+            return flying_fuel + c * abs(ai - dj);
+        }
+    ```
+
+=== "Python"
+
+    ```py linenums="29"
+        def fuel(flying_fuel, ai, dj):
+            return flying_fuel + c * abs(ai - dj)
+    ```
+
+Vì nhiên liệu bay đến điểm tập kết $a_i$ không phụ thuộc vào yếu tố nào, bao gồm cả việc không phụ thuộc vào khoảng cách giữa điểm tập kết $a_i$ và điểm thám hiểm $d_j$, nên ta chỉ cần duyệt hết các điểm tập kết để tìm ra tổng nhiên liệu nhỏ nhất ứng với mỗi đội.
+
+=== "C++"
+
+    ```c++ linenums="48"
+    void process()
+    {
+        int min_fuel;
+
+        // Duyệt điểm thám hiểm dj của các đội
+        for (int j = 0; j < m; ++j)
+        {
+            min_fuel = INT_MAX; 
+
+            // Duyệt các điểm tập kết a_i của đội dj đang xét
+            for (const pair<int, int>& a : A) // (1)!
+            {
+                min_fuel = min(min_fuel, fuel(a.second, a.first, D[j]));
+            }
+
+            result.push_back(min_fuel);    
+        }
+    }
+    ```
+    { .annotate }
+
+    1.  `A` là mảng gồm các phần tử là điểm tập kết: `vector<pair<int, int>> A;`.
+
+        Trong đó: `A[i].first` là toạ độ và `A[i].second` là nhiên liệu để bay đến.
+
+=== "Python"
+
+    ```py linenums="33"
+    def process():
+        global A, D, result
+
+        # Duyệt điểm thám hiểm dj của các đội
+        for dj in D:
+            min_fuel = float('inf')
+
+            # Duyệt các điểm tập kết a_i của đội dj đang xét
+            for position, flying_fuel in A: # (1)!
+                min_fuel = min(min_fuel, fuel(flying_fuel, position, dj))
+
+            result.append(min_fuel)
+    ```
+    { .annotate }
+
+    1.  `A` là danh sách gồm các phần tử là điểm tập kết, mỗi phần tử là một tuple: `(position, fuel)`.
+
+### Mã nguồn
+
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg12-tinh/2023-2024-vinhphuc/expfuel){:target="_blank"}.
