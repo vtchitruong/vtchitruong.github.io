@@ -368,6 +368,9 @@ nav:
       - grade-12/topic-F/css-table.md
       - grade-12/topic-F/css-div.md
       - grade-12/topic-F/css-form.md
+    - Chủ đề G:
+      - grade-12/topic-G/network-administration-vs-system-security.md
+      - grade-12/topic-G/it-services.md
   - Chuyên đề:
     - special-topics/special-topics-index.md
     - Đệ quy:
@@ -385,6 +388,7 @@ nav:
       - special-topics/queue/customer-service-simulation.md
     - Ngăn xếp:
       - special-topics/stack/an-overview-of-stack.md
+      - special-topics/stack/balanced-parentheses-check.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:

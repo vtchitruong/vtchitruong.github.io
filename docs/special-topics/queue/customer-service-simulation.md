@@ -115,7 +115,7 @@ def parse_data(d): #(1)!
 
 1.  Tham số `d` dùng để nhận chuỗi dữ liệu đầu vào, cụ thể ở đây là biến `data`.
 
-2.  `strip()` được thực hiện trước, dùng để cắt bỏ các khoảng trắng hoặc dòng trống ở hai đầu của `d`.
+2.  `strip()` được thực hiện trước, dùng để cắt bỏ các khoảng trắng ở hai đầu của `d`.
 
     `splitlines()` được thực hiện sau, dùng để phân chia các dòng thành các phần tử của danh sách `lines`.
 
@@ -222,4 +222,4 @@ if __name__ == '__main__':
 
 ## Mã nguồn
 
-Chương trình Python hoàn chỉnh đặt tại [Google Colab](https://colab.research.google.com/drive/1jJNGIjOvSYgt-yWBc6UxpYPsqc3knVBn?usp=sharing){:target="_blank"}
+Chương trình Python hoàn chỉnh đặt tại [Google Colab](https://colab.research.google.com/drive/1jJNGIjOvSYgt-yWBc6UxpYPsqc3knVBn?usp=sharing){:target="_blank"}.
