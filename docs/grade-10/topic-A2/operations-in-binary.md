@@ -1,3 +1,7 @@
+---
+icon: material/plus
+---
+
 # Phép toán trong hệ nhị phân
 
 !!! abstract "Tóm lược nội dung"
@@ -19,36 +23,46 @@ Giá trị của phép cộng và nhân hai bit được thể hiện trong bả
 | 1 | 0 | 1 | 0 |
 | 1 | 1 | 10 | 1 |
 
-!!! note "Cộng và nhân hai bit"
-    Trong hệ nhị phân, phép toán được thực hiện tương tự như cộng và nhân trong hệ thập phân, ngoại trừ $1 + 1 = 10$.
+!!! info "Cộng và nhân hai bit"
+    
+    Trong hệ nhị phân, phép toán được thực hiện tương tự như cộng và nhân trong hệ thập phân, ngoại trừ `1 + 1 = 10`.
 
 ### Cách thực hiện
 
-Ta có thể tính toán trên giấy bằng cách xếp các toán hạng[^1] theo hàng dọc rồi thực hiện cộng hoặc nhân như trong hệ thập phân.
+Ta có thể tính toán trên giấy bằng cách xếp các toán hạng (1) theo hàng dọc rồi thực hiện cộng hoặc nhân như trong hệ thập phân.
+{ .annotate }
 
-[^1]: Toán hạng là số hạng trong phép cộng hoặc thừa số trong phép nhân.
+1.  Toán hạng là số hạng trong phép cộng hoặc thừa số trong phép nhân.
 
-!!! note "Cộng và nhân theo hàng dọc"
+1. Xếp các toán hạng theo hàng dọc theo hướng từ phải qua trái.
+2. Thực hiện cộng hoặc nhân tương tự như trong hệ thập phân, tức bắt đầu từ hàng đơn vị, rồi hàng chục, hàng trăm, v.v...
+3. Các chữ số của kết quả thành phần (đối với phép nhân) và kết quả cuối cùng cũng phải được căn phải và đúng vị trí so với các chữ số của toán hạng.
+4. Trường hợp cộng hoặc nhân ra `10` hoặc `11`, ta vẫn *nhớ* `1` cho phép toán của chữ số tiếp theo bên trái.
 
-    1. Xếp các toán hạng theo hàng dọc theo hướng từ phải qua trái.
-    2. Thực hiện cộng hoặc nhân tương tự như trong hệ thập phân, tức bắt đầu từ hàng đơn vị, rồi hàng chục, hàng trăm, v.v... Các chữ số của kết quả thành phần (đối với phép nhân) và kết quả cuối cùng cũng phải được căn phải và đúng vị trí so với các chữ số của toán hạng.
-    2. Trường hợp cộng hoặc nhân ra 10 hoặc 11, ta vẫn *nhớ* 1 cho phép toán của chữ số tiếp theo bên trái.
+Ví dụ:  
+Trong hệ thập phân, ta biết rằng 19 + 11 = 30. Phép toán này được thực hiện trong hệ nhị phân như sau:
 
-:   Ví dụ 1:  
-    Trong hệ thập phân, ta biết rằng 19 + 11 = 30. Phép toán này được thực hiện trong hệ nhị phân như sau:
-    <div>
-        <iframe width="100%" height="90px" frameBorder=0 src="../operations-in-binary/addition.html"></iframe>
-    </div>
+<div>
+    <iframe width="100%" height="90px" frameBorder=0 src="../operations-in-binary/addition.html"></iframe>
+</div>
 
-:   Ví dụ 2:  
-    Trong hệ thập phân, 21 &#215 5 = 105. Phép toán này được thực hiện trong hệ nhị phân như sau:
-    <div>
-        <iframe width="100%" height="172px" frameBorder=0 src="../operations-in-binary/multiplication.html"></iframe>
-    </div>
+Ví dụ:  
+Trong hệ thập phân, 21 &#215 5 = 105. Phép toán này được thực hiện trong hệ nhị phân như sau:
+
+<div>
+    <iframe width="100%" height="172px" frameBorder=0 src="../operations-in-binary/multiplication.html"></iframe>
+</div>
 
 ## Phép toán logic
 
 Phần này trình bày các phép toán logic gồm: **NOT**, **AND**, **OR** và **XOR**.
+
+### Quy tắc
+
+- NOT là phép toán phủ định trạng thái hiện có.
+- AND chỉ cho kết quả True khi cả a và b đều True.
+- OR chỉ cho kết quả False khi cả a và b đều False.
+- XOR cho kết quả True khi a và b có trạng thái khác nhau.
 
 ### Bảng chân trị
 
@@ -59,37 +73,34 @@ Phần này trình bày các phép toán logic gồm: **NOT**, **AND**, **OR** v
 | T | F | F | F | T | T |
 | T | T | F | T | T | F |
 
-!!! note "Tóm tắt các phép toán logic"
+Ví dụ:
 
-    - NOT là phép toán phủ định trạng thái hiện có.
-    - AND chỉ cho kết quả True khi cả a và b đều True.
-    - OR chỉ cho kết quả False khi cả a và b đều False.
-    - XOR cho kết quả True khi a và b có trạng thái khác nhau.
+<div>
+    <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/not.html"></iframe>
+</div>
 
-:   Ví dụ 3:  
-    <div>
-        <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/not.html"></iframe>
-    </div>
+Ví dụ:
 
-:   Ví dụ 4:  
-    <div>
-        <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/and.html"></iframe>
-    </div>
+<div>
+    <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/and.html"></iframe>
+</div>
 
-:   Ví dụ 5:  
-    <div>
-        <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/or.html"></iframe>
-    </div>
+Ví dụ:
 
-:   Ví dụ 6:  
-    <div>
-        <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/xor.html"></iframe>
-    </div>
+<div>
+    <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/or.html"></iframe>
+</div>
+
+Ví dụ:
+
+<div>
+    <iframe width="100%" height="114px" frameBorder=0 src="../operations-in-binary/xor.html"></iframe>
+</div>
 
 ## Sơ đồ tóm tắt nội dung
 
 {!grade-10/topic-A2/operations-in-binary/operations.mm.md!}
-Hình 1. Sơ đồ tóm tắt các phép toán trên hệ nhị phân
+*Sơ đồ tóm tắt các phép toán trên hệ nhị phân*
 
 ## Some English words
 
