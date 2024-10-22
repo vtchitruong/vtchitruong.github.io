@@ -1,8 +1,3 @@
-:root {
-    --first-color: #03a9f4;
-    --second-color: #25bcff;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -55,7 +50,7 @@ body {
 .vtct-list ul li:hover {
     transform: scale(1.1);
     z-index: 5;
-    background: var(--second-color);
+    background: var(--first-color);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
     color: #fff;
     opacity: 1;
@@ -67,7 +62,7 @@ body {
     height: 20px;
     text-align: center;
     line-height: 20px;
-    background: var(--second-color);
+    background: var(--first-color);
     color: #fff;
     display: inline-block;
     border-radius: 50%;
@@ -78,7 +73,7 @@ body {
 
 .vtct-list ul li:hover span {
     background: #fff;
-    color: var(--second-color);
+    color: var(--first-color);
 }
 
 li a {
