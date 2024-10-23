@@ -11,15 +11,15 @@ markmap:
 
 - Trường học, cơ quan, văn phòng, v.v...
 
-### Phương tiện kết nối
+### Phương tiện truyền dẫn
 
 - Cáp Ethernet
 - Sóng WiFi
 
 ### Ứng dụng
 
-- Dùng chung máy in
-- Chia sẻ tập tin nội bộ
+- Chia sẻ dữ liệu nội bộ
+- Dùng chung thiết bị
 - Chia sẻ kết nối ra Internet
 
 ## WAN
@@ -28,7 +28,7 @@ markmap:
 
 - Tỉnh thành, quốc gia
 
-### Phương tiện kết nối
+### Phương tiện truyền dẫn
 
 - Cáp quang
 - Vệ tinh

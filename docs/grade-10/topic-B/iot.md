@@ -1,14 +1,18 @@
+---
+icon: material/remote
+---
+
 # Internet vạn vật
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này giới thiệu đôi nét về IoT.
+    Bài này trình bày sơ nét về IoT.
 
 ## Khái niệm
 
-IoT (Internet of Things) là thuật ngữ dùng để chỉ mạng lưới các thiết bị có gắn cảm biến và cài đặt phần mềm, cũng như đính kèm những công nghệ khác, để có thể giao tiếp và trao đổi dữ liệu với nhau thông qua Internet.  
+**IoT (Internet of Things)** là thuật ngữ dùng để chỉ mạng lưới các thiết bị có gắn cảm biến và cài đặt phần mềm, cũng như đính kèm những công nghệ khác, để có thể giao tiếp và trao đổi dữ liệu với nhau thông qua Internet.
 
-Các thiết bị có thể là đồ gia dụng, máy móc công nghiệp, xe cộ hoặc thiết bị đeo, chẳng hạn như: máy điều hòa nhiệt độ, hệ thống an ninh trong nhà, xe ô tô, v.v...  
+Các thiết bị có thể là đồ gia dụng, máy móc công nghiệp, xe cộ hoặc thiết bị đeo, chẳng hạn như: máy điều hòa nhiệt độ, hệ thống an ninh trong nhà, xe ô tô, v.v...
 
 ## Các thành phần
 
@@ -63,7 +67,7 @@ sequenceDiagram
     C->>D: Lệnh điều khiển thiết bị
     D->>E: Tương tác lại môi trường
 ```
-Hình 1. Sơ đồ khái quát hoạt động của hệ thống IoT
+*Sơ đồ khái quát hoạt động của hệ thống IoT*
 
 Việc liên lạc giữa các thiết bị được thực hiện thông qua nhiều loại mạng khác nhau, phụ thuộc các yếu tố như vị trí địa lý, phạm vi, tốc độ truyền dữ liệu, điện năng tiêu thụ, v.v... Internet là một phương án phổ biến, và trong nhiều trường hợp, người ta sử dụng kết hợp các công nghệ mạng để tăng độ tin cậy, để dự phòng và để mở rộng quy mô.
 
@@ -76,26 +80,32 @@ IoT có phạm vi ứng dụng rộng lớn, bao gồm:
 1. Nhà thông minh
     - Hệ thống điều khiển và kiểm soát từ xa các vật dụng như đèn, máy điều hòa nhiệt độ, camera, v.v...
     - Máy đo chỉ số điện tiêu thụ tại gia đình và trợ giúp thanh toán chi phí hằng tháng.
+
 2. Y tế
     - Thiết bị theo dõi sức khỏe.
+
 3. Nông nghiệp
     - Hệ thống giám sát tình trạng của đất, thời tiết và cây trồng để tối ưu hóa tưới tiêu, bón phân.
     - Hệ thống giám sát sức khỏe, vị trí và hành vi của vật nuôi.
+
 4. Công nghiệp
     - Hệ thống kiểm soát quy trình sản xuất sản phẩm theo thời gian thực.
     - Hệ thống bảo trì dựa trên dự đoán.
     - Hệ thống giám sát mạng lưới điện, giúp tối ưu hóa việc phân phối điện năng.
+
 5. Dịch vụ vận tải
     - Hệ thống theo dõi vị trí và tình trạng của hàng hóa trong khi vận chuyển, tối ưu hóa lộ trình.
+
 6. Dịch vụ bán lẻ
     - Hệ thống theo dõi kho hàng giúp cải thiện việc quản lý chuỗi cung ứng và cá nhân hóa trải nghiệm mua sắm của khách hàng. 
+
 7. Thành phố thông minh
     - Hệ thống điều khiển giao thông , giám sát môi trường, quản lý chất thải.
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-10/topic-B/network/iot.mm.md!}
-Hình 2. Sơ đồ khái quát về IoT
+{!grade-10/topic-B/iot.mm.md!}
+*Sơ đồ khái quát về IoT*
 
 ## Some English words
 
