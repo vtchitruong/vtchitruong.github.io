@@ -4,7 +4,7 @@ markmap:
     maxWidth: 300
 ---
 
-# IoT
+# Hệ thống IoT
 
 ## Là thuật ngữ chỉ mạng lưới các thiết bị có thể giao tiếp và tương tác.
 
@@ -15,7 +15,7 @@ markmap:
     - Dùng để thu thập dữ liệu.
 - Bộ phận kết nối mạng
     - Internet và các công nghệ mạng khác.
-- Bộ phận truyển động
+- Bộ phận truyền động
     - Dùng để tương tác với môi trường.
 
 ### Bộ xử lý và điện toán đám mây

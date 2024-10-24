@@ -4,29 +4,52 @@ markmap:
   maxWidth: 300
 ---
 
-# Phần mềm đồ họa
+# Định dạng đồ họa
 
 ## Bitmap
 
-### Thương mại
+### Được tạo thành từ các pixel
 
-- Adobe Photoshop
-- Adobe Lightroom
-- Corel PaintShop Pro
-- Paint.NET
+### Tập tin
 
-### Mã nguồn mở
+  - JPEG
+  - PNG
+  - BMP
+  - TIFF
+  - GIF
 
-- GIMP
-- PhotoScape
+### Áp dụng
+
+  - cho đối tượng đồ hoạ phức tạp, nhiều chi tiết.
+
+    - Ảnh chụp
+    - Ảnh quét
+
+### Phần mềm
+
+  - Adobe Photoshop
+  - GIMP
 
 ## Vector
 
-### Thương mại
+### Được tạo thành từ các phương trình toán học
 
-- Adobe Illustrator
-- CorelDRAW
+### Tập tin
 
-### Mã nguồn mở
+  - SVG
+  - AI (Adobe Illustrator)
+  - EPS
 
-- Inkscape
+### Áp dụng
+
+  - Cho đối tượng đồ hoạ đơn giản hơn, có độ chính xác cao.
+
+    - Logo
+    - Font chữ
+    - Sơ đồ
+    - Hình minh hoạ (illustration)
+
+### Phần mềm
+
+  - Adobe Illustrator
+  - Inkscape

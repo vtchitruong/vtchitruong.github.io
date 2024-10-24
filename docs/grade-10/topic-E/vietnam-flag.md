@@ -1,3 +1,7 @@
+---
+icon: material/flag-outline
+---
+
 # Vẽ cờ Tổ quốc
 
 !!! abstract "Tóm lược nội dung"

@@ -50,13 +50,18 @@ Các thành phần chủ yếu trong một hệ thống IoT gồm có:
 
     Gồm các phương thức bảo vệ và bảo mật các thiết bị IoT và dữ liệu.
 
-## Nguyên lý hoạt động
+## Cơ chế hoạt động
 
-Ý tưởng cơ bản của IoT là cho phép các thiết bị thu thập, chia sẻ dữ liệu, và tương tác với môi trường xung quanh mà không cần sự can thiệp của con người. 
+Ý tưởng cơ bản của IoT là cho phép các thiết bị thu thập, chia sẻ dữ liệu và tương tác với môi trường xung quanh mà không cần sự can thiệp của con người. 
 
-Cụ thể, thiết bị trong IoT sử dụng các cảm biến để thu thập dữ liệu từ môi trường xung quanh. Dữ liệu được truyền về hệ thống điện toán đám mây để xử lý. Tiếp đó, hệ thống điện toán đám mây gửi lệnh trở lại cho bộ phận truyền động của thiết bị để thiết bị thực hiện hành động nào đó với môi trường xung quanh hoặc thiết bị khác. 
+Hoạt động của hệ thống IoT như sau:
 
-``` mermaid
+1. Thiết bị IoT sử dụng các cảm biến để thu thập dữ liệu từ môi trường xung quanh.
+2. Dữ liệu được truyền về hệ thống điện toán đám mây để xử lý.
+3. Hệ thống điện toán đám mây gửi lệnh cho bộ phận truyền động của thiết bị.
+4. Dựa theo lệnh nhận được, thiết bị tương tác lại với môi trường xung quanh hoặc thiết bị khác.
+
+```mermaid
 sequenceDiagram
     autonumber
     participant C as Điện toán đám mây
