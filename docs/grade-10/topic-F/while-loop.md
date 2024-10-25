@@ -1,3 +1,7 @@
+---
+icon: simple/loopback
+---
+
 # Cấu trúc lặp while
 
 !!! abstract "Tóm lược nội dung"

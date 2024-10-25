@@ -1,8 +1,12 @@
+---
+icon: material/source-branch
+---
+
 # Cấu trúc điều kiện if
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày câu lệnh điều kiện `if`, gồm cả `if` thiếu và `if` đủ.
+    Bài này trình bày câu lệnh điều kiện `if.
 
 ## Đặt vấn đề
 

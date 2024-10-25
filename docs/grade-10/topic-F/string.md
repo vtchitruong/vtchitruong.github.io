@@ -1,3 +1,7 @@
+---
+icon: material/string-lights
+---
+
 # Kiểu dữ liệu chuỗi
 
 !!! abstract "Tóm lược nội dung"

@@ -1,3 +1,7 @@
+---
+icon: material/format-list-numbered
+---
+
 # Kiểu dữ liệu list
 
 !!! abstract "Tóm lược nội dung"

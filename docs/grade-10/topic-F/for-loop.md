@@ -1,3 +1,7 @@
+---
+icon: simple/loop
+---
+
 # Cấu trúc lặp for
 
 !!! abstract "Tóm lược nội dung"
