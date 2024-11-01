@@ -70,7 +70,7 @@ function bfs():
     enqueue(start)
     
     while queue is not empty:
-        u = dequeue(phần_tử_đầu_queue)
+        current = dequeue(phần_tử_đầu_queue)
 
         for v in các_đỉnh_kề_của_đỉnh_current:
             if v not in visited:
@@ -263,23 +263,23 @@ Cách nạp các đỉnh của đường đi vào `path` như sau:
 === "C++"
 
     ```c++ linenums="1"
-        // Khai báo stack path lưu các đỉnh của đường đi cần tìm
+        // Khai báo ngăn xếp path lưu các đỉnh của đường đi cần tìm
         stack<int> path; 
 
-        // Dùng tmpFinish để không làm mất giá trị của finish khi truy ngược
-        int tmpFinish = finish;
+        // Dùng tmp_finish để không làm mất giá trị của finish khi truy ngược
+        int tmp_finish = finish;
 
         // Nếu có đường đi đến đỉnh finish thì mới thực hiện truy ngược trace
-        if (trace[tmpFinish])
+        if (trace[tmp_finish])
         {
-            // Dựa vào mảng trace, cho tmpFinish "lùi" dần về start
-            while (tmpFinish != start)
+            // Dựa vào mảng trace, cho tmp_finish "lùi" dần về start
+            while (tmp_finish != start)
             {
-                // Trong khi chưa đụng đỉnh start, thì nạp đỉnh tmpFinish vào đường đi
-                path.push(tmpFinish);
+                // Trong khi chưa đụng đỉnh start, thì nạp đỉnh tmp_finish vào đường đi
+                path.push(tmp_finish);
 
-                // "Lùi" tmpFinish về đỉnh liền trước đó
-                tmpFinish = trace[tmpFinish];
+                // "Lùi" tmp_finish về đỉnh liền trước đó
+                tmp_finish = trace[tmp_finish];
             }
 
             // Nạp đỉnh start vào đường đi
