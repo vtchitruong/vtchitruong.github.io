@@ -338,7 +338,8 @@ nav:
       - grade-11/topic-F2/sorting-algorithm-insertion-sort.md
       - grade-11/topic-F2/sorting-algorithm-bubble-sort.md
       - grade-11/topic-F2/sorting-algorithm-exchange-sort.md
-      - grade-11/topic-F2/algorithmic-complexity.md      
+      - grade-11/topic-F2/algorithmic-complexity.md
+      - grade-11/topic-F2/programming-module.md
   - Lớp 12:
     - Chương trình khung: grade-12/grade-12-index.md
     - Chủ đề A:

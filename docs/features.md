@@ -52,6 +52,15 @@ Bạn chỉ cần gõ từ khóa vào ô **Search**, tất cả bài viết có 
   <figcaption>Tìm kiếm trên smartphone hoặc tablet</figcaption>
 </figure>
 
+## Chú thích
+
+Bấm nút :material-plus-circle: để mở xem ngay chú thích của nội dung liên quan, mà không cần mở trang web khác.
+
+<figure markdown>
+![Chú thích](https://lh3.googleusercontent.com/pw/AP1GczNvd_TX6KD0-Lvoc9br9uSLA6Hbo4n-30q1z1GgsOIaCBD1kFN2aUQDjD0eJDuZYjYni4QA0ZiypUrI18LJs46kpwS0VrYkZHXXqATTQNqL6EqzSESG=w2400){loading=lazy width=240}
+  <figcaption>Chú thích</figcaption>
+</figure>
+
 ## Câu hỏi tự kiểm tra
 
 Sau mỗi mục của bài học có thể có những câu hỏi nhỏ giúp bạn tự kiểm tra khả năng đọc hiểu và củng cố kiến thức.
@@ -78,13 +87,16 @@ Bên cạnh tác dụng tóm tắt, sơ đồ tư duy còn là liệu pháp tâm
 
 Mặc dù đánh lừa cảm giác có thể có ích trong một số trường hợp, chúng tôi luôn khuyến khích bạn đọc kỹ bài học và tìm hiểu sâu kiến thức.
 
-## Mã lệnh của bài học
+## Mã nguồn của bài học
 
-Đối với những bài học có viết mã lệnh, mã lệnh được đặt ở những nơi sau:
+Đối với những bài học có viết chương trình, mã nguồn được đặt ở những nơi sau:
 
-- Những đoạn mã minh họa riêng lẻ được đặt trong các tab, mỗi tab là một ngôn ngữ. *(Chỗ này nói cho sang vậy thôi, chứ thực ra chỉ có hai tab dành cho hai ngôn ngữ phổ biến là C++ và Python.)*
+- Những đoạn mã minh họa riêng lẻ được đặt trong các tab, mỗi tab là một ngôn ngữ. (1)
+    { .annotate }
 
-- Mã lệnh đầy đủ của chương trình thường đặt tại [GitHub](https://github.com/){:target="_blank"} hoặc [Google Colab](https://colab.research.google.com/){:target="_blank"}, tùy thuộc ngữ cảnh của mỗi chương trình.
+    1.  Chỗ này nói cho sang vậy thôi, chứ thực ra chỉ có hai tab dành cho hai ngôn ngữ phổ biến là C++ và Python.
+
+- Mã nguồn đầy đủ được đặt tại [GitHub](https://github.com/){:target="_blank"} hoặc [Google Colab](https://colab.research.google.com/){:target="_blank"}, tùy thuộc ngữ cảnh của bài viết.
     
     Đối với [Google Colab](https://colab.research.google.com/){:target="_blank"}, bạn có thể chỉnh sửa ngay theo ý mình để kiểm chứng bài học.
 
