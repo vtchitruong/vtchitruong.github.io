@@ -257,8 +257,8 @@ Cách nạp các đỉnh của đường đi vào `path` như sau:
 
 1\. Dùng vòng lặp while:
 
-- Dựa theo mảng `trace`, cho một biến `tmp_finish` xuất phát từ đỉnh đích (đỉnh `finish`) lùi dần về đỉnh xuất phát (đỉnh `start`) bằng mảng `trace`.
-- Ứng với mỗi lần *lùi*, ta nạp đỉnh `tmp_finiash` vào `path`.
+- Dựa vào mảng `trace`, cho biến `tmp_finish` xuất phát từ đỉnh đích (đỉnh `finish`) lùi dần về đỉnh xuất phát (đỉnh `start`).
+- Ứng với mỗi lần *lùi*, ta nạp đỉnh `tmp_finish` vào `path`.
 
 === "C++"
 
