@@ -420,6 +420,7 @@ nav:
       - Chia phần thưởng: advanced/dynamic-programming/reward-student.md
       - Dãy con tăng dài nhất: advanced/dynamic-programming/lis.md
       - Balo: advanced/dynamic-programming/knapsack.md
+      - Chia kẹo: advanced/dynamic-programming/candypack.md
     - Lập lịch:
       - Johnson: advanced/scheduling/johnson.md
   - MOS:

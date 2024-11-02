@@ -23,7 +23,7 @@ Mỗi đối tượng trong đường đi trên là một đỉnh. Tại đỉnh
 
 ``` mermaid
 ---
-title: Hình 1. Minh họa một đường đi khi duyệt bằng DFS
+title: Minh họa một đường đi khi duyệt bằng DFS
 ---
 
 graph TD

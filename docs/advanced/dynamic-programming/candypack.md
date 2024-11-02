@@ -49,7 +49,6 @@ Gọi `pack[i]` là số viên kẹo của gói thứ `i`.
 === "C++"
 
     ```c++ linenums="1"
-
         cin >> n >> m;
 
         // Gói thứ 0 không có kẹo
@@ -63,9 +62,14 @@ Gọi `pack[i]` là số viên kẹo của gói thứ `i`.
         }
     ```
 === "Python"
-    
-    ```py linenums="1"
 
+    ```py linenums="1"
+        n, m = map(int, f.readline().split())
+
+        # gói thứ 0 không có kẹo
+        pack = [0]
+        some_packs = list(map(int, f.readline().split()))
+        pack.extend(some_packs)
     ```
 
 #### Xây dựng bảng quy hoạch
@@ -83,7 +87,8 @@ Khởi tạo giá trị vô cực cho các phần tử của mảng `P`. Mục �
 === "Python"
 
     ```py linenums="1"
-
+        P = [int(1e12)] * (m + 1)
+        P[0] = 0
     ```
 
 Trong khi duyệt từng gói kẹo, gói kẹo thứ `i` được chọn khi nó thoả các điều kiện sau:
@@ -119,9 +124,18 @@ Trong khi duyệt từng gói kẹo, gói kẹo thứ `i` được chọn khi n�
         }
     ```
 === "Python"
-    
-    ```py linenums="1"
 
+    ```py linenums="1"
+        # Duyệt số kẹo cần lấy từ 1 đến m
+        for candy in range(1, m + 1):
+            # Duyệt qua từng gói kẹo từ 1 đến n
+            for i in range(1, n + 1):
+                # Số kẹo của gói thứ i phải ít hơn số candy kẹo đang xét
+                if pack[i] <= candy:
+                    # P[candy - pack[i]] là số thứ tự của gói nào đó trước khi chọn gói i
+                    if P[candy - pack[i]] < i:
+                        P[candy] = i
+                        break
     ```
 
 #### Xuất output
@@ -135,3 +149,50 @@ Sau khi bảng quy hoạch `P` đã điền đầy đủ, ta thực hiện truy 
         - Đặt `remaining_candy` là số kẹo còn lại sau khi trừ đi số kẹo của gói vừa chọn trước đó, ví dụ tại bước duyệt này là `P[m]`: `remaining_candy = remaing_candy - pack[số thứ tự của gói vừa chọn trước đó]`.
         - Nạp `P[remaining_candy]` là số thứ tự của gói tiếp theo được chọn vào mảng `result`.
         - Vòng lặp dừng khi không còn kẹo để xét nữa: `remaining_candy == 0`.
+
+=== "C++"
+
+    ```c++ linenums="1"
+        if (P[m] == INT_MAX)
+        {
+            result.push_back(-1);
+        }
+        else
+        {
+            // Số kẹo còn lại dùng để truy ngược
+            int remaining_candy = m;
+
+            // Trong khi vẫn còn kẹo để xét
+            while (remaining_candy > 0)
+            {
+                // Nạp số thứ tự của gói kẹo được chọn vào result
+                result.push_back(P[remaining_candy]);
+                
+                // Trừ đi số kẹo của gói vừa nạp vào
+                remaining_candy -= pack[result.back()];
+            }
+        }
+    ```
+=== "Python"
+
+    ```py linenums="1"
+        if P[m] == int(1e12):
+            result.append(-1)
+        else:
+            # Số kẹo còn lại dùng để truy ngược
+            remaining_candy = m
+
+            # Trong khi vẫn còn kẹo để xét
+            while remaining_candy > 0:
+                # Nạp số thứ tự của gói kẹo được chọn vào result
+                result.append(P[remaining_candy])
+
+                # Trừ đi số kẹo của gói vừa nạp vào
+                remaining_candy -= pack[result[-1]]
+    ```
+
+### Mã nguồn
+
+Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/DynamicProgramming/tree/main/CandyPack" target="_blank">GitHub</a>.
+
+
