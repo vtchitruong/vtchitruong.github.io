@@ -79,7 +79,7 @@ function bfs():
                 enqueue(v)
 ```
 
-## Bài toán ví dụ
+## Bài toán
 
 ### Yêu cầu
 
@@ -129,9 +129,9 @@ graph LR
     9([9]) --> 10([10])
 ```
 
-### Cách giải đề xuất
+## Cách giải đề xuất
 
-**Bước 1:** Khởi tạo
+### Khởi tạo
 
 Trong bài này, ta muốn in ra đường đi theo trình tự từ đỉnh xuất phát đến đỉnh đích. Cho nên, ta không chỉ đánh dấu các đỉnh đã ghé thăm, mà còn phải lưu vết và truy vết.
 
@@ -165,7 +165,7 @@ Ban đầu, ta khởi tạo mảng `trace` gồm toàn các phần tử `0`, ngh
         trace[start] = -1
     ```
 
-**Bước 2:** Thực hiện BFS
+### Thực hiện BFS
 
 1. Nạp đỉnh `start` vào hàng đợi `q`.
 
@@ -249,7 +249,7 @@ Sau khi hàm `bfs()` hoàn tất, mảng `trace` được điền đầy đủ n
 | --- | --- | --- |---| --- | --- | --- | --- | --- | --- | --- |
 | `trace[u]`| -1 | 1 | 1 | 2 | 3 | 4 | 3 | 3 | 0 | 0 | 
 
-**Xuất output**
+### Xuất output
 
 Nếu dựa vào mảng `trace` để in ra đường đi thì trình tự sẽ bị ngược: 5 ← 3 ← 1. Do đó, ta giải quyết tình huống này bằng cách: nạp các đỉnh của đường đi vào ngăn xếp, gọi ngăn xếp là `path`, rồi duyệt `path` để in ra.
 
@@ -367,7 +367,7 @@ Dùng vòng lặp while để duyệt `path`, lặp các thao tác:
                 f.write(output_path)
     ```
 
-### Mã nguồn
+## Mã nguồn
 
 Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/Graph/tree/main/BFS" target="_blank">GitHub</a>.
 

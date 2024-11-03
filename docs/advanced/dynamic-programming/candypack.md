@@ -40,9 +40,9 @@ Output:
 
 Cụ thể, số viên kẹo của các gói 2, 3, 4, 5 và 6 là 9 + 5 + 6 + 2 + 10 = 32 viên kẹo.
 
-### Cách giải đề xuất
+## Cách giải đề xuất
 
-#### Đọc input
+### Đọc input
 
 Gọi `pack[i]` là số viên kẹo của gói thứ `i`. 
 
@@ -72,7 +72,7 @@ Gọi `pack[i]` là số viên kẹo của gói thứ `i`.
         pack.extend(some_packs)
     ```
 
-#### Xây dựng bảng quy hoạch
+### Xây dựng bảng quy hoạch
 
 Gọi `P[candy]` là số thứ tự của gói được chọn để đạt `candy` viên kẹo và là nhỏ nhất khi thực hiện quá trình chọn từ gói `P[1]` đến gói `P[candy]`.
 
@@ -138,7 +138,7 @@ Trong khi duyệt từng gói kẹo, gói kẹo thứ `i` được chọn khi n�
                         break
     ```
 
-#### Xuất output
+### Xuất output
 
 Sau khi bảng quy hoạch `P` đã điền đầy đủ, ta thực hiện truy ngược từ cuối bảng về đầu bảng:
 
@@ -191,7 +191,7 @@ Sau khi bảng quy hoạch `P` đã điền đầy đủ, ta thực hiện truy 
                 remaining_candy -= pack[result[-1]]
     ```
 
-### Mã nguồn
+## Mã nguồn
 
 Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/DynamicProgramming/tree/main/CandyPack" target="_blank">GitHub</a>.
 
