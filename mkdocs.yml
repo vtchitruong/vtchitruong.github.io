@@ -417,10 +417,10 @@ nav:
       - Dijkstra: advanced/graph/dijkstra.md
       - Bellman-Ford: advanced/graph/bellman-ford.md
     - Quy hoạch động:
-      - Chia phần thưởng: advanced/dynamic-programming/rewardstudent.md
-      - Dãy con tăng dài nhất: advanced/dynamic-programming/lis.md
-      - Balo: advanced/dynamic-programming/knapsack.md
-      - Chia kẹo: advanced/dynamic-programming/candypack.md
+      - advanced/dynamic-programming/rewardstudent.md
+      - advanced/dynamic-programming/lis.md
+      - advanced/dynamic-programming/knapsack.md
+      - advanced/dynamic-programming/candypack.md
     - Lập lịch:
       - Johnson: advanced/scheduling/johnson.md
   - MOS:

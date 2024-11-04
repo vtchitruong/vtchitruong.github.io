@@ -82,11 +82,14 @@ Khởi tạo một số giá trị ban đầu cho bảng quy hoạch `D`:
 
     ```py linenums="1"
         # Khởi tạo giá trị 0 cho toàn bảng quy hoạch
-        D = [[0 for col in range(reward + 1)] for row in range(student + 1)]
+        D = [[0 for col in range(reward + 1)] for row in range(student + 1)] # (1)!
         
         # Chỉ có 1 cách để 0 học sinh nhận 0 phần thưởng
         D[0][0] = 1
     ```
+    { .annotate }
+
+    1.  Dòng lệnh này *vô tình* khởi tạo giá trị `0` cho toàn bộ bảng quy hoạch.
 
 **Bước 2:** Thực hiện quy hoạch động
 
