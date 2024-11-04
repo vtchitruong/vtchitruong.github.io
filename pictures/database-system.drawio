@@ -1,1 +1,46 @@
-<mxfile host="Electron" modified="2023-10-16T11:06:12.108Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.6.2 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" etag="Q4838tMTsCIhT6wRnE-h" version="20.6.2" type="device"><diagram id="j7u3vfIIvnQYxg0B_kr3" name="Page-1">7Zldb5swFIZ/DZdDgPm8DCzZqq3apmpbtzsHHPBqMAPna79+NtgBCtEWNWl7ESolnGP7GJ/3wXYdDUT57l0Fy+yWJoholpHsNPBWs6zAM/incOxbh+ParSOtcNK6zM5xh/8g6ZTt0jVOUD2oyCglDJdDZ0yLAsVs4INVRbfDaitKhr2WMEUjx10Mydj7HScsk17LMbqC9winmezaVQU5VJWlo85gQrc9F5hrIKooZe1dvosQEblTeWnbLY6UHh6sQgX7nwbk9ufavN/sfq2SJf7y1Q7tTfLGaqNsIFnLAX/OtLmphTNt5hViGI0Var6Zc0sas6BIhabKdITZjJHtVeIqui4SJPo2NRBuM8zQXQljUbrlpHBfxnIii1e0YAuYYyIouUMpRTzY1xv+8Q1WGC6JsN/iuiRwL6tLVPgzcRsTElFCq6ZrYBhR5LrcX7OKPiBVUtACyca9yovm4v5xPmWKN6hiaNdzyfy+QzRHrNrzKrIUKNr3CmK/tbcdOpZh6qaMnPXBkU2hBDY9RO805TdS1hMkBiOJ3ytNPe7/vVZ6A6E3q1RhKN4qLXK1mSmUle5g0RdeGAQfwq1fEwUW8sDSfwEKbHtIwWEG6FOg6jwLAs4IgZFQPRkOE5VIagLrrNFPGJDgtOD3MU8O4pkLRVIwnyxnsiDHSSIiihiliJzvUrEs6O1UbLXfIqzIjaEDoU+zVliW7gXcKCiLM9ndUeGeAskR3Y9NIRVlkGEqBhcYl+HD9Fw9MEeIAF+3gzEkNtCN4EKcuFdOTuTEmnsg9IecvDkXKI7xWkHxrqCcAZRLcWL5lm70L/c1MONfmTmRmcUiXBjGpSYX39Qd8zE3zwzKjR3S++zLtx83H26j1Q5lxsz+n8mlfkCdQnTNCC64ROo/wIkU87+FeISQk5Bg1JUpQR9nPuDXMfUHOCr6PsIlIp9pjaVQS8oYzSfwZLScovjRPljiYlrKloNv3oC6bAe6wjvxHGFJsYgy3/BgdfcCDeHf1ra+rpu+jrAyQdRRfFzDGrATjPe4nj/mRvnODs11djl9dpGMT69IT6PDHk0uL7J5mUQluKJy5l3uk1hxglfMyvh8LHrqkYiCId7zVStBFfj3wciyPUX5uDw4YPyQNmcrn9rFT8EqVw1nrOFqtVwZY44a1edOMxHEnAbIg1XTa2hHxwRFJ0B4DmYe7Xht09XN8VmbaU2dsgBd7XPOjos55uWq/zPofzh4fVHxxyetV/GfQ3zr0i8/N7vfaZqy3o9dYP4X</diagram></mxfile>
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram id="j7u3vfIIvnQYxg0B_kr3" name="Page-1">
+    <mxGraphModel dx="1037" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="650" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lMZu1XvxjfdbiQU4B4vd-2" value="Phần mềm ứng dụng" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSize=20;fillColor=#00CC66;strokeColor=none;fontColor=#FFFFFF;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="343.69" y="148" width="231.11" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lMZu1XvxjfdbiQU4B4vd-3" value="Hệ quản trị cơ sở dữ liệu" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSize=20;fillColor=#2e73b8;strokeColor=none;fontColor=#FFFFFF;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="440" y="270" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lMZu1XvxjfdbiQU4B4vd-5" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.38;dx=22.79;notch=0;strokeColor=none;fontFamily=Noto Sans;fontSize=20;fontColor=#FFFFFF;fillColor=#00CC66;rotation=90;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="440" y="220" width="38.49" height="43.09" as="geometry" />
+        </mxCell>
+        <mxCell id="lMZu1XvxjfdbiQU4B4vd-6" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.38;dx=22.79;notch=0;strokeColor=none;fontFamily=Noto Sans;fontSize=20;fontColor=#FFFFFF;fillColor=#2E73B8;rotation=-90;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="500" y="220" width="38.49" height="43.09" as="geometry" />
+        </mxCell>
+        <mxCell id="lMZu1XvxjfdbiQU4B4vd-7" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.38;dx=22.79;notch=0;strokeColor=none;fontFamily=Noto Sans;fontSize=20;fontColor=#FFFFFF;fillColor=#2E73B8;rotation=90;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="500" y="340.00000000000006" width="38.49" height="43.09" as="geometry" />
+        </mxCell>
+        <mxCell id="lMZu1XvxjfdbiQU4B4vd-8" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.38;dx=22.79;notch=0;strokeColor=none;fontFamily=Noto Sans;fontSize=20;fontColor=#FFFFFF;fillColor=#FFBF00;rotation=-90;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="591.51" y="340" width="38.49" height="43.09" as="geometry" />
+        </mxCell>
+        <mxCell id="I4BoXhQVYIKMCfxeh0A4-7" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9999;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="600" y="108" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="I4BoXhQVYIKMCfxeh0A4-8" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.38;dx=22.79;notch=0;strokeColor=none;fontFamily=Noto Sans;fontSize=20;fontColor=#FFFFFF;fillColor=#FF9999;rotation=90;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="661.51" y="220" width="38.49" height="43.09" as="geometry" />
+        </mxCell>
+        <mxCell id="I4BoXhQVYIKMCfxeh0A4-9" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.38;dx=22.79;notch=0;strokeColor=none;fontFamily=Noto Sans;fontSize=20;fontColor=#FFFFFF;fillColor=#2E73B8;rotation=-90;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="606" y="220" width="38.49" height="43.09" as="geometry" />
+        </mxCell>
+        <mxCell id="I4BoXhQVYIKMCfxeh0A4-2" value="Cơ sở dữ liệu" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffbf00;strokeColor=#FFE599;container=0;fontColor=#FFFFFF;fontSize=20;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" parent="1" vertex="1">
+          <mxGeometry x="479.25" y="530" width="161.51" height="83.82" as="geometry" />
+        </mxCell>
+        <mxCell id="rkTRhhw2kHA4zp4epzsW-1" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffbf00;strokeColor=#FFE599;container=0;fontColor=#FFFFFF;fontSize=20;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" vertex="1" parent="1">
+          <mxGeometry x="479.25" y="460" width="161.51" height="83.82" as="geometry" />
+        </mxCell>
+        <mxCell id="rkTRhhw2kHA4zp4epzsW-2" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffbf00;strokeColor=#FFE599;container=0;fontColor=#FFFFFF;fontSize=20;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;" vertex="1" parent="1">
+          <mxGeometry x="479.25" y="390" width="161.51" height="83.82" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

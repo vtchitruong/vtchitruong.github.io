@@ -6,11 +6,11 @@ markmap:
 
 # Quản lý dữ liệu
 
-## Nhu cầu quản lý
+## Nhu cầu
 
-- Hầu hết cá nhân, tổ chức đều có nhu cầu quản lý dữ liệu vì dữ liệu đem lại nhiều lợi ích.
+- Phần lớn cá nhân, tổ chức đều có nhu cầu quản lý dữ liệu vì dữ liệu đem lại nhiều lợi ích.
 
-## Các công việc quản lý
+## Các công việc
 
 ### Thu thập
 
@@ -19,7 +19,6 @@ markmap:
 ### Cập nhật
 
 - Thêm mới
-- Bổ sung
 - Chỉnh sửa
 - Xóa bỏ
 
