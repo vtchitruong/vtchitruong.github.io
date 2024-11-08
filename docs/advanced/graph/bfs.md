@@ -50,7 +50,7 @@ graph LR
 
 ## Các bước thực hiện
 
-Trước hết, chọn một đỉnh làm đỉnh gốc để xuất phát, gọi là đỉnh `start`. Nạp đỉnh `start` vào hàng đợi.
+Trước hết, chọn một đỉnh làm đỉnh gốc để xuất phát, gọi là đỉnh `start`. Nạp đỉnh `start` vào hàng đợi và đánh dấu đỉnh `start` đã ghé thăm. 
 
 Thuật toán BFS có thể thực thi bằng hàng đợi như sau:  
 
@@ -68,6 +68,7 @@ Mã giả cho mô tả trên như sau:
 ```py
 function bfs():
     enqueue(start)
+    visited.append(v)
     
     while queue is not empty:
         current = dequeue(phần_tử_đầu_queue)
@@ -196,6 +197,9 @@ Ban đầu, ta khởi tạo mảng `trace` gồm toàn các phần tử `0`, ngh
             // thì gán phần tử nằm ở đầu hàng đợi q vào biến tạm current
             current = q.front();
 
+            // và xóa bỏ phần tử nằm ở đầu hàng đợi q, là đỉnh current
+            q.pop();
+
             // Duyệt các đỉnh kề với đỉnh current
             for (vector<int>::iterator i = A[current].begin(); i != A[current].end(); ++i)
             {
@@ -208,9 +212,6 @@ Ban đầu, ta khởi tạo mảng `trace` gồm toàn các phần tử `0`, ngh
                     
                 }
             }
-
-            // Xóa bỏ phần tử nằm ở đầu hàng đợi q, là đỉnh current
-            q.pop();
         }
     }
     ```
