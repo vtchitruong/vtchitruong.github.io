@@ -1,12 +1,11 @@
 ---
 categories:
     - Solve to surpass
-    - Set up & Code down
 authors: [mrschool]
 date: 2024-10-17
 ---
 
-# HSG12 Vĩnh Phúc 2023-2024
+# Học sinh giỏi 12 Vĩnh Phúc 2023-2024
 
 <div class="result" markdown>
 ![Picture by AI](./thumbnails/students-coding.jpg){ align=left width=360 }

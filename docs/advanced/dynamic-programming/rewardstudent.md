@@ -134,11 +134,11 @@ Dễ thấy, số cách của trường hợp 2 là: số cách của 2a + số 
                 D[s][r] = D[r][r];
             }
 
-            // Trường họp 2: số phần thưởng >= số học sinh
-            // Trường họp 2a: học sinh hạng chót sẽ không được nhận thưởng
+            // Trường hợp 2: số phần thưởng >= số học sinh
+            // Trường hợp 2a: học sinh hạng chót sẽ không được nhận thưởng
             // Số cách chia thưởng là D[s - 1][r]
 
-            // Trường họp 2b: học sinh hạng chót vẫn được nhận thưởng
+            // Trường hợp 2b: học sinh hạng chót vẫn được nhận thưởng
             // Số cách chia thưởng D[s][r] sẽ không thay đổi nếu ta bỏ bớt 1 phần thưởng của mỗi học sinh. Số phần thưởng tạm bỏ bớt là (r - s) 
             // Số cách chia thưởng là D[s][r - s]
 
@@ -161,11 +161,11 @@ Dễ thấy, số cách của trường hợp 2 là: số cách của 2a + số 
             for r in range(0, s):
                 D[s][r] = D[r][r]
             
-            # Trường họp 2: số phần thưởng >= số học sinh
-            # Trường họp 2a: học sinh hạng chót sẽ không được nhận thưởng
+            # Trường hợp 2: số phần thưởng >= số học sinh
+            # Trường hợp 2a: học sinh hạng chót sẽ không được nhận thưởng
             # Số cách chia thưởng là D[s - 1][r]
 
-            # Trường họp 2b: học sinh hạng chót vẫn được nhận thưởng
+            # Trường hợp 2b: học sinh hạng chót vẫn được nhận thưởng
             # Số cách chia thưởng D[s][r] sẽ không thay đổi nếu ta bỏ bớt 1 phần thưởng của mỗi học sinh. Số phần thưởng tạm bỏ bớt là (r - s) 
             # Số cách chia thưởng là D[s][r - s]
 

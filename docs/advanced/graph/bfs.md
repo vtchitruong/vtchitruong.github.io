@@ -68,7 +68,7 @@ Mã giả cho mô tả trên như sau:
 ```py
 function bfs():
     enqueue(start)
-    visited.append(v)
+    visited.append(start)
     
     while queue is not empty:
         current = dequeue(phần_tử_đầu_queue)

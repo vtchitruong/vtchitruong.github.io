@@ -1,7 +1,6 @@
 ---
 categories:
     - Giáo dục dầm dề truyện
-    - Improvised & Inspired
 authors: [mrschool]
 date: 2017-09-30
 ---
