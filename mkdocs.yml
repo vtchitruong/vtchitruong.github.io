@@ -412,8 +412,9 @@ nav:
       - Sắp xếp: advanced/basic-techniques/sort.md
       - Hợp và trộn: advanced/basic-techniques/union-merge.md
     - Đồ thị:
-      - DFS: advanced/graph/dfs.md
-      - BFS: advanced/graph/bfs.md
+      - advanced/graph/dfs.md
+      - advanced/graph/out-of-the-forest.md
+      - advanced/graph/bfs.md
       - Dijkstra: advanced/graph/dijkstra.md
       - Bellman-Ford: advanced/graph/bellman-ford.md
     - Quy hoạch động:

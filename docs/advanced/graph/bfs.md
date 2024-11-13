@@ -1,4 +1,4 @@
-# Tìm kiếm theo chiều rộng
+# BFS
 
 ## Khái quát
 
