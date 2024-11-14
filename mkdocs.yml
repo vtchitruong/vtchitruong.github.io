@@ -415,6 +415,7 @@ nav:
       - advanced/graph/dfs.md
       - advanced/graph/out-of-the-forest.md
       - advanced/graph/bfs.md
+      - advanced/graph/robot-in-the-maze.md
       - Dijkstra: advanced/graph/dijkstra.md
       - Bellman-Ford: advanced/graph/bellman-ford.md
     - Quy hoạch động:

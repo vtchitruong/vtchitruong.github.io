@@ -1,4 +1,4 @@
-# Tìm đường thoát khỏi khu rừng
+# Thoát khỏi khu rừng
 
 ## Khái quát
 
