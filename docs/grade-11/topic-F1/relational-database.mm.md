@@ -8,7 +8,7 @@ markmap:
 
 ## Tổ chức theo dạng bảng
 
-## Thuật ngữ liên quan
+## Khái niệm
 
 ### Quan hệ
 
