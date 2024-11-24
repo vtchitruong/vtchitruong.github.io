@@ -425,6 +425,16 @@ nav:
       - advanced/dynamic-programming/move-right.md
     - Lập lịch:
       - Johnson: advanced/scheduling/johnson.md
+  - Solve to surpass:
+    - HSG 9 Thành phố:
+    - Olympic 10 & 11 Thành phố:
+      - solve-to-surpass/olympic-hcm/2021-olympic10.md
+      - solve-to-surpass/olympic-hcm/2014-2015-olympic10.md
+    - HSG 9 tỉnh khác:
+      - solve-to-surpass/hsg9-tinh/2023-hatinh-ts10.md
+    - HSG 12 tỉnh khác:
+      - solve-to-surpass/hsg12-tinh/2024-2025-nghean.md
+      - solve-to-surpass/hsg12-tinh/2023-2024-vinhphuc.md
   - MOS:
     - MOS 2019: mos/mos-2019-index.md
     - PowerPoint 2019:

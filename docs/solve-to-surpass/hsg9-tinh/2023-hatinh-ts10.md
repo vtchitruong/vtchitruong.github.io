@@ -1,61 +1,31 @@
----
-categories:
-    - Solve to surpass
-    - Set up & Code down
-authors: [mrschool]
-date: 2024-10-07
----
+# 2023-2024 Hà Tĩnh - Tuyển sinh 10
 
-# Tuyển sinh 10 Hà Tĩnh 2023-2024
+## Bài 1: Tổng dãy số (3,0 điểm)
 
-<div class="result" markdown>
-![Picture by AI](./thumbnails/students-coding.jpg){ align=left width=360 }
-
-SỞ GIÁO DỤC VÀ ĐÀO TẠO HÀ TĨNH  
-KỲ THI TUYỂN SINH VÀO LỚP 10 THPT TRƯỜNG THPT CHUYÊN HÀ TĨNH NĂM HỌC 2023-2024
-
-Môn: TIN HỌC  
-(Đề thi có 03 trang, gồm 04 bài)  
-Thời gian làm bài: 150 phút, không kể thời gian phát đề
-
-</div>
-
-<br>
-
-<!-- more -->
-
-<br>
-
-## Bài 1
-
-### Tổng dãy số (3,0 điểm)
+### Đề bài
 
 Cho dãy số $T_1, T_2, T_3, ..., T_n$.
 
 Với số hạng tổng quát là: $T_k = (k+1)^2 - k^2$ ($k$ là số nguyên và $1 \le k \le n$).
 
-Yêu cầu: Tính giá trị $S = T_1, T_2, T_3, ..., T_n$
+**Yêu cầu:** Tính giá trị $S = T_1, T_2, T_3, ..., T_n$
 
-Dữ liệu:
+**Dữ liệu:** Vào từ file văn bản SUMS.INP gồm một dòng duy nhất chứa số nguyên dương $n (1 \le n \le 10^9)$.
 
-Vào từ file văn bản SUMS.INP gồm một dòng duy nhất chứa số nguyên dương $n (1 \le n \le 10^9)$.
+**Kết quả:** Ghi ra file văn bản SUMS.OUT một số nguyên là giá trị S tính được.
 
-Kết quả:
-
-Ghi ra file văn bản SUMS.OUT một số nguyên là giá trị S tính được.
-
-Ví dụ:
+**Ví dụ:**
 
 | SUMS.INP | SUMS.OUT | Giải thích |
 | --- | --- | --- |
 | 2	| 8 | Với n = 2 ta có: <br> $S = T_1 + T_2 = (1 + 1)^2 – 1^2 + (2 + 1)^2 - 2^2 = 8$ |
 
-Ràng buộc:
+**Ràng buộc:**
 
 - Có 70% số test ứng với 70% số điểm thỏa mãn $1 \le n \le 10^6$.
 - Có 30% số test còn lại ứng với 30% số điểm không có ràng buộc gì thêm.
 
-### Bài giải tham khảo
+### Bài giải đề xuất
 
 Dựa vào biểu thức $T_k = 2k + 1$, ta có:
 
@@ -92,38 +62,34 @@ Vì giới hạn của $n$ là $10^9$ nên trong C++, ta khai báo kiểu `long 
 
 Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg9-tinh/2023-hatinh-ts10/sums){:target="_blank"}.
 
-## Bài 2
+## Bài 2: Số đặc biệt (3,0 điểm)
 
-### Số đặc biệt (3,0 điểm)
+### Đề bài
 
 Nam phát hiện nhiều số tự nhiên có tính chất: Tổng bình phương các chữ số của nó là số nguyên tố, những số như thế Nam gọi là số đặc biệt.
 
-Yêu cầu: Cho số nguyên dương n. Hãy kiểm tra xem n có phải là số đặc biệt hay không.
+**Yêu cầu:** Cho số nguyên dương n. Hãy kiểm tra xem n có phải là số đặc biệt hay không.
 
-Dữ liệu:
+**Dữ liệu:** Vào từ file văn bản BNUM.INP gồm một dòng duy nhất chứa số nguyên dương $n (10 \le n \le 10^18)$.
 
-Vào từ file văn bản BNUM.INP gồm một dòng duy nhất chứa số nguyên dương $n (10 \le n \le 10^18)$.
-
-Kết quả:
-
-Ghi ra file văn bản BNUM.OUT gồm 2 dòng:
+**Kết quả:** Ghi ra file văn bản BNUM.OUT gồm 2 dòng:
 
 - Dòng đầu ghi ra 1 nếu n là số đặc biệt, ngược lại ghi -1 nếu n không phải là số đặc biệt.
 - Dòng thứ hai ghi tổng bình phương các chữ số của n.
 
-Ví dụ:
+**Ví dụ:**
 
 | BNUM.INP | BNUM.OUT | Giải thích |
 | --- | --- | --- |
 | 21 | 1 <br> 5| Tổng bình phương chữ số của 21 là 5 (5 là số nguyên tố) |
 | 24 | -1 <br> 20 | Tổng bình phương chữ số của 24 là 20 (20 không phải số nguyên tố) |
 
-Ràng buộc:
+**Ràng buộc:**
 
 - Có 60% số test ứng với 60% số điểm thỏa mãn: $10 \le n \le 10^3$. 
 - 40% số test còn lại ứng với 40% số điểm không có ràng buộc gì thêm.
 
-### Bài giải tham khảo
+### Bài giải đề xuất
 
 Để có thể xử lý được từng chữ số, ta đọc giá trị của $n$ theo kiểu `string`.
 
@@ -209,9 +175,9 @@ Sau đó, ta gọi hàm `isPrime()` để kiểm tra `sum_digit` có phải nguy
 
 Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg9-tinh/2023-hatinh-ts10/bnum){:target="_blank"}.
 
-## Bài 3
+## Bài 3: Dãy đặc trưng (2,0 điểm)
 
-### Dãy đặc trưng (2,0 điểm)
+### Đề bài
 
 Cho một dãy A gồm n số nguyên $a_1, a_2, ..., a_n$, mỗi phần tử có giá trị tuyệt đối không quá $10^9$.
 
@@ -220,32 +186,28 @@ Dãy đặc trưng A1 của A là dãy con gồm các phần tử liên tiếp n
 - Trong dãy A1 tất cả các số đều dương hoặc đều âm.
 - Số lượng phần tử của dãy A1 là lớn nhất.
 
-Yêu cầu: Tìm dãy A1 và ghi ra số lượng phần tử của nó.
+**Yêu cầu:** Tìm dãy A1 và ghi ra số lượng phần tử của nó.
 
-Dữ liệu:
-
-Vào từ file văn bản SPEC.INP gồm 2 dòng:
+**Dữ liệu:** Vào từ file văn bản SPEC.INP gồm 2 dòng:
 
 - Dòng đầu chứa số nguyên dương $n (n \le 10^6)$.
 - Dòng thứ hai chứa n số a1, a2, …, an.
 
-Kết quả:
+**Kết quả:** Ghi ra file văn bản SPEC.OUT số lượng phần tử của dãy A1.
 
-Ghi ra file văn bản SPEC.OUT số lượng phần tử của dãy A1.
-
-Ví dụ:
+**Ví dụ:**
 
 | SPEC.INP | SPEC.OUT | Giải thích |
 | --- | --- | --- |
 | 9 <br> 1 -3 -2 1 3 1 5 -3 -4 | 4 | Dãy A1 là: 1 3 1 5. <br> Dãy có 4 phần tử. |
 | 7 <br> 8 -1 -2 -3 -5 -6 4 | 5 | Dãy A1 là: -1 -2 -3 -5 -6. <br> Dãy có 5 phần tử. |
 
-Ràng buộc:
+**Ràng buộc:**
 
 - Có 60% số test ứng với 60% số điểm thỏa mãn: $n \le 10^3$.
 - 40% số test còn lại ứng với 40% số điểm không có ràng buộc gì thêm.
 
-### Bài giải tham khảo
+### Bài giải đề xuất
 
 Vì mỗi phần tử của mảng input có giới hạn giá trị lên đến $10^9$ và thao tác chủ yếu chỉ là xét âm hoặc dương nên để cải thiện hiệu suất, ta không lưu các phần tử như input, mà chỉ lưu `1` và `0`, ứng với dương và âm.
 
@@ -329,20 +291,18 @@ Vì mỗi phần tử của mảng input có giới hạn giá trị lên đến
 
 Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg9-tinh/2023-hatinh-ts10/spec){:target="_blank"}.
 
-## Bài 4
+## Bài 4: Đoạn thẳng (2,0 điểm)
 
-### Đoạn thẳng (2,0 điểm)
+### Đề bài
 
 Trên trục Ox cho n điểm, điểm thứ $i$ ở vị trí tọa độ là $x_i (1 \le i \le n)$. Mỗi điểm được tô một trong ba màu xanh, đỏ, vàng.
 
-Yêu cầu: Tìm trên trục số một đoạn thẳng thỏa mãn:
+**Yêu cầu:** Tìm trên trục số một đoạn thẳng thỏa mãn:
 
 - Trong đoạn đó mỗi màu xuất hiện ít nhất một lần.
 - Độ dài đoạn thẳng là nhỏ nhất.
 
-Dữ liệu:
-
-Vào từ file PPOINT.INP:
+**Dữ liệu:** Vào từ file PPOINT.INP:
 
 - Dòng đầu chứa số nguyên dương $n (1 \le n \le 10^6)$.
 - n dòng tiếp theo, mỗi dòng gồm hai giá trị $x_i$ và $m_i$:
@@ -351,23 +311,21 @@ Vào từ file PPOINT.INP:
     - Số nguyên $m_i$ là ký hiệu màu của các điểm, trong đó $m_i = 1$ là màu xanh, $m_i = 2$ là màu đỏ, 
 $m_i = 3$ là màu vàng.
 
-Kết quả:
+**Kết quả:** Ghi ra file PPOINT.OUT một số là độ dài đoạn thẳng thỏa mãn yêu cầu, nếu không tìm thấy đoạn nào thỏa mãn thì ghi -1.
 
-Ghi ra file PPOINT.OUT một số là độ dài đoạn thẳng thỏa mãn yêu cầu, nếu không tìm thấy đoạn nào thỏa mãn thì ghi -1.
-
-Ví dụ:
+**Ví dụ:**
 
 | PPOINT.INP | PPOINT.OUT | Giải thích |
 | --- | --- | --- |
 | 6 <br> 2 1 <br> 4 1 <br> 5 2 <br> 7 2 <br> 8 3 <br> 10 3 | 4 | Đoạn thẳng từ điểm có tọa độ 4 đến điểm có tọa độ 8 có độ dài là 8 – 4 = 4 gồm có 1 điểm màu xanh, 2 điểm màu đỏ và 1 điểm màu vàng. |
 
-Ràng buộc:
+**Ràng buộc:**
 
 - Có 30% số test ứng với 30% số điểm thỏa mãn: $1 \le n \le 10^2$.
 - 30% số test khác ứng với 30% số điểm thỏa mãn: $n \le 10^3$.
 - 40% số test còn lại ứng với 40% số điểm không có ràng buộc gì thêm.
 
-### Bài giải tham khảo
+### Bài giải đề xuất
 
 **Bước 0:** Trong C++, tạo cấu trúc point gồm hai thành phần `x` và `m`.
 
