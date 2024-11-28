@@ -217,7 +217,7 @@ Output này có số lần phát quảng cáo ít hơn so với output của đ�
 
 ### Mã nguồn
 
-Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/hsg/tree/main/olympic-hcm/2021-lop10/doanqc" target="_blank">GitHub</a>.
+Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/hsg/tree/main/olympic-hcm/2021-olympic10/doanqc" target="_blank">GitHub</a>.
 
 ## Câu 2: Chia phô mai (10 điểm)
 
@@ -429,4 +429,4 @@ Ngược lại, nếu phần dư bằng nhau thì tính tổng các chênh lệc
 
 ### Mã nguồn
 
-Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/hsg/tree/main/olympic-hcm/2021-lop10/phomai" target="_blank">GitHub</a>.
+Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/hsg/tree/main/olympic-hcm/2021-olympic10/phomai" target="_blank">GitHub</a>.
