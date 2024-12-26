@@ -1,9 +1,9 @@
 # Project information
-site_name: Mr School's documentation for Tin học GDPT 2018
+site_name: Mr School's docs for Tin học GDPT 2018
 site_url: https://vtchitruong.github.io/
 site_author: Mr School
 site_description: >-
-  Giúp bạn nắm bắt kiến thức cơ bản của môn Tin học cấp trung học phổ thông. Tiếp thu dễ dàng. Tra cứu thuận tiện. Xem được ở mọi nơi có internet, trên nhiều loại máy, bất kể tư thế.
+  Giúp bạn nắm bắt kiến thức của môn Tin học cấp trung học phổ thông. Tiếp thu dễ dàng. Tra cứu thuận tiện. Vượt qua kỳ thi Tốt nghiệp THPT và những kỳ thi khác. Xem được ở mọi nơi có internet, trên nhiều loại máy, bất kể tư thế.
 
 # Repository
 repo_name: GitHub để chữa lành
@@ -177,6 +177,7 @@ extra_javascript:
   - javascripts/extra.js
   - javascripts/mathjax.js
   - javascripts/feedback.js
+  - javascripts/floating_action_button.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/d3@7/dist/d3.min.js
@@ -185,9 +186,11 @@ extra_javascript:
   # - javascripts/markmap-d3.js
   # - javascripts/markmap-lib.js
   # - javascripts/markmap-view.js
+  
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/floating_action_button.css
 
 plugins:
   - markmap:
