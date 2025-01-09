@@ -12,12 +12,20 @@ markmap:
 
 ## Tạo cơ sở dữ liệu
 
-- `CREATE DATABASE`
+### `CREATE DATABASE`
 
 ## Tạo bảng
 
-- `CREATE TABLE`
+### `CREATE TABLE`
+
+- Tạo khoá chính
+    - `PRIMARY KEY`
 
 ## Thêm dữ liệu vào bảng
 
-- `INSERT INTO`
+- `INSERT INTO ... VALUES`
+
+## Kiểu dữ liệu
+
+- `char`
+- 'varchar'

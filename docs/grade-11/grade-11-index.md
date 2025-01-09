@@ -14,11 +14,12 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 Hệ điều hành và phần mềm ứng dụng
 
-1. Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng
+1. [Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng](../grade-11/topic-A1/os-vs-application.md){:target="_blank"}
     1. Trình bày được sơ lược lịch sử phát triển của hai hệ điều hành thông dụng cho PC, một hệ điều hành là phần mềm thương mại và hệ điều hành còn lại là phần mềm nguồn mở. Sử dụng được một số chức năng cơ bản của một trong hai hệ điều hành đó.
     2. Trình bày được vài nét chính về một hệ điều hành thông dụng cho thiết bị di động và sử dụng được một số tiện ích cơ bản của hệ điều hành đó.
     3. Trình bày được một cách khái quát mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng. Trình bày được vai trò riêng của mỗi thành phần trong hoạt động chung của cả hệ thống.
-2. Phần mềm nguồn mở, phần mềm chạy trên Internet
+
+2. [Phần mềm nguồn mở, phần mềm chạy trên Internet](../grade-11/topic-A1/open-source-software.md){:target="_blank"}
     1. Trình bày được một số khái niệm có liên quan tới phần mềm nguồn mở: bản quyền phần mềm, giấy phép công cộng, phần mềm miễn phí. So sánh được phần mềm nguồn mở với phần mềm thương mại (nguồn đóng). Nêu được vai trò của phần mềm nguồn mở và phần mềm thương mại đối với sự phát triển của ICT.
     2. Nêu được tên một số phần mềm soạn thảo văn bản, phần mềm bảng tính và phần mềm trình chiếu nguồn mở, chẳng hạn Writer, Calc và Impress trong bộ OpenOffice.
     3. Sử dụng được một số tiện ích có sẵn của hệ điều hành để nâng cao hiệu suất sử dụng máy tính.
@@ -28,7 +29,7 @@ Hệ điều hành và phần mềm ứng dụng
 
 Thế giới thiết bị số
 
-1. Những bộ phận chính bên trong máy tính
+1. [Những bộ phận chính bên trong máy tính](./topic-A2/internal-hardwares.md){:target="_blank"}
 
     1. Nhận diện được hình dạng, mô tả được chức năng của các bộ phận chính bên trong thân máy tính như CPU, RAM và các thiết bị lưu trữ. Nêu được tên và giải thích được đơn vị đo hiệu năng của chúng như GHz, GB, v.v...
     2. Nhận biết được sơ đồ của các mạch logic AND, OR, NOT, giải thích được vai trò của các mạch logic đó trong thực hiện các tính toán nhị phân.
@@ -154,7 +155,7 @@ Làm phim hoạt hình, video
 
 Cơ sở dữ liệu
 
-1. Thực hành tạo và cập nhật cơ sở dữ liệu
+1. [Thực hành tạo và cập nhật cơ sở dữ liệu](../grade-11/topic-F1/create-a-table-in-postgresql.md){:target="_blank"}
 
     Thực hiện được việc tạo lập cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ Quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
 

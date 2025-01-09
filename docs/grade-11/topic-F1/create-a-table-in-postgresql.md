@@ -6,13 +6,11 @@ icon: simple/postgresql
 
 !!! abstract "Tóm lược nội dung"
     
-    Bài này hướng dẫn cách tạo cơ sở dữ liệu gồm một bảng bằng công cụ pgAdmin 4 của PostgreSQL.
+    Bài này trình bày cách tạo cơ sở dữ liệu gồm một bảng bằng công cụ pgAdmin 4 của PostgreSQL.
 
 ## Khái quát cơ sở dữ liệu
 
-Cơ sở dữ liệu cần tạo là `school_db`, dùng để quản lý điểm số của học sinh.
-
-Cơ sở dữ liệu `school_db` có một số bảng như sau:
+Cơ sở dữ liệu cần tạo là `school_db`, dùng để quản lý điểm số của học sinh, gồm có một số bảng sau:
 
 | Tên bảng | Dữ liệu được lưu trữ |
 | --- | --- |
@@ -35,7 +33,7 @@ Bài này chỉ trình bày cách tạo một bảng là bảng `students`.
 
 5\. Nhấn **OK**.
 
-![Mở chương trình pgAdmin 4](https://lh3.googleusercontent.com/pw/AP1GczPRT2wJC5AfqVSAZ7vATzM98YILObXUf78X6wCwminr95-VE5gpvJfdZNA_LlGlUlilqRwvcfAdDD9UJ1nGb-3pL3b3Km4h9iYyoIdRCpVEUKj3d8Aw=w2400){loading=lazy}
+![Mở chương trình pgAdmin 4](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttMmLvqXnNZRJkm2Q/root/content){loading=lazy}
 
 ## Mở công cụ Query Tool
 
@@ -51,7 +49,7 @@ Bài này chỉ trình bày cách tạo một bảng là bảng `students`.
 
 1.	**Query Tool** là công cụ để nhập và thực thi các câu lệnh SQL.
 
-![Mở công cụ Query dùng để nhập câu lệnh SQL](https://lh3.googleusercontent.com/pw/AP1GczOcKq17UzBBIVQ4DzUdddP3BYsWsM7PGHnpZbriANFKv8oum7q1jzO0lcGQPVCVQON56tahZQB-7-kpLTmvxQ8RgW19qmWAZJYV9f6106q4-jS_4DXO=w2400){loading=lazy}
+![Mở công cụ Query dùng để nhập câu lệnh SQL](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttLIsLVifPjpfpGXw/root/content){loading=lazy}
 
 ## Tạo cơ sở dữ liệu
 
@@ -60,7 +58,7 @@ Bài này chỉ trình bày cách tạo một bảng là bảng `students`.
 !!! info "Cú pháp lệnh `CREATE DATABASE`"
 
     ```sql
-    CREATE DATABASE <tên cơ sở dữ liệu>;
+    CREATE DATABASE tên_cơ_sở_dữ_liệu;
     ```
 
 Ví dụ:
@@ -77,17 +75,17 @@ create database school_db;
 
 3\. Xem kết quả thực hiện trong tab **Messages** ở phần dưới cửa sổ.
 
-![Image title](https://lh3.googleusercontent.com/pw/AP1GczNZTf4M0uQ2G-WXcEzSeFn-ZRK4Wmx5BwqpHt3p6Raj9zqL7XsucIZB1CCwPoHms8bj5HslOc-tFd4casvosLNRfmR5h2fnO98MxDQwLnRhAypOVdIz=w2400){loading=lazy width=600}
+![Tab Message](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttN7Z75bxNkMnlp-A/root/content){loading=lazy width=600}
 
 3\. Click phải lên **Databases**,
 
 4\. Click chọn **Refresh** để thấy được cơ sở dữ liệu vừa tạo.
 
-![Refresh để xem các cơ sở dữ liệu đã tạo](https://lh3.googleusercontent.com/pw/AP1GczNx62KP1KahZpbt7ZmAubDHHlntw0jsAY3sZLdt3jX2KcUAv8CJJyYGEmfgbbqE3VtW71t5l3nCSdfcsgto-Tw1D4ohTMtsUUuYYUsjYFMOgzRBXURa=w2400){loading=lazy width=480}
+![Refresh để xem các cơ sở dữ liệu đã tạo](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttO51nzxSmwzlLnqQ/root/content){loading=lazy width=480}
 
 5\. Cũng trong mục **Databases**, click chọn `school_db` để chuẩn bị làm việc với cơ sở dữ liệu này.
 
-![Chọn cơ sở dữ liệu để làm việc](https://lh3.googleusercontent.com/pw/AP1GczMd6EOXUDFbe_Uxo7FdjKOJVcgCKwV9JG7-XV8KqF9UNUuknzEOSvhuJIelGbBH-XwzkwE6fIPJy4NO9vG_XTLDBgS5S3pgcfOnpXMEfvJGk0WEMEWp=w2400){loading=lazy width=480}
+![Chọn cơ sở dữ liệu để làm việc](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttPK0vFfo3LZf53-A/root/content){loading=lazy width=480}
 
 ## Lưu tập tin SQL script
 
@@ -110,8 +108,8 @@ create database school_db;
 
     ```sql
     CREATE TABLE table_name (
-    	<thuộc tính 1> <kiểu dữ liệu 1> [ràng buộc],
-    	<thuộc tính 2> <kiểu dữ liệu 2> [ràng buộc],
+    	thuộc_tính_1 kiểu_dữ_liệu_1 [ràng buộc],
+    	thuộc_tính_2 kiểu_dữ liệu 2 [ràng buộc],
     	...
     	[các ràng buộc của bảng]
 	);
@@ -170,7 +168,7 @@ Thử xem kết quả tạo bảng bằng cách:
 
 7\. Click mở **Tables**, rồi xem đã có bảng `students` hay chưa.
 
-![Xem kết quả thực hiện tạo bảng](https://lh3.googleusercontent.com/pw/AP1GczPUweIR5ffvATvztXPmoAckzwlDF6Q8dtuYd7kCoYRf3cLVxbv_toVT_bV0MYdlpWK_nc2pNveiFgeBiAMA4H8ycAA2jhY53c19TOxb2TPkYf8vAIhh=w2400){loading=lazy width=480}
+![Xem kết quả thực hiện tạo bảng](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttQ5sbIuW5wQYKp3g/root/content){loading=lazy width=480}
 
 ## Thêm dữ liệu vào bảng
 
@@ -179,25 +177,25 @@ Thử xem kết quả tạo bảng bằng cách:
 !!! info "Cú pháp lệnh `INSERT INTO`"
 
     ```sql
-    INSERT INTO <bảng> (<cột 1>, <cột 2>, ..., <cột n>)
-    VALUES (<giá trị 1>, <giá trị 2>, ..., <giá trị n>);
+    INSERT INTO bảng (thuộc_tính_1, thuộc_tính_2, ..., thuộc_tính_n)
+    VALUES (giá_trị_1, giá_trị_2, ..., giá_trị_n);
     ```
 
     Trong trường hợp thêm dữ liệu cho tất cả cột, ta có thể bỏ qua không gần nhập tên cột.
 
     ```sql
-    INSERT INTO <bảng>
-    VALUES (<giá trị 1>, <giá trị 2>, ..., <giá trị n>);
+    INSERT INTO bảng
+    VALUES (giá_trị_1, giá_trị_2, ..., giá_trị_n);
     ```
 
 Ví dụ:
 
-Để thêm mới 18 mẫu tin (1) vào bảng `students`, ta thực hiện như sau:
+Để thêm mới 18 mẫu tin (1) vào bảng `students`, ta nhập mã lệnh SQL như sau:
 { .annotate }
 
-1.	Mỗi mẫu tin là một dòng trong bảng, chứa dữ liệu của một thực thể hoặc một sự kiện, cụ thể ở đây, mỗi mẫu tin là dữ liệu của một học sinh.
+1.	Mỗi mẫu tin là một hàng trong bảng, chứa dữ liệu của một thực thể hoặc một sự kiện, cụ thể ở đây, mỗi mẫu tin là dữ liệu của một học sinh.
 
-```sql linenums="34"
+```sql linenums="14"
 -- Thêm dữ liệu vào bảng students
 insert into students(student_id, last_name, first_name, gender, birth_date, birth_place) 
 values
@@ -207,18 +205,18 @@ values
 	('231002', 'Gia Cát', 'Lượng', 0, '2008-11-20', 'Milan, Italy'),
 	('231003', 'Triệu Tử', 'Long', 0, '2008-09-23', 'Taipei, Taiwan'),
 	('220002', 'Điển', 'Vi', 0, '2007-01-04', 'Sydney, Australia'),
-	('220003', 'Hoàng Hán', 'Thăng', 0, '2007-11-07', 'Edinburgh, United Kingdom'),
-	('231004', 'Hoàng Nguyệt', 'Anh', 1, '2008-12-31', 'Abu Dhabi, United Arab Emirates'),
+	('230004', 'Hoàng Hán', 'Thăng', 0, '2007-11-07', 'Edinburgh, United Kingdom'),
+	('231005', 'Hoàng Nguyệt', 'Anh', 1, '2008-12-31', 'Abu Dhabi, United Arab Emirates'),
 	('240010', 'Tôn Thượng', 'Hương', 1, '2009-08-19', 'Lisbon, Portugal'),
 	('240011', 'Đại', 'Kiều', 1, '2009-09-05', 'Stockholm, Sweden'),
 	('240012', 'Tiểu', 'Kiều', 1, '2009-09-05', 'Stockholm, Sweden'),
-	('230005', 'Khương Bá', 'Ước', 0, '2008-01-05', 'Prague, Czech Republic'),
-	('231006', 'Mã Mạnh', 'Khởi', 0, '2008-07-27', 'Heraklion, Greece'),
-	('220004', 'Hứa Trọng', 'Khang', 0, '2007-05-07', 'Ohio, United States'),
+	('230006', 'Khương Bá', 'Ước', 0, '2008-01-05', 'Prague, Czech Republic'),
+	('231007', 'Mã Mạnh', 'Khởi', 0, '2008-07-27', 'Heraklion, Greece'),
+	('220003', 'Hứa Trọng', 'Khang', 0, '2007-05-07', 'Ohio, United States'),
 	('220091', 'Chân', 'Lạc', 1, '2007-09-02', 'Makkah, Saudi Arabia'),
 	('221017', 'Điêu', 'Thuyền', 1, '2007-02-27', 'Tallinn, Estonia'),
-	('230007', 'Quan Vân', 'Trường', 0, '2008-01-06', 'Madrid, Spain'),
-	('230008', 'Trương Dực', 'Đức', 0, '2008-03-10', 'Istanbul, Turkey');
+	('230008', 'Quan Vân', 'Trường', 0, '2008-01-06', 'Madrid, Spain'),
+	('230009', 'Trương Dực', 'Đức', 0, '2008-03-10', 'Istanbul, Turkey');
 ```
 
 Như vậy, cơ sở dữ liệu `school_db` đã có một bảng, đó là`students` gồm 18 mẫu tin.
@@ -231,7 +229,7 @@ Như vậy, cơ sở dữ liệu `school_db` đã có một bảng, đó là`stu
 
 3\. Chọn **All rows**.
 
-![Xem tất cả mẫu tin của bảng](https://lh3.googleusercontent.com/pw/AP1GczMd6EOXUDFbe_Uxo7FdjKOJVcgCKwV9JG7-XV8KqF9UNUuknzEOSvhuJIelGbBH-XwzkwE6fIPJy4NO9vG_XTLDBgS5S3pgcfOnpXMEfvJGk0WEMEWp=w2400){loading=lazy}
+![Xem tất cả mẫu tin của bảng](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttKrapJPvREuWTY4Q/root/content){loading=lazy}
 
 ## Sơ đồ tóm tắt nội dung
 
