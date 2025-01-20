@@ -6,16 +6,16 @@ markmap:
 
 # Tạo bảng trong PostgreSQL
 
-## Bảng có khoá chính gồm nhiều thuộc tính
+## Chỉnh sửa cấu trúc bảng
 
-- `primary key (thuộc_tính_1, thuộc tính_2,...)`
+### `ALTER TABLE`
 
-## Tạo khoá ngoại trong lệnh `CREATE TABLE`
+- Thêm cột
+	- `ALTER TABLE ... ADD COLUMN`
 
-- `foreign key (thuộc_tính_của_bảng_con) references bảng_cha(thuộc_tính_của_bảng_cha)`
+- Thêm khoá ngoại
+	- - `ALTER TABLE ... ADD CONSTRAINT`
 
-## Kiểu dữ liệu
+## Chỉnh sửa dữ liệu
 
-- `boolean`
-- 'float'
-- `text`
+### `UPDATE ... SET`

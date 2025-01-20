@@ -329,9 +329,9 @@ nav:
       - grade-11/topic-F1/relational-database.md
       - grade-11/topic-F1/create-a-table-in-ms-access.md
       - grade-11/topic-F1/create-a-table-in-mysql-workbench.md
-      - grade-11/topic-F1/create-a-table-in-postgresql.md
       - grade-11/topic-F1/create-tables-in-postgresql-part-1.md
       - grade-11/topic-F1/create-tables-in-postgresql-part-2.md
+      - grade-11/topic-F1/create-tables-in-postgresql-part-3.md
       - grade-11/topic-F1/sql.md
     - Chủ đề F2:
       - grade-11/topic-F2/array-1d.md
@@ -439,7 +439,6 @@ nav:
       - solve-to-surpass/olympic-hcm/2021-olympic11.md
       - solve-to-surpass/olympic-hcm/2014-2015-olympic10.md
       - solve-to-surpass/olympic-hcm/2014-2015-olympic11.md
-      - solve-to-surpass/olympic-hcm/2015-olympic10-april-30.md
     - HSG 9 tỉnh khác:
       - solve-to-surpass/hsg9-tinh/2023-hatinh-ts10.md
     - HSG 12 tỉnh khác:

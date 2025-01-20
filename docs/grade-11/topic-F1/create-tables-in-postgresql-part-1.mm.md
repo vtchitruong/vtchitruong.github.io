@@ -6,16 +6,26 @@ markmap:
 
 # Tạo bảng trong PostgreSQL
 
-## Chỉnh sửa cấu trúc bảng
+## Mở chương trình **pgAdmin 4**
 
-### `ALTER TABLE`
+- Mở công cụ **Query Tool**
 
-- Thêm cột
-	- `ALTER TABLE ... ADD COLUMN`
+## Tạo cơ sở dữ liệu
 
-- Thêm khoá ngoại
-	- - `ALTER TABLE ... ADD CONSTRAINT`
+### `CREATE DATABASE`
 
-## Chỉnh sửa dữ liệu
+## Tạo bảng
 
-### `UPDATE ... SET`
+### `CREATE TABLE`
+
+- Tạo khoá chính
+    - `PRIMARY KEY`
+
+## Thêm dữ liệu vào bảng
+
+- `INSERT INTO ... VALUES`
+
+## Kiểu dữ liệu
+
+- `char`
+- 'varchar'

@@ -2,15 +2,15 @@
 icon: simple/postgresql
 ---
 
-# Tạo nhiều bảng trong PostgreSQL - phần 2
+# Tạo bảng trong PostgreSQL - Phần 2
 
 !!! abstract "Tóm lược nội dung"
     
-    Bài này trình bày cách tạo thêm bảng nhằm hoàn chỉnh cơ sở dữ liệu quản lý điểm số học sinh bằng công cụ pgAdmin 4 của PostgreSQL.
+    Bài này trình bày cách tạo thêm bảng, đồng thời kết nối hai bảng với nhau, bằng công cụ pgAdmin 4 của PostgreSQL.
 
 ## Khái quát cơ sở dữ liệu
 
-Cơ sở dữ liệu cần tạo là `school_db`, dùng để quản lý điểm số của học sinh, gồm có một số bảng sau:
+Cơ sở dữ liệu cần tạo là `school_db`, dùng để quản lý điểm số của học sinh, gồm một số bảng như sau:
 
 | Tên bảng | Dữ liệu được lưu trữ |
 | --- | --- |
@@ -19,135 +19,196 @@ Cơ sở dữ liệu cần tạo là `school_db`, dùng để quản lý điểm
 | `subjects` | Dữ liệu về môn học |
 | `scores` | Dữ liệu về điểm số của học sinh |
 
-[Bài trước](./create-tables-in-postgresql-part-1.md){:target="_blank"} đã hướng dẫn cách tạo bảng `classrooms` và kết nối với bảng `students`.
+[Bài trước](./create-tables-in-postgresql-part-1.md){:target="_blank"} đã hướng dẫn cách tạo một bảng, là `students`.
 
-Bài này trình bày cách tạo hai bảng còn lại là `subjects` và `scores`.
+Bài này trình bày cách tạo thêm bảng `classrooms` và kết nối với bảng `students`.
 
-## Bảng subjects
+## Mở tập tin sql
+
+1\. Trong cửa sổ **Query Tool** của **pgAdmin 4**, nhấn nút **Open File**.
+
+![Mở tập tin .sql](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrtsjtdsUe49LgwIhAg/root/content){loading=lazy width=480}
+
+2\. Chọn tập tin **school_db.sql** đã lưu trong bài trước.
+
+## Bảng classrooms
 
 ### Tạo bảng
 
-Mô tả của bảng `subjects` như sau:
+Mô tả của bảng `classrooms` như sau:
 
 | Thuộc tính | Ý nghĩa | Kiểu dữ liệu |
 | --- | --- | --- |
-| `subject_id` | mã định danh của mỗi môn học | chuỗi gồm 2 ký tự và là khóa chính |
-| `subject_name` | tên đầy đủ của mỗi môn học | chuỗi gồm 100 ký tự |
-| `description` | mô tả môn học | văn bản dài |
-| `is_mandatory` | là môn học bắt buộc hoặc không | `true` hoặc `false` |
+| `classroom_id` | mã định danh của mỗi lớp | chuỗi gồm 5 ký tự và là khóa chính |
+| `classroom_name` | tên đầy đủ của mỗi lớp | chuỗi gồm 50 ký tự |
+| `room` | phòng học của mỗi lớp | chuỗi gồm 50 ký tự |
+| `head_teacher` | họ tên giáo viên chủ nhiệm | chuỗi gồm 50 ký tự |
 
-Mã lệnh SQL tạo bảng `subjects`:
+Để tạo bảng `classrooms` ứng với mô tả trên, ta thực hiện như sau:
 
-```sql linenums="71"
--- Tạo bảng subjects
-create table subjects (
-    subject_id char(2) primary key,
-    subject_name varchar(100),
-    description text, -- (1)!
-    is_mandatory boolean default true -- (2)!
+1\. Trong tab **Query**, nhập câu lệnh sau để tạo bảng `classrooms`:
+
+```sql linenums="21"
+-- Tạo bảng classrooms
+create table classrooms (
+	classroom_id char(5) primary key,
+	classroom_name varchar(50),
+	room varchar(50),
+	head_teacher varchar(50)
 );
 ```
-{ .annotate }
 
-1.	`text` là kiểu dữ liệu dùng cho khối văn bản lớn, nhưng hiệu năng không bằng kiểu `varchar`.
-2.	Giá trị mặc định của thuộc tính `is_mandatory` trong mỗi mẫu tin là true.
+2\. Quét khối câu lệnh SQL vừa viết, rồi nhấn ++f5++ để chạy. (Hoặc chỉ cần đặt con trỏ vào vị trí bất kỳ trong câu lệnh, rồi nhấn ++alt++ + ++f5++).
 
 ### Thêm dữ liệu
 
-Mã lệnh SQL thêm mới ba mẫu tin (1) vào bảng `subjects`:
+Mã lệnh SQL thêm mới ba mẫu tin (1) vào bảng `classrooms`:
 { .annotate }
 
-1.	Mỗi mẫu tin là một hàng trong bảng, chứa dữ liệu của một môn học.
+1.	Mỗi mẫu tin là một hàng trong bảng, chứa dữ liệu của một thực thể hoặc một sự kiện, cụ thể ở đây, mỗi mẫu tin là dữ liệu của một lớp.
 
-```sql linenums="79"
--- Thêm dữ liệu vào bảng subjects
-insert into subjects
-values
-	('CS', 'Khoa học máy tính', 'Khoa học xử lý dữ liệu và thông tin bằng máy tính', true),
-	('PH', 'Phòng chống nghệ thuật hắc ám', 'Phương pháp và kỹ thuật hiệu quả chống lại nghệ thuật và các sinh vật hắc ám', true),
-	('MH', 'Muggle học', 'Khoa học về những người không có phép thuật', false);
+```sql linenums="29"
+-- Thêm dữ liệu vào bảng classrooms
+insert into classrooms -- (1)!
+values ('12CTo', '12 chuyên Toán', '3.14', 'Prof. Ngô Bảo Châu'),
+		('11CTi', '11 chuyên Tin', 'Fibonacci', 'Mr School'),
+		('10CSi', '10 chuyên Sinh', 'Darwin', 'Dr Black Jack');
+```
+{ .annotate }
+
+1.	Do thêm dữ liệu vào tất cả thuộc tính trong bảng, ta không cần liệt kê tên từng thuộc tính.
+
+## Kết nối hai bảng
+
+Ta cần kết nối hai bảng `students` và `classrooms` với nhau nhằm lưu trữ và quản lý thông tin "*một học sinh học ở lớp nào*" hoặc "*một lớp có những học sinh nào*". (1)
+{ .annotate }
+
+1.	**Kết nối** còn được gọi là **tạo mối quan hệ** giữa hai bảng.
+
+Để kết nối hai bảng, ta cần thực hiện như sau:
+
+1\. Xác định một thuộc tính chung giữa hai bảng. Cụ thể ở đây là thuộc tính `classroom_id`.
+
+2\. Tạo tham chiếu từ bảng này đến bảng kia. Cụ thể, tạo tham chiếu từ thuộc tính `classroom_id` của bảng `students` đến thuộc tính `classroom_id` của bảng `classrooms`.
+
+Hiện nay, bảng `students` chưa có thuộc tính `classroom_id`. Cho nên, ta cần thêm thuộc tính `classroom_id` trước.
+
+### Thêm thuộc tính cho bảng
+
+Để thêm thuộc tính (cột) cho bảng, ta dùng câu lệnh SQL `ALTER TABLE`.
+
+!!! info "Cú pháp lệnh `ALTER TABLE` để thêm thuộc tính (cột)"
+
+    ```sql
+    ALTER TABLE bảng
+	ADD COLUMN thuộc_tính_mới kiểu_dữ_liệu;
+    ```
+
+Ví dụ:
+
+Mã lệnh SQL thêm thuộc tính `classroom_id` vào bảng `students`:
+
+```sql linenums="35"
+-- Thêm thuộc tính classroom_id vào bảng students
+alter table students
+add column classroom_id char(5);
 ```
 
-## Bảng scores
+### Kết nối bảng
 
-### Tạo bảng
+Để kết nối (nói cách khác là tạo **mối quan hệ**) giữa hai bảng, ta cần dựa vào khoá ngoại (1) và khoá chính của chúng.
+{ .annotate }
 
-Mô tả của bảng `scores` như sau:
+1.	**Khóa ngoại** là một hoặc nhiều thuộc tính (cột) tham chiếu đến khoá chính của bảng khác, nhằm bảo đảm tính toàn vẹn dữ liệu và duy trì mối quan hệ giữa các bảng.
 
-| Thuộc tính | Ý nghĩa | Kiểu dữ liệu |
-| --- | --- | --- |
-| `student_id` | mã định danh của mỗi học sinh | chuỗi gồm 6 ký tự |
-| `subject_id` | mã định danh của mỗi môn học | chuỗi gồm 2 ký tự |
-| `regular_1` | điểm kiểm tra thường xuyên 1 | số thực |
-| `regular_2` | điểm kiểm tra thường xuyên 2 | số thực |
-| `regular_3` | điểm kiểm tra thường xuyên 3 | số thực |
-| `midterm` | điểm kiểm tra giữa kỳ | số thực |
-| `final_test` | điểm kiểm tra cuối kỳ | số thực |
+Theo đó, ta cần tạo ra **ràng buộc khoá ngoại** cho thuộc tính `classroom_id` trong bảng `students`. Ràng buộc này bảo đảm rằng giá trị của khoá ngoại `classroom_id` trong bảng `students` phải tham chiếu đến khoá chính `classroom_id` của bảng `classrooms`.
 
-Lược đồ của bảng `scores` có thể được ghi như sau:
+Nói cách khác, giá trị `classroom_id` của mỗi học sinh trong bảng `students` phải khớp với một giá trị `classroom_id` có sẵn trong bảng `classrooms`.
 
-scores(<ins>**student_id, subject_id**</ins>, regular_1, regular_2, regular_3, midterm, final_test)
+Chẳng hạn, nếu ta muốn cập nhật `classroom_id` của một học sinh thành `10A17`, mà giá trị `10A17` lại không tồn tại trong bảng `classrooms`, thì cơ sở dữ liệu sẽ không cho cập nhật. Ràng buộc khoá ngoại ngăn chặn cập nhật là nhằm bảo đảm tính nhất quán của cơ sở dữ liệu.
+
+Để bổ sung ràng buộc khoá ngoại cho một bảng, ta cũng dùng câu lệnh SQL `ALTER TABLE`.
+
+!!! info "Cú pháp lệnh `ALTER TABLE` để thêm ràng buộc khoá ngoại"
+
+    ```sql
+	ALTER TABLE bảng
+	ADD CONSTRAINT tên_của_ràng_buộc FOREIGN KEY (thuộc_tính_muốn_tham_chiếu)
+	REFERENCES bảng_được_tham_chiếu(thuộc_tính_được_tham_chiếu);
+    ```
+
+Ví dụ:
+
+Mã lệnh SQL thêm ràng buộc khoá ngoại từ bảng `students` đến bảng `classrooms`:
+
+```sql linenums="39"
+-- Thêm tham chiếu từ students đến classrooms
+alter table students
+add constraint fk_classroom_id foreign key (classroom_id) -- (1)!
+references classrooms(classroom_id); -- (2)!
+```
+{ .annotate }
+
+1.	`fk_classroom_id` là tên của ràng buộc.
+
+	`classroom_id` là thuộc tính sẽ làm khoá ngoại của của bảng `students`.
+
+2.	Dòng này có nghĩa là: tham chiếu đến `classroom_id` của bảng `classrooms`.
+
+Sau câu lệnh trên, mối quan hệ giữa hai bảng `students` và `classrooms` được thể hiện qua sơ đồ dưới đây:
+
+![Sơ đồ mối quan hệ giữa các bảng](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttJzvDaNnStumQMAA/root/content){loading=lazy width=600}
 
 Trong đó:
 
-- Khoá chính gồm hai thuộc tính là `student_id` và `subject_id`.
-- Hai khoá ngoại gồm:
-	- Khoá ngoại 1: thuộc tính `student_id` sẽ tham chiếu đến thuộc tính `student_id` của bảng `students`.
-	- Khoá ngoại 2: thuộc tính `subject_id` sẽ tham chiếu đến thuộc tính `subject_id` của bảng `subjects`.
+- Bảng `classrooms` được gọi là **bảng cha**.
+- Bảng `students` được gọi là **bảng con**.
 
-Mã lệnh SQL tạo bảng `scores`:
+### Cập nhật giá trị của thuộc tính
 
-```sql linenums="86"
--- Tạo bảng scores
-create table scores (
-	student_id char(6),
-	subject_id char(2),
-	regular_1 float,
-	regular_2 float,
-	regular_3 float,
-	midterm float,
-	final_test float,
-	primary key (student_id, subject_id),
-	foreign key (student_id) references students(student_id), -- (1)!
-	foreign key (subject_id) references subjects(subject_id)
-);
+Để cập nhật giá trị của thuộc tính trong bảng, ta dùng câu lệnh SQL `UPDATE`.
+
+!!! info "Cú pháp lệnh `UPDATE`"
+
+    ```sql
+	UPDATE bảng
+	SET thuộc_tính_1 = giá_trị_1, thuộc_tính_2 = giá_trị_2, ...
+	WHERE điều_kiện_của_các_mẫu_tin_sẽ_cập_nhật;
+    ```
+
+Ví dụ:
+
+Mã lệnh SQL cập nhật giá trị của thuộc tính `classroom_id` trong bảng `students`:
+
+```sql linenums="44"
+-- Cập nhật dữ liệu lớp cho bảng students
+update students
+set classroom_id = '12CTo'
+where student_id = '221001'; -- (1)!
+
+update students
+set classroom_id = '11CTi'
+where student_id = '231001';
+
+update students
+set classroom_id = '10CSi'
+where student_id = '241021';
 ```
 { .annotate }
 
-1.	Dòng lệnh này khai báo khoá ngoại trực tiếp trong lệnh `CREATE TABLE`, mà không cần dùng viết thêm lệnh `ALTER TABLE`.
+1.	`where`: dùng để lọc ra các mẫu tin thoả điều kiện.
 
-Như vậy, cho đến lúc này, ta đã có được cơ sở dữ liệu (tạm) hoàn chỉnh như sau:
+	`student_id = '221001'`: mẫu tin nào có thuộc tính `student_id` bằng với chuỗi `'221001'` sẽ được cập nhật.
 
-![Lược đồ toàn bộ cơ sở dữ liệu](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrt9uhcYkGep8Sb-DTQ/root/content){loading=lazy}
+Xem toàn bộ dữ liệu của bảng `students` vừa cập nhật bằng cách: click phải lên bảng `students` > chọn **View/Edit Data** > chọn **All Rows**.
 
-### Thêm dữ liệu
-
-Mã lệnh SQL thêm mới mười mẫu tin (1) vào bảng `scores`:
-{ .annotate }
-
-1.	Mỗi mẫu tin là một hàng trong bảng, chứa dữ liệu điểm số các bài kiểm tra của một học sinh và một môn học.
-
-```sql linenums="100"
--- Thêm dữ liệu vào bảng scores
-insert into scores
-values
-	('231001', 'CS', 9.2, 9.4, 8.3, 9.1, 8.5),
-	('231001', 'PH', 7.1, 9.2, 8.8, 8.2, 8.8),
-	('231002', 'MH', 9.2, 9.3, 9, 9.2, 9.3),
-	('220002', 'CS', 8.3, 8.5, 9.2, 8.5, 10),
-	('220002', 'PH', 8.6, 7.8, 7.2, 9.2, 9.5),
-	('221001', 'MH', 7.5, 7.2, 8.6, 8.5, 7.8),
-	('241001', 'CS', 9.2, 9.2, 9.3, 9.4, 7.5),
-	('241001', 'PH', 8.2, 8, 7.2, 8.5, 7.8),
-	('231002', 'CS', 10, 9.5, 9.3, 7.2, 9),
-	('231002', 'PH', 9, 7.3, 8.9, 10, 8.5);
-```
-
-Xem toàn bộ dữ liệu của bảng `scores` bằng cách: click phải lên bảng `scores` > chọn **View/Edit Data** > chọn **All Rows**.
-
-![Dữ liệu của bảng score](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrt91d0img754XXvvxg/root/content){loading=lazy}
+![Toàn bộ bảng students](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttD-GXLp22RCJsyng/root/content){loading=lazy}
 
 ## Sơ đồ tóm tắt nội dung
 
 {!grade-11/topic-F1/create-tables-in-postgresql-part-2.mm.md!}
 *Sơ đồ tóm tắt cách tạo bảng trong PostgreSQL*
+
+## Mã nguồn
+
+Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f1/school_db_2.sql){:target="_blank"}
