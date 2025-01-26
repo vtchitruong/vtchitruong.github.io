@@ -70,10 +70,9 @@ Trong quan hệ `students`, các thuộc tính có thể có là: `student_id`, 
 
 Miền giá trị của thuộc tính `gender` là tập hợp gồm hai giá trị là 0 và 1, biểu thị cho nam và nữ.
 
-<figure markdown>
-  ![Minh họa quan hệ, thuộc tính và bộ](database/relation.svg){loading=lazy}  
-  <figcaption>Minh họa quan hệ, thuộc tính và bộ</figcaption>  
-</figure>
+![Minh họa quan hệ, thuộc tính và bộ](./images/relation.svg){loading=lazy}
+
+*Minh họa quan hệ, thuộc tính và bộ*
 
 ### Khóa chính
 
@@ -125,10 +124,9 @@ Trong đó:
 
 Hình dưới đây thể hiện lược đồ vừa nêu, kèm theo dữ liệu thực.
 
-<figure markdown>
-  ![Một phần cơ sở dữ liệu trường học](database/school-database.svg){loading=lazy}  
-  <figcaption>Một phần cơ sở dữ liệu trường học</figcaption>  
-</figure>
+![Một phần cơ sở dữ liệu trường học](./images/school-database.svg){loading=lazy}
+
+*Một phần cơ sở dữ liệu trường học* 
 
 !!! Question "Câu hỏi"
 

@@ -211,4 +211,4 @@ Xem toàn bộ dữ liệu của bảng `students` vừa cập nhật bằng cá
 
 ## Mã nguồn
 
-Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f1/school_db_2.sql){:target="_blank"}
+Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f1/school_db_create_2.sql){:target="_blank"}.

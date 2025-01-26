@@ -94,10 +94,9 @@ Hệ cơ sở dữ liệu là hệ thống gồm có:
 - Hệ quản trị cơ sở dữ liệu
 - Phần mềm ứng dụng
 
-<figure markdown="span">
-    ![Các thành phần trong một hệ cơ sở dữ liệu](./database/database-system.svg){ loading=lazy width=360 }
-    <figcaption>Các thành phần trong một hệ cơ sở dữ liệu</figcaption>
-</figure>
+![Các thành phần trong một hệ cơ sở dữ liệu](./images/database-system.svg){ loading=lazy width=300 }
+
+*Các thành phần trong một hệ cơ sở dữ liệu*
 
 Mặc dù đã có hệ quản trị cơ sở dữ liệu, phần mềm ứng dụng vẫn được tạo ra nhằm giúp người dùng dễ dàng và thuận tiện hơn trong các thao tác với cơ sở dữ liệu.
 
