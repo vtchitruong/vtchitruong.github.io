@@ -1,28 +1,25 @@
 ---
 categories:
     - Moron in Python
-    - Set up & Code down
 authors: [mrschool]
 date: 2021-11-14
 ---
 
 # Thiết lập DNS trên PC bằng Python
 
-<div class="result" markdown>
-![Image title](./thumbnails/python.jpg){ align=left width=360 }
+![Python thumbnail](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9B5wUKxJOOTQJ3QKw/root/content){ loading=lazy align=left width=360 }
 
 Đã có nhiều bài viết trên mạng chỉ cách đổi DNS. Vấn đề là đổi sao cho ngầu.
 
 Bài này hướng dẫn cách thiết lập DNS bằng mã lệnh Python, cool ngầu.
-</div>
 
 *Cập nhật: 20.01.2024*
 
 <br>
+<br>
+<br>
 
 <!-- more -->
-
-<br>
 
 ## Khởi tạo danh sách DNS
 

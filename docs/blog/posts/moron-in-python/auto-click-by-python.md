@@ -1,26 +1,23 @@
 ---
 categories:
     - Moron in Python
-    - Set up & Code down
 authors: [mrschool]
 date: 2024-02-17
 ---
 
 # Tự động click chuột bằng Python
 
-<div class="result" markdown>
-![Image title](./thumbnails/python.jpg){ align=left width=360 }
+![Python thumbnail](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9B5wUKxJOOTQJ3QKw/root/content){ loading=lazy align=left width=360 }
 
-Nếu mình cần điều khiển chuột trong khi lại bận tay hoặc phân tâm việc khác thì nên ứng phó bằng cách nào? Nếu những thao tác chuột cứ lặp đi lặp lại quá đơn điệu thì mình nên làm sao cho đỡ chán và hiệu quả hơn?
+Nếu cần điều khiển chuột trong khi bận tay hoặc phân tâm việc khác thì ta nên ứng phó bằng cách nào? Nếu những thao tác chuột cứ lặp đi lặp lại quá đơn điệu thì ta nên làm sao cho đỡ nhàm chán?
 
 Có ít nhất hai phương tiện để giải quyết.
 
-</div>
+<br>
+<br>
+<br>
 
 <!-- more -->
-
-<br>
-<br>
 
 Đó là, hoặc AutoIT cho truyền thống, hoặc Python cho đúng trend.
 
@@ -139,7 +136,7 @@ Dùng vòng lặp để chạy hàm click tự động. Mỗi lần click, in ra
 | Tọa độ `x` và `y`| Theo kích thước 100% của **Display** trong **Settings** | Theo thực tế của màn hình hiện hành |
 | Con trỏ chuột | Nhìn thấy được chuột di chuyển trên màn hình | Chỉ thấy biến mất rồi xuất hiện ở vị trí mới | 
 
-## Toàn bộ chương trình¶
+## Mã nguồn
 
 Code đầy đủ được đặt tại:
 

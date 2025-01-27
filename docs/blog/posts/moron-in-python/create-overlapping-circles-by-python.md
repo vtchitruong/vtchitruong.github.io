@@ -1,7 +1,6 @@
 ---
 categories:
     - Moron in Python
-    - Set up & Code down
 authors: [mrschool]
 date: 2021-11-18
 ---
@@ -9,7 +8,7 @@ date: 2021-11-18
 # Vẽ hình trăng tròn đan lưới bằng Python
 
 <div class="result" markdown>
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV85y89fTzNdT1a85IhCMDYejQB2FR_MwtlV9-Iwo3Io6HT9JZyUqGQhCy_R0oxN3Z3zJ-RIgV-7388TNsSOjKrhoJBgs_CvR0QryNtJp_Uf9g490epkD=w1200){ width=360 align=left }
+![Image title](https://lh3.googleusercontent.com/pw/ABLVV85y89fTzNdT1a85IhCMDYejQB2FR_MwtlV9-Iwo3Io6HT9JZyUqGQhCy_R0oxN3Z3zJ-RIgV-7388TNsSOjKrhoJBgs_CvR0QryNtJp_Uf9g490epkD=w2400){ width=360 align=left }
 
 Cầm bút để vẽ cho đẹp trên giấy thực sự khó. Cho nên bạn có thể chuyển sang sống ảo, điều khiển máy tính vẽ giùm.
 
@@ -96,7 +95,7 @@ Nếu không có lệnh này, cửa sổ sẽ đóng ngay khi vẽ xong.
 
 Output như sau:
 
-![Image title](https://lh3.googleusercontent.com/zkfen52HfHD2cvLSkcESb4w-69mzv7L7DytJWPM37_KcjxrEgnX8cPfpWLNQyjYGSNMZSeWsPtNiOVzvLDrFFKZGPVPwYWACHxLu3yOirgadXdUOx-QoZM-OUbixkahgbFBq6YshG80=w1200){ width=600 loading=lazy }
+![Image title](https://lh3.googleusercontent.com/zkfen52HfHD2cvLSkcESb4w-69mzv7L7DytJWPM37_KcjxrEgnX8cPfpWLNQyjYGSNMZSeWsPtNiOVzvLDrFFKZGPVPwYWACHxLu3yOirgadXdUOx-QoZM-OUbixkahgbFBq6YshG80=w2400){ width=600 loading=lazy }
 
 ## Toàn bộ chương trình¶
 

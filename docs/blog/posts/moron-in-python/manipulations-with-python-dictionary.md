@@ -1,29 +1,26 @@
 ---
 categories:
     - Moron in Python
-    - Set up & Code down
 authors: [mrschool]
 date: 2023-06-09
 ---
 
 # Một vài chiêu thức với dictionary của Python
 
-<div class="result" markdown>
-![Image title](./thumbnails/python.jpg){ align=left width=360 }
+![Python thumbnail](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9B5wUKxJOOTQJ3QKw/root/content){ loading=lazy align=left width=360 }
 
 Bài này giới thiệu một vài cách viết mã lệnh đối với kiểu `dictionary` của Python, chủ yếu dựa vào những đặc trưng của ngôn ngữ này.[^1]
-</div>
 
 [^1]: Bài viết được tham khảo từ những website Python nổi tiếng.
 
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
 
 <!-- more -->
-
-<br>
-<br>
 
 ## Trộn hai dictionary
 

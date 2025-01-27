@@ -1,27 +1,24 @@
 ---
 categories:
     - Moron in Python
-    - Set up & Code down
 authors: [mrschool]
 date: 2022-01-02
 ---
 
 # Cách đơn giản đo thời gian thực thi một hàm bằng Python
 
-<div class="result" markdown>
-![Image title](./thumbnails/python.jpg){ align=left }
+![Python thumbnail](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9B5wUKxJOOTQJ3QKw/root/content){ loading=lazy align=left width=360 }
+
 Đôi khi ta nổi hứng muốn biết hàm mình vừa code chạy nhanh chậm ra sao. Cách tiện lợi và nhanh nhất là sử dụng module `time` có sẵn của Python.
-
-<br>
-<br>
-
-</div>
 
 *Cập nhật: 29.01.2024*
 
-<!-- more -->
-
 <br>
+<br>
+<br>
+<br>
+
+<!-- more -->
 
 ## Cách thực hiện
 

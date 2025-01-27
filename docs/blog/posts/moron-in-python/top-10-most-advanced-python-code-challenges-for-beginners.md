@@ -1,26 +1,23 @@
 ---
 categories:
     - Moron in Python
-    - Set up & Code down
 authors: [mrschool]
 date: 2023-01-19
 ---
 
 # 10 thử thách Python khủng khiếp dành cho người mới bắt đầu
 
-<div class="result" markdown>
-![Image title](./thumbnails/python-challenges-for-beginners.svg){ align=left width=360 }
+![Image title](../thumbnails/python-challenges-for-beginners.svg){ align=left width=360 }
 
 Nếu bạn, một binh nhì trong thế giới Python, cảm thấy đã đủ kinh nghiệm với những bài tập vỡ lòng như đếm chẵn lẻ thì đã đến lúc bạn cần nâng trình lên một tầm cao mới, hoặc ít ra là tự kiểm tra lại kiến thức hiện có.
-
-"Khủng khiếp" chỉ là một từ để câu view, những thử thách này thực ra không quá khó. Nếu vượt qua, bạn có thể mơ đến những điều cao hơn. [^1]
-</div>
-
-[^1]: Các đề bài được tham khảo từ [Analytics Insight](https://www.analyticsinsight.net/latest-news/top-10-advanced-python-code-challenges-for-beginners-in-2023){:target="_blank"}.
 
 <br>
 
 <!-- more -->
+
+"Khủng khiếp" chỉ là một từ để câu view, những thử thách này thực ra không quá khó. Nếu vượt qua, bạn có thể mơ đến những điều cao hơn. [^1]
+
+[^1]: Các đề bài được tham khảo từ [Analytics Insight](https://www.analyticsinsight.net/latest-news/top-10-advanced-python-code-challenges-for-beginners-in-2023){:target="_blank"}.
 
 Vài quy ước cần lưu ý là, hạn chế sử dụng những hàm có sẵn mà Python ban cho. Bạn có thể tra cứu cú pháp trên mạng, song không được tìm bài giải. Và tuyệt đối không nhờ AI trợ giúp dưới mọi hình thức. Nếu gặp lỗi thì hãy kiên nhẫn và chịu khó sửa từ từ.
 

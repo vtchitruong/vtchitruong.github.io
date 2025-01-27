@@ -1,26 +1,24 @@
 ---
 categories:
     - Moron in Python
-    - Set up & Code down
 authors: [mrschool]
 date: 2021-11-20
 ---
 
 # Hiển thị dữ liệu theo dạng bảng trong console
 
-<div class="result" markdown>
-![Image title](https://lh3.googleusercontent.com/pw/ABLVV84rdNDtp174FmUgYbOwIqKKnXLuBT3pA76fGsK14get9HB9GSUNw0Z6cDFmLP_EiwMtRr9ZJFRNT_K_S8MhJuafq2HynUsY87Z11l99h7GGZeVPjLuv=w1200){ width=360 align=left }
+![Bảng được kết xuất trong console](https://lh3.googleusercontent.com/pw/ABLVV84rdNDtp174FmUgYbOwIqKKnXLuBT3pA76fGsK14get9HB9GSUNw0Z6cDFmLP_EiwMtRr9ZJFRNT_K_S8MhJuafq2HynUsY87Z11l99h7GGZeVPjLuv=w2400){ width=360 align=left }
 
 Bài viết này hướng dẫn thực hiện truy vấn SQL đối với cơ sở dữ liệu SQLite và hiển thị kết quả lên bảng được kẻ bằng các ký tự `-` và `|` trong màn hình console.
-</div>
 
 *Cập nhật: 25.01.2024*
 
 <br>
+<br>
+<br>
+<br>
 
 <!-- more -->
-
-<br>
 
 ## Cài đặt
 
@@ -34,7 +32,7 @@ python -m pip install -U prettytable
 
 Tiếp theo, khai báo các thư viện.
 
-``` py linenums="1"
+```py linenums="1"
 import sqlite3
 from prettytable import from_db_cursor
 from pathlib import Path
@@ -44,20 +42,20 @@ from pathlib import Path
 
 Lấy đường dẫn của file SQLite, nằm cùng thư mục với chương trình này.
 
-``` py linenums="7"
+```py linenums="7"
 database_file = str(Path(__file__).parent) + '\\coffee_shop.sqlite3'
 ```
 
 Kết nối cơ sở dữ liệu và khởi tạo `cursor` cho cơ sở dữ liệu.
 
-``` py linenums="9"
+```py linenums="9"
 connection = sqlite3.connect(database_file)
 cursor = connection.cursor()
 ```
 
 Thực thi câu truy vấn SQL.
 
-``` py linenums="12"
+```py linenums="12"
 sql = '''SELECT customer_id, customer_name, major
 FROM customers
 WHERE major = 'Vaccinologist'
@@ -70,7 +68,7 @@ cursor.execute(sql)
 
 Gán dữ liệu kết quả cho **PrettyTable** để kẻ bảng và in ra.
 
-``` py linenums="19"
+```py linenums="19"
 table = from_db_cursor(cursor)
 
 
@@ -80,14 +78,14 @@ print(table)
 
 Ngoài ra, ta có thể tùy chỉnh căn trái hoặc căn phải cho các cột. Mặc định các cột đều được canh giữa. Ví dụ:
 
-``` py linenums="20"
+```py linenums="20"
 table.align['customer_name'] = 'l'
 table.align['major'] = 'r'
 ```
 
-Output trông như sau:
+Output:
 
-``` pycon
+```pycon
 +-------------+-------------------------------------------------------+---------------+
 | customer_id | customer_name                                         |         major |
 +-------------+-------------------------------------------------------+---------------+
@@ -100,10 +98,10 @@ Output trông như sau:
 
 Nếu không muốn in ra, mà chỉ muốn lấy chuỗi của PrettyTable, ta dùng phương thức `get_string()`. Chuỗi trả về cũng giống như output trên.
 
-``` py
+```py
 mystring = table.get_string()
 ```
 
-## Toàn bộ chương trình¶
+## Mã nguồn
 
 Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/PrettyTable/tree/main/connect_sqlite3){:target="_blank"}.
