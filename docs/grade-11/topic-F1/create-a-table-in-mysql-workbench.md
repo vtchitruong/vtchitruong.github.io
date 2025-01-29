@@ -6,7 +6,7 @@ icon: simple/mysql
 
 !!! abstract "Tóm lược nội dung"
     
-    Bài này hướng dẫn cách tạo một bảng dữ liệu trong công cụ MySQL Workbench.
+    Bài này hướng dẫn cách tạo một bảng bằng công cụ MySQL Workbench.
 
 ## Khái quát cơ sở dữ liệu
 
@@ -18,16 +18,15 @@ Cơ sở dữ liệu cần tạo có tên là `coffee_shop`, dùng để quản 
 | `menu` | Các món ăn hoặc món uống của cửa hàng |
 | `invoice` | Các giao dịch của khách hàng |
 
-Lược đồ cơ sở dữ liệu như sau: (1)
-{ .annotate }
-
-1.  Đây chỉ là cơ sở dữ liệu minh họa, đừng áp dụng vào thực tế khi chưa chỉnh sửa cho hoàn thiện, trừ phi bạn muốn nhanh chóng phá sản.
+Lược đồ cơ sở dữ liệu như sau:
 
 - customers(<ins>**customer_id**</ins>, customer_name, phone, district, province, customer_type)
 - menu(<ins>**item_id**</ins>, item_name, item_type, price, item_real_name)
 - invoice(<ins>**invoice_id**</ins>, invoice_date, customer_id*, item_id*, amount, actual_price, total)
 
-Bài này chỉ trình bày cách tạo một bảng, là bảng `customers` chứa dữ liệu khách hàng.
+*Lưu ý: đây chỉ là cơ sở dữ liệu minh họa, đừng áp dụng vào thực tế khi chưa bổ sung, chỉnh sửa, trừ phi bạn muốn nhanh chóng phá sản.*
+
+Bài này chỉ trình bày cách tạo một bảng, là `customers`.
 
 ## Tạo tập tin SQL script
 
@@ -36,14 +35,14 @@ Trước hết, ta mở một tab mới trong Workbench:
 1. Chọn menu **File**.
 2. Chọn **New Query Tab**.
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ABLVV85cta72Besn-eLl39nrWa8HBUj4SyJClmCYlJ5MGrdAcxm8lojD38n1CYT-OBJnl_CmPTx4jB-kF1eeAuCrV5SrrBHJ3tXFYSUBND2PVr7tmNIIERZJ=w2400){loading=lazy width=280}
+    ![menu New Query Tab](https://lh3.googleusercontent.com/pw/ABLVV85cta72Besn-eLl39nrWa8HBUj4SyJClmCYlJ5MGrdAcxm8lojD38n1CYT-OBJnl_CmPTx4jB-kF1eeAuCrV5SrrBHJ3tXFYSUBND2PVr7tmNIIERZJ=w2400){loading=lazy width=240}
 
 Tiếp theo, ta lưu tập tin của tab đang mở này, mặc dù chưa có nội dung gì:
 
 1. Chọn menu **File**.
 2. Chọn **Save Script As...**
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ABLVV85fXN3J7ZQcf7S5Cz7CmtkgB_grFZ9mAoFSb7sleiBaTrkrZK0ujQltoX4R_81eXnY6iWrc77I-WNLwMpMXib-jzzaP7LQTGjyXKUUz8NU1p-f7_9tD=w2400){loading=lazy width=280}
+    ![menu Save Script As](https://lh3.googleusercontent.com/pw/ABLVV85fXN3J7ZQcf7S5Cz7CmtkgB_grFZ9mAoFSb7sleiBaTrkrZK0ujQltoX4R_81eXnY6iWrc77I-WNLwMpMXib-jzzaP7LQTGjyXKUUz8NU1p-f7_9tD=w2400){loading=lazy width=240}
 
 3. Trong hộp thoại hiện ra, chọn thư mục để lưu tùy ý và nhập tên tập tin cũng tùy ý.
 4. Click nút **Save**.
@@ -60,15 +59,17 @@ Trong quá trình gõ mã lệnh, ta nên thường xuyên nhấn ++ctrl++ + ++s
 
 Câu lệnh tạo cơ sở dữ liệu như sau:
 
-``` sql linenums="2"
+```sql linenums="2"
 create database coffee_shop;
 ```
 
-Hệ thống không cho phép các cơ sở dữ liệu trùng tên nhau. Do đó, để phòng hờ cơ sở dữ liệu trùng tên `coffee_shop` đã tồn tại, ta thêm dòng lệnh `drop database` để xóa cơ sở dữ liệu này.
+Hệ thống không cho phép các cơ sở dữ liệu trùng tên nhau. Do đó, để phòng trường hợp cơ sở dữ liệu trùng tên `coffee_shop` đã tồn tại, ta thêm dòng lệnh `drop database` để xóa cơ sở dữ liệu này.
 
-(*Lưu ý: dòng lệnh này chỉ áp dụng cho giờ học thực hành, cần cân nhắc khi áp dụng thực tế*)
+!!! warning "Lưu ý"
 
-``` sql linenums="1"
+	`drop database` chỉ áp dụng cho giờ học thực hành, cần cân nhắc khi áp dụng thực tế.
+
+```sql linenums="1"
 drop database if exists coffee_shop;
 create database coffee_shop;
 ```
@@ -94,9 +95,9 @@ Mô tả của bảng `customers` như sau:
 | `province` | nơi ở của khách hàng theo tỉnh | chuỗi gồm 50 ký tự |
 | `customer_type` | loại khách hàng: VIP, thân thiết hoặc vãng lai | một ký tự, là: V, F hoặc C | 
 
-Ứng với mô tả trên, đoạn mã tạo bảng `customers` là:
+Ứng với mô tả trên, mã lệnh SQL tạo bảng `customers` là:
 
-``` sql linenums="3"
+```sql linenums="3"
 use coffee_shop; -- (1)!
 
 create table `customers` (
@@ -114,25 +115,27 @@ create table `customers` (
 
 ## Thêm dữ liệu vào bảng
 
-Để thêm dữ liệu vào một bảng, ta sử dụng câu lệnh SQL `INSERT INTO`.
+Để thêm dữ liệu vào một bảng, ta dùng câu lệnh SQL `INSERT INTO`.
 
-Cú pháp lệnh `INSERT INTO`:
+!!! info "Cú pháp lệnh `INSERT INTO`"
 
-``` sql
-INSERT INTO <bảng> (<cột 1>, <cột 2>, ..., <cột n>)
-VALUES (<giá trị 1>, <giá trị 2>, ..., <giá trị n>);
-```
+	```sql
+	INSERT INTO <bảng> (<cột 1>, <cột 2>, ..., <cột n>)
+	VALUES (<giá trị 1>, <giá trị 2>, ..., <giá trị n>);
+	```
 
 Trong trường hợp thêm dữ liệu cho tất cả cột, ta có thể bỏ qua không gần gõ tên cột.
 
-``` sql
+```sql
 INSERT INTO <bảng>
 VALUES (<giá trị 1>, <giá trị 2>, ..., <giá trị n>);
 ```
 
-Ví dụ: năm dòng lệnh sau dùng để thêm năm mẫu tin vào bảng `customers`.
+Ví dụ:
 
-``` sql linenums="34"
+Năm dòng lệnh SQL sau dùng để thêm năm mẫu tin vào bảng `customers`.
+
+```sql linenums="34"
 insert into customers values('315533',N'Larry Ellison','0922638352',N'Nhà Bè',N'Ho Chi Minh City','V'); -- (1)!
 insert into customers values('350112',N'Christopher Edward Nolan CBE','0989686766',N'',N'Gia Lai','F');
 insert into customers values('527951',N'Bill Gates','0974539210',N'5',N'Ho Chi Minh City','V');

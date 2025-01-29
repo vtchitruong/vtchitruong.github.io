@@ -89,7 +89,7 @@ Ta lần lượt nhập như sau:
 
 Mỗi bảng có một khóa chính. Khóa chính có thể gồm một hoặc nhiều thuộc tính, dùng để phân biệt các mẫu tin với nhau.
 
-Trong bảng này, khóa chính là `MaHocSinh`. Nghĩa là, hai học sinh bất kỳ có thể trùng nhau về họ, tên, giới tính, ngày sinh, v.v... (chẳng hạn anh em song sinh), nhưng *mã định danh* của họ là phải khác nhau.
+Trong bảng này, khóa chính là `MaHocSinh`. Nghĩa là, hai học sinh bất kỳ có thể trùng nhau về họ, tên, giới tính, ngày sinh, v.v... (chẳng hạn anh em song sinh), nhưng **mã định danh** (`MaHocSinh`) của họ là phải khác nhau.
 
 Để tạo khóa chính:
 
@@ -97,7 +97,7 @@ Trong bảng này, khóa chính là `MaHocSinh`. Nghĩa là, hai học sinh bấ
 2. Chọn tab **Table Design**.
 3. Click nút **Primary Key**.
 
-    ![Cách tạo khóa chính của bảng](https://lh3.googleusercontent.com/khHr9OrXOgn9eYo4lzwPpjkmtjgsCpcQuJy23gOSHBoztiPxGPAdyR0RQz5ksA6AGsFw3-mVXkhPIfAG_aHZmTSmW6rFxEa2a2VJoz6USKBsfnQQs4F04F9adPj7f88NKx3d_uxEz-Y=w2400){loading=lazy width=600}    
+![Cách tạo khóa chính của bảng](https://lh3.googleusercontent.com/khHr9OrXOgn9eYo4lzwPpjkmtjgsCpcQuJy23gOSHBoztiPxGPAdyR0RQz5ksA6AGsFw3-mVXkhPIfAG_aHZmTSmW6rFxEa2a2VJoz6USKBsfnQQs4F04F9adPj7f88NKx3d_uxEz-Y=w2400){loading=lazy width=480}    
 
 Một biểu tượng chìa khóa sẽ xuất hiện ở phía đầu của thuộc tính.
 
@@ -110,7 +110,7 @@ Trong hộp thoại **Save As** hiện ra:
 1. Nhập tên bảng là `HocSinh`, 
 2. Bấm *OK*.
 
-    ![Cách đặt tên cho bảng vừa tạo](https://lh3.googleusercontent.com/C5jEHR0XyKkfp1pCUj-5ic4NKl20eDfAFJJ4hdk7rgB4HnMG-iZPZUfVksgShMXCWJV-YuIK_ZAkgwdbqPOMbOQp4zW9rGZKwVKFQBVcKZI8UaVqkUFJRURfsYxL9RVHQ-0eF086SQQ=w2400){loading=lazy width=280}
+![Cách đặt tên cho bảng vừa tạo](https://lh3.googleusercontent.com/C5jEHR0XyKkfp1pCUj-5ic4NKl20eDfAFJJ4hdk7rgB4HnMG-iZPZUfVksgShMXCWJV-YuIK_ZAkgwdbqPOMbOQp4zW9rGZKwVKFQBVcKZI8UaVqkUFJRURfsYxL9RVHQ-0eF086SQQ=w2400){loading=lazy width=240}
 
 Vậy là xong. Bảng `HocSinh` sẽ xuất hiện ở panel **All Access Objects** bên trái.
 
@@ -118,7 +118,7 @@ Nếu cần đổi tên, ta click phải vào bảng, rồi chọn **Rename**.
 
 Nếu cần điều chỉnh thiết kế, ta click phải vào bảng, rồi chọn **Design View**.
 
-![Cách đổi tên và chỉnh sửa thiết kế của bảng](https://lh3.googleusercontent.com/lqfl6XoAiqabh7m2MgCq0jEgnOP_ef0otIDDcNPJVw5TVLtD2BfCfep9odWTesoZJZH0WxDVJvjOWTO8TAwv3UVSHoD-vlN73Kg8_BbDtk4WWASCZ4oQWz8rJIcnalu2EKEyc83CUS0=w2400){loading=lazy width=280}
+![Cách đổi tên và chỉnh sửa thiết kế của bảng](https://lh3.googleusercontent.com/lqfl6XoAiqabh7m2MgCq0jEgnOP_ef0otIDDcNPJVw5TVLtD2BfCfep9odWTesoZJZH0WxDVJvjOWTO8TAwv3UVSHoD-vlN73Kg8_BbDtk4WWASCZ4oQWz8rJIcnalu2EKEyc83CUS0=w2400){loading=lazy width=240}
 
 ## Nhập dữ liệu
 
@@ -129,7 +129,7 @@ Nếu cần điều chỉnh thiết kế, ta click phải vào bảng, rồi ch�
 
     Lưu ý: Do `MaHocSinh` là khóa chính, ta không được nhập trùng với mã đã có và cũng không được bỏ trống.
 
-    ![Dữ liệu trong bảng sau khi nhập](https://lh3.googleusercontent.com/4n1BgFCBzyWFNBtE532HCmK6pIMztKq9ab4NmUWsauamtFJ0or-Qeg83LBTYW_nHGQeePCMN9vDjmKLgoKhCDIEylYUPE4x7vyzKVn0oCIP2nFogVdGtGL41-HN-z3zYgguBMCZXLBY=w2400){loading=lazy}
+![Dữ liệu trong bảng sau khi nhập](https://lh3.googleusercontent.com/4n1BgFCBzyWFNBtE532HCmK6pIMztKq9ab4NmUWsauamtFJ0or-Qeg83LBTYW_nHGQeePCMN9vDjmKLgoKhCDIEylYUPE4x7vyzKVn0oCIP2nFogVdGtGL41-HN-z3zYgguBMCZXLBY=w2400){loading=lazy}
 
 Thông thường, khi nhập dữ liệu, Access sẽ tự động lưu. Nếu ta thay đổi độ rộng các cột thì khi đóng bảng, Access sẽ hiển thị hộp thoại xác nhận lưu.
 
