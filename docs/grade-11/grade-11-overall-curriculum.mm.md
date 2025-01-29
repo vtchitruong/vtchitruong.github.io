@@ -77,7 +77,7 @@ markmap:
 
 #### F-1: Cơ sở dữ liệu
 
-- <a href="../../grade-11/topic-F1/create-a-table-in-postgresql" target="_blank">Tạo cơ sở dữ liệu</a>
+- Tạo cơ sở dữ liệu
 - Cập nhật cơ sở dữ liệu
 - Truy vấn cơ sở dữ liệu
 

@@ -12,14 +12,14 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 #### Chủ đề A-1
 
-Hệ điều hành và phần mềm ứng dụng
+[Hệ điều hành và phần mềm ứng dụng](./topic-A1/topic-index.md){:target="_blank"}
 
-1. [Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng](../grade-11/topic-A1/os-vs-application.md){:target="_blank"}
+1. [Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng](./topic-A1/os-vs-application.md){:target="_blank"}
     1. Trình bày được sơ lược lịch sử phát triển của hai hệ điều hành thông dụng cho PC, một hệ điều hành là phần mềm thương mại và hệ điều hành còn lại là phần mềm nguồn mở. Sử dụng được một số chức năng cơ bản của một trong hai hệ điều hành đó.
     2. Trình bày được vài nét chính về một hệ điều hành thông dụng cho thiết bị di động và sử dụng được một số tiện ích cơ bản của hệ điều hành đó.
     3. Trình bày được một cách khái quát mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng. Trình bày được vai trò riêng của mỗi thành phần trong hoạt động chung của cả hệ thống.
 
-2. [Phần mềm nguồn mở, phần mềm chạy trên Internet](../grade-11/topic-A1/open-source-software.md){:target="_blank"}
+2. [Phần mềm nguồn mở, phần mềm chạy trên Internet](./topic-A1/open-source-software.md){:target="_blank"}
     1. Trình bày được một số khái niệm có liên quan tới phần mềm nguồn mở: bản quyền phần mềm, giấy phép công cộng, phần mềm miễn phí. So sánh được phần mềm nguồn mở với phần mềm thương mại (nguồn đóng). Nêu được vai trò của phần mềm nguồn mở và phần mềm thương mại đối với sự phát triển của ICT.
     2. Nêu được tên một số phần mềm soạn thảo văn bản, phần mềm bảng tính và phần mềm trình chiếu nguồn mở, chẳng hạn Writer, Calc và Impress trong bộ OpenOffice.
     3. Sử dụng được một số tiện ích có sẵn của hệ điều hành để nâng cao hiệu suất sử dụng máy tính.
@@ -71,11 +71,11 @@ Tìm kiếm và trao đổi thông tin trên mạng
 
 #### Chủ đề F-1
 
-Cơ sở dữ liệu
-    
+[Cơ sở dữ liệu](./topic-F1/topic-index.md){:target="_blank"}
+
 1. Giới thiệu các hệ cơ sở dữ liệu
-    1. Nhận biết được nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý
-	2. Diễn đạt được khái niệm hệ cơ sở dữ liệu, các khái niệm cơ bản trong mô hình cơ sở dữ liệu quan hệ như quan hệ (bảng), khóa, khóa ngoài, truy vấn, cập nhật dữ liệu, v.v...
+    1. Nhận biết được [nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý](./topic-F1/data-related-needs.md){:target="_blank"}.
+	2. Diễn đạt được [khái niệm hệ cơ sở dữ liệu](./topic-F1/database-a-simplified-overview.md){:target="_blank"}, các khái niệm cơ bản trong [mô hình cơ sở dữ liệu quan hệ](./topic-F1/relational-database.md){:target="_blank"} như quan hệ (bảng), khóa, khóa ngoài, truy vấn, cập nhật dữ liệu, v.v...
 	3. Nêu được những khái niệm cơ bản của hệ cơ sở dữ liệu. Giải thích được các khái niệm đó qua ví dụ minh họa.
 	4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
 	5. Nêu được tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu.
@@ -153,9 +153,9 @@ Làm phim hoạt hình, video
 
 #### Chủ đề F-1
 
-Cơ sở dữ liệu
+[Cơ sở dữ liệu](./topic-F1/topic-index.md){:target="_blank"}
 
-1. [Thực hành tạo và cập nhật cơ sở dữ liệu](../grade-11/topic-F1/create-a-table-in-postgresql.md){:target="_blank"}
+1. [Thực hành tạo và cập nhật cơ sở dữ liệu](./topic-F1/create-tables-in-postgresql-part-1.md){:target="_blank"}
 
     Thực hiện được việc tạo lập cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ Quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
 
@@ -164,7 +164,7 @@ Cơ sở dữ liệu
     3. Nêu được một vài tổ chức cần ứng dụng cơ sở dữ liệu để quản lý hoạt động của mình.
     4. Thể hiện được tính cẩn thận, chăm chỉ, trách nhiệm trong việc lưu trữ và quản lý dữ liệu.
 
-2. Thực hành khai thác cơ sở dữ liệu
+2. [Thực hành khai thác cơ sở dữ liệu](./topic-F1/retrieve-data-from-tables-part-1.md){:target="_blank"}
 
     Thực hiện được việc khai thác thông tin trong cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
 
