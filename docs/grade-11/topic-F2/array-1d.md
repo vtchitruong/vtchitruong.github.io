@@ -1,5 +1,5 @@
 ---
-icon: material/code-brackets
+icon: material/table-row
 ---
 
 # Mảng một chiều
@@ -63,7 +63,7 @@ Bài học này chỉ đề cập **mảng một chiều**.
 !!! question "Hỏi chút chơi - phần 1"
     
     <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz1.html">Hỏi chút chơi - phần 1</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz1.html">Hỏi chút chơi</iframe>
     </div>
 
 ## Mảng trong Python
@@ -79,7 +79,7 @@ Một số bài học ở lớp 11 này sẽ sử dụng thư viện `numpy` khi
 !!! question "Hỏi chút chơi - phần 2"
     
     <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz2.html">Hỏi chút chơi - phần 2</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz2.html">Hỏi chút chơi</iframe>
     </div>
 
 ## Mảng một chiều
@@ -91,8 +91,8 @@ Hình ảnh mảng một chiều trong thực tế:
 
 Mảng một chiều có thể áp dụng khi xử lý:
 
-- một dãy số
-- một hàng hoặc một cột trong bảng.
+- Một dãy số
+- Một hàng hoặc một cột trong bảng
 
 Chỉ số của các phần tử được đánh từ **0** hoặc từ **1**, tuỳ ngôn ngữ lập trình. Chỉ số còn có thể xem là **vị trí** của phần tử trong mảng.
 
@@ -123,7 +123,7 @@ import numpy as np
 
 ### Khởi tạo  
 
-Để khởi tạo mảng một chiều bằng thư viện `numpy`, ta sử dụng hàm `array` của thư viện.
+Để khởi tạo mảng một chiều bằng thư viện `numpy`, ta sử dụng hàm `array()` của thư viện.
 
 Các phần tử được liệt kê trong cặp ngoặc vuông `[ ]` và phân cách nhau bằng dấu phẩy `,`.
 
@@ -170,7 +170,7 @@ Mảng zeros: [0 0 0 0 0 0 0 0]
 !!! question "Hỏi chút chơi - phần 3"
     
     <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz3.html">Hỏi chút chơi - phần 3</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz3.html">Hỏi chút chơi</iframe>
     </div>
 
 ### Truy xuất phần tử  
@@ -181,7 +181,7 @@ Phần tử đầu tiên có chỉ số là `0` và phần tử cuối cùng có
 
 Ví dụ:
 
-**Yêu cầu:** In ra màn hình giá trị của một vài phần tử.
+**Yêu cầu:** In ra màn hình giá trị của phần tử đầu tiên và cuối cùng của mảng A.
 
 
 ```py linenums="12"
@@ -220,7 +220,7 @@ IndexError: index 12 is out of bounds for axis 0 with size 12
 !!! question "Hỏi chút chơi - phần 4"
     
     <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz4.html">Hỏi chút chơi - phần 4</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz4.html">Hỏi chút chơi</iframe>
     </div>
 
 ### Duyệt mảng  
@@ -277,7 +277,7 @@ Ví dụ:
 !!! question "Hỏi chút chơi - phần 5"
     
     <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz5.html">Hỏi chút chơi - phần 5</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz5.html">Hỏi chút chơi</iframe>
     </div>
 
 ## Sơ đồ tóm tắt nội dung

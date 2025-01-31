@@ -1,4 +1,4 @@
-// Creating questionss and answers
+// Creating questions and answers
 var part1 = [{
   question: "Số lượng phần tử của mảng có thể được gọi là gì?",
   answers: ["Kích thước của phần tử", "Chỉ số của phần tử", "Giá trị của phần tử"],
@@ -29,7 +29,7 @@ var part3 = [{
 
 var part4 = [{
   question: "Dòng lệnh nào sau đây in ra phần tử áp cuối của mảng A?",
-  answers: ["print(A[len(A) - 2]", "print(A[len(A) - 1]", "print(A[-1]"],
+  answers: ["print(A[len(A) - 2])", "print(A[len(A) - 1])", "print(A[-1])"],
   correct: 0
 }];
 

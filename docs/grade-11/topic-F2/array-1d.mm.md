@@ -26,7 +26,7 @@ markmap:
 #### Khởi tạo
 
 - Liệt kê phần tử
-- Hàm `fill()`
+- Hàm `full()`
 
 #### Truy xuất phần tử
 

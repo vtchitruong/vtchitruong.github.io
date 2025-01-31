@@ -1,3 +1,7 @@
+---
+icon: material/table-large
+---
+
 # Mảng hai chiều
 
 !!! abstract "Tóm lược nội dung"
@@ -12,236 +16,209 @@ Làm thế nào xử lý khi dữ liệu không phải là một dãy, mà là m
 
 Tương tự [bài học trước](../topic-F2/array-1d.md/#khai-quat-ve-mang){:target="_blank"}, **mảng** là cấu trúc dữ liệu dùng để lưu trữ và xử lý tập hợp các phần tử.
 
-Bài học này đề cập **mảng hai chiều**.
+Bài học này đề cập **mảng hai chiều** và cũng sử dụng thư viện `numpy` để viết chương trình minh hoạ.
 
 ## Mảng hai chiều
 
-**Mảng hai chiều** dùng để lưu trữ và xử lý dữ liệu theo dạng **lưới**, dạng **bảng** hoặc **ma trận**, gồm nhiều hàng và nhiều cột.
-
-Ví dụ:  
-Một số hình ảnh của mảng hai chiều là:
+Hình ảnh của mảng hai chiều trong thực tế:
 
 - Bàn cờ vua
 - Bảng số Sudoku
 - Bảng tính Excel
 
-Trong mảng hai chiều, số phần tử của mỗi hàng ứng với số cột của mảng. Nói cách khác, các hàng đều có số phần tử bằng nhau, hoặc các hàng đều có số cột như nhau.  
+Mảng hai chiều có thể áp dụng khi xử lý dữ liệu có dạng:
 
-<figure markdown>
-  ![Minh họa mảng hai chiều B](array/array-2d.svg){loading=lazy}
-  <figcaption>Minh họa mảng hai chiều B</figcaption>
-</figure>
+- Bảng
+- Lưới
+- Ma trận
 
-Mảng hai chiều có thể được xem là **mảng của các mảng**, nghĩa là, mỗi phần tử của mảng hai chiều là mảng một chiều.  
+Trong mảng hai chiều, số phần tử của mỗi hàng ứng với số cột của mảng. Nói cách khác, các hàng đều có số phần tử hoặc số cột bằng nhau.
+
+![Minh họa mảng hai chiều A](./images/array-2d.svg){loading=lazy}
+
+*Minh họa mảng hai chiều A*
+
+Mảng hai chiều có thể được xem là **mảng của các mảng**, nghĩa là, mỗi phần tử của mảng hai chiều là mảng một chiều.
+
+!!! question "Hỏi chút chơi - phần 1"
+    
+    <div>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-2d/quiz1.html">Hỏi chút chơi</iframe>
+    </div>
 
 ### Khởi tạo  
 
-Tương tự mảng một chiều, kiểu `list` của Python cho phép khởi tạo bằng cách liệt kê phần tử hoặc [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.  
+Tương tự mảng một chiều, ta cũng dùng hàm `array()` của thư viện `numpy` để khởi tạo mảng hai chiều.
 
-Khi liệt kê, ta sử dụng các cặp ngoặc vuông lồng nhau: `[[ ], [ ], ... ]`
+Các phần tử được liệt trong các cặp ngoặc vuông lồng nhau: `[[ ], [ ], ... ]`
 
-Ví dụ 1:  
-Khởi tạo mảng hai chiều bằng cách liệt kê phần tử.
+Ví dụ:
 
-``` py linenums="1"
+**Yêu cầu:** Khởi tạo mảng hai chiều `A` bằng cách liệt kê phần tử.
+
+```py linenums="1" hl_lines="5"
+import numpy as np
+
 if __name__ == '__main__':
-    # Mảng B gồm 3 hàng và 4 cột
-    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
-    print(B)
+    # Khởi tạo mảng hai chiều A gồm 12 phần tử là số nguyên
+    A = np.array([[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]])
+    print(f'Mảng A:\n{A}') # (1)!
+```
+{ .annotate }
+
+1.  `\n` là ký tự xuống dòng.
+
+**Output:**
+
+```pycon
+Mảng A:
+[[1 7 4 0]
+ [9 4 8 8]
+ [2 4 5 5]]
 ```
 
-Output:
-``` pycon
-[[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+Để khởi tạo mảng hai chiều gồm các phần tử cùng giá trị, ta dùng hàm `full()` của thư viện `numpy`.
+
+Ví dụ:
+
+**Yêu cầu:** Khởi tạo mảng hai chiều `zeros` gồm 3 hàng, 4 cột và các phần tử đều có giá trị `0`.
+
+```py linenums="8" hl_lines="4"
+    # Khai báo mảng zeros gồm 3 hàng, 4 cột với các phần tử đều mang giá trị 0
+    row_number = 3
+    col_number = 4
+    zeros = np.full((row_number, col_number), 0)
+    print(f'Mảng zeros:\n{zeros}')
 ```
 
-Ví dụ 2:  
-Khởi tạo mảng một chiều bằng toán tử `*`.
+**Output:**
 
-``` py linenums="1"
-if __name__ == '__main__':
-    # Khai báo số hàng và số cột
-    rows = 3
-    cols = 4
-
-    # Mảng zero_array gồm các phần tử có giá trị 0
-    zero_array = [[0] * cols] * rows
-    print(zero_array)
+```pycon
+Mảng zeros:
+[[0 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]]
 ```
 
-Output:
-``` pycon
-[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-```
-
-Ví dụ 3:  
-Khởi tạo mảng hai chiều bằng cú pháp [list comprehension](https://peps.python.org/pep-0202/){:target="_blank"}.
-
-``` py linenums="1"
-if __name__ == '__main__':
-    # Khai báo số hàng và số cột
-    rows = 3
-    cols = 4
-
-    # Mảng zero_array gồm các phần tử có giá trị 0
-    one_array = [[1 for c in range(cols)] for r in range(rows)]
-    print(one_array)
-```
-
-Output:
-``` pycon
-[[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
-```
+!!! question "Hỏi chút chơi - phần 2"
+    
+    <div>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-2d/quiz2.html">Hỏi chút chơi</iframe>
+    </div>
 
 ### Truy xuất phần tử  
 
-Mỗi phần tử của mảng hai chiều được truy xuất bằng hai chỉ số, gọi là **chỉ số hàng** và **chỉ số cột**, đặt trong hai cặp ngoặc vuông `[][]`, chỉ số hàng nằm trước, chỉ số cột nằm sau.
+Mỗi phần tử của mảng hai chiều được truy xuất bằng hai chỉ số, gồm **chỉ số hàng** và **chỉ số cột**, đặt trong hai cặp ngoặc vuông `[][]`, chỉ số hàng nằm trước, chỉ số cột nằm sau.
 
-Ví dụ 4:  
-In ra màn hình giá trị của một vài phần tử.
+Ví dụ:
 
-``` py linenums="1"
-if __name__ == '__main__':
-    # Khởi tạo mảng B
-    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+**Yêu cầu:** In ra màn hình giá trị của phần tử đầu tiên và phần tử nằm ở hàng 2, cột 3 của mảng A (cũng là phần tử cuối cùng).
 
-    # In ra phần tử đầu tiên
-    print(B[0][0])
+```py linenums="14"
+    # In ra phần tử đầu tiên của mảng A
+    print(f'Phần tử đầu tiên của mảng A: {A[0][0]}')
 
-    # In ra phần tử cuối cùng
-    print(B[2][3])
+    # In ra phần tử nằm ở hàng 2, cột 3 của mảng A
+    print(f'Phần tử nằm ở hàng 2, cột 3 của mảng A: {A[2][3]}')
 ```
 
-Output:
-``` pycon
-1
-5
+**Output:**
+
+```pycon
+Phần tử đầu tiên của mảng A: 1
+Phần tử nằm ở hàng 2 cột 3 của mảng A: 5
 ```
 
-!!! question "Câu hỏi 1"
-
-    Cũng với mảng `B` của ví dụ 3, dòng lệnh `print(B[1][2])` sẽ in ra màn hình kết quả gì?
+!!! question "Hỏi chút chơi - phần 3"
     
     <div>
-    <form id="answer-form">
-        <label for="userInput_1">Lời giải của bạn:</label><br>
-        <textarea id="userInput_1" name="userInput_1" required></textarea>
-        <textarea id="solution_1">8</textarea><br>
-        <button class="submitButton" type="button" onclick="process_answer('userInput_1', 'solution_1', 'appreciate_1')">Submit</button>
-        <div id="appreciate_1"></div>
-    </form>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-2d/quiz3.html">Hỏi chút chơi</iframe>
     </div>
 
-    ??? tip "Đáp án"
+Nếu xem mảng hai chiều `A` là mảng một chiều thì mỗi phần tử của `A` là một hàng.
 
-        `B[1][2]` là phần tử ở hàng giữa, có chỉ số cột là 2. Như vậy, kết quả in ra là 8.
+Do đó, để lấy được số hàng của `A`, ta viết `len(A)`, nghĩa là độ dài của mảng một chiều `A`.
 
-Ví dụ 5:  
-In ra số hàng và số cột của mảng hai chiều.
+Mỗi hàng của mảng hai chiều `A` cũng là một mảng một chiều.
 
-``` py linenums="1"
-if __name__ == '__main__':
-    # Khởi tạo mảng B
-    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+Do đó, để lấy được số cột của mảng `A`, ta dùng hàm `len()` với một hàng bất kỳ. Chẳng hạn: `len(A[0])`, nghĩa là độ dài của hàng đầu tiên.
+
+Ví dụ:
+
+**Yêu cầu:** In ra số hàng và số cột của mảng hai chiều A.
+
+```py linenums="20"
+    # In ra số hàng của mảng A
+    A_row_number = len(A)
+    print(f'Số hàng của mảng A: {A_row_number}')
+
+    # In ra số cột của mảng A
+    A_col_number = len(A[0])
+    print(f'Số cột của mảng A: {A_col_number}')
+```
+
+**Output:**
+
+```pycon
+Số hàng của mảng A: 3
+Số cột của mảng A: 4
+```
+
+!!! question "Hỏi chút chơi - phần 4"
     
-    # In ra số hàng của mảng B
-    print(len(B))
-
-    # In ra số cột của mảng B
-    print(len(B[0]))
-```
-
-Output:
-``` pycon
-3
-4
-```
-
-!!! question "Câu hỏi 2"
-
-    Cũng với mảng B của ví dụ 4, dòng lệnh `print(len(B[1])) ` sẽ in ra màn hình kết quả gì?
-
     <div>
-    <form id="answer-form">
-        <label for="userInput_2">Lời giải của bạn:</label><br>
-        <textarea id="userInput_2" name="userInput_2" required></textarea>
-        <textarea id="solution_2">4</textarea><br>
-        <button class="submitButton" type="button" onclick="process_answer('userInput_2', 'solution_2', 'appreciate_2')">Submit</button>
-        <div id="appreciate_2"></div>
-    </form>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-2d/quiz4.html">Hỏi chút chơi</iframe>
     </div>
-
-    ??? tip "Đáp án"
-
-        `B[1]` là hàng có chỉ số 1 của mảng B. Vì các hàng đều có số cột bằng nhau, nên lệnh `len(B[1])` là tương đương với `len(B[0])`.  
-        Như vậy, kết quả in ra là 4.
 
 ### Duyệt mảng  
 
-Khi duyệt mảng hai chiều, ta thường sử dụng hai vòng lặp lồng nhau:
+Khi duyệt mảng hai chiều, ta thường dùng hai vòng lặp lồng nhau:
 
-- *Vòng lặp ngoài* dùng để duyệt các hàng.
-- *Vòng lặp trong* dùng để duyệt các cột, tức các phần tử của hàng đang duyệt.
+- **Vòng lặp ngoài** dùng để duyệt các hàng.
+- **Vòng lặp trong** dùng để duyệt các cột, tức các phần tử của hàng đang duyệt.
 
-Ví dụ 6:  
-In mảng hai chiều theo dạng hàng và cột.
+Ví dụ:
 
-``` py linenums="1"
-if __name__ == '__main__':
-    B = [[1, 7, 4, 0], [9, 4, 8, 8], [2, 4, 5, 5]]
+**Yêu cầu:** In mảng hai chiều theo dạng hàng và cột.
 
-    # Khai báo số hàng và số cột
-    rows = 3
-    cols = 4
-
-    # Duyệt từ hàng đầu đến hàng cuối. Ứng với mỗi hàng r:
-    # Duyệt từ cột đầu đến cột cuối
-    for r in range(rows):        
-        for c in range(cols):       
-            # In ra phần tử nằm ở hàng r và cột c, kèm theo khoảng trắng
-            print(B[r][c], end=' ')
+```py linenums="28"
+    # Duyệt từng hàng của mảng A
+    for r in range(A_row_number):
+        # Duyệt từng cột của mảng A
+        for c in range(A_col_number):
+            # In ra giá trị của phần tử tại hàng r, cột c
+            print(A[r][c], end=' ')
         
-        # Xuống dòng sau khi đã in hết các cột
+        # Xuống hàng tiếp theo
         print()
 ```
 
-Output:
-``` pycon
+**Output:**
+
+```pycon
 1 7 4 0 
 9 4 8 8 
 2 4 5 5 
 ```
 
-!!! question "Câu hỏi 3"
-
-    Bạn hãy chỉnh sửa các dòng lệnh của vòng lặp để in ra màn hình tất cả phần tử của mảng B trên cùng một dòng.
-
+!!! question "Hỏi chút chơi - phần 5"
+    
     <div>
-    <form id="answer-form">
-        <label for="userInput_3">Lời giải của bạn:</label><br>
-        <textarea id="userInput_3" name="userInput_3" required></textarea>
-        <textarea id="solution_3">for r in range(rows):.newline.    for c in range(cols):.newline.        print(B[r][c], end=' ')</textarea><br>
-        <button class="submitButton" type="button" onclick="process_answer('userInput_3', 'solution_3', 'appreciate_3')">Submit</button>
-        <div id="appreciate_3"></div>
-    </form>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-2d/quiz5.html">Hỏi chút chơi</iframe>
     </div>
-
-    ??? tip "Đáp án"
-
-        ``` py linenums="1"
-        for r in range(rows):
-            for c in range(cols):
-                print(B[r][c], end=' ')
-        ```
 
 ## Sơ đồ tóm tắt nội dung
 
 {!grade-11/topic-F2/array-2d.mm.md!}
 *Sơ đồ tóm tắt mảng hai chiều*
 
-## Google Colab
+## Mã nguồn
 
-Các đoạn mã trong bài này được đặt tại <a href="https://colab.research.google.com/drive/1jcgXcdZQWSuitaS-9cYGAup7sD77T75F?usp=sharing" target="_blank">Google Colab</a> để bạn có thể thử nghiệm theo cách của riêng mình.
+Các đoạn mã trong bài được đặt tại:
+
+1. [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f2/array-2-dimension-numpy.py){:target="_blank"}
+
+2. [Google Colab](https://colab.research.google.com/drive/1M7LQMTxdGAOcC6tyqgz-1wE6mtlK5bXF?usp=sharing){:target="_blank"}
 
 ## Some English words
 
