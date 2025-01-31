@@ -42,7 +42,7 @@
 
 11. **Cây** là đồ thị liên thông không có chu trình.
 
-### Phân loại
+## Phân loại
 
 1. **Đơn đồ thị**
 
@@ -68,7 +68,7 @@
 
     Các cạnh không có trọng số, chỉ đơn thuần thể hiện mối quan hệ giữa các đỉnh.
 
-### Những thao tác phổ biến
+## Những thao tác phổ biến
 
 1. **Duyệt đồ thị**
 
@@ -89,7 +89,7 @@
 
     Là xác định xem các đỉnh có thể kết nối với nhau hay không.
 
-### Ứng dụng
+## Ứng dụng
 
 Đồ thị đóng một vai trò quan trọng trong khoa học máy tính, đặc biệt trong việc biểu diễn và xử lý các mối quan hệ giữa các đối tượng.
 
