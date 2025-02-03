@@ -15,9 +15,7 @@
 
 Nói cách khác, BFS ưu tiên duyệt các đỉnh ở gần đỉnh `start` trước, sau đó mới đến các đỉnh ở xa hơn.
 
-## Đặc điểm
-
-Thuật toán BFS khá dễ hiểu và cài đặt.
+## Ứng dụng
 
 BFS được áp dụng phổ biến cho các bài toán như:
 
@@ -87,7 +85,7 @@ Tìm khoảng cách ngắn nhất giữa hai đỉnh trong đồ thị bằng c�
 
 ### Giải thích
 
-**Input:** 
+Input:
 
 - Dòng đầu tiên gồm các đỉnh của đồ thị.
 - Các dòng tiếp theo mô tả các cạnh của đồ thị.
@@ -97,7 +95,7 @@ Tìm khoảng cách ngắn nhất giữa hai đỉnh trong đồ thị bằng c�
 
 ![Đồ thị G](./images/graph-representing.svg){ loading=lazy width=360 }
 
-**Output:**
+Output:
 
 Khoảng cách ngắn nhất giữa hai đỉnh trong đồ thị.
 
@@ -302,6 +300,10 @@ if __name__ == '__main__':
     print(f'Khoảng cách từ đỉnh {s} đến đỉnh {f} là {d}')
 ```
 
+## Nhận xét
+
+Kết quả của BFS chính là đường đi ngắn nhất từ đỉnh xuất phát đến một đỉnh nào đó, áp dụng đối với đồ thị không có trọng số và không áp dụng đối với đồ thị có trọng số.
+
 ## Mã nguồn
 
 Code đầy đủ được đặt tại:
@@ -309,3 +311,9 @@ Code đầy đủ được đặt tại:
 1. [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/special-topics/graph/bfs.py){:target="_blank"}
 
 2. [Google Colab](https://colab.research.google.com/drive/1nwZ16XzLuUzUZm8aiG4TDhel_XsW1Jbk?usp=sharing){:target="_blank"}
+
+## Some English words
+
+| Vietnamese | Tiếng Anh | 
+| --- | --- |
+| duyệt theo chiều rộng | breadth first search (BFS) |
