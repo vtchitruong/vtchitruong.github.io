@@ -407,6 +407,7 @@ nav:
     - Đồ thị:
       - special-topics/graph/an-overview-of-graph.md
       - special-topics/graph/graph-representing.md
+      - special-topics/graph/bfs.md
     - Cây:
       - special-topics/tree/an-overview-of-tree.md
   - Nâng cao:

@@ -285,6 +285,7 @@ Code đầy đủ được đặt tại:
 1. [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/special-topics/graph/graph-representing.py){:target="_blank"}
 
 2. [Google Colab](https://colab.research.google.com/drive/1vOujwPvs88Dwg723h1MOTAXly77PewJy?usp=sharing){:target="_blank"}
+
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
