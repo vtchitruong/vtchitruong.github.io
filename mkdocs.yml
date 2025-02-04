@@ -183,6 +183,8 @@ extra_javascript:
   - https://unpkg.com/d3@7/dist/d3.min.js
   - https://unpkg.com/markmap-lib@0.15.3/dist/browser/index.js
   - https://unpkg.com/markmap-view@0.15.3/dist/browser/index.js
+  - https://cdn.jsdelivr.net/npm/markmap-lib@0.14.2/dist/browser/index.min.js
+  - https://cdn.jsdelivr.net/npm/markmap-view@0.14.2/dist/browser/index.min.js
   # - javascripts/markmap-d3.js
   # - javascripts/markmap-lib.js
   # - javascripts/markmap-view.js
