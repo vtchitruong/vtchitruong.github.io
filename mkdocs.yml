@@ -194,6 +194,8 @@ extra_javascript:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/floating_action_button.css
+  - https://fonts.bunny.net/css?family=noto-sans:100,200,300,400,500,600,700,800,900
+
 
 plugins:
   - markmap
