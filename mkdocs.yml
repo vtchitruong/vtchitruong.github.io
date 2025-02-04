@@ -409,6 +409,7 @@ nav:
       - special-topics/stack/an-overview-of-stack.md
       - special-topics/stack/balanced-parentheses-check.md
     - Đồ thị:
+      - special-topics/graph/topic-index.md
       - special-topics/graph/an-overview-of-graph.md
       - special-topics/graph/graph-representing.md
       - special-topics/graph/bfs.md

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Lớp 10","children":[{"content":"Phần chung","children":[{"content":"Chủ đề A","children":[{"content":"A-1: Tin học và xử lý thông tin","children":[{"content":"Dữ liệu và thông tin","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Đơn vị đo","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Thiết bị số và thiết bị thông minh","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Lịch sử phát triển","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"h4","lines":"12,13"}},{"content":"A-2: Đây là phần riêng của CS.","children":[],"payload":{"tag":"h4","lines":"19,20"}}],"payload":{"tag":"h3","lines":"10,11"}},{"content":"Chủ đề B","children":[{"content":"Internet","children":[{"content":"LAN và Internet","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"IoT, điện toán đám mây","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"Phần mềm độc hại","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"li","lines":"23,28"}}],"payload":{"tag":"h3","lines":"21,22"}},{"content":"Chủ đề C","children":[{"content":"Không có.","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"28,29"}},{"content":"Chủ đề D","children":[{"content":"Tuân thủ pháp lý trong môi trường số","children":[{"content":"Giao tiếp trên mạng","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Chia sẻ thông tin trên mạng","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"Tôn trọng bản quyền","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"Một số luật liên quan","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"li","lines":"34,40"}}],"payload":{"tag":"h3","lines":"32,33"}},{"content":"Chủ đề E","children":[{"content":"Đây là phần riêng của ICT.","children":[],"payload":{"tag":"li","lines":"42,44"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"Chủ đề F","children":[{"content":"Lập trình cơ bản","children":[{"content":"Biến, toán tử, nhập, xuất, cấu trúc điều khiển, kiểu dữ liệu, mảng","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Thư viện và hàm","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"Vận dụng kiến thức liên môn","children":[],"payload":{"tag":"li","lines":"50,52"}}],"payload":{"tag":"h4","lines":"46,47"}}],"payload":{"tag":"h3","lines":"44,45"}},{"content":"Chủ đề G","children":[{"content":"Nhóm nghề thiết kế và lập trình","children":[],"payload":{"tag":"li","lines":"54,56"}}],"payload":{"tag":"h3","lines":"52,53"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Phần riêng dành cho CS","children":[{"content":"Chủ đề A","children":[{"content":"A-1: Đây là phần chung.","children":[],"payload":{"tag":"h4","lines":"60,61"}},{"content":"A-2: Biểu diễn thông tin","children":[{"content":"Phép toán logic","children":[],"payload":{"tag":"li","lines":"64,65"}},{"content":"Biểu diễn dữ liệu trong máy tính","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"Bảng mã ASCII, Unicode","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"Hệ thập phân, hệ nhị phân","children":[],"payload":{"tag":"li","lines":"67,69"}}],"payload":{"tag":"h4","lines":"62,63"}}],"payload":{"tag":"h3","lines":"58,59"}}],"payload":{"tag":"h2","lines":"56,57"}},{"content":"Phần riêng dành cho ICT","children":[{"content":"Chủ đề E","children":[{"content":"Phần mềm thiết kế đồ họa","children":[{"content":"Inkscape","children":[],"payload":{"tag":"li","lines":"75,76"}}],"payload":{"tag":"h4","lines":"73,74"}}],"payload":{"tag":"h3","lines":"71,72"}}],"payload":{"tag":"h2","lines":"69,70"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":300})</script>
+</body>
+</html>

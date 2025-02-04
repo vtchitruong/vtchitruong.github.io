@@ -1,4 +1,4 @@
-# Duyệt đồ thị theo chiều rộng
+# Duyệt theo chiều rộng
 
 !!! abstract "Tóm lược nội dung"
 

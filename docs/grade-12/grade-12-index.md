@@ -4,7 +4,9 @@
 
 Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
 
-{!grade-12/grade-12-index.mm.md!}
+<div>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../grade-12-index.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Phần chung
 

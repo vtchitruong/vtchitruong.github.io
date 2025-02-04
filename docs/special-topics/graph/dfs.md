@@ -1,4 +1,4 @@
-# Duyệt đồ thị theo chiều sâu
+# Duyệt theo chiều sâu
 
 !!! abstract "Tóm lược nội dung"
 
@@ -33,7 +33,7 @@ DFS được áp dụng phổ biến cho các bài toán như:
 
 Bài học này chỉ đề cập cách sử dụng ngăn xếp.
 
-Các bước thực hiện sau:
+Các bước thực hiện như sau:
 
 Buớc 1: Đưa đỉnh `start` vào ngăn xếp.
 
