@@ -387,7 +387,7 @@ nav:
       - grade-12/topic-G/network-administration-vs-system-security.md
       - grade-12/topic-G/it-services.md
   - Chuyên đề:
-    - special-topics/special-topics-index.md
+    - Chương trình khung: special-topics/special-topics-index.md
     - Đệ quy:
       - special-topics/recursion/an-overview-of-recursion.md
       - special-topics/recursion/factorial-recursion.md

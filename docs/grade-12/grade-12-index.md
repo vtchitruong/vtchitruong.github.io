@@ -4,7 +4,7 @@
 
 Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
 
-{!grade-12/grade-12-overall-curriculum.mm.md!}
+{!grade-12/grade-12-index.mm.md!}
 
 ## Phần chung
 
