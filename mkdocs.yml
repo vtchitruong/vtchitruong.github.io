@@ -196,7 +196,7 @@ extra_css:
   - stylesheets/floating_action_button.css
 
 plugins:
-  - markmap:
+  - markmap
       # d3_version: ''
       # lib_version: ''
       # view_version: ''
