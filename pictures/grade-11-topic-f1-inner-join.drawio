@@ -1,0 +1,22 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
+  <diagram name="Page-1" id="XkcrSajp0hY-0S5JVl8f">
+    <mxGraphModel dx="494" dy="358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="690" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nyQ-7BFK8YCDPpvo6xAb-2" value="bảng 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;fontFamily=Aptos;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="nyQ-7BFK8YCDPpvo6xAb-3" value="bảng 2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;fontFamily=Aptos;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="nyQ-7BFK8YCDPpvo6xAb-4" value="INNER JOIN" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Aptos;fontSize=16;fontColor=#00994D;" vertex="1" parent="1">
+          <mxGeometry x="280" y="370" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nyQ-7BFK8YCDPpvo6xAb-6" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.pointed_oval;fillColor=#00994D;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="314.5" y="228" width="51" height="104" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
