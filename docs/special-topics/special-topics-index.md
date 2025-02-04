@@ -4,7 +4,9 @@
 
 Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy đủ chi tiết của các mục.
 
-{!special-topics/special-topics-index.mm.md!}
+<div>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../special-topics-index.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Lớp 10
 
