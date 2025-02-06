@@ -30,7 +30,7 @@ Kết hợp các lời giải của các bài toán con để có được lời
 
 Tuỳ thuộc vào bài toán mà có thể thu thập các lời giải riêng lẻ hoặc tổng hợp các lời giải theo một cách nào đó phù hợp.
 
-![Sơ đồ minh hoạ kỹ thuật chia để trị](./divide-and-conquer.svg){ loading=lazy width=400 }
+![Sơ đồ minh hoạ kỹ thuật chia để trị](./images/divide-and-conquer.svg){ loading=lazy width=400 }
 
 *Sơ đồ minh hoạ kỹ thuật chia để trị*
 

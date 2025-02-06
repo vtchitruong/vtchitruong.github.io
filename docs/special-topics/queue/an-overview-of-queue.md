@@ -8,8 +8,9 @@ Nói cách khác, trong hàng đợi, phần tử đầu tiên được thêm v�
 
 Hình dưới đây minh hoạ hàng đợi gồm 5 phần tử. Mỗi phần tử chứa dữ liệu là một chuỗi.
 
-![Minh hoạ hàng đợi](queue.svg){loading=lazy }  
-<figcaption>Minh hoạ hàng đợi</figcaption>  
+![Minh hoạ hàng đợi](./images/queue.svg){loading=lazy }  
+
+*Minh hoạ hàng đợi*
 
 ## Ứng dụng
 

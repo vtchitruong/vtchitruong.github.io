@@ -12,7 +12,7 @@ Mục tiêu của trò chơi là di chuyển toàn bộ đĩa đến cột đíc
 - Mỗi lần chỉ di chuyển đĩa nằm trên cùng của một cột và đặt đĩa này lên trên cùng của một cột khác.
 - Đĩa nhỏ phải luôn nằm trên đĩa lớn.
 
-![Minh họa trò chơi có 4 đĩa](../recursion/ha-noi-tower.svg){width="75%" loading=lazy}
+![Minh họa trò chơi có 4 đĩa](./images/ha-noi-tower.svg){width="75%" loading=lazy}
 
 *Minh họa trò chơi có 4 đĩa*
 

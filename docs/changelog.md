@@ -1,3 +1,7 @@
+### v23.08.18 <small>26-12-2024</small> { id="24.12.26" }
+
+- Thêm nút Home ở góc phải dưới của màn hình để quay về trang chủ.
+
 ### v23.08.17 <small>15-09-2024</small> { id="24.09.15" }
 
 - Thêm câu hỏi tự kiểm tra đọc hiểu sau mỗi mục bài học.

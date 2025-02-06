@@ -14,8 +14,9 @@ Vi dụ:
 
 Hình dưới đây minh hoạ ngăn xếp gồm 5 phần tử. Mỗi phần tử chứa dữ liệu là một chuỗi.
 
-![Minh hoạ ngăn xếp](stack.svg){loading=lazy }  
-<figcaption>Minh hoạ ngăn xếp</figcaption>  
+![Minh hoạ ngăn xếp](./images/stack.svg){loading=lazy }  
+
+*Minh hoạ ngăn xếp*
 
 ## Ứng dụng
 

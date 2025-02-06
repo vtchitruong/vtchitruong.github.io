@@ -201,7 +201,7 @@ def process(op_list): # (1)!
 
 1.  Tham số `op_list` dùng để nhận vào danh sách các hoạt động cần xử lý, cụ thể ở đây là biến `operations_list`.
 
-### In dữ liệu đầu ra
+### In kết quả
 
 Trong chương trình chính, ta chỉ việc gọi các hàm đã viết ra thực hiện và xem kết quả.
 

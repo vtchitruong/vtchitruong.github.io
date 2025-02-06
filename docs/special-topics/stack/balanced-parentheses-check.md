@@ -194,7 +194,7 @@ Ngược lại, nếu ngăn xếp vẫn còn dấu ngoặc nào đó, tức "*n�
     return is_empty(stack)
 ```
 
-### In dữ liệu đầu ra
+### In kết quả
 
 Trong chương trình chính, ta gọi hàm `is_balanced_parentheses()` để kiểm tra tính hợp lệ của từng chuỗi.
 

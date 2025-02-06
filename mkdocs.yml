@@ -403,9 +403,11 @@ nav:
       - special-topics/back-tracking/an-overview-of-back-tracking.md
       - special-topics/back-tracking/binary-string-with-back-tracking.md
     - Hàng đợi:
+      - special-topics/queue/topic-index.md
       - special-topics/queue/an-overview-of-queue.md
       - special-topics/queue/customer-service-simulation.md
     - Ngăn xếp:
+      - special-topics/stack/topic-index.md
       - special-topics/stack/an-overview-of-stack.md
       - special-topics/stack/balanced-parentheses-check.md
     - Đồ thị:
