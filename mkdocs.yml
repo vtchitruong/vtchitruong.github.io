@@ -395,16 +395,17 @@ nav:
     - Đệ quy:
       - special-topics/recursion/topic-index.md
       - special-topics/recursion/an-overview-of-recursion.md
-      - special-topics/recursion/factorial-recursion.md
-      - special-topics/recursion/fibonacci-with-recursion.md
+      - special-topics/recursion/factorial.md
+      - special-topics/recursion/fibonacci.md
       - special-topics/recursion/hanoi-tower.md
     - Chia để trị:
       - special-topics/divide-and-conquer/topic-index.md
       - special-topics/divide-and-conquer/an-overview-of-divide-and-conquer.md
+      - special-topics/divide-and-conquer/merge-sort.md
     - Quay lui:
       - special-topics/back-tracking/topic-index.md
       - special-topics/back-tracking/an-overview-of-back-tracking.md
-      - special-topics/back-tracking/binary-string-with-back-tracking.md
+      - special-topics/back-tracking/binary-string.md
     - Hàng đợi:
       - special-topics/queue/topic-index.md
       - special-topics/queue/an-overview-of-queue.md
