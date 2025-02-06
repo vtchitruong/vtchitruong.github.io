@@ -114,7 +114,7 @@ Thực hành thiết kế thuật toán theo kỹ thuật đệ quy
 
 Nội dung:
 
-- Khái niệm đệ quy.
+- Khái niệm [đệ quy](./recursion/an-overview-of-recursion.md){:target="_blank"}.
 - Thực hành thiết kế thuật toán theo kỹ thuật đệ quy.
 
 Yêu cầu cần đạt:
@@ -122,9 +122,9 @@ Yêu cầu cần đạt:
 - Trình bày được tính đệ quy trong một vài định nghĩa sự vật, sự việc.
 - Xác định được phần cơ sở và phần đệ quy trong mô tả đệ quy.
 - Ứng dụng được kỹ thuật đệ quy trong thiết kế một vài thuật toán như:
-    - Tính an (hoặc n!).
-    - Tìm phần tử thứ n của dãy Fibonacci.
-    - Bài toán Tháp Hà Nội.
+    - Tính $a^n$ (hoặc [$n!$](./recursion/factorial.md){:target="_blank"}).
+    - Tìm phần tử thứ n của [dãy Fibonacci](./recursion/fibonacci.md){:target="_blank"}.
+    - [Bài toán Tháp Hà Nội](./recursion/hanoi-tower.md){:target="_blank"}.
 - Viết được chương trình sử dụng kỹ thuật đệ quy cho một vài bài toán đơn giản.
 - Nhận biết được tính ưu việt của kỹ thuật đệ quy trong định nghĩa sự vật, mô tả và thiết kế thuật toán.
 
@@ -134,7 +134,7 @@ Thực hành thiết kế thuật toán theo kỹ thuật chia để trị
 
 Nội dung:
 
-- Thực hành thiết kế thuật toán theo kỹ thuật chia để trị.
+- Thực hành thiết kế thuật toán theo kỹ thuật [chia để trị](./divide-and-conquer/an-overview-of-divide-and-conquer.md){:target="_blank"}.
 
 Yêu cầu cần đạt:
 
@@ -149,7 +149,7 @@ Thực hành thiết kế thuật toán theo kỹ thuật duyệt
 Nội dung:
 
 - Kỹ thuật duyệt.
-- Kỹ thuật quay lui.
+- [Kỹ thuật quay lui](./back-tracking/an-overview-of-back-tracking.md){:target="_blank"}.
 
 Yêu cầu cần đạt:
 
@@ -215,9 +215,9 @@ Tìm hiểu một vài kiểu dữ liệu tuyến tính
 
 Nội dung:
 
-- Kiểu dữ liệu hàng đợi và ngăn xếp.
+- Kiểu dữ liệu [hàng đợi](./queue/an-overview-of-queue.md){:target="_blank"} và [ngăn xếp](./stack/an-overview-of-stack.md){:target="_blank"}.
 - Biểu diễn hàng đợi, ngăn xếp.
-- Ứng dụng hàng đợi và ngăn xếp.
+- Ứng dụng [hàng đợi](./queue/customer-service-simulation.md){:target="_blank"} và [ngăn xếp](./stack/balanced-parentheses-check.md){:target="_blank"}.
 
 Yêu cầu cần đạt:
 
