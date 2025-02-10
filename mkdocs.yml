@@ -424,8 +424,10 @@ nav:
     - Cây:
       - special-topics/tree/an-overview-of-tree.md
     - Làm việc với dữ liệu:
+      - special-topics/data-handling/topic-index.md
       - special-topics/data-handling/random-data.md
       - special-topics/data-handling/coin-flip-simulation.md
+      - special-topics/data-handling/lottery-simulation.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:

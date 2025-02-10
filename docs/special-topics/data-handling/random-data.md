@@ -91,7 +91,7 @@ Kết quả:
 
 ## Hàm randbetween()
 
-Hàm `RANDBETWEEN()` dùng để tạo một số ngẫu nhiên trong đoạn [bottom, top] (1).
+Hàm `RANDBETWEEN()` dùng để tạo một số ngẫu nhiên trong đoạn `[bottom, top]` (1).
 { .annotate }
 
 1.  Nghĩa là số ngẫu nhiên tạo ra có thể bằng bottom hoặc bằng top.
