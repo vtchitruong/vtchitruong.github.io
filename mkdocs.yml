@@ -423,6 +423,9 @@ nav:
       - special-topics/graph/dfs.md
     - Cây:
       - special-topics/tree/an-overview-of-tree.md
+    - Làm việc với dữ liệu:
+      - special-topics/data-handling/random-data.md
+      - special-topics/data-handling/coin-flip-simulation.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:
