@@ -443,12 +443,14 @@ nav:
       - Sắp xếp: advanced/basic-techniques/sort.md
       - Hợp và trộn: advanced/basic-techniques/union-merge.md
     - Đồ thị:
+      - Danh sách bài học: advanced/graph/topic-index.md
       - advanced/graph/dfs.md
       - advanced/graph/out-of-the-forest.md
       - advanced/graph/bfs.md
       - advanced/graph/robot-in-the-maze.md
       - Dijkstra: advanced/graph/dijkstra.md
       - Bellman-Ford: advanced/graph/bellman-ford.md
+      - advanced/graph/floyd-warshall.md
     - Quy hoạch động:
       - advanced/dynamic-programming/rewardstudent.md
       - advanced/dynamic-programming/lis.md
