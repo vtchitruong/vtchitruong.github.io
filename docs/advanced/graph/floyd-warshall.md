@@ -70,6 +70,7 @@ Lưu dòng đầu tiên của input vào bốn biến `number_of_vertices`, `num
 Đọc các dòng còn lại của input và biểu diễn các cạnh của đồ thị bằng ma trận kề `graph`, với `graph[u][v]` là trọng số của cạnh u -> v.
 
 === "C++"
+
     ```c++ linenums="25"
         cin >> number_of_vertices >> number_of_edges >> start >> finish;
 
@@ -88,6 +89,7 @@ Lưu dòng đầu tiên của input vào bốn biến `number_of_vertices`, `num
         }
     ```
 === "Python"
+
     ```py linenums="19"
             number_of_vertices, number_of_edges, start, finish = map(int, f.readline().split())
 
@@ -108,6 +110,7 @@ Lưu dòng đầu tiên của input vào bốn biến `number_of_vertices`, `num
 Khởi tạo mảng hai chiều `trace` với `trace[u][v]` lưu đỉnh trung gian cuối cùng trên đường đi ngắn nhất từ u đến v.
 
 === "C++"
+
     ```c++ linenums="45"
         // Khởi tạo mảng trace
         trace.resize(number_of_vertices + 1, vector<int>(number_of_vertices + 1, 0));
@@ -122,6 +125,7 @@ Khởi tạo mảng hai chiều `trace` với `trace[u][v]` lưu đỉnh trung g
         }
     ```
 === "Python"
+
     ```py linenums="34"
         # Khởi tạo mảng trace
         trace = [[-1 for _ in range(number_of_vertices + 1)] for _ in range(number_of_vertices + 1)]
@@ -142,6 +146,7 @@ Nếu có thể đi từ đỉnh `u` đến đỉnh `v` nhanh hơn bằng cách 
 - Lưu vết đường đi từ `u` đến `v` thông qua `k` vào mảng `trace`.
 
 === "C++"
+
     ```c++ linenums="57"
         // Duyệt từng đỉnh trung gian k
         for (int k = 1; k < number_of_vertices + 1; ++k)
@@ -165,6 +170,7 @@ Nếu có thể đi từ đỉnh `u` đến đỉnh `v` nhanh hơn bằng cách 
         }
     ```
 === "Python"
+
     ```py linenums="42"
         # Duyệt từng đỉnh trung gian k
         for k in range(1, number_of_vertices + 1):
@@ -185,6 +191,7 @@ Nếu có thể đi từ đỉnh `u` đến đỉnh `v` nhanh hơn bằng cách 
 Truy vết từ đỉnh `start` đến đỉnh `finish` và lưu vào ngăn xếp `path`.
 
 === "C++"
+
     ```c++ linenums="92"
         stack<int> path;
 
@@ -205,6 +212,7 @@ Truy vết từ đỉnh `start` đến đỉnh `finish` và lưu vào ngăn xế
         path.push(start);
     ```
 === "Python"
+
     ```py linenums="66"
         path = []
 
@@ -228,6 +236,7 @@ Truy vết từ đỉnh `start` đến đỉnh `finish` và lưu vào ngăn xế
 Dựa vào ngăn xếp `path`, ta in ra đường đi bằng cách lấy từng phần tử ra khỏi ngăn xếp.
 
 === "C++"
+
     ```c++ linenums="110"
         // In ra khoảng cách ngắn nhất từ đỉnh start đến đỉnh finish
         cout << graph[start][finish] << '\n';
@@ -241,6 +250,7 @@ Dựa vào ngăn xếp `path`, ta in ra đường đi bằng cách lấy từng 
         }
     ```
 === "Python"
+
     ```py linenums="82"
         with open(output_file, 'w') as f:
             # In ra khoảng cách ngắn nhất từ đỉnh start đến đỉnh finish
