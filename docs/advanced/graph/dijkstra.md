@@ -48,8 +48,6 @@ Tìm đường đi ngắn nhất từ đỉnh *start* đến đỉnh *finish* b�
 1 2 4 3 6 5
 ```
 
-
-
 ### Giải thích
 
 Input:
@@ -66,7 +64,7 @@ Phác thảo đồ thị theo input như sau:
 
 ![Đồ thị theo input](../graph/images/graph-problem-demo.svg){loading=lazy}
 
-## Minh hoạ thực thi thuật toán
+## Minh hoạ thuật toán
 
 Dựa theo ý tưởng đã nêu ở đầu bài, ta tìm đỉnh *v* tiếp theo sao cho khoảng cách từ đỉnh xuất phát đến đỉnh *v* là ngắn nhất.
 
@@ -101,6 +99,7 @@ Lưu dòng đầu tiên của input vào bốn biến `number_of_vertices`, `num
 Đọc các dòng còn lại của input và biểu diễn các cạnh của đồ thị bằng ma trận kề `graph`, với `graph[u][v]` là trọng số của cạnh u -> v.
 
 === "C++"
+
     ```c++ linenums="32"
         cin >> number_of_vertices >> number_of_edges >> start >> finish;
 
@@ -114,9 +113,8 @@ Lưu dòng đầu tiên của input vào bốn biến `number_of_vertices`, `num
         }
     ```
 === "Python"
-    ```py linenums="20"
-        global number_of_vertices, number_of_edges, start, finish, graph
 
+    ```py linenums="22"
         with open(input_file, 'r') as f:        
             number_of_vertices, number_of_edges, start, finish = list(map(int, f.readline().split()))
 
@@ -378,37 +376,24 @@ Dựa vào ngăn xếp `path`, ta in ra đường đi bằng cách lấy từng 
 
     ```py linenums="111"
         with open(output_file, 'w') as f:
-                # In ra khoảng cách ngắn nhất từ đỉnh start đến đỉnh finish
-                f.write(f'{D[finish]}\n')
+            # In ra khoảng cách ngắn nhất từ đỉnh start đến đỉnh finish
+            f.write(f'{D[finish]}\n')
 
-                # In ra đường đi ngắn nhất từ đỉnh start đến đỉnh finish
-                output_path = ' '.join([str(v) for v in reversed(path)])
-                f.write(output_path)
+            # In ra đường đi ngắn nhất từ đỉnh start đến đỉnh finish
+            output_path = ' '.join([str(v) for v in reversed(path)])
+            f.write(output_path)
     ```
 
 ## Mã nguồn
 
 Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/Graph/tree/main/Dijkstra){:target="_blank"}.
 
-## Một vài lưu ý
+## Một vài lưu ý về độ phức tạp
 
-1. Về đồ thị:
+Gọi $V$ là số đỉnh, $E$ là số cạnh.
 
-    1. Thuật toán Dijkstra chỉ áp dụng được cho đồ thị có **trọng số không âm**. Nếu gặp phải trọng số âm, ta nên sử dụng thuật toán Bellman-Ford hoặc Johnson.
+Nếu thực thi Dijkstra trên ma trận kề thì độ phức tạp thời gian là $O(V^2)$.
 
-    2. Thuật toán Dijkstra yêu cầu đồ thị phải liên thông. Nếu có đỉnh cô lập, thì phải xử lý riêng.
+Nếu thực thi trên danh sách kề với hàng đợi ưu tiên (`heapq` hoặc `priority_queue`), độ phức tạp là $O((V+E)logV)$, tốt hơn $O(V^2)$ khi đồ thị thưa.
 
-    3. Thuật toán Dijkstra không xử lý các đường đi khác nhau có **trọng số bằng nhau**. Do đó, nếu muốn tìm tất cả đường đi thỏa yêu cầu, ta nên điều chỉnh thuật toán hoặc thử thuật toán khác.
-
-    4. Thuật toán Dijkstra tìm đường đi ngắn nhất **đến tất cả các đỉnh** trong đồ thị. Cho nên, nếu muốn cải tiến, ta cho thuật toán dừng khi đã đến được đỉnh đích. Bài toán ví dụ trên đã thực hiện điều này.
-
-2. Về độ phức tạp:
-
-    Gọi $V$ là số đỉnh, $E$ là số cạnh.
-
-    Nếu thực thi Dijkstra trên ma trận kề, thì độ phức tạp thời gian là $O(V^2)$.
-
-    Nếu thực thi trên danh sách kề, thì độ phức tạp thời gian là $O(V^2 + E)$.
-
-    Nếu đồ thị quá lớn, nên cân nhắc sử dụng những cấu trúc dữ liệu tốt hơn như Fibonacci heap hoặc `priority_queue`.
-
+Nếu đồ thị quá lớn thì có thể cân nhắc sử dụng những cấu trúc dữ liệu tốt hơn như Fibonacci heap, giúp giảm thao tác cập nhất xuống $O(1)$.
