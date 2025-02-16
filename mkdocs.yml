@@ -448,8 +448,8 @@ nav:
       - advanced/graph/out-of-the-forest.md
       - advanced/graph/bfs.md
       - advanced/graph/robot-in-the-maze.md
-      - Dijkstra: advanced/graph/dijkstra.md
-      - Bellman-Ford: advanced/graph/bellman-ford.md
+      - advanced/graph/dijkstra.md
+      - advanced/graph/bellman-ford.md
       - advanced/graph/floyd-warshall.md
     - Quy hoạch động:
       - advanced/dynamic-programming/rewardstudent.md
@@ -470,6 +470,8 @@ nav:
     - HSG 9 tỉnh khác:
       - solve-to-surpass/hsg9-tinh/2023-hatinh-ts10.md
     - HSG 12 tỉnh khác:
+      - Mục lục: solve-to-surpass/hsg12-tinh/topic-index.md
+      - solve-to-surpass/hsg12-tinh/2024-2025-lamdong.md
       - solve-to-surpass/hsg12-tinh/2024-2025-nghean.md
       - solve-to-surpass/hsg12-tinh/2023-2024-vinhphuc.md
   - MOS:
