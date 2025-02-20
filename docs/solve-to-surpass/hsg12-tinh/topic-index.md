@@ -6,7 +6,7 @@ icon: material/table-of-contents
 
 [2024-2025 Lâm Đồng](./2024-2025-lamdong.md){:target="_blank"}
 
-[2024-2025 Lâm Đồng](./2024-2025-tuyenquang.md){:target="_blank"}
+[2024-2025 Tuyên Quang](./2024-2025-tuyenquang.md){:target="_blank"}
 
 [2024-2025 Nghệ An](./2024-2025-nghean.md){:target="_blank"}
 
