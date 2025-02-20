@@ -11,16 +11,79 @@
 Code đầy đủ được đặt tại [GitHub](){:target="_blank"}.
 
 
-## Câu 2:
+## Câu 2: TƯƠNG ĐỒNG
 
 ### Đề bài
 
+Gia đình Thỏ con vừa xây xong một căn nhà khang trang. Công việc tiếp theo là hoàn thiện nội thất. Thỏ con được bố mẹ giao nhiệm vụ tìm mua hai bức tranh để trang trí phòng khách.
+
+Tại cửa hàng, có tất cả $n$ bức tranh đánh số từ 1 đến $n$. Bức tranh thứ $i$ có mã màu là $a_i$.
+
+Thỏ con muốn mua hai bức tranh sao cho màu sắc của chúng tương đồng nhau, tức hiệu số mã màu của hai bức tranh đó phải không lớn hơn $X$.
+
+**Yêu cầu:** hãy cho biết Thỏ con có bao nhiêu cách chọn ra hai bức tranh để mua mà màu sắc tương đồng nhau.
+
+**Dữ liệu:** TUONGDONG.INP
+
+- Dòng đầu tiên chứa hai số nguyên dương $n, X (n \le 10^7; X \le 10^6)$.
+- Dòng thứ hai chứa $n$ số nguyên dương $a_1, a_2, ..., a_n (a_i \le 10^6; 1 \le i \le n)$.
+
+**Kết quả:** TUONGDONG.OUT
+
+Một số nguyên duy nhất là số cách chọn ra hai bức tranh để mua thoả mãn yêu cầu.
+
+**Ví dụ:**
+
+| TUONGDONG.INP | TUONGDONG.OUT |
+| --- | --- |
+| 4 3 <br> 5 6 9 2 | 3 |
+
+**Giải thích:**
+
+Có 3 cách chọn sau:
+
+- Chọn tranh 1 và 2
+- Chọn tranh 1 và 4
+- Chọn tranh 2 và 3
+
 ### Bài giải đề xuất
+
+Ý tưởng chính:
+
+Sắp xếp mảng `pictures` chứa các mã màu của dữ liệu đầu vào theo thứ tự tăng dần.
+
+Giả sử ta đang chọn bức tranh `i` có mã màu là `pictures[i]`.
+
+Như vậy, số cách chọn hai bức tranh (mà có tranh bức `i`) chính là số cách chọn bức tranh thứ hai `j` sao cho `pictures[j] <= pictures[i] + X`.
+
+Để xác định vị trí `j`, ta dùng hàm `upper_bound()` để tìm vị trí đầu tiên lớn hơn `pictures[i] + X`.
+
+=== "C++"
+
+    ```c++ linenums="39"
+        // Sắp xếp mảng pictures theo thứ tự tăng dần
+        sort(pictures.begin() + 1, pictures.end());
+
+        // Giới hạn màu sắc tương đồng
+        int limit;
+
+        // Duyệt từng tranh từ 1 đến áp cuối
+        for (int i = 1; i < n; ++i)
+        {
+            // Tính giới hạn màu sắc
+            limit = pictures[i] + X;
+
+            // Tìm vị trí đầu tiên mà màu sắc vượt quá giới hạn
+            vector<int>::iterator it = upper_bound(pictures.begin() + i + 1, pictures.end(), limit);
+
+            // Số cách chọn hai bức tranh chính là số lượng bức tranh thứ hai có thể chọn 
+            number_of_ways += distance(pictures.begin() + i + 1, it);
+        }
+    ```
 
 ### Mã nguồn
 
-Code đầy đủ được đặt tại [GitHub](){:target="_blank"}.
-
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg12-tinh/2024-2025-tuyenquang/tuongdong){:target="_blank"}.
 
 ## Câu 3:
 
@@ -32,7 +95,7 @@ Code đầy đủ được đặt tại [GitHub](){:target="_blank"}.
 
 Code đầy đủ được đặt tại [GitHub](){:target="_blank"}.
 
-## Câu 4:
+## Câu 4: ĐƯỜNG ĐI NGUYÊN TỐ
 
 ### Đề bài
 
