@@ -54,7 +54,7 @@ Sắp xếp mảng `pictures` chứa các mã màu của dữ liệu đầu vào
 
 Giả sử ta đang chọn bức tranh `i` có mã màu là `pictures[i]`.
 
-Như vậy, số cách chọn hai bức tranh (mà có tranh bức `i`) chính là số cách chọn bức tranh thứ hai `j` sao cho `pictures[j] <= pictures[i] + X`.
+Như vậy, số cách chọn hai bức tranh (mà có tranh bức `i`) chính là số cách chọn bức tranh thứ hai `j` sao cho `pictures[j] \le pictures[i] + X`.
 
 Để xác định vị trí `j`, ta dùng hàm `upper_bound()` để tìm vị trí đầu tiên lớn hơn `pictures[i] + X`.
 
@@ -85,15 +85,121 @@ Như vậy, số cách chọn hai bức tranh (mà có tranh bức `i`) chính l
 
 Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg12-tinh/2024-2025-tuyenquang/tuongdong){:target="_blank"}.
 
-## Câu 3:
+## Câu 3: TRÒ CHƠI
 
 ### Đề bài
 
+Nhân dịp đầu năm mới, Đoàn Thanh niên tổ chức chương trình khai xuân cho học sinh chơi các trò chơi. Có tất cả $n$ học sinh $(1 \le n \le 10^9)$ đăng ký tham gia. Các bạn học sinh này xếp thành hàng ngang và đánh số từ 1 đến $n$.
+
+Có tất cả $k (1 \le k \le 10^6)$ trò chơi. Trò chơi thứ $i$ gồm các học sinh có số thứ tự từ $l_i$ đến $r_i$ tham gia. Sau khi tham gia xong trò chơi đó, học sinh quay về vị trí cũ trong hàng.
+
+**Yêu cầu:** kết thúc chương trình, ban tổ chức muốn biết $q (1 \le q \le 10^6)$ học sinh có số thứ tự lần lượt là $b_1, b_2, ..., b_q$, mỗi bạn đã tham gia bao nhiêu trò chơi.
+
+**Dữ liệu:** TROCHOI.INP
+
+- Dòng đầu tiên chứa ba số nguyên dương $n, k, q$.
+- Dòng thứ i trong k dòng tiếp theo chứa hai số nguyên dương $l_i, r_i (1 \le li \le ri \le n)$.
+- Dòng cuối cùng chứa $q$ số nguyên dương $b_1, b_2, ..., bq (1 \le bi \le n; 1 \le i \le q)$.
+
+**Kết quả:** TROCHOI.OUT
+
+Dòng thứ $i (1 \le i \le q)$ chứa một số nguyên là số lượng trò chơi mà học sinh $b_i$ đã tham gia.
+
+**Ví dụ:**
+
+| TROCHOI.INP | TROCHOI.OUT |
+| --- | --- |
+| 10 2 3 <br> 3 9 <br> 8 9 <br> 6 8 2 | 1 <br> 2 <br> 0 |
+
 ### Bài giải đề xuất
+
+Ý tưởng chính: vì số lượng học sinh lên đến $10^9$, ta nên sử dụng mảng chênh lệch và mảng cộng dồn để giảm thời gian tính toán.
+
+**Bước 0:** Khai báo biến
+
+Khai báo mảng chênh lệch `diff` và mảng tần số kết quả `join`. Để tiết kiệm bộ nhớ, ta sử dụng kiểu `map`. Đặc điểm của `map` trong C++ là tự động sắp xếp các phần tử theo thứ tự tăng dần của khóa.
+
+=== "C++"
+
+    ```c++ linenums="15"
+    // Mảng chênh lệch (difference array) (dùng kiểu map để tránh trường hợp lớn)
+    map<int, int> diff;
+
+    // Mảng lưu tần số xuất hiện (dùng kiểu map để tránh trường hợp lớn)
+    map<int, int> join;
+    ```
+
+**Bước 1:** Đọc và khởi tạo
+
+Vừa đọc các dữ liệu đầu vào vừa cập nhật mảng chênh lệch `diff`.
+
+=== "C++"
+
+    ```c++ linenums="29"
+        cin >> n >> k >> q;
+
+        int l, r;
+        for (int i = 1; i < k + 1; ++i)
+        {
+            cin >> l >> r;
+
+            // Cộng 1 vào học sinh l
+            diff[l]++;
+
+            // Trừ 1 khỏi học sinh r + 1
+            diff[r + 1]--;
+        }
+    ```
+
+**Bước 2:** Xử lý
+
+Tính mảng cộng dồn `join` từ mảng chênh lệch `diff`.
+
+=== "C++"
+
+    ```c++ linenums="56"
+        // Khởi tạo giá trị cộng dồn hiện tại
+        int current_count = 0;
+
+        // Cập nhật giá trị cộng dồn
+        int student_id, difference;   
+        for (auto &d : diff)
+        {
+            student_id = d.first;
+            difference = d.second;
+
+            current_count += difference;
+            join[student_id] = current_count;
+        }
+    ```
+
+**Bước 3:** In kết quả
+
+Để tránh trường hợp không có học sinh cần truy vấn trong mảng `join`, ta dùng `upper_bound` để lấy giá trị gần nhất.
+
+=== "C++"
+
+    ```c++ linenums="76"
+    for (int i = 1; i < q + 1; ++i)
+    {
+        // Tìm học sinh đầu tiên có mã số lớn hơn students[i]
+        map<int, int>::iterator it = join.upper_bound(students[i]);
+
+        // Nếu không tìm thấy học sinh students[i] thì in ra 0
+        if (it == join.begin())
+            cout << 0;
+        else
+            // Ngược lại, tìm thấy, thì in ra số trò chơi mà học sinh students[i] tham gia
+            cout << prev(it)->second; 
+
+        // Xuống dòng nếu không phải học sinh cuối cùng
+        if (i != q) cout << '\n';
+    }
+    ```
 
 ### Mã nguồn
 
-Code đầy đủ được đặt tại [GitHub](){:target="_blank"}.
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg12-tinh/2024-2025-tuyenquang/trochoi){:target="_blank"}.
 
 ## Câu 4: ĐƯỜNG ĐI NGUYÊN TỐ
 
