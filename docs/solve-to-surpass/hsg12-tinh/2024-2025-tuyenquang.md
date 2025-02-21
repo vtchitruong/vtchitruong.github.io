@@ -1,15 +1,62 @@
 # 2024-2025 Tuyên Quang
 
-## Câu 1:
+## Câu 1: TÍNH TỔNG
 
 ### Đề bài
 
+Cho dãy A gồm n phần tử $a_1, a_2, ..., a_n$. Hãy lập trình tính tổng các phần tử có chữ số hàng đơn vị lớn hơn chữ số hàng chục trong dãy.
+
+**Dữ liệu:** TINHTONG.INP
+
+- Dòng đầu tiên chứa số nguyên dương n $(1 \le n \le 10^6)$.
+- Dòng thứ hai chứa n số nguyên $a_1, a_2, ..., a_n$ $(10 \le a_i \le 10^6; 1 \le i \le n)$.
+
+**Kết quả:** TINHTONG.OUT
+
+**Ví dụ:**
+
+| TINHTONG.INP | TINHTONG.OUT |
+| --- | --- |
+| 5 <br> 15 141 28 66 79 | 122 |
+
+**Ràng buộc:**
+
+- Có 40% số test tương ứng với 40% số điểm của bài có $n \le 10^3; a_i \le 10^3$.
+- Có 30% số test tương ứng với 30% số điểm của bài có $n \le 10^3; a_i \le 10^6$.
+- Có 30% số test tương ứng với 30% số điểm của bài có $10^3 < n \le 10^6$.
+
 ### Bài giải đề xuất
+
+=== "C++"
+
+    ```c++ linenums="22"
+        cin >> n;
+        
+        int a;
+
+        // Đọc từng số của input
+        for (int i = 0; i < n; ++i)
+        {
+            cin >> a;
+
+            // Kiểm tra thoả điều kiện và cộng dồn
+            if (a % 10 > a / 10 % 10)
+                result += a;
+        }
+    ```
+=== "Python"
+
+    ```py linenums="27"
+        # Duyệt từng phần tử trong mảng A
+        for a in A:
+            # Kiểm tra thoả điều kiện và cộng dồn
+            if a % 10 > a // 10 % 10:
+                result += a
+    ```
 
 ### Mã nguồn
 
-Code đầy đủ được đặt tại [GitHub](){:target="_blank"}.
-
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/hsg/tree/main/hsg12-tinh/2024-2025-tuyenquang/tinhtong){:target="_blank"}.
 
 ## Câu 2: TƯƠNG ĐỒNG
 
@@ -46,6 +93,12 @@ Có 3 cách chọn sau:
 - Chọn tranh 1 và 4
 - Chọn tranh 2 và 3
 
+**Ràng buộc:**
+
+- Có 40% số test tương ứng với 40% số điểm của bài có $n \le 10^3$.
+- Có 30% số test tương ứng với 30% số điểm của bài có $10^3 < n \le 10^5$.
+- Có 30% số test tương ứng với 30% số điểm của bài có $10^5 < n \le 10^7$.
+
 ### Bài giải đề xuất
 
 Ý tưởng chính:
@@ -54,9 +107,11 @@ Sắp xếp mảng `pictures` chứa các mã màu của dữ liệu đầu vào
 
 Giả sử ta đang chọn bức tranh `i` có mã màu là `pictures[i]`.
 
-Như vậy, số cách chọn hai bức tranh (mà có tranh bức `i`) chính là số cách chọn bức tranh thứ hai `j` sao cho `pictures[j] \le pictures[i] + X`.
+Như vậy, số cách chọn hai bức tranh (mà trong đó đã chọn bức tranh `i`) chính là số cách chọn bức tranh thứ hai `j` sao cho `pictures[j] \le pictures[i] + X`.
 
-Để xác định vị trí `j`, ta dùng hàm `upper_bound()` để tìm vị trí đầu tiên lớn hơn `pictures[i] + X`.
+Để xác định vị trí `j`, trong C++, ta dùng hàm `upper_bound()` để tìm vị trí đầu tiên lớn hơn `pictures[i] + X`.
+
+Mặc định trong Python không có hàm `upper_bound()`, cho nên ta dùng vòng lặp while để xác định vị trí `j`.
 
 === "C++"
 
@@ -79,6 +134,25 @@ Như vậy, số cách chọn hai bức tranh (mà có tranh bức `i`) chính l
             // Số cách chọn hai bức tranh chính là số lượng bức tranh thứ hai có thể chọn 
             number_of_ways += distance(pictures.begin() + i + 1, it);
         }
+    ```
+=== "Python"
+
+    ```py linenums="25"
+        # Sắp xếp mảng pictures theo thứ tự tăng dần
+        pictures.sort()
+
+        # Duyệt từng tranh từ 0 đến áp cuối
+        for i in range(n - 1):
+            # Tính giới hạn màu sắc
+            limit = pictures[i] + X
+
+            # Tìm vị trí đầu tiên mà màu sắc vượt quá giới hạn
+            j = i + 1
+            while j < n and pictures[j] <= limit:
+                j += 1
+
+            # Số cách chọn hai bức tranh chính là số lượng bức tranh thứ hai có thể chọn 
+            number_of_ways += (j - (i + 1))
     ```
 
 ### Mã nguồn
@@ -111,13 +185,23 @@ Dòng thứ $i (1 \le i \le q)$ chứa một số nguyên là số lượng trò
 | --- | --- |
 | 10 2 3 <br> 3 9 <br> 8 9 <br> 6 8 2 | 1 <br> 2 <br> 0 |
 
+**Ràng buộc:**
+
+- Có 40% số test tương ứng với 40% số điểm của bài có $1 \le n, k, q \le 10^3$.
+- Có 30% số test tương ứng với 30% số điểm của bài có $n \le 10^6$.
+- Có 30% số test tương ứng với 30% số điểm của bài có $10^6 < n \le 10^9$.
+
 ### Bài giải đề xuất
 
 Ý tưởng chính: vì số lượng học sinh lên đến $10^9$, ta nên sử dụng mảng chênh lệch và mảng cộng dồn để giảm thời gian tính toán.
 
 **Bước 0:** Khai báo biến
 
-Khai báo mảng chênh lệch `diff` và mảng tần số kết quả `join`. Để tiết kiệm bộ nhớ, ta sử dụng kiểu `map`. Đặc điểm của `map` trong C++ là tự động sắp xếp các phần tử theo thứ tự tăng dần của khóa.
+Khai báo mảng chênh lệch `diff` và mảng tần số kết quả `join`.
+
+Để tiết kiệm bộ nhớ, trong C++, ta sử dụng kiểu `map`. Đặc điểm của `map` là tự động sắp xếp các phần tử theo thứ tự tăng dần của khóa.
+
+Trong Python, ta sử dụng kiểu `dict`. Đặc điểm của `dict` là không sắp xếp các phần tử theo thứ tự tăng dần của khóa. Cho nên, ta cần gọi hàm để sắp xếp lại.
 
 === "C++"
 
@@ -127,6 +211,15 @@ Khai báo mảng chênh lệch `diff` và mảng tần số kết quả `join`. 
 
     // Mảng lưu tần số xuất hiện (dùng kiểu map để tránh trường hợp lớn)
     map<int, int> join;
+    ```
+=== "Python"
+
+    ```py linenums="12"
+    # Mảng chênh lệch (difference array) (dùng kiểu dict để tránh trường hợp lớn)
+    diff = {}
+
+    # Mảng lưu tần số xuất hiện (dùng kiểu dict để tránh trường hợp lớn)
+    join = {}
     ```
 
 **Bước 1:** Đọc và khởi tạo
@@ -150,36 +243,74 @@ Vừa đọc các dữ liệu đầu vào vừa cập nhật mảng chênh lệc
             diff[r + 1]--;
         }
     ```
+=== "Python"
+
+    ```py linenums="23"
+            n, k, q = map(int, file.readline().split())
+
+            for i in range(1, k + 1):
+                l, r = map(int, file.readline().split())
+
+                # Cộng 1 vào học sinh l
+                diff[l] = diff.get(l, 0) + 1
+
+                # Trừ 1 vào học sinh r + 1
+                diff[r + 1] = diff.get(r + 1, 0) - 1
+
+            # Đọc thông tin các học sinh cần kiểm tra
+            students = list(map(int, file.readline().split()))
+    ```
 
 **Bước 2:** Xử lý
 
-Tính mảng cộng dồn `join` từ mảng chênh lệch `diff`.
+Tính mảng cộng dồn `join` (`join[i]` là số lần tham gia của học sinh `i`) từ mảng chênh lệch `diff`.
 
 === "C++"
 
     ```c++ linenums="56"
         // Khởi tạo giá trị cộng dồn hiện tại
-        int current_count = 0;
+        int current = 0;
 
-        // Cập nhật giá trị cộng dồn
+        // Duyệt từng phần tử của mảng chênh lệch
         int student_id, difference;   
         for (auto &d : diff)
         {
+            // Gán biến nhằm làm rõ nghĩa hơn
             student_id = d.first;
             difference = d.second;
 
-            current_count += difference;
-            join[student_id] = current_count;
+            // Thực hiện cộng dồn
+            current += difference;
+            join[student_id] = current;
         }
     ```
+=== "Python"
+
+    ```py linenums="42"
+        # Khởi tạo giá trị cộng dồn hiện tại
+        current = 0
+
+        # Duyệt từng phần tử của mảng chênh lệch
+        for key in sorted(diff.keys()):
+            # Gán biến nhằm làm rõ nghĩa hơn
+            student_id = key
+            difference = diff[key]
+
+            # Thực hiện cộng dồn
+            current += difference
+            join[student_id] = current
+    ```
+
 
 **Bước 3:** In kết quả
 
-Để tránh trường hợp không có học sinh cần truy vấn trong mảng `join`, ta dùng `upper_bound` để lấy giá trị gần nhất.
+Để tránh trường hợp không có học sinh cần truy vấn trong mảng `join`, trong C++, ta dùng `upper_bound()` để lấy giá trị gần nhất.
+
+Trong Python, ta sắp xếp lại mảng `join` và dùng hàm `next()` để lấy giá trị gần nhất.
 
 === "C++"
 
-    ```c++ linenums="76"
+    ```c++ linenums="78"
     for (int i = 1; i < q + 1; ++i)
     {
         // Tìm học sinh đầu tiên có mã số lớn hơn students[i]
@@ -195,6 +326,25 @@ Tính mảng cộng dồn `join` từ mảng chênh lệch `diff`.
         // Xuống dòng nếu không phải học sinh cuối cùng
         if (i != q) cout << '\n';
     }
+    ```
+=== "Python"
+
+    ```py linenums="60" 
+            for student in students:
+                # Tìm học sinh đầu tiên có mã số lớn hơn students[i]
+                keys = sorted(join.keys())
+                it = next((key for key in keys if key > student), None)
+
+                # Nếu không tìm thấy học sinh students[i] thì in ra 0
+                if it is None:
+                    file.write('0')
+                else:
+                    # Ngược lại, tìm thấy, thì in ra số trò chơi mà học sinh students[i] tham gia
+                    prev_key = keys[keys.index(it) - 1] if keys.index(it) > 0 else None
+                    if prev_key is None:
+                        file.write('0')
+                    else:
+                        file.write(f'{join[prev_key]}')
     ```
 
 ### Mã nguồn
@@ -236,6 +386,12 @@ Cạnh 3 - 4: trọng số là 6. Tăng 1. (6 + 1 = 7 là nguyên tố)
 
 Tổng giá trị tăng là: 0 + 1 = 1.
 
+**Ràng buộc:**
+
+- Có 20% số test tương ứng với 20% số điểm của bài có $u_i + 1 = v_i; \forall i = 1..m$.
+- Có 40% số test tương ứng với 40% số điểm của bài có $n, m \le 2000$.
+- Có 40% số test tương ứng với 40% số điểm của bài có $2000 < n, m \le 10^5$.
+
 ### Bài giải đề xuất
 
 Ý tưởng chính là áp dụng thuật toán Dijkstra để tìm đường đi ngắn nhất từ đỉnh $s$ đến đỉnh $t$ trên đồ thị đã cho.
@@ -265,7 +421,7 @@ Tạo sàng Eratosthenes từ 1 đến 1 triệu lẻ 3, vì đây là số nguy
         prime[0] = false;
         prime[1] = false;
 
-        // Đánh dấu false cho các bội của số nguyên tố p
+        // Duyệt từ 2 đến căn bậc 2 của number
         for (int p = 2; p * p < number + 1; ++p)
         {
             // Nếu p là nguyên tố thì đánh dấu false cho bội của p
@@ -279,17 +435,38 @@ Tạo sàng Eratosthenes từ 1 đến 1 triệu lẻ 3, vì đây là số nguy
         }
     }
     ```
+=== "Python"
+
+    ```py linenums="32" 
+    # Hàm dùng để tạo sàng nguyên tố trong phạm vi đến 1 triệu lẻ 3
+    def sieve():
+        global prime
+
+        number = 1000003
+
+        # Giả sử mọi số đều nguyên tố
+        prime = [True] * number
+
+        # 0 và 1 không phải số nguyên tố
+        prime[0] = prime[1] = False
+
+        # Duyệt từ 2 đến căn bậc 2 của number
+        for p in range(2, int(number ** 0.5) + 1):
+            # Nếu p là số nguyên tố thì đánh dấu false cho các bội của p
+            if prime[p]:
+                for i in range(p * p, number + 1, p):
+                    prime[i] = False
+    ```
 
 
 **Bước 2:**
 
-Viết hàm tìm số nguyên tố tiếp theo lớn hơn trọng số của cạnh.
-
+Viết hàm tính **giá trị tăng** để đạt được số nguyên tố tiếp theo lớn hơn `w`.
 
 === "C++"
 
     ```c++ linenums="69"
-    // Hàm dùng để tìm số nguyên tố tiếp theo lớn hơn w
+    // Hàm dùng để tính giá trị tăng thêm để đạt được số nguyên tố tiếp theo lớn hơn w
     int increase_to_next_prime(int w)
     {
         // Nếu w là số nguyên tố thì trả về 0
@@ -304,7 +481,24 @@ Viết hàm tìm số nguyên tố tiếp theo lớn hơn trọng số của c�
         return next_prime - w;
     }
     ```
+=== "Python"
 
+    ```py linenums="51" 
+    # Hàm dùng để tính giá trị tăng thêm để đạt được số nguyên tố tiếp theo lớn hơn w
+    def increase_to_next_prime(w):
+        global prime
+
+        # Nếu w là số nguyên tố thì trả về 0
+        if prime[w]:
+            return 0
+
+        # Tìm số nguyên tố tiếp theo lớn hơn w
+        next_prime = w + 1
+        while prime[next_prime] == False:
+            next_prime += 1
+        
+        return next_prime - w
+    ```
 **Bước 3:**
 
 Thực hiện thuật toán Dijkstra. Trong đó, ta thường xuyên cập nhật mảng `D` khoảng cách ngắn nhất từ đỉnh xuất phát đến các đỉnh khác.
@@ -320,6 +514,7 @@ Khoảng cách ngắn nhất lưu trong mảng `D` này được tính từ các
         D.resize(n + 1, INT_MAX);
         D[start] = 0;
 
+        // Mỗi phần tử trong set là {d, u}, trong đó d là khoảng cách ngắn nhất từ start đến u
         set<pair<int, int>> q;
         q.insert({0, start});
 
@@ -333,7 +528,7 @@ Khoảng cách ngắn nhất lưu trong mảng `D` này được tính từ các
             int d = q.begin()->first;
             q.erase(q.begin());
 
-            // Dừng thuật toán khi đã đến đích
+            // Dừng khi đã đến đích
             if (u == finish)
                 break;
 
@@ -362,12 +557,66 @@ Khoảng cách ngắn nhất lưu trong mảng `D` này được tính từ các
                     // Cập nhật lại khoảng cách ngắn nhất từ đỉnh start đến đỉnh v
                     D[v] = D[u] + increase;
 
-                    // Thêm v vào q với khoảng cách ngắn nhất từ start đến v là d[v]
+                    // Thêm v vào q với khoảng cách ngắn nhất từ start đến v là D[v]
                     q.insert({D[v], v});
                 }
             }
         }
     }
+    ```
+=== "Python"
+
+    ```py linenums="67" 
+    def dijkstra():
+        global n, start, graph, D, prime
+
+        # Mảng D dùng để lưu trữ khoảng cách từ đỉnh start đến các đỉnh còn lại
+        D = [float('inf')] * (n + 1)
+        D[start] = 0
+
+        # Mỗi phần tử trong set là {d, u}, trong đó d là khoảng cách ngắn nhất từ start đến u
+        q = []
+        q.append((0, start))
+
+        # Trong khi q vẫn còn phần tử
+        while q:
+            # Lấy ra đỉnh u có khoảng cách ngắn nhất từ start
+            min_element = min(q, key=lambda x: x[0])
+            d = min_element[0]
+            u = min_element[1]
+            q.remove(min_element)
+
+            # Dừng khi đã đến đỉnh finish
+            if u == finish:
+                break
+
+            # Nếu đã có một đường đi ngắn hơn từ start đến u thì không cần xét đỉnh u nữa
+            if d > D[u]:
+                continue
+
+            # Duyệt từng đỉnh v kề với đỉnh u
+            for i in range(len(graph[u])):
+                
+                # v là đỉnh kề với u
+                v = graph[u][i][0]
+
+                # w là trọng số của cạnh u -> v
+                w = graph[u][i][1]
+
+                # Tìm giá trị tăng thêm để đạt được số nguyên tố tiếp theo lớn hơn w
+                increase = increase_to_next_prime(w)
+
+                # Nếu có thể đi start -> u -> v nhanh hơn so với start -> v
+                if D[u] + increase < D[v]:
+                    # Nếu v đã có trong hàng đợi thì xoá phần tử liên quan
+                    if (D[v], v) in q:
+                        q.remove((D[v], v))
+
+                    # Cập nhật lại khoảng cách ngắn nhất từ đỉnh start đến đỉnh v
+                    D[v] = D[u] + increase
+
+                    # Thêm v vào q với khoảng cách ngắn nhất từ start đến v là D[v]
+                    q.append((D[v], v))
     ```
 
 ### Mã nguồn
