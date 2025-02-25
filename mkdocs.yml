@@ -392,43 +392,45 @@ nav:
       - grade-12/topic-G/it-services.md
   - Chuyên đề:
     - Chương trình khung: special-topics/special-topics-index.md
-    - Đệ quy:
-      - special-topics/recursion/topic-index.md
-      - special-topics/recursion/an-overview-of-recursion.md
-      - special-topics/recursion/factorial.md
-      - special-topics/recursion/fibonacci.md
-      - special-topics/recursion/hanoi-tower.md
-    - Chia để trị:
-      - special-topics/divide-and-conquer/topic-index.md
-      - special-topics/divide-and-conquer/an-overview-of-divide-and-conquer.md
-      - special-topics/divide-and-conquer/merge-sort.md
-      - special-topics/divide-and-conquer/quick-sort.md
-    - Quay lui:
-      - special-topics/back-tracking/topic-index.md
-      - special-topics/back-tracking/an-overview-of-back-tracking.md
-      - special-topics/back-tracking/binary-string.md
-    - Hàng đợi:
-      - special-topics/queue/topic-index.md
-      - special-topics/queue/an-overview-of-queue.md
-      - special-topics/queue/customer-service-simulation.md
-    - Ngăn xếp:
-      - special-topics/stack/topic-index.md
-      - special-topics/stack/an-overview-of-stack.md
-      - special-topics/stack/balanced-parentheses-check.md
-    - Đồ thị:
-      - special-topics/graph/topic-index.md
-      - special-topics/graph/an-overview-of-graph.md
-      - special-topics/graph/graph-representing.md
-      - special-topics/graph/bfs.md
-      - special-topics/graph/dfs.md
-    - Cây:
-      - special-topics/tree/an-overview-of-tree.md
-    - Làm việc với dữ liệu:
-      - special-topics/data-handling/topic-index.md
-      - special-topics/data-handling/random-data.md
-      - special-topics/data-handling/coin-flip-simulation.md
-      - special-topics/data-handling/lottery-simulation.md
-      - special-topics/data-handling/permutation-combination.md
+    - Lớp 11:
+      - Đệ quy:
+        - Mục lục: special-topics/recursion/topic-index.md
+        - special-topics/recursion/an-overview-of-recursion.md
+        - special-topics/recursion/factorial.md
+        - special-topics/recursion/fibonacci.md
+        - special-topics/recursion/hanoi-tower.md
+      - Chia để trị:
+        - Mục lục: special-topics/divide-and-conquer/topic-index.md
+        - special-topics/divide-and-conquer/an-overview-of-divide-and-conquer.md
+        - special-topics/divide-and-conquer/merge-sort.md
+        - special-topics/divide-and-conquer/quick-sort.md
+      - Quay lui:
+        - Mục lục: special-topics/back-tracking/topic-index.md
+        - special-topics/back-tracking/an-overview-of-back-tracking.md
+        - special-topics/back-tracking/binary-string.md
+    - Lớp 12:
+      - Hàng đợi:
+        - Mục lục: special-topics/queue/topic-index.md
+        - special-topics/queue/an-overview-of-queue.md
+        - special-topics/queue/customer-service-simulation.md
+      - Ngăn xếp:
+        - Mục lục: special-topics/stack/topic-index.md
+        - special-topics/stack/an-overview-of-stack.md
+        - special-topics/stack/balanced-parentheses-check.md
+      - Đồ thị:
+        - Mục lục: special-topics/graph/topic-index.md
+        - special-topics/graph/an-overview-of-graph.md
+        - special-topics/graph/graph-representing.md
+        - special-topics/graph/bfs.md
+        - special-topics/graph/dfs.md
+      - Cây:
+        - special-topics/tree/an-overview-of-tree.md
+      - Làm việc với dữ liệu:
+        - Mục lục: special-topics/data-handling/topic-index.md
+        - special-topics/data-handling/random-data.md
+        - special-topics/data-handling/coin-flip-simulation.md
+        - special-topics/data-handling/lottery-simulation.md
+        - special-topics/data-handling/permutation-combination.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:
