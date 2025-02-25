@@ -428,6 +428,7 @@ nav:
       - special-topics/data-handling/random-data.md
       - special-topics/data-handling/coin-flip-simulation.md
       - special-topics/data-handling/lottery-simulation.md
+      - special-topics/data-handling/permutation-combination.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:

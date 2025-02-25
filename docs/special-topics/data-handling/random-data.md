@@ -79,11 +79,17 @@ Cú pháp:
 
 Ví dụ:
 
+**Yêu cầu:**
+
+Tạo một số ngẫu nhiên trong khoảng từ 0 đến 1.
+
+**Công thức:**
+
 ```excel
 =RAND()
 ```
 
-Kết quả:
+**Kết quả:**
 
 ```excel
 0.123456789
@@ -109,11 +115,17 @@ Trong đó:
 
 Ví dụ:
 
+**Yêu cầu:**
+
+Tạo một số ngẫu nhiên trong khoảng từ 1 đến 100.
+
+**Công thức:**
+
 ```excel
 =RANDBETWEEN(1, 100)
 ```
 
-Kết quả:
+**Kết quả:**
 
 ```excel
 42
