@@ -1,24 +1,24 @@
 # Mô phỏng trò chơi tung đồng xu
 
-## Yêu cầu
+## Bài 1
+
+**Yêu cầu:**
 
 Mô phỏng trò chơi tung đồng xu bằng hàm `rand()` trong Excel.
 
-Tải tập tin Excel **coin-flip-simulation-before.xlsx** tại [GitHub](https://github.com/vtchitruong/gdpt-2018/tree/main/special-topics/data-handling){:target="_blank"}.  
+Tải tập tin Excel **coin-flip-simulation-before.xlsx** tại [GitHub](https://github.com/vtchitruong/gdpt-2018/tree/main/special-topics/data-handling/random-data){:target="_blank"}.  
 
-## Cách giải đề xuất
+**Công thức:**
 
-**Bước 1:**
+Bước 1:
 
-Tại ô `B5`, nhập công thức sau để tạo số ngẫu nhiên trong phạm vi [0, 1):
+Tại ô `B7`, nhập công thức sau để tạo số ngẫu nhiên trong phạm vi [0, 1):
 
 ```excel
 =rand()
 ```
 
-![Công thức ô B5](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr_Bgx5Ts2SRruG35Tg/root/content){loading=lazy}
-
-Sao chép công thức này đến ô `B24`, ứng với 20 lần tung đồng xu.
+Sao chép công thức này đến ô `B26`, ứng với 20 lần tung đồng xu.
 
 !!! info "Lưu ý"
 
@@ -26,37 +26,43 @@ Sao chép công thức này đến ô `B24`, ứng với 20 lần tung đồng x
 
     Do đó, nếu muốn giữ lại số ngẫu nhiên, ta cần chuyển giá trị ngẫu nhiên thành giá trị cố định bằng cách: sao chép và dán giá trị (Paste Value).
 
-**Bước 2:**
+Bước 2:
 
-Tại ô C5, nhập công thức sau để xác định mặt ngửa hoặc mặt sấp:
+Tại ô `C7`, nhập công thức sau để xác định mặt ngửa hoặc mặt sấp:
 
 ```excel
-=if(B5>=0.5,"Ngửa","Sấp")
+=if(B7>=0.5,"Ngửa","Sấp")
 ```
 
-![Công thức ô C5](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr_BhCPWv8v21h0dCsQ/root/content){loading=lazy}
+Sao chép công thức này đến ô `C26`.
 
-Sao chép công thức này đến ô `C24`.
+Bước 3:
 
-**Bước 3:**
-
-Tại ô D5, nhập công thức sau để hiển thị hình ảnh mặt ngửa hoặc mặt sấp: 
+Tại ô `D7`, nhập công thức sau để hiển thị hình ảnh đồng tiền ngửa hoặc sấp: 
 
 ```excel
-=if(C5="Ngửa",image($H$1),image($H$2))
+=if(C7="Ngửa",image($H$3),image($H$4))
 ```
 
 !!! info "Lưu ý"
 
     Hàm `image()` chỉ hoat động trên phiên bản Microsoft 365 hoặc Office 2021.
 
-![Công thức ô D5](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr_BiLl3W1S6IKYYYQw/root/content){loading=lazy}
-
 Sao chép công thức này đến ô `D24`.
 
-## Thử thách
+## Bài 2
+
+**Yêu cầu:**
 
 Chỉnh sửa công thức sao cho xác suất mặt ngửa là 60% và mặt sấp là 40%.
+
+**Công thức:**
+
+Thực hiện tương tự như bài 1. Nhưng tại ô `C32`, nhập công thức sau:
+
+```excel
+=IF(B32<0.6,"Ngửa","Sấp")
+```
 
 ## Mã nguồn
 

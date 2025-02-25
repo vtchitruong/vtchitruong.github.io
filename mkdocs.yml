@@ -431,6 +431,7 @@ nav:
         - special-topics/data-handling/coin-flip-simulation.md
         - special-topics/data-handling/lottery-simulation.md
         - special-topics/data-handling/permutation-combination.md
+        - special-topics/data-handling/number-of-possibilities.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:
