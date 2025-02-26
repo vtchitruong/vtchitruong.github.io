@@ -289,7 +289,7 @@ Ví dụ:
 
 Các đoạn mã trong bài được đặt tại:
 
-1. [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f2/array-1-dimension-numpy.py){:target="_blank"}
+1. [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f2/array-1-dimension-numpy.py){:target="_blank"}
 
 2. [Google Colab](https://colab.research.google.com/drive/1pq2-LFJ9I8U52pmCXqe9BMo-aeLyAPAN?usp=sharing){:target="_blank"}
 

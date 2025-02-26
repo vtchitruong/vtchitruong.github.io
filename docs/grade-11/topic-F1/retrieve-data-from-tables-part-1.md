@@ -12,7 +12,7 @@ icon: simple/postgresql
 
 1\. Tiếp tục sử dụng cơ sở dữ liệu `school_db` đã tạo ở những bài trước.
 
-2\. Tải tập tin [school_db_script.sql](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f1/school_db_script.sql){:target="_blank"} và mở bằng pgAdmin của PostgreSQL.
+2\. Tải tập tin [school_db_script.sql](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_script.sql){:target="_blank"} và mở bằng pgAdmin của PostgreSQL.
 
 3\. Chạy từ dòng lệnh 110 để bổ sung dữ liệu vào `school_db`.
 
@@ -133,4 +133,4 @@ from students;
 
 ## Mã nguồn
 
-Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f1/school_db_select_1.sql){:target="_blank"}.
+Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_select_1.sql){:target="_blank"}.

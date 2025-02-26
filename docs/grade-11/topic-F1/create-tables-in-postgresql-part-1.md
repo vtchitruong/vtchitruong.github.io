@@ -223,4 +223,4 @@ Như vậy, cơ sở dữ liệu `school_db` đã có một bảng, đó là`stu
 
 ## Mã nguồn
 
-Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f1/school_db_create_1.sql){:target="_blank"}.
+Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_create_1.sql){:target="_blank"}.

@@ -19,7 +19,7 @@ Nếu gặp trục trặc về cơ sở dữ liệu, hãy xoá `school_db` (1) v
 
     2\. Trong hộp thoại hiện ra, chọn **Yes** để xác nhận xoá.
 
-2.  Chạy tập tin [school_db_script.sql](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f1/school_db_script.sql){:target="_blank"} bằng pdAdmin của PostgreSQL.
+2.  Chạy tập tin [school_db_script.sql](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_script.sql){:target="_blank"} bằng pdAdmin của PostgreSQL.
 
 ## Truy vấn hai bảng
 
@@ -144,4 +144,4 @@ where subject_name = 'Khoa học máy tính';
 
 ## Mã nguồn
 
-Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f1/school_db_select_3.sql){:target="_blank"}.
+Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_select_3.sql){:target="_blank"}.

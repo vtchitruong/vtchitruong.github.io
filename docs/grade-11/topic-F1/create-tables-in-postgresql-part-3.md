@@ -153,4 +153,4 @@ Xem toàn bộ dữ liệu của bảng `scores` bằng cách: click phải lên
 
 ## Mã nguồn
 
-Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/g11/topic-f1/school_db_create_3.sql){:target="_blank"}.
+Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_create_3.sql){:target="_blank"}.
