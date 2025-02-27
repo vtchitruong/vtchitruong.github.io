@@ -2,7 +2,7 @@
 icon: simple/loop
 ---
 
-# Cấu trúc lặp for
+# Vòng lặp for
 
 !!! abstract "Tóm lược nội dung"
     
@@ -359,8 +359,7 @@ Output:
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-10/topic-F/for-loop.mm.md!}
-Hình 1. Sơ đồ tóm tắt lệnh for
+{!grade-10/topic-F/mindmaps/for-loop.mm.md!}
 
 ## Google Colab
 

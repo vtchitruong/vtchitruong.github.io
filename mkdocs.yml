@@ -310,10 +310,12 @@ nav:
       - grade-10/topic-E/vietnam-flag.md
       - grade-10/topic-E/olympic-circles.md
     - Chủ đề F:
+      - Mục lục: grade-10/topic-F/topic-index.md
       - grade-10/topic-F/conditional-statement-if.md
       - grade-10/topic-F/for-loop.md
       - grade-10/topic-F/while-loop.md
       - grade-10/topic-F/list.md
+      - grade-10/topic-F/list-iterating-processing.md
       - grade-10/topic-F/string.md
   - Lớp 11:
     - Chương trình khung: grade-11/grade-11-index.md

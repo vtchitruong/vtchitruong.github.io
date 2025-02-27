@@ -315,6 +315,4 @@ Các đoạn mã trong bài được đặt tại:
 
 ## Bài tập thực hành
 
-1. [Bài tập list 1](https://colab.research.google.com/drive/1xh2Db9apAnRbYQJdMSNQOyzKu-fi344V?usp=sharing){:target="_blank"}
-
-2. [Bài tập list 2](https://colab.research.google.com/drive/11bOGQPBTpOQcroYQlad_Fn-vKfHGuGXv?usp=sharing){:target="_blank"}
+Bạn có thể tự thực hành các bài tập sau tại [Google Colab](https://colab.research.google.com/drive/1-yrOGB4pGboZ-Alvv2M2lmeojfwHoh4z?usp=sharing){:target="_blank"}.

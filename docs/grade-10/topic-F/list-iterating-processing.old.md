@@ -1,0 +1,147 @@
+---
+icon: material/format-list-numbered
+---
+
+# Duyệt và xử lý phần tử trong danh sách
+
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày cách duyệt và xử lý phần tử trong danh sách.
+
+### Lệnh if lồng trong for
+
+Nếu muốn xử lý phần tử theo những hướng khác nhau, ta có thể sử dụng lệnh `if` nằm bên trong thân vòng lặp `for`.
+
+Ví dụ:
+
+In ra những điểm số dưới trung bình (điểm nhỏ hơn 5).
+```py linenums="1"
+bangdiem = [8, 9, 3, 5, 10, 10, 7, 8, 4, 6]
+
+n = len(bangdiem)
+for i in range(n):
+    if bangdiem[i] < 5:
+        print(bangdiem[i])
+```
+
+Output:
+```pycon
+3
+4
+```
+
+!!! question "Câu hỏi 4"
+
+    Với bảng điểm như ví dụ 6, giả sử ta cần tuyên dương những học sinh đạt điểm 10.  
+    Bạn hãy in ra chỉ số của những phần tử có giá trị 10 trong `bang_diem` này.
+
+    <div>
+    <form id="answer-form">
+        <label for="userInput_4">Lời giải của bạn:</label><br>
+        <textarea id="userInput_4" name="userInput_4" style="height:3rem" required></textarea>
+        <textarea id="solution_4">for i in range(len(bangdiem)):.newline.    if bangdiem[i] == 10:.newline.        print(i)</textarea><br>
+        <button class="submitButton" type="button" onclick="process_answer('userInput_4', 'solution_4', 'appreciate_4')">Submit</button>
+        <div id="appreciate_4"></div>
+    </form>
+    </div>
+
+    ??? tip "Đáp án"
+
+        ```py linenums="1"
+        for i in range(len(bangdiem)):
+            if bangdiem[i] == 10:
+                print(i)
+        ```
+
+        Output:
+        ```pycon
+        4
+        5
+        ```
+
+## Một vài hàm xử lý danh sách
+
+Python cung cấp sẵn nhiều hàm giúp cho việc thao tác với danh sách được tiện lợi. Sau đây là một số hàm phổ biến:  
+
+### Thêm phần tử
+
+| Hàm | Công dụng | Cú pháp |
+| --- | --- | --- |
+| `append` | Thêm phần tử vào cuối danh sách. | `L.append(phần_tử_cần_thêm)` | 
+| `insert` | Thêm phần tử vào vị trí cụ thể. | `L.insert(vị_trí, phần_tử_cần_thêm)` |
+
+### Xóa phần tử
+
+| Hàm | Công dụng | Cú pháp |
+| --- | --- | --- |
+| `remove` | Xóa phần tử có giá trị cụ thể. | `L.remove(phần_tử_cần_xóa)` |
+| `pop` | Xóa phần tử có chỉ số cụ thể. | `L.pop(vị_trí_cần_xóa)` |
+| `del` | Xóa phần tử có chỉ số cụ thể, gần giống `pop`. | `del L[i]` |
+
+### Xóa danh sách
+
+| Hàm | Công dụng | Cú pháp |
+| --- | --- | --- |
+| `clear` | Chỉ xóa phần tử, danh sách vẫn còn, nghĩa là trở thành danh sách rỗng. | `L.clear()` |  
+| `del` | Xóa cả danh sách. | `del L` | 
+
+Ví dụ 7:
+```py linenums="1"
+bangdiem = [8, 9, 3, 5, 10, 10, 7, 8, 4, 6]
+
+#------------------------------------------------------------
+bangdiem.append(5)  # Thêm 5 vào cuối danh sách
+bangdiem.append(7)  # Thêm 7 vào cuối danh sách
+
+bangdiem.insert(0, 10)  # Thêm 10 vào đầu danh sách
+bangdiem.insert(0, 2)   # Tiếp tục thêm 2 vào đầu danh sách
+
+print('Sau khi thêm phần tử:', bangdiem)
+
+#------------------------------------------------------------
+bangdiem.remove(10)  # Xóa điểm 10 đầu tiên trong số 3 điểm 10
+bangdiem.pop(0)      # Xóa phần tử đầu tiên
+bangdiem.pop()       # Nếu không chỉ định chỉ số, mặc định pop sẽ xóa phần tử cuối cùng
+
+print('Sau khi xóa phần tử:', bangdiem)
+
+#------------------------------------------------------------
+bangdiem.clear()  # Xóa tất cả phần tử
+print('Sau khi xóa tất cả phần tử:', bangdiem)
+
+#------------------------------------------------------------
+del bangdiem       # Xóa luôn danh sách bangdiem
+# print(bangdiem)  # Lệnh này sẽ gặp lỗi, vì lúc này không còn bangdiem nào nữa
+```
+
+Output:
+
+```pycon
+Sau khi thêm phần tử: [2, 10, 8, 9, 3, 5, 10, 10, 7, 8, 4, 6, 5, 7]
+Sau khi xóa phần tử: [8, 9, 3, 5, 10, 10, 7, 8, 4, 6, 5]
+Sau khi xóa tất cả phần tử: []
+```
+
+!!! warning "Lưu ý"
+    Mặc dù có lệnh xóa danh sách, song nói chung, xóa toàn bộ dữ liệu là việc không nên.
+
+## Sơ đồ tóm tắt nội dung
+
+{!grade-10/topic-F/list.mm.md!}
+Hình 1. Sơ đồ tóm tắt kiểu dữ liệu `list`
+
+## Google Colab
+
+Các đoạn mã trong bài này được đặt tại <a href="https://colab.research.google.com/drive/1H_MnLvHvWfn22yIZWVBJH2Sr7nsv6Mkl?usp=sharing" target="_blank">Google Colab</a> để bạn có thể thử nghiệm theo cách của riêng mình.
+
+## Some English words
+
+| Vietnamese | Tiếng Anh |
+| --- | --- |
+| duyệt (phần tử )
+
+## Bài tập thực hành
+
+1. [Bài tập list 1](https://colab.research.google.com/drive/1xh2Db9apAnRbYQJdMSNQOyzKu-fi344V?usp=sharing){:target="_blank"}
+
+2. [Bài tập list 2](https://colab.research.google.com/drive/11bOGQPBTpOQcroYQlad_Fn-vKfHGuGXv?usp=sharing){:target="_blank"}

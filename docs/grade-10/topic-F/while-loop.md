@@ -2,7 +2,7 @@
 icon: simple/loopback
 ---
 
-# Cấu trúc lặp while
+# Vòng lặp while
 
 !!! abstract "Tóm lược nội dung"
 
@@ -225,8 +225,7 @@ Output:
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-10/topic-F/while-loop.mm.md!}
-Hình 1. Sơ đồ tóm tắt lệnh while
+{!grade-10/topic-F/mindmaps/while-loop.mm.md!}
 
 ## Google Colab
 
