@@ -41,6 +41,12 @@
     padding: 10px 10px 0;
   }
   
+  p#question {
+    text-align: left;
+    margin-left: 5%;
+    
+  }
+
   /*Form area width*/
   .form-area, ul {
     margin: 20px auto;

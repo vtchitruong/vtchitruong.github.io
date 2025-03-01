@@ -316,6 +316,7 @@ nav:
       - grade-10/topic-F/while-loop.md
       - grade-10/topic-F/list.md
       - grade-10/topic-F/list-iterating-processing.md
+      - grade-10/topic-F/list-manipulating-functions.md
       - grade-10/topic-F/string.md
   - Lớp 11:
     - Chương trình khung: grade-11/grade-11-index.md
@@ -481,6 +482,7 @@ nav:
     - Olympic 10 & 11 Thành phố:
       - solve-to-surpass/olympic-hcm/2021-olympic10.md
       - solve-to-surpass/olympic-hcm/2021-olympic11.md
+      - solve-to-surpass/olympic-hcm/2016-2017-olympic11.md
       - solve-to-surpass/olympic-hcm/2014-2015-olympic10.md
       - solve-to-surpass/olympic-hcm/2014-2015-olympic11.md
 
