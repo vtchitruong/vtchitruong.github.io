@@ -331,7 +331,7 @@ nav:
       - grade-11/topic-A2/internal-hardwares.md
       - grade-11/topic-A2/logic-gates.md
     - Chủ đề F1:
-      - grade-11/topic-F1/topic-index.md
+      - Mục lục: grade-11/topic-F1/topic-index.md
       - grade-11/topic-F1/data-related-needs.md
       - grade-11/topic-F1/database-a-simplified-overview.md
       - grade-11/topic-F1/relational-database.md
@@ -345,6 +345,7 @@ nav:
       - grade-11/topic-F1/retrieve-data-from-tables-part-2.md
       - grade-11/topic-F1/retrieve-data-from-tables-part-3.md
       - grade-11/topic-F1/retrieve-data-from-tables-part-4.md
+      - grade-11/topic-F1/sql-query-on-one-table-pratice.md
     - Chủ đề F2:
       - grade-11/topic-F2/array-1d.md
       - grade-11/topic-F2/array-2d.md
