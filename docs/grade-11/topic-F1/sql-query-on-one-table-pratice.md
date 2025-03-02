@@ -35,6 +35,12 @@ Ngoài toán tử `like` **so sánh chuỗi theo mẫu** (so sánh gần đúng)
 
 1\. Cho biết huyết thống lai (half-blood) là huyết thống như thế nào.
 
+Output:
+
+| blood_name | blood_description |
+| --- | --- |
+| Half-blood | Parents or grandparents split between Muggles and wizards |
+
 ??? tip "Đáp án đề xuất"
 
     Vì ta không biết `half-blood` được viết hoa hay thường nên ta dùng hàm `lower()` để chuyển đổi tất cả dữ liệu liên quan của mẫu tin sang chữ thường, rồi mới so sánh với chuỗi `half-blood` viết thường.
@@ -44,7 +50,14 @@ Ngoài toán tử `like` **so sánh chuỗi theo mẫu** (so sánh gần đúng)
     from bloods
     where lower(blood_name) = 'half-blood';
     ```
+
 2\. Cho biết họ tên đầy đủ của người sáng lập (founder) nhà Slytherin và hai màu sắc đặc trưng của nhà này (color_1, color_2).
+
+Output:
+
+| house_name | founder | color_1 | color_2 |
+| --- | --- | --- | --- |
+| Slytherin | Salazar Slytherin | green | silver |
 
 ??? tip "Đáp án đề xuất"
 
@@ -55,6 +68,12 @@ Ngoài toán tử `like` **so sánh chuỗi theo mẫu** (so sánh gần đúng)
     ```
 
 3\. Đọc câu thần chú (incantation) có tác dụng (effect) triệu hồi đồ vật (Summons an object).
+
+Output:
+
+| incantation | effect |
+| --- | --- |
+| Accio | Summons an object |
 
 ??? tip "Đáp án đề xuất"
 
@@ -76,6 +95,28 @@ Ngoài toán tử `like` **so sánh chuỗi theo mẫu** (so sánh gần đúng)
 
 4\. Liệt kê các môn học bắt buộc (regular) trong trường Hogwarts. Sắp xếp tên môn học (subject_name) theo thứ tự bảng chữ cái.
 
+Output:
+
+| subject_name | subject_type |
+| --- | --- |
+| Alchemy | regular |
+| Apparition | regular |
+| Arithmancy | regular |
+| Astronomy | regular |
+| Care of Magical Creatures | regular |
+| Charms | regular |
+| Defence Against the Dark Arts | regular |
+| Divination | regular |
+| Flying | regular |
+| Ghoul Studies | regular |
+| Herbology | regular |
+| History of Magic | regular |
+| Magical Theory | regular |
+| Muggle Studies | regular |
+| Potions | regular |
+| Study of Ancient Runes | regular |
+| Transfiguration | regular |
+
 ??? tip "Đáp án đề xuất"
 
     Vì không rõ regular được viết hoa hay thường nên ta dùng hàm `lower()` để chuyển đổi thành chữ thường trước khi so sánh.
@@ -90,6 +131,15 @@ Ngoài toán tử `like` **so sánh chuỗi theo mẫu** (so sánh gần đúng)
     ```
 
 5\. Cho biết những chủng loại nào có liên quan đến loài người (human).
+
+Output:
+
+| spec_name | spec_description |
+| --- | --- |
+| Goblin | Highly intelligent race of small humanoids with long fingers and feet that coexist with the wizard world |
+| Half-giant | Beings with some, but not a total, amount of giant heritage or blood, as well as part human blood |
+| Veela | Semi-human magical beings; beautiful women with white-gold hair and skin that appears to shine moon-bright
+| Werewolf | Human being who, upon the complete rising of the full moon, becomes a fearsome and deadly near-wolf |
 
 ??? tip "Đáp án đề xuất"
 
@@ -118,6 +168,22 @@ Ngoài toán tử `like` **so sánh chuỗi theo mẫu** (so sánh gần đúng)
     ```
 
 6\. Cho biết năng lực (skills) của các thành viên gia đình Potter (last_name là Potter). Sắp xếp tăng dần theo họ (last_name), nếu trùng họ thì sắp xếp giảm dần theo tên (first_name).
+
+Output:
+
+| first_name | last_name | skills |
+| --- | --- | --- |
+| Ronald | Weasley | Wizard chess | Quidditch goalkeeping |
+| Percy | Weasley | Intelligent| hard-working| a model student |
+| Ginevra  | Weasley | Chaser| Bat-Bogey hex |
+| George | Weasley | Beater |
+| Fred  | Weasley | Beater |
+| Charles  | Weasley | Highly skilled dragon trainer| one-time Gryffindor Seeker |
+| Arthur | Weasley | Muggle world works |
+| (Bill) William | Weasley | Highly skilled curse-breaker for Gringotts Wizarding Bank| very intelligent| past Hogwarts Head Boy |
+| Fleur | Weasley (nΘe Delacour) | part Veela, and therefore possesses some of their magical powers. She was also selected to compete in the Triwizard Tournament |
+| Angelina | Weasley (nΘe Johnson) | Chaser |
+| Molly | Weasley (nΘe Prewett) | Household spells| healing magic |
 
 ??? tip "Đáp án đề xuất"
 
