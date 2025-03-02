@@ -181,9 +181,9 @@ Output:
 | Charles  | Weasley | Highly skilled dragon trainer| one-time Gryffindor Seeker |
 | Arthur | Weasley | Muggle world works |
 | (Bill) William | Weasley | Highly skilled curse-breaker for Gringotts Wizarding Bank| very intelligent| past Hogwarts Head Boy |
-| Fleur | Weasley (nΘe Delacour) | part Veela, and therefore possesses some of their magical powers. She was also selected to compete in the Triwizard Tournament |
-| Angelina | Weasley (nΘe Johnson) | Chaser |
-| Molly | Weasley (nΘe Prewett) | Household spells| healing magic |
+| Fleur | Weasley (née Delacour) | part Veela, and therefore possesses some of their magical powers. She was also selected to compete in the Triwizard Tournament |
+| Angelina | Weasley (née Johnson) | Chaser |
+| Molly | Weasley (née Prewett) | Household spells| healing magic |
 
 ??? tip "Đáp án đề xuất"
 
