@@ -33,7 +33,9 @@ Ngoài toán tử `like` **so sánh chuỗi theo mẫu** (so sánh gần đúng)
 
 ## Yêu cầu truy vấn
 
-1\. Cho biết huyết thống lai (half-blood) là huyết thống như thế nào.
+### Truy vấn 1
+
+Cho biết huyết thống lai (half-blood) là huyết thống như thế nào.
 
 Output:
 
@@ -51,7 +53,9 @@ Output:
     where lower(blood_name) = 'half-blood';
     ```
 
-2\. Cho biết họ tên đầy đủ của người sáng lập (founder) nhà Slytherin và hai màu sắc đặc trưng của nhà này (color_1, color_2).
+### Truy vấn 2
+
+Cho biết họ tên đầy đủ của người sáng lập (founder) nhà Slytherin và hai màu sắc đặc trưng của nhà này (color_1, color_2).
 
 Output:
 
@@ -67,7 +71,9 @@ Output:
     where house_name = 'Slytherin';
     ```
 
-3\. Đọc câu thần chú (incantation) có tác dụng (effect) triệu hồi đồ vật (Summons an object).
+### Truy vấn 3
+
+Đọc câu thần chú (incantation) có tác dụng (effect) triệu hồi đồ vật (Summons an object).
 
 Output:
 
@@ -93,7 +99,9 @@ Output:
     where effect like 'Summons an object%';
     ```
 
-4\. Liệt kê các môn học bắt buộc (regular) trong trường Hogwarts. Sắp xếp tên môn học (subject_name) theo thứ tự bảng chữ cái.
+### Truy vấn 4
+
+Liệt kê các môn học bắt buộc (regular) trong trường Hogwarts. Sắp xếp tên môn học (subject_name) theo thứ tự bảng chữ cái.
 
 Output:
 
@@ -130,7 +138,9 @@ Output:
     order by subject_name;
     ```
 
-5\. Cho biết những chủng loại nào có liên quan đến loài người (human).
+### Truy vấn 5
+
+Cho biết những chủng loại nào có liên quan đến loài người (human).
 
 Output:
 
@@ -167,7 +177,9 @@ Output:
     where spec_description ~~* '%human%';
     ```
 
-6\. Cho biết năng lực (skills) của các thành viên gia đình Potter (last_name là Potter). Sắp xếp tăng dần theo họ (last_name), nếu trùng họ thì sắp xếp giảm dần theo tên (first_name).
+### Truy vấn 6
+
+Cho biết năng lực (skills) của các thành viên gia đình Potter (last_name là Potter). Sắp xếp tăng dần theo họ (last_name), nếu trùng họ thì sắp xếp giảm dần theo tên (first_name).
 
 Output:
 
