@@ -239,9 +239,9 @@ order by last_name DESC, first_name;
 
 ![Kết quả sắp xếp dữ liệu](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr6UpZDxbSWU7k7gFZg/root/content){loading=lazy width=420}
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/retrieve-data-from-tables-part-2.mm.md!}
+{!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-2.mm.md!}
 *Sơ đồ tóm tắt về truy vấn có điều kiện và sắp xếp dữ liệu*
 
 ## Some English words

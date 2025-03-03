@@ -74,7 +74,7 @@ Ngoài ra, còn có thêm những loại khác như **TCL** (Transaction Control
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-11/topic-F1/sql-a-simplified-overview.mm.md!}
+{!grade-11/topic-F1/mindmaps/sql-a-simplified-overview.mm.md!}
 *Sơ đồ tóm tắt về SQL*
 
 ## Some English words

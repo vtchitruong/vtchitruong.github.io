@@ -126,9 +126,9 @@ from students;
 
 ![Danh sách toàn bộ học sinh gồm ba thuộc tính](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr6R-uP7la19d-zlEzg/root/content){loading=lazy width=480}
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/retrieve-data-from-tables-part-1.mm.md!}
+{!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-1.mm.md!}
 *Sơ đồ tóm tắt về truy vấn SELECT*
 
 ## Mã nguồn

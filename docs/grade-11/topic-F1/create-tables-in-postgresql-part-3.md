@@ -146,9 +146,9 @@ Xem toàn bộ dữ liệu của bảng `scores` bằng cách: click phải lên
 
 ![Dữ liệu của bảng scores](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrt91d0img754XXvvxg/root/content){loading=lazy}
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/create-tables-in-postgresql-part-3.mm.md!}
+{!grade-11/topic-F1/mindmaps/create-tables-in-postgresql-part-3.mm.md!}
 *Sơ đồ tóm tắt cách tạo bảng trong PostgreSQL*
 
 ## Mã nguồn

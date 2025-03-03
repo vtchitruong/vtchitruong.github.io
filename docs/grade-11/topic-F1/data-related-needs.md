@@ -84,7 +84,7 @@ Quản lý dữ liệu đòi hỏi sự kết hợp đồng bộ giữa công ng
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-11/topic-F1/data-related-needs.mm.md!}
+{!grade-11/topic-F1/mindmaps/data-related-needs.mm.md!}
 *Sơ đồ tóm tắt về quản lý dữ liệu*
 
 ## Some English words

@@ -131,9 +131,9 @@ where subject_name = 'Khoa học máy tính';
 
     Ngoài `INNER JOIN`, còn có các loại liên kết khác như: `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN`, `OUTER JOIN`, `CROSS JOIN`, `SELF JOIN`, `THETA JOIN`, `NATURAL JOIN`, `EQUI JOIN`, `SEMI JOIN`, `ANTI JOIN`, v.v...
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/retrieve-data-from-tables-part-3.mm.md!}
+{!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-3.mm.md!}
 *Sơ đồ tóm tắt về liên kết bảng INNER JOIN*
 
 ## Some English words

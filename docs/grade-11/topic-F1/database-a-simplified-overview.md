@@ -102,7 +102,7 @@ Mặc dù đã có hệ quản trị cơ sở dữ liệu, phần mềm ứng d�
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-11/topic-F1/database-a-simplified-overview.mm.md!}
+{!grade-11/topic-F1/mindmaps/database-a-simplified-overview.mm.md!}
 *Sơ đồ tóm tắt về hệ cơ sở dữ liệu*
 
 ## Some English words

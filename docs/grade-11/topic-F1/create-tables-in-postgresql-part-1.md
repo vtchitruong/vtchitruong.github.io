@@ -216,9 +216,9 @@ Như vậy, cơ sở dữ liệu `school_db` đã có một bảng, đó là`stu
 
 ![Xem tất cả mẫu tin của bảng](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrvUlfB6gwFtIFdlrTw/root/content){loading=lazy}
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/create-tables-in-postgresql-part-1.mm.md!}
+{!grade-11/topic-F1/mindmaps/create-tables-in-postgresql-part-1.mm.md!}
 *Sơ đồ tóm tắt cách tạo bảng trong PostgreSQL*
 
 ## Mã nguồn

@@ -204,9 +204,9 @@ Xem toàn bộ dữ liệu của bảng `students` vừa cập nhật bằng cá
 
 ![Toàn bộ bảng students](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrttD-GXLp22RCJsyng/root/content){loading=lazy}
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/create-tables-in-postgresql-part-2.mm.md!}
+{!grade-11/topic-F1/mindmaps/create-tables-in-postgresql-part-2.mm.md!}
 *Sơ đồ tóm tắt cách tạo bảng trong PostgreSQL*
 
 ## Mã nguồn

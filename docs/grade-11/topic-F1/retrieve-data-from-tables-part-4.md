@@ -268,9 +268,9 @@ having avg(final_test) > 7;
 
 ![Các môn có giá trị trung bình điểm cuối kỳ trên 7](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9BlpyE89tOE-QvmqA/root/content){loading=lazy width=360}
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/retrieve-data-from-tables-part-4.mm.md!}
+{!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-4.mm.md!}
 
 *Sơ đồ tóm tắt về hàm tổng hợp và gom nhóm*
 
