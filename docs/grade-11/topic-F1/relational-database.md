@@ -155,10 +155,9 @@ Hình dưới đây thể hiện lược đồ vừa nêu, kèm theo dữ liệu
     - Có 5 bộ.
     - Khóa ngoại là thuộc tính `student_id`, được liên kết với `student_id` của quan hệ `students`.
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/relational-database.mm.md!}
-*Sơ đồ tóm tắt cơ sở dữ liệu quan hệ*
+{!grade-11/topic-F1/mindmaps/relational-database.mm.md!}
 
 ## Some English words
 

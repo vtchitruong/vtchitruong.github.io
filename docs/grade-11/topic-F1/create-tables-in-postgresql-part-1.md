@@ -219,7 +219,6 @@ Như vậy, cơ sở dữ liệu `school_db` đã có một bảng, đó là`stu
 ## Sơ đồ tóm tắt
 
 {!grade-11/topic-F1/mindmaps/create-tables-in-postgresql-part-1.mm.md!}
-*Sơ đồ tóm tắt cách tạo bảng trong PostgreSQL*
 
 ## Mã nguồn
 

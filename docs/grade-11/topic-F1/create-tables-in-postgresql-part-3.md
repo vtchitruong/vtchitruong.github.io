@@ -149,7 +149,6 @@ Xem toàn bộ dữ liệu của bảng `scores` bằng cách: click phải lên
 ## Sơ đồ tóm tắt
 
 {!grade-11/topic-F1/mindmaps/create-tables-in-postgresql-part-3.mm.md!}
-*Sơ đồ tóm tắt cách tạo bảng trong PostgreSQL*
 
 ## Mã nguồn
 

@@ -100,10 +100,9 @@ Hệ cơ sở dữ liệu là hệ thống gồm có:
 
 Mặc dù đã có hệ quản trị cơ sở dữ liệu, phần mềm ứng dụng vẫn được tạo ra nhằm giúp người dùng dễ dàng và thuận tiện hơn trong các thao tác với cơ sở dữ liệu.
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
 {!grade-11/topic-F1/mindmaps/database-a-simplified-overview.mm.md!}
-*Sơ đồ tóm tắt về hệ cơ sở dữ liệu*
 
 ## Some English words
 

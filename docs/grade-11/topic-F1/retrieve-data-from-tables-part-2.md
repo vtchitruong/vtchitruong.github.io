@@ -242,7 +242,6 @@ order by last_name DESC, first_name;
 ## Sơ đồ tóm tắt
 
 {!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-2.mm.md!}
-*Sơ đồ tóm tắt về truy vấn có điều kiện và sắp xếp dữ liệu*
 
 ## Some English words
 

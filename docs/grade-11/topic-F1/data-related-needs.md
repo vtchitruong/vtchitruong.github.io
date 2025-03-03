@@ -82,10 +82,9 @@ Ví dụ:
 
 Quản lý dữ liệu đòi hỏi sự kết hợp đồng bộ giữa công nghệ, quy trình và con người. Trong nhiều trường hợp, sử dụng máy tính cho hoạt động quản lý dữ liệu là một lựa chọn tốt và hợp lý.
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
 {!grade-11/topic-F1/mindmaps/data-related-needs.mm.md!}
-*Sơ đồ tóm tắt về quản lý dữ liệu*
 
 ## Some English words
 

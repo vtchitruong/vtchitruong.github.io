@@ -207,7 +207,6 @@ Xem toàn bộ dữ liệu của bảng `students` vừa cập nhật bằng cá
 ## Sơ đồ tóm tắt
 
 {!grade-11/topic-F1/mindmaps/create-tables-in-postgresql-part-2.mm.md!}
-*Sơ đồ tóm tắt cách tạo bảng trong PostgreSQL*
 
 ## Mã nguồn
 

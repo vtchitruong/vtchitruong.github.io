@@ -272,8 +272,6 @@ having avg(final_test) > 7;
 
 {!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-4.mm.md!}
 
-*Sơ đồ tóm tắt về hàm tổng hợp và gom nhóm*
-
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 

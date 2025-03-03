@@ -134,7 +134,6 @@ where subject_name = 'Khoa học máy tính';
 ## Sơ đồ tóm tắt
 
 {!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-3.mm.md!}
-*Sơ đồ tóm tắt về liên kết bảng INNER JOIN*
 
 ## Some English words
 

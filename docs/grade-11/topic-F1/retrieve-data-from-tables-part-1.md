@@ -129,7 +129,6 @@ from students;
 ## Sơ đồ tóm tắt
 
 {!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-1.mm.md!}
-*Sơ đồ tóm tắt về truy vấn SELECT*
 
 ## Mã nguồn
 
