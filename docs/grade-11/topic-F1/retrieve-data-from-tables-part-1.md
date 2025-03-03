@@ -130,6 +130,15 @@ from students;
 
 {!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-1.mm.md!}
 
+## Some English words
+
+| Vietnamese | Tiếng Anh | 
+| --- | --- |
+| dấu sao | asterisk |
+| mẫu tin | record |
+| truy vấn | query |
+| trích xuất | extract |
+
 ## Mã nguồn
 
 Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_select_1.sql){:target="_blank"}.

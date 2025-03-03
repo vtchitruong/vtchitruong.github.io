@@ -351,9 +351,11 @@ Giá trị lớn nhất: 77
         <iframe style="width: 100%; height: 400px" frameBorder=0 src="../list-iterating-processing/quiz4.html">Hỏi chút chơi</iframe>
     </div>
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-10/topic-F/mindmaps/list-iterating-processing.mm.md!}
+<div>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../mindmaps/list-iterating-processing.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Mã nguồn
 

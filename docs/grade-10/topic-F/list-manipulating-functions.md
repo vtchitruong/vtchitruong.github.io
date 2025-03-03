@@ -155,9 +155,11 @@ Danh sách sau khi xoá: []
         <iframe style="width: 100%; height: 400px" frameBorder=0 src="../list-manipulating-functions/quiz3.html">Hỏi chút chơi</iframe>
     </div>
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-10/topic-F/mindmaps/list-manipulating-functions.mm.md!}
+<div>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../mindmaps/list-manipulating-functions.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Mã nguồn
 
