@@ -352,8 +352,8 @@ nav:
       - grade-11/topic-F2/array-1d.md
       - grade-11/topic-F2/array-2d.md
       - grade-11/topic-F2/linked-list.md
-      - grade-11/topic-F2/searching-algorithm-linear-search.md
-      - grade-11/topic-F2/searching-algorithm-binary-search.md
+      - grade-11/topic-F2/linear-search.md
+      - grade-11/topic-F2/binary-search.md
       - grade-11/topic-F2/sorting-algorithm-selection-sort.md
       - grade-11/topic-F2/sorting-algorithm-insertion-sort.md
       - grade-11/topic-F2/sorting-algorithm-bubble-sort.md

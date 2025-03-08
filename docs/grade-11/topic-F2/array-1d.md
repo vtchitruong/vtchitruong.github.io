@@ -280,10 +280,11 @@ Ví dụ:
         <iframe style="width: 100%; height: 400px" frameBorder=0 src="../array-1d/quiz5.html">Hỏi chút chơi</iframe>
     </div>
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-F2/array-1d.mm.md!}
-*Sơ đồ tóm tắt về mảng và mảng một chiều*
+<div>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../mindmaps/array-1d.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Mã nguồn
 

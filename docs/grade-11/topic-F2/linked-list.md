@@ -27,9 +27,8 @@ Do đó, ta cần một cấu trúc dữ liệu khác có thể khắc phục nh
 Xe lửa có thể xem là hình ảnh minh họa cho danh sách liên kết: xe lửa gồm nhiều toa, toa liền trước *móc nối* với toa liền sau.
 
 <figure markdown>
-  ![Xe lửa, theo nghĩa nào đó, là một danh sách liên kết](linked-list/train.svg){loading=lazy}
+  ![Xe lửa, theo nghĩa nào đó, là một danh sách liên kết](images/train.svg){loading=lazy}
   <br>
-  <em>Xe lửa, theo nghĩa nào đó, là một danh sách liên kết</em>[^1]
 </figure>
 
 [^1]: Hình được tải tại [Free SVG](https://freesvg.org/){:target="_blank"}.
@@ -45,7 +44,7 @@ Mỗi phần tử trong danh sách liên kết được gọi là một **node**
     1.Khi `next` của node liền trước chứa địa chỉ của node liền sau, ta nói rằng, node trước là **trỏ vào** / **trỏ tới** / **trỏ đến** node liền sau.
 
 <figure markdown>
-  ![Minh họa node](linked-list/node.svg){loading=lazy}
+  ![Minh họa node](images/node.svg){loading=lazy}
   <figcaption>Minh hoạ node</figcaption>
 </figure>
 
@@ -54,7 +53,7 @@ Node cuối cùng có thành phần `next` trỏ đến `None`, là đối tư�
 Bên cạnh đó, danh sách liên kết còn có một biến được dùng để nắm giữ node đầu tiên, tạm gọi là `head`. Biến `head` đóng vai trò là điểm khởi đầu của danh sách liên kết. Dựa vào `head`, ta có thể duyệt qua các node trong danh sách liên kết.
 
 <figure markdown>
-  ![Minh họa một danh sách liên kết](linked-list/linked-list.svg){loading=lazy}
+  ![Minh họa một danh sách liên kết](images/linked-list.svg){loading=lazy}
   <figcaption>Minh họa danh sách liên kết</figcaption>
 </figure>
 
@@ -145,7 +144,7 @@ Khởi tạo ba node, lần lượt đặt tên là `first`, `second` và `third
 1.  Lúc này, cả ba node đều đơn lẻ, rời rạc, chưa có kết nối với nhau.
 
 <figure markdown>
-  ![3 node đơn lẻ](linked-list/init-3-single-nodes.svg){loading=lazy}
+  ![3 node đơn lẻ](images/init-3-single-nodes.svg){loading=lazy}
 </figure>
 
 **Bước 5:**
@@ -155,19 +154,19 @@ Liên kết các node với nhau bằng cách cho thuộc tính `head` của `L`
 - **Bước 5.1**: Cho `head` của `L` trỏ đến `first`.
 
     <figure markdown>
-    ![Bước 5.1 của thao tác khởi tạo](linked-list/init-step-5-1.svg){loading=lazy}
+    ![Bước 5.1 của thao tác khởi tạo](images/init-step-5-1.svg){loading=lazy}
     </figure>
 
 - **Bước 5.2**: Cho `next` của `first` trỏ đến `second`.
 
     <figure markdown>
-    ![Bước 5.2 của thao tác khởi tạo](linked-list/init-step-5-2.svg){loading=lazy}
+    ![Bước 5.2 của thao tác khởi tạo](images/init-step-5-2.svg){loading=lazy}
     </figure>
 
 - **Bước 5.3**: Cho `next` của `second` trỏ đến `third`.
 
     <figure markdown>
-    ![Bước 5.3 của thao tác khởi tạo](linked-list/init-step-5-3.svg){loading=lazy}
+    ![Bước 5.3 của thao tác khởi tạo](images/init-step-5-3.svg){loading=lazy}
     </figure>
 
 ```py linenums="74"
@@ -236,7 +235,7 @@ Duyệt danh sách liên kết bằng hai biến `previous` và `current` cho đ
     Bước này mang ý nghĩa rằng, biến `previous` luôn bước *nối gót* theo biến `current`.
 
 <figure markdown>
-![Bước 1 của thao tác chèn](linked-list/insert-step-1.svg){loading=lazy}
+![Bước 1 của thao tác chèn](images/insert-step-1.svg){loading=lazy}
 </figure>
 
 **Bước 2:**
@@ -244,7 +243,7 @@ Duyệt danh sách liên kết bằng hai biến `previous` và `current` cho đ
 Cho `next` của node mới trỏ đến `current`.
 
 <figure markdown>
-![Bước  của thao tác chèn](linked-list/insert-step-2.svg){loading=lazy}
+![Bước  của thao tác chèn](images/insert-step-2.svg){loading=lazy}
 </figure>
 
 **Bước 3:**
@@ -252,7 +251,7 @@ Cho `next` của node mới trỏ đến `current`.
 Cho `next` của `previous` trỏ đến node mới.
 
 <figure markdown>
-![Bước 3 của thao tác chèn](linked-list/insert-step-3.svg){loading=lazy}
+![Bước 3 của thao tác chèn](images/insert-step-3.svg){loading=lazy}
 </figure>
 
 Hàm chèn thêm node mới vào trước node có dữ liệu `key` viết như sau:
@@ -322,7 +321,7 @@ Duyệt danh sách liên kết bằng hai biến `previous` và `current` cho đ
     Tương tự thao tác chèn, tại bước này, ta cũng cho `previous` di chuyển *nối gót* `current`.
 
 <figure markdown>
-![Bước 1 của thao tác xoá](linked-list/remove-step-1.svg){loading=lazy}
+![Bước 1 của thao tác xoá](images/remove-step-1.svg){loading=lazy}
 <figcaption>Bước 1 của thao tác xoá</figcaption>
 </figure>
 
@@ -331,7 +330,7 @@ Duyệt danh sách liên kết bằng hai biến `previous` và `current` cho đ
 Ngắt liên kết từ `previous` đến `current`, là node chứa `key` cần xoá, bằng cách cho `next` của `previous` trỏ đến node liền sau `current`.
 
 <figure markdown>
-![Bước 2 của thao tác xoá](linked-list/remove-step-2.svg){loading=lazy}
+![Bước 2 của thao tác xoá](images/remove-step-2.svg){loading=lazy}
 </figure>
 
 **Bước 3:**
@@ -339,7 +338,7 @@ Ngắt liên kết từ `previous` đến `current`, là node chứa `key` cần
 *Thủ tiêu* `current`.
 
 <figure markdown>
-![Bước 3 của thao tác xoá](linked-list/remove-step-3.svg){loading=lazy}
+![Bước 3 của thao tác xoá](images/remove-step-3.svg){loading=lazy}
 </figure>
 
 Hàm xoá một node có dữ liệu `key` viết như sau:
@@ -391,6 +390,12 @@ o -> l -> d ->
     - Danh sách liên kết rỗng, chưa có node nào.
     - Node `key` là node đầu tiên.
     - Node `key` không tồn tại.
+
+## Sơ đồ tóm tắt
+
+<div>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../mindmaps/linked-list.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Mã nguồn
 

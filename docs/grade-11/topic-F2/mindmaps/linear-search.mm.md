@@ -13,15 +13,15 @@ markmap:
 
 ## Thuật toán
 
-### Tuần tự
+### Tìm kiếm tuần tự
 
 #### Ý tưởng
     
-- Duyệt mảng từ vị trí đầu đến cuối
+- Duyệt mảng từ đầu đến cuối
 - So sánh từng phần tử `A[i]` với `k`
 
 #### Viết chương trình
 
 - Dùng vòng lặp `for`
 
-### Nhị phân
+### Tìm kiếm nhị phân

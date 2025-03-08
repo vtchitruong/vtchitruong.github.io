@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"M&#x1ea3;ng","children":[{"content":"Kh&#xe1;i qu&#xe1;t","children":[{"content":"L&#xe0; c&#x1ea5;u tr&#xfa;c d&#x1eef; li&#x1ec7;u d&#xf9;ng &#x111;&#x1ec3; x&#x1eed; l&#xfd; t&#x1ead;p h&#x1ee3;p nhi&#x1ec1;u ph&#x1ea7;n t&#x1eed;","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"C&#xe1;c ph&#x1ea7;n t&#x1eed; n&#x1eb1;m li&#xea;n ti&#x1ebf;p nhau tr&#xea;n b&#x1ed9; nh&#x1edb;","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"K&#xed;ch th&#x1b0;&#x1edb;c ho&#x1eb7;c &#x111;&#x1ed9; d&#xe0;i:","children":[{"content":"L&#xe0; s&#x1ed1; ph&#x1ea7;n t&#x1eed; c&#x1ee7;a m&#x1ea3;ng","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"L&#xe0; h&#x1eef;u h&#x1ea1;n","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"li","lines":"12,15"}},{"content":"M&#x1ed7;i ph&#x1ea7;n t&#x1eed;:","children":[{"content":"Ch&#x1ec9; s&#x1ed1; (ho&#x1eb7;c v&#x1ecb; tr&#xed;)","children":[{"content":"D&#xf9;ng &#x111;&#x1ec3; truy xu&#x1ea5;t ph&#x1ea7;n t&#x1eed;","children":[],"payload":{"tag":"li","lines":"17,18"}}],"payload":{"tag":"li","lines":"16,18"}},{"content":"Gi&#xe1; tr&#x1ecb;","children":[{"content":"C&#xf9;ng ki&#x1ec3;u d&#x1eef; li&#x1ec7;u","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"li","lines":"18,21"}}],"payload":{"tag":"li","lines":"15,21"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Ph&#xe2;n lo&#x1ea1;i","children":[{"content":"M&#x1ea3;ng m&#x1ed9;t chi&#x1ec1;u","children":[{"content":"Kh&#x1edf;i t&#x1ea1;o","children":[{"content":"Li&#x1ec7;t k&#xea; ph&#x1ea7;n t&#x1eed;","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"H&#xe0;m <code>full()</code>","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h4","lines":"25,26"}},{"content":"Truy xu&#x1ea5;t ph&#x1ea7;n t&#x1eed;","children":[{"content":"Ch&#x1ec9; s&#x1ed1; &#x111;&#x1b0;&#x1ee3;c &#x111;&#xe1;nh t&#x1eeb; <code>0</code> ho&#x1eb7;c t&#x1eeb; <code>1</code>","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"<code>A[0]</code> l&#xe0; ph&#x1ea7;n t&#x1eed; &#x111;&#x1ea7;u ti&#xea;n","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"<code>A[n - 1]</code> l&#xe0; ph&#x1ea7;n t&#x1eed; cu&#x1ed1;i","children":[],"payload":{"tag":"li","lines":"34,36"}}],"payload":{"tag":"h4","lines":"30,31"}},{"content":"Duy&#x1ec7;t m&#x1ea3;ng","children":[{"content":"D&#xf9;ng v&#xf2;ng l&#x1eb7;p","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"h4","lines":"36,37"}}],"payload":{"tag":"h3","lines":"23,24"}},{"content":"M&#x1ea3;ng hai chi&#x1ec1;u","children":[],"payload":{"tag":"h3","lines":"40,41"}}],"payload":{"tag":"h2","lines":"21,22"}},{"content":"Bi&#x1ec3;u di&#x1ec5;n m&#x1ea3;ng trong Python","children":[{"content":"Ki&#x1ec3;u d&#x1eef; li&#x1ec7;u <code>list</code>","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"Th&#x1b0; vi&#x1ec7;n <code>array</code>","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"Th&#x1b0; vi&#x1ec7;n <code>numpy</code>","children":[],"payload":{"tag":"li","lines":"46,47"}}],"payload":{"tag":"h2","lines":"42,43"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":300})</script>
+</body>
+</html>
