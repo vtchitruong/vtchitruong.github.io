@@ -115,8 +115,8 @@ Nghề quản trị cơ sở dữ liệu
 Kỹ thuật lập trình
 
 1. Viết chương trình cho một số thuật toán sắp xếp, tìm kiếm cơ bản
-    1. Phát biểu được bài toán sắp xếp và bài toán tìm kiếm.
-    2. Viết được chương trình cho một vài thuật toán sắp xếp và tìm kiếm.
+    1. Phát biểu được bài toán sắp xếp và [bài toán tìm kiếm](./topic-F2/linear-search.md){:target="_blank"}.
+    2. Viết được chương trình cho một vài thuật toán sắp xếp và [thuật toán tìm kiếm](./topic-F2/linear-search.md){:target="_blank"}.
     3. Vận dụng được một vài thuật toán đã học để giải quyết một bài toán cụ thể.
 2. Kiểm thử và đánh giá hiệu quả của chương trình
     1. Biết được việc kiểm thử giúp lập trình viên phát hiện lỗi, làm tăng độ tin cậy của chương trình nhưng chưa chứng minh được tính đúng của chương trình.
