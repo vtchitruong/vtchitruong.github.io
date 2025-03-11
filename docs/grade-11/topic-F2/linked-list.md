@@ -12,11 +12,11 @@ icon: material/link
 
 Khi lưu trữ và xử lý tập hợp gồm nhiều phần tử, mảng là một lựa chọn phù hợp. Song mảng vẫn có những hạn chế như:
 
-- Kích thước của mảng là cố định. Nói cách khác, số lượng phần tử của mảng không thể tăng hoặc giảm một cách linh hoạt. Số lượng phần tử của mảng thường phải khai báo dư so với số lượng sử dụng thực tế.
+- Kích thước của mảng là cố định. Số lượng phần tử của mảng không thể tăng hoặc giảm một cách linh hoạt. Ta thường phải khai báo dư so với số lượng sử dụng thực tế.
 
-- Khi cần chèn hoặc xoá phần tử, mảng cần phải dịch chuyển các phần tử, dẫn đến hao phí về mặt thời gian và bộ nhớ. Thậm chí, có trường hợp phải khai báo mảng mới, rồi sao chép các phần tử từ mảng gốc sang mảng mới, hiệu quả thực thi lại càng kém hơn.
+- Khi cần chèn hoặc xoá phần tử, ta phải dịch chuyển những phần tử khác, dẫn đến hao phí về mặt thời gian và bộ nhớ, hoặc có thể phải sao chép các phần tử từ mảng hiện có sang mảng mới, hiệu quả thực thi lại càng kém hơn.
 
-Do đó, ta cần một cấu trúc dữ liệu khác có thể khắc phục những hạn chế này.
+Vì thế, ta cần một cấu trúc dữ liệu khác có thể khắc phục những hạn chế này.
 
 ## Tổng quan
 
@@ -33,24 +33,24 @@ Xe lửa có thể xem là hình ảnh minh họa cho danh sách liên kết: xe
 
 [^1]: Hình được tải tại [Free SVG](https://freesvg.org/){:target="_blank"}.
 
-### Các thành phần
+### Thành phần
 
 Mỗi phần tử trong danh sách liên kết được gọi là một **node**, thường được tổ chức thành hai phần:
 
-- Phần thứ nhất chứa **dữ liệu**, tạm gọi là `data`.
-- Phần thứ hai chứa **địa chỉ của một node khác**, tạm gọi là `next`. (1)
+- Phần thứ nhất chứa **dữ liệu**, đặt là `data`.
+- Phần thứ hai chứa **địa chỉ của một node khác**, đặt là `next` (1).
     { .annotate }
 
-    1.Khi `next` của node liền trước chứa địa chỉ của node liền sau, ta nói rằng, node trước là **trỏ vào** / **trỏ tới** / **trỏ đến** node liền sau.
+    1.  Khi `next` của node liền trước chứa địa chỉ của node liền sau, ta nói rằng, node trước **trỏ vào** / **trỏ tới** / **trỏ đến** node liền sau.
 
 <figure markdown>
   ![Minh họa node](images/node.svg){loading=lazy}
   <figcaption>Minh hoạ node</figcaption>
 </figure>
 
-Node cuối cùng có thành phần `next` trỏ đến `None`, là đối tượng mang ý nghĩa **rỗng**, không có giá trị. `None` là dấu hiệu giúp nhận biết không còn node tiếp theo nữa.
+Node cuối cùng có thành phần `next` trỏ đến `None`, mang ý nghĩa **rỗng**, không có giá trị. `None` là dấu hiệu giúp nhận biết không còn node tiếp theo nữa.
 
-Bên cạnh đó, danh sách liên kết còn có một biến được dùng để nắm giữ node đầu tiên, tạm gọi là `head`. Biến `head` đóng vai trò là điểm khởi đầu của danh sách liên kết. Dựa vào `head`, ta có thể duyệt qua các node trong danh sách liên kết.
+Bên cạnh đó, danh sách liên kết còn có một biến được dùng để nắm giữ node đầu tiên, đặt là `head`. Biến `head` đóng vai trò là điểm khởi đầu của danh sách liên kết. Dựa vào `head`, ta có thể duyệt từng node trong danh sách liên kết.
 
 <figure markdown>
   ![Minh họa một danh sách liên kết](images/linked-list.svg){loading=lazy}
@@ -59,7 +59,7 @@ Bên cạnh đó, danh sách liên kết còn có một biến được dùng đ
 
 ### Ứng dụng
 
-Danh sách liên kết được sử dụng hiệu quả trong những trường hợp như:
+Danh sách liên kết có thể được áp dụng trong những bài toán:
 
 - Thao tác chèn thêm hoặc xoá bớt thường xuyên diễn ra.
 - Quản lý bộ nhớ động, tức bộ nhớ thay đổi trong khi chạy chương trình, chứ không cố định từ đầu.
@@ -78,9 +78,9 @@ Bài học này chỉ đề cập **danh sách liên kết đơn**, từ đây g
 
 !!! warning "Về mã lệnh trong bài này"
     
-    Việc viết mã lệnh cho danh sách liên kết trong bài này đòi hỏi kiến thức về lập trình hướng đối tượng và kỹ thuật lập trình, vốn nằm ngoài chương trình phổ thông. Do đó, một số câu lệnh sẽ chỉ diễn giải sơ nét. Bạn có thể ghép các đoạn mã thành chương trình hoàn chỉnh để chạy mà không cần quá quan tâm chi tiết kỹ thuật. 
+    Việc viết mã lệnh cho danh sách liên kết trong bài này đòi hỏi kiến thức về lập trình hướng đối tượng và kỹ thuật lập trình, vốn nằm ngoài chương trình phổ thông. Do đó, một số câu lệnh sẽ chỉ diễn giải sơ nét. Bạn có thể ghép các đoạn mã thành chương trình hoàn chỉnh để chạy mà không cần quá quan tâm chi tiết kỹ thuật.
 
-Ngoài thành phần `data`, mỗi node còn có thành phần `next` trỏ đến node liền sau nó, giúp các node liên kết với nhau. Các thao tác thêm node và xoá node thực chất đều là thay đổi thành phần `next` này, nghĩa là thay đổi liên kết giữa các node.
+
 
 ### Khởi tạo
 
@@ -292,6 +292,10 @@ Output:
 Danh sách liên kết sau khi chèn thêm:
 o -> l -> y -> d -> 
 ```
+
+!!! tip "Chèn và xoá node"
+
+    Các thao tác thêm node và xoá node thực chất đều là thay đổi thành phần `next` này, nghĩa là thay đổi liên kết giữa các node.
 
 !!! warning "Lưu ý"
     

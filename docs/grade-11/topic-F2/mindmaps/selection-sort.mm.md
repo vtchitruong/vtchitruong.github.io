@@ -8,17 +8,17 @@ markmap:
 
 ## Bài toán
 
-- Input: Mảng `A` gồm `n` phần tử
+- Input: Mảng `A` gồm `n` số nguyên
 - Output: Mảng `A` có thứ tự tăng dần
 
 ## Thuật toán
 
 ### Sắp xếp chọn
 
-#### Duyệt `A` từ đầu đến áp cuối bằng biến `i`:
+- Duyệt mảng `A` từ đầu đến áp cuối:
 
-- Duyệt mảng con từ `i` đến cuối để tìm `A[min]`.
-- Hoán vị `A[min]` và `A[i]`.
+  - Tìm `A[min]` trong phạm vi `[i..n - 1]`
+  - Hoán vị `A[i]` và `A[min]`.
 
 ### Sắp xếp chèn
 

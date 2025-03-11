@@ -84,7 +84,7 @@ Cách làm là lần lượt lật từng lá bài lên cho đến khi thấy đ
 
 ![Lưu đồ thuật toán tìm kiếm tuần tự](images/linear-search-flowchart.svg){loading=lazy}
 
-### Trực quan hóa
+### Trực quan hoá
 
 <div>
     <iframe width="100%" height="680px" frameBorder=0 src="../visualize/linear-search.html"></iframe>
@@ -166,7 +166,7 @@ Không tìm thấy 6
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../mindmaps/linear-search.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/linear-search.html">Sơ đồ tóm tắt</iframe>
 </div>
 
 ## Mã nguồn

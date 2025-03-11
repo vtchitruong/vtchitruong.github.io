@@ -16,7 +16,9 @@ Tương tự [bài học trước](./linear-search.md#bai-toan-va-thuat-toan-tim
 
 ### Ý tưởng
 
-Hãy tưởng tượng tình huống tìm một thuật ngữ bắt đầu bằng chữ cái T trong từ điển. Vì các mục từ đều được sắp xếp theo thứ tự bảng chữ cái nên ta không cần lật tìm ở những trang có chữ cái đầu là A, B hay C, mà nên lật ngay đến trang có chữ cái đầu là T.
+Hãy tưởng tượng tình huống tìm một thuật ngữ bắt đầu bằng chữ cái T trong từ điển.
+
+Vì các mục từ đều được sắp xếp theo thứ tự bảng chữ cái nên ta không cần lật tìm ở những trang có chữ cái đầu là A, B hay C, mà nên lật ngay đến trang có chữ cái đầu là T.
 
 Áp dụng ý tưởng trên cho mảng, ta có thể thực hiện tìm kiếm nhị phân như sau:
 
@@ -52,7 +54,7 @@ Lặp lại nhiều lần hai thao tác này cho đến khi tìm thấy hoặc k
 
 ![Lưu đồ thuật toán tìm kiếm nhị phân](images/binary-search-flowchart.svg){loading=lazy}
 
-### Trực quan hóa
+### Trực quan hoá
 
 <div>
     <iframe width="100%" height="760px" frameBorder=0 src="../visualize/binary-search.html"></iframe>
@@ -154,7 +156,7 @@ Hai thuật toán có một vài khác biệt chủ yếu sau:
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../mindmaps/binary-search.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/binary-search.html">Sơ đồ tóm tắt</iframe>
 </div>
 
 ## Mã nguồn

@@ -9,7 +9,7 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 </div>
 
 
-## Phần chung
+## Phần chung CS & ICT
 
 ### Chủ đề A
 
@@ -128,7 +128,7 @@ Kỹ thuật lập trình
     2. Giải thích và vận dụng được phương pháp thiết kế chương trình thành các module cho một bài toán cụ thể.
     3. Nhận biết được lợi ích của phương pháp nêu trên: Hỗ trợ làm việc đồng thời, dễ dàng bảo trì, phát triển chương trình và tái sử dụng module.
 4. Tổ chức dữ liệu trong chương trình
-    1. Trình bày được cấu trúc dữ liệu mảng (một và hai chiều) và danh sách liên kết.
+    1. Trình bày được [cấu trúc dữ liệu mảng (một và hai chiều)](./topic-F2/array-1d.md){:target="_blank"} và [danh sách liên kết](./topic-F2/linked-list.md){:target="_blank"}.
     2. Tạo được một thư viện nhỏ và viết được chương trình có sử dụng thư viện vừa tạo ra.
     3. Viết được chương trình vận dụng những kiến thức tích hợp liên môn để giải quyết vấn đề.
 

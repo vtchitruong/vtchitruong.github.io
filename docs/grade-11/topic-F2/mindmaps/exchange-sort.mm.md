@@ -8,7 +8,7 @@ markmap:
 
 ## Bài toán
 
-- Input: Mảng `A` gồm `n` phần tử
+- Input: Mảng `A` gồm `n` số nguyên
 - Output: Mảng `A` có thứ tự tăng dần
 
 ## Thuật toán
@@ -21,7 +21,6 @@ markmap:
 
 ### Sắp xếp tráo đổi
 
-#### Duyệt `A` từ đầu đến áp cuối bằng biến `i`:
+#### Duyệt `A[i]` từ đầu đến áp cuối
 
-- Duyệt `A` từ `i + 1` đến cuối bằng biến `j`:
-    - So sánh và hoán vị `A[i]` và `A[j]`
+- Duyệt `A[j]` từ `i + 1` đến cuối: <br> So sánh và hoán vị `A[i]` và `A[j]`
