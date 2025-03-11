@@ -398,7 +398,7 @@ o -> l -> d ->
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../mindmaps/linked-list.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/linked-list.html">Sơ đồ tóm tắt</iframe>
 </div>
 
 ## Mã nguồn
