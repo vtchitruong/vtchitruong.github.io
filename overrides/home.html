@@ -268,6 +268,55 @@
       background-color: #fff;
       border-color: #fff;
       }
+
+      /* From Uiverse.io by Allyhere */ 
+        .btn-donate {
+        --clr-font-main: hsla(0 0% 20% / 100);
+        --btn-bg-1: hsla(194 100% 69% / 1);
+        --btn-bg-2: hsla(217 100% 56% / 1);
+        --btn-bg-color: hsla(360 100% 100% / 1);
+        --radii: 0.5em;
+        cursor: pointer;
+        padding: 0.9em 1.4em;
+        min-width: 120px;
+        min-height: 44px;
+        font-size: var(--size, 1rem);
+        font-weight: 500;
+        transition: 0.8s;
+        background-size: 280% auto;
+        background-image: linear-gradient(
+            325deg,
+            var(--btn-bg-2) 0%,
+            var(--btn-bg-1) 55%,
+            var(--btn-bg-2) 90%
+        );
+        border: none;
+        border-radius: var(--radii);
+        color: var(--btn-bg-color);
+        box-shadow:
+            0px 0px 20px rgba(71, 184, 255, 0.5),
+            0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+            inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+            inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+        }
+
+        .btn-donate:hover {
+        background-position: right top;
+        }
+
+        .btn-donate:is(:focus, :focus-visible, :active) {
+        outline: none;
+        box-shadow:
+            0 0 0 3px var(--btn-bg-color),
+            0 0 0 6px var(--btn-bg-2);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+        .btn-donate {
+            transition: linear;
+        }
+        }
+
   </style>
 
   <!-- Hero for landing page -->
@@ -423,6 +472,25 @@
     </div>
 </div>
 
+
+<div style="background-color: #FDF6E3; display: block; position: relative; transform-style: preserve-3d; padding: 3rem 0 3rem 0;">
+    <div class="top-hr">
+        <h1 style="color: #263238; font-size: 3em; font-weight: 300;">Please donate!</h1>
+    </div>
+    <div class="top-hr"
+        style="color: #263238; word-break: break-word; font-size: 0.8rem; font-weight: 300; line-height: 1.2rem;  padding: 0 15px;">
+        <div>
+            <p>Chào bạn! Tôi đã dành nhiều công sức và thời gian để xây dựng tài liệu trực tuyến môn Tin học nhằm hướng đến học sinh cấp 2 và 3 (THCS lẫn THPT), đồng nghiệp là các giáo viên môn Tin học và cả bản thân nữa. Nếu bạn thấy nó có ích cho việc học tập hoặc giảng dạy của mình, xin hoan hỉ gởi tặng tôi một ly cà phê nhé. Cám ơn bạn nhiều lắm! Đừng ngại phản hồi hoặc thắc mắc bất kỳ điều gì liên quan đến môn Tin học thú vị này, tôi sẽ cố gắng trong khả năng của mình hồi âm cho bạn.</p>
+
+            <p>English version:</p>
+
+            <p>Welcome! I've put together this online computer science resource for my high school students, fellow educators, and myself. If it helps you in your learning or teaching journey, I’d be grateful if you’d consider buying me a coffee. Thank you so much! Feel free to share feedback or drop any Computer Science-related questions my way—I'd love to hear from you.</p>
+
+            <p><a href="../donation/" ><button class="btn-donate">Tặng ly ☕ nè</button></a></p>
+        </div>
+
+    </div>
+</div>
 <!-- ----------------------------------------------------- -->
 
 {% endblock %}

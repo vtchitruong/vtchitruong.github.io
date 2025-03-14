@@ -10,7 +10,7 @@ repo_name: GitHub để chữa lành
 repo_url: https://github.com/vtchitruong/vtchitruong.github.io
 
 # Copyright
-copyright: Copyright &copy; 2023 Mr School
+copyright: Copyright &copy; 2023 Mr School<br><a href="../donation/">Please click here for donation. Thank you!</a>
 
 # Configuration
 theme:
@@ -108,6 +108,9 @@ extra:
       link: https://github.com/vtchitruong/vtchitruong.github.io
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/vothachchitruong
+    - icon: fontawesome/solid/mug-saucer
+      name: Please donate!
+      link: ../donation
     # - icon: fontawesome/brands/gitter
     #   link: https://gitter.im/squidfunk/mkdocs-material
     # - icon: fontawesome/brands/docker
@@ -283,9 +286,10 @@ plugins:
 nav:
   - Home: index.md
   - Getting started:
-    - Tính năng: features.md
-    - Nhật ký thay đổi: changelog.md
-    - Giấy phép: license.md
+    - 🔦 Tính năng: features.md
+    - 🪵 Nhật ký thay đổi: changelog.md
+    - 📜 Giấy phép: license.md
+    - 💰 Xin tặng tôi ly cafe  (‾◡◝): donation.md
   - Lớp 10:
     - Chương trình khung: grade-10/grade-10-index.md
     - Chủ đề A1:
