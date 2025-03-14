@@ -26,6 +26,16 @@
     </svg>: Bình tĩnh và bình dân Tin học vụ.
 {% endblock %}
 
+{% block content %}
+  {{ super() }}
+  <!-- Donation button at the end of content -->
+  <div class="donation-button">
+    <a href="https://mr-school.xyz/donation/" class="btn-donate">Bao tôi ly cafe 🧋 nhé!</a>
+  </div>
+
+
+{% endblock %}
+
 <!-- Theme-related JavaScript -->
 {% block scripts %}
     

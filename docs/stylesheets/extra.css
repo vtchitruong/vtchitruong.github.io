@@ -421,3 +421,23 @@ div.gslide-description.description-bottom {
 strong {
     font-weight: bold !important;
 }
+
+.donation-button {
+    margin-top: 2rem; /* Space above button */
+    text-align: center; /* Center the button */
+}
+.btn-donate {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color: #ffca28;
+    color: #565656 !important;
+    text-decoration: none;
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 2px 6px rgba(0, 171, 215, 0.5);
+}
+
+.btn-donate:hover {
+    background-color: #00abd7;
+    color: #fff !important;
+}

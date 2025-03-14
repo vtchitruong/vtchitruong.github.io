@@ -10,7 +10,7 @@ repo_name: GitHub để chữa lành
 repo_url: https://github.com/vtchitruong/vtchitruong.github.io
 
 # Copyright
-copyright: Copyright &copy; 2023 Mr School<br><a href="../donation/">Please click here for donation. Thank you!</a>
+copyright: <a href="https://mr-school.xyz/donation/">Please click here to donate, if possible. Thank you!</a><br>Copyright &copy; 2023 Mr School
 
 # Configuration
 theme:
@@ -110,7 +110,7 @@ extra:
       link: https://www.facebook.com/vothachchitruong
     - icon: fontawesome/solid/mug-saucer
       name: Please donate!
-      link: ../donation
+      link: https://mr-school.xyz/donation/
     # - icon: fontawesome/brands/gitter
     #   link: https://gitter.im/squidfunk/mkdocs-material
     # - icon: fontawesome/brands/docker
@@ -289,7 +289,7 @@ nav:
     - 🔦 Tính năng: features.md
     - 🪵 Nhật ký thay đổi: changelog.md
     - 📜 Giấy phép: license.md
-    - 💰 Xin tặng tôi ly cafe  (‾◡◝): donation.md
+    - 💰 Bao tôi ly cafe nhé!: donation.md
   - Lớp 10:
     - Chương trình khung: grade-10/grade-10-index.md
     - Chủ đề A1:
@@ -590,4 +590,4 @@ nav:
         - Project 7: mos/powerpoint-2016/exam-3/project-7.md
     
   - Blog:
-      - blog/index.md
+    - blog/index.md
