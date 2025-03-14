@@ -28,12 +28,12 @@
 
 {% block content %}
   {{ super() }}
-  <!-- Donation button at the end of content -->
-  <div class="donation-button">
-    <a href="https://mr-school.xyz/donation/" class="btn-donate">Bao tôi ly cafe 🧋 nhé!</a>
-  </div>
-
-
+  <!-- Donation button at the end of content, conditional -->
+  {% if page.meta.show_donation != false %}
+    <div class="donation-button">
+      <a href="https://mr-school.xyz/donation/#cach-thuc" class="btn-donate">Bao tôi ly cafe 🧋 nhé!</a>
+    </div>
+  {% endif %}
 {% endblock %}
 
 <!-- Theme-related JavaScript -->

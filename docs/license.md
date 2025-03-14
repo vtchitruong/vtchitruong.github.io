@@ -1,3 +1,7 @@
+---
+show_donation: false
+---
+
 # License
 
 ## Original version

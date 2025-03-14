@@ -1,3 +1,7 @@
+---
+show_donation: false
+---
+
 # Bao tôi ly cafe 🧋 nhé!
 
 ## Lời nhắn
@@ -8,7 +12,7 @@ English version:
 
 Welcome! I've put together this online computer science resource for my high school students, fellow educators, and myself. If it helps you in your learning or teaching journey, I'd be grateful if you'd consider buying me a coffee. Thank you so much! Feel free to share feedback or drop any Computer Science-related questions my way—I'd love to hear from you.
 
-## Cách thức tặng quà
+## Cách thức
 
 ### Cách 1: Ngân hàng
 

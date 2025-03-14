@@ -1,3 +1,7 @@
+---
+show_donation: false
+---
+
 ### v23.08.18 <small>26-12-2024</small> { id="24.12.26" }
 
 - Thêm nút Home ở góc phải dưới của màn hình để quay về trang chủ.
