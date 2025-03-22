@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"L&#x1ead;p tr&#xec;nh Python","children":[{"content":"Python","children":[{"content":"L&#xe0; ng&#xf4;n ng&#x1eef; l&#x1ead;p tr&#xec;nh b&#x1ead;c cao","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"D&#x1ec5; h&#x1ecd;c v&#xe0; d&#x1ec5; &#x111;&#x1ecd;c","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"C&#xf3; th&#x1b0; vi&#x1ec7;n phong ph&#xfa;","children":[],"payload":{"tag":"li","lines":"12,14"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Tr&#xec;nh so&#x1ea1;n th&#x1ea3;o","children":[{"content":"Visual Studio Code","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Google Colab","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"h2","lines":"14,15"}},{"content":"Ch&#x1ea1;y ch&#x1b0;&#x1a1;ng tr&#xec;nh Python","children":[{"content":"Visual Studio Code: nh&#x1ea5;n ph&#xed;m F5","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"Google Colab: nh&#x1ea5;n ph&#xed;m Ctrl + Enter","children":[],"payload":{"tag":"li","lines":"22,23"}}],"payload":{"tag":"h2","lines":"19,20"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+</body>
+</html>
