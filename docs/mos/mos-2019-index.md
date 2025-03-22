@@ -21,3 +21,7 @@
 - [Project 5](../mos/powerpoint-2019/exam-2/project-5.md)
 - [Project 6](../mos/powerpoint-2019/exam-2/project-6.md)
 - [Project 7](../mos/powerpoint-2019/exam-2/project-7.md)
+
+### Skill Review
+
+- [Skill Review 1](../mos/powerpoint-2019/skill-review/skill-review-1.md)

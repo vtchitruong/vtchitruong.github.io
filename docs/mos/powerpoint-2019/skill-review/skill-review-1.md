@@ -161,7 +161,6 @@ On Slide 2 insert a Clustered Column Chart inside the empty text box. Resize the
     
         ![Minh hoạ hướng dẫn](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNsLN3SvEzJn8uPmrcCw/root/content){loading=lazy}
     
-        
         ![Minh hoạ hướng dẫn](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNsLN4YGowsXuNG586Hw/root/content){loading=lazy}
 
     4. Đóng cửa sổ Excel.
