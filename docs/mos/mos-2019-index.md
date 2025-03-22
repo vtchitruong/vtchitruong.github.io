@@ -25,3 +25,4 @@
 ### Skill Review
 
 - [Skill Review 1](../mos/powerpoint-2019/skill-review/skill-review-1.md)
+- [Skill Review 2](../mos/powerpoint-2019/skill-review/skill-review-2.md)
