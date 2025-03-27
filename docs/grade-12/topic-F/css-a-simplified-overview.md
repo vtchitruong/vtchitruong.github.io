@@ -40,7 +40,7 @@ Sử dụng CSS nhằm tách biệt nội dung và hình thức của trang web:
 
 2. Nhất quán về hình thức:
 
-    - CSS giúp đảm bảo sự nhất quán về hình thức cho các trang web trong cùng một website.
+    - CSS bảo đảm sự nhất quán về hình thức cho các trang web trong cùng một website.
 
         Ví dụ:  
         Ta có thể định nghĩa một cách thể hiện đồng bộ cho các phần tử HTML và áp dụng cho toàn bộ website.
