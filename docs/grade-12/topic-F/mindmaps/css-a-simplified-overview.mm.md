@@ -6,7 +6,7 @@ markmap:
 
 # CSS
 
-## Ngôn ngữ dùng để định kiểu trang web
+## Ngôn ngữ định kiểu trang web
 
 ## Tách biệt
 
@@ -22,6 +22,6 @@ markmap:
 
 ## 3 cách tổ chức mã lệnh
 
-- Cách 1: Viết trực tiếp cho phần tử HTML
-- Cách 2: Viết trong phần tử `<style>`, và đặt trong phần tử `<head>`.
-- Cách 3: Viết trong tập tin .css.
+- Cách 1: Viết trực tiếp cho thẻ HTML
+- Cách 2: Viết trong `<head> </head>`
+- Cách 3: Viết trong tập tin .css
