@@ -375,8 +375,8 @@ nav:
       - grade-12/topic-B/network-devices.md
       - grade-12/topic-B/network-protocols.md
     - Chủ đề F:
-      - grade-12/topic-F/topic-f-index.md
-      - grade-12/topic-F/html-web-fundamentals.md
+      - Mục lục: grade-12/topic-F/topic-f-index.md
+      - grade-12/topic-F/html-web-a-simplified-overview.md
       - grade-12/topic-F/html-text-editors.md
       - grade-12/topic-F/html-web-page-structure.md
       - grade-12/topic-F/html-paragraph.md
@@ -457,7 +457,7 @@ nav:
       - Sắp xếp: advanced/basic-techniques/sort.md
       - Hợp và trộn: advanced/basic-techniques/union-merge.md
     - Đồ thị:
-      - Danh sách bài học: advanced/graph/topic-index.md
+      - Mục lục: advanced/graph/topic-index.md
       - advanced/graph/dfs.md
       - advanced/graph/out-of-the-forest.md
       - advanced/graph/bfs.md

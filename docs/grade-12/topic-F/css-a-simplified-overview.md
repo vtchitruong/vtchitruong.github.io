@@ -199,7 +199,7 @@ Các bước cụ thể của cách 3 như sau:
     - Ưu tiên 2: Cách 2 (viết trong `<head> </head>`)
     - Ưu tiên 3: Cách 3 (viết trong tập tin .css)
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/css-a-simplified-overview.html">Sơ đồ tóm tắt</iframe>
