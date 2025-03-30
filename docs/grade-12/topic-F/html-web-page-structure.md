@@ -2,7 +2,7 @@
 icon: simple/html5
 ---
 
-# Cấu trúc của trang web
+# Cấu trúc trang web
 
 !!! abstract "Tóm lược nội dung"
 
@@ -13,27 +13,26 @@ icon: simple/html5
 
 ## Khai báo kiểu tài liệu
 
-Dòng khai báo này luôn nằm ở dòng đầu tiên, mục đích là cho trình duyệt biết phiên bản HTML nào đang được sử dụng trong tài liệu.
-
-`<!DOCTYPE html>` cho trình duyệt biết phải kết xuất trang web này theo chuẩn HTML5, là phiên bản mới nhất hiện nay của HTML.
+Khai báo sau đây được viết ở dòng đầu tiên của tập tin .html:
 
 ``` html title="portfolio.html" linenums="1"
 <!DOCTYPE html>
 ```
+`<!DOCTYPE html>` cho trình duyệt biết phải kết xuất trang web theo chuẩn HTML5, là phiên bản mới nhất hiện nay của HTML.
 
 !!! tip "Ghi chú về việc viết mã lệnh trong chủ đề F"
 
     Tập tin **portfolio.html** được dùng làm ví dụ minh họa xuyên suốt các bài trong chủ đề.
 
-    Bạn chỉ cần lần lượt viết thêm mã lệnh vào, rồi làm mới lại trang web để xem kết quả. Nếu trang web kết xuất không như ý, bạn quay lại điều chỉnh mã lệnh.
+    Qua từng bài, bạn chỉ cần viết thêm các đoạn mã HTML hoặc CSS mới vào trang web hiện có của mình, rồi refresh trang web để xem kết quả. Nếu trang web không kết xuất như ý, hãy tìm cách điều chỉnh mã lệnh.
     
     Những tập tin .html khác sẽ được đề cập cụ thể khi cần.
 
 ## Phần tử `<html>`
 
-Phần tử gốc `<html>` nằm ngoài cùng, bao các phần tử khác, đánh dấu bắt đầu và kết thúc của tài liệu HTML.
+Phần tử gốc `<html>` dùng để đánh dấu bắt đầu và kết thúc của tập tin HTML, chứa toàn bộ nội dung của trang web và báo cho trình duyệt biết đang làm việc với tài liệu HTML.
 
-Phần tử gốc `<html>` dùng để chứa toàn bộ nội dung HTML của trang web và báo cho trình duyệt biết đang làm việc với tài liệu HTML.
+Phần tử gốc `<html>` nằm ở ngoài cùng và bao các phần tử khác.
 
 ``` html title="portfolio.html" linenums="1" hl_lines="2-4"
 <!DOCTYPE html>
@@ -59,7 +58,10 @@ Bên trong phần tử `<html>` là hai phần tử thiết yếu: `<head>` và 
 
 ## Phần tử `<head>`
 
-Phần tử `<head>` chứa các **metadata** của trang web. Người dùng không trực tiếp nhìn thấy những nội dung trong phần tử `<head>` này.
+Phần tử `<head>` chứa các **meta data** của trang web. Người dùng không thể nhìn thấy các nội dung trong phần tử `<head>` một cách trực tiếp (1).
+{ .annotate }
+
+1.  Các thẻ meta giúp cải thiện SEO (Search Engine Optimization), khả năng truy cập và trải nghiệm người dùng.
 
 ``` html title="portfolio.html" linenums="1" hl_lines="4 5"
 <!DOCTYPE html>
@@ -78,11 +80,14 @@ Phần tử `<head>` chứa các **metadata** của trang web. Người dùng kh
 
 1.  Dùng để báo cho trình duyệt biết phải dịch nội dung trang web theo bảng mã utf-8.
 
-2.  Dùng để báo cho trình duyệt biết tiêu đề của trang web, hiển thị trên tab của trình duyệt và làm đầu đề trong trang kết quả của những cỗ máy tìm kiếm như Google.
+2.  Dòng này là tiêu đề của trang web, có thể hiển thị trên tab của trình duyệt và làm đầu đề trong trang kết quả của những cỗ máy tìm kiếm như Google.
 
 ## Phần tử `<body>`
 
-Phần tử `<body>` là nơi chứa các phần tử khác mà người dùng trực tiếp thấy được, là nơi thể hiện năng lực và đẳng cấp thiết kế web của bạn.
+Phần tử `<body>` là nơi chứa các phần tử khác mà người dùng trực tiếp thấy được (1).
+{ .annotate }
+
+1. Cũng là nơi thể hiện năng lực và đẳng cấp thiết kế web của bạn.
 
 ``` html title="portfolio.html" linenums="1" hl_lines="9 10"
 <!DOCTYPE html>
@@ -100,20 +105,21 @@ Phần tử `<body>` là nơi chứa các phần tử khác mà người dùng t
 ```
 { .annotate }
 
-1.  Phần tử `<h1>` dùng để tạo đề mục cấp 1 (heading 1), là cấp lớn nhất trong tài liệu.
+1.  Phần tử `<h1>` dùng để tạo đề mục cấp 1 (heading 1), là cấp lớn nhất trong trang web.
 
-2.  Phần tử `<p>` dùng để tạo một đoạn văn bản (paragraph).
+2.  Phần tử `<p>` dùng để tạo một đoạn văn bản (paragraph). Có thể tạm hiểu, **đoạn** là phần được phân cách bởi hai dòng trống ở hai đầu. 
 
 Nhấn ++ctrl+s++ và xem trang web kết xuất như hình dưới đây.
 
 ![Tập tin HTML và trang web kết xuất](https://lh3.googleusercontent.com/pw/AP1GczMTBLYaQJ6Ge20t9LmubGSKt6hpqbRaQh2FeHLXogde00SzH2KpzgH2XNoRCtTjafaPSV_yQE-nRa5cuyMPKd44VaVGcgubKE5qMUeop2wcMkmlv2Pt=w2400){ width=800 loading=lazy data-title="Tập tin HTML và trang web kết xuất" data-description="Cửa sổ bên trái là VS Code dùng để viết mã lệnh HTML. Cửa số bên phải là trình duyệt web dùng để kết xuất trang web."}
 
-Như vậy, bạn đã dựng được trang web bằng mã lệnh ~có~ ^thể^ ~là~ đầu tiên trong cuộc đời. Just easy 😉
+Như vậy, bạn đã dựng được trang web (bằng mã lệnh) ~có~ ^thể^ ~là~ đầu tiên trong cuộc đời. That was easy 😉!
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-12/topic-F/html-web-page-structure.mm.md!}
-*Sơ đồ tóm tắt cấu trúc của một tập tin HTML*
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/html-web-page-structure.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Some English words
 
