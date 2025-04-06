@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<body>
+    <canvas id="myChart" style="width:100%; max-width:600px; max-height: 450px;"></canvas>    
+    <script>
+        const x_values = [];
+        
+        generate_x_values(1, 100);
+        
+        const O1_y_values = [];
+        const Ologn_y_values = [];
+        const On_y_values = [];
+        const Onlogn_y_values = [];
+        const On2_y_values = [];
+        const Ocn_y_values = [];
+        const Onfact_y_values = [];  
+
+        generate_O1_data("5", 1, 100, 20);
+        generate_Ologn_data("log2(x) + 5", 1, 100);
+        generate_On_data("0.8 * x", 1, 100);
+        generate_Onlogn_data("0.6 * x * log2(x)", 1, 30);
+        generate_On2_data("Math.pow(x, 2)", 0, 10);
+        generate_Ocn_data("Math.pow(2, x) /1.3", 1, 7);
+        generate_Onfact_data("factorial(x) / 1.2", 1, 5); 
+
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: x_values,
+                datasets: [{
+                        fill: false,
+                        pointRadius: 0,
+                        borderColor: "#29d429",
+                        data: O1_y_values,
+                        
+                    },
+                    {
+                        fill: false,
+                        pointRadius: 0,
+                        borderColor: "#51dc51",
+                        data: Ologn_y_values
+                    },
+                    {
+                        fill: false,
+                        pointRadius: 0,
+                        borderColor: "#54ff29",
+                        data: On_y_values
+                    },
+                    {
+                        fill: false,
+                        pointRadius: 0,
+                        borderColor: "#c1e5b7",
+                        data: Onlogn_y_values
+                    },
+                    {
+                        fill: false,
+                        pointRadius: 0,
+                        borderColor: "#ffd685",
+                        data: On2_y_values
+                    },
+                    {
+                        fill: false,
+                        pointRadius: 0,
+                        borderColor: "#ff8533",
+                        data: Ocn_y_values
+                    },
+                    {
+                        fill: false,
+                        pointRadius: 0,
+                        borderColor: "#dc5959",
+                        data: Onfact_y_values
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    title: {
+                        display: false,
+                        text: "",
+                    },
+                    legend: {
+                        display: true,
+                        position: 'right',       
+                        labels: {
+                            color: 'rgb(255, 99, 132)',
+                            font: {
+                                size: 16
+                            },                                        
+                            generateLabels: function(chart) {
+                                return [
+                                    {
+                                        text: 'O(n!)',
+                                        fillStyle: '#dc5959',
+                                    },
+                                    {
+                                        text: 'O(c^n)',
+                                        fillStyle: '#ff8533',
+                                    },
+                                    {
+                                        text: 'O(n^2)',
+                                        fillStyle: '#ffd685',
+                                    },
+                                    {
+                                        text: 'O(nlogn)',
+                                        fillStyle: '#c1e5b7',
+                                    },
+                                    {
+                                        text: 'O(n)',
+                                        fillStyle: '#54ff29',
+                                    },
+                                    {
+                                        text: 'O(logn)',
+                                        fillStyle: '#51dc51',
+                                    },
+                                    {
+                                        text: 'O(1)',
+                                        fillStyle: '#29d429',
+                                    }                                    
+                                ];
+                            },
+                        }
+                    }
+                },
+                aspectRatio: 1,
+                maintainAspectRatio: true,
+                scales: {
+
+                    x: {
+                        grid: {
+                            display: false,  
+                        },
+                        border: {
+                            display: true,
+                            color: "#000000"
+                        },        
+                        ticks: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: "Kích thước dữ liệu đầu vào",
+                            font: {
+                                size: 16,
+                                family: '"Google Sans, Roboto, Arial, "sans-serif"'
+                            }
+                        }
+                    },         
+                    y: {
+                        grid: {
+                            display: false
+                        },
+                        border: {
+                            display: true,
+                            color: "#000000"
+                        },   
+                        ticks: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Số thao tác thực hiện',
+                            font: {
+                                size: 16
+                            }
+                        }
+                    }                       
+                    
+                }
+            },
+
+        });
+
+        // x
+        function generate_x_values(start, end) {
+            for (let x = start; x <= end; ++x) {
+                x_values.push(x);
+            }
+        }
+
+        function generate_O1_data(func, start, end) {           
+            for (let x = start; x <= end; ++x) {
+                O1_y_values.push(func);
+            }
+        }
+
+        function generate_Ologn_data(func, start, end) {           
+            for (let x = start; x <= end; ++x) {
+                Ologn_y_values.push(eval(func));
+            }
+        }
+
+        function generate_On_data(func, start, end) {           
+            for (let x = start; x <= end; ++x) {
+                On_y_values.push(eval(func));
+            }
+        }
+
+        function generate_Onlogn_data(func, start, end) {           
+            for (let x = start; x <= end; ++x) {
+                Onlogn_y_values.push(eval(func));
+            }
+        }
+
+        function generate_On2_data(func, start, end) {           
+            for (let x = start; x <= end; ++x) {
+                On2_y_values.push(eval(func));
+            }
+        }
+
+        function generate_Ocn_data(func, start, end) {           
+            for (let x = start; x <= end; ++x) {
+                Ocn_y_values.push(eval(func));
+            }
+        }
+
+        // O(n!)
+        function generate_Onfact_data(func, start, end) {           
+            for (let x = start; x <= end; ++x) {
+                Onfact_y_values.push(eval(func));
+            }
+        }
+
+        // logarithm base 2
+        function log2(x) {
+            return Math.log(x) / Math.LN2;
+        }        
+
+        function factorial(x) {
+            let f = 1;
+            for (let i = 1; i <= x; ++i) {
+                f = f * i;
+            }
+            return f;
+        }        
+    </script>
+</body>
+</html>
