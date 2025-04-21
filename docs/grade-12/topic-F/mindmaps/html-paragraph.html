@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"&#x110;o&#x1ea1;n v&#x103;n b&#x1ea3;n","children":[{"content":"&#x110;o&#x1ea1;n","children":[{"content":"<code>&lt;p&gt;</code>","children":[],"payload":{"tag":"li","lines":"9,10"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Ng&#x1eaf;t d&#xf2;ng","children":[{"content":"<code>&lt;br&gt;</code>","children":[],"payload":{"tag":"li","lines":"11,12"}}],"payload":{"tag":"h2","lines":"10,11"}},{"content":"G&#x1ea1;ch ngang","children":[{"content":"<code>&lt;hr&gt;</code>","children":[],"payload":{"tag":"li","lines":"13,14"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"Kho&#x1ea3;ng tr&#x1eaf;ng","children":[{"content":"<code>&amp;nbsp;</code>","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"<code>&amp;ensp;</code>","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"<code>&amp;emsp;</code>","children":[],"payload":{"tag":"li","lines":"17,18"}}],"payload":{"tag":"h2","lines":"14,15"}},{"content":"Gi&#x1eef; nguy&#xea;n nh&#x1b0; m&#xe3; l&#x1ec7;nh","children":[{"content":"<code>&lt;pre&gt;</code>","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"h2","lines":"18,19"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+</body>
+</html>

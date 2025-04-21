@@ -6,11 +6,11 @@ icon: material/format-font
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày các phần tử HTML dùng để định dạng văn bản đơn giản.
+    Bài này trình bày một số phần tử HTML dùng để thực hiện những định dạng đơn giản đối với văn bản.
 
 ## Phần tử định dạng văn bản
 
-Một số phần tử thông dụng giúp định dạng văn bản đơn giản:
+Một số phần tử thông dụng giúp định dạng văn bản:
 
 | Phần tử | Công dụng |
 | --- | --- |
@@ -22,9 +22,13 @@ Một số phần tử thông dụng giúp định dạng văn bản đơn giả
 | `<mark>` | Tô nổi (highlight) |
 | `<small>` | Làm nhỏ cỡ chữ |
 
-Ví dụ:  
+Ví dụ:
 
-``` html title="portfolio.html" linenums="8" hl_lines="17-27"
+**Yêu cầu:** Thực hiện một vài định dạng đơn giản như in đậm, in nghiêng, gạch dưới, v.v... đối với đoạn văn bản.
+
+**Mã lệnh:**
+
+```html title="portfolio.html" linenums="8" hl_lines="17-27"
 <body>
     <h1>Chào mừng bạn ghé thăm portfolio</h1>
     <p>Trang web này tự tay mình dệt nên.</p>
@@ -54,11 +58,15 @@ Ngược lòng mình tìm về nông nổi
         1/2mv<sup>2</sup> + mgh</p> <!-- (1)! -->
 </body>
 ```
-{ .annotate}
+{ .annotate }
 
-1.  Để viết phân số hoặc những công thức toán học khác trong HTML, ta cần *độ* thêm *đồ chơi*, chẳng hạn như [MathJax](https://www.mathjax.org/){:target="_blank"}. Nội dung này nằm ngoài chương trình chính khóa.
+1.  Để viết những công thức toán học khác trong HTML, ta cần sử dụng thêm "*đồ chơi*", chẳng hạn như [MathJax](https://www.mathjax.org/){:target="_blank"}. Nội dung này nằm ngoài chương trình chính khóa.
 
 [Click để xem kết xuất trang portfolio trong tab mới](html-formatting/portfolio.html){:target="_blank"}
+
+## Mã nguồn
+
+Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/tree/main/grade-12/topic-f/html-paragraph){:target="_blank"}.
 
 ## Some English words
 

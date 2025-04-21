@@ -13,7 +13,8 @@ markmap:
 ## Gạch ngang
   - `<hr>`
 ## Khoảng trắng
-  - `&nbsp;` `&ensp;` `&emsp;`
-  
+  - `&nbsp;`
+  - `&ensp;`
+  - `&emsp;`  
 ## Giữ nguyên như mã lệnh
   - `<pre>`
