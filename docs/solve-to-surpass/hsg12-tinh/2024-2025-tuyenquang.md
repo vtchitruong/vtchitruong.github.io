@@ -1,4 +1,4 @@
-# 2024-2025 Tuyên Quang
+# 2024 - 2025 Tuyên Quang
 
 ## Câu 1: TÍNH TỔNG
 
