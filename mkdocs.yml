@@ -323,6 +323,10 @@ nav:
       - grade-10/topic-F/list-iterating-processing.md
       - grade-10/topic-F/list-manipulating-functions.md
       - grade-10/topic-F/string.md
+    - Chủ đề G:
+      - Mục lục: grade-10/topic-G/topic-index.md
+      - grade-10/topic-G/graphic-design.md
+      - grade-10/topic-G/developer.md
   - Lớp 11:
     - Chương trình khung: grade-11/grade-11-index.md
     - Chủ đề A1:
@@ -398,7 +402,7 @@ nav:
       - grade-12/topic-F/css-form.md
       - grade-12/topic-F/deploying-the-website.md
     - Chủ đề G:
-      - grade-12/topic-G/topic-index.md
+      - Mục lục: grade-12/topic-G/topic-index.md
       - grade-12/topic-G/network-administration-vs-system-security.md
       - grade-12/topic-G/it-services.md
   - Chuyên đề:
