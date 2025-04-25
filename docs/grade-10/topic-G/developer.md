@@ -60,7 +60,15 @@ Một số ngành học liên quan trực tiếp đến nghề phát triển ph�
 
 Trong bối cảnh chuyển đổi số diễn ra mạnh mẽ ở mọi lĩnh vực, nhu cầu về đội ngũ phát triển phần mềm là rất lớn.
 
-Nhu cầu nhân lực không chỉ giới hạn ở vị trí lập trình viên (viết mã lệnh) mà còn bao gồm nhiều vị trí khác như kỹ sư phần mềm, kiến trúc sư phần mềm, chuyên gia kiểm thử phần mềm (QA/QC), chuyên gia phân tích nghiệp vụ, quản lý dự án, chuyên gia DevOps, chuyên gia bảo mật.
+Nhu cầu nhân lực không chỉ giới hạn ở vị trí lập trình viên (viết mã lệnh) mà còn bao gồm nhiều vị trí khác như:
+
+- Kỹ sư phần mềm
+- Kiến trúc sư phần mềm
+- Chuyên gia kiểm thử phần mềm
+- Chuyên gia phân tích nghiệp vụ
+- Quản lý dự án
+- Chuyên gia DevOps
+- Chuyên gia bảo mật
 
 Mặc dù vậy, một trong những yếu tố ảnh hưởng đáng kể đến nhu cầu nhân lực phát triển phần mềm chính là sự lớn mạnh của trí tuệ nhân tạo.
 

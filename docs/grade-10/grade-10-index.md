@@ -89,7 +89,7 @@ Lập trình cơ bản
 
 ### Chủ đề G
 
-Giới thiệu nhóm nghề thiết kế và lập trình		
+Giới thiệu nhóm [nghề thiết kế](./topic-G/graphic-design.md){:target="_blank"} và [nghề lập trình](./topic-G/developer.md){:target="_blank"}.
 
 1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v...):
 

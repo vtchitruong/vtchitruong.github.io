@@ -91,7 +91,7 @@ Tạo trang web
 
 ### Chủ đề G
 
-1. Giới thiệu nhóm nghề dịch vụ và quản trị
+1. Giới thiệu [nhóm nghề dịch vụ và quản trị](./topic-G/network-administration-vs-system-security.md){:target="_blank"}
 
     - Trình bày được thông tin hướng nghiệp nhóm nghề dịch vụ và quản trị (sửa chữa và bảo trì máy tính, quản trị mạng, bảo mật hệ thống thông tin, quản trị và bảo trì hệ thống) theo các yếu tố sau:
 
@@ -103,7 +103,7 @@ Tạo trang web
     - Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực,...) về một vài ngành nghề khác trong lĩnh vực tin học.
     - Giao lưu được với bạn bè qua các kênh truyền thông tin số để tham khảo và trao đổi ý kiến về những thông tin trên.
 
-2. Giới thiệu một số nghề ứng dụng tin học và một số ngành thuộc lĩnh vực tin học
+2. Giới thiệu một số [nghề ứng dụng tin học và một số ngành thuộc lĩnh vực tin học](./topic-G/it-services.md){:target="_blank"}
 
     - Nêu được tên một số ngành nghề và lĩnh vực có sử dụng nhân lực tin học, đồng thời giải thích được vai trò và công việc của chuyên viên tin học trong một số ngành nghề.
     - Tìm hiểu được thông tin ngành đào tạo của một số cơ sở đào tạo công nghệ thông tin.

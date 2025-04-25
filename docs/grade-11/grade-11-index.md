@@ -90,7 +90,7 @@ Tìm kiếm và trao đổi thông tin trên mạng
 
 ### Chủ đề G
 
-Nghề quản trị cơ sở dữ liệu
+[Nghề quản trị cơ sở dữ liệu](./topic-G/database-administration.md){:target="_blank"}
 
 1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v...):
 
