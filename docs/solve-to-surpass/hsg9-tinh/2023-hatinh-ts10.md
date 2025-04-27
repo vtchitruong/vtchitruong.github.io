@@ -1,4 +1,4 @@
-# 2023 - 2024 Tuyển sinh 10 Hà Tĩnh
+# Tuyển sinh 10 Hà Tĩnh 2023 - 2024
 
 ## Bài 1: Tổng dãy số (3,0 điểm)
 
