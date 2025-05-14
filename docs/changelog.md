@@ -2,6 +2,10 @@
 show_donation: false
 ---
 
+### v23.08.19 <small>10-05-2025</small> { id="25.05.10" }
+
+- Thêm tag cho một số bài viết, nhất là các bài giải đề thi học sinh giỏi.
+
 ### v23.08.18 <small>26-12-2024</small> { id="24.12.26" }
 
 - Thêm nút Home ở góc phải dưới của màn hình để quay về trang chủ.
