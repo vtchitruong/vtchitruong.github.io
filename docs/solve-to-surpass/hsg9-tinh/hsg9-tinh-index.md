@@ -6,7 +6,7 @@ icon: material/table-of-contents
 
 [2023 - 2024 Cà Mau](./2023-2024-camau.md){target="_blank"}
 
-[2023 - 2024 Hà Tĩnh - Tuyển sinh 10](./2023-hatinh-ts10.md){target="_blank"}
+[2023 - 2024 Hà Tĩnh - Tuyển sinh 10](./2023-2024-hatinh-ts10.md){target="_blank"}
 
 [2023 - 2024 Hải Dương](./2023-2024-haiduong.md){target="_blank"}
 
