@@ -484,6 +484,7 @@ nav:
       - Johnson: advanced/scheduling/johnson.md
     - Xử lý bit:
       - advanced/bitwise/find-unique.md
+      - advanced/bitwise/ceiling-power-of-two.md 
   - Solve to surpass:
     - Mục lục: solve-to-surpass/solve-to-surpass-index.md
     - HSG 12 Thành phố:

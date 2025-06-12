@@ -4,7 +4,7 @@ tags:
     - Phần tử duy nhất
 ---
 
-# Tìm phần tử duy nhất trong mảng
+# Phần tử duy nhất trong mảng
 
 ## Đề bài
 
