@@ -1,3 +1,9 @@
+---
+tags:
+    - XOR
+    - Phần tử duy nhất
+---
+
 # Tìm phần tử duy nhất trong mảng
 
 ## Đề bài
