@@ -1,5 +1,6 @@
 ---
 tags:
+    - bitwise
     - XOR
     - Phần tử duy nhất
 ---

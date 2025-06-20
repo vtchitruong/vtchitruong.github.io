@@ -291,6 +291,10 @@ nav:
     - 🪵 Nhật ký thay đổi: changelog.md
     - 📜 Giấy phép: license.md
     - 💰 Bao tôi ly cafe nhé!: donation.md
+  # - Lớp 8:
+  #   - Chủ đề F:
+  #     - grade-08/topic-F/algorithm-and-program.md
+  #     - grade-08/topic-F/sequential-structure.md
   - Lớp 10:
     - Chương trình khung: grade-10/grade-10-index.md
     - Chủ đề A1:
@@ -491,9 +495,10 @@ nav:
       - 2023 - 2024: solve-to-surpass/hsg12-hcm/2023-2024.md
     - HSG 12 tỉnh khác:
       - solve-to-surpass/hsg12-tinh/2024-2025-lamdong.md
-      - solve-to-surpass/hsg12-tinh/2024-2025-tuyenquang.md
-      - solve-to-surpass/hsg12-tinh/2024-2025-nghean.md
-      - solve-to-surpass/hsg12-tinh/2023-2024-vinhphuc.md    
+      - 2024 - 2025 Nghệ An: solve-to-surpass/hsg12-tinh/2024-2025-nghean.md
+      - 2024 - 2025 Tây Ninh (buổi 1): solve-to-surpass/hsg12-tinh/2024-2025-tayninh-buoi-1.md
+      - solve-to-surpass/hsg12-tinh/2024-2025-tuyenquang.md      
+      - solve-to-surpass/hsg12-tinh/2023-2024-vinhphuc.md
     - Olympic 30/4:
       - 2014 - 2015: solve-to-surpass/olympic-april-30/2015-grade-10.md
     - Olympic 11 Thành phố:

@@ -1,9 +1,9 @@
 ---
 tags:
+    - bitwise
     - Phép dịch phải
     - OR
-    - Luỹ thừa của 2 gần nhất
-    - Luỹ thừa của 2 nhỏ nhất và lớn hơn hơn hoặc bằng n
+    - Luỹ thừa của 2
 ---
 
 # Luỹ thừa của 2 gần nhất

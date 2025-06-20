@@ -162,3 +162,5 @@ cython_debug/
 /pictures/*.bkp
 /pictures/*.dtmp
 mkdocs-log.txt
+/pictures/**/*.bkp
+/pictures/**/*.dtmp
