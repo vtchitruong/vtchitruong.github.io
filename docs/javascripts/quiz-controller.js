@@ -219,7 +219,7 @@ function showResults() {
   document.getElementById('pages').innerHTML = '';
 
   // Change Title
-  questionTitle.innerHTML = '<h1>Điểm của bạn</h1>';
+  questionTitle.innerHTML = '<div style="font-size: 1.4rem">Mức độ thông thái của bạn:</div>';
 
   // Get the area that will be used to display the user's score
   var newInfo = document.getElementById('quiz-results');

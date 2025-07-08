@@ -125,8 +125,8 @@ li:hover {
 .circle{
   position: relative;
   margin: 0 auto;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   background: #bdc3c7;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -149,7 +149,7 @@ h3 {
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   color: #fff;
-  font-size: 40pt;
+  font-size: 2rem;
   line-height: 0;
   font-weight: normal;
 }

@@ -8,47 +8,53 @@ icon: simple/bit
 
     Bài này trình bày về các đơn vị dùng để định lượng dữ liệu.
 
-## Đơn vị bit
+## bit
 
-Máy tính (1) lưu trữ và xử lý dữ liệu ở **dạng nhị phân**.
+Đơn vị đo dữ liệu nhỏ nhất và cơ bản (nhất) là **bit** (1).
 { .annotate }
 
-1.  Loại máy tính được đề cập trong các bài học đều mặc định hiểu là máy tính điện tử.
+1.  bit là viết tắt của **b** -inary dig- **it** (chữ số nhị phân).
 
-Nghĩa là, máy tính chỉ sử dụng hai tín hiệu đại diện cho hai trạng thái khác nhau của một sự vật hoặc sự kiện, ký hiệu là `0` và `1`. Những chữ số `0` và `1` này được gọi là **bit**.  
+Ký hiệu: **b**.
 
-Như vậy, một cách hình tượng, bộ nhớ máy tính có thể chia nhỏ thành nhiều ô vuông, mỗi ô là một bit, và không thể chia nhỏ hơn được nữa. Tại một thời điểm, một bit chỉ chứa một trong hai trạng thái, hoặc là `0` hoặc là `1`, chứ không chứa hai trạng thái cùng lúc.  
+??? info "Giải thích thêm về bit"
 
-!!! note "bit"
-
-    Đơn vị đo dữ liệu nhỏ nhất và cơ bản (nhất) là **bit** (1). Ký hiệu: **b**.
+    Máy tính (1) lưu trữ và xử lý dữ liệu ở **dạng nhị phân**.
     { .annotate }
 
-    1.  bit là viết tắt của **b** -inary dig- **it** (chữ số nhị phân).
+    1.  Loại máy tính được đề cập trong các bài học đều mặc định hiểu là **máy tính điện tử**.
 
-!!! question "Hỏi chút chơi - phần 1"
+    Nghĩa là, máy tính sử dụng hai tín hiệu đại diện cho hai trạng thái khác nhau của một sự vật hoặc sự kiện, ký hiệu là `0` và `1`. Những chữ số `0` và `1` này được gọi là **bit**.  
+
+    Một cách hình tượng, bộ nhớ máy tính có thể chia nhỏ thành nhiều ô vuông, mỗi ô là một **bit**, và không thể chia nhỏ hơn được nữa.
+
+    Tại một thời điểm, một **bit** chỉ chứa một trong hai trạng thái, hoặc là `0` hoặc là `1`, chứ không chứa hai trạng thái cùng lúc.  
+
+!!! question "Hỏi chút chơi"
     
     <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../data-measurement-unit/quiz1.html">Hỏi chút chơi - phần 1</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../data-measurement-unit/quiz1.html">Hỏi chút chơi</iframe>
     </div>
 
-## Đơn vị byte
+## byte
 
-Để tiện lợi và hiệu quả, người ta gom nhóm nhiều bit lại, tạo ra những đơn vị lớn hơn. Cụ thể, cứ mỗi 8 bit liên tiếp được gom thành 1 byte.  
+Đơn vị đo dữ liệu thường dùng là **byte**.
+
+Ký hiệu: **B**.
+
+Đơn vị **byte** có được do gom nhóm nhiều **bit** lại với nhau. Cụ thể, cứ mỗi 8 bit liên tiếp được gom thành 1 byte.  
 
 <div>
     <iframe width="100%" height="150px" frameBorder=0 src="../data-measurement-unit/bit-byte.html"></iframe>
 </div>
 
-!!! note "byte"
+??? info "Giải thích thêm về byte"
 
-    Đơn vị đo dữ liệu thường dùng là **byte** (B). Ký hiệu: **B**.
+    Byte có thể dùng để biểu diễn:
 
-Byte có thể dùng để biểu diễn:
-
-- ký tự
-- số nguyên hoặc số có phần thập phân
-- kênh màu
+    - **Ký tự**: tuỳ theo bảng mã mà mỗi ký tự có thể chiếm 1 byte, 2 byte trên bộ nhớ hoặc nhiều hơn.
+    - **Số nguyên** hoặc **số có phần thập phân**: tuỳ theo độ lớn hoặc độ chính xác của số mà một số có thể chiếm 1 byte, 2 byte, 4 byte, v.v... trên bộ nhớ.
+    - **Kênh màu**: trong hệ màu RGB, mỗi kênh màu (R, G hoặc B) chiếm 1 byte. Nói cách khác, mỗi điểm ảnh gồm 3 kênh màu sẽ chiếm 3 byte trên bộ nhớ. 
 
 !!! info "Lưu ý về ký hiệu"
 
@@ -56,15 +62,15 @@ Byte có thể dùng để biểu diễn:
 
     Kích thước của tập tin và dung lượng của thiết bị lưu trữ thường ghi theo **B** -yte; trong khi đó, tốc độ đường truyền mạng thường ghi theo **b** -it.
 
-!!! question "Hỏi chút chơi - phần 2"
+!!! question "Hỏi chút chơi"
     
     <div>
-        <iframe style="width: 100%; height: 320px" frameBorder=0 src="../data-measurement-unit/quiz2.html">Hỏi chút chơi - phần 2</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../data-measurement-unit/quiz2.html">Hỏi chút chơi</iframe>
     </div>
 
-## Các đơn vị bội của byte
+## Các đơn vị khác
 
-Để tiện lợi hơn nữa, người ta gắn các *tiếp đầu ngữ* vào byte, như các đơn vị đo lường khác, để tạo ra các đơn vị bội của byte, liệt kê trong bảng sau:   
+Tương tự các đơn vị đo lường khác, người ta gắn thêm các *tiếp đầu ngữ* vào byte để tạo ra các đơn vị bội của byte như sau: 
 
 | Đơn vị | Ký hiệu | Quy đổi |
 | --- | --- | --- |
@@ -91,16 +97,17 @@ Byte có thể dùng để biểu diễn:
 
     Trong các chương trình học ở Việt Nam, bạn nên sử dụng $2^{10}$ để quy đổi.
 
-!!! question "Hỏi chút chơi - phần 3"
+!!! question "Hỏi chút chơi"
     
     <div>
-        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../data-measurement-unit/quiz3.html">Hỏi chút chơi - phần 3</iframe>
+        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../data-measurement-unit/quiz3.html">Hỏi chút chơi</iframe>
     </div>
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-10/topic-A1/data-measurement-unit.mm.md!}
-*Sơ đồ tóm tắt đơn vị đo dữ liệu*
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/data-measurement-unit.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Some English words
 

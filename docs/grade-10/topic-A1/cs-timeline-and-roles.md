@@ -2,7 +2,7 @@
 icon: material/timeline-text
 ---
 
-# Lịch sử và đóng góp của tin học
+# Lịch sử và đóng góp của Tin học
 
 !!! abstract "Tóm lược nội dung"
 
