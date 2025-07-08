@@ -291,11 +291,11 @@ nav:
     - 🪵 Nhật ký thay đổi: changelog.md
     - 📜 Giấy phép: license.md
     - 💰 Bao tôi ly cafe nhé!: donation.md
-  - Lớp 8:
-    - Chủ đề F:
-      - grade-08/topic-F/algorithm-and-program.md
-      - grade-08/topic-F/sequential-structure.md
-      - grade-08/topic-F/variable.md
+  # - Lớp 8:
+  #   - Chủ đề F:
+  #     - grade-08/topic-F/algorithm-and-program.md
+  #     - grade-08/topic-F/sequential-structure.md
+  #     - grade-08/topic-F/variable.md
   - Lớp 10:
     - Chương trình khung: grade-10/grade-10-index.md
     - Chủ đề A1:
