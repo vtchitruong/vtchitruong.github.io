@@ -36,8 +36,7 @@ icon: octicons/number-16
     - Thể hiện
     - Trình bày lại
 
-![Dữ liệu sau khi xử lý trở thành thông tin](data-vs-information/data-vs-information.svg){loading=lazy width=360}  
-<figcaption>Dữ liệu sau khi xử lý trở thành thông tin</figcaption>  
+![Dữ liệu sau khi xử lý trở thành thông tin](data-vs-information/data-vs-information.svg){loading=lazy width=480}
 
 Ví dụ:
 
@@ -52,41 +51,38 @@ flowchart LR
     style P fill:#fff,stroke:#ea6b66
 ```
 
-!!! question "Hỏi chút chơi - phần 1"
+!!! question "Hỏi chút chơi"
     
     <div>
-        <iframe style="width: 100%; height: 380px" frameBorder=0 src="../data-vs-information/quiz1.html">Hỏi chút chơi - phần 1</iframe>
+        <iframe style="width: 100%; height: 380px" frameBorder=0 src="../data-vs-information/quiz1.html">Hỏi chút chơi</iframe>
     </div>
 
-## Mối quan hệ giữa dữ liệu và thông tin
+## Mối quan hệ
 
 Dữ liệu và thông tin là những khái niệm liên quan mật thiết với nhau, nhưng chúng không hoàn toàn là một. Chúng đại diện cho các giai đoạn khác nhau của tiến trình xử lý. Cụ thể như sau:  
 
-!!! note "Mối quan hệ"
-
-    * Khi dữ liệu đã xử lý để trở nên có nghĩa, có ích thì gọi là thông tin.
-
-    * Thông tin có được từ dữ liệu của tiến trình xử lý này có thể trở thành dữ liệu cho một tiến trình xử lý khác.
+- Khi dữ liệu đã xử lý để trở nên có nghĩa, có ích thì gọi là thông tin.
+- Thông tin có được từ dữ liệu của tiến trình xử lý này có thể trở thành dữ liệu cho một tiến trình xử lý khác.
 
 Ví dụ:
 
-1. Trong tiến trình xác định điểm trung bình:
+1\. Trong tiến trình xác định điểm trung bình:
 
 - Dữ liệu: Điểm số các bài kiểm tra.
 - Thông tin: Điểm trung bình môn.
 
-2. Trong tiến trình xác định học lựa:
+2\. Trong tiến trình xác định học lực:
 
 - Dữ liệu: Điểm trung bình môn, vốn là thông tin của tiến trình 1, lại trở thành dữ liệu của tiến trình 2 này.
-- Thông tin: Học lực (giỏi, khá, trung bình, yếu kém).
+- Thông tin: Học lực (tốt, khá, đạt, chưa đạt).
 
-!!! question "Hỏi chút chơi - phần 2"
+!!! question "Hỏi chút chơi"
     
     <div>
-        <iframe style="width: 100%; height: 380px" frameBorder=0 src="../data-vs-information/quiz2.html">Hỏi chút chơi - phần 2</iframe>
+        <iframe style="width: 100%; height: 380px" frameBorder=0 src="../data-vs-information/quiz2.html">Hỏi chút chơi</iframe>
     </div>
 
-## Phân biệt dữ liệu và thông tin
+## Phân biệt
 
 | &nbsp; | Dữ liệu	| Thông tin |
 | --- | --- | --- |
@@ -109,13 +105,13 @@ Ví dụ:
 
     Xử lý dữ liệu / Xử lý thông tin
 
-!!! question "Hỏi chút chơi - phần 3"
+!!! question "Hỏi chút chơi"
     
     <div>
-        <iframe style="width: 100%; height: 300px" frameBorder=0 src="../data-vs-information/quiz3.html">Hỏi chút chơi - phần 3</iframe>
+        <iframe style="width: 100%; height: 300px" frameBorder=0 src="../data-vs-information/quiz3.html">Hỏi chút chơi</iframe>
     </div>
 
-## Tầm quan trọng của dữ liệu và thông tin
+## Tầm quan trọng
 
 Thông tin đem lại nhiều lợi ích:
 
@@ -133,16 +129,15 @@ Vì thế, dữ liệu và thông tin là vô cùng quan trọng đối với m�
 
     Đọc thêm tại [The world’s most valuable resource is no longer oil, but data](https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data){:target="_blank"}
 
-!!! question "Hỏi chút chơi - phần 4"
+!!! question "Hỏi chút chơi"
     
     <div>
-        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../data-vs-information/quiz4.html">Hỏi chút chơi - phần 4</iframe>
+        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../data-vs-information/quiz4.html">Hỏi chút chơi</iframe>
     </div>
 
 ## Sơ đồ tóm tắt nội dung
 
-{!grade-10/topic-A1/data-vs-information.mm.md!}
-*Sơ đồ tóm tắt dữ liệu và thông tin*
+{!grade-10/topic-A1/data-vs-information/data-vs-information.mm.md!}
 
 ## Some English words
 

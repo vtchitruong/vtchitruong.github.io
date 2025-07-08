@@ -8,64 +8,112 @@ icon: material/timeline-text
 
     Bài này trình bày:
 
-    - Sơ nét về lịch sử của tin học.
-    - Những đóng góp của tin học đối với xã hội.
+    - Sơ nét về lịch sử phát triển của Tin học.
+    - Những đóng góp của Tin học đối với xã hội.
 
-## Đôi nét về lịch sử phát triển
+## Lịch sử phát triển
 
-**Tin học**, hay còn gọi là **công nghệ thông tin** hoặc **khoa học máy tính**, là một lĩnh vực rộng lớn, tuy còn mới mẻ so với một số lĩnh vực khác, song vẫn có bề dày lịch sử nhất định. Có thể điểm qua một số cột mốc phát triển như sau:  
+**Tin học**, hay còn gọi là **công nghệ thông tin** hoặc **khoa học máy tính**, là một lĩnh vực rộng lớn, tuy còn mới mẻ so với một số lĩnh vực khác, song vẫn có bề dày lịch sử nhất định.
+
+Lược đồ sau điểm qua một số cột mốc phát triển của Tin học:
 
 <div>
-    <iframe width="100%" height="500px" frameBorder=0 src="../cs-timeline/cs-timeline.html"></iframe>
+    <iframe width="100%" height="500px" frameBorder=0 src="../cs-timeline-and-roles/cs-timeline.html"></iframe>
 </div>
 
-## Những đóng góp của tin học đối với xã hội
+??? info "Diễn giải thêm về các mốc phát triển"
 
-Công nghệ thông tin là lĩnh vực mang tính cơ sở hạ tầng, là "*bệ đỡ*" cho nhiều lĩnh vực khác phát triển, bằng cách cung cấp các công cụ, kỹ thuật và công nghệ cho các lĩnh vực đó.  
+    Năm 1837, nhà khoa học người Anh Charles Babbage thiết kế cỗ máy gọi là **Analytical Engine** có các yếu tố cơ bản của một máy tính đa năng (general-pupose conputer) như đơn vị logic số học, luồng điều khiển và bộ nhớ. Đây có thể xem là bản thiết kế đầu tiên của máy tính hiện đại và Babbage là người tiên phong về mặt kiến trúc phần cứng.
 
-Bằng những thành tựu của công nghệ thông tin, máy tính đã can thiệp vào nhiều mặt của đời sống xã hội, chẳng hạn như:  
+    Năm 1936, nhà khoa học người Anh Alan Turing trình bày khái niệm về cỗ máy có khả năng giải quyết các bài toán bằng trình tự các bước của thuật toán, gọi là **Turing Machine**. Nếu xem máy tính ở khía cạnh lý thuyết, đây chính là máy tính đầu tiên trên thế giới. Alan Turing là cha đẻ của lý thuyết tính toán và khoa học máy tính.
 
-1. Truyền thông và truy cập thông tin
+    Năm 1944, **ENIAC** (The Electronic Numerical Integrator and Computer) là một trong những máy tính đa năng đầu tiên trên thế giới, được sử dụng cho các tính toán khoa học và quân sự.
 
-    Ví dụ:  
-    Internet giúp thế giới giao tiếp và chia sẻ thông tin cho nhau, thúc đẩy thương mại điện tử, chính phủ điện tử, v.v...  
-    Các cỗ máy tìm kiếm giúp nhanh chóng truy cập nguồn thông tin như mong muốn.
+    Năm 1951, máy tính **UNIVAC I** (Universal Automatic Computer I) trở thành máy tính thương mại đầu tiên tại Mỹ.
 
-2. Sản xuất và tự động hóa
+    Năm 1957, IBM phát triển **Fortran** (Formula Translation), là ngôn ngữ lập trình bậc cao thành công và phổ biến rộng rãi đầu tiên trên thế giới, mở ra cuộc cách mạng phát triển phần mềm khi giúp lập trình viên viết mã lệnh dễ dàng hơn cho máy tính.
 
-    Ví dụ:  
-    Robot đã tham gia vào nhiều ngành công nghiệp và dịch vụ như sản xuất ô tô, logistic, y tế, v.v...  
-    Máy in 3D tạo nên cuộc cách mạng về sản xuất và tạo hình, tạo mẫu.
+    Năm 1969, mạng **ARPANET** (The Advanced Research Projects Agency Network) ra đời, cho phép các nhà nghiên cứu có thể chia sẻ thông tin bằng tín hiệu điện tử. Đây là thành tựu đột phá, tiền thân của mạng Internet ngày nay.
 
-3. Giáo dục
+    Năm 1971, sự ra đời của bộ vi xử lý **Intel 4004** đánh dấu bước chuyển dịch sang máy tính nhỏ với chi phí thấp, dẫn đến gia tăng số lượng máy tính cá nhân.
 
-    Ví dụ:  
-    Máy tính cho phép học tập trực tuyến, giúp việc học diễn ra liên tục và mọi nơi.  
-    Máy tính có thể theo dõi tiến độ học tập, có thể cá nhân hóa trải nghiệm học tập.
+    Năm 1969, Ken Thompson, với sự hỗ trợ của Dennis Ritchie, đã viết phiên bản đầu tiên của **UNIX** tại Bell Labs. Năm 1973, hệ điều hành **UNIX** được viết lại bằng ngôn ngữ lập trình C. Điều này giúp UNIX có thể chạy trên nhiều loại phần cứng khác nhau và giúp nó trở nên phổ biến.
 
-4. Nghiên cứu khoa học
+    Năm 1981, IBM trình làng **máy tính cá nhân**, đặt ra tiêu chuẩn cho phần cứng và phần mềm giúp máy tính cá nhân trở nên phổ biến.
 
-    Ví dụ:  
-    Máy tính có thể mô hình hóa các hiện tượng, giúp kiểm tra các giả thuyết.  
-    Máy tính có thể phân tích lượng dữ liệu lớn như trong các nghiên cứu về gen, thiên văn, khí hậu, v.v...
+    Năm 1974, hai kỹ sư Vint Cerf và Bob Kahn công bố bài báo khoa học đầu tiên mô tả thiết kế của TCP. Năm 1983, bộ giao thức **TCP/IP** (The Transmission Control Protocol and Internet Protocol) chính thức trở thành giao thức bắt buộc trên mạng ARPANET, hình thành nền tảng cho mạng Internet hiện đại.
 
-5. Giao thông và vận chuyển
+    Năm 1991, nhà khoa học người Anh Tim Berners-Lee phát minh hệ thống **WWW** (World Wide Web), tạo nên cuộc cách mạng về truy cập và chia sẻ thông tin trên Internet.
 
-    Ví dụ:  
-    GPS và các hệ thống định vị khác có thể định hướng theo thời gian thực, giúp nhanh chóng tìm đường, tìm địa điểm.  
-    Máy tính giúp xe có thể tự vận hành, giúp tối ưu hệ thống vận chuyển.
+    Cũng trong năm 1991, Linus Torvalds tung ra nhân của hệ điều hành mã nguồn mở **Linux** (Linux kernel), làm nên một thành phần quan trọng trong các hệ thống máy tính.
+
+    Năm 1998, Google trình làng **cỗ máy tìm kiếm** hiệu quả và chính xác, gọi là Google Search Engine, đánh dấu cuộc cách mạng về tìm kiếm thông tin trên Internet.
+
+    Năm 2000, sự ra đời của **điện thoại thông minh** đã kết hợp được sức mạnh tính toán, khả năng kết nối và tính di động với nhau, làm thay đổi cách con người tương tác với công nghệ.
+
+    Từ 2010 đến nay, lĩnh vực **trí tuệ nhân tạo** tiến bộ vượt bậc, có những đột phá trong các nhánh như xử lý ngôn ngữ tự nhiên, thị giác máy tính và các autonomous system (tạm dịch là hệ thống tự quản).
+
+    Các công nghệ khác cũng đạt được những bước phát triển đáng kể: **máy tính lượng tử**, **blockchain**, **thiết bị đeo** điện tử thích ứng cơ thể, v.v...
+
+    Năm 2022, OpenAI phát hành **ChatGPT** (dựa trên mô hình GPT-3.5), tạo nên cột mốc có sức ảnh hưởng toàn cầu, thúc đẩy một cuộc chạy đua phát triển và ứng dụng AI tạo sinh.
+
+!!! question "Hỏi chút chơi"
     
-6. Mã hóa và bảo mật
+    <div>
+        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../cs-timeline-and-roles/quiz1.html">Hỏi chút chơi</iframe>
+    </div>
+
+## Một số đóng góp
+
+Tin học là lĩnh vực mang tính **cơ sở hạ tầng**, là "*bệ đỡ*" cho nhiều lĩnh vực khác phát triển, bằng cách cung cấp các công cụ, kỹ thuật và công nghệ cho các lĩnh vực đó.
+
+Tin học, với những thành tựu của nó, đã tạo ra ảnh hưởng đáng kể đến nhiều mặt của đời sống xã hội, chẳng hạn như:  
+
+1. **Truyền thông và truy cập thông tin**
 
     Ví dụ:  
-    Máy tính có thể mã hóa dữ liệu, giúp dữ liệu được bảo vệ và bảo mật.  
-    Máy tính cũng giúp ngăn chặn các mối đe dọa trên mạng, ngăn chặn khả năng xâm phạm dữ liệu.
+    a. Internet, mạng xã hội và các nền tảng trực tuyến giúp giao tiếp và chia sẻ thông tin tức thì, và thúc đẩy thương mại điện tử, chính phủ điện tử, v.v...  
+    b. Các cỗ máy tìm kiếm giúp nhanh chóng truy cập nguồn thông tin như mong muốn.  
+    c. Các hệ thống gợi ý (recommendation systems) giúp định hình cách tiếp cận thông tin và giải trí.
 
-7. Giải trí
+2. **Sản xuất và tự động hoá**
 
     Ví dụ:  
-    Máy tính có thể tạo ra các trải nghiệm giải trí có tính tương tác và sống động.  
-    Máy tính có thể đề xuất và phân phối các nội dung giải trí phù hợp với mỗi cá nhân.
+    a. Robot tham gia vào nhiều ngành công nghiệp và dịch vụ như sản xuất ô tô, logistic, y tế, v.v...  
+    b. Internet vạn vật (IoT), kết nối máy móc và cảm biến, giúp hình thành nhà máy thông minh có năng lực tự tối ưu hoá quy trình sản xuất.  
+    c. Máy in 3D tạo nên cuộc cách mạng về tạo hình, tạo mẫu nhanh (rapid prototyping), sản xuất theo yêu cầu, chẳng hạn như tạo bộ phận giả hoặc mô hình giải phẫu trong y học.
+
+3. **Giáo dục**
+
+    Ví dụ:  
+    Tin học giúp cho việc học tập diễn ra trực tuyến, liên tục và mọi nơi, giúp theo dõi tiến độ và cá nhân hoá trải nghiệm học tập.
+
+4. **Nghiên cứu khoa học**
+
+    Ví dụ:  
+    Tin học giúp mô hình hoá các hiện tượng, kiểm tra các giả thuyết, phân tích lượng dữ liệu lớn, chẳng hạn như các nghiên cứu về gen, thiên văn, khí hậu, v.v...
+
+5. **Giao thông và vận chuyển**
+
+    Ví dụ:  
+    a. Các hệ thống định vị toàn cầu giúp định hướng theo thời gian thực, tìm địa điểm và tìm đường nhanh chóng.  
+    b. Tin học giúp xe tự vận hành, giúp tối ưu hệ thống vận chuyển.
+    
+6. **Mã hoá và bảo mật**
+
+    Ví dụ:  
+    Tin học giúp mã hoá dữ liệu, bảo vệ dữ liệu, giúp ngăn chặn các mối đe dọa trên mạng.
+
+7. **Giải trí**
+
+    Ví dụ:  
+    Tin học tạo ra các trải nghiệm giải trí có tính tương tác và sống động, đề xuất và phân phối các nội dung giải trí phù hợp với mỗi cá nhân.
+
+!!! question "Hỏi chút chơi"
+    
+    <div>
+        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../cs-timeline-and-roles/quiz2.html">Hỏi chút chơi</iframe>
+    </div>
 
 ## Some English words
 

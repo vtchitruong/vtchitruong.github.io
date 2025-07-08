@@ -66,6 +66,8 @@ loadQuiz();
 var tags;
 var tagsClass = '';
 var liTagsid = [];
+
+var incorrectAns = 0;
 var correctAns = 0;
 var quizPage = 1;
 
@@ -179,12 +181,20 @@ function checkAnswer() {
     console.log("Wrong! The corrent answer is: " + currentQuestion.answers[currentQuestion.correct]);
     //change the background of the wrong answer
     selectedItem.className = 'wrong';
+
+    // TĂNG BIẾN ĐẾM CÂU SAI
+    incorrectAns++; 
+
     //hightlight the right answer if the user got it wrong
     //change the class name of the correct answer
     ulTag.getElementsByTagName('li')[currentQuestion.correct].className = 'correct';
 
     console.log(currentQuestion.answers[currentQuestion.correct]);
   }
+
+  // Cập nhật số câu đúng và sai trên màn hình
+  document.getElementById('correct-count').innerHTML = correctAns;
+  document.getElementById('incorrect-count').innerHTML = incorrectAns;
 
   // Create a next Question button once the answer has been submitted
   button.innerHTML = 'Tiếp tục';
@@ -245,7 +255,6 @@ function showResults() {
 
     confettiEffect();
   }
-
 }
 
 // Confetti Effect by Gtibo "Confetti Party"
@@ -380,6 +389,5 @@ function confettiEffect() {
     context.closePath();
     context.fillStyle = color;
     context.fill();
-
   }
 }
