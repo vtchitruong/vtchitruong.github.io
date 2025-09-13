@@ -82,7 +82,7 @@ Một số thiết bị thông minh ở thời điểm hiện nay:
 
 - Tablet, smartphone, smartwatch, smart ring
 - Loa thông minh Amazon Echo, Google Home
-- Máy điều hòa thông minh, máy giặt thông minh, tủ lạnh thông minh
+- Tivi thông minh, máy điều hòa thông minh, máy giặt thông minh, tủ lạnh thông minh
 - Đèn thông minh
 - Camera giám sát thông minh
 - Robot hút bụi, lau nhà
