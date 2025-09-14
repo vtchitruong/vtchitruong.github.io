@@ -26,7 +26,7 @@ Xin chuyển khoản theo thông tin dưới đây:
 
 hoặc quét QR Code sau:
 
-![QR Code ngân hàng](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNsLIn-Kch9p8elACL-A/root/content){loading="lazy" width=300} 
+![QR Code ngân hàng](https://iili.io/Ku5WT0X.png){loading="lazy" width=360} 
 
 *Vui lòng ghi tên của bạn và lời nhắn nếu được. Xin cám ơn!*
 
@@ -41,7 +41,7 @@ Xin chuyển khoản theo thông tin dưới đây:
 
 hoặc quét QR Code sau:
 
-![QR Code ví Momo](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNsLIpiFQjYXv-d86Rug/root/content){loading="lazy" width=300} 
+![QR Code ví Momo](https://iili.io/Ku5oNkJ.jpg){loading="lazy" width=360} 
 
 *Vui lòng ghi lời nhắn nếu được. Xin cám ơn!*
 
