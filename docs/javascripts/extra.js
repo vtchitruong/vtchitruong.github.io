@@ -1,3 +1,14 @@
+// Remove the markmap button
+const iframe = document.querySelector('iframe');
+
+iframe.addEventListener('load', () => {
+    const iframeContent = iframe.contentDocument || iframe.contentWindow.document;
+    const brandLink = iframeContent.querySelector('.mm-toolbar a.mm-toolbar-brand');
+    brandLink.style.display = 'none';
+});
+
+// End of Remove the markmap button
+
 // Open links externally.
 var links = document.links;
 

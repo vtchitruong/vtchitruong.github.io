@@ -6,7 +6,7 @@ icon: octicons/number-16
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày những điểm khác nhau giữa dữ liệu và thông tin, và tầm quan trọng của chúng.
+    Bài này trình bày những khái niệm liên quan đến dữ liệu và thông tin.
 
 ## Dữ liệu
 
@@ -53,9 +53,7 @@ flowchart LR
 
 !!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 380px" frameBorder=0 src="../data-vs-information/quiz1.html">Hỏi chút chơi</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu phần Dữ liệu, thông tin.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/1/q/1/){:target="_blank"}
 
 ## Mối quan hệ
 
@@ -78,9 +76,7 @@ Ví dụ:
 
 !!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 380px" frameBorder=0 src="../data-vs-information/quiz2.html">Hỏi chút chơi</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu phần Mối quan hệ giữa dữ liệu và thông tin.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/2/q/1/){:target="_blank"}
 
 ## Phân biệt
 
@@ -107,9 +103,7 @@ Ví dụ:
 
 !!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 300px" frameBorder=0 src="../data-vs-information/quiz3.html">Hỏi chút chơi</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu phần Phân biệt dữ liệu và thông tin.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/3/q/1/){:target="_blank"}
 
 ## Tầm quan trọng
 
@@ -127,9 +121,7 @@ Vì thế, dữ liệu và thông tin là vô cùng quan trọng đối với m�
 
 !!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../data-vs-information/quiz4.html">Hỏi chút chơi</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu phần Tầm quan trọng của dữ liệu và thông tin.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/4/q/1/){:target="_blank"}
 
 ## Sơ đồ tóm tắt
 
