@@ -30,12 +30,6 @@ Ký hiệu: **b**.
 
     Tại một thời điểm, một **bit** chỉ chứa một trong hai trạng thái, hoặc là `0` hoặc là `1`, chứ không chứa hai trạng thái cùng lúc.  
 
-!!! question "Hỏi chút chơi"
-    
-    <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../data-measurement-unit/quiz1.html">Hỏi chút chơi</iframe>
-    </div>
-
 ## byte
 
 Đơn vị đo dữ liệu thường dùng là **byte**.
@@ -64,9 +58,7 @@ Ký hiệu: **B**.
 
 !!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../data-measurement-unit/quiz2.html">Hỏi chút chơi</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/2/s/5/q/1/){:target="_blank"}
 
 ## Các đơn vị khác
 
@@ -99,9 +91,7 @@ Tương tự các đơn vị đo lường khác, người ta gắn thêm các *t
 
 !!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../data-measurement-unit/quiz3.html">Hỏi chút chơi</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/2/s/6/q/1/){:target="_blank"}
 
 ## Sơ đồ tóm tắt
 

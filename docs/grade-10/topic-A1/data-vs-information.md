@@ -53,7 +53,7 @@ flowchart LR
 
 !!! question "Hỏi chút chơi"
     
-    [Nhấn vào đây để tự kiểm tra việc đọc hiểu phần Dữ liệu, thông tin.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/1/q/1/){:target="_blank"}
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/1/q/1/){:target="_blank"}
 
 ## Mối quan hệ
 
@@ -76,7 +76,7 @@ Ví dụ:
 
 !!! question "Hỏi chút chơi"
     
-    [Nhấn vào đây để tự kiểm tra việc đọc hiểu phần Mối quan hệ giữa dữ liệu và thông tin.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/2/q/1/){:target="_blank"}
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/2/q/1/){:target="_blank"}
 
 ## Phân biệt
 
@@ -103,7 +103,7 @@ Ví dụ:
 
 !!! question "Hỏi chút chơi"
     
-    [Nhấn vào đây để tự kiểm tra việc đọc hiểu phần Phân biệt dữ liệu và thông tin.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/3/q/1/){:target="_blank"}
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/3/q/1/){:target="_blank"}
 
 ## Tầm quan trọng
 
@@ -121,7 +121,7 @@ Vì thế, dữ liệu và thông tin là vô cùng quan trọng đối với m�
 
 !!! question "Hỏi chút chơi"
     
-    [Nhấn vào đây để tự kiểm tra việc đọc hiểu phần Tầm quan trọng của dữ liệu và thông tin.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/4/q/1/){:target="_blank"}
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/4/q/1/){:target="_blank"}
 
 ## Sơ đồ tóm tắt
 
