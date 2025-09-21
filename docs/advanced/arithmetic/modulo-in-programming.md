@@ -1,4 +1,4 @@
-# Phép toán modulo (chia lấy dư)
+# Phép toán modulo cơ bản
 
 ## Khái quát
 

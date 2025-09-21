@@ -4,11 +4,11 @@
 {% block extrahead %}
 
   <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
-  <link
+  <!-- <link
     rel="stylesheet"
     href="{{ 'assets/stylesheets/custom.css' | url }}"
-  />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QqYBUQwKtpBHq0bDfzJ9jMb2N5+8w/RcZ1Rqxq43+3Qp8sdsO6T7XbuK+LzYQ4M4Zg8q3yY2Wg9p6aa+MglbHA==" crossorigin="anonymous" />
+  /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QqYBUQwKtpBHq0bDfzJ9jMb2N5+8w/RcZ1Rqxq43+3Qp8sdsO6T7XbuK+LzYQ4M4Zg8q3yY2Wg9p6aa+MglbHA==" crossorigin="anonymous" /> -->
 
 {% endblock %}
 
@@ -43,5 +43,17 @@
   {{ super() }}
 
   <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
-  <script src="{{ 'assets/javascripts/custom.js' | url }}"></script>
+  <!-- <script src="{{ 'assets/javascripts/custom.js' | url }}"></script> -->
+
+  
+  <!-- <script>
+    // Remove the markmap button
+    const iframe = document.querySelector('iframe');
+
+    iframe.addEventListener('load', () => {
+        const iframeContent = iframe.contentDocument || iframe.contentWindow.document;
+        const brandLink = iframeContent.querySelector('.mm-toolbar a.mm-toolbar-brand');
+        brandLink.style.display = 'none';
+    });
+  </script> -->
 {% endblock %}

@@ -177,7 +177,6 @@ markdown_extensions:
 
 ## Custom theme additions
 extra_javascript:
-  - test.js
   - javascripts/extra.js
   - javascripts/mathjax.js
   - javascripts/feedback.js
