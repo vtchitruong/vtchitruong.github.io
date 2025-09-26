@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Lớp 12","children":[{"content":"Phần chung","children":[{"content":"Chủ đề A","children":[{"content":"A-1: Trí tuệ nhân tạo","children":[{"content":"Sơ lược về trí tuệ nhân tạo","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"h4","lines":"12,13"}},{"content":"A-2: Đây là phần riêng dành cho ICT.","children":[],"payload":{"tag":"h4","lines":"16,17"}}],"payload":{"tag":"h3","lines":"10,11"}},{"content":"Chủ đề B","children":[{"content":"B-1: Kết nối mạng","children":[{"content":"Thiết bị và giao thức mạng","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"Chức năng mạng của hệ điều hành","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"Mạng trên thiết bị di động","children":[],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"h4","lines":"20,21"}},{"content":"B-2: Đây là phần riêng của CS.","children":[],"payload":{"tag":"h4","lines":"26,27"}}],"payload":{"tag":"h3","lines":"18,19"}},{"content":"Chủ đề C","children":[{"content":"Không có.","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"28,29"}},{"content":"Chủ đề D","children":[{"content":"Tính nhân văn trong thế giới ảo","children":[],"payload":{"tag":"li","lines":"34,36"}}],"payload":{"tag":"h3","lines":"32,33"}},{"content":"Chủ đề E:","children":[{"content":"Đây là phần riêng của ICT.","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"h3","lines":"36,37"}},{"content":"Chủ đề F","children":[{"content":"F-1","children":[],"payload":{"tag":"h4","lines":"42,43"}},{"content":"F-2: Đây là phần riêng của CS.","children":[],"payload":{"tag":"h4","lines":"44,45"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"Chủ đề G","children":[{"content":"Nhóm nghề dịch vụ và quản trị","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Một số nghề ứng dụng tin học và một số ngành thuộc lĩnh vực tin học","children":[],"payload":{"tag":"li","lines":"49,51"}}],"payload":{"tag":"h3","lines":"46,47"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Phần riêng dành cho CS","children":[{"content":"Chủ đề B","children":[{"content":"B-1: Đây là phần chung.","children":[],"payload":{"tag":"h4","lines":"55,56"}},{"content":"B-2: Phác thảo thiết kế mạng máy tính","children":[{"content":"Thiết bị mạng","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"Đường truyền vô tuyến và hữu tuyến","children":[],"payload":{"tag":"li","lines":"60,61"}},{"content":"Thiết kế mạng LAN","children":[],"payload":{"tag":"li","lines":"61,63"}}],"payload":{"tag":"h4","lines":"57,58"}}],"payload":{"tag":"h3","lines":"53,54"}},{"content":"Chủ đề F","children":[{"content":"F-1: Tạo trang web","children":[{"content":"HTML","children":[],"payload":{"tag":"li","lines":"67,68"}},{"content":"CSS","children":[],"payload":{"tag":"li","lines":"68,70"}}],"payload":{"tag":"h4","lines":"65,66"}},{"content":"F-2: Đây là phần riêng của CS.","children":[{"content":"Khoa học dữ liệu","children":[],"payload":{"tag":"li","lines":"72,73"}},{"content":"Học máy","children":[],"payload":{"tag":"li","lines":"73,74"}},{"content":"Mô phỏng","children":[],"payload":{"tag":"li","lines":"74,76"}}],"payload":{"tag":"h4","lines":"70,71"}}],"payload":{"tag":"h3","lines":"63,64"}}],"payload":{"tag":"h2","lines":"51,52"}},{"content":"Phần riêng dành cho ICT","children":[{"content":"Chủ đề A","children":[{"content":"A-1: Đây là phần chung.","children":[],"payload":{"tag":"h4","lines":"80,81"}},{"content":"A-2: Thực hành kết nối thiết bị số","children":[],"payload":{"tag":"h4","lines":"82,83"}}],"payload":{"tag":"h3","lines":"78,79"}},{"content":"Chủ đề E","children":[{"content":"Sử dụng phần mềm tạo trang web","children":[],"payload":{"tag":"li","lines":"86,87"}}],"payload":{"tag":"h3","lines":"84,85"}}],"payload":{"tag":"h2","lines":"76,77"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":300})</script>
+</body>
+</html>
