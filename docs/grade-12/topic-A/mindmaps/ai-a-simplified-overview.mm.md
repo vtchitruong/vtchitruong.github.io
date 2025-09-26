@@ -8,7 +8,7 @@ markmap:
 
 ## Khái niệm
 
-Tạo ra các hệ thống thông minh có khả năng thực hiện công việc như con người.
+- Tạo ra các hệ thống có năng lực thực hiện những nhiệm vụ thông minh của con người như: học tập, suy luận và giải quyết vấn đề.
 
 ## Năng lực
 

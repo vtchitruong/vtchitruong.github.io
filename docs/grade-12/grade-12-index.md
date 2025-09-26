@@ -12,7 +12,7 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 ### Chủ đề A
 
-#### Chủ đề A-1 
+#### Chủ đề A1 
 
 Giới thiệu trí tuệ nhân tạo
 
@@ -22,13 +22,13 @@ Giới thiệu trí tuệ nhân tạo
 - Nêu được ví dụ để thấy một hệ thống AI có tri thức, có khả năng suy luận và khả năng học, v.v...
 - Nêu được một cảnh báo về sự phát triển của AI trong tương lai.
 
-#### Chủ đề A-2
+#### Chủ đề A2
 
-*Chủ đề A-2 là phần riêng dành cho ICT.*
+*Chủ đề A2 là phần riêng dành cho ICT.*
 
 ### Chủ đề B
 
-#### Chủ đề B-1
+#### Chủ đề B1
 
 Kết nối mạng
 
@@ -45,7 +45,7 @@ Kết nối mạng
 
     - Kết nối được thiết bị di động vào mạng máy tính trong điều kiện phần cứng và phần mềm đã được chuẩn bị đầy đủ.
 
-#### Chủ đề B-2
+#### Chủ đề B2
 
 *Chủ đề B-2 là phần riêng của CS.*
 
@@ -66,7 +66,7 @@ Gìn giữ tính nhân văn trong thế giới ảo
 
 ### Chủ đề F
 
-#### Chủ đề F-1
+#### Chủ đề F1
 
 Tạo trang web
 
@@ -85,9 +85,9 @@ Tạo trang web
     - Sử dụng được các yếu tố của vùng chọn (selector) như class, id, tag, v.v...
     - Sử dụng được CSS làm trang web đẹp, đa dạng và sinh động hơn.
 
-#### Chủ đề F-2
+#### Chủ đề F2
 
-*Chủ đề F-2 là phần riêng của CS.*
+*Chủ đề F2 là phần riêng của CS.*
 
 ### Chủ đề G
 
@@ -112,11 +112,11 @@ Tạo trang web
 
 ### Chủ đề B
 
-#### Chủ đề B-1
+#### Chủ đề B1
 
-*Chủ đề B-1 là phần chung.*
+*Chủ đề B1 là phần chung.*
 
-#### Chủ đề B-2
+#### Chủ đề B2
 
 Phác thảo thiết kế mạng máy tính
 
@@ -126,11 +126,11 @@ Phác thảo thiết kế mạng máy tính
 
 ### Chủ đề F
 
-#### Chủ đề F-1
+#### Chủ đề F1
 
-*Chủ đề F-1 là phần chung.*
+*Chủ đề F1 là phần chung.*
 
-#### Chủ đề F-2
+#### Chủ đề F2
 
 1. Giới thiệu học máy và khoa học dữ liệu
 
@@ -156,11 +156,11 @@ Phác thảo thiết kế mạng máy tính
 
 ### Chủ đề A
 
-#### Chủ đề A-1
+#### Chủ đề A1
 
-*Chủ đề A-1 là phần chung.*
+*Chủ đề A1 là phần chung.*
 
-#### Chủ đề A-2
+#### Chủ đề A2
 
 Thực hành kết nối thiết bị số
 

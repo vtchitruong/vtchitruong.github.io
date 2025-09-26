@@ -59,9 +59,7 @@ Lược đồ sau điểm qua một số cột mốc phát triển của Tin h�
 
 !!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../cs-timeline-and-roles/quiz1.html">Hỏi chút chơi</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/4/s/9/q/1/){:target="_blank"}
 
 ## Một số đóng góp
 
@@ -111,9 +109,7 @@ Tin học, với những thành tựu của nó, đã tạo ra ảnh hưởng đ
 
 !!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../cs-timeline-and-roles/quiz2.html">Hỏi chút chơi</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/4/s/10/q/1/){:target="_blank"}
 
 ## Some English words
 

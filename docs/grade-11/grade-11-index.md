@@ -8,12 +8,11 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
     <iframe style="width: 100%; height: 500px" frameBorder=0 src="../grade-11-index.html">Sơ đồ tóm tắt</iframe>
 </div>
 
-
 ## Phần chung CS & ICT
 
 ### Chủ đề A
 
-#### Chủ đề A-1
+#### Chủ đề A1
 
 [Hệ điều hành và phần mềm ứng dụng](./topic-A1/topic-index.md){:target="_blank"}
 
@@ -28,7 +27,7 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
     3. Sử dụng được một số tiện ích có sẵn của hệ điều hành để nâng cao hiệu suất sử dụng máy tính.
     4. Kích hoạt và sử dụng được một vài chức năng cơ bản của một phần mềm soạn thảo văn bản, một phần mềm bảng tính và một phần mềm trình chiếu chạy trên Internet. Ví dụ các phần mềm trong gói Google Docs.
 
-#### Chủ đề A-2
+#### Chủ đề A2
 
 Thế giới thiết bị số
 
@@ -72,7 +71,7 @@ Tìm kiếm và trao đổi thông tin trên mạng
 
 ### Chủ đề F
 
-#### Chủ đề F-1
+#### Chủ đề F1
 
 [Cơ sở dữ liệu](./topic-F1/topic-index.md){:target="_blank"}
 
@@ -84,9 +83,9 @@ Tìm kiếm và trao đổi thông tin trên mạng
 	5. Nêu được tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu.
 2. *Không có.*
 
-#### Chủ đề F-2
+#### Chủ đề F2
 
-*Chủ đề F-2 là phần riêng của CS.*
+*Chủ đề F2 là phần riêng của CS.*
 
 ### Chủ đề G
 
@@ -106,11 +105,11 @@ Tìm kiếm và trao đổi thông tin trên mạng
 
 ### Chủ đề F
 
-#### Chủ đề F-1
+#### Chủ đề F1
 
-*Chủ đề F-1 là phần chung.*
+*Chủ đề F1 là phần chung.*
 
-#### Chủ đề F-2
+#### Chủ đề F2
 
 Kỹ thuật lập trình
 
@@ -138,13 +137,13 @@ Kỹ thuật lập trình
 
 Phần mềm chỉnh sửa ảnh và làm video
 
-#### Chủ đề E-1
+#### Chủ đề E1
 
 Chỉnh sửa ảnh, tạo ảnh động
 
 &emsp;&emsp;Thực hiện được các thao tác xử lý ảnh cơ bản: cắt, phóng to, thu nhỏ, di chuyển, tẩy xóa ảnh và tạo ảnh động.
 
-#### Chủ đề E-2
+#### Chủ đề E2
 
 Làm phim hoạt hình, video
 
@@ -154,7 +153,7 @@ Làm phim hoạt hình, video
 
 ### Chủ đề F
 
-#### Chủ đề F-1
+#### Chủ đề F1
 
 [Cơ sở dữ liệu](./topic-F1/topic-index.md){:target="_blank"}
 
@@ -176,6 +175,6 @@ Làm phim hoạt hình, video
     3. Giải thích được tính ưu việt của việc quản lý dữ liệu một cách khoa học nhờ ứng dụng cơ sở dữ liệu.
     4. Tìm hiểu được thêm một vài chức năng của hệ quản trị cơ sở dữ liệu.
 
-#### Chủ đề F-2
+#### Chủ đề F2
 
-*Chủ đề F-2 là phần riêng dành cho CS.*
+*Chủ đề F2 là phần riêng dành cho CS.*

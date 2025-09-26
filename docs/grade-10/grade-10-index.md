@@ -12,21 +12,21 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 ### Chủ đề A
 
-#### Chủ đề A-1
+#### Chủ đề A1
 
 Tin học và xử lý thông tin
 
 1. Dữ liệu, thông tin và xử lý thông tin
-    1. Phân biệt được thông tin và dữ liệu, nêu được ví dụ minh họa.
-    2. Chuyển đổi được giữa các đơn vị lưu trữ thông tin: B, KB, MB, v.v...
-    3. Nêu được sự ưu việt của việc lưu trữ, xử lý và truyền thông tin bằng thiết bị số.
+    1. [Phân biệt được thông tin và dữ liệu, nêu được ví dụ minh hoạ](../grade-10/topic-A1/data-vs-information.md){:target="_blank"}.
+    2. [Chuyển đổi được giữa các đơn vị lưu trữ thông tin: B, KB, MB, v.v...](../grade-10/topic-A1/data-measurement-unit.md){:target="_blank"}
+    3. [Nêu được sự ưu việt của việc lưu trữ, xử lý và truyền thông tin bằng thiết bị số](../grade-10/topic-A1/digital-devices-vs-smart-devices.md){:target="_blank"}.
 2. Vai trò của máy tính và các thiết bị thông minh trong nền kinh tế tri thức
-    1. Trình bày được những đóng góp cơ bản của tin học đối với xã hội, nêu được ví dụ minh họa.
-    2. Nêu được ví dụ cụ thể về thiết bị thông minh. Giải thích được vai trò của những thiết bị thông minh đối với sự phát triển của xã hội và cuộc cách mạng công nghiệp 4.0.
-    3. Nhận biết được một vài thiết bị số thông dụng khác ngoài máy tính để bàn và laptop, giải thích được các thiết bị đó cũng là những hệ thống xử lý thông tin.
-    4. Giới thiệu được các thành tựu nổi bật ở một số mốc thời gian để minh họa sự phát triển của ngành tin học.
+    1. Trình bày được những đóng góp cơ bản của tin học đối với xã hội, nêu được ví dụ minh hoạ.
+    2. [Nêu được ví dụ cụ thể về thiết bị thông minh. Giải thích được vai trò của những thiết bị thông minh đối với sự phát triển của xã hội và cuộc cách mạng công nghiệp 4.0](../grade-10/topic-A1/digital-devices-vs-smart-devices.md){:target="_blank"}.
+    3. [Nhận biết được một vài thiết bị số thông dụng khác ngoài máy tính để bàn và laptop, giải thích được các thiết bị đó cũng là những hệ thống xử lý thông tin](../grade-10/topic-A1/digital-devices-vs-smart-devices.md){:target="_blank"}.
+    4. Giới thiệu được các thành tựu nổi bật ở một số mốc thời gian để minh hoạ sự phát triển của ngành tin học.
 
-#### Chủ đề A-2
+#### Chủ đề A2
 
 *Chủ đề A-2. là phần riêng của CS.*
 
@@ -57,9 +57,9 @@ Internet hôm nay và ngày mai
 Nghĩa vụ tuân thủ pháp lý trong môi trường số
 
 - Nêu được một số vấn đề nảy sinh về pháp luật, đạo đức, văn hóa khi việc giao tiếp qua mạng trở nên phổ biến.
-- Nêu được ví dụ minh họa sự vi phạm bản quyền thông tin và sản phẩm số, qua ví dụ đó giải thích được sự vi phạm đã diễn ra như thế nào và có thể dẫn đến hậu quả gì.
-- Trình bày và giải thích được một số nội dung cơ bản của Luật công nghệ thông tin, Nghị định về quản lí, cung cấp, sử dụng các sản phẩm và dịch vụ Công nghệ thông tin, Luật An ninh mạng. Nêu được ví dụ minh họa.
-- Giải thích được một số khía cạnh pháp lý của vấn đề bản quyền, của việc sở hữu, sử dụng và trao đổi thông tin trong môi trường số. Nêu được ví dụ minh họa.
+- Nêu được ví dụ minh hoạ sự vi phạm bản quyền thông tin và sản phẩm số, qua ví dụ đó giải thích được sự vi phạm đã diễn ra như thế nào và có thể dẫn đến hậu quả gì.
+- Trình bày và giải thích được một số nội dung cơ bản của Luật công nghệ thông tin, Nghị định về quản lí, cung cấp, sử dụng các sản phẩm và dịch vụ Công nghệ thông tin, Luật An ninh mạng. Nêu được ví dụ minh hoạ.
+- Giải thích được một số khía cạnh pháp lý của vấn đề bản quyền, của việc sở hữu, sử dụng và trao đổi thông tin trong môi trường số. Nêu được ví dụ minh hoạ.
 - Vận dụng được luật và nghị định nêu trên để xác định được tính hợp pháp của một hành vi nào đó trong lĩnh vực quản lý, cung cấp, sử dụng các sản phẩm và dịch vụ công nghệ thông tin.
 - Nêu được ví dụ về những tác hại của việc chia sẻ và phổ biến thông tin một cách bất cẩn.
 - Nêu được một vài biện pháp đơn giản và thông dụng để nâng cao tính an toàn và hợp pháp của việc chia sẻ thông tin trong môi trường số.
@@ -91,7 +91,7 @@ Lập trình cơ bản
 
 Giới thiệu nhóm [nghề thiết kế](./topic-G/graphic-design.md){:target="_blank"} và [nghề lập trình](./topic-G/developer.md){:target="_blank"}.
 
-1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v...):
+1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ hoạ, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v...):
 
     - Những nét sơ lược về công việc chính mà người làm nghề phải thực hiện.
     - Yêu cầu thiết yếu về kiến thức và kỹ năng cần có để làm nghề.
@@ -105,11 +105,11 @@ Giới thiệu nhóm [nghề thiết kế](./topic-G/graphic-design.md){:target=
 
 ### Chủ đề A
 
-#### Chủ đề A-1
+#### Chủ đề A1
 
 *Chủ đề A-1 là phần chung.*
 
-#### Chủ đề A-2 
+#### Chủ đề A2 
 
 Biểu diễn thông tin
 
@@ -122,7 +122,7 @@ Biểu diễn thông tin
 
 ### Chủ đề E
 
-Phần mềm thiết kế đồ họa		
+Phần mềm thiết kế đồ hoạ		
     
-1. Sử dụng được một số chức năng cơ bản của phần mềm thiết kế đồ họa.
+1. Sử dụng được một số chức năng cơ bản của phần mềm thiết kế đồ hoạ.
 2. Tạo được sản phẩm số đơn giản, hữu ích và thực tế như thiết kế logo, tạo banner, topic quảng cáo, banderole, áp phích, poster và thiệp chúc mừng, v.v...

@@ -196,10 +196,11 @@ Các nhánh này thường chồng chéo và tương tác qua lại trong các h
         <iframe style="width: 100%; height: 400px" frameBorder=0 src="../ai-a-simplified-overview/quiz4.html">Hỏi chút chơi - phần 4</iframe>
     </div>
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-12/topic-A/ai-a-simplified-overview.mm.md!}
-*Sơ đồ tóm tắt về trí tuệ nhân tạo*
+<div>
+    <iframe style="width: 100%; height: 540px" frameBorder=0 src="../mindmaps/ai-a-simplified-overview.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Some English words
 
@@ -212,7 +213,7 @@ Các nhánh này thường chồng chéo và tương tác qua lại trong các h
 | học sâu | deep learning |
 | mạng thần kinh | neural network |
 | người máy học | robotics |
-| nhận dạng giọng nói | speeach recognition |
+| nhận dạng giọng nói | speech recognition |
 | siêu AI | ASI - Artificial Superintelligence |
 | thị giác máy tính | computer vision |
 | trí tuệ nhân tạo, trí thông minh nhân tạo | AI - artificial intelligence |
