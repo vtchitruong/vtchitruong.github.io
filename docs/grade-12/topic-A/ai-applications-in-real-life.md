@@ -10,7 +10,6 @@ icon: material/robot-industrial-outline
     
     - Những lĩnh vực công nghệ và đời sống phát triển nhờ AI
     - Một số ứng dụng AI thực tế
-    - AI tạo sinh
     - Những cảnh báo về mặt trái của AI
 
 ## Những lĩnh vực có ứng dụng AI
@@ -27,7 +26,7 @@ icon: material/robot-industrial-outline
 
 3. **Sản xuất và công nghiệp**:
 
-    - Tự động hóa quy trình sản xuất
+    - Tự động hoá quy trình sản xuất
     - Bảo trì dự đoán
     - Kiểm soát chất lượng
 
@@ -35,7 +34,7 @@ icon: material/robot-industrial-outline
     - Canh tác chính xác (1)
         { .annotate }
 
-        1.  Còn gọi là nông nghiệp chính xác, đề cập đến việc sử dụng các công nghệ tiên tiến, quá trình phân tích dữ liệu và các biện pháp quản lý nhằm tối ưu hóa hiệu quả, năng suất và tính bền vững của hoạt động nông nghiệp. Mục tiêu của canh tác chính xác là bảo đảm cây trồng và đất nhận được chính xác những gì chúng cần để có sức khỏe và năng suất tối ưu, trong khi vẫn giảm thiểu được chất thải và tác động đến môi trường.
+        1.  Còn gọi là nông nghiệp chính xác, đề cập đến việc sử dụng các công nghệ tiên tiến, quá trình phân tích dữ liệu và các biện pháp quản lý nhằm tối ưu hoá hiệu quả, năng suất và tính bền vững của hoạt động nông nghiệp. Mục tiêu của canh tác chính xác là bảo đảm cây trồng và đất nhận được chính xác những gì chúng cần để có sức khỏe và năng suất tối ưu, trong khi vẫn giảm thiểu được chất thải và tác động đến môi trường.
 
     - Dự báo năng suất cây trồng
     - Quản lý tài nguyên nước   
@@ -43,7 +42,7 @@ icon: material/robot-industrial-outline
 5. **Dịch vụ khách hàng**:
     - Chatbot và trợ lý ảo
     - Phân tích tình cảm khách hàng
-    - Cá nhân hóa trải nghiệm người dùng
+    - Cá nhân hoá trải nghiệm người dùng
 
 6. **Tài chính và ngân hàng**:
     - Giao dịch tự động
@@ -53,16 +52,16 @@ icon: material/robot-industrial-outline
 7. **Tiếp thị và quảng cáo**:
     - Phân tích hành vi người dùng
     - Quảng cáo có mục tiêu
-    - Tối ưu hóa chiến dịch tiếp thị
+    - Tối ưu hoá chiến dịch tiếp thị
 
 8. **Giao thông vận tải**:
     - Xe tự hành
-    - Tối ưu hóa lộ trình
+    - Tối ưu hoá lộ trình
     - Quản lý giao thông thông minh
 
 9. **An ninh và giám sát**:
     - Nhận dạng khuôn mặt
-    - Phát hiện mối đe dọa
+    - Phát hiện mối đe doạ
     - Phân tích video thông minh
 
 10. **Giải trí**:
@@ -125,7 +124,7 @@ icon: material/robot-industrial-outline
     - IBM Watson for Oncology (hỗ trợ chẩn đoán ung thư)
     - Google DeepMind Health
 
-12. **Hệ thống tự động hóa trong sản xuất**:
+12. **Hệ thống tự động hoá trong sản xuất**:
     - Siemens MindSphere
     - GE Predix
 
@@ -136,48 +135,11 @@ icon: material/robot-industrial-outline
     - [Darktrace](https://darktrace.com/){target="_blank"}
     - [CrowdStrike Falcon](https://www.crowdstrike.com/){target="_blank"}
 
-Những hệ thống này chỉ là một phần nhỏ trong số rất nhiều ứng dụng AI đang hoạt động trong thực tế. AI đang được tích hợp vào nhiều khía cạnh của cuộc sống, âm thầm cải thiện hiệu suất và trải nghiệm của người dùng.
+Những ứng dụng này chỉ là một phần nhỏ trong số rất nhiều ứng dụng AI đang hoạt động trong thực tế. AI đang được tích hợp vào nhiều khía cạnh của cuộc sống, âm thầm cải thiện hiệu suất và trải nghiệm của người dùng.
 
 !!! info "Google Cloud Blog: real-world gen AI use cases"
 
-    Đọc thêm tại [185 real-world gen AI use cases from the world's leading organizations](https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders){:target="_blank"}
-
-## AI tạo sinh
-
-### Khái niệm
-
-**AI tạo sinh** là một nhánh của AI tập trung vào việc tạo ra các nội dung mới từ dữ liệu đầu vào. Thay vì chỉ phân tích hoặc phân loại dữ liệu, các mô hình AI tạo sinh có năng lực sinh ra dữ liệu mới mà không phải là bản sao của dữ liệu huấn luyện ban đầu. Dữ liệu mới được tạo ra có thể là văn bản, hình ảnh, âm thanh, video, hoặc các dạng nội dung khác.
-
-### Công nghệ cơ bản
-
-AI tạo sinh sử dụng những công nghệ sau:
-
-- Mô hình mạng thần kinh tạo sinh: Generative Adversarial Networks (GANs) và Variational Autoencoders (VAEs).
-- Các mô hình ngôn ngữ lớn, chẳng hạn như GPT (Generative Pre-trained Transformer).
-
-### Năng lực
-
-- **Tạo văn bản**:
-
-    Viết bài báo, sáng tác thơ, tạo ra kịch bản, viết mã lập trình.
-
-- **Tạo hình ảnh**:
-
-    Vẽ tranh, tạo ra hình ảnh mới dựa trên mô tả bằng văn bản, tạo ra hình ảnh giả nhưng chân thực.
-
-- **Tạo âm nhạc và âm thanh**:
-    
-    Sáng tác nhạc mới, tạo ra âm thanh từ các phong cách khác nhau.
-
-- **Tạo video**:
-    
-    Tạo ra video ngắn, chỉnh sửa video.
-
-### Ứng dụng thực tế
-
-   - Tạo văn bản: [ChatGPT](https://chatgpt.com/){target="_blank"}, [Claude](https://claude.ai/){target="_blank"}, [CoPilot](https://gemini.google.com/app){target="_blank"}, [Gemini](https://gemini.google.com/app){target="_blank"} v.v...
-   - Tạo hình ảnh: [DALL-E](https://openai.com/index/dall-e-3/){target="_blank"}, [MidJourney](https://docs.midjourney.com/){target="_blank"}, [Stable Diffusion](https://stability.ai/news/stable-diffusion-3){target="_blank"}, [Adobe Firefly](https://www.adobe.com/vn_en/products/firefly.html){target="_blank"}, v.v...
-   - Tạo âm thanh: [AIVA](https://www.aiva.ai/){target="_blank"}, [Jukedeck](https://soundcloud.com/jukedeck){target="_blank"}, v.v...
+    Đọc thêm tại [601 real-world gen AI use cases from the world's leading organizations](https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders){:target="_blank"}
 
 ## Những cảnh báo về mặt trái của AI
 
@@ -219,7 +181,7 @@ Cần có các quy định và biện pháp quản lý để kiểm soát các r
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
-| AI tạo sinh | Generative AI |
-| mô hình ngôn ngữ lớn | LLM - Large Language Model |
+| hệ thống đề xuất | recommendation system |
 | nhận diện gương mặt | face recognition |
 | phát hiện gương mặt | face detection |
+| trợ lý ảo | virtual assistant |

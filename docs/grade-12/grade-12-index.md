@@ -16,11 +16,11 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 Giới thiệu trí tuệ nhân tạo
 
-- Giải thích được sơ lược về khái niệm trí tuệ nhân tạo.
-- Nêu được ví dụ minh họa cho một số ứng dụng điển hình của AI như điều khiển tự động, chẩn đoán bệnh, nhận dạng chữ viết tay, nhận dạng tiếng nói và khuôn mặt, trợ lí ảo, v.v...
-- Chỉ ra được một số lĩnh vực của khoa học công nghệ và đời sống đã và đang phát triển mạnh mẽ dựa trên những thành tựu to lớn của AI.
-- Nêu được ví dụ để thấy một hệ thống AI có tri thức, có khả năng suy luận và khả năng học, v.v...
-- Nêu được một cảnh báo về sự phát triển của AI trong tương lai.
+- [Giải thích được sơ lược về khái niệm trí tuệ nhân tạo](./topic-A/ai-a-simplified-overview.md){:target="_blank"}.
+- [Nêu được ví dụ minh hoạ cho một số ứng dụng điển hình của AI](./topic-A/ai-applications-in-real-life.md){:target="_blank"} như điều khiển tự động, chẩn đoán bệnh, nhận dạng chữ viết tay, nhận dạng tiếng nói và khuôn mặt, trợ lí ảo, v.v...
+- [Chỉ ra được một số lĩnh vực của khoa học công nghệ và đời sống đã và đang phát triển mạnh mẽ dựa trên những thành tựu to lớn của AI](./topic-A/ai-applications-in-real-life.md){:target="_blank"}.
+- [Nêu được ví dụ để thấy một hệ thống AI có tri thức, có khả năng suy luận và khả năng học](./topic-A/generative-ai.md){:target="_blank"}.
+- [Nêu được một cảnh báo về sự phát triển của AI trong tương lai](./topic-A/ai-applications-in-real-life.md){:target="_blank"}.
 
 #### Chủ đề A2
 
