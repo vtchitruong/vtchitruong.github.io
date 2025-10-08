@@ -490,6 +490,7 @@ nav:
       - advanced/dynamic-programming/knapsack.md
       - advanced/dynamic-programming/candypack.md
       - advanced/dynamic-programming/move-right.md
+      - advanced/dynamic-programming/inflorescences-and-jars.md
     - Lập lịch:
       - Johnson: advanced/scheduling/johnson.md
     - Xử lý bit:
