@@ -1,3 +1,9 @@
+---
+tags:
+    - quy hoạch động
+    - phân tích thành tổng của các số tự nhiên
+---
+
 # Chia phần thưởng
 
 ## Khái quát
@@ -8,25 +14,25 @@ Bài toán này yêu cầu tính số cách chia số phần thưởng cho học
 
 ## Bài toán
 
-### Yêu cầu
+**Yêu cầu:**
 
 Có bao nhiêu cách để chia *r* phần thưởng cho *s* học sinh, sao cho mỗi học sinh không nhận ít phần thưởng hơn người xếp hạng thấp hơn mình.[^1]
 
 [^1]: Nguyễn Xuân Huy, Sáng tạo trong thuật toán và lập trình - Tập 1. Hà Nội: Nhà xuất bản Thông tin và Truyền thông, 2015.
 
-### Input
+**Input:**
 
 ```pycon
 7 4
 ```
 
-### Ouput
+**Ouput:**
 
 ```pycon
 11
 ```
 
-### Giải thích
+**Giải thích:**
 
 Có 11 cách chia 7 phần thưởng cho 4 học sinh:
 
@@ -67,7 +73,7 @@ Khởi tạo một số giá trị ban đầu cho bảng quy hoạch `D`:
 
 === "C++"
 
-    ```c++ linenums="1"
+    ```c++ linenums="32"
         // Khởi tạo giá trị 0 cho toàn bảng quy hoạch
         D.resize(student + 1, vector<int>(reward + 1, 0)); // (1)!
 
@@ -80,7 +86,7 @@ Khởi tạo một số giá trị ban đầu cho bảng quy hoạch `D`:
 
 === "Python"
 
-    ```py linenums="1"
+    ```py linenums="24"
         # Khởi tạo giá trị 0 cho toàn bảng quy hoạch
         D = [[0 for col in range(reward + 1)] for row in range(student + 1)] # (1)!
         
@@ -121,13 +127,11 @@ Dễ thấy, số cách của trường hợp 2 là: số cách của 2a + số 
 
 === "C++"
 
-    ```c++ linenums="1"
+    ```c++ linenums="38"
         // Duyệt hàng (số học sinh) bằng biến s trong phạm vi [1..student]
         for (int s = 1; s < student + 1; ++s)
         {
             // Trường hợp 1: số phần thưởng < số học sinh
-            // Chỉ có r học sinh được nhận r phần thưởng
-
             // Duyệt cột (số phần thưởng) bằng biến r trong phạm vi [0..s - 1]
             for (int r = 0; r < s; ++r)
             {
@@ -135,13 +139,6 @@ Dễ thấy, số cách của trường hợp 2 là: số cách của 2a + số 
             }
 
             // Trường hợp 2: số phần thưởng >= số học sinh
-            // Trường hợp 2a: học sinh hạng chót sẽ không được nhận thưởng
-            // Số cách chia thưởng là D[s - 1][r]
-
-            // Trường hợp 2b: học sinh hạng chót vẫn được nhận thưởng
-            // Số cách chia thưởng D[s][r] sẽ không thay đổi nếu ta bỏ bớt 1 phần thưởng của mỗi học sinh. Số phần thưởng tạm bỏ bớt là (r - s) 
-            // Số cách chia thưởng là D[s][r - s]
-
             // Duyệt cột (số phần thưởng) bằng biến r trong phạm vi [s..reward]
             for (int r = s; r < reward + 1; ++r)
             {
@@ -151,24 +148,15 @@ Dễ thấy, số cách của trường hợp 2 là: số cách của 2a + số 
     ```
 === "Python"
 
-    ```py linenums="1"
+    ```py linenums="30"
         # Duyệt hàng (số học sinh) bằng biến s trong phạm vi [1..student]
         for s in range(1, student + 1):
             # Trường hợp 1: số phần thưởng < số học sinh
-            # Chỉ có r học sinh được nhận r phần thưởng
-
             # Duyệt cột (số phần thưởng) bằng biến r trong phạm vi [0..s - 1]
             for r in range(0, s):
                 D[s][r] = D[r][r]
             
             # Trường hợp 2: số phần thưởng >= số học sinh
-            # Trường hợp 2a: học sinh hạng chót sẽ không được nhận thưởng
-            # Số cách chia thưởng là D[s - 1][r]
-
-            # Trường hợp 2b: học sinh hạng chót vẫn được nhận thưởng
-            # Số cách chia thưởng D[s][r] sẽ không thay đổi nếu ta bỏ bớt 1 phần thưởng của mỗi học sinh. Số phần thưởng tạm bỏ bớt là (r - s) 
-            # Số cách chia thưởng là D[s][r - s]
-
             # Duyệt cột (số phần thưởng) bằng biến r trong phạm vi [s..reward]        
             for r in range(s, reward + 1):
                 D[s][r] = D[s - 1][r] + D[s][r - s]
@@ -199,18 +187,25 @@ Dựa theo ý tưởng trên:
 
 === "C++"
 
-    ```c++ linenums="1"
+    ```c++ linenums="108"
+        V.resize(reward + 1, 0);
+        V[0] = 1;
+
         for (int s = 1; s < student + 1; ++s)
         {
             for (int r = s; r < reward + 1; ++r)
             {
-                v[r] = v[r] + v[r - s];
+                V[r] = V[r] + V[r - s];
             }
-        }  
+        }
     ```
+
 === "Python"
 
-    ```py linenums="1"
+    ```py linenums="82"
+        L = [0 for _ in range(reward + 1)]
+        L[0] = 1
+
         for s in range(1, student + 1):
             for r in range(s, reward + 1):
                 L[r] = L[r] + L[r - s]
@@ -218,4 +213,4 @@ Dựa theo ý tưởng trên:
 
 ## Mã nguồn
 
-Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/DynamicProgramming/tree/main/RewardStudent){:target="_blank"}.
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/thnc/tree/main/dynamicprogramming/rewardstudent){:target="_blank"}.
