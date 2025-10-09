@@ -1,6 +1,10 @@
 ---
 show_donation: false
 ---
+### v23.08.20 <small>09-10-2025</small> { id="25.10.09" }
+
+- Thêm mục Đọc thêm để mở rộng một số kiến thức trong chương trình chính khoá.
+- Giả vờ gỡ bỏ mục blog và tổ chức lại sau.
 
 ### v23.08.19 <small>10-05-2025</small> { id="25.05.10" }
 

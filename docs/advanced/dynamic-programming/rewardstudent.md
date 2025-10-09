@@ -18,7 +18,7 @@ Bài toán này yêu cầu tính số cách chia số phần thưởng cho học
 
 Có bao nhiêu cách để chia *r* phần thưởng cho *s* học sinh, sao cho mỗi học sinh không nhận ít phần thưởng hơn người xếp hạng thấp hơn mình.[^1]
 
-[^1]: Nguyễn Xuân Huy, Sáng tạo trong thuật toán và lập trình - Tập 1. Hà Nội: Nhà xuất bản Thông tin và Truyền thông, 2015.
+[^1]: Nguyễn, X. H. (2015). *Sáng tạo trong thuật toán và lập trình: Tập 1*. Hà Nội, Việt Nam: Nhà xuất bản Thông tin và Truyền thông.
 
 **Input:**
 

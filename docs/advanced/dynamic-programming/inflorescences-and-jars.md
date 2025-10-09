@@ -18,7 +18,9 @@ Cần cắm hết $k$ bó hoa khác nhau vào $n$ lọ thẳng hàng sao cho bó
 
 Mỗi bó hoa $i$ khi cắm vào lọ $j$ sẽ cho ra giá trị thẩm mỹ $v_{ij}$.
 
-Hãy xác định một phương án cắm hoa sao cho tổng giá trị thẩm mỹ là lớn nhất.
+Hãy xác định một phương án cắm hoa sao cho tổng giá trị thẩm mỹ là lớn nhất.[^1]
+
+[^1]: Nguyễn, X. H. (2015). *Sáng tạo trong thuật toán và lập trình: Tập 1*. Hà Nội, Việt Nam: Nhà xuất bản Thông tin và Truyền thông.
 
 **Input:**
 

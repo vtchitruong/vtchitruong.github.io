@@ -461,6 +461,9 @@ nav:
         - special-topics/data-handling/lottery-simulation.md
         - special-topics/data-handling/permutation-combination.md
         - special-topics/data-handling/number-of-possibilities.md
+  - Đọc thêm:
+    - Lớp 10:
+      - supplementary-reading/dikw-pyramid.md
   - Nâng cao:
     - advanced/advanced-index.md
     - Mảng:
@@ -631,5 +634,5 @@ nav:
         - Project 6: mos/powerpoint-2016/exam-3/project-6.md
         - Project 7: mos/powerpoint-2016/exam-3/project-7.md
     
-  - Blog:
-    - blog/index.md
+  # - Blog:
+  #   - blog/index.md
