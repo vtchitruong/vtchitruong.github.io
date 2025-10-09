@@ -53,7 +53,7 @@ flowchart LR
 
 ??? info "Đọc thêm về tháp DIKW"
 
-    Tháp DIKW giúp ta hiểu cách mà dữ liệu và thông tin được chuyển hoá, từ cấp độ đơn giản đến sâu sắc. Tìm hiểu thêm tại [Mr School's apps](https://mrschool.vn/articles/thap-dikw/){:target="_blank"}.
+    Tháp DIKW giúp ta hiểu cách mà dữ liệu và thông tin được chuyển hoá, từ cấp độ đơn giản đến sâu sắc. Tìm hiểu thêm [tại đây](../../supplementary-reading/dikw-pyramid.md){:target="_blank"}.
 
     ![Tháp DIKW](data-vs-information/dikw-pyramid.svg){loading=lazy width=480}
 
