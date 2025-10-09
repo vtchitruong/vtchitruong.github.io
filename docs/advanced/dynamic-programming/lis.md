@@ -1,36 +1,36 @@
+---
+tags:
+    - quy hoạch động
+    - dãy con tăng dần dài nhất
+---
+
 # Dãy con tăng dần dài nhất
 
 ## Khái quát
 
 Bài toán trình bày dưới đây là một ví dụ về quy hoạch động và có thể được xếp vào dạng bài toán **tìm dãy con tăng dần dài nhất** (LIS - Longest Increasing Subsequence).
 
-Bài toán được phát biểu sơ nét như sau:
+## Bài toán
+
+**Yêu cầu:**
 
 Cho một mảng các số nguyên không có thứ tự. Tìm độ dài của dãy con tăng dần dài nhất. Biết rằng dãy con không nhất thiết phải gồm các phần tử liên tiếp nhau.
 
-Một số bài toán LIS có thể được giải hay hơn theo hướng của thuật toán tìm kiếm nhị phân.
-
-## Bài toán
-
-### Yêu cầu
-
-Cho mảng A gồm các số nguyên. Tìm ra dãy con thỏa hai điều kiện: tăng dần và có độ dài dài nhất.
-
-### Input
+**Input:**
 
 ```pycon
 7
 3 4 -1 0 6 2 3
 ```
 
-### Output
+**Output:**
 
 ```pycon
 4
 -1 0 2 3
 ```
 
-### Giải thích
+**Giải thích:**
 
 Mảng A có 7 phần tử.
 
@@ -54,20 +54,16 @@ Ban đầu, chưa có kết nối nào, ta gán giá trị `-1` toàn bộ mản
 
 === "C++"
 
-    ```c++ linenums="1"
-        // Khởi tạo giá trị 1 cho toàn bộ bảng quy hoạch D, nghĩa là độ dài dài nhất là 1
+    ```c++ linenums="42"
         D.resize(n, 1);
 
-        // Khởi tạo giá trị -1 cho toàn mảng trace, nghĩa là chưa có kết nối nào
         trace.resize(n, -1);
     ```
 === "Python"
 
-    ```py linenums="1"
-        # Khởi tạo giá trị 1 cho toàn bộ bảng quy hoạch D, nghĩa là độ dài dài nhất là 1
+    ```py linenums="32"
         D = [1 for _ in range(n)]
 
-        # Khởi tạo giá trị -1 cho toàn mảng trace, nghĩa là chưa có kết nối nào
         trace = [-1 for _ in range(n)]
     ```
 
@@ -90,7 +86,7 @@ Duyệt toàn bộ mảng `A` bằng biến `i`, lặp thao tác:
 
 === "C++"
 
-    ```c++ linenums="1"
+    ```c++ linenums="48"
         // Duyệt từng phần tử A[i] trong phạm vi [1..n - 1]
         for (int i = 1; i < n; ++i)
         {
@@ -115,9 +111,10 @@ Duyệt toàn bộ mảng `A` bằng biến `i`, lặp thao tác:
             }
         }
     ```
+
 === "Python"
 
-    ```py linenums="1"
+    ```py linenums="37"
         # Duyệt từng phần tử A[i] trong phạm vi [1..n - 1]
         for i in range(1, n):
             # Duyệt từng phần tử A[j] trong dãy con [0..i - 1]
@@ -150,13 +147,13 @@ Theo bộ test trên, phần tử đó là `D[6]`, tức `finish == 6`, như b�
 
 === "C++"
 
-    ```c++ linenums="1"
+    ```c++ linenums="77"
         vector<int>::iterator max_len = max_element(D.begin(), D.end());
         int finish = max_len - D.begin();
     ```
 === "Python"
 
-    ```py linenums="1"
+    ```py linenums="56"
         max_length = max(D)
         finish = D.index(max_length)
     ```
@@ -165,7 +162,7 @@ Dựa vào mảng `trace`, ta cho `finish` *lui dần* về phía đầu của m
 
 === "C++"
 
-    ```c++ linenums="1"
+    ```c++ linenums="80"
         // Dùng ngăn xếp để lưu các phần tử của dãy con dài nhất cần tìm
         stack<int> sub_seq; // subsequence
         while (!(trace[finish] == -1))
@@ -180,9 +177,10 @@ Dựa vào mảng `trace`, ta cho `finish` *lui dần* về phía đầu của m
         // Đẩy phần tử đầu tiên của dãy con dài nhất vào ngăn xếp
         sub_seq.push(A[finish]);
     ```
+
 === "Python"
 
-    ```py linenums="1"
+    ```py linenums="60"
         # Dùng ngăn xếp để lưu các phần tử của dãy con dài nhất cần tìm
         sub_seq = deque() #subsequence
         while not trace[finish] == -1:
@@ -197,4 +195,4 @@ Dựa vào mảng `trace`, ta cho `finish` *lui dần* về phía đầu của m
     ```
 
 ## Mã nguồn
-Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/DynamicProgramming/blob/main/LongestIncreasingSubsequence/" target="_blank">GitHub</a>.
+Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/thnc/tree/main/dynamicprogramming/longest-increasing-subsequence" target="_blank">GitHub</a>.

@@ -1,3 +1,9 @@
+---
+tags:
+    - quy hoạch động
+    - ba lô
+---
+
 # Ba lô
 
 ## Khái quát
@@ -8,7 +14,7 @@ Bài toán trình bày dưới đây là một ví dụ về quy hoạch động
 
 ## Bài toán
 
-### Yêu cầu
+**Yêu cầu:**
 
 Có `n` đồ vật, trong đó vật thứ `i` có trọng lượng là `weight[i]` và giá trị là `value[i]`. Ta tìm cách chọn một số vật và đặt vào balo (1) sao cho tổng giá trị các vật được chọn là lớn nhất mà không được vượt quá sức chứa của balo. 
 { .annotate }
@@ -19,7 +25,7 @@ Viết chương trình cho biết tổng giá trị lớn nhất của các vậ
 
 [^1]: Tài liệu lập trình của Võ Ngọc Hà Sơn vnhason@gmail.com.
 
-### Input
+**Input:**
 
 ```pycon
 6 10
@@ -31,7 +37,7 @@ Viết chương trình cho biết tổng giá trị lớn nhất của các vậ
 3 3
 ```
 
-### Ouput
+**Ouput:**
 
 ```pycon
 22
@@ -39,7 +45,7 @@ Viết chương trình cho biết tổng giá trị lớn nhất của các vậ
 5 4 10
 ```
 
-### Giải thích
+**Giải thích:**
 
 Input:
 
@@ -73,7 +79,7 @@ Như vậy, `D[n][weight_limit]` là kết quả của bài toán.
 
 === "C++"
 
-    ```c++ linenums="1"
+    ```c++ linenums="42"
         // Khởi tạo giá trị 0 cho toàn bảng quy hoạch
         D.resize(n + 1, vector<int>(weight_limit + 1, 0)); // (1)!
     ```
@@ -83,7 +89,7 @@ Như vậy, `D[n][weight_limit]` là kết quả của bài toán.
 
 === "Python"
 
-    ```py linenums="1"
+    ```py linenums="34"
         # Khởi tạo giá trị 0 cho toàn bảng quy hoạch
         D = [[0 for col in range(weight_limit + 1)] for row in range(n + 1)] # (1)!
     ```
@@ -122,7 +128,7 @@ Duyệt từng hàng (tức số thứ tự của vật) bằng biến `i` trong
 
 === "C++"
 
-    ```c++ linenums="1"
+    ```c++ linenums="45"
         // Duyệt từng vật i trong phạm vi [1..n]
         for (int i = 1; i < n + 1; ++i)
         {
@@ -144,7 +150,7 @@ Duyệt từng hàng (tức số thứ tự của vật) bằng biến `i` trong
     ```
 === "Python"
 
-    ```py linenums="1"
+    ```py linenums="37"
         # Duyệt từng vật i trong phạm vi [1..n]
         for i in range(1, n + 1):
             # Duyệt từng giới hạn trọng lượng w trong phạm vi [1..weight_limit]
@@ -181,7 +187,7 @@ Cụ thể, xuất phát từ phần tử cuối cùng `D[n][weight_limit]`, duy
 
 === "C++"
 
-    ```c++ linenums="1"
+    ```c++ linenums="68"
         // Ngăn xếp chứa các vật được chọn
         stack<int> item_stack;
         
@@ -209,7 +215,7 @@ Cụ thể, xuất phát từ phần tử cuối cùng `D[n][weight_limit]`, duy
     ```
 === "Python"
 
-    ```py linenums="1"
+    ```py linenums="52"
         # Ngăn xếp chứa các vật được chọn
         item_stack = list()
 
@@ -234,4 +240,4 @@ Cụ thể, xuất phát từ phần tử cuối cùng `D[n][weight_limit]`, duy
 
 ## Mã nguồn
 
-Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/DynamicProgramming/tree/main/Knapsack" target="_blank">GitHub</a>.
+Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/thnc/tree/main/dynamicprogramming/knapsack" target="_blank">GitHub</a>.
