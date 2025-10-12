@@ -69,47 +69,100 @@ Tin học, với những thành tựu của nó, đã tạo ra ảnh hưởng đ
 
 1. **Truyền thông và truy cập thông tin**
 
-    Ví dụ:  
-    a. Internet, mạng xã hội và các nền tảng trực tuyến giúp giao tiếp và chia sẻ thông tin tức thì, và thúc đẩy thương mại điện tử, chính phủ điện tử, v.v...  
-    b. Các cỗ máy tìm kiếm giúp nhanh chóng truy cập nguồn thông tin như mong muốn.  
+    Ví dụ:
+
+    a. Internet, mạng xã hội và các nền tảng trực tuyến:
+    
+    - giúp giao tiếp và chia sẻ thông tin tức thì
+    - thúc đẩy thương mại điện tử
+    - thúc đẩy chính phủ điện tử
+    
+    b. Các cỗ máy tìm kiếm giúp nhanh chóng truy cập nguồn thông tin như mong muốn.
+
     c. Các hệ thống gợi ý (recommendation systems) giúp định hình cách tiếp cận thông tin và giải trí.
 
 2. **Sản xuất và tự động hoá**
 
-    Ví dụ:  
-    a. Robot tham gia vào nhiều ngành công nghiệp và dịch vụ như sản xuất ô tô, logistic, y tế, v.v...  
-    b. Internet vạn vật (IoT), kết nối máy móc và cảm biến, giúp hình thành nhà máy thông minh có năng lực tự tối ưu hoá quy trình sản xuất.  
-    c. Máy in 3D tạo nên cuộc cách mạng về tạo hình, tạo mẫu nhanh (rapid prototyping), sản xuất theo yêu cầu, chẳng hạn như tạo bộ phận giả hoặc mô hình giải phẫu trong y học.
+    Ví dụ:
+
+    a. Robot tham gia vào nhiều ngành công nghiệp và dịch vụ như:
+
+    - sản xuất xe hơi
+    - hậu cần (logistic): cung ứng, vận chuyển, kho bãi.
+    - y tế
+
+    b. Internet vạn vật (IoT), kết nối máy móc và cảm biến, giúp hình thành nhà máy thông minh có năng lực tự tối ưu hoá quy trình sản xuất.
+
+    c. Máy in 3D tạo nên cuộc cách mạng về:
+    
+    - tạo hình, tạo mẫu nhanh (rapid prototyping)
+    - sản xuất theo yêu cầu
+    - tạo bộ phận giả
+    - tạo mô hình giải phẫu trong y học
 
 3. **Giáo dục**
 
-    Ví dụ:  
-    Tin học giúp cho việc học tập diễn ra trực tuyến, liên tục và mọi nơi, giúp theo dõi tiến độ và cá nhân hoá trải nghiệm học tập.
+    Ví dụ:
+
+    Tin học giúp:
+    
+    - việc học diễn ra trực tuyến, liên tục và mọi nơi.
+    - theo dõi tiến độ học tập.
+    - cá nhân hoá trải nghiệm học tập.
 
 4. **Nghiên cứu khoa học**
 
-    Ví dụ:  
-    Tin học giúp mô hình hoá các hiện tượng, kiểm tra các giả thuyết, phân tích lượng dữ liệu lớn, chẳng hạn như các nghiên cứu về gen, thiên văn, khí hậu, v.v...
+    Ví dụ:
+
+    Tin học giúp:
+    
+    - mô hình hoá các hiện tượng
+    - kiểm tra các giả thuyết
+    - phân tích lượng dữ liệu lớn
+    
+    Chẳng hạn như các nghiên cứu về gen, thiên văn, khí hậu.
 
 5. **Giao thông và vận chuyển**
 
-    Ví dụ:  
-    a. Các hệ thống định vị toàn cầu giúp định hướng theo thời gian thực, tìm địa điểm và tìm đường nhanh chóng.  
-    b. Tin học giúp xe tự vận hành, giúp tối ưu hệ thống vận chuyển.
+    Ví dụ:
+
+    a. Các hệ thống định vị toàn cầu giúp:
+    
+    - định hướng theo thời gian thực.
+    - tìm địa điểm và tìm đường nhanh chóng.
+
+    b. Tin học giúp:
+    
+    - xe tự vận hành.
+    - tối ưu hệ thống vận chuyển.
     
 6. **Mã hoá và bảo mật**
 
-    Ví dụ:  
-    Tin học giúp mã hoá dữ liệu, bảo vệ dữ liệu, giúp ngăn chặn các mối đe dọa trên mạng.
+    Ví dụ:
+
+    Tin học giúp:
+    
+    - mã hoá và bảo vệ dữ liệu.
+    - ngăn chặn các mối đe dọa trên mạng.
 
 7. **Giải trí**
 
-    Ví dụ:  
-    Tin học tạo ra các trải nghiệm giải trí có tính tương tác và sống động, đề xuất và phân phối các nội dung giải trí phù hợp với mỗi cá nhân.
+    Ví dụ:
+
+    Tin học giúp:
+    
+    - tạo ra các trải nghiệm giải trí có tính tương tác và sống động.    
+    - đề xuất và phân phối các nội dung giải trí phù hợp cho mỗi cá nhân.
 
 !!! question "Hỏi chút chơi"
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/4/s/10/q/1/){:target="_blank"}
+
+## Sơ đồ tóm tắt
+
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/cs-timeline-and-roles.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Some English words
 

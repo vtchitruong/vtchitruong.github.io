@@ -108,6 +108,10 @@ Một số thiết bị thông minh ở thời điểm hiện nay:
     
     Nói cách khác, tập hợp thiết bị thông minh là tập con của tập hợp thiết bị số.
 
+    ![Sơ đồ Venn thể hiện mối quan hệ giữa thiết bị số và thiết bị thông minh](./digital-devices-vs-smart-devices/grade-10-topic-a1-digital-devices-vs-smart-devices-venn.svg){ loading=lazy width=360}
+    
+    *Sơ đồ Venn thể hiện mối quan hệ giữa thiết bị số và thiết bị thông minh* 
+
 ### Tính năng
 
 1. **Kết nối**
@@ -161,7 +165,7 @@ Các thiết bị thông minh đóng vai trò then chốt trong việc thúc đ�
 
     Trong giáo dục, thiết bị thông minh giúp tăng cường trải nghiệm dạy và học thông qua các nền tảng trực tuyến, hệ thống thực tế ảo (VR), thực tế tăng cường (AR). Ví dụ này cũng có thể được xếp vào vai trò cải thiện hiệu quả và năng suất.
 
-    Trong gia đình, thiết bị thông minh cho phép điều khiển và quan sát nơi ở từ xa, giúp người dùng có thể điều khiển hệ thống chiếu sáng, hệ thống điều hòa nhiệt độ, camera an ninh, hệ thống bơm nước, tưới cây.
+    Trong gia đình, thiết bị thông minh cho phép điều khiển và quan sát nơi ở từ xa, giúp người dùng có thể điều khiển hệ thống chiếu sáng, hệ thống điều hoà nhiệt độ, camera an ninh, hệ thống bơm nước, tưới cây.
     
 4. **Tối ưu hoá nguồn tài nguyên và bảo vệ môi trường**
 
@@ -170,7 +174,7 @@ Các thiết bị thông minh đóng vai trò then chốt trong việc thúc đ�
     Ví dụ:  
     Thiết bị thông minh có thể phân phối điện năng hợp lý dựa trên thời gian thực, giúp cắt giảm các hao phí.
 
-    Hệ thống điều hòa thông minh có thể tối ưu hoá việc sưới ấm hoặc làm mát tại nhà, giúp cắt giảm năng lượng tiêu thụ và lượng khí thải carbon.
+    Hệ thống điều hoà thông minh có thể tối ưu hoá việc sưới ấm hoặc làm mát tại nhà, giúp cắt giảm năng lượng tiêu thụ và lượng khí thải carbon.
 
 5. **Cải thiện trải nghiệm người dùng**
 
