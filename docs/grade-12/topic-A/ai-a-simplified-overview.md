@@ -17,11 +17,9 @@ icon: octicons/ai-model-24
 
 **Trí tuệ nhân tạo**, từ đây viết tắt là **AI**, là một nhánh của khoa học máy tính tập trung vào việc tạo ra các hệ thống thông minh có khả năng thực hiện các công việc mà thông thường đòi hỏi phải có sự can thiệp của con người.
 
-!!! question "Hỏi chút chơi - phần 1"
+!!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 450px" frameBorder=0 src="../ai-a-simplified-overview/quiz1.html">Hỏi chút chơi - phần 1</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/5/s/11/q/1/){:target="_blank"}
 
 ## Những năng lực chủ yếu
 
@@ -87,11 +85,9 @@ Một hệ thống AI thường có những năng lực chủ yếu sau:
 
     Mặc dù vẫn còn hạn chế so với sáng tạo của con người, một số hệ thống AI đang ngày càng tiến bộ trong lĩnh vực này.
 
-!!! question "Hỏi chút chơi - phần 2"
+!!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 360px" frameBorder=0 src="../ai-a-simplified-overview/quiz2.html">Hỏi chút chơi - phần 2</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/5/s/12/q/1/){:target="_blank"}
 
 ## Phân loại
 
@@ -130,13 +126,11 @@ Tất cả hệ thống AI hiện tại, bao gồm cả những hệ thống ti�
 
     Sự phát triển của AI rộng và siêu AI vẫn là mục tiêu dài hạn trong nghiên cứu AI, vẫn còn những thách thức đáng kể về cả công nghệ lẫn đạo đức cần vượt qua.
 
-!!! question "Hỏi chút chơi - phần 3"
+!!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 300px" frameBorder=0 src="../ai-a-simplified-overview/quiz3.html">Hỏi chút chơi - phần 3</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/5/s/13/q/1/){:target="_blank"}
 
-## Những nhánh nghiên cứu AI chủ yếu 
+## Một số nhánh nghiên cứu 
 
 Việc nghiên cứu và phát triển AI gồm có nhiều nhánh chuyên biệt:
 
@@ -190,11 +184,9 @@ Việc nghiên cứu và phát triển AI gồm có nhiều nhánh chuyên biệ
 
 Các nhánh này thường chồng chéo và tương tác qua lại trong các hệ thống và ứng dụng AI phức tạp. Một số giải pháp AI hiện đại tích hợp nhiều nhánh nhằm xây dựng các hệ thống tinh vi hơn, có năng lực cao hơn.
 
-!!! question "Hỏi chút chơi - phần 4"
+!!! question "Hỏi chút chơi"
     
-    <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../ai-a-simplified-overview/quiz4.html">Hỏi chút chơi - phần 4</iframe>
-    </div>
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/5/s/14/q/1/){:target="_blank"}
 
 ## Sơ đồ tóm tắt
 
