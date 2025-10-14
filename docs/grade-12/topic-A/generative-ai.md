@@ -80,6 +80,12 @@ AI tạo sinh sử dụng những công nghệ sau:
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/7/s/19/q/1/){:target="_blank"}
 
+## Sơ đồ tóm tắt
+
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/generative-ai.html">Sơ đồ tóm tắt</iframe>
+</div>
+
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
