@@ -69,6 +69,42 @@ icon: material/robot-industrial-outline
     - Gợi ý nội dung cá nhân hóa
     - Tạo nội dung tự động (nhạc, video)
 
+??? info "Những lĩnh vực mà AI còn hạn chế"
+
+    Mặc dù đã được ứng dụng rộng rãi trong đời sống, vẫn có một số lĩnh vực mà AI chưa can thiệp sâu do những hạn chế về công nghệ, tính phức tạp hoặc đạo đức, chẳng hạn như:
+
+    1. **Quyết định về đạo đức và pháp lý**
+
+        AI chưa thể tự đưa ra các quyết định đạo đức phức tạp trong các tình huống liên quan đến:
+        
+        - pháp lý, phán quyết công bằng, giải quyết tranh chấp
+        - chính trị
+        - con người, sự đồng cảm, giá trị văn hoá
+
+    2. **Sáng tạo nghệ thuật độc đáo**
+
+        AI vẫn chưa đạt được mức sáng tạo độc đáo, có chiều sâu cảm xúc hoặc ý nghĩa như con người. AI chủ yếu dựa trên dữ liệu huấn luyện để tạo ra nội dung, thiếu sự tự nhận thức hoặc ý định sáng tạo thực sự.
+
+    3. **Trị liệu tâm lý**
+
+        AI chưa thể thay thế các bác sĩ tâm lý ở khía cạnh đồng cảm, thấu hiểu, hoặc xử lý các vấn đề tâm lý phức tạp của con người.
+
+    4. **Quản lý khủng hoảng xã hội**
+
+        Trong các tình huống khủng hoảng xã hội như xung đột chính trị, thiên tai, quản lý đám đông, v.v... mà đòi hỏi sự kết hợp giữa lý trí, cảm xúc và kinh nghiệm sống, AI chưa thể đảm nhận vai trò lãnh đạo hoặc đưa ra quyết định tổng thể thay con người.
+
+    5. **Nghiên cứu khoa học cơ bản**
+
+        AI chưa thể tự khởi xướng các câu hỏi nghiên cứu cơ bản hoặc thiết kế các thí nghiệm mang tính đột phá mà không có sự hướng dẫn của con người.
+
+    6. **Làm những việc cần đến giác quan con người**
+
+        Một số công việc thủ công đòi hỏi sự khéo léo, xúc giác, hoặc sự đánh giá trực quan phức tạp, chẳng hạn như chế tác thủ công tinh xảo, phẫu thuật cần phản ứng tức thời, vẫn chưa được AI tự động hoá hoàn toàn, do hạn chế về công nghệ robot và cảm biến.
+
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/6/s/15/q/1/){:target="_blank"}
+
 ## Những ứng dụng AI thực tế
 
 1. **Công cụ tìm kiếm**:
@@ -141,6 +177,10 @@ Những ứng dụng này chỉ là một phần nhỏ trong số rất nhiều 
 
     Đọc thêm tại [601 real-world gen AI use cases from the world's leading organizations](https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders){:target="_blank"}
 
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/6/s/16/q/1/){:target="_blank"}
+
 ## Những cảnh báo về mặt trái của AI
 
 AI mang lại nhiều lợi ích nhưng cùng với đó là những mối nguy hiểm và thách thức.
@@ -176,6 +216,10 @@ AI mang lại nhiều lợi ích nhưng cùng với đó là những mối nguy 
 - **Dữ liệu nhạy cảm**: Sử dụng AI để thu thập và xử lý dữ liệu cá nhân có thể dẫn đến việc bị lộ hoặc sử dụng sai mục đích dữ liệu nhạy cảm, gây ra hậu quả nghiêm trọng cho cá nhân và tổ chức.
 
 Cần có các quy định và biện pháp quản lý để kiểm soát các rủi ro trên, bảo đảm bảo AI được phát triển và ứng dụng một cách có trách nhiệm, phù hợp với các giá trị đạo đức và lợi ích của xã hội.
+
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/6/s/17/q/1/){:target="_blank"}
 
 ## Some English words
 

@@ -134,4 +134,4 @@ Bản vẽ hoàn chỉnh đặt tại [Google Drive](https://drive.google.com/fi
 | --- | --- |
 | lấy phần giao | intersection |
 | lấy phần không giao | difference |
-| tác rời các phần | break apart |
+| tách rời các phần | break apart |
