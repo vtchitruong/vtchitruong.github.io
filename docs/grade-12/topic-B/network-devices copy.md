@@ -48,9 +48,9 @@ Thiết bị mạng là những phần cứng được sử dụng để kết n
 
     Mặc dù về mặt kỹ thuật thì **ONT không phải là modem**, người ta vẫn thường gọi ONT là "modem" do thói quen.
 
-!["Modem" dành cho Internet cáp quang](https://www.flickr.com/photo_download.gne?id=54856296218&secret=7ddf5af714&size=l&source=photoPageEngagement){ loading=lazy width=420 }
+!["Modem" dành cho Internet cáp quang](https://lh3.googleusercontent.com/pw/AP1GczMfxIQNiIEUvlM0W6TBMK01jsAFFx5SESPBJJ0rnC20Kua8CXOvmO6YpJKcOkoqtXzz2aSa2wMJkRw3E_--W6Vwq4KM6uM6XluKUXHQezckqX0s0yzZ=w2400){ loading=lazy width=400 }
 
-*Modem*
+*"Modem" dành cho Internet cáp quang*
 
 ### Bộ chuyển mạch
 
@@ -61,7 +61,7 @@ Thiết bị mạng là những phần cứng được sử dụng để kết n
 
 - Vai trò: là thiết bị trung tâm trong việc kết nối các thiết bị **trong cùng một mạng**.
 
-![Bộ chuyển mạch](https://www.flickr.com/photo_download.gne?size=l&id=54855186127&secret=be59078ecb){ loading=lazy width=420 }
+![Bộ chuyển mạch](https://lh3.googleusercontent.com/pw/AP1GczPt_6GYj3uNeC9tkaac2Rt20KWp6EA_pkQRNkuMVT5cTVnceSBzZ4w3YQ_fTboKf8snKXDi1bjgFlRpPchl74CFEGQ_47LjCHo6PfebEG8z_Lki5znM=w2400){ loading=lazy width=400 }
 
 *Bộ chuyển mạch*
 
@@ -71,7 +71,7 @@ Thiết bị mạng là những phần cứng được sử dụng để kết n
 
 - Vai trò: là thiết bị chuyển tiếp gói tin **giữa các mạng khác nhau**.
 
-![Bộ định tuyến kèm chức năng của bộ chuyển mạch](https://www.flickr.com/photo_download.gne?size=l&id=54855187417&secret=acba02481a){ loading=lazy width=400 }
+![Bộ định tuyến kèm chức năng của bộ chuyển mạch](https://lh3.googleusercontent.com/pw/AP1GczOvWHS26WmEAaQM8dJK_0zGg454uX0KqbehOKLhH-OURnJHMb7ZMXQ9tLHXVPEmqbbaB8Rixvx-0voGTWg1l2psuuR187c3AbslqjqtFWMTyV1lj_ie=w2400){ loading=lazy width=400 }
 
 *Bộ định tuyến kèm chức năng của bộ chuyển mạch*
 
@@ -80,10 +80,6 @@ Thiết bị mạng là những phần cứng được sử dụng để kết n
 - Chức năng: tạo ra một **vùng phủ sóng WiFi**.
 
 - Vai trò: làm **cầu nối giữa mạng không dây và mạng có dây**, giúp mở rộng vùng phủ sóng WiFi.
-
-![Bộ định tuyến kèm chức năng của bộ chuyển mạch](https://www.flickr.com/photo_download.gne?size=l&id=54855182602&secret=0cb189f61e){ loading=lazy width=400 }
-
-*Điểm truy cập không dây*
 
 ???+ note "Lưu ý về tên gọi"
 
@@ -98,15 +94,31 @@ Thiết bị mạng là những phần cứng được sử dụng để kết n
     - Tường lửa (firewall): dùng để bảo vệ mạng khỏi các truy cập trái phép.
     - Bộ tập trung VPN (VPN concentrator) dùng để quản lý kết nối VPN an toàn.
 
-!!! question "Hỏi chút chơi"
-    
-    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/8/l/8/s/20/q/1/){:target="_blank"}
+!!! question "Câu hỏi 1"
 
-## Sơ đồ tóm tắt
+    <div>
+        <iframe style="width: 100%; height: 740px" frameBorder=0 src="../network-devices/matching-quiz.html">Câu hỏi so khớp</iframe>
+    </div>
 
-<div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/network-devices.html">Sơ đồ tóm tắt</iframe>
-</div>
+## Mạng cục bộ
+
+Còn gọi cách khác là mạng nội bộ, là hệ thống kết nối nhiều thiết bị như máy tính, máy in, máy chủ, v.v... trong một khu vực giới hạn, chẳng hạn như một hộ gia đình, một văn phòng, một trường học.
+
+Mạng gia đình là một ví dụ của mạng cục bộ, kết nối máy tính, điện thoại thông minh, tivi, máy chơi game, v.v... trong một ngôi nhà.
+
+Nhờ mạng gia đình, ta có thể:
+
+- truy cập Internet,
+- chia sẻ tài nguyên như file, hình ảnh, video giữa các thiết bị,
+- điều khiển các thiết bị thông minh từ xa thông qua app trên điện thoại,
+- lắp đặt camera giám sát và các cảm biến.
+
+![Ví dụ sơ đồ mạng gia đình](./home-network-diagram.png){ loading=lazy width=400}
+
+*Ví dụ sơ đồ mạng gia đình*
+
+
+
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
@@ -115,6 +127,7 @@ Thiết bị mạng là những phần cứng được sử dụng để kết n
 | bộ định tuyến | router |
 | điểm truy cập không dây | wireless access point |
 | kỹ thuật số | digital |
+| mạng cục bộ | LAN - Local Area Network |
 | thiết bị mạng | network device |
 | tín hiệu tương tự | analog |
 
