@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Duy&#x1ec7;t v&#xe0; x&#x1eed; l&#xfd; danh s&#xe1;ch","children":[{"content":"L&#x1ea5;y s&#x1ed1; l&#x1b0;&#x1ee3;ng ph&#x1ea7;n t&#x1eed;","children":[{"content":"<code>n = len(L)</code>","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Duy&#x1ec7;t v&#xe0; x&#x1eed; l&#xfd;","children":[{"content":"<code>for i in range(len(L)):</code>","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"<code>if &#x111;i&#x1ec1;u_ki&#x1ec7;n: th&#x1ef1;c_hi&#x1ec7;n_thao_t&#xe1;c_n&#xe0;o_&#x111;&#xf3;</code>","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"Tr&#x1ea3; v&#x1ec1; k&#x1ebf;t qu&#x1ea3;","children":[{"content":"<code>return k&#x1ebf;t_qu&#x1ea3;</code>","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"h2","lines":"17,18"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+</body>
+</html>
