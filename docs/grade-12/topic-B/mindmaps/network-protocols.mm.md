@@ -6,7 +6,7 @@ markmap:
 
 # Giao thức
 
-## Là tập hợp các quy tắc mà các thiết bị phải tuân thủ khi giao tiếp với nhau trên mạng
+## Là tập hợp các quy tắc giao tiếp với nhau trên mạng
 
 ## TCP/IP
 
