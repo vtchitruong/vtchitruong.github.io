@@ -122,7 +122,7 @@ Phác thảo thiết kế mạng máy tính
 
 - Nhận diện hình dạng và phân biệt được chức năng các thiết bị mạng: server, switch, modem, access point, cáp mạng.
 - Nêu được khái niệm và ứng dụng của một số loại đường truyền hữu tuyến và vô tuyến thông dụng.
-- Trình bày và giải thích sơ lược được việc thiết kế mạng LAN cho một tổ chức nhỏ, ví dụ cho cho một trường phổ thông.
+- Trình bày và giải thích sơ lược được việc thiết kế mạng LAN cho một tổ chức nhỏ, ví dụ cho một trường phổ thông.
 
 ### Chủ đề F
 
