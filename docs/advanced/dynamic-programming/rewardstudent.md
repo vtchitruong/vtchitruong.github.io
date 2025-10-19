@@ -213,4 +213,4 @@ Dựa theo ý tưởng trên:
 
 ## Mã nguồn
 
-Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/thnc/tree/main/dynamicprogramming/rewardstudent){:target="_blank"}.
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/thnc/tree/main/dynamic-programming/rewardstudent){:target="_blank"}.

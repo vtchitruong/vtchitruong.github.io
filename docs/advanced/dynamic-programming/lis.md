@@ -195,4 +195,5 @@ Dựa vào mảng `trace`, ta cho `finish` *lui dần* về phía đầu của m
     ```
 
 ## Mã nguồn
-Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/thnc/tree/main/dynamicprogramming/longest-increasing-subsequence" target="_blank">GitHub</a>.
+
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/thnc/tree/main/dynamic-programming/longest-increasing-subsequence){target="_blank"}.

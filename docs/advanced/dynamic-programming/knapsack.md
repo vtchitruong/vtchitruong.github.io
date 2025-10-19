@@ -240,4 +240,4 @@ Cụ thể, xuất phát từ phần tử cuối cùng `D[n][weight_limit]`, duy
 
 ## Mã nguồn
 
-Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/thnc/tree/main/dynamicprogramming/knapsack" target="_blank">GitHub</a>.
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/thnc/tree/main/dynamic-programming/knapsack){target="_blank"}.

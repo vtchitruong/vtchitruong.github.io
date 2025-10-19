@@ -233,4 +233,4 @@ Cụ thể, xuất phát từ phần tử cuối cùng `D[4][6]` (`D[k][n]`), du
 
 ## Mã nguồn
 
-Code đầy đủ được đặt tại <a href="https://github.com/vtchitruong/thnc/tree/main/dynamicprogramming/inflorescences-and-jars" target="_blank">GitHub</a>.
+Code đầy đủ được đặt tại [GitHub](https://github.com/vtchitruong/thnc/tree/main/dynamic-programming/inflorescences-and-jars){target="_blank"}.
