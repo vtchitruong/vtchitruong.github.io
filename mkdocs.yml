@@ -388,10 +388,13 @@ nav:
       - grade-12/topic-A/ai-a-simplified-overview.md
       - grade-12/topic-A/ai-applications-in-real-life.md
       - grade-12/topic-A/generative-ai.md
-    - Chủ đề B:
-      - grade-12/topic-B/topic-index.md
-      - grade-12/topic-B/network-devices.md
-      - grade-12/topic-B/network-protocols.md
+    - Chủ đề B1:
+      - grade-12/topic-B1/topic-index.md
+      - grade-12/topic-B1/network-devices.md
+      - grade-12/topic-B1/network-protocols.md
+    - Chủ đề B2:
+      # - grade-12/topic-B2/topic-index.md
+      - grade-12/topic-B2/network-devices-distinctions.md
     - Chủ đề F:
       - Mục lục: grade-12/topic-F/topic-f-index.md
       - grade-12/topic-F/html-web-a-simplified-overview.md
@@ -488,6 +491,7 @@ nav:
       - advanced/graph/bellman-ford.md
       - advanced/graph/floyd-warshall.md
     - Quy hoạch động:
+      - Mục lục: advanced/dynamic-programming/topic-index.md
       - advanced/dynamic-programming/rewardstudent.md
       - advanced/dynamic-programming/lis.md
       - advanced/dynamic-programming/knapsack.md
