@@ -35,7 +35,7 @@ body {
 }
 
 .vtct-list ul:hover li {
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 .vtct-list ul li {
@@ -51,10 +51,14 @@ body {
     transform: scale(1.1);
     z-index: 5;
     background: var(--first-color);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); */
+    /* color: #fff; */
     opacity: 1;
-    border-radius: 15px;
+    border-radius: 1rem;
+}
+
+.vtct-list ul li:hover a {
+    color: #fff;
 }
 
 .vtct-list ul li span {

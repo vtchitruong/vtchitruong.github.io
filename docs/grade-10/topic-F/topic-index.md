@@ -2,8 +2,8 @@
 icon: material/table-of-contents
 ---
 
-# Kiểu dữ liệu danh sách
+# Lập trình cơ bản
 
 <div>
-    <iframe style="width: 100%; height: 480px" frameBorder=0 src="../topic-index.html">Mục lục</iframe>
+    <iframe style="width: 100%; height: 600px" frameBorder=0 src="../topic-index.html">Mục lục</iframe>
 </div>

@@ -302,24 +302,24 @@ nav:
   - Lớp 10:
     - Chương trình khung: grade-10/grade-10-index.md
     - Chủ đề A1:
-      - grade-10/topic-A1/topic-index.md
+      - Mục lục: grade-10/topic-A1/topic-index.md
       - grade-10/topic-A1/data-vs-information.md
       - grade-10/topic-A1/data-measurement-unit.md      
       - grade-10/topic-A1/digital-devices-vs-smart-devices.md
       - grade-10/topic-A1/cs-timeline-and-roles.md
     - Chủ đề A2:
-      - grade-10/topic-A2/topic-index.md
+      - Mục lục: grade-10/topic-A2/topic-index.md
       - grade-10/topic-A2/data-types-and-binary-system.md
       - grade-10/topic-A2/data-representation-in-cs.md
       - grade-10/topic-A2/convert-numbers-to-different-systems.md
       - grade-10/topic-A2/operations-in-binary.md
     - Chủ đề B:
-      - grade-10/topic-B/topic-index.md
+      - Mục lục: grade-10/topic-B/topic-index.md
       - grade-10/topic-B/computer-network.md
       - grade-10/topic-B/cloud-computing.md
       - grade-10/topic-B/iot.md      
     - Chủ đề E:
-      - grade-10/topic-E/topic-index.md
+      - Mục lục: grade-10/topic-E/topic-index.md
       - grade-10/topic-E/graphics-editor.md
       - grade-10/topic-E/vietnam-flag.md
       - grade-10/topic-E/olympic-circles.md
@@ -384,17 +384,19 @@ nav:
   - Lớp 12:
     - Chương trình khung: grade-12/grade-12-index.md
     - Chủ đề A:
-      - grade-12/topic-A/topic-index.md
+      - Mục lục: grade-12/topic-A/topic-index.md
       - grade-12/topic-A/ai-a-simplified-overview.md
       - grade-12/topic-A/ai-applications-in-real-life.md
       - grade-12/topic-A/generative-ai.md
     - Chủ đề B1:
-      - grade-12/topic-B1/topic-index.md
+      - Mục lục: grade-12/topic-B1/topic-index.md
       - grade-12/topic-B1/network-devices.md
       - grade-12/topic-B1/network-protocols.md
     - Chủ đề B2:
-      # - grade-12/topic-B2/topic-index.md
+      - Mục lục: grade-12/topic-B2/topic-index.md
       - grade-12/topic-B2/network-devices-distinctions.md
+      - grade-12/topic-B2/wired-vs-wireless-transmission.md
+      - grade-12/topic-B2/home-lan-design.md
     - Chủ đề F:
       - Mục lục: grade-12/topic-F/topic-f-index.md
       - grade-12/topic-F/html-web-a-simplified-overview.md

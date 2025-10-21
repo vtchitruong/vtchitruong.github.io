@@ -6,9 +6,11 @@ icon: material/router-network-wireless
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày về hình dạng và chức năng của các thiết bị mạng giúp cho việc nhận diện và phân biệt.
-
-    Một vài nội dung có thể giống bài thiết bị mạng trong chủ đề B1.
+    Bài này trình bày một số đặc điểm của các phần cứng mạng để giúp nhận dạng và phân biệt:
+    
+    - Thiết bị đầu cuối và máy chủ.
+    - Những thiết bị kết nối: modem, router, switch, access point, repeater.
+    - Các loại cáp: đồng trục, xoắn đôi và quang.
 
 ## Thiết bị đầu cuối và máy chủ
 
@@ -66,14 +68,13 @@ Ví dụ:
 | Tốc độ | Thấp hơn cáp quang. | Chậm, phổ biến hiện nay là 10 Gbps. | Rất cao, từ 10 Gbps lên đến hàng trăm Gbps hoặc Tbps, tuỳ bối cảnh. |
 | Ứng dụng | Truyền hình cáp, Internet | LAN | Internet tốc độ cao, mạng viễn thông, trung tâm dữ liệu |
 
-
 ![Cáp đồng trục](https://www.flickr.com/photo_download.gne?size=l&id=54861015205&secret=c6e3210b1f){ loading=lazy width=480 }
 
 *Cáp đồng trục*
 
-![Cáp xoắn đôi và jack cắm RJ45](https://www.flickr.com/photo_download.gne?id=54861015345&secret=4e1673b8f4&size=l&source=photoPageEngagement){ loading=lazy width=480 }
+![Cáp xoắn đôi và đầu nối RJ45](https://www.flickr.com/photo_download.gne?id=54861015345&secret=4e1673b8f4&size=l&source=photoPageEngagement){ loading=lazy width=480 }
 
-*Cáp xoắn đôi và jack cắm RJ45*
+*Cáp cáp xoắn đối và đầu nối RJ45*
 
 ![Cáp quang](https://www.flickr.com/photo_download.gne?size=l&id=54860713406&secret=db06b33714){ loading=lazy width=480 }
 
@@ -94,7 +95,8 @@ Ví dụ:
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
 | cáp đồng trục | co-axial cable |
-| cáp quang | optic fiber cable |
-| cáp xoắn đôi | twisted-pair cable, RJ45 cable |
+| cáp quang | fiber optic cable |
+| cáp xoắn đôi | twisted-pair cable |
+| đầu nối RJ45 | RJ45 connector |
 | máy chủ | server |
 | thiết bị đầu cuối | terminal device, end device |
