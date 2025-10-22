@@ -74,6 +74,10 @@ Hiện nay, có một số công nghệ vô tuyến phổ biến sau:
 | Lắp đặt | Cần cơ sở hạ tầng phức tạp, tốn kém và mất thời gian để lắp đặt dây cáp. | Ít phức tạp hơn hữu tuyến. |
 | Ứng dụng | - Phòng máy tính ở trường học <br> - Trung tâm dữ liệu <br> - Hệ thống mạng doanh nghiệp lớn | - Hộ gia đình <br> - Laptop, máy tính bảng, điện thoại thông minh <br> - IoT |.
 
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/8/t/9/l/11/s/26/q/1/){:target="_blank"}
+
 ## Internet cố định và di động
 
 Dưới đây là bảng so sánh Internet cố định và Internet di động:
@@ -90,6 +94,10 @@ Dưới đây là bảng so sánh Internet cố định và Internet di động:
 !!! info "Thống kê tốc độ đường truyền Internet"
 
     Có một số tổ chức thường thống kê tốc độ đường truyền Internet cố định và di động của các nước, chẳng hạn như [Speedtest Global Index](https://www.speedtest.net/global-index){target="_blank"}.
+
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/8/t/9/l/11/s/27/q/1/){:target="_blank"}
 
 ## Some English words
 
