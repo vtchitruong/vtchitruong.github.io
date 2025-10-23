@@ -4,16 +4,23 @@ markmap:
   maxWidth: 300
 ---
 
-# Mạng tại hộ gia đình
+# Thiết kế mạng tại hộ gia đình
 
-## Một vài bước thiết kế
+### Xem xét điều kiện lắp đặt
 
-- Dự tính không gian lắp đặt.
-- Dự tính các thiết bị và số lượng từng loại.
-- Dự tính ngân sách.
+- Mục đích sử dụng
+- Số lượng thiết bị cần kết nối
+- Không gian nhà
+- Ngân sách
 
-## Những thiết bị thông dụng
+### Xác định các thiết bị
 
-- Modem hoặc ONT.
-- Router có chức năng phát sóng Wi-Fi.
-- Hệ thống camera IP.
+- Ổ cắm điện
+- Modem hoặc ONT
+- Router và switch
+- Cáp Ethernet và đầu nối RJ45
+- Các thiết bị phụ trợ khác
+
+### Vẽ sơ đồ
+
+- Dự tính các vị trí trước khi tiến hành lắp đặt thực tế

@@ -6,7 +6,7 @@ icon: material/lan
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày sơ nét về cách thiết kế mạng tại hộ gia đình.
+    Bài này trình bày sơ nét về thiết kế mạng tại hộ gia đình.
 
 ## Khái quát
 
@@ -27,41 +27,68 @@ Với mạng cục bộ tại hộ gia đình, ta có thể:
 
 ## Các bước thiết kế
 
-### Xác định hoàn cảnh
+### Xem xét điều kiện lắp đặt
 
-Ta cần cân nhắc các yếu tố sau:
+Ta cần xem xét các điều kiện sau:
 
-- Số lượng thiết bị.
-- Mục đích sử dụng.
-- Không gian:
+- Mục đích sử dụng:
 
-    - Nhà có mấy tầng?
+    - Chỉ lướt web, học tập.
+    - Chơi game, streaming video.
+    - Kết nối nhiều camera hoặc thiết bị IoT.
+
+- Số lượng thiết bị cần kết nối vào mạng:
+
+    - Số lượng máy tính, điện thoại thông minh, tivi thông minh.
+    - Số lượng camera.
+    - Số lượng thiết bị IoT.
+
+- Không gian nhà:
+
     - Diện tích sàn là bao nhiêu?
+    - Có bao nhiêu tầng, bao nhiêu phòng?
     - Có cần phủ sóng Wi-Fi khắp nhà không?
 
 - Ngân sách.
 
-### Thiết bị cần có
+### Xác định các thiết bị
 
-Ta cần chuẩn bị những thiết bị sau:
+Ta cần xác định những thiết bị như sau:
 
-- Các ổ cắm điện: chọn vị trí có điện an toàn và ổn định.
-- Modem hoặc ONT: thường do ISP cung cấp.
-- Router: nên có chức năng phát sóng Wi-Fi.
-- Cáp Ethernet và đầu nối RJ45: cần tính trước chiều dài dây cáp.
-- Switch: có thể cần hoặc không.
+- Ổ cắm điện:
 
-### Kế hoạch lắp đặt
+    - Mua thêm các ổ cắm điện mở rộng nếu cần.
 
-Ta cần tính toán những yếu tố sau:
+- Modem hoặc ONT:
 
-- Số lượng router.
-- Vị trí đặt các router và switch.
-- Hướng đi dây cáp để có thể kết nối các thiết bị.
-- Tên Wi-Fi và mật khẩu.
+    - Thường do ISP cung cấp.
+    - Chọn loại có thể chịu tải đủ thiết bị.
 
-### Minh hoạ
+- Router và switch:
 
+    - Nên có chức năng phát sóng Wi-Fi.
+    - Số lượng đủ để phủ sóng những nơi cần thiết.
+    - Tên Wi-Fi và mật khẩu.
+
+- Cáp Ethernet và đầu nối RJ45:
+
+    - Tổng chiều dài dây cáp.
+    - Số lượng đầu nối.
+    - Kìm bấm cáp mạng.
+
+- Các thiết bị phụ trợ khác như máng cáp, nẹp cáp, ống luồn dây điện:
+
+    - Tổng chiều dài hoặc số lượng.
+    
+### Vẽ sơ đồ
+
+- Dự tính các vị trí trước khi tiến hành lắp đặt thực tế:
+
+    - Vị trí có nguồn điện an toàn và ổn định.
+    - Vị trí đặt modem, router và switch.
+    - Hướng đi dây từ thiết bị này đến thiết bị khác.
+
+Ví dụ:  
 Hình sau minh hoạ mạng tại hộ gia đình.
 
 ![Minh hoạ mạng tại hộ gia đình](./lan-design/home-lan-design.png){ loading=lazy }
@@ -79,6 +106,10 @@ Trong hình trên:
 
     3. **PoE** (Power over Ethernet) là công nghệ cho phép truyền cả dữ liệu và nguồn điện qua cùng một cáp Ethernet.
 
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/8/t/9/l/12/s/28/q/1/){:target="_blank"}
+
 ## Sơ đồ tóm tắt
 
 <div>
@@ -89,4 +120,6 @@ Trong hình trên:
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
+| lắp đặt thiết bị mạng | network device installation |
 | mạng cục bộ | LAN |
+| thiết kế mạng | network design |
