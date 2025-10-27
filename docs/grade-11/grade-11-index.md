@@ -16,7 +16,7 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 [Hệ điều hành và phần mềm ứng dụng](./topic-A1/topic-index.md){:target="_blank"}
 
-1. [Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng](./topic-A1/os-vs-application.md){:target="_blank"}
+1. [Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng](./topic-A1/hardware-os-application.md){:target="_blank"}
     1. Trình bày được sơ lược lịch sử phát triển của hai hệ điều hành thông dụng cho PC, một hệ điều hành là phần mềm thương mại và hệ điều hành còn lại là phần mềm nguồn mở. Sử dụng được một số chức năng cơ bản của một trong hai hệ điều hành đó.
     2. Trình bày được vài nét chính về một hệ điều hành thông dụng cho thiết bị di động và sử dụng được một số tiện ích cơ bản của hệ điều hành đó.
     3. Trình bày được một cách khái quát mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng. Trình bày được vai trò riêng của mỗi thành phần trong hoạt động chung của cả hệ thống.

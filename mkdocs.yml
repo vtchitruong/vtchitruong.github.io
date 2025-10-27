@@ -70,6 +70,13 @@ theme:
 
 # Customization
 extra:
+  # alternate:
+  #   - name: English
+  #     link: /en/ 
+  #     lang: en
+  #   - name: Deutsch
+  #     link: /de/
+  #     lang: de
   annotate:
     json: [.s2]
   analytics:
@@ -340,8 +347,8 @@ nav:
   - Lớp 11:
     - Chương trình khung: grade-11/grade-11-index.md
     - Chủ đề A1:
-      - grade-11/topic-A1/topic-index.md
-      - grade-11/topic-A1/os-vs-application.md
+      - Mục lục: grade-11/topic-A1/topic-index.md
+      - grade-11/topic-A1/hardware-os-application.md
       - grade-11/topic-A1/open-source-software.md
       - grade-11/topic-A1/mobile-os.md
       - grade-11/topic-A1/os-history.md
