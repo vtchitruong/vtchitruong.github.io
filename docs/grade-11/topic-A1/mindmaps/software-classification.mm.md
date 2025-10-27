@@ -1,13 +1,9 @@
 ---
 markmap:
-    colorFreezeLevel: 3
+    colorFreezeLevel: 2
 ---
 
-# Phần mềm
-
-## Là chương trình dùng để điều khiển phần cứng
-
-## Phân loại theo phương thức chuyển giao sử dụng
+# Phân loại theo phương thức chuyển giao sử dụng
 
 ### Phần mềm thương mại
 
@@ -17,7 +13,7 @@ markmap:
 ### Phần mềm mã nguồn mở
 
 - Công khai mã nguồn.
-- Miễn phí tải về và sử dụng, kể cả tải về mã nguồn.
+- Miễn phí tải về và sử dụng, kể cả mã nguồn.
 
 ### Phần mềm miễn phí
 

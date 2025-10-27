@@ -26,7 +26,6 @@ icon: material/timeline-text
     <iframe style="width: 100%; height: 600px" frameBorder=0 src="../os-history/windows.html">Windows history timeline</iframe>
 </div>
 
-
 ## Hệ điều hành Ubuntu
 
 [Ubuntu](https://ubuntu.com/){:target="_blank"} là hệ điều hành mã nguồn mở.
@@ -46,16 +45,24 @@ Canonical phát hành các phiên bản Ubuntu cứ mỗi nửa năm một lần
 
 Bên cạnh đó, cứ sau mỗi bốn phiên bản, Canonical lại phát hành phiên bản LTS (long-term support) nhằm hỗ trợ dài hạn, nhiều tháng hoặc nhiều năm, cho người dùng.
 
-Một điểm thú vị là, mã tên của mỗi phiên bản được đặt bằng một *từ láy* ký tự đầu, gồm danh từ chỉ con vật nào đó và tính từ đi kèm. Chẳng hạn:
+Một điểm thú vị là, mã tên của mỗi phiên bản được đặt bằng một *từ láy* ký tự đầu, gồm danh từ chỉ con vật nào đó và tính từ đi kèm, chẳng hạn như:
 
 - Phiên bản đầu tiên có mã tên là Warty Warthog.
 - Các phiên bản tiếp theo là Hoary Hedgehog, Breezy Badger, Dapper Drake, v.v...
-- 23.04 Lunar Lobster, 23.10 Mantic Minotaur, 24.04 Noble Numbat, 24.10 Oracular Oriole
+
+    | Phiên bản | Tên mã |
+    | --- | --- |
+    | 23.04 | Lunar Lobster |
+    | 23.10 | Mantic Minotaur |
+    | 24.04 | Noble Numbat |
+    | 24.10 | Oracular Oriole |
+    | 25.04 | Plucky Puffin |
+    | 25.10 | Questing Quokka |
 
 Ngày nay, Ubuntu đã phát triển được nhiều phiên bản khác nhau, từ máy tính để bàn, máy chủ, cho đến điện toán đám mây OpenStack và các thiết bị kết nối nhau, dành cho cả người dùng cá nhân lẫn doanh nghiệp. Trong đó:
 
 - Ubuntu desktop là nền tảng máy trạm chạy Linux phổ biến nhất thế giới
-- Ubuntu Core dành cho các thiết bị kết nối nhau có độ an toàn cao
+- Ubuntu Core dành cho IoT và các hệ thống nhúng.
 - Ubuntu Server là hệ điều hành tham chiếu dành cho dự án OpenStack và là hệ điều hành khách mời trên các nền tảng Amazon Web Services, Microsoft Azure và Google Cloud.
 
 Ubuntu cũng được cài đặt trên các máy tính của Dell, HP, Asus, Lenovo, v.v...
