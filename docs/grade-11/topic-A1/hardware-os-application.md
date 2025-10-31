@@ -43,7 +43,7 @@ Muốn phần cứng hoạt động được, cần phải có phần mềm, là
 
 !!! tip "Ví von phần cứng và phần mềm"
 
-    Phần cứng là thể xác. Phần mềm là linh hồn.
+    Một cách hình tượng, phần cứng là thể xác, phần mềm là linh hồn. Cả hai hợp lại tạo thành một thể thống nhất của một hệ thống tin học.
 
 ## Vai trò
 

@@ -10,25 +10,18 @@ icon: material/gate-xor
 
 ## Khái niệm
 
-**Cổng logic** là một mạch điện tử có:
+**Cổng logic** là mạch điện tử dùng để thực hiện các biến đổi logic trên các tín hiệu nhị phân.
 
-- một hoặc nhiều đầu vào
-- một đầu ra duy nhất
+Mỗi cổng logic có:
 
-dùng để thực hiện các biến đổi logic trên các tín hiệu nhị phân.  
+- Một hoặc nhiều **đầu vào**
+- Một **đầu ra** duy nhất
 
-Các cổng logic đóng vai trò quan trọng trong thiết kế và vận hành của một hệ thống kỹ thuật số như máy tính hoặc bộ vi điều khiển (microcontroller). Chúng là nền tảng cho lĩnh vực điện toán và điện tử trong các thao tác xử lý dữ liệu nhị phân. Người ta kết hợp các cổng theo nhiều cách khác nhau để thực hiện các chức năng kỹ thuật số phức tạp.
+Các cổng logic đóng vai trò quan trọng trong việc vận hành của một hệ thống kỹ thuật số như máy tính hoặc bộ vi điều khiển (microcontroller), đồng thời là nền tảng cho lĩnh vực điện toán và điện tử trong các thao tác xử lý dữ liệu nhị phân.
 
-Một số cổng logic phổ biến là:
+Người ta kết hợp các cổng logic theo nhiều cách khác nhau để thực hiện các chức năng kỹ thuật số phức tạp.
 
-- Cổng NOT
-- Cổng AND
-- Cổng OR
-- Cổng XOR
-- Cổng NAND
-- Cổng NOR
-
-## Những cổng logic phổ biến
+## Một số cổng logic phổ biến
 
 ### Cổng NOT
 
@@ -130,10 +123,11 @@ Bảng chân trị:
 | 1 | 0 | 0 |
 | 1 | 1 | 0 |
 
-### Tóm tắt các cổng logic
+## Sơ đồ tóm tắt
 
-{!grade-11/topic-A2/logic-gates.mm.md!}
-*Sơ đồ tóm tắt các cổng logic*
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/logic-gates.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Some English words
 

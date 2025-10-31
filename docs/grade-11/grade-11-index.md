@@ -14,16 +14,16 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 #### Chủ đề A1
 
-[Hệ điều hành và phần mềm ứng dụng](./topic-A1/topic-index.md){:target="_blank"}
+Hệ điều hành và phần mềm ứng dụng
 
-1. [Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng](./topic-A1/hardware-os-application.md){:target="_blank"}
-    1. Trình bày được sơ lược lịch sử phát triển của hai hệ điều hành thông dụng cho PC, một hệ điều hành là phần mềm thương mại và hệ điều hành còn lại là phần mềm nguồn mở. Sử dụng được một số chức năng cơ bản của một trong hai hệ điều hành đó.
-    2. Trình bày được vài nét chính về một hệ điều hành thông dụng cho thiết bị di động và sử dụng được một số tiện ích cơ bản của hệ điều hành đó.
-    3. Trình bày được một cách khái quát mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng. Trình bày được vai trò riêng của mỗi thành phần trong hoạt động chung của cả hệ thống.
+1. [Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng](./topic-A1/hardware-os-application.md#khai-niem){:target="_blank"}
+    1. Trình bày được sơ lược [lịch sử phát triển của hai hệ điều hành thông dụng cho PC](./topic-A1/os-history.md){:target="_blank"}, một hệ điều hành là phần mềm thương mại và hệ điều hành còn lại là phần mềm nguồn mở. Sử dụng được một số chức năng cơ bản của một trong hai hệ điều hành đó.
+    2. Trình bày được vài nét chính về [một hệ điều hành thông dụng cho thiết bị di động](./topic-A1/mobile-os.md){:target="_blank"} và sử dụng được một số tiện ích cơ bản của hệ điều hành đó.
+    3. Trình bày được một cách khái quát [mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng](./topic-A1/hardware-os-application.md#moi-quan-he). Trình bày được [vai trò riêng của mỗi thành phần](./topic-A1/hardware-os-application.md#vai-tro){:target="_blank"} trong hoạt động chung của cả hệ thống.
 
-2. [Phần mềm nguồn mở, phần mềm chạy trên Internet](./topic-A1/open-source-software.md){:target="_blank"}
-    1. Trình bày được một số khái niệm có liên quan tới phần mềm nguồn mở: bản quyền phần mềm, giấy phép công cộng, phần mềm miễn phí. So sánh được phần mềm nguồn mở với phần mềm thương mại (nguồn đóng). Nêu được vai trò của phần mềm nguồn mở và phần mềm thương mại đối với sự phát triển của ICT.
-    2. Nêu được tên một số phần mềm soạn thảo văn bản, phần mềm bảng tính và phần mềm trình chiếu nguồn mở, chẳng hạn Writer, Calc và Impress trong bộ OpenOffice.
+2. Phần mềm nguồn mở, phần mềm chạy trên Internet
+    1. Trình bày được [một số khái niệm có liên quan tới phần mềm nguồn mở](./topic-A1/open-source-software.md){:target="_blank"}: bản quyền phần mềm, giấy phép công cộng, phần mềm miễn phí. [So sánh được phần mềm nguồn mở với phần mềm thương mại (nguồn đóng). Nêu được vai trò của phần mềm nguồn mở và phần mềm thương mại đối với sự phát triển của ICT](./topic-A1/software-classification.md){:target="_blank"}.
+    2. Nêu được [tên một số phần mềm soạn thảo văn bản, phần mềm bảng tính và phần mềm trình chiếu nguồn mở](./topic-A1/software-classification.md){:target="_blank"}, chẳng hạn Writer, Calc và Impress trong bộ OpenOffice.
     3. Sử dụng được một số tiện ích có sẵn của hệ điều hành để nâng cao hiệu suất sử dụng máy tính.
     4. Kích hoạt và sử dụng được một vài chức năng cơ bản của một phần mềm soạn thảo văn bản, một phần mềm bảng tính và một phần mềm trình chiếu chạy trên Internet. Ví dụ các phần mềm trong gói Google Docs.
 
@@ -33,14 +33,14 @@ Thế giới thiết bị số
 
 1. [Những bộ phận chính bên trong máy tính](./topic-A2/internal-hardwares.md){:target="_blank"}
 
-    1. Nhận diện được hình dạng, mô tả được chức năng của các bộ phận chính bên trong thân máy tính như CPU, RAM và các thiết bị lưu trữ. Nêu được tên và giải thích được đơn vị đo hiệu năng của chúng như GHz, GB, v.v...
-    2. Nhận biết được sơ đồ của các mạch logic AND, OR, NOT, giải thích được vai trò của các mạch logic đó trong thực hiện các tính toán nhị phân.
+    1. [Nhận diện được hình dạng, mô tả được chức năng của các bộ phận chính bên trong thân máy tính như CPU, RAM và các thiết bị lưu trữ. Nêu được tên và giải thích được đơn vị đo hiệu năng của chúng như GHz, GB, v.v...](./topic-A2/internal-hardwares.md){:target="_blank"}
+    2. [Nhận biết được sơ đồ của các mạch logic AND, OR, NOT, giải thích được vai trò của các mạch logic đó trong thực hiện các tính toán nhị phân](./topic-A2/logic-gates.md){:target="_blank"}.
     3. Tùy chỉnh được một vài chức năng cơ bản của máy tính và các thiết bị vào – ra thông dụng để phù hợp với nhu cầu sử dụng và đạt hiệu quả tốt hơn.
 
 2. Chức năng và hoạt động của những thiết bị ngoại vi và thiết bị số thông dụng
 
     1. Đọc hiểu được một số điểm chính trong tài liệu hướng dẫn về thiết bị số thông dụng. Thực hiện được một số những chỉ dẫn trong tài liệu đó.
-    2. Đọc hiểu và giải thích được một số thông số cơ bản như kích thước màn hình, CPU, RAM, dung lượng lưu trữ, độ phân giải camera, v.v... của các thiết bị số thông dụng. Ví dụ: PC, máy tính bảng, điện thoại thông minh, tivi có khả năng kết nối Internet, v.v...
+    2. [Đọc hiểu và giải thích được một số thông số cơ bản như kích thước màn hình, CPU, RAM, dung lượng lưu trữ, độ phân giải camera, v.v... của các thiết bị số thông dụng](./topic-A2/laptop-smartphone-specifications.md){:target="_blank"}. Ví dụ: PC, máy tính bảng, điện thoại thông minh, tivi có khả năng kết nối Internet, v.v...
     3. Biết được cách kết nối các bộ phận thân máy, bàn phím, chuột, màn hình của máy tính với nhau.
     4. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v...
 
@@ -53,17 +53,17 @@ Thế giới thiết bị số
 Tìm kiếm và trao đổi thông tin trên mạng
 
 1. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v...  
-2. Sử dụng được máy tìm kiếm, chẳng hạn máy tìm kiếm của Google, Yahoo, Bing, v.v... trên PC và thiết bị số thông minh để tìm kiếm thông tin bằng cách gõ từ khóa hoặc bằng tiếng nói.
+2. Sử dụng được máy tìm kiếm, chẳng hạn máy tìm kiếm của Google, Yahoo, Bing, v.v... trên PC và thiết bị số thông minh để tìm kiếm thông tin bằng cách gõ từ khoá hoặc bằng tiếng nói.
 3. Xác lập được các lựa chọn theo tiêu chí tìm kiếm để nâng cao hiệu quả tìm kiếm thông tin.
 4. Sử dụng được những chức năng nâng cao của dịch vụ mạng xã hội.
 5. Biết cách phân loại và đánh dấu các email.
 
 ### Chủ đề D
 
-Ứng xử văn hóa và an toàn trên mạng
+Ứng xử văn hoá và an toàn trên mạng
 
 1. Nêu được một số dạng lừa đảo phổ biến trên mạng và những biện pháp phòng tránh.
-2. Giao tiếp được trên mạng qua email, chat, mạng xã hội, v.v... và trong môi trường số một cách văn minh, phù hợp với các quy tắc và văn hóa ứng xử.
+2. Giao tiếp được trên mạng qua email, chat, mạng xã hội, v.v... và trong môi trường số một cách văn minh, phù hợp với các quy tắc và văn hoá ứng xử.
 
 ### Chủ đề E
 
@@ -77,7 +77,7 @@ Tìm kiếm và trao đổi thông tin trên mạng
 
 1. Giới thiệu các hệ cơ sở dữ liệu
     1. Nhận biết được [nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý](./topic-F1/data-related-needs.md){:target="_blank"}.
-	2. Diễn đạt được [khái niệm hệ cơ sở dữ liệu](./topic-F1/database-a-simplified-overview.md){:target="_blank"}, các khái niệm cơ bản trong [mô hình cơ sở dữ liệu quan hệ](./topic-F1/relational-database.md){:target="_blank"} như quan hệ (bảng), khóa, khóa ngoài, truy vấn, cập nhật dữ liệu, v.v...
+	2. Diễn đạt được [khái niệm hệ cơ sở dữ liệu](./topic-F1/database-a-simplified-overview.md){:target="_blank"}, các khái niệm cơ bản trong [mô hình cơ sở dữ liệu quan hệ](./topic-F1/relational-database.md){:target="_blank"} như quan hệ (bảng), khóa, khoá ngoài, truy vấn, cập nhật dữ liệu, v.v...
 	3. Nêu được những khái niệm cơ bản của hệ cơ sở dữ liệu. Giải thích được các khái niệm đó qua ví dụ minh họa.
 	4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
 	5. Nêu được tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu.
@@ -161,7 +161,7 @@ Làm phim hoạt hình, video
 
     Thực hiện được việc tạo lập cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ Quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
 
-    1. Tạo được các bảng và chỉ định được khóa cho mỗi bảng, thiết lập được mối quan hệ giữa các bảng qua việc chỉ định khóa ngoài.
+    1. Tạo được các bảng và chỉ định được khoá cho mỗi bảng, thiết lập được mối quan hệ giữa các bảng qua việc chỉ định khoá ngoài.
     2. Thực hiện được việc cập nhật cơ sở dữ liệu.
     3. Nêu được một vài tổ chức cần ứng dụng cơ sở dữ liệu để quản lý hoạt động của mình.
     4. Thể hiện được tính cẩn thận, chăm chỉ, trách nhiệm trong việc lưu trữ và quản lý dữ liệu.
