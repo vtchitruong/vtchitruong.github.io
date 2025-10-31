@@ -34,6 +34,10 @@ Ví dụ:
 
 Nhiều tổ chức và cá nhân đã tận dụng mã nguồn của Chromium để phát triển trình duyệt web của riêng mình, chẳng hạn như: [Microsoft Edge](https://www.microsoft.com/en-us/edge/){:target="_blank"}, [Opera](https://www.opera.com/){:target="_blank"}, [Brave](https://brave.com/){:target="_blank"}, v.v...
 
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/14/s/33/q/1/){:target="_blank"}
+
 ## Đặc điểm
 
 1. **Minh bạch mã nguồn**
@@ -68,6 +72,10 @@ Nhiều tổ chức và cá nhân đã tận dụng mã nguồn của Chromium �
 
         Điều này không đồng nghĩa phần mềm mã nguồn mở luôn miễn phí hay người dùng sẽ luôn tiết kiệm được chi phí đối với phần mềm mã nguồn mở, bởi vì nhiều yếu tố khác có thể xuất hiện trong quá trình sử dụng khiến chi phí phát sinh thêm.
 
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/14/s/34/q/1/){:target="_blank"}
+
 ## Giấy phép
 
 **Giấy phép mã nguồn mở** là giấy phép đi kèm theo phần mềm mã nguồn mở, trong đó nêu rõ các điều khoản và điều kiện liên quan đến việc sử dụng, sửa đổi và phân phối lại phần mềm.
@@ -101,6 +109,10 @@ Một số giấy phép mã nguồn mở thông dụng là:
     Giấy phép GPL đã trải qua nhiều phiên bản, trong đó đang phổ biến là **GPL version 2 (GPLv2)** và **GPL version 3 (GPLv3)**. Mỗi phiên bản đều có những cải tiến và làm rõ hơn những điều khoản của phiên bản trước.
 
     Toàn văn của GPLv3: [https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html){:target="_blank"}
+
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/14/s/35/q/1/){:target="_blank"}
 
 ## Sơ đồ tóm tắt
 

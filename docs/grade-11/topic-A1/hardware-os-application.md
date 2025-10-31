@@ -45,6 +45,10 @@ Muốn phần cứng hoạt động được, cần phải có phần mềm, là
 
     Một cách hình tượng, phần cứng là thể xác, phần mềm là linh hồn. Cả hai hợp lại tạo thành một thể thống nhất của một hệ thống tin học.
 
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/13/s/29/q/1/){:target="_blank"}
+
 ## Vai trò
 
 Vai trò của các thành phần trên như sau:
@@ -57,6 +61,10 @@ Vai trò của các thành phần trên như sau:
     - **Làm trung gian** giữa người dùng và hệ thống.
 
 - **Phần mềm ứng dụng:** **cung cấp** cho người dùng các **công cụ và giao diện** để thực hiện công việc cụ thể nào đó.
+
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/13/s/30/q/1/){:target="_blank"}
 
 ## Mối quan hệ
 
@@ -92,6 +100,10 @@ Hình sau thể hiện mối quan hệ giữa phần cứng, hệ điều hành 
 
 ![Mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng](./hardware-os-application/hardware-os-application.svg){ loading=lazy width=240 }
 
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/13/s/31/q/1/){:target="_blank"}
+
 ## Phân biệt hệ điều hành và phần mềm ứng dụng
 
 Bảng sau thể hiện một số điểm khác nhau giữa hệ điều hành và phần mềm ứng dụng:
@@ -102,6 +114,10 @@ Bảng sau thể hiện một số điểm khác nhau giữa hệ điều hành 
 | Cài đặt trên máy tính | Bắt buộc cài đặt. | Tùy nhu cầu người dùng. |
 | Phụ thuộc | Phụ thuộc vào khả năng của phần cứng, chẳng hạn như CPU. | Chạy trên nền tảng của một hệ điều hành cụ thể. |
 | Tương tác của người dùng | Người dùng tương tác với máy tính thông qua trung gian là hệ điều hành. | Người dùng tương tác trên giao diện của phần mềm. |
+
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/13/s/32/q/1/){:target="_blank"}
 
 ## Sơ đồ tóm tắt
 
