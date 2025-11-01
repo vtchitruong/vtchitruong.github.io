@@ -34,6 +34,20 @@ Ví dụ:
 
 Nhiều tổ chức và cá nhân đã tận dụng mã nguồn của Chromium để phát triển trình duyệt web của riêng mình, chẳng hạn như: [Microsoft Edge](https://www.microsoft.com/en-us/edge/){:target="_blank"}, [Opera](https://www.opera.com/){:target="_blank"}, [Brave](https://brave.com/){:target="_blank"}, v.v...
 
+Tuy nhiên, mã nguồn mở không đồng nghĩa với việc tác giả từ bỏ bản quyền, mà cần hiểu đúng là: tác giả vẫn giữ bản quyền đối với mã nguồn và cấp quyền sử dụng rộng rãi thông qua giấy phép.
+
+Cách ghi tắt bản quyền theo công ước Berne như sau:
+
+```
+Copyright © [năm cập nhật nếu có thay đổi lớn] [tên tác giả/tổ chức giữ bản quyền]
+```
+
+Ví dụ:
+
+```
+Copyright © 2008-2025 The Linux Foundation
+```
+
 !!! question "Hỏi chút chơi"
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/14/s/33/q/1/){:target="_blank"}

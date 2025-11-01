@@ -22,9 +22,13 @@ icon: material/timeline-text
     - [A History of Microsoft Windows – Timeline](https://www.thewindowsclub.com/history-of-windows) 
     - [Microsoft Windows version history trên Wikipedia](https://en.wikipedia.org/wiki/Microsoft_Windows_version_history)
 
-<div>
-    <iframe style="width: 100%; height: 600px" frameBorder=0 src="../os-history/windows.html">Windows history timeline</iframe>
-</div>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/jmWBB3TEw4o?si=kYQHmFM00y3BLUSO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+!!! note "Lược đồ sơ nét lịch sử phát triển của hệ điều hành Windows"
+
+    <div>
+        <iframe style="width: 100%; height: 600px" frameBorder=0 src="../os-history/windows.html">Windows history timeline</iframe>
+    </div>
 
 ## Hệ điều hành Ubuntu
 
