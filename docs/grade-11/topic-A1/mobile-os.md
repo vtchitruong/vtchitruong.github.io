@@ -13,25 +13,41 @@ icon: material/android
 
 ## Khái quát
 
-**Hệ điều hành di động** là phần mềm quản lý toàn bộ hoạt động của thiết bị di động như điện thoại, máy tính bảng, đồng hồ thông minh.
+**Hệ điều hành di động** là phần mềm quản lý tài nguyên và điều phối hoạt động của thiết bị di động như điện thoại, máy tính bảng, đồng hồ thông minh.
 
-Nó kết hợp các tính năng của hệ điều hành dành cho máy tính với các tính năng đặc thù cho thiết bị di động như: màn hình cảm ứng, kết nối mạng không dây, GPS, camera, v.v...
+Nó kết hợp các tính năng của hệ điều hành dành cho máy tính với các tính năng đặc thù cho thiết bị di động như:
+
+- Màn hình cảm ứng
+- Các loại kết nối mạng không dây
+- Định vị
+- Camera
+- Quản lý pin
+- Tối ưu đa nhiệm cho màn hình nhỏ
+- v.v...
 
 Nhờ hệ điều hành di động, người dùng có thể thực hiện được nhiều tác vụ trong học tập, làm việc, giải trí, trong đó phần lớn là các tác vụ như:
 
-- Giao tiếp, liên lạc.
-- Lướt web.
-- Nghe nhạc, xem phim.
-- Định hướng, tìm vị trí.
-- Quay phim, chụp ảnh.
-- Chia sẻ nội dung nhanh chóng.
+- Giao tiếp, liên lạc
+- Lướt web
+- Nghe nhạc, xem phim
+- Định hướng, tìm vị trí
+- Quay phim, chụp ảnh
+- Chia sẻ nội dung nhanh chóng
+- Thanh toán di động
+- Quản lý sức khoẻ
 
 Một số hệ điều hành di động phổ biến hiện nay:
 
 - Android
 - iOS, iPadOS
-- HyperOS, ColorOS, HarmonyOS
+- HyperOS
+- ColorOS
+- HarmonyOS
 - Tizen
+
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/16/s/38/q/1/){:target="_blank"}
 
 ## Hệ điều hành Android
 
@@ -84,6 +100,10 @@ Android có một số đặc điểm sau:
 10. **Sự phân mảnh**
 
     Android chạy trên rất nhiều thiết bị của các nhà sản xuất khác nhau, dẫn đến sự phân mảnh về cả phần cứng lẫn phần mềm, tạo nên thách thức cho lập trình viên khi phát triển các ứng dụng.
+
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/16/s/39/q/1/){:target="_blank"}
 
 ## Sơ đồ tóm tắt
 

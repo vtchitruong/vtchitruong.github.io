@@ -30,6 +30,10 @@ icon: material/timeline-text
         <iframe style="width: 100%; height: 600px" frameBorder=0 src="../os-history/windows.html">Windows history timeline</iframe>
     </div>
 
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/17/s/40/q/1/){:target="_blank"}
+
 ## Hệ điều hành Ubuntu
 
 [Ubuntu](https://ubuntu.com/){:target="_blank"} là hệ điều hành mã nguồn mở.
@@ -69,6 +73,10 @@ Ngày nay, Ubuntu đã phát triển nhiều bản cho các hệ thống khác n
 - Ubuntu Desktop là nền tảng máy trạm chạy Linux phổ biến hàng đầu trên thế giới.
 - Ubuntu Core dành cho IoT và các hệ thống nhúng.
 - Ubuntu Server là hệ điều hành tham chiếu dành cho dự án điện toán đám mây OpenStack và là hệ điều hành *"khách mời"* trên các nền tảng Amazon Web Services, Microsoft Azure và Google Cloud.
+
+!!! question "Hỏi chút chơi"
+    
+    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/17/s/41/q/1/){:target="_blank"}
 
 ## Sơ đồ tóm tắt
 
