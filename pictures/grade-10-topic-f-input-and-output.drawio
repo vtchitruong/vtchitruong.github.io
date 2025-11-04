@@ -1,0 +1,68 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="mlxBrgeHwwxQBtheIqnp">
+    <mxGraphModel dx="1029" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="690" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-13" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;fontColor=#333333;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="190" y="100" width="310" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-1" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#FFD966;shape=mxgraph.azure.user;" vertex="1" parent="1">
+          <mxGeometry x="210" y="125" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-2" value="" style="endArrow=open;html=1;rounded=0;strokeWidth=3;endFill=0;strokeColor=#4D4D4D;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="150" as="sourcePoint" />
+            <mxPoint x="360" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-15" value="data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fontSize=14;labelBackgroundColor=none;" vertex="1" connectable="0" parent="7HRj-D7rg2ATiA75fKC1-2">
+          <mxGeometry x="0.15" y="4" relative="1" as="geometry">
+            <mxPoint x="-6" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-11" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="380" y="120" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-3" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.laptop;pointerEvents=1;" vertex="1" parent="7HRj-D7rg2ATiA75fKC1-11">
+          <mxGeometry width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-5" value="Python" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fontSize=14;fontColor=#00BEF2;" vertex="1" parent="7HRj-D7rg2ATiA75fKC1-11">
+          <mxGeometry x="20" y="15" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-14" value="input()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontFamily=consolas;" vertex="1" parent="1">
+          <mxGeometry x="190" y="210" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-16" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;fontColor=#333333;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="190" y="290" width="310" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-17" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#FFD966;shape=mxgraph.azure.user;" vertex="1" parent="1">
+          <mxGeometry x="210" y="315" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-18" value="" style="endArrow=open;html=1;rounded=0;strokeWidth=3;endFill=0;strokeColor=#4D4D4D;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="340" as="sourcePoint" />
+            <mxPoint x="280" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-19" value="information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fontSize=14;labelBackgroundColor=none;" vertex="1" connectable="0" parent="7HRj-D7rg2ATiA75fKC1-18">
+          <mxGeometry x="0.15" y="4" relative="1" as="geometry">
+            <mxPoint x="6" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-20" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="380" y="310" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-21" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.laptop;pointerEvents=1;" vertex="1" parent="7HRj-D7rg2ATiA75fKC1-20">
+          <mxGeometry width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-22" value="Python" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fontSize=14;fontColor=#00BEF2;" vertex="1" parent="7HRj-D7rg2ATiA75fKC1-20">
+          <mxGeometry x="20" y="15" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7HRj-D7rg2ATiA75fKC1-23" value="print()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontFamily=consolas;" vertex="1" parent="1">
+          <mxGeometry x="190" y="400" width="310" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
