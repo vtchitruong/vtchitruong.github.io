@@ -66,17 +66,24 @@ theme:
   # icon:    
   #   logo: logo
   logo: assets/mr-school-logo.png
-  # language: vi
+  language: vi
+  # icon:
+  #   alternate: flag_vn
 
 # Customization
 extra:
-  # alternate:
-  #   - name: English
-  #     link: /en/ 
-  #     lang: en
-  #   - name: Deutsch
-  #     link: /de/
-  #     lang: de
+  alternate:
+    # Switch to Vietnamese (default)
+    - name: Tiếng Việt
+      link: ./
+      lang: vi
+
+    # Switch to English
+    - name: English
+      # The link will depend on how you deploy. 
+      # This example assumes the English version is built to a subfolder "en"
+      link: /en/ 
+      lang: en
   annotate:
     json: [.s2]
   analytics:
@@ -136,7 +143,7 @@ extra:
 markdown_extensions:
   - abbr
   - admonition
-  - attr_list
+  - attr_list # Required for custom classes
   - def_list
   - footnotes
   - md_in_html
@@ -149,8 +156,6 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      # emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      # emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       # options:
@@ -292,6 +297,24 @@ plugins:
       background: #74b9ff
       shadow: true
       manual: false  
+  - i18n:
+      default_language: vi # current default language
+      # docs_structure: folder
+      languages:
+        - locale: vi
+          name: Tiếng Việt
+          build: true
+          default: true
+        - locale: en
+          name: English
+          build: true
+      #   vi:
+      #     name: Tiếng Việt # Display name for the Vietnamese language
+      #     build: true
+      #   en:
+      #     name: English # Display name for the English language
+      #     build: true
+      material_alternate: true # Enables the Material for MkDocs language selector
 
 # Page tree
 nav:
