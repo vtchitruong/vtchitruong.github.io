@@ -9,30 +9,27 @@ markmap:
 ## Khái quát
 
 - Là cấu trúc dữ liệu dùng để xử lý tập hợp nhiều phần tử
-- Các phần tử nằm liên tiếp nhau trên bộ nhớ
-- Kích thước hoặc độ dài:
-  - Là số phần tử của mảng
-  - Là hữu hạn
-- Mỗi phần tử:
-  - Chỉ số (hoặc vị trí)
-    - Dùng để truy xuất phần tử
-  - Giá trị
-    - Cùng kiểu dữ liệu
-  
+
+## Phần tử
+
+- Nằm liên tiếp nhau trong bộ nhớ.
+- Số lượng phần tử là kích thước hoặc độ dài của mảng.
+- Đều cùng kiểu dữ liệu.
+
 ## Phân loại
 
 ### Mảng một chiều
 
 #### Khởi tạo
 
-- Liệt kê phần tử
-- Hàm `full()`
+- Liệt kê
+- Hàm `full()` của `numpy`
 
 #### Truy xuất phần tử
 
-- Chỉ số được đánh từ `0` hoặc từ `1`
+- Chỉ số hoặc vị trí được đánh từ `0`.
 - `A[0]` là phần tử đầu tiên
-- `A[n - 1]` là phần tử cuối
+- `A[n - 1]` là phần tử cuối cùng
 
 #### Duyệt mảng
 
@@ -42,6 +39,6 @@ markmap:
 
 ## Biểu diễn mảng trong Python
 
-- Kiểu dữ liệu `list`
-- Thư viện `array`
+- Cấu trúc dữ liệu `list`
+- Module `array`
 - Thư viện `numpy`
