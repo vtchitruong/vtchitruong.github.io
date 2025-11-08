@@ -14,7 +14,7 @@ icon: material/table-row
 
 When managing the computer science grades for a class of 30 students, declaring 30 separate variables feels pretty impractical. Just look at how clunky this declaration code gets: [^1]
 
-[^1]: This introductory problem is similar to the [`list` data structure`](../../grade-10/topic-F/list.en.md){target="_blank"} lesson from grade 10.
+[^1]: This introductory problem is similar to the [`list` data structure`](/grade-10/topic-F/list.en.md){target="_blank"} lesson from grade 10.
 
 ```py
 hs1 = 10

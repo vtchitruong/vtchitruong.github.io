@@ -299,7 +299,7 @@ plugins:
       manual: false  
   - i18n:
       default_language: vi # current default language
-      # docs_structure: folder
+      # docs_structure: suffix
       languages:
         - locale: vi
           name: Tiếng Việt
@@ -308,6 +308,10 @@ plugins:
         - locale: en
           name: English
           build: true
+      # nav_translations:
+      #   en:
+      #     "Lớp 11": "Grade 11"
+
       #   vi:
       #     name: Tiếng Việt # Display name for the Vietnamese language
       #     build: true
@@ -370,7 +374,7 @@ nav:
       - Mục lục: grade-10/topic-G/topic-index.md
       - grade-10/topic-G/graphic-design.md
       - grade-10/topic-G/developer.md
-  - Lớp 11:
+  - "Lớp 11":
     - Chương trình khung: grade-11/grade-11-index.md
     - Chủ đề A1:
       - Mục lục: grade-11/topic-A1/topic-index.md
@@ -521,7 +525,7 @@ nav:
     - Đồ thị:
       - Mục lục: advanced/graph/topic-index.md
       - advanced/graph/dfs.md
-      - advanced/graph/out-of-the-forest.md
+      - advanced/graph/escape-from-the-forest.md
       - advanced/graph/bfs.md
       - advanced/graph/robot-in-the-maze.md
       - advanced/graph/dijkstra.md
@@ -674,6 +678,12 @@ nav:
         - Project 5: mos/powerpoint-2016/exam-3/project-5.md
         - Project 6: mos/powerpoint-2016/exam-3/project-6.md
         - Project 7: mos/powerpoint-2016/exam-3/project-7.md
-    
+
+# nav_translations:
+#   en: # Target the English language locale
+#     "Lớp 11": "Grade 11"
+#     "Chương trình khung": "Syllabus"
+#     "Chủ đề F2": "Topic F2"
+#     "Mục lục": "Index"
   # - Blog:
   #   - blog/index.md
