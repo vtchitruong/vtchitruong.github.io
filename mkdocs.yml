@@ -525,8 +525,8 @@ nav:
     - Đồ thị:
       - Mục lục: advanced/graph/topic-index.md
       - advanced/graph/dfs.md
-      - advanced/graph/escape-from-the-forest.md
       - advanced/graph/bfs.md
+      - advanced/graph/escape-from-the-forest.md      
       - advanced/graph/robot-in-the-maze.md
       - advanced/graph/dijkstra.md
       - advanced/graph/bellman-ford.md

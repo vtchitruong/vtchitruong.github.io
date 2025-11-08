@@ -2,7 +2,6 @@
 tags:
     - DFS
     - Ánh xạ toạ độ 2D thành 1D
-    - Ma trận
 ---
 
 # Thoát khỏi khu rừng
@@ -109,7 +108,7 @@ Nhà thám hiểm sẽ sử dụng tuyệt chiêu *"phân thân chi thuật"*, x
                 break
     ```
 
-2\. Khai báo ma trận `trace` có kích thước tương tự ma trận khu rừng `forest`, dùng để đánh dấu và truy vết đường đi.
+2\. Khai báo mảng hai chiều `trace` có kích thước tương tự ma trận khu rừng `forest`, dùng để đánh dấu các ô đã duyệt và truy vết đường đi.
 
 Khởi tạo `trace` với mọi phần tử đều là `-1`, nghĩa là chưa duyệt (chưa ghé thăm, chưa đánh dấu).
 
