@@ -1,4 +1,4 @@
-# Chương trình khung lớp 12 theo Chương trình GDPT 2018
+# Chương trình khung phần Chuyên đề của các lớp 10, 11 và 12 theo Chương trình GDPT 2018
 
 ## Sơ đồ tóm tắt
 

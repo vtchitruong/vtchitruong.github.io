@@ -1,152 +1,145 @@
 # Tháp Hà Nội
 
-## Khái quát về bài toán
+## Bài toán
 
-Bài toán tháp Hà Nội (còn có tên khác là bài toán Benares Temple, Tower of Brahma, Lucas' Tower hoặc bài toán Kim Tự Tháp) là một trò chơi gồm ba cột và số lượng đĩa với đường kính khác nhau được đặt vào các cột.
+Bài toán tháp Hà Nội (còn có tên khác là bài toán Benares Temple, Tower of Brahma, Lucas' Tower hoặc Kim Tự Tháp) là một trò chơi gồm ba cột và nhiều đĩa có đường kính khác nhau được đặt vào các cột.
 
-Trò chơi xuất phát từ trạng thái các đĩa nằm chồng lên nhau trên cùng một cột, đĩa nhỏ nằm trên đĩa lớn, cả chồng đĩa tạo thành hình nón.
+Ở trạng thái ban đầu, các đĩa nằm chồng lên nhau trên cùng một cột, đĩa nhỏ nằm trên đĩa lớn, cả chồng đĩa tạo thành hình nón.
 
-Mục tiêu của trò chơi là di chuyển toàn bộ đĩa đến cột đích, tuân theo quy định sau đây:
+Người chơi cần phải chuyển toàn bộ đĩa đến cột đích theo quy định sau:
 
-- Mỗi lần chỉ di chuyển một đĩa.
-- Mỗi lần chỉ di chuyển đĩa nằm trên cùng của một cột và đặt đĩa này lên trên cùng của một cột khác.
+- Mỗi lần chỉ được chuyển một đĩa.
+- Mỗi lần chỉ được lấy một đĩa nằm trên cùng của một cột và đặt đĩa này lên trên cùng của một cột khác.
 - Đĩa nhỏ phải luôn nằm trên đĩa lớn.
 
-![Minh họa trò chơi có 4 đĩa](./images/ha-noi-tower.svg){width="75%" loading=lazy}
+![Minh họa trò chơi có 4 đĩa](/special-topics/recursion/images/ha-noi-tower.svg){width="75%" loading=lazy}
 
 *Minh họa trò chơi có 4 đĩa*
 
-## Yêu cầu
+**Yêu cầu:**
 
-In ra màn hình chỉ dẫn từng bước di chuyển đĩa để đáp ứng thể lệ của trò chơi nêu trên.
+In ra màn hình các câu hướng dẫn sao cho người chơi chỉ cần làm theo là hoàn thành trò chơi. Mỗi câu hướng dẫn phải có nội dung cụ thể: chuyển đĩa $d$ từ cột $x$ đến cột $y$.  
 
-## Input
+**Đầu vào:**
 
-```pycon
-4 1 3
-```
+Ba số nguyên lần lượt là số lượng đĩa, cột bắt đầu và cột đích.
 
-## Ouput
+**Đầu ra:**
 
-```pycon
-Move disc 1 from rod 1 to rod 2  
-Move disc 2 from rod 1 to rod 3  
-Move disc 1 from rod 2 to rod 3  
-Move disc 3 from rod 1 to rod 2  
-Move disc 1 from rod 3 to rod 1  
-Move disc 2 from rod 3 to rod 2  
-Move disc 1 from rod 1 to rod 2  
-Move disc 4 from rod 1 to rod 3  
-Move disc 1 from rod 2 to rod 3  
-Move disc 2 from rod 2 to rod 1  
-Move disc 1 from rod 3 to rod 1  
-Move disc 3 from rod 2 to rod 3  
-Move disc 1 from rod 1 to rod 2  
-Move disc 2 from rod 1 to rod 3  
-Move disc 1 from rod 2 to rod 3  
-```
+Các câu hướng dẫn chuyển đĩa.
 
-## Giải thích
+**Bộ kiểm thử:**
 
-Input gồm ba số, lần lượt là số lượng đĩa, cột bắt đầu và cột đích.
+| Đầu vào | Đầu ra |
+| --- | --- |
+| 3 1 3 | Chuyển đĩa 1: từ cột 1 đến cột 3 <br> Chuyển đĩa 2: từ cột 1 đến cột 2 <br> Chuyển đĩa 1: từ cột 3 đến cột 2 <br> Chuyển đĩa 3: từ cột 1 đến cột 3 <br> Chuyển đĩa 1: từ cột 2 đến cột 1 <br> Chuyển đĩa 2: từ cột 2 đến cột 3 <br> Chuyển đĩa 1: từ cột 1 đến cột 3 |
 
 ## Cách giải đề xuất
 
 ### Ý tưởng chính
 
-Gọi **đĩa thứ 1** là đĩa nhỏ nhất (nằm trên cùng) và **đĩa thứ n** là đĩa lớn nhất (nằm dưới cùng). 
-
-Ta "*giả vờ*" xem chồng đĩa chỉ gồm hai nhóm, là $n - 1$ đĩa nằm trên và đĩa thứ n nằm dưới.
-
-Như vậy, ta thực hiện di chuyển hai nhóm đĩa này theo trình tự sau:
-
-- Thao tác 1: Chuyển $n - 1$ đĩa từ **cột bắt đầu** sang **cột trung gian**.
-- Thao tác 2: Chuyển đĩa thứ n từ **cột bắt đầu** sang **cột đích**.
-- Thao tác 3: Chuyển $n - 1$ đĩa sang từ **cột trung gian** sang **cột đích**.
-
-Dễ nhận thấy, tại thao tác 1 và thao tác 3, bài toán được lặp lại với kích thước nhỏ hơn. Đây là chỗ để gọi thực hiện đệ quy. 
-
-### Các bước thực hiện
-
-1. Tạo chỉ dẫn cho mỗi lần di chuyển đĩa:
-
-    Trước hết, ta viết hàm gồm ba tham số: đĩa thứ `d`, cột bắt đầu `s` và cột đích `t`.
+Gọi:
     
-    Công dụng của hàm này là in ra một dòng thông báo chỉ dẫn di chuyển đĩa `d` từ cột `s` sang cột `t`.
+- Đĩa nhỏ nhất (nằm trên cùng) là đĩa `1`.
+- Đĩa lớn nhất (nằm dưới cùng) là đĩa `n`.
+    
+Ta *"giả vờ"* xem tất cả các đĩa chỉ là hai nhóm:
 
-    === "C++"
-        ```c++ linenums="1"
-        void guide(int d, int s, int t)
-        {
-            cout << "Move disk " << d << " from rod " << s << " to rod " << t << endl;
-        }
-        ```
-    === "Python"
-        ```py linenums="1"
-        def guide(d, s, t):
-            print(f'Move disc {d} from rod {s} to rod {t}')
-        ```
+- Nhóm thứ nhất: `n - 1` đĩa nằm trên.
+- Nhóm thứ hai: đĩa `n` nằm dưới.
 
-2. Trường hợp cơ sở:
+Với chỉ hai nhóm, ta có thể chuyển đĩa như sau:
 
-    Đây là trường hợp mà trong đó, ta chỉ di chuyển một đĩa từ cột bắt đầu đến cột đích.
+- Bước 1: chuyển `n - 1` đĩa từ **cột bắt đầu** đến **cột trung gian**.
+- Bước 2: chuyển đĩa `n` từ **cột bắt đầu** đến **cột đích**.
+- Bước 3: chuyển `n - 1` đĩa từ **cột trung gian** đến **cột đích**.
 
-    === "C++"
-        ```c++ linenums="1"
-        if (disk == 1)
-        {
-            guide(disk, source, target);
-            return;
-        }
-        ```
-    === "Python"
-        ```py linenums="1"
+Ta nhận thấy tại bước 1 và bước 3, bài toán được lặp lại với kích thước nhỏ hơn. Đây là chỗ có thể gọi thực hiện đệ quy.
+
+Như vậy, bài toán có thể được phân tích như sau:
+
+1. **Trường hợp cơ sở:** `n == 1` đĩa.
+
+    Đây là trường hợp mà ta chuyển một đĩa cụ thể từ cột xác định này đến một cột xác định khác.
+
+2. **Trường hợp đệ quy:** `n - 1` đĩa còn lại.
+
+    Đây là trường hợp dành cho bước 1 và bước 3.
+
+    Trong đó, ta cần xác định cột trung gian là cột nào, vì không phải lúc nào cũng là cột 2. Chẳng hạn, khi chuyển đĩa từ cột 2 đến cột 1, thì cột trung gian là cột 3.
+
+    Ta có: tổng số thứ tự của ba cột là $1 + 2 + 3 = 6$.
+
+    Do đó, để xác định cột trung gian, ta lấy tổng trừ đi cột bắt đầu và cột đích.
+
+    Ví dụ: nếu cột bắt đầu là cột 2, cột đích là cột 1, thì cột trung gian là $6 - 2 - 1 = 3$.
+
+### Viết chương trình
+
+1. Viết hàm `hanoi_tower()` để thực hiện chuyển đĩa bằng kỹ thuật đệ quy.
+
+    Hàm này gồm ba tham số:
+    
+    - `disc`: vừa là số lượng đĩa, vừa là số thứ tự của đĩa cuối cùng
+    - `source`: cột bắt đầu
+    - `target`: cột đích 
+
+    ```py linenums="1"
+    def hanoi_tower(disc, source, target):
+        # Trường hợp cơ sở
         if disc == 1:
-            guide(disc, source, target)
+            print(f'Chuyển đĩa 1: từ cột {source} đến cột {target}')
             return
-        ```
 
-3. Trường hợp đệ quy:
+        # Xác định cột trung gian
+        spare = 6 - (source + target)
 
-    Mỗi lần di chuyển đĩa, cột trung gian có thể không phải là cột 2. Chẳng hạn, khi chuyển một đĩa từ cột 2 sang cột 1, thì lúc này cột trung gian là cột 3.
+        # Đệ quy: chuyển n - 1 đĩa nằm trên từ cột source đến cột spare
+        hanoi_tower(disc - 1, source, spare)
 
-    Nhận thấy, tổng số thứ tự của ba cột là $1 + 2 + 3 = 6$.
+        # Chuyển đĩa disc nằm dưới cùng từ cột source đến cột target
+        print(f'Chuyển đĩa {disc}: từ cột {source} đến cột {target}')
 
-    Do đó, để xác định cột trung gian, ta lấy tổng (là 6) trừ đi cột bắt đầu và cột đích.
+        # Đệ quy: chuyển n - 1 đĩa còn lại từ cột spare đến cột target
+        hanoi_tower(disc - 1, spare, target)
+    ```
 
-    Ví dụ: Nếu cột bắt đầu là cột 2, cột đích là cột 1, thì cột trung gian là $6 - 2 - 1 = 3$.
+2. Viết chương trình chính.
 
-    Như vậy, ta có thể viết lệnh gọi đệ quy như sau:
+    ```py linenums="20"
+    if __name__ == '__main__':
+        n = int(input('Số lượng đĩa: '))
+        s = int(input('Cột bắt đầu: '))
+        t = int(input('Cột đích: '))
 
-    === "C++"
-        ```c++ linenums="1"
-            spare = 6 - (source + target);
-            
-            // Di chuyển n - 1 đĩa nằm trên sang cột trung gian
-            HaNoiTower(disk - 1, source, spare);
+        hanoi_tower(n, s, t)
+    ```
 
-            // Di chuyển đĩa thứ n (nằm dưới cùng) sang cột đích
-            guide(disk, source, target);
+3. Chạy chương trình trên, kết quả như sau:
 
-            // Di chuyển n - 1 đĩa còn lại từ cột trung gian sang cột đích
-            HaNoiTower(disk - 1, spare, target);
-        ```
-    === "Python"
-        ```py linenums="1"
-            spare = 6 - (source + target)
-
-            # Di chuyển n - 1 đĩa nằm trên sang cột trung gian
-            hanoi_tower(disc - 1, source, spare)
-
-            # Di chuyển đĩa thứ n (nằm dưới cùng) sang cột đích 
-            guide(disc, source, target)
-
-            # Di chuyển n - 1 đĩa còn lại từ cột trung gian sang cột đích
-            hanoi_tower(disc - 1, spare, target)
-        ```
+    ```pycon
+    Số lượng đĩa: 4
+    Cột bắt đầu: 1
+    Cột đích: 3
+    Chuyển đĩa 1: từ cột 1 đến cột 2
+    Chuyển đĩa 2: từ cột 1 đến cột 3
+    Chuyển đĩa 1: từ cột 2 đến cột 3
+    Chuyển đĩa 3: từ cột 1 đến cột 2
+    Chuyển đĩa 1: từ cột 3 đến cột 1
+    Chuyển đĩa 2: từ cột 3 đến cột 2
+    Chuyển đĩa 1: từ cột 1 đến cột 2
+    Chuyển đĩa 4: từ cột 1 đến cột 3
+    Chuyển đĩa 1: từ cột 2 đến cột 3
+    Chuyển đĩa 2: từ cột 2 đến cột 1
+    Chuyển đĩa 1: từ cột 3 đến cột 1
+    Chuyển đĩa 3: từ cột 2 đến cột 3
+    Chuyển đĩa 1: từ cột 1 đến cột 2
+    Chuyển đĩa 2: từ cột 1 đến cột 3
+    Chuyển đĩa 1: từ cột 2 đến cột 3
+    ```
 
 ## Mã nguồn
 
-- Chương trình C++ hoàn chỉnh đặt tại [Gist của GitHub](https://gist.github.com/vtchitruong/d13701c239e3d31af412a8c3e2a4c009){:target="_blank"}
+Code đầy đủ được đặt tại:
 
-- Chương trình Python hoàn chỉnh đặt tại [Google Colab](https://colab.research.google.com/drive/1MDK_03352u5FH6YLMl37J3pHSFF7YWXe?usp=sharing){:target="_blank"}
+- [Google Colab](https://colab.research.google.com/drive/1MDK_03352u5FH6YLMl37J3pHSFF7YWXe?usp=sharing){target="_blank"}

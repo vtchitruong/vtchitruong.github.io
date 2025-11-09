@@ -1,6 +1,8 @@
 # Dãy Fibonacci
 
-## Yêu cầu
+## Bài toán
+
+**Yêu cầu:**
 
 Dãy số Fibonacci được định nghĩa như sau:  
 
@@ -10,17 +12,17 @@ Dãy số Fibonacci được định nghĩa như sau:
 
 Viết chương trình xác định số Fibonacci thứ n.
 
-## Input
+**Đầu vào:**
 
 Số nguyên dương n.
 
-## Output
+**Đầu ra:**
 
 Số Fibonacci thứ n.
 
-## Bộ test
+**Bộ kiểm thử:**
 
-| STT | Input | Output |
+| STT | Đầu vào | Đầu ra |
 | --- | --- | --- |
 | 1 | 0 | 0 |
 | 2 | 1 | 1 |
@@ -33,34 +35,55 @@ Số Fibonacci thứ n.
 
 ## Cách giải đề xuất
 
-1. Trường hợp cơ sở:
+### Ý tưởng chính
 
-    Bài toán này có 2 trường hợp cơ sở:
+1. **Trường hợp cơ sở:**
+
+    Bài toán này có hai trường hợp cơ sở:
 
     - `n == 0`: trả về giá trị `0`.
     - `n == 1`: trả về giá trị `1`.
 
-2. Trường hợp đệ quy:
+2. **Trường hợp đệ quy:**
 
     Hàm đệ quy gọi lại chính nó theo công thức truy hồi $F_n = F_{n - 1} + F_{n - 2}$.
- 
-Như vậy, hàm `fibonacci` được viết như sau:
 
-```py linenums="1"
-def fibonacci(n):
-    # Trường hợp cơ sở
-    if n == 0:
-        return 0
-    
-    if n == 1:
-        return 1
+### Viết chương trình
 
-    # Trường hợp đệ quy
-    return fibonacci(n - 1) + fibonacci(n - 2)
-```
+1. Viết hàm `fibonacci` gồm có một tham số là `n`.
+
+    ```py linenums="1"
+    def fibonacci(n):
+        # Trường hợp cơ sở
+        if n == 0:
+            return 0
+        
+        if n == 1:
+            return 1
+
+        # Trường hợp đệ quy
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    ```
+
+2. Viết chương trình chính.
+
+    ```py linenums="13"
+    if __name__ == '__main__':
+        number = int(input('Nhập n nguyên dương: '))
+
+        result = fibonacci(num)
+        print(f'Số Fibonacci thứ {num} là {result}')
+    ```
+
+3. Chạy chương trình trên, kết quả như sau:
+
+    ```pycon
+    Nhập n nguyên dương: 10
+    Fibonacci[10] = 55
+    ```
 
 ## Mã nguồn
 
-- Chương trình C++ hoàn chỉnh đặt tại [Gist của GitHub](https://gist.github.com/vtchitruong/c71114739d742b80c51b45081a429694){:target="_blank"}
+Code đầy đủ được đặt tại:
 
-- Chương trình Python hoàn chỉnh đặt tại [Google Colab](https://colab.research.google.com/drive/176a-A851JGV_YITz7kM-qWzTde6STgBn?usp=sharing){:target="_blank"}
+- [Google Colab](https://colab.research.google.com/drive/176a-A851JGV_YITz7kM-qWzTde6STgBn?usp=sharing){target="_blank"}
