@@ -1,6 +1,12 @@
 ---
 show_donation: false
 ---
+
+### v23.08.21 <small>11-11-2025</small> { id="25.11.11" }
+
+- Giả vờ thêm tính năng chuyển đổi ngôn ngữ Anh - Việt.
+- Ráng thêm phiên bản tiếng Anh cho vài bài để người ta tưởng mình biết tiếng Anh.
+
 ### v23.08.20 <small>09-10-2025</small> { id="25.10.09" }
 
 - Thêm mục Đọc thêm để mở rộng một số kiến thức trong chương trình chính khoá.

@@ -1,5 +1,9 @@
 # Tháp Hà Nội
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày cách giải bài toán tháp Hà Nội bằng kỹ thuật đệ quy.
+
 ## Bài toán
 
 Bài toán tháp Hà Nội (còn có tên khác là bài toán Benares Temple, Tower of Brahma, Lucas' Tower hoặc Kim Tự Tháp) là một trò chơi gồm ba cột và nhiều đĩa có đường kính khác nhau được đặt vào các cột.

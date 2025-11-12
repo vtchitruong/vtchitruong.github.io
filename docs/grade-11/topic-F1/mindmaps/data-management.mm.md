@@ -8,7 +8,10 @@ markmap:
 
 ## Nhu cầu
 
-- Phần lớn cá nhân, tổ chức đều có nhu cầu quản lý dữ liệu vì dữ liệu đem lại nhiều lợi ích.
+- Các cá nhân, tổ chức đều có nhu cầu quản lý dữ liệu.
+- Dữ liệu đem lại nhiều lợi ích.
+- Khối lượng dữ liệu lớn, cần có hệ thống hỗ trợ.
+- Đòi hỏi kết hợp đồng bộ giữa công nghệ, quy trình và con người. 
 
 ## Các công việc
 

@@ -1,5 +1,9 @@
 # Dãy Fibonacci
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày cách giải bài toán dãy Fibonacci bằng kỹ thuật đệ quy.
+
 ## Bài toán
 
 **Yêu cầu:**

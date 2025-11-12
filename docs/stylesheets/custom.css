@@ -560,3 +560,8 @@
     color: inherit;
     opacity: 1;
 }
+
+/* --- switch language list --- */
+.md-select__inner {
+    border-radius: 1rem;
+}

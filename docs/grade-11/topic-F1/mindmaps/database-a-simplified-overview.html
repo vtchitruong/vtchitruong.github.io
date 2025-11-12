@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"H&#x1ec7; c&#x1a1; s&#x1edf; d&#x1eef; li&#x1ec7;u","children":[{"content":"C&#x1a1; s&#x1edf; d&#x1eef; li&#x1ec7;u","children":[{"content":"\n<p data-lines=\"10,11\">L&#xe0; t&#x1ead;p h&#x1ee3;p d&#x1eef; li&#x1ec7;u.</p>","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"\n<p data-lines=\"11,12\">T&#xed;nh ch&#x1ea5;t</p>","children":[{"content":"T&#xed;nh c&#x1ea5;u tr&#xfa;c","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"T&#xed;nh nh&#x1ea5;t qu&#xe1;n","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"T&#xed;nh to&#xe0;n v&#x1eb9;n","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"T&#xed;nh an to&#xe0;n","children":[],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"li","lines":"11,18"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"H&#x1ec7; qu&#x1ea3;n tr&#x1ecb; c&#x1edf; s&#x1edf; d&#x1eef; li&#x1ec7;u","children":[{"content":"\n<p data-lines=\"20,21\">L&#xe0; ph&#x1ea7;n m&#x1ec1;m</p>","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"\n<p data-lines=\"21,22\">Ch&#x1ee9;c n&#x103;ng:</p>","children":[{"content":"L&#x1b0;u tr&#x1eef;","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"Qu&#x1ea3;n l&#xfd;","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"X&#x1eed; l&#xfd;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"Truy v&#x1ea5;n","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"li","lines":"21,27"}},{"content":"\n<p data-lines=\"27,28\">V&#xed; d&#x1ee5;: Oracle, MySQL, Microsoft SQL Server, PostgreSQL, MongoDB</p>","children":[],"payload":{"tag":"li","lines":"27,29"}}],"payload":{"tag":"h2","lines":"18,19"}},{"content":"Ph&#x1ea7;n m&#x1ec1;m &#x1ee9;ng d&#x1ee5;ng","children":[{"content":"Gi&#xfa;p ng&#x1b0;&#x1edd;i d&#xf9;ng thu&#x1ead;n ti&#x1ec7;n h&#x1a1;n khi thao t&#xe1;c v&#x1edb;i c&#x1a1; s&#x1edf; d&#x1eef; li&#x1ec7;u.","children":[],"payload":{"tag":"li","lines":"31,32"}}],"payload":{"tag":"h2","lines":"29,30"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":300})</script>
+</body>
+</html>

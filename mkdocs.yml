@@ -374,7 +374,7 @@ nav:
       - Mục lục: grade-10/topic-G/topic-index.md
       - grade-10/topic-G/graphic-design.md
       - grade-10/topic-G/developer.md
-  - "Lớp 11":
+  - Lớp 11:
     - Chương trình khung: grade-11/grade-11-index.md
     - Chủ đề A1:
       - Mục lục: grade-11/topic-A1/topic-index.md
@@ -390,8 +390,9 @@ nav:
       - grade-11/topic-A2/logic-gates.md
     - Chủ đề F1:
       - Mục lục: grade-11/topic-F1/topic-index.md
-      - grade-11/topic-F1/data-related-needs.md
+      - grade-11/topic-F1/data-management.md
       - grade-11/topic-F1/database-a-simplified-overview.md
+      - grade-11/topic-F1/database-security.md
       - grade-11/topic-F1/relational-database.md
       - grade-11/topic-F1/create-a-table-in-ms-access.md
       - grade-11/topic-F1/create-a-table-in-mysql-workbench.md

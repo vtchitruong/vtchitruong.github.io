@@ -76,7 +76,7 @@ Tìm kiếm và trao đổi thông tin trên mạng
 [Cơ sở dữ liệu](./topic-F1/topic-index.md){:target="_blank"}
 
 1. Giới thiệu các hệ cơ sở dữ liệu
-    1. Nhận biết được [nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý](./topic-F1/data-related-needs.md){:target="_blank"}.
+    1. Nhận biết được [nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý](./topic-F1/data-management.md){:target="_blank"}.
 	2. Diễn đạt được [khái niệm hệ cơ sở dữ liệu](./topic-F1/database-a-simplified-overview.md){:target="_blank"}, các khái niệm cơ bản trong [mô hình cơ sở dữ liệu quan hệ](./topic-F1/relational-database.md){:target="_blank"} như quan hệ (bảng), khóa, khoá ngoài, truy vấn, cập nhật dữ liệu, v.v...
 	3. Nêu được những khái niệm cơ bản của hệ cơ sở dữ liệu. Giải thích được các khái niệm đó qua ví dụ minh họa.
 	4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.

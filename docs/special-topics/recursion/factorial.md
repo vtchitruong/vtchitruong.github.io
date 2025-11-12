@@ -1,5 +1,9 @@
 # Giai thừa
 
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày cách giải bài toán giai thừa bằng kỹ thuật đệ quy.
+
 ## Bài toán
 
 **Yêu cầu:**
