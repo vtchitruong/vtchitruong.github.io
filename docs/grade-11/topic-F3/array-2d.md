@@ -14,7 +14,7 @@ Làm thế nào xử lý khi dữ liệu không phải là một dãy, mà là m
 
 ## Khái quát về mảng
 
-Tương tự [bài học trước](../topic-F2/array-1d.md/#khai-quat-ve-mang){:target="_blank"}, **mảng** là cấu trúc dữ liệu dùng để lưu trữ và xử lý tập hợp các phần tử.
+Tương tự [bài học trước](../topic-F2/array-1d.md#khai-quat-ve-mang){:target="_blank"}, **mảng** là cấu trúc dữ liệu dùng để lưu trữ và xử lý tập hợp các phần tử.
 
 Bài học này đề cập **mảng hai chiều** và cũng sử dụng thư viện `numpy` để viết chương trình minh hoạ.
 

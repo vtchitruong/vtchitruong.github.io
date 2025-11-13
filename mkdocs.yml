@@ -392,32 +392,34 @@ nav:
       - Mục lục: grade-11/topic-F1/topic-index.md
       - grade-11/topic-F1/data-management.md
       - grade-11/topic-F1/database-a-simplified-overview.md
-      - grade-11/topic-F1/database-security.md
       - grade-11/topic-F1/relational-database.md
-      - grade-11/topic-F1/create-a-table-in-ms-access.md
-      - grade-11/topic-F1/create-a-table-in-mysql-workbench.md
-      - grade-11/topic-F1/create-tables-in-postgresql-part-1.md
-      - grade-11/topic-F1/create-tables-in-postgresql-part-2.md
-      - grade-11/topic-F1/create-tables-in-postgresql-part-3.md
       - grade-11/topic-F1/sql-a-simplified-overview.md
-      - grade-11/topic-F1/retrieve-data-from-tables-part-1.md
-      - grade-11/topic-F1/retrieve-data-from-tables-part-2.md
-      - grade-11/topic-F1/retrieve-data-from-tables-part-3.md
-      - grade-11/topic-F1/retrieve-data-from-tables-part-4.md
-      - grade-11/topic-F1/sql-query-on-one-table-pratice.md
+      - grade-11/topic-F1/database-security.md
     - Chủ đề F2:
       - Mục lục: grade-11/topic-F2/topic-index.md
-      - grade-11/topic-F2/array-1d.md
-      - grade-11/topic-F2/array-2d.md
-      - grade-11/topic-F2/linked-list.md
-      - grade-11/topic-F2/linear-search.md
-      - grade-11/topic-F2/binary-search.md
-      - grade-11/topic-F2/selection-sort.md
-      - grade-11/topic-F2/insertion-sort.md
-      - grade-11/topic-F2/bubble-sort.md
-      - grade-11/topic-F2/exchange-sort.md
-      - grade-11/topic-F2/algorithmic-complexity.md
-      - grade-11/topic-F2/programming-module.md
+      - grade-11/topic-F2/create-a-table-in-ms-access.md
+      - grade-11/topic-F2/create-a-table-in-mysql-workbench.md
+      - grade-11/topic-F2/create-tables-in-postgresql-part-1.md
+      - grade-11/topic-F2/create-tables-in-postgresql-part-2.md
+      - grade-11/topic-F2/create-tables-in-postgresql-part-3.md
+      - grade-11/topic-F2/retrieve-data-from-tables-part-1.md
+      - grade-11/topic-F2/retrieve-data-from-tables-part-2.md
+      - grade-11/topic-F2/retrieve-data-from-tables-part-3.md
+      - grade-11/topic-F2/retrieve-data-from-tables-part-4.md
+      - grade-11/topic-F2/sql-query-on-one-table-pratice.md
+    - Chủ đề F3:
+      - Mục lục: grade-11/topic-F3/topic-index.md
+      - grade-11/topic-F3/array-1d.md
+      - grade-11/topic-F3/array-2d.md
+      - grade-11/topic-F3/linked-list.md
+      - grade-11/topic-F3/linear-search.md
+      - grade-11/topic-F3/binary-search.md
+      - grade-11/topic-F3/selection-sort.md
+      - grade-11/topic-F3/insertion-sort.md
+      - grade-11/topic-F3/bubble-sort.md
+      - grade-11/topic-F3/exchange-sort.md
+      # - grade-11/topic-F3/algorithmic-complexity.md
+      # - grade-11/topic-F3/programming-module.md
     - Chủ đề G:
       - Mục lục: grade-11/topic-G/topic-index.md
       - grade-11/topic-G/database-administration.md

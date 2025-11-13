@@ -16,7 +16,7 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 Hệ điều hành và phần mềm ứng dụng
 
-1. [Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng](./topic-A1/hardware-os-application.md#khai-niem){:target="_blank"}
+1. Khái niệm cơ bản về hệ điều hành và phần mềm ứng dụng
     1. Trình bày được sơ lược [lịch sử phát triển của hai hệ điều hành thông dụng cho PC](./topic-A1/os-history.md){:target="_blank"}, một hệ điều hành là phần mềm thương mại và hệ điều hành còn lại là phần mềm nguồn mở. Sử dụng được một số chức năng cơ bản của một trong hai hệ điều hành đó.
     2. Trình bày được vài nét chính về [một hệ điều hành thông dụng cho thiết bị di động](./topic-A1/mobile-os.md){:target="_blank"} và sử dụng được một số tiện ích cơ bản của hệ điều hành đó.
     3. Trình bày được một cách khái quát [mối quan hệ giữa phần cứng, hệ điều hành và phần mềm ứng dụng](./topic-A1/hardware-os-application.md#moi-quan-he). Trình bày được [vai trò riêng của mỗi thành phần](./topic-A1/hardware-os-application.md#vai-tro){:target="_blank"} trong hoạt động chung của cả hệ thống.
@@ -26,6 +26,8 @@ Hệ điều hành và phần mềm ứng dụng
     2. Nêu được [tên một số phần mềm soạn thảo văn bản, phần mềm bảng tính và phần mềm trình chiếu nguồn mở](./topic-A1/software-classification.md){:target="_blank"}, chẳng hạn Writer, Calc và Impress trong bộ OpenOffice.
     3. Sử dụng được một số tiện ích có sẵn của hệ điều hành để nâng cao hiệu suất sử dụng máy tính.
     4. Kích hoạt và sử dụng được một vài chức năng cơ bản của một phần mềm soạn thảo văn bản, một phần mềm bảng tính và một phần mềm trình chiếu chạy trên Internet. Ví dụ các phần mềm trong gói Google Docs.
+
+---
 
 #### Chủ đề A2
 
@@ -44,9 +46,13 @@ Thế giới thiết bị số
     3. Biết được cách kết nối các bộ phận thân máy, bàn phím, chuột, màn hình của máy tính với nhau.
     4. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v...
 
+---
+
 ### Chủ đề B
 
 *Không có chủ đề B.*
+
+---
 
 ### Chủ đề C
 
@@ -58,6 +64,8 @@ Tìm kiếm và trao đổi thông tin trên mạng
 4. Sử dụng được những chức năng nâng cao của dịch vụ mạng xã hội.
 5. Biết cách phân loại và đánh dấu các email.
 
+---
+
 ### Chủ đề D
 
 Ứng xử văn hoá và an toàn trên mạng
@@ -65,27 +73,31 @@ Tìm kiếm và trao đổi thông tin trên mạng
 1. Nêu được một số dạng lừa đảo phổ biến trên mạng và những biện pháp phòng tránh.
 2. Giao tiếp được trên mạng qua email, chat, mạng xã hội, v.v... và trong môi trường số một cách văn minh, phù hợp với các quy tắc và văn hoá ứng xử.
 
+---
+
 ### Chủ đề E
 
 *Chủ đề E là phần riêng của ICT.*
+
+---
 
 ### Chủ đề F
 
 #### Chủ đề F1
 
-[Cơ sở dữ liệu](./topic-F1/topic-index.md){:target="_blank"}
+Giới thiệu các hệ cơ sở dữ liệu
 
-1. Giới thiệu các hệ cơ sở dữ liệu
-    1. Nhận biết được [nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý](./topic-F1/data-management.md){:target="_blank"}.
-	2. Diễn đạt được [khái niệm hệ cơ sở dữ liệu](./topic-F1/database-a-simplified-overview.md){:target="_blank"}, các khái niệm cơ bản trong [mô hình cơ sở dữ liệu quan hệ](./topic-F1/relational-database.md){:target="_blank"} như quan hệ (bảng), khóa, khoá ngoài, truy vấn, cập nhật dữ liệu, v.v...
-	3. Nêu được những khái niệm cơ bản của hệ cơ sở dữ liệu. Giải thích được các khái niệm đó qua ví dụ minh họa.
-	4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
-	5. Nêu được tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu.
-2. *Không có.*
+1. Nhận biết được [nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý](./topic-F1/data-management.md){:target="_blank"}.
+2. Diễn đạt được khái niệm hệ cơ sở dữ liệu, các khái niệm cơ bản trong [mô hình cơ sở dữ liệu quan hệ](./topic-F1/relational-database.md){:target="_blank"} như quan hệ (bảng), khoá, khoá ngoài, truy vấn, cập nhật dữ liệu, v.v...
+3. Nêu được [những khái niệm cơ bản của hệ cơ sở dữ liệu](./topic-F1/database-a-simplified-overview.md){:target="_blank"}. Giải thích được các khái niệm đó qua ví dụ minh hoạ.
+4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
+5. Nêu được [tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu](./topic-F1/database-security.md){:target="_blank"}.
 
 #### Chủ đề F2
 
-*Chủ đề F2 là phần riêng của CS.*
+*Chủ đề F2 được chia thành hai phần riêng cho CS và ICT.*
+
+---
 
 ### Chủ đề G
 
@@ -101,15 +113,19 @@ Tìm kiếm và trao đổi thông tin trên mạng
 2. Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực, v.v...) về một vài ngành nghề khác trong lĩnh vực tin học.
 3. Giao lưu được với bạn bè qua các kênh truyền thông tin số để tham khảo và trao đổi ý kiến về những thông tin trên.
 
+---
+
 ## Phần riêng dành cho CS
 
 ### Chủ đề F
 
 #### Chủ đề F1
 
+Giới thiệu các hệ cơ sở dữ liệu
+
 *Chủ đề F1 là phần chung.*
 
-#### Chủ đề F2
+#### Chủ đề F3
 
 Kỹ thuật lập trình
 
@@ -120,7 +136,7 @@ Kỹ thuật lập trình
 2. Kiểm thử và đánh giá hiệu quả của chương trình
     1. Biết được việc kiểm thử giúp lập trình viên phát hiện lỗi, làm tăng độ tin cậy của chương trình nhưng chưa chứng minh được tính đúng của chương trình.
     2. Trình bày được sơ lược khái niệm độ phức tạp thời gian của thuật toán và phép toán tích cực.
-    Nêu được ví dụ minh họa.
+    Nêu được ví dụ minh hoạ.
     3. Vận dụng được những quy tắc thực hành xác định độ phức tạp thời gian của một số thuật toán, chương trình đã biết.
 3. Phương pháp làm mịn dần và sử dụng module trong lập trình
     1. Giải thích và vận dụng được phương pháp làm mịn dần trong lập trình.
@@ -130,6 +146,8 @@ Kỹ thuật lập trình
     1. Trình bày được [cấu trúc dữ liệu mảng (một và hai chiều)](./topic-F2/array-1d.md){:target="_blank"} và [danh sách liên kết](./topic-F2/linked-list.md){:target="_blank"}.
     2. Tạo được một thư viện nhỏ và viết được chương trình có sử dụng thư viện vừa tạo ra.
     3. Viết được chương trình vận dụng những kiến thức tích hợp liên môn để giải quyết vấn đề.
+
+---
 
 ## Phần riêng dành cho ICT
 
@@ -151,11 +169,19 @@ Làm phim hoạt hình, video
 2. Sử dụng được một số công cụ cơ bản biên tập phim: chỉnh sửa hình ảnh, âm thanh, tạo phụ đề, tạo các hiệu ứng chuyển cảnh, căn chỉnh thời gian.
 3. Tạo được đoạn phim hoạt hình từ ảnh, có hội thoại giữa các nhân vật và có phụ đề.
 
+---
+
 ### Chủ đề F
 
 #### Chủ đề F1
 
-[Cơ sở dữ liệu](./topic-F1/topic-index.md){:target="_blank"}
+Giới thiệu các hệ cơ sở dữ liệu
+
+*Chủ đề F1 là phần chung.*
+
+#### Chủ đề F2
+
+Thực hành tạo và khai thác cơ sở dữ liệu
 
 1. [Thực hành tạo và cập nhật cơ sở dữ liệu](./topic-F1/create-tables-in-postgresql-part-1.md){:target="_blank"}
 
@@ -174,7 +200,3 @@ Làm phim hoạt hình, video
     2. Nêu được một vài nhận xét so sánh kết quả bài thực hành với một phần mềm quản lý do giáo viên giới thiệu hoặc đã từng biết.
     3. Giải thích được tính ưu việt của việc quản lý dữ liệu một cách khoa học nhờ ứng dụng cơ sở dữ liệu.
     4. Tìm hiểu được thêm một vài chức năng của hệ quản trị cơ sở dữ liệu.
-
-#### Chủ đề F2
-
-*Chủ đề F2 là phần riêng dành cho CS.*

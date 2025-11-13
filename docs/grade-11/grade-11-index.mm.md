@@ -10,75 +10,64 @@ markmap:
 
 ### Chủ đề A
 
-#### Chủ đề A-1
+#### Chủ đề A1
 
 - Hệ điều hành và phần mềm ứng dụng
-- Phần mềm mã nguồn mở
 
-#### Chủ đề A-2
+#### Chủ đề A2
 
-- Phần cứng
-- Mạch logic
+- Thế giới thiếu bị số
 
 ### Chủ đề B
 
-- Không có.
+- Không có
 
 ### Chủ đề C
 
-- Máy tìm kiếm, mạng xã hội, email
+- Tìm kiếm và trao đổi thông tin trên mạng
 
 ### Chủ đề D
 
-- Lừa đảo trên mạng
+- Ứng xử văn hoá và an toàn trên mạng
 
 ### Chủ đề E
 
-- Đây là phần riêng của ICT.
+- Phần riêng của ICT
 
 ### Chủ đề F
 
-#### F-1: Phần chung cơ sở dữ liệu
+#### F1: Phần chung, cơ sở dữ liệu
 
-- Cơ sở dữ liệu quan hệ
+- Giới thiệu các hệ cơ sở dữ liệu
 
-#### F-2: Đây là phần riêng của CS.
+#### F2: Chia thành hai phần riêng cho CS và ICT
 
 ### Chủ đề G
 
 - Nghề quản trị cơ sở dữ liệu
 
-## Phần riêng dành cho CS
+## Phần riêng của CS
 
 ### Chủ đề F
 
-#### F-1: Đây là phần chung cơ sở dữ liệu.
+#### F1: Phần chung, cơ sở dữ liệu
 
-#### F-2: Kỹ thuật lập trình
+#### F3: Kỹ thuật lập trình
 
-- Mảng một chiều và hai chiều
-- Danh sách liên kết
-- Thuật toán tìm kiếm
-- Thuật toán sắp xếp
-- Kiểm thử
-- Độ phức tạp thuật toán
-- Lập trình module
-- Tạo thư viện
+- Kỹ thuật lập trình
 
-## Phần riêng dành cho ICT
+## Phần riêng của ICT
 
 ### Chủ đề E
 
-#### E-1: Chỉnh sửa ảnh, tạo ảnh động
+#### E1: Chỉnh sửa ảnh, tạo ảnh động
 
-#### E-2: Làm phim hoạt hình, video
+#### E2: Làm phim hoạt hình, video
 
 ### Chủ đề F
 
-#### F-1: Cơ sở dữ liệu
+#### F1: Phần chung, cơ sở dữ liệu
 
-- Tạo cơ sở dữ liệu
-- Cập nhật cơ sở dữ liệu
-- Truy vấn cơ sở dữ liệu
+#### F2: Cơ sở dữ liệu
 
-#### F-2: Đây là phần riêng của CS.
+- Thực hành tạo và khai thác cơ sở dữ liệu
