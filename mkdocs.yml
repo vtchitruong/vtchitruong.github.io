@@ -10,7 +10,7 @@ repo_name: GitHub để chữa lành
 repo_url: https://github.com/vtchitruong/vtchitruong.github.io
 
 # Copyright
-copyright: <a href="https://mr-school.xyz/donation/">Please click here to donate, if possible. Thank you!</a><br>Copyright &copy; 2023 Mr School
+copyright: <a href="https://docs.mrschool.vn/donation/">Please click here to donate, if possible. Thank you!</a><br>Copyright &copy; 2023 Mr School
 
 # Configuration
 theme:
@@ -124,7 +124,7 @@ extra:
       link: https://www.facebook.com/vothachchitruong
     - icon: fontawesome/solid/mug-saucer
       name: Please donate!
-      link: https://mr-school.xyz/donation/
+      link: https://docs.mrschool.vn/donation/
     # - icon: fontawesome/brands/gitter
     #   link: https://gitter.im/squidfunk/mkdocs-material
     # - icon: fontawesome/brands/docker
