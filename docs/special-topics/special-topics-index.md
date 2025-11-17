@@ -217,7 +217,7 @@ Nội dung:
 
 - Kiểu dữ liệu [hàng đợi](./g12-cs/an-overview-of-queue.md){:target="_blank"} và [ngăn xếp](./g12-cs/an-overview-of-stack.md){:target="_blank"}.
 - Biểu diễn hàng đợi, ngăn xếp.
-- Ứng dụng [hàng đợi](./g12-cs/customer-service-simulation.md){:target="_blank"} và [ngăn xếp](./g12-cs/balanced-parentheses-check.md){:target="_blank"}.
+- Ứng dụng [hàng đợi](./g12-cs/task-queue-simulation.md){:target="_blank"} và [ngăn xếp](./g12-cs/balanced-parentheses-check.md){:target="_blank"}.
 
 Yêu cầu cần đạt:
 

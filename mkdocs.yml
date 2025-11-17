@@ -486,7 +486,7 @@ nav:
     - Lớp 12 CS:
       - Mục lục: special-topics/g12-cs/topic-index.md
       - special-topics/g12-cs/an-overview-of-queue.md
-      - special-topics/g12-cs/customer-service-simulation.md
+      - special-topics/g12-cs/task-queue-simulation.md
       - special-topics/g12-cs/an-overview-of-stack.md
       - special-topics/g12-cs/balanced-parentheses-check.md      
       - Đồ thị:
