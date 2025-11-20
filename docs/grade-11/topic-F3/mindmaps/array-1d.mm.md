@@ -1,7 +1,7 @@
 ---
 markmap:
   colorFreezeLevel: 3
-  maxWidth: 300
+  maxWidth: 360
 ---
 
 # Mảng
@@ -12,22 +12,26 @@ markmap:
 
 ## Phần tử
 
-- Nằm liên tiếp nhau trong bộ nhớ.
-- Số lượng phần tử là kích thước hoặc độ dài của mảng.
-- Đều cùng kiểu dữ liệu.
+- Nằm liên tiếp nhau trên bộ nhớ
+- Đều cùng kiểu dữ liệu
+- Số lượng là hữu hạn
 
 ## Phân loại
 
 ### Mảng một chiều
 
+#### Khái niệm
+
+- Là cấu trúc dữ liệu dùng để lưu trữ các phần tử theo một hàng duy nhất
+
 #### Khởi tạo
 
-- Liệt kê
+- Liệt kê trong `[ ]` và phân cách nhau bằng `,`
 - Hàm `full()` của `numpy`
 
 #### Truy xuất phần tử
 
-- Chỉ số hoặc vị trí được đánh từ `0`.
+- Chỉ số hoặc vị trí được đánh từ `0`
 - `A[0]` là phần tử đầu tiên
 - `A[n - 1]` là phần tử cuối cùng
 

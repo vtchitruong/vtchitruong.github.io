@@ -33,15 +33,18 @@ Fortunately, programming languages provide data structures that make handling gr
 
 ### Concept
 
-An **array** is a data structure used to store and process a **collection of elements**, where:
+In most programming languages, an **array** is a data structure used to store and process a **collection of elements**, where:
 
-- The elements are usually **stored consecutively** in memory.
-- The **number of elements**, also called the **length** of the array, is **fixed** (finite).
-- Each element consists of two parts: an **index** and a **value**.
-    - The **index** is the position of the element in the array.
-    - The **values** of the elements are usually of the **same data type** (all integers, all floating-point numbers, etc.).
+- The elements are **stored consecutively** in memory.
+- All elements have the **same data type** (e.g., all integers, all floating-point numbers, etc.).
+- The **number of elements** is **finite** and usually fixed in advance.
+- Each element is accessed using **one or more indices**, depending on the **number of dimensions** of the array. For example:
 
-Arrays are commonly used to solve problems involving multiple related values of the same type.
+    - A **one-dimensional array** uses **1 index**.
+    - A **two-dimensional array** uses **2 indices**.
+    - A **three-dimensional array** uses **3 indices**.
+
+Arrays are commonly used to solve problems involving multiple related values of the same type. In practice, almost every real-world programming problem involves at least one form of array.
 
 Examples:
 
@@ -71,6 +74,14 @@ This lesson focuses **only on one-dimensional arrays**.
 ## One-dimensional arrays
 
 ### Concept
+
+A **one-dimensional array** is the most basic data structure used to store elements of the same data type, arranged in a single row or a single column.
+
+Each element is identified by an **index**, which usually starts from **0**.
+
+The image below illustrates a one-dimensional array **A**.
+
+![Illustration of one-dimensional array A](/grade-11/topic-F3/images/array-1d.svg){loading=lazy}
 
 Real-life examples of a one-dimensional array:
 
@@ -323,7 +334,7 @@ The complete code is available at:
 ## Summary mindmap
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F2/mindmaps/array-1d.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/array-1d.html">Sơ đồ tóm tắt</iframe>
 </div>
 
 ## Some English words

@@ -1,44 +1,30 @@
 ---
 markmap:
   colorFreezeLevel: 3
-  maxWidth: 300
+  maxWidth: 360
 ---
 
-# Mảng
+# Mảng hai chiều
 
-## Khái quát
+## Khái niệm
 
-- Là cấu trúc dữ liệu dùng để xử lý tập hợp nhiều phần tử
-- Các phần tử nằm liên tiếp nhau trên bộ nhớ
-- Kích thước hoặc độ dài:
-  - Là số phần tử của mảng
-  - Là hữu hạn
-- Mỗi phần tử:
-  - Chỉ số (hoặc vị trí)
-    - Dùng để truy xuất phần tử
-  - Giá trị
-    - Cùng kiểu dữ liệu
+- Là cấu trúc dữ liệu dùng để lưu trữ các phần tử theo dạng bảng
 
-## Phân loại
+## Khởi tạo
 
-### Mảng một chiều
+- Liệt kê bằng các cặp ngoặc lồng nhau `[[ ], [ ], ..., [ ]]` 
+- Hàm `full()` của `numpy`
 
-### Mảng hai chiều
+## Truy xuất phần tử
 
+- Chỉ số hàng và chỉ số cột
+- `A[0][0]` là phần tử đầu tiên
+- `A[row - 1][col - 1]` là phần tử cuối cùng, nằm ở hàng `row - 1`, cột `col - 1`
 
-#### Khởi tạo
+## Duyệt mảng
 
-- Liệt kê phần tử
-- Hàm `full()`
-
-#### Truy xuất phần tử
-
-- Chỉ số: gồm chỉ số hàng và chỉ số cột
-- `A[0][0]` là phần tử đầu tiên.
-- `A[2][3]` là phần tử nằm ở hàng 2, cột 3
-
-#### Duyệt mảng
-
+- Lấy số hàng: `len(A)`
+- Lấy số cột: `len(A[0])`
 - Dùng hai vòng lặp lồng nhau:
-    - Vòng lặp ngoài duyệt hàng
-    - Vòng lặp trong duyệt cột
+    - Vòng lặp ngoài duyệt từng hàng
+    - Vòng lặp trong duyệt từng cột

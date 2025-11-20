@@ -2,26 +2,24 @@
 icon: material/invoice-import-outline
 ---
 
-# Nhập và xuất dữ liệu bản tiếng Anh
+# Input and output
 
-!!! abstract "Tóm lược nội dung"
+!!! abstract "Content summary"
 
-    Bài này trình bày thao tác nhập và xuất dữ liệu trong Python.
+    This lesson explains how to read input and display output in Python.
 
-testing English version
+## Overview
 
-## Khái quát
+In programming, **input** means the program **receives data** from the user, while **output** means the program **displays information** on the screen.
 
-Trong lập trình, **nhập** là cách chương trình nhận dữ liệu từ người dùng, còn **xuất** là cách chương trình hiển thị thông tin ra màn hình.
+## Reading input
 
-## Nhập dữ liệu
+To let the user enter data into a program, we use the built-in function `input()`.
 
-Để người dùng có thể nhập dữ liệu vào chương trình, ta dùng hàm `input()`.
+![Illustration of the input() function](./input-and-output/input.png){loading=lazy width=300}
 
-![Minh hoạ hàm input()](./input-and-output/input.png){loading=lazy width=300}
-
-Ví dụ:  
-Dòng lệnh 2 và 3 yêu cầu người dùng nhập vào tên đăng nhập và mật khẩu.
+Example:  
+Lines 2 and 3 prompt the user to enter their username and password.
 
 ```py linenums="1"  hl_lines="2 3"
 if __name__ == '__main__':
@@ -29,23 +27,23 @@ if __name__ == '__main__':
     password = input('Mật khẩu: ')
 ```
 
-Chạy đoạn mã trên, kết quả như sau:
+Running the code above produces the following result:
 
 ```pycon
 Tên đăng nhập: mrschool
 Mật khẩu: 12345678
 ```
 
-## Xuất thông tin
+## Displaying output
 
-Để chương trình xuất thông tin ra màn hình, ta dùng hàm `print()`.
+To display information on the screen, we use the `print()` function.
 
-![Minh hoạ hàm print()](./input-and-output/print.png){loading=lazy width=300}
+![Illustration of the print() function](./input-and-output/print.png){loading=lazy width=300}
 
-Từ đây về sau, ta sẽ gọi tắt là: *"in ra màn hình"* hoặc *"in ra"*.
+From now on, we will simply say: *"print to the screen"* or just *"print"*.
 
-Ví dụ:  
-Dòng lệnh 5 và 6 in ra màn hình tên đăng nhập và mật khẩu mà người dùng vừa nhập. 
+Example:  
+Lines 5 and 6 print the username and password that the user just entered.
 
 ```py linenums="1" hl_lines="5 6"
 if __name__ == '__main__':
@@ -56,7 +54,7 @@ if __name__ == '__main__':
     print('Bạn đã bị hack 😆')
 ```
 
-Chạy đoạn mã trên, kết quả như sau:
+Running the code above produces the following result:
 
 ```pycon
 Tên đăng nhập: mrschool
@@ -67,25 +65,25 @@ Bạn đã bị hack 😆
 
 !!! info "f-string"
 
-    **f-string** = formatted string, tạm dịch là *chuỗi được định dạng*.
+    **f-string** = formatted string.
     
-    f-string được dùng để chèn trực tiếp biến vào chuỗi, cụ thể:
+    An f-string lets you insert variables directly into a string using this syntax:
 
-    - `f` nằm trước chuỗi `'... chuỗi gì đó ...'`.
-    - Biến được đặt trong cặp ngoặc nhọn `{ }`.
+    - Put the letter `f` before the string: `f'...'`  
+    - Place the variable inside curly braces `{variable_name}`
 
-    Áp dụng f-string trong hàm `print()` là cách làm hiện đại, chuyên nghiệp và dễ đọc.
+    Using f-strings with `print()` is the modern, professional, and readable way in Python.
 
-## Mã nguồn
+## Source code
 
-Code đầy đủ được đặt tại:
+The complete code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/1u5xFZD97jD0R5hm8TREJ5y5Pd0gjKzmS?usp=sharing){target="_blank"}
 
-## Sơ đồ tóm tắt
+## Summary mindmap
 
 <div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/input-and-output.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-10/topic-F/mindmaps/input-and-output.html">Sơ đồ tóm tắt</iframe>
 </div>
 
 ## Some English words

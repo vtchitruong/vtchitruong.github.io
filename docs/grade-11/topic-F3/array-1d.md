@@ -33,15 +33,18 @@ May thay, các ngôn ngữ lập trình đều có hỗ trợ những cấu trú
 
 ### Khái niệm
 
-**Mảng** là cấu trúc dữ liệu dùng để lưu trữ và xử lý **tập hợp các phần tử**, trong đó:
+Trong đa số ngôn ngữ lập trình, **mảng** là cấu trúc dữ liệu dùng để lưu trữ và xử lý **tập hợp các phần tử**, trong đó:
 
-- Các phần tử thường được **lưu trữ liên tiếp nhau** trên bộ nhớ.
-- **Số lượng phần tử**, còn gọi là **độ dài** của mảng, thì **hữu hạn**.
-- Mỗi phần tử gồm có hai yếu tố: **chỉ số** và **giá trị**.
-    - Chỉ số là vị trí của mỗi phần tử trong mảng.
-    - Giá trị của các phần tử thường có cùng kiểu dữ liệu (cùng là số nguyên, cùng là số thực, v.v...).
+- Các phần tử được **lưu trữ liên tiếp nhau** trên bộ nhớ.
+- Các phần tử đều **có cùng kiểu dữ liệu**, chẳng hạn: cùng là số nguyên, cùng là số thực, v.v...
+- **Số lượng phần tử** là **hữu hạn** và thường được xác định trước.
+- Mỗi phần tử được truy xuất thông qua **một hoặc nhiều chỉ số** tuỳ theo **số chiều** của mảng. Chẳng hạn:
 
-Mảng thường được dùng để giải quyết những bài toán có nhiều giá trị liên quan và cùng kiểu dữ liệu.
+    – Mảng một chiều dùng 1 chỉ số.
+    – Mảng hai chiều dùng 2 chỉ số.
+    – Mảng ba chiều dùng 3 chỉ số.
+
+Mảng thường được dùng để giải quyết những bài toán có nhiều giá trị liên quan và cùng kiểu dữ liệu. Hầu như mọi bài toán thực tế đều gặp ít nhất một dạng mảng nào đó.
 
 Ví dụ:
 
@@ -68,6 +71,14 @@ Bài học này chỉ đề cập **mảng một chiều**.
 
 ### Khái niệm
 
+**Mảng một chiều** là cấu trúc dữ liệu cơ bản nhất dùng để lưu trữ các các phần tử có cùng kiểu dữ liệu, được sắp xếp theo một hàng duy nhất, hoặc một cột duy nhất.
+
+Mỗi phần tử được định vị bằng một **chỉ số**, thường được đánh thứ tự từ **0**.
+
+Hình sau minh hoạ mảng một chiều A.
+
+![Minh hoạ mảng một chiều A](/grade-11/topic-F3/images/array-1d.svg){loading=lazy}
+
 Hình ảnh mảng một chiều trong thực tế:
 
 - Dãy các phòng học
@@ -77,12 +88,6 @@ Mảng một chiều có thể áp dụng khi xử lý:
 
 - Một dãy số
 - Một hàng hoặc một cột trong bảng
-
-**Chỉ số**, hoặc **vị trí**, của các phần tử thường được đánh từ **0**.
-
-![Minh họa mảng một chiều A](./images/array-1d.svg){loading=lazy}
-
-*Minh họa mảng một chiều A*
 
 ### Mảng một chiều trong Python
 
@@ -138,7 +143,7 @@ Trước khi sử dụng, ta cần cài đặt thư viện `numpy` bằng lệnh
 
 ### Nạp thư viện
 
-Ở đầu chương trình, ta nạp thư viện numpy bằng lệnh `import`. Đồng thời, quy ước tên gọi tắt của `numpy` là `np`.
+Nạp thư viện `numpy` bằng lệnh `import`. Đồng thời, quy ước tên gọi tắt của `numpy` là `np`.
 
 ```py linenums="1"
 import numpy as np
@@ -319,7 +324,7 @@ Code đầy đủ được đặt tại:
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F2/mindmaps/array-1d.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/array-1d.html">Sơ đồ tóm tắt</iframe>
 </div>
 
 ## Some English words

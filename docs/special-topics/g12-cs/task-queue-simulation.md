@@ -37,16 +37,13 @@ Các thông báo và tình trạng của hàng đợi tương ứng với mỗi 
 ```pycon
 ADD READ_SENSOR
 ADD WRITE_LOG
-ADD UPDATE_STATUS
 RUN
 ADD READ_SENSOR
 ADD WRITE_LOG
-CANCEL UPDATE_STATUS
-ADD SYNC_SERVER
-RUN
-ADD CLEAN_MEMORY
 CANCEL WRITE_LOG
-ADD BACKUP_DB
+ADD CLEAN_MEMORY
+CANCEL CLEAN_MEMORY
+ADD SYNC_SERVER
 RUN
 RUN
 RUN
@@ -61,44 +58,35 @@ Hàng đợi: ['READ_SENSOR']
 Thêm nhiệm vụ WRITE_LOG
 Hàng đợi: ['READ_SENSOR', 'WRITE_LOG']
 
-Thêm nhiệm vụ UPDATE_STATUS
-Hàng đợi: ['READ_SENSOR', 'WRITE_LOG', 'UPDATE_STATUS']
-
 Đang thực thi nhiệm vụ READ_SENSOR
-Hàng đợi: ['WRITE_LOG', 'UPDATE_STATUS']
+Hàng đợi: ['WRITE_LOG']
 
 Thêm nhiệm vụ READ_SENSOR
-Hàng đợi: ['WRITE_LOG', 'UPDATE_STATUS', 'READ_SENSOR']
+Hàng đợi: ['WRITE_LOG', 'READ_SENSOR']
 
 Thêm nhiệm vụ WRITE_LOG
-Hàng đợi: ['WRITE_LOG', 'UPDATE_STATUS', 'READ_SENSOR', 'WRITE_LOG']
-
-Huỷ nhiệm vụ UPDATE_STATUS
-Hàng đợi: ['READ_SENSOR', 'WRITE_LOG', 'WRITE_LOG']
-
-Thêm nhiệm vụ SYNC_SERVER
-Hàng đợi: ['READ_SENSOR', 'WRITE_LOG', 'WRITE_LOG', 'SYNC_SERVER']
-
-Đang thực thi nhiệm vụ READ_SENSOR
-Hàng đợi: ['WRITE_LOG', 'WRITE_LOG', 'SYNC_SERVER']
-
-Thêm nhiệm vụ CLEAN_MEMORY
-Hàng đợi: ['WRITE_LOG', 'WRITE_LOG', 'SYNC_SERVER', 'CLEAN_MEMORY']
+Hàng đợi: ['WRITE_LOG', 'READ_SENSOR', 'WRITE_LOG']
 
 Huỷ nhiệm vụ WRITE_LOG
-Hàng đợi: ['WRITE_LOG', 'SYNC_SERVER', 'CLEAN_MEMORY']
+Hàng đợi: ['READ_SENSOR', 'WRITE_LOG']
 
-Thêm nhiệm vụ BACKUP_DB
-Hàng đợi: ['WRITE_LOG', 'SYNC_SERVER', 'CLEAN_MEMORY', 'BACKUP_DB']
+Thêm nhiệm vụ CLEAN_MEMORY
+Hàng đợi: ['READ_SENSOR', 'WRITE_LOG', 'CLEAN_MEMORY']
+
+Huỷ nhiệm vụ CLEAN_MEMORY
+Hàng đợi: ['READ_SENSOR', 'WRITE_LOG']
+
+Thêm nhiệm vụ SYNC_SERVER
+Hàng đợi: ['READ_SENSOR', 'WRITE_LOG', 'SYNC_SERVER']
+
+Đang thực thi nhiệm vụ READ_SENSOR
+Hàng đợi: ['WRITE_LOG', 'SYNC_SERVER']
 
 Đang thực thi nhiệm vụ WRITE_LOG
-Hàng đợi: ['SYNC_SERVER', 'CLEAN_MEMORY', 'BACKUP_DB']
+Hàng đợi: ['SYNC_SERVER']
 
 Đang thực thi nhiệm vụ SYNC_SERVER
-Hàng đợi: ['CLEAN_MEMORY', 'BACKUP_DB']
-
-Đang thực thi nhiệm vụ CLEAN_MEMORY
-Hàng đợi: ['BACKUP_DB']
+Hàng đợi: []
 ```
 
 ## Cách giải đề xuất
@@ -147,7 +135,7 @@ RUN
 
 Khởi tạo hàng đợi `task_queue` dùng để chứa các phần tử là nhiệm vụ.
 
-```py linenums="25"
+```py linenums="22"
 task_queue = Queue()
 ```
 
@@ -157,7 +145,7 @@ Viết hàm `parse_data()` để đọc dữ liệu đầu vào trong biến `da
 
 Hàm này trả về danh sách các dòng lệnh.
 
-```py linenums="27"
+```py linenums="26"
 def parse_data(d): #(1)!
     # Chuyển đổi dữ liệu đầu vào thành danh sách các dòng lệnh
     return d.strip().splitlines() # (2)!
@@ -179,7 +167,7 @@ Viết hàm `add()` để xử lý lệnh `ADD`. Việc xử lý bao gồm:
 
 Hàm này gồm một tham số là nhiệm vụ cần đưa vào hàng đợi, đặt là `task`.
 
-```py linenums="35"
+```py linenums="32"
 def add(task):
     # Đưa nhiệm vụ vào hàng đợi
     task_queue.put(task)
@@ -195,7 +183,7 @@ Viết hàm `run()` để xử lý lệnh `RUN`. Việc xử lý bao gồm:
 
 Hàm này không có tham số vì nhiệm vụ là giá trị của phần tử nằm ở đầu hàng đợi.
 
-```py linenums="44"
+```py linenums="41"
 def run():
     if task_queue.empty():
         # Nếu hàng đợi rỗng thì thông báo hết nhiệm vụ
@@ -220,7 +208,7 @@ Ta dùng vòng lặp while để xác định xem phần tử nằm ở đầu h
 - Nếu phần tử đầu hàng đợi là nhiệm vụ cần huỷ thì in ra thông báo liên quan.
 - Ngược lại, nếu phần tử đầu hàng đợi không phải là nhiệm vụ cần huỷ thì đưa nhiệm vụ này ra sau cùng, tức đưa lại vào cuối hàng đợi `task_queue`.
 
-```py linenums="57"
+```py linenums="54"
 def cancel(task):
     # biến cờ hiệu dùng để đánh dấu việc tìm thấy nhiệm vụ cần huỷ
     found = False
@@ -258,7 +246,7 @@ Ta dùng vòng lặp for để duyệt từng dòng lệnh, lặp thao tác:
 - Xét thành phần đầu tiên, là `C[0]`, đang chứa lệnh gì.
 - Ứng với mỗi lệnh `C[0]`, ta gọi hàm tương ứng đã viết ở trên.
 
-```py linenums="85"
+```py linenums="82"
 def process(lines):
     # Duyệt từng lệnh
     for line in lines:
@@ -286,7 +274,7 @@ Trong chương trình chính, ta gọi các hàm đã viết ra thực hiện:
 - Hàm `parse_data()` để đọc dữ liệu đầu vào.
 - Hàm `process()` để xử lý dữ liệu.
 
-```py linenums="105"
+```py linenums="102"
 if __name__ == '__main__':
     # Đọc dữ liệu đầu vào và đưa vào danh sách command_lines
     command_lines = parse_data(data)
@@ -298,6 +286,8 @@ if __name__ == '__main__':
     # Gọi hàm process() để tiến hành xử lý các lệnh
     process(command_lines)
 ```
+
+Chạy chương trình trên và đối chiếu kết quả với đầu ra trong bộ kiểm thử.
 
 ## Mã nguồn
 

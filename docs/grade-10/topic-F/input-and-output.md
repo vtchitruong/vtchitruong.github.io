@@ -10,7 +10,7 @@ icon: material/invoice-import-outline
 
 ## Khái quát
 
-Trong lập trình, **nhập** là cách chương trình nhận dữ liệu từ người dùng, còn **xuất** là cách chương trình hiển thị thông tin ra màn hình.
+Trong lập trình, **nhập** là cách chương trình **nhận dữ liệu** từ người dùng, còn **xuất** là cách chương trình **hiển thị thông tin** ra màn hình.
 
 ## Nhập dữ liệu
 
@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
     print(f'Tên đăng nhập của bạn là {username} và mật khẩu là {password}')
     print('Bạn đã bị hack 😆')
-```
+``````
 
 Chạy đoạn mã trên, kết quả như sau:
 
@@ -83,7 +83,7 @@ Code đầy đủ được đặt tại:
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/input-and-output.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-10/topic-F/mindmaps/input-and-output.html">Sơ đồ tóm tắt</iframe>
 </div>
 
 ## Some English words
