@@ -8,8 +8,8 @@ markmap:
 
 ## Bài toán
 
-- Input: Mảng `A` và giá trị cần tìm `k`
-- Output: Vị trí tìm thấy `k`
+- Đầu vào: mảng `A` và giá trị cần tìm `k`
+- Đầu ra: chỉ số tìm thấy `k` hoặc `-1`
 
 ## Thuật toán
 
