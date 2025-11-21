@@ -53,7 +53,7 @@ Tương tự bài trước, ta sẽ sử dụng thư viện mã nguồn mở [nu
 
 ### Cài đặt thư viện numpy
 
-Xem lại cách cài đặt thư viện `numpy` [tại đây](/grade-11/topic-F3/array-1d/#cai-at-thu-vien-numpy){target="_blank"}.
+Xem lại cách cài đặt thư viện `numpy` [tại đây](/grade-11/topic-F3/array-1d#cai-at-thu-vien-numpy){target="_blank"}.
 
 ### Nạp thư viện
 

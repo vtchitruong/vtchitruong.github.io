@@ -14,7 +14,7 @@ icon: material/table-row
 
 Khi xử lý bảng điểm môn Tin học của một lớp gồm 30 học sinh, việc khai báo 30 biến có vẻ không ổn. Thử xem đoạn mã khai báo sau đây bất tiện như thế nào. [^1]
 
-[^1]: Phần đặt vấn đề này tương tự như bài [cấu trúc dữ liệu `list`](/grade-10/topic-F/list.md)
+[^1]: Phần đặt vấn đề này tương tự như bài [cấu trúc dữ liệu `list`](../../grade-10/topic-F/list.md){target="_blank"}
     
 ```py
 hs1 = 10
