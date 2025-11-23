@@ -75,7 +75,7 @@ Bộ giao thức TCP/IP được "mô hình hoá" thành 4 tầng như sau:
     Nói cách khác, đây là nơi của các chương trình mà ta sử dụng hằng ngày như: trình duyệt web, phần mềm gửi email, phần mềm truyền file, v.v... giao tiếp với mạng.
 
     Ví dụ:  
-    Giao thức HTTPS hoạt động khi ta mở trình duyệt để vào trang web mr-school.xyz.
+    Giao thức HTTPS hoạt động khi ta mở trình duyệt để vào trang web docs.mrschool.vn.
 
 2. **Tầng giao vận**:
 
