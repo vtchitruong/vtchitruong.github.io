@@ -67,6 +67,8 @@ Phân loại theo **chiều**, mảng có các loại sau:
 
 Bài học này chỉ đề cập **mảng một chiều**.
 
+---
+
 ## Mảng một chiều
 
 ### Khái niệm
@@ -77,7 +79,7 @@ Mỗi phần tử được định vị bằng một **chỉ số**, thường �
 
 Hình sau minh hoạ mảng một chiều A.
 
-![Minh hoạ mảng một chiều A](/grade-11/topic-F3/images/array-1d.svg){loading=lazy}
+![Minh hoạ mảng một chiều A](images/data-structure-one-dimensional-array.svg){loading=lazy}
 
 Hình ảnh mảng một chiều trong thực tế:
 
@@ -109,7 +111,7 @@ Việc áp dụng `numpy` chỉ chủ yếu diễn ra ở những thao tác cơ 
     - Tích hợp sẵn các hàm toán học bao gồm: thống kê, đại số tuyến tính.
     - Phổ biến toàn cầu trong khoa học dữ liệu, AI, vật lý, kỹ thuật.
 
-### Cài đặt thư viện numpy
+### Cài đặt thư viện numpy {: #cai-dat-thu-vien-numpy}
 
 Trước khi sử dụng, ta cần cài đặt thư viện `numpy` bằng lệnh `pip`.
 
@@ -121,7 +123,7 @@ Trước khi sử dụng, ta cần cài đặt thư viện `numpy` bằng lệnh
 
 2. Trong cửa sổ **Terminal**, gõ lệnh sau:
 
-    ```pycon
+    ```py linenums="1"
     pip install numpy
     ```
 
@@ -129,7 +131,7 @@ Trước khi sử dụng, ta cần cài đặt thư viện `numpy` bằng lệnh
 
 1. Trong một khối (cell) nào đó, gõ lệnh sau:
 
-    ```pycon
+    ```py linenums="1"
     !pip install numpy
     ```
 
@@ -315,17 +317,23 @@ Chạy đoạn mã trên, kết quả như sau:
 5 5 4 2 8 8 4 9 0 4 7 1
 ```
 
+---
+
 ## Mã nguồn
 
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1pq2-LFJ9I8U52pmCXqe9BMo-aeLyAPAN?usp=sharing){target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/array-1d.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/data-structure-one-dimensional-array.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

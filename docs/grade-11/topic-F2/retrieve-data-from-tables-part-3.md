@@ -25,7 +25,7 @@ Nếu gặp trục trặc về cơ sở dữ liệu, hãy xoá `school_db` (1) v
 
 Để truy vấn dữ liệu từ hai bảng, ta dùng từ khoá `INNER JOIN` để liên kết hai bảng theo các thuộc tính liên kết.
 
-![Minh hoạ thao tác liên kết INNER JOIN](./images/inner-join.svg){loading=lazy width=420}
+![Minh hoạ thao tác liên kết INNER JOIN](images/inner-join.svg){loading=lazy width=420}
 
 `INNER JOIN` chỉ trả về các mẫu tin mà các thuộc tính liên kết có giá trị khớp nhau. Nếu mẫu tin nào mà thuộc tính liên kết có giá trị không khớp thì mẫu tin đó sẽ không được trả về. 
 

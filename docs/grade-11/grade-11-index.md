@@ -130,8 +130,8 @@ Giới thiệu các hệ cơ sở dữ liệu
 Kỹ thuật lập trình
 
 1. Viết chương trình cho một số thuật toán sắp xếp, tìm kiếm cơ bản
-    1. Phát biểu được bài toán sắp xếp và [bài toán tìm kiếm](./topic-F2/linear-search.md){:target="_blank"}.
-    2. Viết được chương trình cho một vài thuật toán sắp xếp và [thuật toán tìm kiếm](./topic-F2/linear-search.md){:target="_blank"}.
+    1. Phát biểu được bài toán sắp xếp và [bài toán tìm kiếm](./topic-F3/search-algorithm-linear-search.md){:target="_blank"}.
+    2. Viết được chương trình cho một vài thuật toán sắp xếp và [thuật toán tìm kiếm](./topic-F3/search-algorithm-linear-search.md){:target="_blank"}.
     3. Vận dụng được một vài thuật toán đã học để giải quyết một bài toán cụ thể.
 2. Kiểm thử và đánh giá hiệu quả của chương trình
     1. Biết được việc kiểm thử giúp lập trình viên phát hiện lỗi, làm tăng độ tin cậy của chương trình nhưng chưa chứng minh được tính đúng của chương trình.
@@ -143,7 +143,7 @@ Kỹ thuật lập trình
     2. Giải thích và vận dụng được phương pháp thiết kế chương trình thành các module cho một bài toán cụ thể.
     3. Nhận biết được lợi ích của phương pháp nêu trên: Hỗ trợ làm việc đồng thời, dễ dàng bảo trì, phát triển chương trình và tái sử dụng module.
 4. Tổ chức dữ liệu trong chương trình
-    1. Trình bày được [cấu trúc dữ liệu mảng (một và hai chiều)](./topic-F2/array-1d.md){:target="_blank"} và [danh sách liên kết](./topic-F2/linked-list.md){:target="_blank"}.
+    1. Trình bày được [cấu trúc dữ liệu mảng](./topic-F3/data-structure-one-dimensional-array.md){:target="_blank"} (một và hai chiều) và [danh sách liên kết](./topic-F3/linked-list.md){:target="_blank"}.
     2. Tạo được một thư viện nhỏ và viết được chương trình có sử dụng thư viện vừa tạo ra.
     3. Viết được chương trình vận dụng những kiến thức tích hợp liên môn để giải quyết vấn đề.
 
@@ -183,7 +183,7 @@ Giới thiệu các hệ cơ sở dữ liệu
 
 Thực hành tạo và khai thác cơ sở dữ liệu
 
-1. [Thực hành tạo và cập nhật cơ sở dữ liệu](./topic-F1/create-tables-in-postgresql-part-1.md){:target="_blank"}
+1. [Thực hành tạo và cập nhật cơ sở dữ liệu](./topic-F2/create-tables-in-postgresql-part-1.md){:target="_blank"}
 
     Thực hiện được việc tạo lập cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ Quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
 
@@ -192,7 +192,7 @@ Thực hành tạo và khai thác cơ sở dữ liệu
     3. Nêu được một vài tổ chức cần ứng dụng cơ sở dữ liệu để quản lý hoạt động của mình.
     4. Thể hiện được tính cẩn thận, chăm chỉ, trách nhiệm trong việc lưu trữ và quản lý dữ liệu.
 
-2. [Thực hành khai thác cơ sở dữ liệu](./topic-F1/retrieve-data-from-tables-part-1.md){:target="_blank"}
+2. [Thực hành khai thác cơ sở dữ liệu](./topic-F2/retrieve-data-from-tables-part-1.md){:target="_blank"}
 
     Thực hiện được việc khai thác thông tin trong cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
 

@@ -71,6 +71,8 @@ Arrays are classified by **dimension** into the following types:
 
 This lesson focuses **only on one-dimensional arrays**.
 
+---
+
 ## One-dimensional arrays
 
 ### Concept
@@ -81,7 +83,7 @@ Each element is identified by an **index**, which usually starts from **0**.
 
 The image below illustrates a one-dimensional array **A**.
 
-![Illustration of one-dimensional array A](/grade-11/topic-F3/images/array-1d.svg){loading=lazy}
+![Illustration of one-dimensional array A](images/data-structure-one-dimensional-array.svg){loading=lazy}
 
 Real-life examples of a one-dimensional array:
 
@@ -92,12 +94,6 @@ One-dimensional arrays are useful when working with:
 
 - A sequence of numbers
 - A single row or column in a table
-
-The **index** (or **position**) of elements usually starts from **0**.
-
-![Illustration of one-dimensional array A](./images/array-1d.svg){loading=lazy}
-
-*Illustration of one-dimensional array A*
 
 ### One-dimensional arrays in Python
 
@@ -131,7 +127,7 @@ Before using it, you need to install the `numpy` library using the `pip` command
 
 2. In the Terminal window, type the following command:
 
-   ```pycon
+   ```pycon linenums="1"
    pip install numpy
    ```
 
@@ -139,7 +135,7 @@ Before using it, you need to install the `numpy` library using the `pip` command
 
 1. In any code cell, enter this command:
 
-    ```pycon
+    ```pycon linenums="1"
     !pip install numpy
     ```
 
@@ -325,17 +321,23 @@ Running the code above gives the following output:
 5 5 4 2 8 8 4 9 0 4 7 1
 ```
 
+---
+
 ## Source code
 
 The complete code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/1pq2-LFJ9I8U52pmCXqe9BMo-aeLyAPAN?usp=sharing){target="_blank"}
 
+---
+
 ## Summary mindmap
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/array-1d.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/data-structure-one-dimensional-array.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

@@ -10,7 +10,9 @@ icon: material/table-search
 
 ## Khái quát
 
-Xem lại khái quát về bài toán và thuật toán tìm kiếm [tại đây](/grade-11/topic-F3/searching-algorithm-linear-search.md#khai-quat){target="_blank"}.
+Xem lại khái quát về bài toán và thuật toán tìm kiếm [tại đây](search-algorithm-linear-search.md/#khai-quat){target="_blank"}.
+
+---
 
 ## Thuật toán tìm kiếm nhị phân
 
@@ -36,7 +38,7 @@ Cụ thể:
 
 2. Trong khi mốc `left` vẫn chưa vượt quá mốc `right`, lặp các thao tác sau:
 
-    - Xác định mốc giữa: `mid` = (`left` + `right`) / 2, lấy phần nguyên.
+    - Xác định mốc giữa: `mid = (left + right) / 2`, lấy phần nguyên.
     - Nếu `A[mid] == k` thì đây chính là vị trí tìm thấy. Kết thúc thuật toán.
     - Nếu `A[mid] < k` thì *dời* mốc `left` sang bên phải của `mid`: `left = mid + 1` để xét mảng con bên phải.
     - Nếu `A[mid] > k` thì *dời* mốc `right` sang bên trái của `mid`: `right = mid - 1` để xét mảng con bên trái.
@@ -47,11 +49,11 @@ Cụ thể:
 
 ### Ví dụ minh hoạ
 
-![Ví dụ minh hoạ tiến trình tìm kiếm nhị phân](/grade-11/topic-F3/images/binary-search-manual-run.svg){loading=lazy}
+![Ví dụ minh hoạ tiến trình tìm kiếm nhị phân](images/search-algorithm-binary-search-manual-run.svg){loading=lazy}
 
 ### Lưu đồ
 
-![Lưu đồ thuật toán tìm kiếm nhị phân](images/binary-search-flowchart.svg){loading=lazy}
+![Lưu đồ thuật toán tìm kiếm nhị phân](images/search-algorithm-binary-search-flowchart.svg){loading=lazy}
 
 ### Trực quan hoá
 
@@ -162,16 +164,20 @@ Không tìm thấy 6
     
     Trước khi thực hiện tìm kiếm nhị phân, mảng phải được sắp xếp tăng dần hoặc giảm dần.  
 
+---
+
 ## So sánh hai thuật toán tìm kiếm
 
 Hai thuật toán có một vài khác biệt chủ yếu sau:
 
-| | Tìm kiếm tuần tự | Tìm kiếm nhị phân |
+| Đặc tính | Tìm kiếm tuần tự | Tìm kiếm nhị phân |
 | --- | --- | --- |
 | Ý tưởng | Xét từng phần tử từ đầu mảng cho đến khi tìm thấy. | Xét xem phần tử cần tìm nằm ở mảng con nửa trái hay nửa phải. |
 | Vị trí tìm thấy | Là vị trí xuất hiện đầu tiên tính từ đầu mảng. | Có thể là bất kỳ vị trí nào. |  
 | Áp dụng | Phù hợp cho tập hợp dữ liệu nhỏ và không có thứ tự. | Phù hợp cho tập dữ liệu lớn và đã sắp xếp thứ tự. |
 | Độ phức tạp thời gian | $O(n)$ | $O(log n)$ |
+
+---
 
 ## Mã nguồn
 
@@ -179,11 +185,15 @@ Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1xhy3RfkEaeQQuWfXm1b5Ev_txYnw9jjr?usp=sharing){target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/searching-algorithm-binary-search.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/search-algorithm-binary-search.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

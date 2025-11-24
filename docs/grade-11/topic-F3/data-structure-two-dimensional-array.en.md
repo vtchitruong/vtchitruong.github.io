@@ -18,6 +18,8 @@ How do we handle data that is no longer just a simple list of numbers, but a tab
 
 In such cases, a one-dimensional array is no longer sufficient. We need a new structure that can represent data in rows and columns — this is called a **two-dimensional array**.
 
+---
+
 ## Concept
 
 A **two-dimensional array** is a data structure used to store elements in a table format with rows and columns.
@@ -31,7 +33,7 @@ Every row has the same number of elements (equal to the number of columns), and 
 
 The image below illustrates a two-dimensional array A.
 
-![Illustration of two-dimensional array A](/grade-11/topic-F3/images/array-2d.svg){loading=lazy}
+![Illustration of two-dimensional array A](images/data-structure-two-dimensional-array.svg){loading=lazy}
 
 In other words, a two-dimensional array can be thought of as an **array of arrays** — each element in the main array is itself a one-dimensional array (a row).
 
@@ -47,13 +49,15 @@ Two-dimensional arrays are ideal for working with:
 - Grids
 - Matrices
 
+---
+
 ## Two-dimensional arrays in Python
 
 As in the previous lesson, we will use the open-source library [numpy](https://numpy.org/){target="_blank"} to work with two-dimensional arrays.
 
 ### Installing the numpy Library
 
-Refer back to the installation instructions for the `numpy` library [here](/en/grade-11/topic-F3/array-1d/#installing-the-numpy-library){target="_blank"}.
+Refer back to the installation instructions for the `numpy` library [here](data-structure-one-dimensional-array.en.md/#installing-the-numpy-library){target="_blank"}.
 
 ### Importing the Library
 
@@ -244,18 +248,23 @@ Số cột: 4
 2 4 5 5 
 ```
 
+---
+
 ## Source code
 
 The complete code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/1M7LQMTxdGAOcC6tyqgz-1wE6mtlK5bXF?usp=sharing){target="_blank"}
 
+---
+
 ## Summary mindmap
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/array-2d.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/data-structure-two-dimensional-array.html">Sơ đồ tóm tắt</iframe>
 </div>
 
+---
 
 ## Some English words
 

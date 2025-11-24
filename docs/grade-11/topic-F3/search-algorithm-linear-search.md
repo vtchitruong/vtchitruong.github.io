@@ -65,6 +65,8 @@ Bài học này chỉ đề cập thuật toán tìm kiếm tuần tự, hay cò
 
     6. Phát hiện bất thường: giúp hệ thống xác định vấn đề tiềm ẩn, kích hoạt cảnh báo hoặc thực hiện hành động phù hợp.
 
+---
+
 ## Thuật toán tìm kiếm tuần tự
 
 ### Ý tưởng
@@ -85,7 +87,7 @@ Cách làm là lần lượt lật từng lá bài lên cho đến khi thấy đ
 
 ### Lưu đồ
 
-![Lưu đồ thuật toán tìm kiếm tuần tự](/grade-11/topic-F3/images/linear-search-flowchart.svg){loading=lazy}
+![Lưu đồ thuật toán tìm kiếm tuần tự](images/search-algorithm-linear-search-flowchart.svg){loading=lazy}
 
 ### Trực quan hoá
 
@@ -188,24 +190,30 @@ Không tìm thấy 6
     
     Nếu `k` xuất hiện nhiều lần thì thuật toán tìm kiếm tuần tự chỉ trả về **vị trí xuất hiện đầu tiên** của `k` theo trình tự duyệt mảng.
 
+---
+
 ## Mã nguồn
 
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1t09XEPd79MLfHUT2LGX3KVdKByfLAeCq?usp=sharing){target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/searching-algorithm-linear-search.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/search-algorithm-linear-search.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
-| bài toán tìm kiếm | searching problem |
+| bài toán tìm kiếm | search problem |
 | so sánh | compare |
-| thuật toán tìm kiếm | searching algorithm |
+| thuật toán tìm kiếm | search algorithm |
 | tìm kiếm tuần tự | sequential search, linear search |
 | tìm thấy, không tìm thấy | found, not found |

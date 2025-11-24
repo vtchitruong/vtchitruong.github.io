@@ -410,9 +410,9 @@ nav:
     - Chủ đề F3:
       - Mục lục: grade-11/topic-F3/topic-index.md
       - grade-11/topic-F3/data-structure-one-dimensional-array.md
-      - grade-11/topic-F3/array-2d.md
-      - grade-11/topic-F3/searching-algorithm-linear-search.md
-      - grade-11/topic-F3/searching-algorithm-binary-search.md
+      - grade-11/topic-F3/data-structure-two-dimensional-array.md
+      - grade-11/topic-F3/search-algorithm-linear-search.md
+      - grade-11/topic-F3/search-algorithm-binary-search.md
       - grade-11/topic-F3/selection-sort.md
       - grade-11/topic-F3/insertion-sort.md
       - grade-11/topic-F3/bubble-sort.md

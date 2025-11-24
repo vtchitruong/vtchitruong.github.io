@@ -18,6 +18,8 @@ Làm thế nào xử lý khi dữ liệu không còn là dãy số, mà là mộ
 
 Khi đó, mảng một chiều không còn đủ mạnh nữa. Ta cần một cấu trúc mới có thể biểu diễn dữ liệu theo dạng hàng và cột, đó là **mảng hai chiều**.
 
+---
+
 ## Khái niệm
 
 **Mảng hai chiều** là cấu trúc dữ liệu dùng để lưu trữ các phần tử theo dạng bảng, gồm hàng và cột.
@@ -31,7 +33,7 @@ Số phần tử của mỗi hàng ứng với số cột của mảng. Đồng 
 
 Hình sau minh hoạ mảng hai chiều A.
 
-![Minh hoạ mảng hai chiều A](/grade-11/topic-F3/images/array-2d.svg){loading=lazy}
+![Minh hoạ mảng hai chiều A](images/data-structure-two-dimensional-array.svg){loading=lazy}
 
 Nói cách khác, mảng hai chiều có thể được xem là **mảng của các mảng**. Nghĩa là, mỗi phần tử của mảng hai chiều là một mảng-một-chiều.
 
@@ -47,13 +49,15 @@ Mảng hai chiều có thể áp dụng khi xử lý:
 - Lưới
 - Ma trận
 
+---
+
 ## Mảng hai chiều trong Python
 
 Tương tự bài trước, ta sẽ sử dụng thư viện mã nguồn mở [numpy](https://numpy.org/){target="_blank"} để biểu diễn mảng hai chiều.
 
 ### Cài đặt thư viện numpy
 
-Xem lại cách cài đặt thư viện `numpy` [tại đây](/grade-11/topic-F3/array-1d#cai-at-thu-vien-numpy){target="_blank"}.
+Xem lại cách cài đặt thư viện `numpy` [tại đây](data-structure-one-dimensional-array.md/#cai-dat-thu-vien-numpy){target="_blank"}.
 
 ### Nạp thư viện
 
@@ -243,18 +247,23 @@ Số cột: 4
 2 4 5 5 
 ```
 
+---
+
 ## Mã nguồn
 
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1M7LQMTxdGAOcC6tyqgz-1wE6mtlK5bXF?usp=sharing){target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/array-2d.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/data-structure-two-dimensional-array.html">Sơ đồ tóm tắt</iframe>
 </div>
 
+---
 
 ## Some English words
 
