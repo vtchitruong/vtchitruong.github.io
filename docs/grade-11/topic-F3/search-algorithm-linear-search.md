@@ -28,15 +28,9 @@ Trong bài này, giới hạn của bài toán tìm kiếm như sau:
 
 Cụ thể, bài toán tìm kiếm được phát biểu như sau:
 
-- Đầu vào:
-
-    - Mảng một chiều `A` gồm `n` phần tử đều là số nguyên.
-    - Giá trị `k` cần tìm.
-
-- Đầu ra:
-
-    - Chỉ số hoặc vị trí của phần tử có giá trị `k` trong mảng `A`.
-    - `-1` nếu không tồn tại `k`.
+| Đầu vào | Đầu ra |
+| --- | --- |
+| - Mảng một chiều `A` gồm `n` phần tử đều là số nguyên.<br>- Giá trị `k` cần tìm. | - Chỉ số của phần tử có giá trị `k` hoặc `-1` nếu không tồn tại `k`. |
 
 ### Thuật toán tìm kiếm
 

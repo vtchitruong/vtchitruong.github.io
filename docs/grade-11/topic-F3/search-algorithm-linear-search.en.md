@@ -30,15 +30,9 @@ In this lesson, we focus on a specific version of the search problem:
 
 Formal problem statement:
 
-- Input:
-
-    - A one-dimensional array `A` containing `n` integers.
-    - A target value `k` to search for.
-
-- Output:
-
-    - The index (position) of the element equal to `k` in array `A`.
-    - `-1` if `k` is not found.
+| Input | Output |
+| --- | --- |
+| - A one-dimensional array `A` containing `n` integers.<br>- A target value `k` to search for. | - The index (position) of the element equal to `k` in array `A` or `-1` if `k` is not found. |
 
 ### Search algorithms
 

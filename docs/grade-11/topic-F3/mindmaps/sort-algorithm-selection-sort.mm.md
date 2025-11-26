@@ -8,8 +8,8 @@ markmap:
 
 ## Bài toán
 
-- Input: Mảng `A` gồm `n` số nguyên
-- Output: Mảng `A` có thứ tự tăng dần
+- Đầu vào: mảng `A` gồm `n` số nguyên
+- Đầu ra: mảng `A` có thứ tự tăng dần
 
 ## Thuật toán
 
@@ -17,7 +17,7 @@ markmap:
 
 - Duyệt mảng `A` từ đầu đến áp cuối:
 
-  - Tìm `A[min]` trong phạm vi `[i..n - 1]`
+  - Tìm vị trí `min` của phần tử nhỏ nhất từ `i` đến `n - 1`
   - Hoán vị `A[i]` và `A[min]`.
 
 ### Sắp xếp chèn
