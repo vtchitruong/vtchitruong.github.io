@@ -14,7 +14,7 @@ Review the general introduction to the sorting problem and sorting algorithms [h
 
 ---
 
-## Swap sort algorithm (Bubble Sort – Optimized Version)
+## Exchange sort algorithm
 
 ### Idea
 
