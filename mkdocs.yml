@@ -367,7 +367,7 @@ nav:
       - grade-10/topic-F/for-loop.md
       - grade-10/topic-F/while-loop.md
       - grade-10/topic-F/list.md
-      - grade-10/topic-F/list-iterating-processing.md
+      # - grade-10/topic-F/list-iterating-processing.md
       - grade-10/topic-F/list-manipulating-functions.md
       - grade-10/topic-F/string.md
     - Chủ đề G:
@@ -410,8 +410,8 @@ nav:
     - Chủ đề F3:
       - Mục lục: grade-11/topic-F3/topic-index.md
       - grade-11/topic-F3/data-structure-one-dimensional-array.md
-      - grade-11/topic-F3/data-structure-two-dimensional-array-practice
       - grade-11/topic-F3/data-structure-two-dimensional-array.md
+      - grade-11/topic-F3/data-structure-two-dimensional-array-practice.md
       - grade-11/topic-F3/search-algorithm-linear-search.md
       - grade-11/topic-F3/search-algorithm-binary-search.md
       - grade-11/topic-F3/sort-algorithm-selection-sort.md
