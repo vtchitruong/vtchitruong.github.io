@@ -2,15 +2,17 @@
 icon: material/format-list-numbered
 ---
 
-# Kiểu dữ liệu list
+# Cấu trúc dữ liệu list
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày khái quát về kiểu dữ liệu `list` của Python.
+    Bài này trình bày đôi nét về cấu trúc dữ liệu `list` của Python.
 
-## Đặt vấn đề
+## Khái quát về list
 
-Khi xử lý bảng điểm môn Tin học của một lớp gồm 40 học sinh, việc khai báo 30 biến có vẻ không ổn. Thử xem đoạn mã khai báo sau đây bất tiện như thế nào.  
+### Đặt vấn đề
+
+Khi xử lý bảng điểm môn Tin học của một lớp gồm 30 học sinh, việc khai báo 30 biến có vẻ không ổn. Thử xem đoạn mã khai báo sau đây bất tiện như thế nào.
 
 ```py
 hs1 = 10
@@ -19,288 +21,210 @@ hs3 = 9.5
 .
 .
 .
-# vân vân mây mây, còn nữa nha...
-
 hs39 = 9.1
 hs40 = 9.4
 ```
 
-Nếu số học sinh nhiều hơn, chẳng hạn 500 học sinh cả khối, thì việc khai báo từng biến là hoàn toàn bất khả thi.  
+Nếu số học sinh nhiều hơn, chẳng hạn 500 học sinh cả khối, thì việc khai báo từng biến là hoàn toàn bất khả thi.
 
-May thay, các ngôn ngữ lập trình đều có hỗ trợ những ***kiểu dữ liệu*** dành cho trường hợp bảng điểm như trên.  
+May thay, các ngôn ngữ lập trình đều có hỗ trợ những cấu trúc dữ liệu giúp xử lý bảng điểm như trên, đối với Python là **list**.
 
-Python cũng vậy. Một *kiểu dữ liệu* của Python có thể giúp xử lý tập hợp nhiều dữ liệu là kiểu `list`.  
+### Khái niệm
 
-## Khái niệm
+`list` là một **cấu trúc dữ liệu** (1) của Python, được dùng để lưu trữ và xử lý tập hợp gồm nhiều **phần tử**.
+{ .annotate }
 
-`list` là  một trong bốn kiểu dữ liệu *chuẩn* của Python.  
+1.  `list` có thể xem là **kiểu dữ liệu** hoặc **cấu trúc dữ liệu** tuỳ góc nhìn.
 
-`list` được dùng để lưu trữ và xử lý tập hợp dữ liệu gồm nhiều **phần tử**.
+`list` còn được gọi bằng thuật ngữ **danh sách**.
 
-**Ưu điểm:**  các phần tử có thể có **kiểu dữ liệu khác nhau**, chẳng hạn phần tử này kiểu `int`, phần tử kia kiểu `float`, một phần tử khác kiểu `bool`, thậm chí một phần tử khác nữa kiểu `list`.  
+### Ưu điểm
 
-**Hạn chế:** tốc độ xử lý của `list` không nhanh bằng kiểu dữ liệu mảng trong một số ngôn ngữ lập trình khác như C++, Java, hay C#.
+Các phần tử trong cùng một `list` có thể có **kiểu dữ liệu khác nhau**, chẳng hạn phần tử này kiểu `int`, phần tử kia kiểu `float`, một phần tử khác kiểu `bool`, thậm chí một phần tử khác nữa kiểu `list`.
 
-Ta có thể cập nhật `list` bằng cách:
+### Hạn chế
 
-- Thêm phần tử vào `list`
-- Xóa phần tử khỏi `list`
-- Thay đổi giá trị của các phần tử trong `list`
+Tốc độ xử lý của `list` không nhanh bằng mảng truyền thống trong những ngôn ngữ lập trình khác như C++, Java.
 
-Từ đây trở đi, `list` có thể được đề cập bằng thuật ngữ **danh sách**.
+---
 
-!!! question "Hỏi chút chơi - phần 1"
-    
-    <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../list/quiz1.html">Hỏi chút chơi</iframe>
-    </div>
+## Thao tác cơ bản với list
 
-## Khai báo danh sách
+### Khởi tạo
 
-Một **danh sách** được khai báo bằng cách đặt các phần tử trong cặp ngoặc vuông `[ ]`. Các phần tử phân cách nhau bằng dấu phẩy `,`.  
+Để khởi tạo danh sách, ta liệt kê các phần tử trong cặp ngoặc vuông `[ ]`, phân cách nhau bằng dấu phẩy `,`.
 
-Ví dụ:
-
-**Yêu cầu:**
-
-Khai báo bảng điểm Tin học của 10 học sinh.
-
-**Mã lệnh:**
-
-```py linenums="1"
-if __name__ == '__main__':
-    # Khai báo bảng điểm môn Tin học bằng cách liệt kê các phần tử
-    score_list = [8.1, 9.6, 3.5, 5.5, 10, 10, 7.4, 8.4, 4.9, 6.8]
-
-    # In danh sách ra màn hình
-    print(f'Bảng điểm: {score_list}')
-```
-
-**Output:**
-
-```pycon
-Bảng điểm: [8.1, 9.6, 3.5, 5.5, 10, 10, 7.4, 8.4, 4.9, 6.8]
-```
-
-Ví dụ:
-
-**Yêu cầu:**
-
-Khai báo danh sách rỗng, chưa có phần tử.
-
-**Mã lệnh:**
+Ví dụ:  
+Dòng lệnh 3 khởi tạo danh sách `scores` bằng cách liệt kê phần tử. Mỗi phần tử là điểm số bài kiểm tra môn Tin học của một bạn.
 
 ```py linenums="1" hl_lines="3"
 if __name__ == '__main__':
-    # Khai báo danh sách rỗng
-    score_list = []
+    # Khởi tạo danh sách scores
+    scores = [8, 9, 3, 5, 10, 10, 7, 8, 5, 6]
 
-    # In danh sách ra màn hình
-    print(f'Danh sách rỗng: {score_list}')
+    # In danh sách
+    print(f'Bảng điểm: {scores}')
 ```
 
-**Output:**
+Chạy đoạn mã trên, kết quả như sau:
 
 ```pycon
-Danh sách rỗng: []
+Bảng điểm: [8, 9, 3, 5, 10, 10, 7, 8, 5, 6]
 ```
 
-!!! question "Hỏi chút chơi - phần 2"
-    
-    <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../list/quiz2.html">Hỏi chút chơi</iframe>
-    </div>
+Để khởi tạo danh sách rỗng, ta có thể viết: `scores = []`
 
-## Số lượng phần tử
+### Lấy số phần tử
 
-Để biết số lượng phần tử của danh sách, ta sử dụng hàm `len()`.
+Để lấy số phần tử (1) của danh sách, ta dùng hàm `len()`.
+{ .annotate }
 
-Ví dụ:
+1.  Khi nói *"số phần tử"*, người ta thường hiểu là *"số lượng phần tử"*.
 
-**Yêu cầu:**
-
-Gán số lượng phần tử của danh sách bảng điểm vào biến `n`.
-
-**Mã lệnh:**
+Ví dụ:  
+Dòng lệnh 6 lấy số phần tử của danh sách `scores` rồi gán cho biến `n`.  
 
 ```py linenums="1" hl_lines="6"
 if __name__ == '__main__':
-    # Khai báo bảng điểm môn Tin học bằng cách liệt kê các phần tử
-    score_list = [8.1, 9.6, 3.5, 5.5, 10, 10, 7.4, 8.4, 4.9, 6.8]
+    # Khởi tạo danh sách scores
+    scores = [8, 9, 3, 5, 10, 10, 7, 8, 5, 6]
 
-    # Gán số lượng phần tử của danh sách cho biến n
-    n = len(score_list)
-    print(f'Số lượng phần tử của danh sách là: {n}')
+    # Lấy số phần tử và gán cho biến n
+    n = len(scores)
+
+    # In ra số phần tử
+    print(f'Số lượng phần tử: {n}')
 ```
 
-**Output:**
+Chạy đoạn mã trên, kết quả như sau:
 
 ```pycon
-Số lượng phần tử của danh sách là: 10
+Số lượng phần tử: 10
 ```
 
-!!! question "Hỏi chút chơi - phần 3"
-    
-    <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../list/quiz3.html">Hỏi chút chơi</iframe>
-    </div>
+### Truy xuất phần tử
 
-## Truy xuất phần tử
+Mỗi phần tử trong danh sách gồm có hai yếu tố: **chỉ số** và **giá trị**.
 
-Mỗi phần tử trong danh sách gồm có hai yếu tố: **chỉ số** **giá trị**.
-
-**Chỉ số** còn được gọi là **vị trí** của phần tử trong danh sách, được đánh chỉ số từ **0** đến **n - 1**. Cụ thể:
+Chỉ số được đánh thứ tự từ `0` đến `n - 1`. Cụ thể:
 
 - Chỉ số của phần tử đầu tiên là `0`.
 - Chỉ số của phần tử tiếp theo là `1`.
 - Chỉ số của phần tử tiếp theo nữa là `2`.
-- Chỉ số của phần tử cuối cùng là `n - 1`, trong đó, `n` là số lượng phần tử.  
+- Chỉ số của phần tử cuối cùng là `n - 1`, với `n` là số phần tử của danh sách.  
 
-Để truy xuất **giá trị** của phần tử, ta đặt **chỉ số** vào trong *cặp ngoặc vuông* `[ ]`.  
+Chỉ số còn được gọi là **vị trí**.
 
-Ví dụ:
+Để truy xuất giá trị của một phần tử, ta viết **chỉ số** của phần tử đó trong cặp ngoặc vuông `[ ]`.
 
-**Yêu cầu:**
+Ví dụ:  
+Dòng lệnh 6 và 12 lần lượt in ra phần tử đầu tiên và cuối cùng của dành sách.
 
-In ra phần tử đầu tiên, phần tử có chỉ số `1` và phần tử cuối cùng của bảng điểm môn Tin học.
-
-**Mã lệnh:**
-
-```py linenums="1"
+```py linenums="1" hl_lines="6 12"
 if __name__ == '__main__':
-    # Khai báo bảng điểm môn Tin học bằng cách liệt kê các phần tử
-    score_list = [8.1, 9.6, 3.5, 5.5, 10, 10, 7.4, 8.4, 4.9, 6.8]
+    # Khởi tạo danh sách scores
+    scores = [8, 9, 3, 5, 10, 10, 7, 8, 5, 6]
 
     # In ra phần tử đầu tiên
-    print(f'Phần tử đầu tiên: {score_list[0]}')
+    print(f'Phần tử đầu tiên: {scores[0]}')
 
-    # In ra phần tử có chỉ số 1
-    print(f'Phần tử có chỉ số 1: {score_list[1]}')
+    # Lấy số phần tử
+    n = len(scores)
 
-    # In ra phẩn tử cuối cùng
-    n = len(score_list)
-    print(f'Phần tử cuối cùng: {score_list[n - 1]}')
+    # In ra phần tử cuối cùng
+    print(f'Phần tử cuối cùng: {scores[n - 1]}')
 ```
 
-**Output:**
+Chạy đoạn mã trên, kết quả như sau:
 
 ```pycon
-Phần tử đầu tiên: 8.1
-Phần tử có chỉ số 1: 9.6
-Phần tử cuối cùng: 6.8
+Phần tử đầu tiên: 8
+Phần tử cuối cùng: 6
 ```
 
-!!! question "Hỏi chút chơi - phần 4"
-    
-    <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../list/quiz4.html">Hỏi chút chơi</iframe>
-    </div>
+### Duyệt danh sách
 
-## Duyệt phần tử trong danh sách
+Trong cùng một danh sách, các phần tử thường được xử lý tương tự nhau. Cho nên, các thao tác xử lý sẽ được lặp nhiều lần. Do đó, ta có thể sử dụng vòng lặp khi làm việc với danh sách.  
 
-Trong cùng một danh sách, các phần tử thường được xử lý như nhau. Nghĩa là, những thao tác nào được thực hiện đối với phần tử này cũng sẽ được thực hiện đối với phần tử khác.  
+Với vòng lặp `for`, ta có hai cách duyệt danh sách (1):
+{ .annotate }
 
-Như vậy, các thao tác xử lý sẽ được lặp đi lặp lại nhiều lần. Do đó, khi làm việc với danh sách, ta thường sử dụng vòng lặp `for`.  
-
-Khi dùng `for` để duyệt danh sách, ta có hai cách sau để truy xuất phần tử:
+1.  Vẫn còn cách duyệt thứ ba là sử dụng `enumerate`.
 
 - Sử dụng chỉ số của phần tử
 - Sử dụng toán tử `in`
 
-### Sử dụng chỉ số
+**Sử dụng chỉ số:**
 
-Để duyệt qua từng phần tử trong danh sách, ta sử dụng sử dụng biến `i` để duyệt theo chỉ số.
+Ví dụ:  
+Dòng lệnh 9 và 10 duyệt danh sách `scores` bằng chỉ số để in ra tất cả điểm số. Mỗi điểm số nằm trên một dòng.
 
-Ví dụ:
-
-**Yêu cầu:**
-
-In các điểm số trên từng dòng.
-
-**Mã lệnh:**
-
-```py linenums="1"
+```py linenums="1" hl_lines="9 10"
 if __name__ == '__main__':
-    # Khai báo bảng điểm môn Tin học bằng cách liệt kê các phần tử
-    score_list = [8.1, 9.6, 3.5, 5.5, 10, 10, 7.4, 8.4, 4.9, 6.8]
+    # Khởi tạo danh sách scores
+    scores = [8, 9, 3, 5, 10, 10, 7, 8, 5, 6]
 
-    # In ra các điểm số trên từng dòng
-    n = len(score_list)
-    for i in range(n):
-        print(score_list[i])
-```
-
-**Output:**
-
-```pycon
-8.1
-9.6
-3.5
-5.5
-10
-10
-7.4
-8.4
-4.9
-6.8
-```
-
-### Sử dụng toán tử in
-
-Để duyệt qua từng phần tử trong danh sách mà không cần dùng chỉ số, ta sử dụng toán tử `in`.
-
-Ví dụ:
-
-**Yêu cầu:**
-
-Cũng in ra bảng điểm trên từng dòng nhưng sử dụng toán tử `in`.
-
-**Mã lệnh:**
-
-```py linenums="1"
-if __name__ == '__main__':
-    # Khai báo bảng điểm môn Tin học bằng cách liệt kê các phần tử
-    score_list = [8.1, 9.6, 3.5, 5.5, 10, 10, 7.4, 8.4, 4.9, 6.8]
-
-    # In ra các điểm số trên từng dòng
-    for score in score_list:
-        print(score)
-```
-
-**Output:**
-
-```pycon
-8.1
-9.6
-3.5
-5.5
-10
-10
-7.4
-8.4
-4.9
-6.8
-```
-
-!!! question "Hỏi chút chơi - phần 5"
+    # Lấy số phần tử
+    n = len(scores)
     
-    <div>
-        <iframe style="width: 100%; height: 400px" frameBorder=0 src="../list/quiz5.html">Hỏi chút chơi</iframe>
-    </div>
+    # Duyệt danh sách và in ra điểm số
+    for i in range(n):
+        print(scores[i])
+```
+
+Chạy đoạn mã trên, kết quả như sau:
+
+```pycon
+8
+9
+3
+5
+10
+10
+7
+8
+5
+6
+```
+
+**Sử dụng toán tử `in`:**
+
+Ví dụ:  
+Dòng lệnh 6 và 7 duyệt danh sách bằng toán tử `in` để in ra tất cả điểm số trên cùng một dòng.
+
+```py linenums="1" hl_lines="6 7"
+if __name__ == '__main__':
+    # Khởi tạo danh sách scores
+    scores = [8, 9, 3, 5, 10, 10, 7, 8, 5, 6]
+
+    # In ra các điểm số trên từng dòng
+    for score in scores:
+        print(score, end=' ')
+```
+
+Chạy đoạn mã trên, kết quả như sau:
+
+```pycon
+8 9 3 5 10 10 7 8 5 6 
+```
+
+---
+
+## Mã nguồn
+
+Code đầy đủ được đặt tại:
+
+- [Google Colab](https://colab.research.google.com/drive/1H_MnLvHvWfn22yIZWVBJH2Sr7nsv6Mkl?usp=sharing){target="_blank"}
+
+---
 
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../mindmaps/list.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-10/topic-F/mindmaps/list.html">Sơ đồ tóm tắt</iframe>
 </div>
 
-## Mã nguồn
-
-Các đoạn mã trong bài được đặt tại:
-
-1. [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-10/topic-f/list.py){:target="_blank"}
-
-2. [Google Colab](https://colab.research.google.com/drive/1H_MnLvHvWfn22yIZWVBJH2Sr7nsv6Mkl?usp=sharing){:target="_blank"}
+---
 
 ## Some English words
 
@@ -314,7 +238,3 @@ Các đoạn mã trong bài được đặt tại:
 | giá trị | value |
 | phần tử | element, item |
 | phân cách, ký tự phân cách | delimit, delimiter |
-
-## Bài tập thực hành
-
-Bạn có thể tự thực hành các bài tập sau tại [Google Colab](https://colab.research.google.com/drive/1-yrOGB4pGboZ-Alvv2M2lmeojfwHoh4z?usp=sharing){:target="_blank"}.

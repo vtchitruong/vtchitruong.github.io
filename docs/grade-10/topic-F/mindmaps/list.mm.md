@@ -4,24 +4,40 @@ markmap:
   maxWidth: 300
 ---
 
-# Kiểu dữ liệu `list`
+# `list`
 
-## Công dụng
+## Khái niệm
 
-- Xử lý danh sách gồm nhiều phần tử.
+- Là cấu trúc dữ liệu.
+- Dùng để xử lý tập hợp nhiều phần tử.
 
 ## Phần tử
 
-- Các phần tử có thể có kiểu dữ liệu khác nhau.
-- Mỗi phần tử có hai yếu tố: **chỉ số** và **giá trị**.
-- Phần tử đầu có chỉ số là **0**, phần tử cuối cùng có chỉ số là **n - 1**.
+- Có thể khác nhau về kiểu dữ liệu.
+- Gồm hai yếu tố:
 
-## Duyệt phần tử trong danh sách
+    - chỉ số
+    - giá trị
+
+## Khởi tạo
+
+- Liệt kê trong cặp ngoặc `[ ]`.
+
+## Lấy số phần tử
+
+- `len(danh sách)`
+
+## Truy xuất phần tử
+
+- Phần tử đầu tiên: `L[0]`
+- Phần tử cuối cùng: `L[n - 1]`
+
+## Duyệt danh sách
 
 ### Dùng chỉ số
 
-- `for i in range(len(L)): do_something`
+- `for i in range(n):`
 
 ### Dùng toán tử `in`
 
-- `for x in L: do_something`
+- `for x in L:`
