@@ -237,7 +237,7 @@ Cách 2:
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 500px" frameBorder=0 src="../mindmaps/getting-started-with-python.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-10/topic-F/mindmaps/getting-started-with-python.html">Sơ đồ tóm tắt</iframe>
 </div>
 
 ## Some English words

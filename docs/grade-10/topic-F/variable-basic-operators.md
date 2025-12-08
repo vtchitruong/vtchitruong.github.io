@@ -126,7 +126,7 @@ Code đầy đủ được đặt tại:
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/variable-basic-operators.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-10/topic-F/mindmaps/variable-basic-operators.html">Sơ đồ tóm tắt</iframe>
 </div>
 
 ## Some English words
