@@ -154,7 +154,7 @@ Mảng hai chiều `B`.
     import numpy as np
     ```
 
-    2\. Viết hàm `convert_1to2()` dùng để chuyển đổi mảng một chiều thành mảng hai chiều.
+    2\. Viết hàm `convert_1to2()` để chuyển đổi mảng một chiều thành mảng hai chiều.
 
     Hàm gồm có:
     
@@ -297,7 +297,7 @@ scores = [[8, 8, 8, 2, 9],
     import numpy as np
     ```
 
-    2\. Viết hàm `calculate_average()` dùng để tính điểm trung bình của từng học sinh.
+    2\. Viết hàm `calculate_average()` để tính điểm trung bình của từng học sinh.
 
     Hàm gồm có:
     
@@ -323,7 +323,7 @@ scores = [[8, 8, 8, 2, 9],
         return A
     ```
 
-    3\. Viết hàm `show()` dùng để in ra các điểm số theo dạng bảng.
+    3\. Viết hàm `show()` để in ra các điểm số theo dạng bảng.
 
     Hàm có hai tham số đầu vào là mảng hai chiều `S` (điểm thành phần) và mảng một chiều `A` (điểm trung bình); không có giá trị trả về.
 
@@ -437,7 +437,7 @@ n = 10
     import numpy as np
     ```
 
-    2\. Viết hàm `fill_main_diagonal()` dùng để gán `1` vào đường chéo chính.
+    2\. Viết hàm `fill_main_diagonal()` để gán `1` vào đường chéo chính.
 
     Hàm có một tham số đầu vào là mảng hai chiều `A`; không có giá trị trả về.
     
@@ -453,7 +453,7 @@ n = 10
             A[i][i] = 1
     ```
 
-    3\. Viết hàm `fill_lower_triangle()` dùng để gán `2` vào tam giác dưới.
+    3\. Viết hàm `fill_lower_triangle()` để gán `2` vào tam giác dưới.
 
     Hàm có một tham số đầu vào là mảng hai chiều `A`; không có giá trị trả về.
 
@@ -468,7 +468,7 @@ n = 10
                 A[r][c] = 2
     ```
 
-    4\. Viết hàm `fill_upper_triangle()` dùng để gán `3` vào tam giác trên.
+    4\. Viết hàm `fill_upper_triangle()` để gán `3` vào tam giác trên.
 
     Hàm có một tham số đầu vào là mảng hai chiều `A`; không có giá trị trả về.
 
@@ -483,7 +483,7 @@ n = 10
                 A[r][c] = 3
     ```
 
-    5\. Viết hàm `show()` dùng để in ra ma trận.
+    5\. Viết hàm `show()` để in ra ma trận.
 
     ```py linenums="26"
     def show(A):
@@ -564,7 +564,7 @@ Không có dữ liệu đầu vào.
     import numpy as np
     ```
 
-    2\. Viết hàm `fill_chess_board()` dùng để gán `0` và `1` vào các ô của bàn cờ.
+    2\. Viết hàm `fill_chess_board()` để gán `0` và `1` vào các ô của bàn cờ.
 
     Hàm gồm có:
     
@@ -591,7 +591,7 @@ Không có dữ liệu đầu vào.
         return B
     ```
 
-    3\. Viết hàm `show()` dùng để in ra bàn cờ.
+    3\. Viết hàm `show()` để in ra bàn cờ.
 
     ```py linenums="13"
     def show(A):
