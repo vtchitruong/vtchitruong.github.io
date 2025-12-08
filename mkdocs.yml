@@ -72,18 +72,18 @@ theme:
 
 # Customization
 extra:
-  alternate:
-    # Switch to Vietnamese (default)
-    - name: Tiếng Việt
-      link: ./
-      lang: vi
+  # alternate:
+  #   # Switch to Vietnamese (default)
+  #   - name: Tiếng Việt
+  #     link: ./
+  #     lang: vi
 
-    # Switch to English
-    - name: English
-      # The link will depend on how you deploy. 
-      # This example assumes the English version is built to a subfolder "en"
-      link: /en/ 
-      lang: en
+  #   # Switch to English
+  #   - name: English
+  #     # The link will depend on how you deploy. 
+  #     # This example assumes the English version is built to a subfolder "en"
+  #     link: /en/ 
+  #     lang: en
   annotate:
     json: [.s2]
   analytics:
@@ -298,8 +298,8 @@ plugins:
       shadow: true
       manual: false  
   - i18n:
-      default_language: vi # current default language
-      # docs_structure: suffix
+      # default_language: vi # current default language
+      docs_structure: suffix
       languages:
         - locale: vi
           name: Tiếng Việt
@@ -318,7 +318,7 @@ plugins:
       #   en:
       #     name: English # Display name for the English language
       #     build: true
-      material_alternate: true # Enables the Material for MkDocs language selector
+      # material_alternate: true # Enables the Material for MkDocs language selector
 
 # Page tree
 nav:
@@ -364,6 +364,7 @@ nav:
       - grade-10/topic-F/variable-basic-operators.md
       - grade-10/topic-F/function.md
       - grade-10/topic-F/conditional-statement-if.md
+      - grade-10/topic-F/conditional-statement-if-practice.md
       - grade-10/topic-F/for-loop.md
       - grade-10/topic-F/while-loop.md
       - grade-10/topic-F/list.md
