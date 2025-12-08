@@ -122,35 +122,68 @@ if __name__ == '__main__':
     key = int(input('Nhập giá trị cần tìm: '))
 ```
 
-Call the `binary_search()` function and store the result (the found index or -1) in a variable named `found`.
+!!! warning "Important note"
+
+    Before using binary search, the array must be sorted (in ascending or descending order).
+
+We use the `sort()` function from `numpy` to sort the array `Array` in **ascending order** (line 35). The sorted array is stored in `sorted_Array`.
 
 ```py linenums="27" hl_lines="9"
 if __name__ == '__main__':
     # Khởi tạo mảng Array
-    Array = [0, 1, 2, 4, 4, 4, 5, 5, 7, 8, 8, 9]
+    Array = np.array([1, 7, 4, 0, 9, 4, 8, 8, 2, 4, 5, 5])
 
     # Cho người dùng nhập giá trị cần tìm
     key = int(input('Nhập giá trị cần tìm: '))
 
+    # Sắp xếp mảng tăng dần
+    sorted_Array = np.sort(Array)
+
+    # In mảng sau khi sắp xếp
+    print(f'Mảng có thứ tự: {sorted_Array}')
+```
+
+Call the `binary_search()` function and store the result (the index where the value was found, or `-1`) in the variable `found` (line 41).
+
+```py linenums="27" hl_lines="15"
+if __name__ == '__main__':
+    # Khởi tạo mảng Array
+    Array = np.array([1, 7, 4, 0, 9, 4, 8, 8, 2, 4, 5, 5])
+
+    # Cho người dùng nhập giá trị cần tìm
+    key = int(input('Nhập giá trị cần tìm: '))
+
+    # Sắp xếp mảng tăng dần
+    sorted_Array = np.sort(Array)
+
+    # In mảng sau khi sắp xếp
+    print(f'Mảng có thứ tự: {sorted_Array}')
+
     # Gọi hàm binary_search()
-    found = binary_search(Array, key)
+    found = binary_search(sorted_Array, key)
 ```
 
 Based on the value of `found`, print an appropriate message:
 
-- If `found` is not `-1`, print that the value was found and show its position (index).
-- If `found` is `-1`, print that the value was not found.
+- If the value was found (`found ≠ -1`), display its index.
+- If the value was not found (`found == -1`), display a "not found" message.
 
-```py linenums="27" hl_lines="11-16"
+```py linenums="27" hl_lines="17-22"
 if __name__ == '__main__':
     # Khởi tạo mảng Array
-    Array = [0, 1, 2, 4, 4, 4, 5, 5, 7, 8, 8, 9]
+    Array = np.array([1, 7, 4, 0, 9, 4, 8, 8, 2, 4, 5, 5])
 
     # Cho người dùng nhập giá trị cần tìm
     key = int(input('Nhập giá trị cần tìm: '))
 
+    # Sắp xếp mảng tăng dần
+    sorted_Array = np.sort(Array)
+
+    # In mảng sau khi sắp xếp
+    print(f'Mảng có thứ tự: {sorted_Array}')
+
     # Gọi hàm binary_search()
-    found = binary_search(Array, key)
+    found = binary_search(sorted_Array, key)
 
     if found == -1:
         # Nếu chỉ số trả về là -1 thì in ra không tìm thấy
@@ -164,6 +197,7 @@ if __name__ == '__main__':
 
 ```pycon
 Nhập giá trị cần tìm: 4
+Mảng có thứ tự: [0 1 2 4 4 4 5 5 7 8 8 9]
 Tìm thấy 4 tại vị trí 5
 ```
 
@@ -171,12 +205,9 @@ Run the program again and enter `6` as the value to search for. The output will 
 
 ```pycon
 Nhập giá trị cần tìm: 6
+Mảng có thứ tự: [0 1 2 4 4 4 5 5 7 8 8 9]
 Không tìm thấy 6
 ```
-
-!!! note "Important note"
-
-    Before using binary search, the array must be sorted* (in ascending or descending order).
 
 ---
 

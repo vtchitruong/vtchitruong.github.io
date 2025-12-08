@@ -81,7 +81,7 @@ def binary_search(A, k):
     left = 0
     right = len(A) - 1
 
-    # Trong khi left chưa vượt quá right    
+    # Trong khi left chưa vượt quá right
     while left <= right:
         # Xác định mid
         mid = (left + right) // 2
@@ -89,7 +89,9 @@ def binary_search(A, k):
         # So sánh A[mid] với k
         if A[mid] == k:
             return mid
-        elif A[mid] < k:
+        
+        # Thu hẹp phạm vi tìm kiếm
+        if A[mid] < k:
             left = mid + 1
         else:
             right = mid - 1
@@ -105,38 +107,71 @@ Trong chương trình chính, ta tạm thời bỏ qua việc cho người dùng
 ```py linenums="27"
 if __name__ == '__main__':
     # Khởi tạo mảng Array
-    Array = [0, 1, 2, 4, 4, 4, 5, 5, 7, 8, 8, 9]
+    Array = np.array([1, 7, 4, 0, 9, 4, 8, 8, 2, 4, 5, 5])
 
     # Cho người dùng nhập giá trị cần tìm
     key = int(input('Nhập giá trị cần tìm: '))
 ```
 
-Gọi hàm `binary_search()` ra thực hiện, gán chỉ số (vị trí) tìm thấy cho biến `found`.
+!!! warning "Lưu ý quan trọng"
+    
+    Trước khi thực hiện tìm kiếm nhị phân, mảng phải được sắp xếp tăng dần hoặc giảm dần. 
+
+Ta dùng hàm `sort()` của `numpy` để sắp xếp mảng `Array` tăng dần (dòng lệnh 35). Mảng sau khi sắp xếp là `sorted_Array`.
 
 ```py linenums="27" hl_lines="9"
 if __name__ == '__main__':
     # Khởi tạo mảng Array
-    Array = [0, 1, 2, 4, 4, 4, 5, 5, 7, 8, 8, 9]
+    Array = np.array([1, 7, 4, 0, 9, 4, 8, 8, 2, 4, 5, 5])
 
     # Cho người dùng nhập giá trị cần tìm
     key = int(input('Nhập giá trị cần tìm: '))
 
+    # Sắp xếp mảng tăng dần
+    sorted_Array = np.sort(Array)
+
+    # In mảng sau khi sắp xếp
+    print(f'Mảng có thứ tự: {sorted_Array}')
+```
+
+Gọi hàm `binary_search()` ra thực hiện, gán chỉ số (vị trí) tìm thấy cho biến `found` (dòng lệnh 41).
+
+```py linenums="27" hl_lines="15"
+if __name__ == '__main__':
+    # Khởi tạo mảng Array
+    Array = np.array([1, 7, 4, 0, 9, 4, 8, 8, 2, 4, 5, 5])
+
+    # Cho người dùng nhập giá trị cần tìm
+    key = int(input('Nhập giá trị cần tìm: '))
+
+    # Sắp xếp mảng tăng dần
+    sorted_Array = np.sort(Array)
+
+    # In mảng sau khi sắp xếp
+    print(f'Mảng có thứ tự: {sorted_Array}')
+
     # Gọi hàm binary_search()
-    found = binary_search(Array, key)
+    found = binary_search(sorted_Array, key)
 ```
 
 Dựa vào biến `found`, in ra thông báo tìm thấy hoặc không tìm thấy.
 
-```py linenums="27" hl_lines="11-16"
+```py linenums="27" hl_lines="17-22"
 if __name__ == '__main__':
     # Khởi tạo mảng Array
-    Array = [0, 1, 2, 4, 4, 4, 5, 5, 7, 8, 8, 9]
+    Array = np.array([1, 7, 4, 0, 9, 4, 8, 8, 2, 4, 5, 5])
 
     # Cho người dùng nhập giá trị cần tìm
     key = int(input('Nhập giá trị cần tìm: '))
 
+    # Sắp xếp mảng tăng dần
+    sorted_Array = np.sort(Array)
+
+    # In mảng sau khi sắp xếp
+    print(f'Mảng có thứ tự: {sorted_Array}')
+
     # Gọi hàm binary_search()
-    found = binary_search(Array, key)
+    found = binary_search(sorted_Array, key)
 
     if found == -1:
         # Nếu chỉ số trả về là -1 thì in ra không tìm thấy
@@ -150,6 +185,7 @@ if __name__ == '__main__':
 
 ```pycon
 Nhập giá trị cần tìm: 4
+Mảng có thứ tự: [0 1 2 4 4 4 5 5 7 8 8 9]
 Tìm thấy 4 tại vị trí 5
 ```
 
@@ -157,12 +193,9 @@ Chạy lại chương trình trên, nhập giá trị cần tìm khác là `6`, 
 
 ```pycon
 Nhập giá trị cần tìm: 6
+Mảng có thứ tự: [0 1 2 4 4 4 5 5 7 8 8 9]
 Không tìm thấy 6
 ```
-
-!!! note "Nhận xét"
-    
-    Trước khi thực hiện tìm kiếm nhị phân, mảng phải được sắp xếp tăng dần hoặc giảm dần.  
 
 ---
 
