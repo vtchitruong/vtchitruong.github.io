@@ -28,7 +28,7 @@ markmap:
 - `delete`
 - `merge`
 
-### DQL
+### DCL
 
 - `grant`
 - `revoke`
