@@ -422,7 +422,10 @@ nav:
       - grade-11/topic-F3/sort-algorithm-bubble-sort.md
       - grade-11/topic-F3/sort-algorithm-exchange-sort.md
       - grade-11/topic-F3/linked-list.md
-      # - grade-11/topic-F3/algorithmic-complexity.md
+      - grade-11/topic-F3/algorithmic-complexity-a-simplified-overview.md
+      - grade-11/topic-F3/algorithmic-complexity-big-o-notation.md
+      - grade-11/topic-F3/algorithmic-complexity-rules-for-determining.md
+      - grade-11/topic-F3/algorithmic-complexity-of-search-and-sort.md
       # - grade-11/topic-F3/programming-module.md
     - Chủ đề G:
       - Mục lục: grade-11/topic-G/topic-index.md
