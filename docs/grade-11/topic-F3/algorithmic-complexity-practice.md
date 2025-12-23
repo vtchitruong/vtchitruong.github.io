@@ -6,9 +6,21 @@ icon: material/chart-bell-curve-cumulative
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này hướng dẫn cách xác định độ phức tạp của một số thuật toán đơn giản. Các ví dụ này đều lấy từ quyển *Cracking the coding interview* [^1].
+    Bài này hướng dẫn cách xác định độ phức tạp của một số đoạn mã.
+    
+    Các ví dụ trong bài đều tham khảo từ quyển *Cracking the coding interview* [^1].
 
     [^1]: McDowell, G. L. (2015). Cracking the coding interview: 189 programming questions and solutions (6th ed.). CareerCup.
+
+Với mỗi đoạn mã dưới đây, ta đều có hai cách xác định độ phức tạp:
+
+- **Cách 1: đếm bước**
+
+    Tính $T(n)$, rồi dựa vào đó tìm hàm rút gọn. Cách này mang tính hàn lâm, giúp hiểu rõ bản chất tại sao ra được kết quả.
+
+- **Cách 2: phân tích cấu trúc**
+
+    Áp dụng các quy tắc Big O lên từng khối lệnh. Cách này giúp xác định nhanh chóng. 
 
 ## Đoạn mã 1
 
