@@ -22,6 +22,8 @@ Với mỗi đoạn mã dưới đây, ta đều có hai cách xác định đ�
 
     Áp dụng các quy tắc Big O lên từng khối lệnh. Cách này giúp xác định nhanh chóng. 
 
+---
+
 ## Đoạn mã 1
 
 ```py linenums="1" hl_lines="7 10"
@@ -74,6 +76,8 @@ def func(A):
 
     $O(n) + O(n) = O(\max(n, n)) = O(n)$
 
+---
+
 ## Đoạn mã 2
 
 ```py linenums="1" hl_lines="6"
@@ -116,6 +120,8 @@ def func(A):
     Do hai vòng lặp này lồng nhau, ta áp dụng quy tắc nhân:
 
     $O(n) \times O(n) = O(n^2)$
+
+---
 
 ## Đoạn mã 3
 
@@ -170,6 +176,8 @@ def func(A):
 
     $O(n) \times O(n) = O(n^2)$
 
+---
+
 ## Đoạn mã 4
 
 ```py linenums="1" hl_lines="7-8"
@@ -216,6 +224,8 @@ def print_unordered_pairs(A, B):
     Do hai vòng lặp này lồng nhau, ta áp dụng quy tắc nhân:
 
     $O(n) \times O(m) = O(m \cdot n)$
+
+---
 
 ## Đoạn mã 5
 
@@ -265,6 +275,8 @@ def print_unordered_pairs(A, B):
     Do ba vòng lặp này lồng nhau, ta áp dụng quy tắc nhân:
 
     $O(n) \times O(m) \times O(1) = O(m \cdot n)$
+
+---
 
 ## Đoạn mã 6
 

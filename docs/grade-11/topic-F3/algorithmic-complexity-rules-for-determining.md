@@ -31,6 +31,8 @@ Việc xác định chính xác độ phức tạp của thuật toán đôi khi
 Ví dụ:  
 Dòng lệnh `x = 5` có độ phức tạp là $O(1)$.
 
+---
+
 ## Quy tắc lược bỏ hằng số
 
 Trong Big O, ta không quan tâm đến các hằng số $c$, bất kể nó nằm trong hay ngoài.
@@ -51,6 +53,8 @@ b = t
 ```
 
 Độ phức tạp của đoạn mã trên là: $O(1) + O(1) + O(1) = 3 \times O(1) = O(1)$.
+
+---
 
 ## Quy tắc cộng (quy tắc lấy max)
 
@@ -136,6 +140,8 @@ Nhánh 2 có độ phức tạp $O(n)$.
 
 Trong trường hợp xấu nhất, tức rơi vào `else`, độ phức tạp tổng thể là: $max(O(1), O(n)) = O(n)$.
 
+---
+
 ## Quy tắc nhân
 
 Quy tắc nhân được áp dụng chủ yếu cho các cấu trúc lặp.
@@ -202,11 +208,15 @@ Do đó, độ phức tạp là $O(n)$.
 
 Do có hai vòng lặp lồng nhau, độ phức tạp tổng thể là: $O(n) \times O(n) = O(n^2)$
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/algorithmic-complexity-rules-for-determining.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

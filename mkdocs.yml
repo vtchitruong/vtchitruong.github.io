@@ -365,8 +365,8 @@ nav:
       - grade-10/topic-F/function.md
       - grade-10/topic-F/conditional-statement-if.md
       - grade-10/topic-F/conditional-statement-if-practice.md
-      - grade-10/topic-F/for-loop.md
-      - grade-10/topic-F/while-loop.md
+      - grade-10/topic-F/loop-structure-for.md
+      - grade-10/topic-F/loop-structure-while.md
       - grade-10/topic-F/list.md
       # - grade-10/topic-F/list-iterating-processing.md
       - grade-10/topic-F/list-manipulating-functions.md

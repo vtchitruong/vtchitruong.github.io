@@ -26,6 +26,8 @@ Cùng một thuật toán, thời gian chạy có thể thay đổi tuỳ theo d
 
 Trong lập trình, ta thường quan tâm đến trường hợp xấu nhất.
 
+---
+
 ## Ký hiệu
 
 Mỗi trường hợp có một ký hiệu riêng. Trong đó, ký hiệu $O$, đọc là **Big-Oh**, có thể xem là phổ biến nhất và thường áp dụng cho trường hợp xấu nhất.
@@ -36,6 +38,8 @@ Mỗi trường hợp có một ký hiệu riêng. Trong đó, ký hiệu $O$, �
 
     - $n$ là kích thước của dữ liệu đầu vào.
     - $f(n)$ là hàm số theo $n$ thể hiện mức độ tăng trưởng của số lượng phép toán tích cực.
+
+---
 
 ## Diễn giải cách xác định
 
@@ -100,6 +104,8 @@ Chọn $c = 18$ và $n_0 = 1$: $T(n) \le 18.n^2$ (đúng)
 
 Vậy $T(n) = O(n^2)$
 
+---
+
 ## So sánh
 
 Khi phân tích độ phức tạp, ta thường tập trung vào trường hợp xấu nhất, là trường hợp cho thấy được **giới hạn cận trên** (ngưỡng tối đa) của thuật toán.
@@ -138,6 +144,8 @@ Lưu ý:
 Nhận xét:  
 Dễ thấy, $log n < n$ nên thuật toán tìm kiếm nhị phân nhanh hơn thuật toán tìm kiếm tuần tự.
 
+---
+
 ## Một số Big O phổ biến
 
 Bảng sau liệt kê một số Big O phổ biến và tên gọi của chúng.
@@ -163,11 +171,15 @@ Biểu đồ dưới đây biểu diễn sự tương quan giữa các Big O tr�
     <iframe width="100%" height="480px" frameBorder=0 src="../images/big-o-chart.html"></iframe>
 </div>
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/algorithmic-complexity-big-o-notation.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

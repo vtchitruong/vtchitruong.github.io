@@ -16,6 +16,8 @@ Khi cần kiểm tra sự tồn tại của một giá trị nào đó trong m�
 
 Câu hỏi tổng quát là, khi có nhiều thuật toán giải quyết cùng một bài toán, thuật toán nào hiệu quả nhất?
 
+---
+
 ## Khái niệm
 
 Một thuật toán hiệu quả có thể được hiểu theo nghĩa: chạy nhanh và tốn ít tài nguyên máy tính.
@@ -26,6 +28,8 @@ Một thuật toán hiệu quả có thể được hiểu theo nghĩa: chạy n
 !!! note "Khái niệm độ phức tạp"
 
     **Độ phức tạp thuật toán** là **thước đo định lượng** (hay còn gọi là **độ đo**) dùng để đánh giá hiệu quả của thuật toán dựa trên lượng tài nguyên cần có để thực hiện thuật toán khi kích thước dữ liệu đầu vào thay đổi.
+
+---
 
 ## Phân loại
     
@@ -43,6 +47,8 @@ Ngày nay, sự phát triển của phần cứng giúp dung lượng bộ nhớ
 
 Do đó, bài này chỉ đề cập độ phức tạp thời gian của thuật toán. Từ nay gọi tắt là *độ phức tạp*.  
 
+---
+
 ## Ý tưởng
 
 Thời gian chạy thực tế của chương trình (1) phụ thuộc vào nhiều yếu tố khác nhau như ngôn ngữ lập trình, trình biên dịch, hệ điều hành, tốc độ CPU, RAM, v.v... Vì thế, để đánh giá thuật toán một cách công bằng, ta cần một đơn vị đo khác, độc lập với các yếu tố trên.
@@ -58,6 +64,8 @@ Cụ thể hơn, thay vì bấm giờ, ta sẽ *"đếm"* **số lượng phép 
 
     Theo đó, độ phức tạp thời gian được xác định bằng cách ước lượng số lần thực hiện **phép toán tích cực** khi dữ liệu đầu vào tăng lên.
 
+---
+
 ## Phép toán tích cực và phép toán cơ bản
 
 **Phép toán tích cực** là phép toán cơ bản được thực hiện **thường xuyên nhất**, hay nhiều lần nhất, trong thuật toán.  
@@ -70,11 +78,15 @@ Cụ thể hơn, thay vì bấm giờ, ta sẽ *"đếm"* **số lượng phép 
 - Truy xuất bộ nhớ: `A[i]`
 - Nhập, xuất biến đơn: `input()`, `print(x)`
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/algorithmic-complexity-a-simplified-overview.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

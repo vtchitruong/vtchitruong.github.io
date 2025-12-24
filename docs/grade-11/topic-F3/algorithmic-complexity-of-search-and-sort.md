@@ -14,6 +14,8 @@ icon: material/chart-bell-curve-cumulative
 - Bước 2: Đánh giá số lần thực hiện phép toán tích cực.  
 - Bước 3: Áp dụng các quy tắc đã học để xác định độ phức tạp.  
 
+---
+
 ## Tìm kiếm tuần tự
 
 ```py linenums="1" hl_lines="5"
@@ -44,6 +46,8 @@ Khi đó, vòng lặp chạy `n` lần. Nghĩa là, phép toán tích cực đư
 Theo quy tắc vòng lặp đơn, độ phức tạp của thuật toán tìm kiếm tuần tự là:
 
 $n \times O(1) = O(n)$
+
+---
 
 ## Tìm kiếm nhị phân
 
@@ -95,6 +99,8 @@ $\frac{n}{2^t} = 1 \Rightarrow 2^t = n \Rightarrow t = \log_2(n)$
 Theo quy tắc vòng lặp đơn, độ phức tạp của thuật toán tìm kiếm nhị phân là:
 
 $\log_2 n \times O(1) = O(\log_2 n)$
+
+---
 
 ## Sắp xếp chọn
 
@@ -151,6 +157,8 @@ Vậy độ phức tạp của thuật toán sắp xếp chọn là $O(n^2)$.
     
     $O(n) \times O(n) = O(n^2)$
 
+---
+
 ## Sắp xếp chèn
 
 ```py linenums="1" hl_lines="9"
@@ -204,6 +212,8 @@ Dựa vào hàm $T(n)$ vừa tính được:
 
 Độ phức tạp của thuật toán sắp xếp chèn là $O(n^2)$.
 
+---
+
 ## Sắp xếp nổi bọt
 
 ```py linenums="1" hl_lines="6"
@@ -255,6 +265,8 @@ Dựa vào hàm $T(n)$ vừa tính được:
 ??? tip "Mẹo vặt"
 
     Với các đoạn mã gồm nhiều vòng lặp lồng nhau, phép toán tích cực thường nằm ở vòng lặp trong cùng.
+
+---
 
 ## Sơ đồ tóm tắt
 
