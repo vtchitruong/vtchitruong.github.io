@@ -368,8 +368,9 @@ nav:
       - grade-10/topic-F/loop-structure-for.md
       - grade-10/topic-F/loop-structure-while.md
       - grade-10/topic-F/list.md
+      - grade-10/topic-F/list-practice-1.md
+      - grade-10/topic-F/list-some-operations-on-lists.md
       # - grade-10/topic-F/list-iterating-processing.md
-      - grade-10/topic-F/list-manipulating-functions.md
       - grade-10/topic-F/string.md
     - Chủ đề G:
       - Mục lục: grade-10/topic-G/topic-index.md
@@ -411,6 +412,7 @@ nav:
     - Chủ đề F3:
       - Mục lục: grade-11/topic-F3/topic-index.md
       - grade-11/topic-F3/data-structure-one-dimensional-array.md
+      # - grade-11/topic-F3/data-structure-one-dimensional-array-practice.md
       - grade-11/topic-F3/data-structure-two-dimensional-array.md
       - grade-11/topic-F3/data-structure-two-dimensional-array-practice.md
       - grade-11/topic-F3/search-algorithm-linear-search.md
