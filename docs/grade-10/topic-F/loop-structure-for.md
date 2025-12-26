@@ -19,7 +19,7 @@ Làm sao để thực hiện yêu cầu này một cách nhanh nhất và đẹp
 
 Trong lập trình, để giải quyết các công việc có tính chất lặp đi lặp lại như trên một cách nhanh chóng và chính xác, chúng ta sử dụng cấu trúc lặp.
 
-!!! note "Vòng lặp for"
+!!! note "Khái niệm vòng lặp for"
 
     Câu lệnh `for` là một dạng **cấu trúc lặp**, áp dụng khi ta **biết trước số lần lặp** của một thao tác nào đó.
 
@@ -31,7 +31,7 @@ Vòng lặp giúp tận dụng được ưu điểm của máy tính, đó là *
 
 ## Cú pháp
 
-!!! note "Cú pháp"
+!!! note "Cú pháp vòng lặp for"
 
     ```py
     for i in range(số_lần_lặp):

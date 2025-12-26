@@ -31,10 +31,12 @@ May thay, các ngôn ngữ lập trình đều có hỗ trợ những cấu trú
 
 ### Khái niệm
 
-`list` là một **cấu trúc dữ liệu** (1) của Python, được dùng để lưu trữ và xử lý tập hợp gồm nhiều **phần tử**.
-{ .annotate }
+!!! note "Cấu trúc dữ liệu list"
 
-1.  `list` có thể xem là **kiểu dữ liệu** hoặc **cấu trúc dữ liệu** tuỳ góc nhìn.
+    `list` là một **cấu trúc dữ liệu** (1) của Python, được dùng để lưu trữ và xử lý tập hợp gồm nhiều **phần tử**.
+    { .annotate }
+
+    1.  `list` có thể xem là **kiểu dữ liệu** hoặc **cấu trúc dữ liệu** tuỳ góc nhìn.
 
 `list` còn được gọi bằng thuật ngữ **danh sách**.
 
@@ -104,7 +106,9 @@ Số lượng phần tử: 10
 
 ### Truy xuất phần tử
 
-Mỗi phần tử trong danh sách gồm có hai yếu tố: **chỉ số** và **giá trị**.
+!!! note "Phần tử trong list"
+
+    Mỗi phần tử trong danh sách gồm có hai yếu tố: **chỉ số** và **giá trị**.
 
 Chỉ số được đánh thứ tự từ `0` đến `n - 1`. Cụ thể:
 

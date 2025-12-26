@@ -12,9 +12,13 @@ icon: material/invoice-import-outline
 
 In programming, **input** means the program **receives data** from the user, while **output** means the program **displays information** on the screen.
 
+---
+
 ## Reading input
 
-To let the user enter data into a program, we use the built-in function `input()`.
+!!! note "Input in Python"
+
+    To let the user enter data into a program, we use the built-in function `input()`.
 
 ![Illustration of the input() function](./input-and-output/input.png){loading=lazy width=300}
 
@@ -34,9 +38,13 @@ Tên đăng nhập: mrschool
 Mật khẩu: 12345678
 ```
 
+---
+
 ## Displaying output
 
-To display information on the screen, we use the `print()` function.
+!!! note "Output in Python"
+
+    To display information on the screen, we use the `print()` function.
 
 ![Illustration of the print() function](./input-and-output/print.png){loading=lazy width=300}
 
@@ -74,17 +82,23 @@ Bạn đã bị hack 😆
 
     Using f-strings with `print()` is the modern, professional, and readable way in Python.
 
+---
+
 ## Source code
 
 The complete code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/1u5xFZD97jD0R5hm8TREJ5y5Pd0gjKzmS?usp=sharing){target="_blank"}
 
+---
+
 ## Summary mindmap
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-10/topic-F/mindmaps/input-and-output.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

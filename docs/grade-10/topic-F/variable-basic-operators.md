@@ -14,7 +14,11 @@ icon: material/division
 
 ## Nhập dữ liệu kiểu số
 
-Để nhập số nguyên, ta dùng hàm `int()` để chuyển đổi dữ liệu của `input()` thành số nguyên.
+!!! note "Nhập số nguyên"
+
+    Để nhập số nguyên, ta dùng hàm `int()`
+    
+Hàm `int()` được dùng để chuyển đổi dữ liệu của `input()` từ kiểu chuỗi thành kiểu số nguyên.
 
 Ví dụ:  
 Dòng lệnh 2 yêu cầu người dùng nhập vào một số nguyên và gán cho biến `a`.
@@ -43,9 +47,13 @@ Ví dụ:
 - `7.0` là số thực.
 - Trong máy tính nói chung, `7` và `7.0` là hai số khác nhau.
 
-!!! tip "Nhập số thực"
+!!! note "Nhập số thực"
 
     Để nhập dữ liệu kiểu số thực, ta dùng hàm `float()`.
+
+Hàm `float()` được dùng để chuyển đổi dữ liệu của `input()` từ kiểu chuỗi thành kiểu số thực.
+
+---
 
 ## Biến
 
@@ -53,13 +61,19 @@ Trong đoạn mã trên, khi người dùng nhập dữ liệu từ hàm `input(
 
 Cái tên dùng để tham chiếu vùng nhớ đó được gọi là **biến**, trong trường hợp này là biến `a`.
 
-Trong lập trình, **biến** là tên tham chiếu đến một vùng nhớ chứa giá trị nào đó có chứa giá trị. Giá trị này có thể hợp lệ hoặc chưa xác định.
+!!! note "Biến trong lập trình"
 
-Nói ví von, biến là một cái hộp để ta đặt dữ liệu vào đó và có thể sử dụng nhiều lần trong chương trình của mình.  
+    **Biến** là tên tham chiếu đến một vùng nhớ trong máy tính nhằm lưu trữ một giá trị nào đó.
+
+Nói ví von, biến là một cái hộp để ta đặt dữ liệu vào đó và có thể sử dụng nhiều lần trong chương trình của mình.
+
+---
 
 ## Toán tử gán
 
-Toán tử **gán** được dùng để gán giá trị ở bên vế phải cho biến ở bên trái.
+!!! note "Toán tử gán `=`"
+
+    Toán tử **gán** được dùng để gán giá trị ở bên vế phải cho biến ở bên trái.
 
 Ví dụ:  
 Trong đoạn mã trên, chương trình sẽ gán giá trị của vế phải `int(input('Nhập số nguyên a: '))` cho biến `a` bên vế trái.
@@ -71,6 +85,8 @@ Trong dòng lệnh trên, chương trình sẽ:
 
 1. Tính giá trị của biểu thức bên vế phải: `3.14 * 2 * r`.
 2. Gán giá trị kết quả cho biến `p` bên vế trái.
+
+---
 
 ## Một số toán tử khác
 
@@ -117,17 +133,23 @@ Chia lấy dư: 1
 Lũy thừa: 1000
 ```
 
+---
+
 ## Mã nguồn
 
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1XnIzg0vAZRBZiRXB9OZlKVeCcnT5MyS_?usp=sharing){target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-10/topic-F/mindmaps/variable-basic-operators.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

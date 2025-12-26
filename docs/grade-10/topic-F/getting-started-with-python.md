@@ -30,6 +30,8 @@ Một số đặc điểm nổi bật của Python:
 - Đa năng và đa mục đích, đặc biệt là ứng dụng rộng rãi trong lĩnh vực phân tích dữ liệu và trí tuệ nhân tạo.
 - Mã nguồn mở và cộng đồng lớn.
 
+---
+
 ## Công cụ viết mã lệnh
 
 Để viết mã lệnh Python, ta có thể sử dụng bất kỳ chương trình soạn thảo văn bản (1) nào tùy ý.
@@ -43,6 +45,8 @@ Bài này chỉ đề cập hai chương trình là:
 
 - [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}
 - [Google Colab](https://colab.research.google.com/){:target="_blank"}
+
+---
 
 ## Sử dụng Visual Studio Code
 
@@ -160,6 +164,8 @@ Trong **File Explorer** (1) của Windows, tạo một thư mục mới trong �
 
     ![Kết quả chạy chương trình trong cửa sổ Terminal](https://www.flickr.com/photo_download.gne?size=l&id=54898413540&secret=b193704c5f){loading=lazy width=540}
 
+---
+
 ## Sử dụng Google Colab
 
 ### Tạo tập tin
@@ -234,11 +240,15 @@ Cách 2:
 
     ![Kết quả chạy chương trình trong Google Colab](https://www.flickr.com/photo_download.gne?size=l&id=54898352204&secret=5f2a77a6ae){loading=lazy width=540}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 500px" frameBorder=0 src="/grade-10/topic-F/mindmaps/getting-started-with-python.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

@@ -10,9 +10,13 @@ icon: material/function
 
 ## Khái niệm
 
-**Hàm** là một khối lệnh được viết riêng biệt để thực hiện một nhiệm vụ cụ thể.
+!!! note "Hàm trong lập trình"
+
+    **Hàm** là một khối lệnh được viết riêng biệt để thực hiện một nhiệm vụ cụ thể.
 
 Hàm có thể được xem là một chiếc máy mà khi ta đưa dữ liệu vào, chiếc máy sẽ xử lý bên trong rồi đưa ra kết quả.
+
+---
 
 ## Phân loại
 
@@ -23,6 +27,8 @@ Python có ba loại hàm:
 | 1 | Hàm có sẵn | Do Python cung cấp sẵn. <br> Lập trình viên chỉ cần gọi hàm ra sử dụng. | `print()`, `input()`, `int()` |
 | 2 | Hàm do người dùng định nghĩa | Do lập trình viên tự viết. <br> Có thể tái sử dụng và chia sẻ cho người khác. | `def area(a, b):` |
 | 3 | Hàm ẩn danh | Hàm nhỏ do lập trình viên tự viết. <br> Hàm này không có tên và thường chỉ dùng một lần. | `lambda x: x * 2` |
+
+---
 
 ## Lợi ích
 
@@ -49,6 +55,8 @@ Python có ba loại hàm:
 5. **Phát triển tư duy**
     
     Viết chương trình theo hàm giúp phát triển tư duy thuật toán, giúp rèn luyện năng lực phân tích bài toán và giúp điểm môn Tin học cao hơn 🫡.
+
+---
 
 ## Cách viết hàm tự định nghĩa
 
@@ -103,17 +111,23 @@ Chiều rộng: 4
 Diện tích hình chữ nhật: 72
 ```
 
+---
+
 ## Mã nguồn
 
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1lzwmaGXUisJYHCQDtQe7laH_fvMtTe5P?usp=sharing){target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-10/topic-F/mindmaps/function.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

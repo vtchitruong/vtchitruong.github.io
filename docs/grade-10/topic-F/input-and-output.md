@@ -12,9 +12,13 @@ icon: material/invoice-import-outline
 
 Trong lập trình, **nhập** là cách chương trình **nhận dữ liệu** từ người dùng, còn **xuất** là cách chương trình **hiển thị thông tin** ra màn hình.
 
+---
+
 ## Nhập dữ liệu
 
-Để người dùng có thể nhập dữ liệu vào chương trình, ta dùng hàm `input()`.
+!!! note "Nhập liệu trong Python"
+
+    Để người dùng có thể nhập dữ liệu vào chương trình, ta dùng hàm `input()`.
 
 ![Minh hoạ hàm input()](./input-and-output/input.png){loading=lazy width=300}
 
@@ -34,9 +38,13 @@ Tên đăng nhập: mrschool
 Mật khẩu: 12345678
 ```
 
+---
+
 ## Xuất thông tin
 
-Để chương trình xuất thông tin ra màn hình, ta dùng hàm `print()`.
+!!! note "Xuất liệu trong Python"
+
+    Để chương trình xuất hoặc in thông tin ra màn hình, ta dùng hàm `print()`.
 
 ![Minh hoạ hàm print()](./input-and-output/print.png){loading=lazy width=300}
 
@@ -74,17 +82,23 @@ Bạn đã bị hack 😆
 
     Áp dụng f-string trong hàm `print()` là cách làm hiện đại, chuyên nghiệp và dễ đọc.
 
+---
+
 ## Mã nguồn
 
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1u5xFZD97jD0R5hm8TREJ5y5Pd0gjKzmS?usp=sharing){target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-10/topic-F/mindmaps/input-and-output.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

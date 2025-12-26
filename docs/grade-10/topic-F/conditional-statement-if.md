@@ -14,21 +14,23 @@ Không phải bài toán nào cũng được giải quyết theo một *"đườ
 
 Trên thực tế, có rất nhiều bài toán mà trong quá trình giải quyết, phát sinh các trường hợp khác nhau, buộc ta phải chọn một hướng duy nhất để đi tiếp, chứ không thể *phân thân* đi nhiều hướng cùng lúc.
 
-Trong các ngôn ngữ lập trình, `if` là **cấu trúc điều kiện** (1), được dùng để giải quyết bài toán có nhiều trường hợp.
-{ .annotate }
+!!! note "Câu lệnh if"
 
-1.  Một số sách giáo khoa gọi là **cấu trúc rẽ nhánh**.  
+    Trong các ngôn ngữ lập trình, `if` là **cấu trúc điều kiện** (1), được dùng để giải quyết bài toán có nhiều trường hợp.
+    { .annotate }
+
+    1.  Một số sách giáo khoa gọi là **cấu trúc rẽ nhánh**.  
 
 ---
 
 ## if thiếu
 
-**Cú pháp:**
+!!! note "Cú pháp if thiếu"
 
-```py
-if điều_kiện:
-    # Thực thi nếu điều_kiện đúng
-```
+    ```py
+    if điều_kiện:
+        # Thực thi nếu điều_kiện đúng
+    ```
 
 Nếu `điều_kiện` có giá trị `True` thì thực thi khối lệnh ngay bên dưới.
 
@@ -71,14 +73,14 @@ Xuất sắc! Bạn đã đạt điểm tối đa 🎉
 
 ## if đủ dành cho hai trường hợp
 
-**Cú pháp:**
+!!! note "Cú pháp if hai trường hợp"
 
-```py
-if điều_kiện:
-    # Thực thi nếu điều_kiện đúng
-else:
-    # Thực thi nếu điều_kiện sai
-```
+    ```py
+    if điều_kiện:
+        # Thực thi nếu điều_kiện đúng
+    else:
+        # Thực thi nếu điều_kiện sai
+    ```
 
 Nếu `điều_kiện` có giá trị `True` thì thực thi khối lệnh ngay bên dưới.
 
@@ -118,20 +120,20 @@ Chưa thể xác định bạn đậu hay rớt 🤔
 
 ## if đủ dành cho ba trường hợp trở lên
 
-**Cú pháp:**
+!!! note "Cú pháp if ba trường hợp"
 
-```py
-if điều_kiện_1:
-    # Thực thi nếu điều_kiện_1 đúng 
-elif điều_kiện_2:
-    # Thực thi nếu điều_kiện_2 đúng
-...
-
-elif
+    ```py
+    if điều_kiện_1:
+        # Thực thi nếu điều_kiện_1 đúng 
+    elif điều_kiện_2:
+        # Thực thi nếu điều_kiện_2 đúng
     ...
-else:
-    # Thực thi đối với các trường hợp còn lại
-```
+
+    elif
+        ...
+    else:
+        # Thực thi đối với các trường hợp còn lại
+    ```
 
 Cấu trúc if này xử lý riêng cho từng trường hợp.
   

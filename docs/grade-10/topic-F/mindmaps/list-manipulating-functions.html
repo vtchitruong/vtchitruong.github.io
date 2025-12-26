@@ -1,26 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <title>Markmap</title>
 <style>
 * {
   margin: 0;
   padding: 0;
 }
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
 #mindmap {
   display: block;
   width: 100vw;
   height: 100vh;
 }
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
 </head>
 <body>
 <svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(r => {
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
               setTimeout(r);
             })(function renderToolbar() {
   const {
@@ -39,6 +50,9 @@
                 (getOptions || markmap.deriveOptions)(jsonOptions),
                 root2
               );
-            })(() => window.markmap,null,{"content":"Duy&#x1ec7;t v&#xe0; x&#x1eed; l&#xfd; danh s&#xe1;ch","children":[{"content":"L&#x1ea5;y s&#x1ed1; l&#x1b0;&#x1ee3;ng ph&#x1ea7;n t&#x1eed;","children":[{"content":"<code>n = len(L)</code>","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Duy&#x1ec7;t v&#xe0; x&#x1eed; l&#xfd;","children":[{"content":"<code>for i in range(len(L)):</code>","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"<code>if &#x111;i&#x1ec1;u_ki&#x1ec7;n: th&#x1ef1;c_hi&#x1ec7;n_thao_t&#xe1;c_n&#xe0;o_&#x111;&#xf3;</code>","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"Tr&#x1ea3; v&#x1ec1; k&#x1ebf;t qu&#x1ea3;","children":[{"content":"<code>return k&#x1ebf;t_qu&#x1ea3;</code>","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"h2","lines":"17,18"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"H&#xe0;m thao t&#xe1;c v&#x1edb;i list","children":[{"content":"Th&#xea;m","children":[{"content":"\n<p data-lines=\"10,11\"><code>append(e)</code></p>","children":[{"content":"Th&#xea;m v&#xe0;o cu&#x1ed1;i","children":[],"payload":{"tag":"li","lines":"12,14"}}],"payload":{"tag":"li","lines":"10,14"}},{"content":"\n<p data-lines=\"14,15\"><code>insert(p, e)</code></p>","children":[{"content":"Ch&#xe8;n v&#xe0;o v&#x1ecb; tr&#xed; c&#x1ee5; th&#x1ec3;","children":[],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"li","lines":"14,18"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Xo&#xe1; ph&#x1ea7;n t&#x1eed;","children":[{"content":"\n<p data-lines=\"20,21\"><code>remove(e)</code></p>","children":[{"content":"Xo&#xe1; ph&#x1ea7;n t&#x1eed; theo gi&#xe1; tr&#x1ecb;","children":[],"payload":{"tag":"li","lines":"22,24"}}],"payload":{"tag":"li","lines":"20,24"}},{"content":"\n<p data-lines=\"24,25\"><code>pop(p)</code></p>","children":[{"content":"Xo&#xe1; ph&#x1ea7;n t&#x1eed; theo v&#x1ecb; tr&#xed;","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"li","lines":"24,28"}},{"content":"\n<p data-lines=\"28,29\"><code>clear()</code></p>","children":[{"content":"Xo&#xe1; to&#xe0;n b&#x1ed9; ph&#x1ea7;n t&#x1eed;","children":[],"payload":{"tag":"li","lines":"30,31"}}],"payload":{"tag":"li","lines":"28,31"}}],"payload":{"tag":"h2","lines":"18,19"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
 </body>
 </html>
