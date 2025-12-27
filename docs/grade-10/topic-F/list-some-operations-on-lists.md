@@ -10,7 +10,7 @@ icon: material/format-list-numbered
     
     - Chỉ số âm
     - Kỹ thuật lát cắt
-    - Các hàm thêm phần tử vào danh sách
+    - Các hàm thêm phần tử vô danh sách
     - Các hàm xoá phần tử khỏi danh sách
     - Các hàm đếm, tìm kiếm và sắp xếp trên danh sách
 
@@ -57,6 +57,8 @@ Danh sách ban đầu: [1, 7, 4, 0, 9, 4, 8, 8]
 Phần tử đầu tiên: 1
 Phần tử cuối cùng: 8
 ```
+
+---
 
 ## Lát cắt
 
@@ -108,58 +110,61 @@ Chạy đoạn mã trên, kết quả như sau:
 Các phần tử ở vị trí chẵn: [1, 4, 9, 8]
 ```
 
+---
+
+
 ## Thêm phần tử
 
 | Hàm | Công dụng |
 | --- | --- |
-| `append(e)` | Thêm phần tử `e` vào cuối danh sách. |
-| `insert(p, e)` | Chèn phần tử `e` vào vị trí `p`. |
-| `extend(E)` | Thêm danh sách `E` vào danh sách hiện tại. |
+| `L.append(e)` | Thêm phần tử `e` vô cuối danh sách `L`. |
+| `L.insert(p, e)` | Chèn phần tử `e` vô vị trí `p` trong danh sách `L`. |
+| `L.extend(E)` | Thêm danh sách `E` vô danh sách hiện tại của danh sách `L`. |
 
 Ví dụ:  
-Dòng lệnh 17 thêm phần tử `2` vào cuối danh sách.
+Dòng lệnh 17 thêm phần tử `2` vô cuối danh sách.
 
 ```py linenums="15" hl_lines="3"
-    # Thêm 2 vào cuối
+    # Thêm 2 vô cuối
     e = 2
     L.append(e)
 
-    print(f'Thêm 2 vào cuối: {L}')
+    print(f'Thêm 2 vô cuối: {L}')
 ```
 
 Chạy đoạn mã trên, kết quả như sau:
 
 ```pycon
-Thêm 2 vào cuối: [1, 7, 4, 0, 9, 4, 8, 8, 2]
+Thêm 2 vô cuối: [1, 7, 4, 0, 9, 4, 8, 8, 2]
 ```
 
 Ví dụ:  
-Dòng lệnh 24 chèn phần tử `-1` vào đầu danh sách.
+Dòng lệnh 24 chèn phần tử `-1` vô đầu danh sách.
 
 ```py linenums="21" hl_lines="4"
-    # Chèn -1 vào vị trí đầu tiên
+    # Chèn -1 vô vị trí đầu tiên
     p = 0
     e = -1
     L.insert(p, e)
 
-    print(f'Chèn -1 vào đầu: {L}')
+    print(f'Chèn -1 vô đầu: {L}')
 ```
 
 Chạy đoạn mã trên, kết quả như sau:
 
 ```pycon
-Chèn -1 vào đầu: [-1, 1, 7, 4, 0, 9, 4, 8, 8, 2]
+Chèn -1 vô đầu: [-1, 1, 7, 4, 0, 9, 4, 8, 8, 2]
 ```
 
 Ví dụ:  
-Dòng lệnh 30 thêm 4 phần tử của danh sách `E` vào danh sách `L`.
+Dòng lệnh 30 thêm 4 phần tử của danh sách `E` vô danh sách `L`.
 
 ```py linenums="28" hl_lines="3"
-    # Thêm 3 phần tử vào cuối
+    # Thêm 3 phần tử vô cuối
     E = [4, 5, 5]
     L.extend(E)
 
-    print(f'Thêm 3 phần tử vào cuối: {L}')
+    print(f'Thêm 3 phần tử vô cuối: {L}')
 ```
 
 Chạy đoạn mã trên, kết quả như sau:
@@ -174,9 +179,9 @@ Thêm 4 phần tử: [-1, 1, 7, 4, 0, 9, 4, 8, 8, 2, 4, 5, 5]
 
 | Hàm | Công dụng |
 | --- | --- |
-| `remove(e)` | Xoá phần tử có giá trị `e`. |
-| `pop(p)` | Xoá phần tử tại vị trí `p`. |
-| `clear()` | Xoá toàn bộ phần tử trong danh sách. |
+| `L.remove(e)` | Xoá phần tử có giá trị `e` khỏi danh sách `L`. |
+| `L.pop(p)` | Xoá phần tử tại vị trí `p` khỏi danh sách `L`. |
+| `L.clear()` | Xoá toàn bộ phần tử trong danh sách `L`. |
 
 Ví dụ:  
 Dòng lệnh 34 xoá phần tử có giá trị là `0`.
@@ -222,13 +227,15 @@ Xoá phần tử đầu tiên: [1, 7, 4, 9, 4, 8, 8, 2, 4, 5, 5]
 
 | Hàm | Công dụng |
 | --- | --- |
-| `count(e)` | Đếm số lần xuất hiện phần tử `e`. |
-| `index(e)` | Tìm kiếm vị trí xuất hiện đầu tiên của `e`. |
-| `sort()` | Sắp xếp danh sách theo thứ tự tăng dần. |
-| `sort(reverse=True)` | Sắp xếp danh sách theo thứ tự giảm dần. |
+| `L.count(e)` | Đếm số lần xuất hiện phần tử `e` trong danh sách `L`. |
+| `L.index(e)` | Tìm kiếm vị trí xuất hiện đầu tiên của `e` trong danh sách `L`. |
+| `L.sort()` | Sắp xếp danh sách `L` theo thứ tự tăng dần. |
+| `L.sort(reverse=True)` | Sắp xếp danh sách `L` theo thứ tự giảm dần. |
+| `sorted(L)` | Sắp xếp danh sách `L` tăng dần và trả về danh sách mới, không làm thay đổi `L`. |
+| `sorted(L, reverse=True)` | Sắp xếp danh sách `L` giảm dần và trả về danh sách mới, không làm thay đổi `L`. |
 
 Ví dụ:  
-Dòng lệnh 48 đếm số lần xuất hiện của phần tử có giá trị là `4`, gán kết quả vào biến `occurrence`.
+Dòng lệnh 48 đếm số lần xuất hiện của phần tử có giá trị là `4`, gán kết quả cho biến `occurrence`.
 
 ```py linenums="46" hl_lines="3"
     # Phần tử 4 xuất hiện bao nhiêu lần
@@ -244,7 +251,7 @@ Số lần xuất hiện của 4: 3 lần
 ```
 
 Ví dụ:  
-Dòng lệnh 52 tìm vị trí xuất hiện đầu tiên của phần tử có giá trị `4`, gán kết quả vào biến `first_occur`.
+Dòng lệnh 52 tìm vị trí xuất hiện đầu tiên của phần tử có giá trị `4`, gán kết quả cho biến `first_occur`.
 
 ```py linenums="51" hl_lines="2"
     # Vị trí xuất hiện đầu tiên của 4
@@ -272,6 +279,8 @@ Chạy đoạn mã trên, kết quả như sau:
 ```pycon
 Danh sách sau khi sắp xếp: [1, 2, 4, 4, 4, 5, 5, 7, 8, 8, 9]
 ```
+
+---
 
 ## Mã nguồn
 

@@ -16,50 +16,50 @@ markmap:
 
 ## Thêm
 
-- `append(e)`
+- `L.append(e)`
 
-  - Thêm vào cuối
+  - Thêm vô cuối
 
-- `insert(p, e)`
+- `L.insert(p, e)`
 
-  - Chèn vào vị trí cụ thể
+  - Chèn vô vị trí cụ thể
 
-- `extend(E)`
+- `L.extend(E)`
 
-  - Thêm danh sách `E` vào danh sách hiện tại.
+  - Thêm danh sách `E` vô danh sách `L`
 
 ## Xoá phần tử
 
-- `remove(e)`
+- `L.remove(e)`
 
   - Xoá phần tử theo giá trị
 
-- `pop(p)`
+- `L.pop(p)`
 
   - Xoá phần tử theo vị trí
 
-- `clear()`
+- `L.clear()`
 
   - Xoá toàn bộ phần tử
 
 ## Đếm
 
-- `count(e)`
+- `L.count(e)`
 
   - Đếm số lần xuất hiện của `e`
 
 ## Tìm kiếm
 
-- `index(e)`
+- `L.index(e)`
 
   - Tìm vị trí xuất hiện đầu tiên của `e`
 
 ## Sắp xếp
 
-- `sort()`
+- `L.sort()` hoặc `sorted(L)`
 
   - Sắp xếp tăng dần
 
-- `sort(reverse=True)`
+- `L.sort(reverse=True)`hoặc<br>`sorted(L, reverse=True)`
 
   - Sắp xếp giảm dần
