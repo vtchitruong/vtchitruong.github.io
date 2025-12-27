@@ -38,7 +38,7 @@ Tổng các phần tử.
 
 ??? tip "Ý tưởng chính"
 
-    Duyệt danh sách từ đầu đến cuối, cộng dồn từng phần tử vào biến tổng kết quả.
+    Duyệt danh sách từ đầu đến cuối, cộng dồn từng phần tử vô biến tổng kết quả.
 
 ??? tip "Viết chương trình"
 
@@ -57,7 +57,7 @@ Tổng các phần tử.
     - Khởi tạo tổng `s = 0`.
     - Dùng vòng lặp `for` và toán tử `in`:
 
-        Ứng với mỗi phần tử `e`, cộng dồn `e` vào `s`.
+        Ứng với mỗi phần tử `e`, cộng dồn `e` vô `s`.
 
     ```py linenums="1"
     def sum_list(L):
@@ -115,7 +115,7 @@ Trung bình cộng của các phần tử.
 
 ??? tip "Ý tưởng chính"
 
-    Ta có thể viết hàm tính trung bình cộng vào chung chương trình của bài 1.
+    Ta có thể viết hàm tính trung bình cộng vô chung chương trình của bài 1.
 
     Trong hàm này, ta gọi hàm `sum_list()` để tính tổng, trước khi thực hiện chia để tính trung bình.
 
