@@ -6,7 +6,7 @@ icon: material/table-large
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này hướng dẫn cách giải một số bài toán liên quan đến mảng hai chiều:
+    Bài này hướng dẫn một số bài toán liên quan đến mảng hai chiều:
 
     - Chuyển đổi mảng hai chiều thành mảng một chiều
     - Chuyển đổi mảng một chiều thành mảng hai chiều
@@ -96,7 +96,7 @@ Mảng một chiều `B`.
     3\. Viết chương trình chính.
 
     - Khởi tạo mảng hai chiều `array_2d`.
-    - Gọi hàm `convert_2to1()` để thực hiện chuyển đổi và gán kết quả trả về cho biến `array_1d`.
+    - Gọi hàm `convert_2to1()` để thực hiện, gán kết quả cho biến `array_1d`.
     - In ra mảng array_1d. Dùng toán tử `*` để phân tách (unpack) các phần tử.
 
     ```py linenums="19"
@@ -206,7 +206,7 @@ Mảng hai chiều `B`.
     4\. Viết chương trình chính.
 
     - Khởi tạo mảng hai chiều `array_1d`.
-    - Gọi hàm `convert_1to2()` để thực hiện chuyển đổi và gán kết quả trả về cho biến `array_2d`.
+    - Gọi hàm `convert_1to2()` ra thực hiện, gán kết quả cho biến `array_2d`.
     - Dựa vào giá trị của `array_2d`, in ra thông báo không thể chuyển đổi hoặc gọi hàm `show()`.
 
     ```py linenums="31"
@@ -350,8 +350,8 @@ scores = [[8, 8, 8, 2, 9],
     4\. Viết chương trình chính.
 
     - Khởi tạo mảng hai chiều `scores`.
-    - Gọi hàm `calculate_average()` để tính điểm trung bình và gán kết quả trả về cho biến `averages`.
-    - Gọi hàm `show()` để in ra các cột điểm.
+    - Gọi hàm `calculate_average()` ra thực hiện, gán kết quả cho biến `averages`.
+    - Gọi hàm `show()` ra thực hiện.
 
     ```py linenums="31"
     if __name__ == '__main__':
@@ -370,6 +370,8 @@ scores = [[8, 8, 8, 2, 9],
 
         show(scores, averages)
     ```
+
+---
 
 ## Bài 4
 
@@ -501,7 +503,7 @@ n = 10
     - Cho người dùng nhập vào kích thước ma trận, lưu vào biến `size`.
     - Khởi tạo ma trận `matrix` có kích thước `size`.
     - Lần lượt gọi các hàm `fill_*` để gán giá trị theo yêu cầu.
-    - Gọi hàm `show()` để in ra ma trận kết quả.
+    - Gọi hàm `show()` ra thực hiện.
 
     ```py linenums="36"
     if __name__ == '__main__':
@@ -514,6 +516,8 @@ n = 10
 
         show(matrix)
     ```
+
+---
 
 ## Bài 5
 

@@ -280,7 +280,7 @@ Xoá United States of America khỏi nhóm hạng 2, rồi thêm vô nhóm hạn
 
 **Yêu cầu:**
 
-Thêm `Viet Nam` vô vị trí áp cuối của nhóm hạng `69`.
+Thêm Viet Nam vô vị trí áp cuối của nhóm hạng 69.
 
 ### Cách giải đề xuất
 

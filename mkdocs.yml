@@ -413,7 +413,7 @@ nav:
     - Chủ đề F3:
       - Mục lục: grade-11/topic-F3/topic-index.md
       - grade-11/topic-F3/data-structure-one-dimensional-array.md
-      # - grade-11/topic-F3/data-structure-one-dimensional-array-practice.md
+      - grade-11/topic-F3/data-structure-one-dimensional-array-practice.md
       - grade-11/topic-F3/data-structure-two-dimensional-array.md
       - grade-11/topic-F3/data-structure-two-dimensional-array-practice.md
       - grade-11/topic-F3/search-algorithm-linear-search.md
