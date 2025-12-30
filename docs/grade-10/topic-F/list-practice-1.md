@@ -6,7 +6,7 @@ icon: material/format-list-numbered
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này hướng dẫn cách giải bài toán liên quan đến duyệt danh sách:
+    Bài này hướng dẫn bài toán liên quan đến duyệt danh sách:
 
     - Tính tổng
     - Tính trung bình cộng
