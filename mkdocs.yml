@@ -477,6 +477,10 @@ nav:
       - grade-12/topic-F/css-div.md
       - grade-12/topic-F/css-form.md
       - grade-12/topic-F/deploying-the-website.md
+    - Chủ đề F2:
+      - Mục lục: grade-12/topic-F2/topic-f2-index.md
+      - grade-12/topic-F2/data-science.md
+      - grade-12/topic-F2/machine-learning.md
     - Chủ đề G:
       - Mục lục: grade-12/topic-G/topic-index.md
       - grade-12/topic-G/network-administration-vs-system-security.md
