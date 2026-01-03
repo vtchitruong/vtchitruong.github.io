@@ -10,21 +10,21 @@ markmap:
 
 ### Chủ đề A
 
-#### A-1: Trí tuệ nhân tạo
+#### A1: Trí tuệ nhân tạo
 
 - Sơ lược về trí tuệ nhân tạo
 
-#### A-2: Đây là phần riêng dành cho ICT.
+#### A2: Đây là phần riêng của ICT.
 
 ### Chủ đề B
 
-#### B-1: Kết nối mạng
+#### B1: Kết nối mạng
 
 - Thiết bị và giao thức mạng
 - Chức năng mạng của hệ điều hành
 - Mạng trên thiết bị di động
 
-#### B-2: Đây là phần riêng của CS.
+#### B2: Đây là phần riêng của CS.
 
 ### Chủ đề C
 
@@ -40,22 +40,25 @@ markmap:
 
 ### Chủ đề F
 
-#### F-1
+#### F1: Tạo trang web
 
-#### F-2: Đây là phần riêng của CS.
+- HTML
+- CSS
+
+#### F2: Đây là phần riêng của CS.
 
 ### Chủ đề G
 
 - Nhóm nghề dịch vụ và quản trị
 - Một số nghề ứng dụng tin học và một số ngành thuộc lĩnh vực tin học
 
-## Phần riêng dành cho CS
+## Phần riêng của CS
 
 ### Chủ đề B
 
-#### B-1: Đây là phần chung.
+#### B1: Đây là phần chung.
 
-#### B-2: Phác thảo thiết kế mạng máy tính
+#### B2: Phác thảo thiết kế mạng máy tính
 
 - Thiết bị mạng
 - Đường truyền vô tuyến và hữu tuyến
@@ -63,24 +66,21 @@ markmap:
 
 ### Chủ đề F
 
-#### F-1: Tạo trang web
+#### F1: Đây là phần chung.
 
-- HTML
-- CSS
-
-#### F-2: Đây là phần riêng của CS.
+#### F2:
 
 - Khoa học dữ liệu
 - Học máy
 - Mô phỏng
 
-## Phần riêng dành cho ICT
+## Phần riêng của ICT
 
 ### Chủ đề A
 
-#### A-1: Đây là phần chung.
+#### A1: Đây là phần chung.
 
-#### A-2: Thực hành kết nối thiết bị số
+#### A2: Thực hành kết nối thiết bị số
 
 ### Chủ đề E
 

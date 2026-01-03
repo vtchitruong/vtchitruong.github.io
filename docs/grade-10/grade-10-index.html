@@ -1,29 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <title>Markmap</title>
 <style>
 * {
   margin: 0;
   padding: 0;
 }
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
 #mindmap {
   display: block;
   width: 100vw;
   height: 100vh;
 }
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
 .mm-toolbar-brand {
   display: none !important;
 }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
 </head>
 <body>
 <svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script><script>(r => {
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
               setTimeout(r);
             })(function renderToolbar() {
   const {
@@ -42,6 +50,9 @@
                 (getOptions || markmap.deriveOptions)(jsonOptions),
                 root2
               );
-            })(() => window.markmap,null,{"content":"Lớp 10","children":[{"content":"Phần chung","children":[{"content":"Chủ đề A","children":[{"content":"A-1: Tin học và xử lý thông tin","children":[{"content":"Dữ liệu và thông tin","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Đơn vị đo","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Thiết bị số và thiết bị thông minh","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Lịch sử phát triển","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"h4","lines":"12,13"}},{"content":"A-2: Đây là phần riêng của CS.","children":[],"payload":{"tag":"h4","lines":"19,20"}}],"payload":{"tag":"h3","lines":"10,11"}},{"content":"Chủ đề B","children":[{"content":"Internet","children":[{"content":"LAN và Internet","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"IoT, điện toán đám mây","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"Phần mềm độc hại","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"li","lines":"23,28"}}],"payload":{"tag":"h3","lines":"21,22"}},{"content":"Chủ đề C","children":[{"content":"Không có.","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"28,29"}},{"content":"Chủ đề D","children":[{"content":"Tuân thủ pháp lý trong môi trường số","children":[{"content":"Giao tiếp trên mạng","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Chia sẻ thông tin trên mạng","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"Tôn trọng bản quyền","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"Một số luật liên quan","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"li","lines":"34,40"}}],"payload":{"tag":"h3","lines":"32,33"}},{"content":"Chủ đề E","children":[{"content":"Đây là phần riêng của ICT.","children":[],"payload":{"tag":"li","lines":"42,44"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"Chủ đề F","children":[{"content":"Lập trình cơ bản","children":[{"content":"Biến, toán tử, nhập, xuất, cấu trúc điều khiển, kiểu dữ liệu, mảng","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Thư viện và hàm","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"Vận dụng kiến thức liên môn","children":[],"payload":{"tag":"li","lines":"50,52"}}],"payload":{"tag":"h4","lines":"46,47"}}],"payload":{"tag":"h3","lines":"44,45"}},{"content":"Chủ đề G","children":[{"content":"Nhóm nghề thiết kế và lập trình","children":[],"payload":{"tag":"li","lines":"54,56"}}],"payload":{"tag":"h3","lines":"52,53"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Phần riêng dành cho CS","children":[{"content":"Chủ đề A","children":[{"content":"A-1: Đây là phần chung.","children":[],"payload":{"tag":"h4","lines":"60,61"}},{"content":"A-2: Biểu diễn thông tin","children":[{"content":"Phép toán logic","children":[],"payload":{"tag":"li","lines":"64,65"}},{"content":"Biểu diễn dữ liệu trong máy tính","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"Bảng mã ASCII, Unicode","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"Hệ thập phân, hệ nhị phân","children":[],"payload":{"tag":"li","lines":"67,69"}}],"payload":{"tag":"h4","lines":"62,63"}}],"payload":{"tag":"h3","lines":"58,59"}}],"payload":{"tag":"h2","lines":"56,57"}},{"content":"Phần riêng dành cho ICT","children":[{"content":"Chủ đề E","children":[{"content":"Phần mềm thiết kế đồ họa","children":[{"content":"Inkscape","children":[],"payload":{"tag":"li","lines":"75,76"}}],"payload":{"tag":"h4","lines":"73,74"}}],"payload":{"tag":"h3","lines":"71,72"}}],"payload":{"tag":"h2","lines":"69,70"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":300})</script>
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"L&#x1edb;p 10","children":[{"content":"Ph&#x1ea7;n chung","children":[{"content":"Ch&#x1ee7; &#x111;&#x1ec1; A","children":[{"content":"A1: Tin h&#x1ecd;c v&#xe0; x&#x1eed; l&#xfd; th&#xf4;ng tin","children":[{"content":"D&#x1eef; li&#x1ec7;u v&#xe0; th&#xf4;ng tin","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"&#x110;&#x1a1;n v&#x1ecb; &#x111;o","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Thi&#x1ebf;t b&#x1ecb; s&#x1ed1; v&#xe0; thi&#x1ebf;t b&#x1ecb; th&#xf4;ng minh","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"L&#x1ecb;ch s&#x1eed; ph&#xe1;t tri&#x1ec3;n","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"h4","lines":"12,13"}},{"content":"A2: &#x110;&#xe2;y l&#xe0; ph&#x1ea7;n ri&#xea;ng c&#x1ee7;a CS.","children":[],"payload":{"tag":"h4","lines":"19,20"}}],"payload":{"tag":"h3","lines":"10,11"}},{"content":"Ch&#x1ee7; &#x111;&#x1ec1; B","children":[{"content":"Internet","children":[{"content":"LAN v&#xe0; Internet","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"IoT, &#x111;i&#x1ec7;n to&#xe1;n &#x111;&#xe1;m m&#xe2;y","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"Ph&#x1ea7;n m&#x1ec1;m &#x111;&#x1ed9;c h&#x1ea1;i","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"li","lines":"23,28"}}],"payload":{"tag":"h3","lines":"21,22"}},{"content":"Ch&#x1ee7; &#x111;&#x1ec1; C","children":[{"content":"Kh&#xf4;ng c&#xf3;.","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"28,29"}},{"content":"Ch&#x1ee7; &#x111;&#x1ec1; D","children":[{"content":"Tu&#xe2;n th&#x1ee7; ph&#xe1;p l&#xfd; trong m&#xf4;i tr&#x1b0;&#x1edd;ng s&#x1ed1;","children":[{"content":"Giao ti&#x1ebf;p tr&#xea;n m&#x1ea1;ng","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Chia s&#x1ebb; th&#xf4;ng tin tr&#xea;n m&#x1ea1;ng","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"T&#xf4;n tr&#x1ecd;ng b&#x1ea3;n quy&#x1ec1;n","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"M&#x1ed9;t s&#x1ed1; lu&#x1ead;t li&#xea;n quan","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"li","lines":"34,40"}}],"payload":{"tag":"h3","lines":"32,33"}},{"content":"Ch&#x1ee7; &#x111;&#x1ec1; E","children":[{"content":"&#x110;&#xe2;y l&#xe0; ph&#x1ea7;n ri&#xea;ng c&#x1ee7;a ICT.","children":[],"payload":{"tag":"li","lines":"42,44"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"Ch&#x1ee7; &#x111;&#x1ec1; F","children":[{"content":"L&#x1ead;p tr&#xec;nh c&#x1a1; b&#x1ea3;n","children":[{"content":"Bi&#x1ebf;n, to&#xe1;n t&#x1eed;, nh&#x1ead;p, xu&#x1ea5;t, c&#x1ea5;u tr&#xfa;c &#x111;i&#x1ec1;u khi&#x1ec3;n, ki&#x1ec3;u d&#x1eef; li&#x1ec7;u, m&#x1ea3;ng","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Th&#x1b0; vi&#x1ec7;n v&#xe0; h&#xe0;m","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"V&#x1ead;n d&#x1ee5;ng ki&#x1ebf;n th&#x1ee9;c li&#xea;n m&#xf4;n","children":[],"payload":{"tag":"li","lines":"50,52"}}],"payload":{"tag":"h4","lines":"46,47"}}],"payload":{"tag":"h3","lines":"44,45"}},{"content":"Ch&#x1ee7; &#x111;&#x1ec1; G","children":[{"content":"Nh&#xf3;m ngh&#x1ec1; thi&#x1ebf;t k&#x1ebf; v&#xe0; l&#x1ead;p tr&#xec;nh","children":[],"payload":{"tag":"li","lines":"54,56"}}],"payload":{"tag":"h3","lines":"52,53"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Ph&#x1ea7;n ri&#xea;ng c&#x1ee7;a CS","children":[{"content":"Ch&#x1ee7; &#x111;&#x1ec1; A","children":[{"content":"A1: &#x110;&#xe2;y l&#xe0; ph&#x1ea7;n chung.","children":[],"payload":{"tag":"h4","lines":"60,61"}},{"content":"A2: Bi&#x1ec3;u di&#x1ec5;n th&#xf4;ng tin","children":[{"content":"Ph&#xe9;p to&#xe1;n logic","children":[],"payload":{"tag":"li","lines":"64,65"}},{"content":"Bi&#x1ec3;u di&#x1ec5;n d&#x1eef; li&#x1ec7;u trong m&#xe1;y t&#xed;nh","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"B&#x1ea3;ng m&#xe3; ASCII, Unicode","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"H&#x1ec7; th&#x1ead;p ph&#xe2;n, h&#x1ec7; nh&#x1ecb; ph&#xe2;n","children":[],"payload":{"tag":"li","lines":"67,69"}}],"payload":{"tag":"h4","lines":"62,63"}}],"payload":{"tag":"h3","lines":"58,59"}}],"payload":{"tag":"h2","lines":"56,57"}},{"content":"Ph&#x1ea7;n ri&#xea;ng c&#x1ee7;a ICT","children":[{"content":"Ch&#x1ee7; &#x111;&#x1ec1; E","children":[{"content":"Ph&#x1ea7;n m&#x1ec1;m thi&#x1ebf;t k&#x1ebf; &#x111;&#x1ed3; ho&#x1ea1;","children":[{"content":"Inkscape","children":[],"payload":{"tag":"li","lines":"75,76"}}],"payload":{"tag":"h4","lines":"73,74"}}],"payload":{"tag":"h3","lines":"71,72"}}],"payload":{"tag":"h2","lines":"69,70"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":300})</script>
 </body>
 </html>

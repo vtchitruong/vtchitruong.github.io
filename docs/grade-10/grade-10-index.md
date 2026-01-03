@@ -8,6 +8,8 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
     <iframe style="width: 100%; height: 500px" frameBorder=0 src="../grade-10-index.html">Sơ đồ tóm tắt</iframe>
 </div>
 
+---
+
 ## Phần chung
 
 ### Chủ đề A
@@ -28,7 +30,9 @@ Tin học và xử lý thông tin
 
 #### Chủ đề A2
 
-*Chủ đề A-2. là phần riêng của CS.*
+*Chủ đề A2 là phần riêng của CS.*
+
+---
 
 ### Chủ đề B
 
@@ -48,9 +52,13 @@ Internet hôm nay và ngày mai
     5. Biết cách tự bảo vệ dữ liệu của cá nhân.
     6. Trình bày được sơ lược về phần mềm độc hại. Sử dụng được một số công cụ thông dụng để ngăn ngừa và diệt phần mềm độc hại.
 
+---
+
 ### Chủ đề C
 
 *Không có chủ đề C.*
+
+---
 
 ### Chủ đề D
 
@@ -64,9 +72,13 @@ Nghĩa vụ tuân thủ pháp lý trong môi trường số
 - Nêu được ví dụ về những tác hại của việc chia sẻ và phổ biến thông tin một cách bất cẩn.
 - Nêu được một vài biện pháp đơn giản và thông dụng để nâng cao tính an toàn và hợp pháp của việc chia sẻ thông tin trong môi trường số.
 
+---
+
 ### Chủ đề E
 
 *Chủ đề E là phần riêng của ICT.*
+
+---
 
 ### Chủ đề F
 
@@ -74,9 +86,9 @@ Lập trình cơ bản
 
 1. Môi trường và các yếu tố cơ bản của một ngôn ngữ lập trình bậc cao
 
-    - Viết và thực hiện được một vài chương trình có sử dụng: hằng, biến, các cấu trúc điều khiển, các toán tử, các kiểu dữ liệu chuẩn và mảng, các câu lệnh vào – ra. Qua đó phát triển được năng lực giải quyết vấn đề và sáng tạo, rèn luyện được phẩm chất chăm chỉ, kiên trì và cẩn thận trong học và tự học.
+    - Viết và thực hiện được một vài chương trình có sử dụng: hằng, [biến](./topic-F/variable-basic-operators.md){target="_blank"}, [các cấu trúc điều khiển](./topic-F/conditional-statement-if.md){target="_blank"}, [các toán tử](./topic-F/variable-basic-operators.md){target="_blank"}, các kiểu dữ liệu chuẩn và mảng, [các câu lệnh vào – ra](./topic-F/input-and-output.md){target="_blank"}. Qua đó phát triển được năng lực giải quyết vấn đề và sáng tạo, rèn luyện được phẩm chất chăm chỉ, kiên trì và cẩn thận trong học và tự học.
 
-2. Chương trình con
+2. [Chương trình con](./topic-F/function.md){target="_blank"}
     
     - Viết được chương trình có sử dụng chương trình con trong thư viện chuẩn.
     - Viết được chương trình con biểu diễn một thuật toán đơn giản và viết được chương trình có sử dụng chương trình con này.
@@ -86,6 +98,8 @@ Lập trình cơ bản
     - Đọc hiểu được chương trình đơn giản.
     - Kiểm thử và gỡ lỗi được chương trình.
     - Viết và thực hiện được chương trình giải quyết bài toán đơn giản có vận dụng kiến thức liên môn.
+
+---
 
 ### Chủ đề G
 
@@ -101,28 +115,32 @@ Giới thiệu nhóm [nghề thiết kế](./topic-G/graphic-design.md){:target=
 2. Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực, v.v...) về một vài ngành nghề khác trong lĩnh vực tin học.
 3. Giao lưu được với bạn bè qua các kênh truyền thông tin số để tham khảo và trao đổi ý kiến về những thông tin trên.
 
-## Phần riêng dành cho CS
+---
+
+## Phần riêng của CS
 
 ### Chủ đề A
 
 #### Chủ đề A1
 
-*Chủ đề A-1 là phần chung.*
+*Chủ đề A1 là phần chung.*
 
-#### Chủ đề A2 
+#### Chủ đề A2
 
 Biểu diễn thông tin
 
 1. Kỹ năng sử dụng thiết bị số của mỗi công dân  
-    1. Thực hiện được các phép tính cơ bản AND, OR, NOT, giải thích được ứng dụng của hệ nhị phân trong tin học. Giải thích được sơ lược việc số hóa văn bản, hình ảnh, âm thanh.  
-	2. Giải thích được sơ lược về chức năng của bảng mã chuẩn quốc tế. (Ví dụ: Unicode) 
+    1. [Thực hiện được các phép tính cơ bản AND, OR, NOT](./topic-A2/operations-in-binary.md){target="_blank"}, [giải thích được ứng dụng của hệ nhị phân trong tin học](./topic-A2/data-types-and-binary-system.md){target="_blank"}. [Giải thích được sơ lược việc số hóa văn bản, hình ảnh, âm thanh](./topic-A2/data-representation-in-cs.md){target="_blank"}.  
+	2. [Giải thích được sơ lược về chức năng của bảng mã chuẩn quốc tế](./topic-A2/data-representation-in-cs.md){target="_blank"}. (Ví dụ: Unicode) 
 2. *(không có)*
 
-## Phần riêng dành cho ICT
+---
+
+## Phần riêng của ICT
 
 ### Chủ đề E
 
-Phần mềm thiết kế đồ hoạ		
+Phần mềm thiết kế đồ hoạ
     
 1. Sử dụng được một số chức năng cơ bản của phần mềm thiết kế đồ hoạ.
 2. Tạo được sản phẩm số đơn giản, hữu ích và thực tế như thiết kế logo, tạo banner, topic quảng cáo, banderole, áp phích, poster và thiệp chúc mừng, v.v...

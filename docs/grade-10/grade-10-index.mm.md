@@ -10,14 +10,14 @@ markmap:
 
 ### Chủ đề A
 
-#### A-1: Tin học và xử lý thông tin
+#### A1: Tin học và xử lý thông tin
 
 - Dữ liệu và thông tin
 - Đơn vị đo
 - Thiết bị số và thiết bị thông minh
 - Lịch sử phát triển
 
-#### A-2: Đây là phần riêng của CS.
+#### A2: Đây là phần riêng của CS.
 
 ### Chủ đề B
 
@@ -54,23 +54,23 @@ markmap:
 
 - Nhóm nghề thiết kế và lập trình
 
-## Phần riêng dành cho CS
+## Phần riêng của CS
 
 ### Chủ đề A
 
-#### A-1: Đây là phần chung.
+#### A1: Đây là phần chung.
 
-#### A-2: Biểu diễn thông tin
+#### A2: Biểu diễn thông tin
 
 - Phép toán logic
 - Biểu diễn dữ liệu trong máy tính
 - Bảng mã ASCII, Unicode
 - Hệ thập phân, hệ nhị phân
 
-## Phần riêng dành cho ICT
+## Phần riêng của ICT
 
 ### Chủ đề E
 
-#### Phần mềm thiết kế đồ họa
+#### Phần mềm thiết kế đồ hoạ
 
 - Inkscape

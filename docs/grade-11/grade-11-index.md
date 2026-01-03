@@ -8,7 +8,9 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
     <iframe style="width: 100%; height: 500px" frameBorder=0 src="../grade-11-index.html">Sơ đồ tóm tắt</iframe>
 </div>
 
-## Phần chung CS & ICT
+---
+
+## Phần chung
 
 ### Chủ đề A
 
@@ -26,8 +28,6 @@ Hệ điều hành và phần mềm ứng dụng
     2. Nêu được [tên một số phần mềm soạn thảo văn bản, phần mềm bảng tính và phần mềm trình chiếu nguồn mở](./topic-A1/software-classification.md){:target="_blank"}, chẳng hạn Writer, Calc và Impress trong bộ OpenOffice.
     3. Sử dụng được một số tiện ích có sẵn của hệ điều hành để nâng cao hiệu suất sử dụng máy tính.
     4. Kích hoạt và sử dụng được một vài chức năng cơ bản của một phần mềm soạn thảo văn bản, một phần mềm bảng tính và một phần mềm trình chiếu chạy trên Internet. Ví dụ các phần mềm trong gói Google Docs.
-
----
 
 #### Chủ đề A2
 
@@ -115,7 +115,7 @@ Giới thiệu các hệ cơ sở dữ liệu
 
 ---
 
-## Phần riêng dành cho CS
+## Phần riêng của CS
 
 ### Chủ đề F
 
@@ -149,7 +149,7 @@ Kỹ thuật lập trình
 
 ---
 
-## Phần riêng dành cho ICT
+## Phần riêng của ICT
 
 ### Chủ đề E
 

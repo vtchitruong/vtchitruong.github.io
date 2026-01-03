@@ -8,6 +8,8 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
     <iframe style="width: 100%; height: 500px" frameBorder=0 src="../grade-12-index.html">Sơ đồ tóm tắt</iframe>
 </div>
 
+---
+
 ## Phần chung
 
 ### Chủ đề A
@@ -26,6 +28,8 @@ Giới thiệu trí tuệ nhân tạo
 
 *Chủ đề A2 là phần riêng dành cho ICT.*
 
+---
+
 ### Chủ đề B
 
 #### Chủ đề B1
@@ -34,8 +38,8 @@ Kết nối mạng
 
 1. Thiết bị và giao thức mạng
 
-    - Nêu được chức năng chính của một số thiết bị mạng thông dụng. Ví dụ: Access Point, Switch, Modem. Kết nối được các thiết bị đó với PC.
-    - Mô tả sơ lược được vai trò và chức năng của giao thức mạng nói chung và giao thức TCP/IP nói riêng.
+    - [Nêu được chức năng chính của một số thiết bị mạng thông dụng](./topic-B1/network-devices.md){target="_blank"}. Ví dụ: Access Point, Switch, Modem. Kết nối được các thiết bị đó với PC.
+    - [Mô tả sơ lược được vai trò và chức năng của giao thức mạng nói chung và giao thức TCP/IP nói riêng](./topic-B1/network-protocols.md){target="_blank"}.
 
 2. Các chức năng mạng của hệ điều hành
 
@@ -47,11 +51,15 @@ Kết nối mạng
 
 #### Chủ đề B2
 
-*Chủ đề B-2 là phần riêng của CS.*
+*Chủ đề B2 là phần riêng của CS.*
+
+---
 
 ### Chủ đề C
 
 *Không có chủ đề C.*
+
+---
 
 ### Chủ đề D
 
@@ -60,9 +68,13 @@ Gìn giữ tính nhân văn trong thế giới ảo
 - Phân tích được ưu và nhược điểm về giao tiếp trong thế giới ảo qua các ví dụ cụ thể.
 - Phân tích được tính nhân văn trong ứng xử ở một số tình huống tham gia thế giới ảo.
 
+---
+
 ### Chủ đề E
 
 *Chủ đề E là phần riêng của ICT.*
+
+---
 
 ### Chủ đề F
 
@@ -89,6 +101,8 @@ Tạo trang web
 
 *Chủ đề F2 là phần riêng của CS.*
 
+---
+
 ### Chủ đề G
 
 1. Giới thiệu [nhóm nghề dịch vụ và quản trị](./topic-G/network-administration-vs-system-security.md){:target="_blank"}
@@ -108,6 +122,8 @@ Tạo trang web
     - Nêu được tên một số ngành nghề và lĩnh vực có sử dụng nhân lực tin học, đồng thời giải thích được vai trò và công việc của chuyên viên tin học trong một số ngành nghề.
     - Tìm hiểu được thông tin ngành đào tạo của một số cơ sở đào tạo công nghệ thông tin.
 
+---
+
 ## Phần riêng dành cho CS
 
 ### Chủ đề B
@@ -124,6 +140,8 @@ Phác thảo thiết kế mạng máy tính
 - [Nêu được khái niệm và ứng dụng của một số loại đường truyền hữu tuyến và vô tuyến thông dụng](./topic-B2/wired-vs-wireless-transmission.md).
 - [Trình bày và giải thích sơ lược được việc thiết kế mạng LAN](./topic-B2/home-lan-design.md) cho một tổ chức nhỏ, ví dụ cho một trường phổ thông.
 
+---
+
 ### Chủ đề F
 
 #### Chủ đề F1
@@ -134,14 +152,14 @@ Phác thảo thiết kế mạng máy tính
 
 1. Giới thiệu học máy và khoa học dữ liệu
 
-    1. Giới thiệu khoa học dữ liệu
+    1. [Giới thiệu khoa học dữ liệu](./topic-F2/data-science.md){target="_blank"}
     
-        - Nêu được sơ lược về mục tiêu và một số thành tựu của khoa học dữ liệu, nêu được ví dụ minh họa.
+        - Nêu được sơ lược về mục tiêu và một số thành tựu của khoa học dữ liệu, nêu được ví dụ minh hoạ.
         - Biết được vai trò của máy tính đối với sự phát triển của Khoa học dữ liệu.
-        - Biết được tính ưu việt trong việc sử dụng máy tính và thuật toán hiệu quả để xử lí khối dữ liệu lớn, nêu được ví dụ minh họa.
+        - Biết được tính ưu việt trong việc sử dụng máy tính và thuật toán hiệu quả để xử lí khối dữ liệu lớn, nêu được ví dụ minh hoạ.
         - Nêu được trải nghiệm của bản thân trong việc trích rút thông tin và tri thức hữu ích từ dữ liệu đã có.
 
-	2. Giới thiệu học máy
+	2. [Giới thiệu học máy](./topic-F2/machine-learning.md){target="_blank"}
     
         - Giải thích được sơ lược về khái niệm Học máy
         - Nêu được vai trò của học máy trong những công việc như lọc thư rác, chẩn đoán bệnh, phân tích thị trường, nhận dạng tiếng nói và chữ viết, dịch tự động, v.v...
@@ -151,6 +169,8 @@ Phác thảo thiết kế mạng máy tính
     - Nêu được một vài lĩnh vực trong đời sống có sử dụng kỹ thuật mô phỏng.
     - Nêu được một vài vấn đề thực tế mà ở đó có thể cần dùng kỹ thuật mô phỏng để giải quyết.
     - Sử dụng và giải thích được lợi ích của một vài phần mềm mô phỏng.
+
+---
 
 ## Phần riêng dành cho ICT
 
@@ -164,7 +184,9 @@ Phác thảo thiết kế mạng máy tính
 
 Thực hành kết nối thiết bị số
 
-&emsp;&emsp;Kết nối được PC với các thiết bị số thông dụng như điện thoại di động, tivi có khả năng kết nối Internet, vòng đeo tay thông minh, thiết bị thực tại ảo, v.v...
+- Kết nối được PC với các thiết bị số thông dụng như điện thoại di động, tivi có khả năng kết nối Internet, vòng đeo tay thông minh, thiết bị thực tại ảo, v.v...
+
+---
 
 ### Chủ đề E
 
