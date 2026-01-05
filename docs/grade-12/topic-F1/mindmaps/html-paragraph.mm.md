@@ -6,15 +6,23 @@ markmap:
 
 # Đoạn văn bản
 
-## Đoạn
-  - `<p>`
+## Tạo đoạn
+- `<p>`
+
 ## Ngắt dòng
-  - `<br>`
+
+- `<br>`
+
 ## Gạch ngang
-  - `<hr>`
+
+- `<hr>`
+
 ## Khoảng trắng
-  - `&nbsp;`
-  - `&ensp;`
-  - `&emsp;`  
+
+- `&nbsp;`
+- `&ensp;`
+- `&emsp;`  
+
 ## Giữ nguyên như mã lệnh
-  - `<pre>`
+
+- `<pre>`

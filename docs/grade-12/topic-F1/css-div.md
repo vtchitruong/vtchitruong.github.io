@@ -86,4 +86,4 @@ Viết thêm mã lệnh CSS cho phần tử iframe bên trong.
 }
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](css-div/portfolio.html#website){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](css-div/portfolio.html#website){:target="_blank"}

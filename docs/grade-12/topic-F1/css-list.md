@@ -40,4 +40,4 @@ ul {
 }
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](css-list/portfolio.html#langlist){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](css-list/portfolio.html#langlist){:target="_blank"}

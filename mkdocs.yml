@@ -454,33 +454,34 @@ nav:
       - grade-12/topic-B2/network-devices-distinctions.md
       - grade-12/topic-B2/wired-vs-wireless-transmission.md
       - grade-12/topic-B2/home-lan-design.md
-    - Chủ đề F:
-      - Mục lục: grade-12/topic-F/topic-f-index.md
-      - grade-12/topic-F/html-web-a-simplified-overview.md
-      - grade-12/topic-F/html-text-editors.md
-      - grade-12/topic-F/html-web-page-structure.md
-      - grade-12/topic-F/html-paragraph.md
-      - grade-12/topic-F/html-formatting.md
-      - grade-12/topic-F/html-headings-vs-lists.md
-      - grade-12/topic-F/html-table.md
-      - grade-12/topic-F/html-link.md
-      - grade-12/topic-F/html-iframe.md
-      - grade-12/topic-F/html-multimedia.md
-      - grade-12/topic-F/html-form.md
-      - grade-12/topic-F/css-a-simplified-overview.md
-      - grade-12/topic-F/css-font-text.md
-      - grade-12/topic-F/css-border-margin-padding-background.md
-      - grade-12/topic-F/css-selector.md
-      - grade-12/topic-F/css-link.md
-      - grade-12/topic-F/css-list.md
-      - grade-12/topic-F/css-table.md
-      - grade-12/topic-F/css-div.md
-      - grade-12/topic-F/css-form.md
-      - grade-12/topic-F/deploying-the-website.md
+    - Chủ đề F1:
+      - Mục lục: grade-12/topic-F1/topic-f1-index.md
+      - grade-12/topic-F1/html-web-a-simplified-overview.md
+      - grade-12/topic-F1/html-text-editors.md
+      - grade-12/topic-F1/html-web-page-structure.md
+      - grade-12/topic-F1/html-paragraph.md
+      - grade-12/topic-F1/html-formatting.md
+      - grade-12/topic-F1/html-headings-vs-lists.md
+      - grade-12/topic-F1/html-table.md
+      - grade-12/topic-F1/html-link.md
+      - grade-12/topic-F1/html-iframe.md
+      - grade-12/topic-F1/html-multimedia.md
+      - grade-12/topic-F1/html-form.md
+      - grade-12/topic-F1/css-a-simplified-overview.md
+      - grade-12/topic-F1/css-font-text.md
+      - grade-12/topic-F1/css-border-margin-padding-background.md
+      - grade-12/topic-F1/css-selector.md
+      - grade-12/topic-F1/css-link.md
+      - grade-12/topic-F1/css-list.md
+      - grade-12/topic-F1/css-table.md
+      - grade-12/topic-F1/css-div.md
+      - grade-12/topic-F1/css-form.md
+      - grade-12/topic-F1/deploying-the-website.md
     - Chủ đề F2:
       - Mục lục: grade-12/topic-F2/topic-f2-index.md
       - grade-12/topic-F2/data-science.md
       - grade-12/topic-F2/machine-learning.md
+      - grade-12/topic-F2/simulation.md
     - Chủ đề G:
       - Mục lục: grade-12/topic-G/topic-index.md
       - grade-12/topic-G/network-administration-vs-system-security.md

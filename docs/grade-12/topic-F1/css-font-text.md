@@ -66,4 +66,4 @@ Ví dụ:
     <p>Một cách <em>chữa lành</em> tốt là hãy <em>"tựa"</em> vào <span style="font-family: Georgia; font-size: 2.5rem; font-style: oblique; font-weight: 700; color: #00d86c; letter-spacing: -7px;">khoa học</span>.</p>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](css-font-text/portfolio.html){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](css-font-text/portfolio.html){:target="_blank"}

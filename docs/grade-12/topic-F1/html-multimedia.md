@@ -32,7 +32,7 @@ Trong tập tin **portfolio.html**, ta thêm một ảnh có kích thước gố
     width="400px" alt="Ảnh do AI tạo đăng trên Pinterest" title="Some town of Japan"> 
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-multimedia/portfolio.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-multimedia/portfolio.html#end){:target="_blank"}
 
 ## Âm thanh và video
 

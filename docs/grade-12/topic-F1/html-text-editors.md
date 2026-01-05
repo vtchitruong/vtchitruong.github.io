@@ -32,32 +32,41 @@ Một số chương trình phổ biến hiện nay:
 - [CodePen](https://codepen.io/){:target="_blank} (chạy online)
 - [PlayCode](https://playcode.io/){:target="_blank} (chạy online)
 
-## Thao tác online
+---
+
+## Viết mã lệnh online
 
 Phần lớn các trình soạn thảo online đều có các khung để viết mã lệnh HTML, CSS và JavaScript, và một khung kết xuất trang web ngay tức thì.
 
 Do đó, ta chỉ cần gõ mã lệnh, không cần cài đặt thêm gì.
 
-## Thao tác offline
+---
 
-**Bước 1:** Tạo thư mục
+## Viết mã lệnh offline
+
+**Bước 1: Tạo thư mục**
 
 Tạo thư mục có tên tùy ý, không nên gõ dấu tiếng Việt và khoảng trắng. Ví dụ: `mysite`.
 
-**Bước 2:** Tạo tập tin .html
+**Bước 2: Tạo tập tin**
 
-Chọn một trình soạn thảo tùy ý, tạo tập tin có phần tên mở rộng là **.html**. Ví dụ: `portfolio.html` (1).
-{ .annotate }
-
-1.  **Portfolio** là trang web dùng để *flex* về bản thân, bao gồm thông tin cá nhân và những dự án hoặc sản phẩm mà mình đã thực hiện.
-
-Thao tác tạo là tương tự nhau giữa các trình soạn thảo:
-
+- Mở chương trình soạn thảo.
+    
+    Các thao tác tiếp theo tương đối giống nhau trong các trình soạn thảo.
+    
 - Chọn menu **File**.
 - Chọn mục **New**.
-- Chọn nơi lưu trữ, gõ tên tập tin, chọn phần mở rộng là **.html**.
+- Chọn thư mục lưu trữ.
+- Gõ tên tập tin, chọn phần mở rộng là **.html**.
 
-Thao tác lưu cũng tương tự:
+    Ví dụ: `portfolio.html` (1)
+    { .annotate }
+
+    1.  **Portfolio** là trang web dùng để *flex* về bản thân, bao gồm thông tin cá nhân và những dự án hoặc sản phẩm mà mình đã thực hiện.
+
+**Bước 3: Viết mã lệnh**
+
+**Bước 4: Lưu tập tin**
 
 - Chọn menu **File**.
 - Chọn mục **Save**.
@@ -68,12 +77,14 @@ Hoặc nhấn ++ctrl+s++.
 
     Nhớ ==thường xuyên **save**== để thể hiện sự trân trọng thành quả của mình.
 
-**Bước 3:** Xem trang web
+**Bước 5: Xem kết quả**
 
-Xem trang web bằng một trong hai cách:
+Xem trang web được kết xuất như thế nào bằng một trong hai cách sau:
 
-- Cách 1: Click đôi vào tập tin .html để mở bằng trình duyệt mặc định trên máy.
-- Cách 2: Trong trình duyệt, nhấn phím ++f5++ để làm mới lại trang web.
+- Cách 1: **Click đôi** vào tập tin .html để mở bằng trình duyệt mặc định trên máy.
+- Cách 2: Trong trình duyệt, nhấn phím ++f5++ để **làm mới lại** trang web.
+
+---
 
 ## Some English words
 

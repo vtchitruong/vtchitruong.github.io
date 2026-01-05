@@ -118,4 +118,4 @@ button[type="submit"]:hover {
 
 2.  Tạo hiệu ứng chuyển cảnh mượt mà khi thay đổi màu sắc của thuộc tính `background-color`.
 
-[Click để xem kết xuất trang portfolio trong tab mới](css-form/portfolio.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](css-form/portfolio.html#end){:target="_blank"}

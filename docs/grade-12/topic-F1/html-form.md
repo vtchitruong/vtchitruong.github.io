@@ -56,7 +56,7 @@ Trong tập tin **portfolio.html**, ta tạo thêm biểu mẫu góp ý nằm �
     </form>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-1.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-1.html#end){:target="_blank"}
 
 ### Nhãn tên và ô nhập liệu 
 
@@ -85,7 +85,7 @@ Thêm hộp văn bản vào biểu mẫu để người dùng gõ họ tên, kè
 
     Thuộc tính `id` dùng cho việc thao tác với CSS hoặc JavaScript, còn thuộc tính `name` dùng cho việc gửi biểu mẫu lên máy chủ.
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-2.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-2.html#end){:target="_blank"}
 
 Ngoài `type="text"` để tạo hộp văn bản, `type` còn nhiều giá trị khác giúp tạo ra các thành phần nhập liệu khác nhau. 
 
@@ -117,7 +117,7 @@ Thêm ô nhập email và nhãn đính kèm vào biểu mẫu.
     </form>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-3.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-3.html#end){:target="_blank"}
 
 ### Hộp văn bản nhiều dòng
 
@@ -145,7 +145,7 @@ Thêm hộp văn bản nhiều dòng vào biểu mẫu.
 
 1.  Thuộc tính `required` dùng để bắt buộc người dùng nhập dữ liệu, không được để trống.
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-4.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-4.html#end){:target="_blank"}
 
 ### Nút nhấn nộp biểu mẫu
 
@@ -180,7 +180,7 @@ Thêm nút nộp vào biểu mẫu theo cách 2.
     </form>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-5.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-form/portfolio-5.html#end){:target="_blank"}
 
 ## Sơ đồ tóm tắt nội dung
 

@@ -62,7 +62,7 @@ Ngược lòng mình tìm về nông nổi
 
 1.  Để viết những công thức toán học khác trong HTML, ta cần sử dụng thêm "*đồ chơi*", chẳng hạn như [MathJax](https://www.mathjax.org/){:target="_blank"}. Nội dung này nằm ngoài chương trình chính khóa.
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-formatting/portfolio.html){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-formatting/portfolio.html){:target="_blank"}
 
 ## Mã nguồn
 

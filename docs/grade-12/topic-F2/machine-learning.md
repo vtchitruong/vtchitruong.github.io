@@ -42,6 +42,8 @@ Máy tính sẽ tự tìm ra các tham số của hàm $f$ này thông qua quá 
     - Kinh nghiệm ($E$): là tập dữ liệu gồm hàng ngàn email đã được con người dán nhãn trước đó.
     - Thước đo ($P$): là tỷ lệ phần trăm các email được phân loại đúng.
 
+---
+
 ## Tiến trình huấn luyện
 
 Về bản chất khoa học, tiến trình huấn luyện của máy tính thực chất là tiến trình **tối ưu hoá**, gồm bốn bước sau:
@@ -78,6 +80,8 @@ Về bản chất khoa học, tiến trình huấn luyện của máy tính th�
 
 Tiến trình này lặp lại hàng ngàn, hàng triệu lần cho đến khi mô hình đạt được độ chính xác mong muốn.
 
+---
+
 ## Dữ liệu
 
 **Dữ liệu** là **tập hợp các quan sát** (1), *"kinh nghiệm"* mà máy tính sử dụng để học. Trong Học máy, dữ liệu được phân loại dựa trên việc chúng được định danh hay chưa nhằm xác định phương thức học phù hợp.
@@ -100,6 +104,8 @@ Trong tập hợp gồm 10,000 email, mỗi email đã được đánh dấu s�
 
 Ví dụ:  
 Ta có 10,000 email mới thu thập được từ Internet. Ta hoàn toàn không biết email nào là email rác hay email thường.
+
+---
 
 ## Phương thức học
 
@@ -212,6 +218,8 @@ Bảng sau so sánh vắn tắt các phương thức học
         - Hệ thống học cách chơi cờ thắng con người.
         - Xe tự hành.
 
+---
+
 ## Vai trò của Học máy trong thực tiễn
 
 Vai trò của Học máy được thể hiện rõ nhất qua khả năng tối ưu hoá các công việc đòi hỏi phân tích dữ liệu quy mô lớn và nhận diện các quy luật phức tạp.
@@ -247,11 +255,15 @@ Vai trò của Học máy được thể hiện rõ nhất qua khả năng tối
 
     Thay vì dịch dựa trên từ điển đơn thuần, mô hình học cách biểu diễn ngữ nghĩa của các đơn vị ngôn ngữ trong không gian vector đa chiều.
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/machine-learning.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

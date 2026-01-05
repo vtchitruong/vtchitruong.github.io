@@ -56,6 +56,8 @@ Tóm lại, khoa học dữ liệu là tiến trình *"bắt"* dữ liệu phả
 
     **Khoa học dữ liệu** là tiến trình trích xuất những thông tin và tri thức có giá trị từ các tập dữ liệu khổng lồ, hay gọi tắt là **trích xuất tri thức từ dữ liệu**.
 
+---
+
 ## Mục đích
 
 Khoa học dữ liệu hướng đến 3 việc sau, sắp xếp theo mức độ tăng dần:
@@ -87,6 +89,8 @@ Khoa học dữ liệu hướng đến 3 việc sau, sắp xếp theo mức đ�
     Ví dụ:  
     Hệ thống đề xuất: áp dụng chính sách giá linh hoạt để khuyến khích tài xế chạy đến khu vực R; gợi ý tài xế A đang ở gần đó chạy đến đường S.
 
+---
+
 ## Các lĩnh vực liên quan
 
 Để thực hiện tiến trình trích xuất tri thức từ dữ liệu, khoa học dữ liệu cần sự giao thoa của ba lĩnh vực lớn.
@@ -115,6 +119,8 @@ Ví dụ:
 - Toán học: giúp tính toán xác suất vùng mờ trên ảnh có phải là khối u hay không.
 - Khoa học máy tính: giúp xử lý hàng vạn hình ảnh cùng lúc với tốc độ nhanh.
 - Kiến thức chuyên môn nghiệp vụ: cụ thể là y khoa, giúp hiểu một chấm đen tại một vị trí nào đó là bình thường hay cần báo động. 
+
+---
 
 ## Quy trình khoa học dữ liệu
 
@@ -148,6 +154,8 @@ Khung quy trình **OSEMN** (The OSEMN Framework), viết tắt của **Obtain, S
 | 4 | Xây dựng mô hình | Sử dụng thuật toán để tìm ra các quy luật. |
 | 5 | Thông dịch kết quả | Chuyển hoá các con số phức tạp thành những báo cáo, câu chuyện dễ hiểu. |
 
+---
+
 ## Vai trò của máy tính đối với khoa học dữ liệu
 
 !!! note "Vai trò của máy tính"
@@ -164,6 +172,8 @@ Cụ thể:
     - Thực hiện các thuật toán phức tạp.
 
 - Với vai trò môi trường vận hành, máy tính giúp kết nối các bước trong quy trình khoa học dữ liệu thành một dòng chảy liên tục.
+
+---
 
 ## Tính ưu việt của máy tính và thuật toán trong xử lý dữ liệu lớn
 
@@ -206,6 +216,8 @@ Cụ thể:
 
     Thuật toán có năng lực tìm ra các quy luật ẩn giữa hàng nghìn biến số khác nhau.
 
+---
+
 ## Một số thành tựu
 
 Khoa học dữ liệu đã trở thành hạt nhân chính của sự phát triển hiện đại. Dưới đây là những thành tựu nổi bật thể hiện sức mạnh của lĩnh vực này:
@@ -238,7 +250,6 @@ Khoa học dữ liệu đã trở thành hạt nhân chính của sự phát tri
     Ví dụ:  
     Trong lĩnh vực tài chính - ngân hàng, khoa học dữ liệu giúp phát hiện các giao dịch gian lận chỉ trong vài mili-giây.
 
-
 5. **Thúc đẩy sự phát triển của tự động hoá và AI**
 
     Khoa học dữ liệu là nền móng tạo ra những cỗ máy thông minh có năng lực tự học và thực hiện các nhiệm vụ thay con người.
@@ -246,11 +257,15 @@ Khoa học dữ liệu đã trở thành hạt nhân chính của sự phát tri
     Ví dụ:  
     Xe tự hành là *"đỉnh cao"* của việc kết hợp xử lý song song và thời gian thực để đưa ra các quyết định lái xe an toàn.
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/data-science.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

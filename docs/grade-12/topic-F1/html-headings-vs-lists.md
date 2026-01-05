@@ -42,7 +42,7 @@ Trong tập tin **portfolio.html**, ta tạo cả sáu đề mục từ `<h1>` �
     <h6>Transformer và Attention, kỹ thuật quan trọng trong mô hình Ngôn ngữ lớn</h6>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-1.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-1.html#end){:target="_blank"}
 
 ## Danh sách
 
@@ -81,7 +81,7 @@ Tạo một danh sách mà thứ tự của các mục không quan trọng.
     </ul>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-2.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-2.html#end){:target="_blank"}
 
 ### Có thứ tự
 
@@ -109,7 +109,7 @@ Tạo danh sách đánh thứ tự bằng số bình thường.
     </ol>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-3.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-3.html#end){:target="_blank"}
 
 ## Sơ đồ tóm tắt nội dung
 

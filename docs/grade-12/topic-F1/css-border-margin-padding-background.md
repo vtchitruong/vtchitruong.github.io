@@ -75,7 +75,7 @@ Ví dụ:
 
 1.  Đường viền có độ cao tự động điều chỉnh ứng với nội dung bên trong và độ rộng cố định 360 pixel.
 
-[Click để xem kết xuất trang portfolio trong tab mới](css-border-margin-padding-background/portfolio-1.html#langlist){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](css-border-margin-padding-background/portfolio-1.html#langlist){:target="_blank"}
 
 ## Định kiểu lề và vùng đệm
 
@@ -122,7 +122,7 @@ Ví dụ:
     </div>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](css-border-margin-padding-background/portfolio-2.html#langlist){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](css-border-margin-padding-background/portfolio-2.html#langlist){:target="_blank"}
 
 Bạn nên click phải chuột vào trang web, chọn **Inspect**, rồi rê chuột đến từng phần tử để quan sát: nội dung của phần tử `div`, padding, border và margin.
 
@@ -159,4 +159,4 @@ Ví dụ:
 
 1.  Hàm `radial-gradient()` tạo màu chuyển sắc từ trong ra ngoài theo dạng ellipse.
 
-[Click để xem kết xuất trang portfolio trong tab mới](css-border-margin-padding-background/portfolio-3.html#langlist){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](css-border-margin-padding-background/portfolio-3.html#langlist){:target="_blank"}

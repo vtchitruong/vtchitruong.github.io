@@ -31,7 +31,7 @@ Trong tập tin **portfolio.html**, ta tạo ba liên kết và một iframe. Kh
     <p><iframe src="https://htmlreference.io/" width="80%" height="300" name="my_iframe"></iframe></p>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-iframe/portfolio.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-iframe/portfolio.html#end){:target="_blank"}
 
 !!! tip "Lưu ý"
 

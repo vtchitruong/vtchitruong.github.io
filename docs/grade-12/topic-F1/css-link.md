@@ -59,4 +59,4 @@ a:visited {
 }
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](css-link/portfolio.html#website){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](css-link/portfolio.html#website){:target="_blank"}
