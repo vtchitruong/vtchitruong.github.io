@@ -6,25 +6,33 @@ icon: octicons/table-24
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày các phần tử HTML dùng để tạo bảng.
+    Bài này trình bày một số phần tử HTML dùng để tạo bảng.
 
 ## Phần tử tạo bảng
-
-Các phần tử dùng để tạo bảng:
 
 | Phần tử | Công dụng |
 | --- | --- |
 | `<table>` | Tạo bảng |
-| `<tr>` | Tạo hàng |
-| `<th>` | Tạo ô của hàng tiêu đề |
-| `<td>` | Tạo ô của hàng dữ liệu (các hàng còn lại) |
+| `<tr>` (table row) | Tạo hàng |
+| `<th>` (table header) | Tạo ô của hàng tiêu đề |
+| `<td>` (table data) | Tạo ô của hàng dữ liệu (các hàng còn lại) |
+
+!!! note "Quy tắc hộp trong hộp"
+
+    1. `<table>` là phần khung ngoài cùng.
+    
+    2. `<tr>` (table row) là từng hàng một.
+    
+    3. `<th>` hoặc `<td>` là các ô nằm bên trong hàng đó.
+
+    Không thể có một cái ô (`<td>`) nếu chưa có một cái hàng (`<tr>`)
 
 Ví dụ:  
-Trong tập tin **portfolio.html**, ta tạo một bảng gồm 1 hàng tiêu đề, 3 hàng dữ liệu và 4 cột.
+Các dòng mã sau tạo bảng gồm 1 hàng tiêu đề, 3 hàng dữ liệu và 4 cột.
 
-``` html title="porfolio.html" linenums="63"
+```html title="porfolio.html" linenums="63"
     <h2>Một vài bạn bè thân thiết</h2>
-    <table border="1"> <!-- (1)! -->
+    <table border="1">
         <tr>
             <th>Hạng</th>
             <th>Tên</th>
@@ -51,38 +59,61 @@ Trong tập tin **portfolio.html**, ta tạo một bảng gồm 1 hàng tiêu đ
         </tr>
     </table>
 ```
-{ .annotate }
 
-1.  `border="1"` giúp vẽ thêm đường viền dày 1 pixel xung quanh bảng và xung quanh mỗi ô. Nếu không có thuộc tính `border`, bảng sẽ không có đường viền nào cả.
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-table/portfolio.html#end){:target="_blank"}
 
-    Nếu muốn *vẽ* đường viền đẹp hơn, ta phải nhờ đến CSS, được đề cập trong những bài sau. 
+!!! info "Đường viền"
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-table/portfolio.html#end){:target="_blank"}
+    Theo mặc định, bảng HTML không hiển thị đường viền.
+
+    Để thấy đường viền, ta thêm thuộc tính `border="1"`.
+
+    Nếu muốn đường viền đẹp hơn, ta phải nhờ đến CSS, được đề cập trong những bài sau. 
+
+??? info "Một số phần tử tạo bảng khác"
+
+    Ngoài các phần tử cơ bản trên, các phần tử tạo bảng dưới đây giúp phân cấp rõ ràng hơn và tối ưu cho trình duyệt cũng như cỗ máy tìm kiếm. 
+
+    | Phần tử | Công dụng | Vị trí |
+    | --- | --- | --- |
+    | `<thead>` (table head) | Gom nhóm các hàng tiêu đề | Bao bọc các `<tr>` |
+    | `<tbody>` (table body) | Gom nhóm các hàng dữ liệu | Bao bọc các `<tr>` |
+    | `<tfoor>` (table foot) | Gom nhóm các hàng tổng kết ở cuối bảng | Bao bọc các `<tr>` |
+    | `<caption>` | Tạo chú thích cho bảng | Nằm ngay dưới `<table>` |
+    | `<colgroup>` | Gom nhóm nhiều cột để định dạng | Bao bọc các `<col>` |
+    | `<col>` | Thiết lập thuộc tính cho từng cột riêng biệt | Nằm trong bên trong `<colgroup>` |
+
+---
 
 ## Thuộc tính của bảng
 
-Để thêm phần *linh hoạt* cho bảng, ta có thể sử dụng các thuộc tính sau:
+Để thêm phần *"linh hoạt"* cho bảng, ta có thể sử dụng các thuộc tính sau:
 
 | Thuộc tính | Ý nghĩa |
 | --- | --- |
-| `border` | Đường viền |
+| `border="1"` | Đường viền. Ví dụ: đường viền dày 1 pixel |
 | `cellspacing` | Khoảng cách giữa các ô |
 | `cellpadding`  | Khoảng cách từ nội dung đến các đường viền của ô |
 | `colspan="4"` | Số ô gộp vào trên cùng một hàng. Ví dụ: gộp 4 ô |
 | `rowspan="2"` | Số ô gộp trên cùng một cột. Ví dụ: gộp 2 ô |
 | `width="75%"` | Chiều rộng chiếm 75% |
-| `height="50px` | Chiều cao 50 pixel |
+| `height="50px"` | Chiều cao 50 pixel |
 | `bgcolor` | Màu nền |
 | `align` | Căn lề bảng với trang hoặc căn lề nội dung bên trong một hàng hoặc ô |
 
-!!! tip "Lưu ý về định dạng bảng"
+!!! tip "Lưu ý"
 
-    Trên thực tế, người ta không định dạng bảng những thuộc tính HTML này, thay vào đó sử dụng CSS.
+    Các thuộc tính trên giúp định dạng nhanh. Nhưng để làm cho bảng tinh tế hơn, ta cần sử dụng CSS.
 
-## Sơ đồ tóm tắt nội dung
+---
 
-{!grade-12/topic-F/html-table.mm.md!}
-*Sơ đồ tóm tắt cách tạo bảng*
+## Sơ đồ tóm tắt
+
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/html-table.html">Sơ đồ tóm tắt</iframe>
+</div>
+
+---
 
 ## Some English words
 

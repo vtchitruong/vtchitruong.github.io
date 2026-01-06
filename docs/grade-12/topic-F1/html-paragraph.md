@@ -6,14 +6,14 @@ icon: material/format-paragraph
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày một số phần tử HTML có tác dụng:
+    Bài này trình bày một số phần tử HTML dùng để:
     
     - Tạo đoạn văn bản
     - Ngắt dòng
     - Khoảng trắng
     - Giữ nguyên 
 
-## Đoạn, ngắt dòng và khoảng trắng
+## Tạo đoạn, ngắt dòng và khoảng trắng
 
 !!! note "Đoạn"
 
@@ -44,7 +44,7 @@ Các thực thể ký tự dùng để tạo khoảng trắng:
 | `&emsp;` | 4 khoảng trắng |
 
 Ví dụ:  
-Các dòng từ 11 đến 15 minh hoạ các phần tử và thực thể ký tự trên:
+Các dòng mã từ 11 đến 15 minh hoạ các phần tử và thực thể ký tự trên:
 
 ```html title="portfolio-1.html" linenums="8" hl_lines="4-8"
 <body>
@@ -91,7 +91,7 @@ Dù mã lệnh HTML có nhiều khoảng trắng hoặc dòng trống dư thừa
     | `<pre>` | Giữ nguyên định dạng như trong mã lệnh |
 
 Ví dụ:  
-Các dòng từ 16 đến 22 hiển thị bài thơ bằng thẻ `<pre>`.
+Các dòng mã từ 16 đến 22 hiển thị bài thơ bằng thẻ `<pre>`.
 
 ```html title="portfolio.html" linenums="8" hl_lines="9-15"
 <body>
@@ -116,11 +116,17 @@ Ngược lòng mình tìm về nông nổi
 
 ---
 
-## Mã nguồn
+## Xem mã nguồn trang web
 
-Code đầy đủ được đặt tại:
+Các trình duyệt đều có tính năng **Inspect** giúp lập trình viên thử nghiệm mã lệnh và xem ngay kết quả.
 
-- [GitHub](https://github.com/vtchitruong/gdpt-2018/tree/main/grade-12/topic-f/html-paragraph){:target="_blank"}.
+Ta có thể dựa vào tính năng này để học hỏi mã lệnh của người khác. Cách làm như sau:
+
+1. Trong trình duyệt, click phải vào vùng trống.
+2. Trong menu hiện ra, chọn mục **Inspect**.
+3. Trong cửa sổ bên phải (thường gọi là **Developer Tools**), rê chuột vào một phần tử để đối chiếu với nội dung kết xuất tương ứng ở cửa sổ bên trái.
+
+![Minh hoạ tính năng Inspect](https://live.staticflickr.com/65535/55025540832_d173764c33_b.jpg){loading=lazy}
 
 ---
 

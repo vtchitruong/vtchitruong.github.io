@@ -6,13 +6,30 @@ icon: octicons/list-ordered-24
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày các phần tử HTML dùng để tạo đề mục và danh sách.
+    Bài này trình bày một số phần tử HTML dùng để:
+    
+    - Tạo đề mục
+    - Tạo danh sách
 
-## Đề mục
+## Tạo đề mục
 
-**Headings**, tạm dịch là **đề mục** hoặc **tiêu đề con**, đóng vai trò làm tựa đề cho những phần nội dung khác nhau trong tài liệu.
+!!! note "Heading"
 
-Headings chủ yếu dùng để giúp người đọc hiểu được cách tổ chức nội dung, từ đó định hướng tốt hơn khi đọc tài liệu.
+    **Heading**, tạm dịch là **đề mục** hoặc **tiêu đề con**, đóng vai trò làm tựa đề cho những phần nội dung khác nhau trong tài liệu.
+
+Ví dụ:  
+Trong một cuốn sách, ta có phân bổ như sau:
+
+- `<h1>`: tên cuốn sách
+- `<h2>`: tên các chương
+- `<h3>`: rên các mục nhỏ trong chương
+
+??? info "Lợi ích của heading"
+
+    - Giúp người đọc hiểu được cách tổ chức nội dung, từ đó định hướng tốt hơn khi đọc tài liệu.
+    - Giúp các cỗ máy tìm kiếm như Google Search và Microsoft Bing hiểu được cấu trúc của trang web.
+    - Giúp trình duyệt tạo mục lục.
+    - Giúp người khiếm thị khi dùng các phần mềm Screen Reader.
 
 Các phần tử dùng để tạo sáu cấp độ của đề mục:
 
@@ -27,12 +44,14 @@ Các phần tử dùng để tạo sáu cấp độ của đề mục:
 
 Khi được đánh dấu bằng các thẻ này, văn bản sẽ có định dạng khác với những phần văn bản còn lại, chẳng hạn, cỡ chữ lớn hơn, in đậm, có khoảng trống so với dòng trên và dưới.
 
-Do đó, ta chưa vội định dạng cỡ chữ lớn hoặc đậm cho các đề mục, chỉ thay đổi font hoặc màu sắc nếu muốn.
+!!! tip "Lưu ý"
+
+    Đừng chọn thẻ chỉ vì kích thước chữ của nó. Hãy chọn theo thứ tự cấp độ quan trọng.
 
 Ví dụ:  
-Trong tập tin **portfolio.html**, ta tạo cả sáu đề mục từ `<h1>` đến `<h6>`.
+Các dòng mã sau tạo tất cả 6 cấp độ đề mục.
 
-``` html title="portfolio.html" linenums="35"
+```html title="portfolio.html" linenums="35"
     <p>Đây là một góc của thế giới mà mình sống trong đó</p>
     <h1>Kỷ nguyên Trí tuệ nhân tạo</h1>
     <h2>Thời đại Máy học (Machine Learning)</h2>
@@ -44,9 +63,13 @@ Trong tập tin **portfolio.html**, ta tạo cả sáu đề mục từ `<h1>` �
 
 [Click dòng này để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-1.html#end){:target="_blank"}
 
-## Danh sách
+---
 
-**Danh sách** được dùng để gom nhóm những mục hoặc nội dung có liên quan với nhau.
+## Tạo danh sách
+
+!!! note "Danh sách"
+
+    **Danh sách** được dùng để gom nhóm các mục hoặc nội dung có liên quan với nhau, giúp trang web dễ theo dõi hơn.
 
 HTML hỗ trợ hai loại danh sách: **không có thứ tự** và **có thứ tự**. (1)
 { .annotate }
@@ -57,18 +80,18 @@ Các phần tử dùng để tạo danh sách:
 
 | Phần tử | Công dụng |
 | --- | --- |
-| `<ul>` | Định nghĩa danh sách không có thứ tự |
-| `<ol>` | Định nghĩa danh sách có thứ tự |
-| `<li>` | Định nghĩa từng mục bên trong cả hai loại danh sách |
+| `<ul>` (unordered list) | Tạo danh sách không có thứ tự |
+| `<ol>` (ordered list) | Tạo danh sách có thứ tự |
+| `<li>` (list item) | Tạo từng mục bên trong danh sách |
 
 ### Không có thứ tự
 
-Kiểu danh sách này thường dùng ký hiệu **đĩa tròn màu đen** &#8226; để đánh dấu đầu dòng cho các mục. Ký hiệu này sẽ thay đổi khi cấp độ của đề mục thay đổi.
+Kiểu danh sách này thường dùng ký hiệu **đĩa tròn màu đen** &#8226; để đánh dấu đầu dòng cho các mục. Ký hiệu này sẽ thay đổi khi các danh sách lồng nhau.
 
 Ví dụ:  
-Tạo một danh sách mà thứ tự của các mục không quan trọng.
+Các dòng mã sau tạo danh sách mà có thể không quan trọng thứ tự của các mục.
 
-``` html title="portfolio.html" linenums="43"
+```html title="portfolio.html" linenums="43"
     <h2>Những ngôn ngữ giúp mình giỏi hơn trong môn... bơi lội</h2>
     <ul>
         <li>HTML</li>
@@ -85,20 +108,22 @@ Tạo một danh sách mà thứ tự của các mục không quan trọng.
 
 ### Có thứ tự
 
-Kiểu danh sách này dùng các ký hiệu số hoặc chữ như: **1**, **A**, **a**, **I**, **i** để đánh số đầu dòng cho các mục.
+Kiểu danh sách này dùng số hoặc chữ để đánh thứ tự cho các mục.
 
-Để chọn kiểu đánh số thứ tự, ta chỉ định giá trị cho thuộc tính `type`:
+Để chọn kiểu đánh thứ tự, ta dùng thuộc tính `type` và các giá trị như sau:
 
-- `type="1"`
-- `type="A"`
-- `type="3"`
-- `type="C"`
-- v.v...
+| Giá trị | Ý nghĩa |
+| --- | --- |
+| `type="1"` | Số: 1, 2, 3,... |
+| `type="A"` | Chữ cái in hoa: A, B, C,... |
+| `type="a"` | Chữ cái thường: a, b, c,... |
+| `type="I"` | Số La Mã in hoa I, II, III,... |
+| `type="i"` | Số La Mã thường: i, ii, iii,... |
 
 Ví dụ:  
-Tạo danh sách đánh thứ tự bằng số bình thường.
+Các dòng mã sau tạo danh sách có đánh thứ tự bằng số bình thường.
 
-``` html title="portfolio.html" linenums="54"
+```html title="portfolio.html" linenums="54"
     <h2>Những môn thể thao mà mình yêu thích từ nhiều nhất đến ít nhất</h2>
     <ol>
         <li>Bóng đá</li>
@@ -111,10 +136,15 @@ Tạo danh sách đánh thứ tự bằng số bình thường.
 
 [Click dòng này để xem kết xuất trang portfolio trong tab mới](html-headings-vs-lists/portfolio-3.html#end){:target="_blank"}
 
-## Sơ đồ tóm tắt nội dung
+---
 
-{!grade-12/topic-F/html-headings-vs-lists.mm.md!}
-*Sơ đồ tóm tắt các phần tử tạo đề mục và danh sách*
+## Sơ đồ tóm tắt
+
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/html-headings-vs-lists.html">Sơ đồ tóm tắt</iframe>
+</div>
+
+---
 
 ## Some English words
 
@@ -123,6 +153,5 @@ Tạo danh sách đánh thứ tự bằng số bình thường.
 | danh sách | list |
 | danh sách có thứ tự | ordered list |
 | danh sách không có thứ tự | unordered list |
-| đề mục | headings |
+| đề mục | heading |
 | mục trong danh sách | list item |
-| văn bản | text |
