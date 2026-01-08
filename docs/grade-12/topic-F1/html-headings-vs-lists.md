@@ -49,7 +49,7 @@ Khi được đánh dấu bằng các thẻ này, văn bản sẽ có định d�
     Đừng chọn thẻ chỉ vì kích thước chữ của nó. Hãy chọn theo thứ tự cấp độ quan trọng.
 
 Ví dụ:  
-Các dòng mã sau tạo tất cả 6 cấp độ đề mục.
+Đoạn mã sau tạo tất cả 6 cấp độ đề mục.
 
 ```html title="portfolio.html" linenums="35"
     <p>Đây là một góc của thế giới mà mình sống trong đó</p>
@@ -89,7 +89,7 @@ Các phần tử dùng để tạo danh sách:
 Kiểu danh sách này thường dùng ký hiệu **đĩa tròn màu đen** &#8226; để đánh dấu đầu dòng cho các mục. Ký hiệu này sẽ thay đổi khi các danh sách lồng nhau.
 
 Ví dụ:  
-Các dòng mã sau tạo danh sách mà có thể không quan trọng thứ tự của các mục.
+Đoạn mã sau tạo danh sách mà có thể không quan trọng thứ tự của các mục.
 
 ```html title="portfolio.html" linenums="43"
     <h2>Những ngôn ngữ giúp mình giỏi hơn trong môn... bơi lội</h2>
@@ -121,7 +121,7 @@ Kiểu danh sách này dùng số hoặc chữ để đánh thứ tự cho các 
 | `type="i"` | Số La Mã thường: i, ii, iii,... |
 
 Ví dụ:  
-Các dòng mã sau tạo danh sách có đánh thứ tự bằng số bình thường.
+Đoạn mã sau tạo danh sách có đánh thứ tự bằng số bình thường.
 
 ```html title="portfolio.html" linenums="54"
     <h2>Những môn thể thao mà mình yêu thích từ nhiều nhất đến ít nhất</h2>

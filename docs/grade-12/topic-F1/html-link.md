@@ -10,14 +10,23 @@ icon: octicons/link-24
 
 ## Phần tử tạo siêu liên kết
 
-**Siêu liên kết** giúp truy cập nhanh đến những tài nguyên bên ngoài như trang web, email, v.v... hoặc đến một vị trí khác trong trang web hiện hành.
+| Phần tử | Công dụng |
+| --- | --- |
+| `<a>` (anchor) | Tạo siêu liên kết |
 
-Để tạo siêu liên kết, ta sử dụng phần tử `<a>`.
+Siêu liên kết giúp truy cập:
 
-```html
-<a href="url_của_trang_web_mới"
-    target="nơi_mở_trang_web_mới">Nội dung hiển thị</a>
-```
+- Tài nguyên bên ngoài như trang web khác, email, v.v...
+- Một vị trí khác trong trang web hiện hành.
+
+---
+
+## Thuộc tính của siêu liên kết
+
+| Thuộc tính | Ý nghĩa |
+| --- | --- |
+| `href` | URL của trang web mới cần truy cập |
+| `target` | Nơi mở trang web mới |
 
 Một số giá trị của thuộc tính `target`:
 
@@ -25,12 +34,12 @@ Một số giá trị của thuộc tính `target`:
 | --- | --- |
 | `_self` | Đây là giá trị mặc định, mở trang web mới ngay trong tab hiện hành |
 | `_blank` | Mở trang web mới trong tab mới |
-| tên của `<iframe>` | Mở trang web mới trong iframe nào đó |
+| tên của `<iframe>` | Mở trang web mới trong khung nhúng |
 
 Ví dụ:  
-Trong bảng đã tạo ở bài trước, ta thêm liên kết dẫn đến trang thông tin của từng người trong bảng.
+Bổ sung bảng đã tạo ở bài trước: đoạn mã ở các dòng 73, 79 và 85 tạo siêu liên kết đến trang thông tin của từng người trong bảng.
 
-``` html title="portfolio.html" linenums="63" hl_lines="11 17 23"
+```html title="portfolio.html" linenums="63" hl_lines="11 17 23"
     <h2>Một vài bạn bè thân thiết</h2>
     <table border="1">
         <tr>
@@ -60,11 +69,19 @@ Trong bảng đã tạo ở bài trước, ta thêm liên kết dẫn đến tra
     </table>
 ```
 
-[Click để xem kết xuất trang portfolio trong tab mới](html-link/portfolio.html#end){:target="_blank"}
+[Click dòng này để xem kết xuất trang portfolio trong tab mới](html-link/portfolio.html#end){:target="_blank"}
+
+!!! tip "Gợi ý dùng giá trị của `target`"
+
+    Nên dùng `_blank` khi muốn người dùng không rời bỏ trang web của mình.
+
+    Nên dùng `_self` khi truy cập trang nội bộ trong cùng website.
+
+---
 
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
 | nơi mở trang web mới, đích đến | target |
-| siêu liên kết | hyperlink, link |
+| siêu liên kết | hyperlink |

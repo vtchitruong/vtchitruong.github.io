@@ -21,7 +21,7 @@ icon: material/format-font
 | `<small>` | Làm nhỏ cỡ chữ |
 
 Ví dụ:  
-Các dòng mã từ 24 đến 34 minh hoạ một số hình thức định dạng văn bản.
+Đoạn mã từ dòng 24 đến 34 minh hoạ một số hình thức định dạng văn bản.
 
 ```html title="portfolio.html" linenums="8" hl_lines="17-27"
 <body>

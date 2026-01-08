@@ -28,9 +28,9 @@ icon: octicons/table-24
     Không thể có một cái ô (`<td>`) nếu chưa có một cái hàng (`<tr>`)
 
 Ví dụ:  
-Các dòng mã sau tạo bảng gồm 1 hàng tiêu đề, 3 hàng dữ liệu và 4 cột.
+Đoạn mã sau tạo bảng gồm 1 hàng tiêu đề, 3 hàng dữ liệu và 4 cột.
 
-```html title="porfolio.html" linenums="63"
+```html title="portfolio.html" linenums="63"
     <h2>Một vài bạn bè thân thiết</h2>
     <table border="1">
         <tr>

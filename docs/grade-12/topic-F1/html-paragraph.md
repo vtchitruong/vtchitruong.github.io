@@ -44,7 +44,7 @@ Các thực thể ký tự dùng để tạo khoảng trắng:
 | `&emsp;` | 4 khoảng trắng |
 
 Ví dụ:  
-Các dòng mã từ 11 đến 15 minh hoạ các phần tử và thực thể ký tự trên:
+Đoạn mã từ dòng 11 đến 15 minh hoạ các phần tử và thực thể ký tự trên:
 
 ```html title="portfolio-1.html" linenums="8" hl_lines="4-8"
 <body>
@@ -91,7 +91,7 @@ Dù mã lệnh HTML có nhiều khoảng trắng hoặc dòng trống dư thừa
     | `<pre>` | Giữ nguyên định dạng như trong mã lệnh |
 
 Ví dụ:  
-Các dòng mã từ 16 đến 22 hiển thị bài thơ bằng thẻ `<pre>`.
+Đoạn mã từ dòng 16 đến 22 hiển thị bài thơ bằng thẻ `<pre>`.
 
 ```html title="portfolio.html" linenums="8" hl_lines="9-15"
 <body>
