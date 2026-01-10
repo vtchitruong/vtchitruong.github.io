@@ -384,26 +384,26 @@ nav:
   - Lớp 11:
     - Chương trình khung: grade-11/grade-11-index.md
     - Chủ đề A1:
-      - Mục lục: grade-11/topic-A1/topic-index.md
+      - Mục lục: grade-11/topic-A1/topic-a1-index.md
       - grade-11/topic-A1/hardware-os-application.md
       - grade-11/topic-A1/open-source-software.md
       - grade-11/topic-A1/software-classification.md
       - grade-11/topic-A1/mobile-os.md
       - grade-11/topic-A1/os-history.md
     - Chủ đề A2:
-      - Mục lục: grade-11/topic-A2/topic-index.md
+      - Mục lục: grade-11/topic-A2/topic-a2-index.md
       - grade-11/topic-A2/internal-hardwares.md
       - grade-11/topic-A2/laptop-smartphone-specifications.md
       - grade-11/topic-A2/logic-gates.md
     - Chủ đề F1:
-      - Mục lục: grade-11/topic-F1/topic-index.md
+      - Mục lục: grade-11/topic-F1/topic-f1-index.md
       - grade-11/topic-F1/data-management.md
       - grade-11/topic-F1/database-a-simplified-overview.md
       - grade-11/topic-F1/relational-database.md
       - grade-11/topic-F1/sql-a-simplified-overview.md
       - grade-11/topic-F1/database-security.md
     - Chủ đề F2:
-      - Mục lục: grade-11/topic-F2/topic-index.md
+      - Mục lục: grade-11/topic-F2/topic-f2-index.md
       - grade-11/topic-F2/create-a-table-in-ms-access.md
       - grade-11/topic-F2/create-a-table-in-mysql-workbench.md
       - grade-11/topic-F2/create-tables-in-postgresql-part-1.md
@@ -415,7 +415,7 @@ nav:
       - grade-11/topic-F2/retrieve-data-from-tables-part-4.md
       - grade-11/topic-F2/sql-query-on-one-table-pratice.md
     - Chủ đề F3:
-      - Mục lục: grade-11/topic-F3/topic-index.md
+      - Mục lục: grade-11/topic-F3/topic-f3-index.md
       - grade-11/topic-F3/data-structure-one-dimensional-array.md
       - grade-11/topic-F3/data-structure-one-dimensional-array-practice.md
       - grade-11/topic-F3/data-structure-two-dimensional-array.md
@@ -435,9 +435,8 @@ nav:
       - grade-11/topic-F3/algorithmic-complexity-of-search-and-sort.md
       - grade-11/topic-F3/algorithmic-complexity-practice.md
       - grade-11/topic-F3/modular-software-design.md
-      # - grade-11/topic-F3/programming-module.md
     - Chủ đề G:
-      - Mục lục: grade-11/topic-G/topic-index.md
+      - Mục lục: grade-11/topic-G/topic-g-index.md
       - grade-11/topic-G/database-administration.md
   - Lớp 12:
     - Chương trình khung: grade-12/grade-12-index.md
