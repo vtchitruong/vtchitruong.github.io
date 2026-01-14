@@ -193,17 +193,19 @@ extra_javascript:
   - javascripts/mathjax.js
   - javascripts/feedback.js
   - javascripts/floating_action_button.js
+  - javascripts/markmap-d3.js
+  - javascripts/markmap-lib.js
+  - javascripts/markmap-view.js
+
   # - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   # - https://unpkg.com/d3@7/dist/d3.min.js
   # - https://unpkg.com/markmap-lib@0.15.3/dist/browser/index.js
   # - https://unpkg.com/markmap-view@0.15.3/dist/browser/index.js
-  - https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js
-  - https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js
-  - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js
-  # - javascripts/markmap-d3.js
-  # - javascripts/markmap-lib.js
-  # - javascripts/markmap-view.js
+  # - https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js
+  # - https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js
+  # - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js
+  
     
   
 
@@ -215,11 +217,11 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/@fontsource/noto-sans
 
 plugins:
-  - markmap
-      # d3_version: ''
-      # lib_version: ''
-      # view_version: ''
-      # base_path: docs
+  - markmap:
+      d3_version: ""
+      lib_version: ""
+      view_version: ""
+      base_path: docs
       # encoding: utf-8
       # file_extension: .mm.md
       # d3_version: '3.6.0'
