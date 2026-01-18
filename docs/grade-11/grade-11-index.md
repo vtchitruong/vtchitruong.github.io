@@ -143,7 +143,7 @@ Kỹ thuật lập trình
     2. Giải thích và vận dụng được phương pháp thiết kế chương trình thành các module cho một bài toán cụ thể.
     3. Nhận biết được lợi ích của phương pháp nêu trên: Hỗ trợ làm việc đồng thời, dễ dàng bảo trì, phát triển chương trình và tái sử dụng module.
 4. Tổ chức dữ liệu trong chương trình
-    1. Trình bày được [cấu trúc dữ liệu mảng](./topic-F3/data-structure-one-dimensional-array.md){:target="_blank"} (một và hai chiều) và [danh sách liên kết](./topic-F3/linked-list.md){:target="_blank"}.
+    1. Trình bày được [cấu trúc dữ liệu mảng](./topic-F3/data-structure-one-dimensional-array.md){:target="_blank"} (một và hai chiều) và [danh sách liên kết](./topic-F3/data-structure-linked-list-a-simplified-overview.md){:target="_blank"}.
     2. Tạo được một thư viện nhỏ và viết được chương trình có sử dụng thư viện vừa tạo ra.
     3. Viết được chương trình vận dụng những kiến thức tích hợp liên môn để giải quyết vấn đề.
 
