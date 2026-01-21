@@ -92,7 +92,7 @@ Thực hành thiết kế thuật toán theo kỹ thuật chia để trị
 Thực hành thiết kế thuật toán theo kỹ thuật duyệt
 
 - Nêu được ý tưởng của kỹ thuật duyệt và ví dụ minh hoạ (như tìm phần tử lớn nhất hoặc nhỏ nhất trong một dãy số, tìm một số trong một dãy số, v.v...).
-- Nêu được ý tưởng của [kỹ thuật quay lui](./back-tracking/an-overview-of-back-tracking.md){:target="_blank"}. và nêu được ví dụ minh hoạ (như in các xâu nhị phân độ dài n, tìm tất cả các hoán vị của n phần tử, v.v...).
+- Nêu được ý tưởng của [kỹ thuật quay lui](./g11-cs/back-tracking-a-simplified-overview.md){:target="_blank"}. và nêu được ví dụ minh hoạ (như in các xâu nhị phân độ dài n, tìm tất cả các hoán vị của n phần tử, v.v...).
 - Nhận ra được mối liên quan giữa thiết kế thuật toán theo kỹ thuật quay lui và kỹ thuật đệ quy
 - Viết được chương trình đơn giản có sử dụng kỹ thuật duyệt
 - Viết được chương trình đơn giản có sử dụng kỹ thuật quay lui.

@@ -2,7 +2,7 @@
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày về đệ quy, bao gồm:
+    Bài này trình bày về khái quát về kỹ thuật đệ quy, bao gồm:
     - Khái niệm
     - Cấu trúc chung của một hàm đệ quy
 
@@ -12,9 +12,13 @@ Một số bài toán có thể được phân tách thành những bài toán c
 
 Tận dụng đặc điểm này, đệ quy có thể giải quyết bài toán ban đầu bằng cách giải quyết những bài toán con.
 
-**Đệ quy** là kỹ thuật lập trình mà trong đó **một hàm gọi lại chính nó** để giải quyết bài toán ban đầu.
+!!! note "Đệ quy"
 
-## Cấu trúc chung của hàm đệ quy
+    **Đệ quy** là kỹ thuật lập trình mà trong đó **một hàm gọi lại chính nó** để giải quyết bài toán ban đầu.
+
+---
+
+## Ý tưởng chính
 
 Trong một hàm đệ quy, ta cần xác định hai loại trường hợp sau:
 
@@ -30,17 +34,23 @@ Trong một hàm đệ quy, ta cần xác định hai loại trường hợp sau
 
     Như vậy, mỗi lần gọi đệ quy sẽ giúp tiến gần hơn đến trường hợp cơ sở. Việc gọi đệ quy sẽ kết thúc khi đạt đến trường hợp cơ sở.
 
+---
+
+## Mã giả
+
 Hàm đệ quy có thể được viết tổng quát như sau:
 
 ```py
-def hàm_đệ_quy(n):
+def recursion(n):
     # Trường hợp cơ sở
     if n là trường_hợp_cơ_sở:
         return giá_trị_cơ_sở_nào_đó
 
     # Trường hợp đệ quy
-    return hàm_đệ_quy(n_đơn_giản_hơn)
+    return recursion(n_đơn_giản_hơn)
 ```
+
+---
 
 ## Một số bài toán đệ quy
 
@@ -57,6 +67,8 @@ Một số bài toán có thể giải bằng kỹ thuật đệ quy:
 9. Bài toán 8 quân hậu
 10. Các bài toán chia để trị: quick sort, merge sort
 11. Duyệt cây nhị phân: tiền tố, hậu tố, trung tố
+
+---
 
 ## Some English words
 

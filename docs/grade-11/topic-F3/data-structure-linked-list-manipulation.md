@@ -214,9 +214,9 @@ Chèn [c] vào đầu danh sách liên kết: [c] -> [o] -> [l] -> [d] -> None
 
 1. Khởi tạo node mới, đặt tên là `new_node`, chứa dữ liệu cần chèn `new_data`.
 2. Kiểm tra danh sách liên kết: nếu danh sách đang rỗng thì ta chỉ cần cho `head` trỏ vào `new_node`.
-3. Ngược lại, danh sách không rỗng, thì tìm node cuối bằng cách:
+3. Ngược lại, danh sách không rỗng, thì tìm node cuối cùng bằng cách:
 
-    Dùng biến tạm `current` để duyệt danh sách liên kết cho đến khi tìm được node cuối.
+    Dùng biến tạm `current` để duyệt danh sách liên kết cho đến khi tìm được node cuối cùng.
 
 4. Liên kết node cuối cùng với `new_node`. 
 
@@ -234,12 +234,12 @@ def insert_at_end(L, new_data):
         L.head = new_node
         return
 
-    # Ngược lại, danh sách không rỗng, tìm node cuối
+    # Ngược lại, danh sách không rỗng, tìm node cuối cùng
     current = L.head
     while current.next is not None:
         current = current.next
 
-    # Cho node cuối trỏ đến node mới
+    # Cho node cuối cùng trỏ đến node mới
     current.next = new_node
 ```
 

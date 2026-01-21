@@ -12,9 +12,13 @@ Some problems can be broken down into smaller, similar subproblems.
 
 Recursion takes advantage of this by solving the original problem through solving these smaller subproblems.
 
-**Recursion** is a programming technique where **a function calls itself** to solve the original problem.
+!!! note "Recursion"
 
-## General structure of a recursive function
+    **Recursion** is a programming technique where **a function calls itself** to solve the original problem.
+
+---
+
+## Core concept
 
 In a recursive function, we must define two types of cases:
 
@@ -32,17 +36,23 @@ In a recursive function, we must define two types of cases:
 
     Each recursive call brings us closer to the base case. Recursion ends when the base case is reached.
 
+---
+
+## Pseudocode
+
 A recursive function can be written in this general form:
 
 ```py
-def recursive_function(n):
+def recursion(n):
     # Base case
     if n is base_case:
         return some_base_value
 
     # Recursive case
-    return recursive_function(simpler_n)
+    return recursion(simpler_n)
 ```
+
+---
 
 # Some problems solved using recursion
 
@@ -59,6 +69,8 @@ Here are common problems that can be solved with recursion:
 9. N-Queens problem
 10. Divide-and-conquer algorithms: quick sort, merge sort
 11. Binary tree traversal: preorder, postorder, inorder
+
+---
 
 ## Some English words
 

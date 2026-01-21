@@ -498,15 +498,13 @@ nav:
       - special-topics/g11-cs/factorial.md
       - special-topics/g11-cs/fibonacci.md
       - special-topics/g11-cs/hanoi-tower.md
+      - special-topics/g11-cs/back-tracking-a-simplified-overview.md
+      - special-topics/g11-cs/back-tracking-binary-string.md
       - Chia để trị:
         - Mục lục: special-topics/divide-and-conquer/topic-index.md
         - special-topics/divide-and-conquer/an-overview-of-divide-and-conquer.md
         - special-topics/divide-and-conquer/merge-sort.md
         - special-topics/divide-and-conquer/quick-sort.md
-      - Quay lui:
-        - Mục lục: special-topics/back-tracking/topic-index.md
-        - special-topics/back-tracking/an-overview-of-back-tracking.md
-        - special-topics/back-tracking/binary-string.md
     - Lớp 12 CS:
       - Mục lục: special-topics/g12-cs/topic-index.md
       - special-topics/g12-cs/an-overview-of-queue.md
