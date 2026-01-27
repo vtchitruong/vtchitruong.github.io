@@ -44,7 +44,8 @@ body {
 }
 
 .advanced-topic-index h2#head {
-    border-radius: 30px 30px 0 0;
+    border-radius: 2rem 2rem 0 0;
+    font-weight: normal;
 }
 
 .advanced-topic-index h2#foot {
@@ -65,6 +66,8 @@ body {
     text-decoration: none;
     color: var(--font-color);
     background-color: var(--background-color);
+    height: 3rem;
+    align-content: center;
 }
 
 .advanced-topic-index .list a span {

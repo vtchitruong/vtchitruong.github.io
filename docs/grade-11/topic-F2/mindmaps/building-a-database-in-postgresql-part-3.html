@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"X&#xe2;y d&#x1ef1;ng c&#x1a1; s&#x1edf; d&#x1eef; li&#x1ec7;u","children":[{"content":"Th&#xea;m thu&#x1ed9;c t&#xed;nh cho b&#x1ea3;ng","children":[{"content":"C&#xfa; ph&#xe1;p SQL <code>ALTER TABLE ... ADD COLUMN</code>","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Li&#xea;n k&#x1ebf;t hai b&#x1ea3;ng","children":[{"content":"\n<p data-lines=\"14,15\">B&#x1b0;&#x1edb;c 1: x&#xe1;c &#x111;&#x1ecb;nh thu&#x1ed9;c t&#xed;nh chung: <strong>kho&#xe1; ngo&#x1ea1;i</strong> trong b&#x1ea3;ng con v&#xe0; <strong>kho&#xe1; ch&#xed;nh</strong> trong b&#x1ea3;ng cha.</p>","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"\n<p data-lines=\"15,16\">B&#x1b0;&#x1edb;c 2: t&#x1ea1;o tham chi&#x1ebf;u t&#x1eeb; kho&#xe1; ngo&#x1ea1;i &#x111;&#x1ebf;n kho&#xe1; ch&#xed;nh (t&#x1ea1;o r&#xe0;ng bu&#x1ed9;c kho&#xe1; ngo&#x1ea1;i)</p>","children":[{"content":"C&#xfa; ph&#xe1;p SQL <code>ALTER TABLE ... ADD CONSTRAINT</code>","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"li","lines":"15,19"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"C&#x1ead;p nh&#x1ead;t d&#x1eef; li&#x1ec7;u","children":[{"content":"C&#xfa; ph&#xe1;p SQL <code>UPDATE ... SET</code>","children":[],"payload":{"tag":"li","lines":"21,22"}}],"payload":{"tag":"h2","lines":"19,20"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":360})</script>
+</body>
+</html>

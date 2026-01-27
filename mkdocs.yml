@@ -408,9 +408,10 @@ nav:
       - Mục lục: grade-11/topic-F2/topic-f2-index.md
       - grade-11/topic-F2/create-a-table-in-ms-access.md
       - grade-11/topic-F2/create-a-table-in-mysql-workbench.md
-      - grade-11/topic-F2/create-tables-in-postgresql-part-1.md
-      - grade-11/topic-F2/create-tables-in-postgresql-part-2.md
-      - grade-11/topic-F2/create-tables-in-postgresql-part-3.md
+      - grade-11/topic-F2/building-a-database-in-postgresql-part-1.md
+      - grade-11/topic-F2/building-a-database-in-postgresql-part-2.md
+      - grade-11/topic-F2/building-a-database-in-postgresql-part-3.md
+      - grade-11/topic-F2/building-a-database-in-postgresql-part-4.md
       - grade-11/topic-F2/retrieve-data-from-tables-part-1.md
       - grade-11/topic-F2/retrieve-data-from-tables-part-2.md
       - grade-11/topic-F2/retrieve-data-from-tables-part-3.md

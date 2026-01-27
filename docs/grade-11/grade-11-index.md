@@ -183,7 +183,7 @@ Giới thiệu các hệ cơ sở dữ liệu
 
 Thực hành tạo và khai thác cơ sở dữ liệu
 
-1. [Thực hành tạo và cập nhật cơ sở dữ liệu](./topic-F2/create-tables-in-postgresql-part-1.md){:target="_blank"}
+1. [Thực hành tạo và cập nhật cơ sở dữ liệu](./topic-F2/building-a-database-in-postgresql-part-1.md){:target="_blank"}
 
     Thực hiện được việc tạo lập cơ sở dữ liệu cho một bài toán quản lý nhỏ bằng cách sử dụng một hệ Quản trị cơ sở dữ liệu quan hệ. Cụ thể là:
 
