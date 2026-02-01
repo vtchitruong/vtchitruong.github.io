@@ -101,7 +101,7 @@ Tất cả trường hợp nhiễm bệnh, tử vong và hồi phục là dựa 
     3. Click nút **Find All** hoặc **Find Next** để bắt đầu tìm.
     4. Xem hàng tương ứng ở cột **Case_Fatality_Ratio**.
 
-    **Đáp án:** 1.4%.
+    **Đáp án:** ~1.4%.
 
 ## Sắp xếp dữ liệu
 
@@ -192,7 +192,7 @@ Tất cả trường hợp nhiễm bệnh, tử vong và hồi phục là dựa 
 
 ### Câu 1
 
-**Yêu cầu:** Việt Nam có bao nhiêu ca nhiễm và bao nhiêu ca tử vong vào thời điểm này?
+**Yêu cầu:** Việt Nam có bao nhiêu ca nhiễm và bao nhiêu ca tử vong vào thời điểm đó?
 
 ??? tip "Cách giải đề xuất"
 

@@ -108,7 +108,7 @@ $n \times 10 = \cdots$
 
 **Yêu cầu:**
 
-Viết chương trình in ra một dãy số cấp số cộng (1) với số hạng đầu $u_1$ và côn sai $d$ cho trước.
+Viết chương trình in ra một dãy số cấp số cộng (1) với số hạng đầu $u_1$ và công sai $d$ cho trước.
 { .annotate }
 
 1.  **Cấp số cộng** là một dãy số mà trong đó, kể từ số hạng thứ hai, mỗi số hạng đều bằng số hạng đứng ngay trước nó cộng với một số không đổi $d$. Nghĩa là:

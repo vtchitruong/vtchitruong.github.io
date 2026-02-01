@@ -173,20 +173,20 @@ Mảng hai chiều `B`.
 
     ```py linenums="3"
     def convert_1to2(A, row, col):
-    n = len(A)
+        n = len(A)
 
-    if row * col == n:
-        B = np.full((row, col), 0)
+        if row * col == n:
+            B = np.full((row, col), 0)
 
-        for i in range(n):
-            r = i // col
-            c = i % col
+            for i in range(n):
+                r = i // col
+                c = i % col
 
-            B[r][c] = A[i]
+                B[r][c] = A[i]
 
-        return B
-    else:
-        return None
+            return B
+        else:
+            return None
     ```
 
     3\. Viết hàm `show()` để in ra mảng hai chiều. Hàm này gồm một tham số là mảng hai chiều cần in.
