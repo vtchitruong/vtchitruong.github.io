@@ -507,19 +507,21 @@ nav:
         - special-topics/divide-and-conquer/merge-sort.md
         - special-topics/divide-and-conquer/quick-sort.md
     - Lớp 12 CS:
-      - Mục lục: special-topics/g12-cs/topic-index.md
+      - Mục lục: special-topics/g12-cs/topic-g12-cs-index.md
       - special-topics/g12-cs/an-overview-of-queue.md
       - special-topics/g12-cs/task-queue-simulation.md
       - special-topics/g12-cs/an-overview-of-stack.md
-      - special-topics/g12-cs/balanced-parentheses-check.md      
+      - special-topics/g12-cs/balanced-parentheses-check.md
+      - special-topics/g12-cs/tree-a-simplified-overview.md
+      - special-topics/g12-cs/tree-binary-tree-a-simplified-overview.md
+      - special-topics/g12-cs/tree-implementing-binary-tree-with-1d-array.md
+      - special-topics/g12-cs/tree-binary-tree-traversal.md
       - Đồ thị:
         - Mục lục: special-topics/graph/topic-index.md
         - special-topics/graph/an-overview-of-graph.md
         - special-topics/graph/graph-representing.md
         - special-topics/graph/bfs.md
         - special-topics/graph/dfs.md
-      - Cây:
-        - special-topics/tree/an-overview-of-tree.md
     - Lớp 12 ICT:
       - Mục lục: special-topics/g12-ict/topic-index.md
       - special-topics/g12-ict/random-data.md
