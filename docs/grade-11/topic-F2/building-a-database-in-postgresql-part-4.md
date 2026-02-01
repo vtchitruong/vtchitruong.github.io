@@ -185,7 +185,7 @@ Lược đồ quan hệ của cơ sở dữ liệu được hiển thị như h�
 
 Các bước thực hiện:
 
-1\. Viết câu lệnh SQL để mười mẫu tin vào bảng `scores`.
+1\. Viết câu lệnh SQL để thêm chín mẫu tin vào bảng `scores`.
 
 ```sql linenums="92"
 -- Thêm mẫu tin vào bảng scores

@@ -8,7 +8,7 @@ icon: simple/postgresql
     
     Bài này trình bày:
     
-    - Cách kết nối vào server trong **pgAmin** của PostgreSQL
+    - Cách kết nối vào server trong **pgAdmin** của PostgreSQL
     - Cách tạo cơ sở dữ liệu
 
 ## Khái quát
