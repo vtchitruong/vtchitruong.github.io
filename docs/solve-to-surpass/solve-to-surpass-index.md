@@ -10,6 +10,8 @@ icon: material/table-of-contents
 
 ## HSG 12 tỉnh khác
 
+[2025 - 2026 Lâm Đồng](./hsg12-tinh/2025-2026-lamdong.md){target="_blank"}
+
 [2024 - 2025 Lâm Đồng](./hsg12-tinh/2024-2025-lamdong.md){target="_blank"}
 
 [2024 - 2025 Tuyên Quang](./hsg12-tinh/2024-2025-tuyenquang.md){target="_blank"}
