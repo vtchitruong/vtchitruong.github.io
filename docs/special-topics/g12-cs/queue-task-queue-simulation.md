@@ -89,6 +89,8 @@ Hàng đợi: ['SYNC_SERVER']
 Hàng đợi: []
 ```
 
+---
+
 ## Cách giải đề xuất
 
 ### Ý tưởng chính
@@ -266,7 +268,6 @@ def process(lines):
         print()
 ```
 
-
 #### 4. Chương trình chính
 
 Trong chương trình chính, ta gọi các hàm đã viết ra thực hiện:
@@ -288,6 +289,8 @@ if __name__ == '__main__':
 ```
 
 Chạy chương trình trên và đối chiếu kết quả với đầu ra trong bộ kiểm thử.
+
+---
 
 ## Mã nguồn
 

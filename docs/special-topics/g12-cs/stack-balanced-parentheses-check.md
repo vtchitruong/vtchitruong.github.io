@@ -1,28 +1,32 @@
 # Kiểm tra tính hợp lệ của dấu ngoặc
 
-## Yêu cầu
+!!! abstract "Tóm lược nội dung"
+
+    Bài này trình bày cách giải bài toán kiểm tra các cặp ngoặc bằng cấu trúc ngăn xếp.
+
+## Bài toán
+
+**Yêu cầu:**
 
 Viết chương trình kiểm tra một chuỗi các dấu ngoặc có cân bằng hay không (hoặc hợp lệ hay không).
 
 Biết rằng chuỗi này là sự kết hợp của các loại dấu ngoặc sau: () {} [].
 
-Ví dụ:
-
-`({[()]})` → Hợp lệ
-
+Ví dụ:  
+`({[()]})` → Hợp lệ  
 `({[([)])})` → Không hợp lệ
 
-## Input
+**Đầu vào:**
 
 Dữ liệu đầu vào gồm nhiều dòng. Mỗi dòng là một chuỗi các ký tự dấu ngoặc.
 
-## Output
+**Đầu ra:**
 
 Dữ liệu đầu ra là *hợp lệ* hoặc *không hợp lệ*.
 
-## Bộ test
+**Bộ kiểm thử:**
 
-### Input mẫu
+Đầu vào:
 
 ```pycon
 ({[()]})
@@ -32,7 +36,7 @@ Dữ liệu đầu ra là *hợp lệ* hoặc *không hợp lệ*.
 ((())
 ```
 
-### Ouput mẫu
+Đầu ra:
 
 ```pycon
 ({[()]}) -> Hợp lệ
@@ -41,6 +45,8 @@ Dữ liệu đầu ra là *hợp lệ* hoặc *không hợp lệ*.
 ((())){}[] -> Hợp lệ
 ((()) -> Không hợp lệ
 ```
+
+---
 
 ## Cách giải đề xuất
 
@@ -53,7 +59,6 @@ Khi gặp dấu ngoặc mở, ta đẩy vào ngăn xếp. Còn khi gặp dấu n
 Nếu hợp lệ, ta loại bỏ phần tử đỉnh khỏi ngăn xếp. Và cứ như thế, khi đã xét hết các ký tự trong chuỗi, thì kiểm tra ngăn xếp xem đã lấy hết các dấu ngoặc ra chưa. Nếu đã lấy ra hết, tức toàn bộ dấu ngoặc đã khớp nhau, thì nghĩa là chuỗi ban đầu hợp lệ. 
 
 *(Phần diễn giải trên mang tính đại khái. Khi đi vào chi tiết, cần chú ý xét các trường hợp chưa đề cập đến.)*
-
 
 ### Đọc dữ liệu đầu vào
 

@@ -53,7 +53,7 @@ Thực hành sử dụng phần mềm trình chiếu
 
 - Tạo được bài thuyết trình với sử dụng phần mềm trình chiếu, đạt các yêu cầu sau:
     - Nội dung thiết thực, thu hút được sự quan tâm của người nghe, có cấu trúc logic và hợp lý
-    - Có các đoạn video, hình ảnh, hoạ tiết, hiệu ứng tương tác hấp dẫn để minh hoạ.
+    - Có các đoạn video, hình ảnh, hoạ tiết, hiệu ứng tương tác hấp dẫn để minh họa.
 - Làm việc được theo nhóm với tinh thần hợp tác.
 
 ### Chuyên đề 10.3
@@ -61,7 +61,7 @@ Thực hành sử dụng phần mềm trình chiếu
 Thực hành sử dụng phần mềm bảng tính
 
 - Đọc hiểu được một số công thức cơ bản trong bảng tính điện tử. Tạo được các công thức tính toán và hiển thị được các thông tin thống kê trong bảng tính,ví dụ tỷ lệ xếp loại kết quả học tập, số tiền thu chi hàng tháng, v.v...
-- Tạo được bảng tính có cấu trúc hợp lý, có tính thẩm mĩ và được minh hoạ bằng những đồ thị, biểu đồ sinh động.
+- Tạo được bảng tính có cấu trúc hợp lý, có tính thẩm mĩ và được minh họa bằng những đồ thị, biểu đồ sinh động.
 - Làm việc được theo nhóm với tinh thần hợp tác.
 
 ## Lớp 11 CS
@@ -71,10 +71,10 @@ Thực hành sử dụng phần mềm bảng tính
 Thực hành thiết kế thuật toán theo kỹ thuật đệ quy
 
 - Trình bày được tính đệ quy trong một vài định nghĩa sự vật, sự việc.
-- Xác định được [phần cơ sở và phần đệ quy trong mô tả đệ quy](./g11-cs/an-overview-of-recursion.md){:target="_blank"}.
+- [Xác định được phần cơ sở và phần đệ quy trong mô tả đệ quy](./g11-cs/an-overview-of-recursion.md){:target="_blank"}.
 - Ứng dụng được kỹ thuật đệ quy trong thiết kế một vài thuật toán như:
-    - Tính $a^n$ (hoặc [$n!$](./g11-cs/factorial.md){:target="_blank"}).
-    - Tìm phần tử thứ n của [dãy Fibonacci](./g11-cs/fibonacci.md){:target="_blank"}.
+    - [Tính $a^n$ (hoặc $n!$](./g11-cs/factorial.md){:target="_blank"}).
+    - [Tìm phần tử thứ n của dãy Fibonacci](./g11-cs/fibonacci.md){:target="_blank"}.
     - [Bài toán Tháp Hà Nội](./g11-cs/hanoi-tower.md){:target="_blank"}.
 - Viết được chương trình sử dụng kỹ thuật đệ quy cho một vài bài toán đơn giản.
 - Nhận biết được tính ưu việt của kỹ thuật đệ quy trong định nghĩa sự vật, mô tả và thiết kế thuật toán.
@@ -83,19 +83,19 @@ Thực hành thiết kế thuật toán theo kỹ thuật đệ quy
 
 Thực hành thiết kế thuật toán theo kỹ thuật chia để trị
 
-- Giải thích được sơ lược về kỹ thuật [chia để trị](./divide-and-conquer/an-overview-of-divide-and-conquer.md){:target="_blank"}.
-- Nêu được ý tưởng thiết kế thuật toán theo kỹ thuật chia để trị, giải thích được mối liên hệ giữa thiết kế thuật toán theo kỹ thuật chia để trị và đệ quy, nêu được ví dụ minh hoạ.
+- [Giải thích được sơ lược về kỹ thuật chia để trị](./divide-and-conquer/an-overview-of-divide-and-conquer.md){:target="_blank"}.
+- Nêu được ý tưởng thiết kế thuật toán theo kỹ thuật chia để trị, giải thích được mối liên hệ giữa thiết kế thuật toán theo kỹ thuật chia để trị và đệ quy, nêu được ví dụ minh họa.
 - Viết được chương trình đơn giản có sử dụng kỹ thuật chia để trị.
 
 ### Chuyên đề 11.3
 
 Thực hành thiết kế thuật toán theo kỹ thuật duyệt
 
-- Nêu được ý tưởng của kỹ thuật duyệt và ví dụ minh hoạ (như tìm phần tử lớn nhất hoặc nhỏ nhất trong một dãy số, tìm một số trong một dãy số, v.v...).
-- Nêu được ý tưởng của [kỹ thuật quay lui](./g11-cs/back-tracking-a-simplified-overview.md){:target="_blank"}. và nêu được ví dụ minh hoạ (như in các xâu nhị phân độ dài n, tìm tất cả các hoán vị của n phần tử, v.v...).
-- Nhận ra được mối liên quan giữa thiết kế thuật toán theo kỹ thuật quay lui và kỹ thuật đệ quy
-- Viết được chương trình đơn giản có sử dụng kỹ thuật duyệt
-- Viết được chương trình đơn giản có sử dụng kỹ thuật quay lui.
+- Nêu được ý tưởng của kỹ thuật duyệt và ví dụ minh họa (như tìm phần tử lớn nhất hoặc nhỏ nhất trong một dãy số, tìm một số trong một dãy số, v.v...).
+- [Nêu được ý tưởng của kỹ thuật quay lui](./g11-cs/back-tracking-a-simplified-overview.md){:target="_blank"}. và nêu được ví dụ minh họa (như in các xâu nhị phân độ dài n, tìm tất cả các hoán vị của n phần tử, v.v...).
+- Nhận ra được mối liên quan giữa thiết kế thuật toán theo kỹ thuật quay lui và kỹ thuật đệ quy.
+- Viết được chương trình đơn giản có sử dụng kỹ thuật duyệt.
+- [Viết được chương trình đơn giản có sử dụng kỹ thuật quay lui](./g11-cs/back-tracking-binary-string.md){:target="_blank"}.
 
 ## Lớp 11 ICT
 
@@ -131,10 +131,10 @@ Thực hành sử dụng phần mềm chỉnh sửa ảnh
 
 Tìm hiểu một vài kiểu dữ liệu tuyến tính
 
-- Mô tả được khái niệm kiểu dữ liệu [hàng đợi](./g12-cs/an-overview-of-queue.md){:target="_blank"} và [ngăn xếp](./g12-cs/an-overview-of-stack.md){:target="_blank"} thông qua cơ chế hoạt động của các kiểu dữ liệu này
-- Biểu diễn được hàng đợi và ngăn xếp bằng mảng một chiều
-- Giải thích và viết được chương trình con thực hiện các phép toán cơ bản: khởi tạo, thêm, bớt phần tử cho hàng đợi và ngăn xếp
-- Nêu được một số ứng dụng kiểu dữ liệu [hàng đợi](./g12-cs/task-queue-simulation.md){:target="_blank"} và [ngăn xếp](./g12-cs/balanced-parentheses-check.md){:target="_blank"}.
+- [Mô tả được khái niệm kiểu dữ liệu hàng đợi](./g12-cs/queue-a-simplified-overview.md){:target="_blank"} và [ngăn xếp](./g12-cs/stack-a-simplified-overview.md){:target="_blank"} thông qua cơ chế hoạt động của các kiểu dữ liệu này.
+- Biểu diễn được hàng đợi và ngăn xếp bằng mảng một chiều.
+- Giải thích và viết được chương trình con thực hiện các phép toán cơ bản: khởi tạo, thêm, bớt phần tử cho [hàng đợi](./g12-cs/queue-task-queue-simulation.md){:target="_blank"} và [ngăn xếp](./g12-cs/stack-balanced-parentheses-check.md){:target="_blank"}.
+- Nêu được một số ứng dụng kiểu dữ liệu hàng đợi và ngăn xếp.
 
 ### Chuyên đề 12.2
 

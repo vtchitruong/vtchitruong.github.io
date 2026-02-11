@@ -28,108 +28,106 @@ Các chuỗi nhị phân có $n$ ký tự.
 
 ## Cách giải đề xuất
 
-### Ý tưởng chính
+??? tip "Ý tưởng chính"
 
-1. **Khởi tạo**
+    1\. Đặt:
     
-    Khởi tạo danh sách `binary` rỗng, dùng để chứa các ký tự `0` hoặc `1`. 
+    - `binary_option` là mảng biểu thị cho một phương án chuỗi nhị phân. Từng vị trí trong `binary_option` sẽ được thử nạp số `0` hoặc số `1`.
+    - `binary_strings` là mảng kết quả gồm các chuỗi hoàn chỉnh sẽ được in ra.
 
-2. **Xây dựng chuỗi nhị phân**
+    Phương pháp quay lui được thực hiện như sau:
 
-    Tại mỗi bước thứ `i`, ta thực hiện:
+    **Bước 1: Thử**
+ 
+    Thử nạp một trong hai số `0` hoặc `1` vào `binary_option`: `binary_option.append(digit)`.
 
-    - Chọn thử một ký tự khả thi: chọn `0`, rồi chọn `1`.
-    - Nạp ký tự vừa chọn vào `binary`.
-        - Nếu `binary` đã hoàn chỉnh (tức đầy đủ `n` ký tự) thì lưu nó vào `binary_list`.
-        - Ngược lại, chưa hoàn chỉnh, thì gọi đệ quy để tiếp tục chọn ký tự cho vị trí tiếp theo `i + 1`.
+    **Bước 2: Tiến**
 
-3. **Quay lui**
+    Gọi đệ quy để tiếp tục nạp chữ số `0` hoặc `1` ở vị trí tiếp theo cho đến khi đủ `n` chữ số: `len(binary_option) == n`.
 
-    Khi chọn xong một ký tự, dù `binary` hoàn chỉnh hay đã thử xong các ký tự khả thi, ta đều phải thực hiện quay lui: đó là gỡ bỏ ký tự vừa nạp ở vị trí cuối ra khỏi `binary`.
+    **Bước 3: Quay lui**
 
-    Việc này giúp trả `binary` về trạng thái trước khi lựa chọn ký tự cho vị trí `i` để chuẩn bị lựa chọn ký tự tiếp theo cho vị trí `i` này.
+    Gỡ bỏ số vừa nạp ở cuối ra khỏi `binary_option`: `binary_option.pop()`.
 
-    Hoặc nếu đã thử hết các ký tự cho vị trí `i` thì trả `binary` về trạng thái chuẩn bị lựa chọn ký tự cho vị trí `i - 1`.
+    Ví dụ:  
+    Tại ví trị `i` của `binary_option`, nếu bước trước đó đã nạp `0` thì gõ bỏ `0` để chuẩn bị nạp `1`.
 
-Hình dưới đây minh hoạ phương pháp quay lui khi chọn `0` và `1` cho chuỗi nhị phân gồm 3 ký tự.
+    Hình dưới đây minh hoạ phương pháp quay lui khi chọn `0` và `1` cho chuỗi nhị phân gồm 3 ký tự.
 
-```mermaid
-flowchart TD
-    R[ø] --> 0[0] --> 00[0] --> 000[0]
-    00 --> 001[1]
+    ```mermaid
+    flowchart TD
+        R[ø] --> 0[0] --> 00[0] --> 000[0]
+        00 --> 001[1]
 
-    0 --> 01[1] --> 010[0]
-    01 --> 011[1]
+        0 --> 01[1] --> 010[0]
+        01 --> 011[1]
 
-    R[ø] --> 1[1] --> 10[0] --> 100[0]
-    10 --> 101[1]
+        R[ø] --> 1[1] --> 10[0] --> 100[0]
+        10 --> 101[1]
 
-    1 --> 11[1] --> 110[0]
-    11 --> 111[1]
-```
+        1 --> 11[1] --> 110[0]
+        11 --> 111[1]
+    ```
 
-### Viết chương trình
+    2\. Với số ký tự `n = 3`, số chuỗi nhị phân sẽ được tạo ra là: $2^n = 2^3 = 8$.
 
-1\. Viết hàm `generate_binary_string()` dùng để phát sinh chuỗi nhị phân.
+??? tip "Viết chương trình"
 
-Hàm gồm có hai tham số:
+    1\. Viết hàm `generate_binary_string()` dùng để phát sinh chuỗi nhị phân.
 
-- Danh sách `binary` biểu thị một chuỗi nhị phân hoàn chỉnh.
-- Độ dài của chuỗi nhị phân hoàn chỉnh `length`.
+    Hàm có một tham số là mảng `binary_option` biểu thị một phương án chuỗi nhị phân.
 
-Hàm không có giá trị trả về.
+    Hàm không có giá trị trả về.
 
-```py linenums="1"
-# Hàm quay lui dùng để phát sinh chuỗi nhị phân
-def generate_binary_string(binary, length):
-    # Kiểm tra chuỗi nhị phân hoàn chỉnh
-    if len(binary) == length:
-        # Lưu chuỗi hoàn chỉnh vào binary_list
-        binary_list.append(binary.copy()) # (1)!
-        return
+    ```py linenums="1"
+    # Hàm quay lui dùng để phát sinh chuỗi nhị phân
+    def generate_binary_string(binary_option):
+        if len(binary_option) == n:
+            # Nếu đã đủ số lượng thì ghép các phần tử của binary_option thành một chuỗi
+            s = ''.join(map(str, binary_option))
 
-    # Duyệt các lựa chọn khả thi: chữ số 0 và 1
-    for digit in [0, 1]:
-        # Bước 1 - Thử: nạp chữ số được chọn vào chuỗi
-        binary.append(digit)
+            # Lưu chuỗi nhị phân hoàn chỉnh vào biến kết quả
+            binary_strings.append(s)
+            return
 
-        # Bước 2 - Tiến: gọi đệ quy để chọn chữ số ở vị trí tiếp theo
-        generate_binary_string(binary, length)
+        # Duyệt các lựa chọn: 0 và 1
+        for digit in [0, 1]:
+            # Bước 1 - Thử: nạp số được chọn vào phương án
+            binary_option.append(digit)
 
-        # Bước 3 - Quay lui: gỡ bỏ chữ số vừa nạp (nằm ở cuối)
-        binary.pop()
-```
-{ .annotate }
+            # Bước 2 - Tiến: gọi đệ quy để nạp số ở vị trí tiếp theo
+            generate_binary_string(binary_option)
 
-1.  Đối với Python, ta không thể để nạp `binary` vào `binary_list` một cách trực tiếp, mà phải nạp bản sao bằng cách dùng hàm `copy()`.
+            # Bước 3 - Quay lui: gỡ bỏ số vừa nạp ở cuối
+            binary_option.pop()
+    ```
 
-2\. Viết chương trình chính:
+    2\. Viết chương trình chính:
 
-- Cho người dùng nhập số lượng ký tự của chuỗi nhị phần cần phát sinh.
-- Khởi tạo `binary_list` là rỗng.
-- Khởi tạo `b` là chuỗi nhị phân rỗng.
-- Gọi hàm `generate_binary_string()` ra thực hiện.
-- Dùng vòng lặp để in ra các chuỗi nhị phân hoàn chỉnh có trong `binary_list`.
+    - Cho người dùng nhập số lượng ký tự của chuỗi nhị phần cần phát sinh.
+    - Khởi tạo mảng kết quả `binary_strings` là rỗng.
+    - Khởi tạo phương án `init_option` là rỗng, dùng để truyền vào lời gọi hàm `generate_binary_string()`.
+    - Gọi hàm `generate_binary_string()` ra thực hiện.
+    - Dùng vòng lặp để in ra các chuỗi nhị phân hoàn chỉnh có trong `binary_strings`.
 
-```py linenums="22"
-if __name__ == '__main__':
-    # Số lượng ký tự của chuỗi nhị phân
-    n = int(input('Nhập số ký tự: '))
+    ```py linenums="24"
+    if __name__ == '__main__':
+        # Số lượng ký tự của chuỗi nhị phân
+        n = int(input('Nhập số ký tự: '))
 
-    # Khởi tạo binary_list chứa các chuỗi nhị phân hoàn chỉnh
-    binary_list = []
+        # Khởi tạo mảng kết quả binary_strings
+        binary_strings = []
 
-    # Khởi tạo một chuỗi nhị phân
-    b = []
+        # Khởi tạo phương án rỗng
+        init_option = []
 
-    # Gọi hàm generate()
-    generate_binary_string(b, n)
+        # Gọi hàm generate_binary_string()
+        generate_binary_string(init_option)
 
-    # In ra tất cả chuỗi nhị phân
-    for binary in binary_list:
-        s = ''.join(map(str, binary))
-        print(s)
-```
+        # In ra các chuỗi nhị phân trong mảng kết quả binary_strings
+        for s in binary_strings:
+            print(s)
+    ```
 
 ---
 

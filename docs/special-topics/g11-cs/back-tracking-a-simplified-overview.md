@@ -24,46 +24,48 @@ Giả sử ta đang đứng trong một mê cung rộng lớn.
 
 Gọi:
 
-- `solution` (lời giải) là một **dãy các `choice`** (lựa chọn) hoặc **dãy các phần tử được chọn**. Bài toán có thể có nhiều `solution`.
-- `solution_set` là tập hợp các `solution` hoàn chỉnh, là kết quả đầu ra của bài toán. Hoàn chỉnh có nghĩa là:
+- `option` (phương án) là một **dãy các `choice`** (lựa chọn) hoặc **dãy các phần tử được chọn**. Một bài toán có thể có nhiều `option`.
+- `solutions` là mảng kết quả, dùng để lưu các `option` khi đã chúng đã thành các lời giải hoàn chỉnh của bài toán.
 
-    - `solution` đã có đầy đủ số lượng `choice` (hoặc thực hiện đủ số bước).
-    - `solution` hợp lệ, tức là thoả mãn mọi yêu cầu của bài toán.
+    Một `option` được xem là hoàn chỉnh nếu thỏa cả hai điều sau:
+
+    - `option` đẩy đủ: đủ số lượng `choice` hoặc đủ số bước theo yêu cầu của bài toán.
+    - `option` hợp lệ: thỏa mãn mọi yêu cầu của bài toán.
 
 Ý tưởng chính của phương pháp quay lui được phác thảo như sau:
 
 1. **Khởi tạo**
 
-    Bắt đầu bằng `solution` rỗng.
+    Bắt đầu bằng `option` rỗng.
 
-    Đây là bước `i = 1`. Ta chọn `choice` đầu tiên để thêm vào `solution`.
+    Đây là bước `i = 1`. Ta chọn `choice` đầu tiên để nạp vào `option`.
 
 2. **Xây dựng lời giải**
 
     Tại bước thứ `i`, ta thực hiện các thao tác sau:
 
     - Chọn thử một `choice` khả thi.
-    - Kiểm tra tính hợp lệ của `solution` sau khi thêm `choice` vào:
+    - Kiểm tra tính hợp lệ của `option` sau khi nạp `choice` vào:
 
-        - Nếu `solution` không hợp lệ thì loại bỏ `choice` này và thử `choice` khác.
-        - Ngược lại, `solution` hợp lệ, thì xét tiếp hai trường hợp sau:
+        - Nếu `option` không hợp lệ thì loại bỏ `choice` này và thử nạp `choice` khác.
+        - Ngược lại, `option` hợp lệ, thì xét tiếp hai trường hợp sau:
 
-            - Nếu `solution` đã hoàn chỉnh thì lưu `solution` này vào `solution_set`.
-            - Ngược lại, `solution` chưa hoàn chỉnh, thì tiến đến bước `i + 1` để thử `choice` tiếp theo.
+            - Nếu `option` đã thành một lời giải hoàn chỉnh thì lưu `option` này vào `solutions`.
+            - Ngược lại, `option` chưa phải là lời giải, thì tiến đến bước `i + 1` để thử nạp `choice` tiếp theo.
 
 3. **Quay lui**
 
     Quay lui xảy ra trong hai trường hợp:
 
-    - Trường hợp 1: đã đến bước `n`, tìm thấy một `solution` hoàn chỉnh.
+    - Trường hợp 1: đã đến bước `n`, tìm thấy một `option` hoàn chỉnh.
 
-        - Lưu `solution` hoàn chỉnh vào `solution_set`.
-        - Quay lại bước `n - 1` để thử `choice` khác.
+        - Lưu `option` hoàn chỉnh này vào `solutions`.
+        - Quay lại bước `n - 1` để thử nạp `choice` khác.
 
     - Trường hợp 2: đang ở bước `i` mà gặp ngõ cụt (1).
         { .annotate }
 
-        1. *Ngõ cụt* là trạng thái mà `solution` hiện tại không thể tiếp tục phát triển thêm được nữa.
+        1. *Ngõ cụt* là trạng thái mà `option` hiện tại không thể tiếp tục phát triển thêm được nữa.
 
         - Quay lại bước `i - 1` để thử `choice` khác.
 
@@ -71,7 +73,7 @@ Gọi:
 
     Thuật toán sẽ dừng lại khi đã duyệt hết các `choice` tại bước đầu tiên `i = 1`.
     
-    Kết quả là ta có được `solution_set` gồm tất cả các `solution` hoàn chỉnh.
+    Kết quả là ta có được `solutions` gồm tất cả các `option` là lời giải hoàn chỉnh.
 
 ---
 
@@ -79,55 +81,58 @@ Gọi:
 
 Hàm quay lui có thể được biểu diễn bằng mã giả theo một trong hai cách sau:
 
-**Cách 1:** kiểm tra `solution` hoàn chỉnh ở đầu hàm
+**Cách 1:** kiểm tra `option` hoàn chỉnh ở đầu hàm
 
 ```py
-def back_tracking(bước_i, solution):
-    if kiểm_tra_hoàn_chỉnh(solution):
-        # Thêm solution vào solution_set
-        solution_set.append(solution.copy())
+def back_tracking(bước_i, option):
+    if kiểm_tra_hoàn_chỉnh(option):
+        # Lưu option vào solutions
+        solutions.append(option)
         return
 
     for choice in danh_sách_choice_khả_thi_tại_bước_i:
-        # Bước 1 - Thử: thêm choice vào solution
-        solution.append(choice)
+        # Bước 1 - Thử: nạp choice vào option
+        option.append(choice)
 
-        if kiểm_tra_hợp_lệ(solution):
+        if kiểm_tra_hợp_lệ(option):
             # Bước 2 - Tiến: gọi đệ quy cho bước tiếp theo
-            back_tracking(bước_i + 1, solution)
+            back_tracking(bước_i + 1, option)
 
-        # Bước 3 - Quay lui: gỡ bỏ choice vừa thêm vào (tức choice nằm ở cuối)
-        solution.pop()
+        # Bước 3 - Quay lui: gỡ bỏ choice vừa nạp vào (tức choice nằm ở cuối)
+        option.pop()
 ```
 
-**Cách 2:** kiểm tra `solution` hoàn chỉnh trong kiểm tra hợp lệ
+**Cách 2:** kiểm tra `option` hoàn chỉnh trong phần kiểm tra hợp lệ
 
 ```py
-def back_tracking(bước_i, solution):
+def back_tracking(bước_i, option):
     for choice in danh_sách_choice_khả_thi_tại_bước_i:
-        # Bước 1 - Thử: thêm choice vào solution
-        solution.append(choice)
+        # Bước 1 - Thử: nạp choice vào option
+        option.append(choice)
 
-        if kiểm_tra_hợp_lệ(solution):
-            if kiểm_tra_hoàn_chỉnh(solution):
-                # Thêm solution vào solution_set
-                solution_set.append(solution.copy())
+        if kiểm_tra_hợp_lệ(option):
+            if kiểm_tra_hoàn_chỉnh(option):
+                # Lưu option vào solutions
+                solutions.append(option)
             else:
                 # Bước 2 - Tiến: gọi đệ quy cho bước tiếp theo
-                back_tracking(bước_i + 1, solution)
+                back_tracking(bước_i + 1, option)
 
-        # Bước 3 - Quay lui: gỡ bỏ choice vừa thêm vào (tức choice nằm ở cuối)
-        solution.pop()
+        # Bước 3 - Quay lui: gỡ bỏ choice vừa nạp vào (tức choice nằm ở cuối)
+        option.pop()
 ```
 
 Hàm quay lui có thể được gọi ra thực hiện như sau:
 
 ```py
 if __name__ == '__main__':
-    solution_set = []
+    # Mảng kết quả
+    solutions = []
 
-    solution = []
-    back_tracking(1, solution)
+    # Khởi tạo phương án rỗng
+    init_solution = []
+
+    back_tracking(1, init_solution)
 ```
 
 ---
@@ -136,7 +141,7 @@ if __name__ == '__main__':
 
 Trong lập trình, quay lui hầu như được cài đặt bằng kỹ thuật đệ quy.
 
-- Đệ quy: mỗi lần gọi đệ quy tương ứng với việc tiến đến bước tiếp theo trong quá trình xây dựng `solution`, tức từ bước `i` đến bước `i + 1`.
+- Đệ quy: mỗi lần gọi đệ quy tương ứng với việc tiến đến bước tiếp theo trong quá trình xây dựng `option`, tức từ bước `i` đến bước `i + 1`.
 - Quay lui: là trở về bước trước đó. Mỗi lần quay lui tương ứng với việc kết thúc một lần đệ quy và trở về trạng thái của hàm đã gọi trước đó, tức từ bước `i + 1` trở về bước `i`.
 
 ---
@@ -145,7 +150,7 @@ Trong lập trình, quay lui hầu như được cài đặt bằng kỹ thuật
 
 Quay lui là phương pháp hữu dụng để giải quyết các bài toán **tìm kiếm trong một không gian lựa chọn** khổng lồ.
 
-Thay vì phải kiểm tra từng lời giải một cách mù quáng, phương pháp này giúp ta duyệt qua tất cả các tổ hợp, hoán vị hoặc cách sắp đặt khả thi để tìm ra lời giải tối ưu hoặc các kết quả thoả mãn yêu cầu.
+Thay vì phải kiểm tra từng lời giải một cách mù quáng, phương pháp này giúp ta duyệt qua tất cả các tổ hợp, hoán vị hoặc cách sắp đặt khả thi để tìm ra lời giải tối ưu hoặc các kết quả thỏa mãn yêu cầu.
 
 Nhóm các bài toán quay lui được phân loại theo độ khó tăng dần như sau:
 
@@ -160,7 +165,7 @@ Nhóm các bài toán quay lui được phân loại theo độ khó tăng dần
 - Quân hậu: Đặt $n$ quân hậu trên bàn cờ sao cho không con nào ăn nhau.
 - Mã đi tuần: Tìm cách để con mã đi qua tất cả các ô trên bàn cờ đúng một lần.
 - Mê cung: Tìm đường đi từ điểm bắt đầu đến điểm kết thúc.
-- Sudoku: Điền số vào bảng sao cho thoả mãn các quy tắc về hàng, cột và vùng.
+- Sudoku: Điền số vào bảng sao cho thỏa mãn các quy tắc về hàng, cột và vùng.
 
 **Nhóm 3: Các bài toán tối ưu hoá**
 

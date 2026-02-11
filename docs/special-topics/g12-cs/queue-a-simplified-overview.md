@@ -6,7 +6,9 @@
 
 ## Khái niệm
 
-**Hàng đợi** là cấu trúc dữ liệu hoạt động theo nguyên tắc **vào trước, ra trước** (**FIFO - First In, First Out**).
+!!! note "Hàng đợi"
+
+    Là cấu trúc dữ liệu hoạt động theo nguyên tắc **vào trước, ra trước** (**FIFO - First In, First Out**).
 
 Nghĩa là, trong hàng đợi, phần tử thêm vào đầu tiên sẽ được lấy ra đầu tiên, phần tử thêm vào sau cùng sẽ được lấy ra sau cùng.
 
@@ -27,6 +29,8 @@ Các thao tác cơ bản trên hàng đợi bao gồm:
 - Thêm phần tử vào cuối hàng đợi.
 - Lấy phần tử ở đầu ra khỏi hàng đợi.
 
+---
+
 ## Triển khai hàng đợi
 
 Hàng đợi có thể được biểu diễn bằng các cấu trúc dữ liệu khác nhau như mảng, danh sách liên kết hoặc các cấu trúc dữ liệu phức tạp hơn tùy thuộc vào yêu cầu cụ thể.
@@ -43,6 +47,8 @@ Trong Python, ta có thể triển khai hàng đợi bằng nhiều cách, bao g
 - Lớp `queue.Queue`: hàng đợi hoạt động theo nguyên tắc FIFO.
 
 Bài học này dùng lớp `Queue` của module `queue` để triển khai hàng đợi.
+
+---
 
 ## Chương trình minh hoạ
 
@@ -175,6 +181,8 @@ Hàng đợi được truy xuất theo FIFO: Bernard Arnault Elon Musk Jeff Bezo
 
     Sau khi thực hiện xong vòng lặp while, hàng đợi không còn phần tử nào nữa.
 
+---
+
 ## Ứng dụng
 
 Một số ứng dụng của hàng đợi là:
@@ -183,11 +191,15 @@ Một số ứng dụng của hàng đợi là:
 - Quản lý tài nguyên: bộ nhớ đệm (buffer), lập lịch cho CPU scheduling, quản lý kết nối mạng, v.v...
 - Xử lý sự kiện trong các hệ thống phần mềm.
 
+---
+
 ## Mã nguồn
 
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1S16HMuP18hXlaO-DMID0enxqFQuU-biK?usp=sharing){target="_blank"}
+
+---
 
 ## Some English words
 

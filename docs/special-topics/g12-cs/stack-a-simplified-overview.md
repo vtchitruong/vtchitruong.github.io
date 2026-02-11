@@ -6,7 +6,9 @@
 
 ## Khái niệm
 
-**Ngăn xếp** là cấu trúc dữ liệu hoạt động theo nguyên tắc **vào sau, ra trước**" (**LIFO - Last In, First Out**).
+!!! note "Ngăn xếp"
+
+    Là cấu trúc dữ liệu hoạt động theo nguyên tắc **vào sau, ra trước**" (**LIFO - Last In, First Out**).
 
 Nghĩa là, trong ngăn xếp, phần tử thêm vào sau cùng sẽ được lấy ra trước tiên. 
 
@@ -27,6 +29,8 @@ Các thao tác cơ bản trên ngăn xếp bao gồm:
 
 - Thêm phần tử vào đỉnh của ngăn xếp.
 - Lấy phần tử đỉnh ra khỏi ngăn xếp.
+
+---
 
 ## Triển khai ngăn xếp
 
@@ -49,6 +53,8 @@ Bài học này dùng lớp `LifoQueue` (1) của module `queue` để triển k
 1.  Python đặt tên là `LifoQueue` thay vì `stack` là để bảo đảm sự nhất quán trong việc đặt tên.
 
     Python xem mọi thứ trong module `queue` đều là biến thể của hàng đợi, chỉ khác nhau về thứ tự truy xuất: `Queue` (FIFO), lớp `LifoQueue` (LIFO), `PriorityQueue`.
+
+---
 
 ## Chương trình minh hoạ
 
@@ -181,6 +187,8 @@ Ngăn xếp được truy xuất theo LIFO: Larry Ellison Mark Zuckerberg Jeff B
 
     Sau khi thực hiện xong vòng lặp while, ngăn xếp không còn phần tử nào nữa.
 
+---
+
 ## Ứng dụng
 
 Một số ứng dụng của ngăn xếp là:
@@ -193,12 +201,15 @@ Một số ứng dụng của ngăn xếp là:
 - Kỹ thuật back tracking cũng có thể được triển khai bằng đệ quy hoặc ngăn xếp tường minh.
 - Trợ giúp xử lý các bài toán có cấu trúc lồng nhau như: so khớp cặp ngoặc trong biểu thức toán học, kiểm tra tính hợp lệ của các thẻ HTML.
 
+---
+
 ## Mã nguồn
 
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1tteH1AwNIc3w2YX2xn71Sj875gXGF2SG?usp=sharing){target="_blank"}
 
+---
 
 ## Some English words
 
