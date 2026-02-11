@@ -37,24 +37,28 @@ Số Fibonacci thứ n.
 | 7 | 10 | 55 |
 | 8 | 30 | 832040 |
 
+---
+
 ## Cách giải đề xuất
 
-### Ý tưởng chính
+??? tip "Ý tưởng chính"
 
-1. **Trường hợp cơ sở:**
+    1. **Trường hợp cơ sở:**
 
-    Bài toán này có hai trường hợp cơ sở:
+        Bài toán này có hai trường hợp cơ sở:
 
-    - `n == 0`: trả về giá trị `0`.
-    - `n == 1`: trả về giá trị `1`.
+        - `n == 0`: trả về giá trị `0`.
+        - `n == 1`: trả về giá trị `1`.
 
-2. **Trường hợp đệ quy:**
+    2. **Trường hợp đệ quy:**
 
-    Hàm đệ quy gọi lại chính nó theo công thức truy hồi $F_n = F_{n - 1} + F_{n - 2}$.
+        Hàm đệ quy gọi lại chính nó theo công thức truy hồi $F_n = F_{n - 1} + F_{n - 2}$.
 
-### Viết chương trình
+??? tip "Viết chương trình"
 
-1. Viết hàm `fibonacci` gồm có một tham số là `n`.
+    1\. Viết hàm `fibonacci()` dùng để tìm số Fibonacci.
+    
+    Hàm gồm có một tham số là `n` và giá trị trả về là số Fibonacci thứ `n`. 
 
     ```py linenums="1"
     def fibonacci(n):
@@ -69,7 +73,11 @@ Số Fibonacci thứ n.
         return fibonacci(n - 1) + fibonacci(n - 2)
     ```
 
-2. Viết chương trình chính.
+    2\. Viết chương trình chính:
+
+    - Cho người dùng nhập vào một số nguyên dương, lưu vào biến `number`.
+    - Gọi hàm `fibonacci()` ra thực hiện, lưu kết quả vào biến `result`.
+    - In ra kết quả.
 
     ```py linenums="13"
     if __name__ == '__main__':
@@ -79,12 +87,14 @@ Số Fibonacci thứ n.
         print(f'Số Fibonacci thứ {num} là {result}')
     ```
 
-3. Chạy chương trình trên, kết quả như sau:
+    3\. Chạy chương trình trên, nhập vào `10`, kết quả như sau:
 
     ```pycon
     Nhập n nguyên dương: 10
     Fibonacci[10] = 55
     ```
+
+---
 
 ## Mã nguồn
 

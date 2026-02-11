@@ -71,11 +71,11 @@ Thực hành sử dụng phần mềm bảng tính
 Thực hành thiết kế thuật toán theo kỹ thuật đệ quy
 
 - Trình bày được tính đệ quy trong một vài định nghĩa sự vật, sự việc.
-- [Xác định được phần cơ sở và phần đệ quy trong mô tả đệ quy](./g11-cs/an-overview-of-recursion.md){:target="_blank"}.
+- [Xác định được phần cơ sở và phần đệ quy trong mô tả đệ quy](./g11-cs/recursion-a-simplified-overview.md){:target="_blank"}.
 - Ứng dụng được kỹ thuật đệ quy trong thiết kế một vài thuật toán như:
-    - [Tính $a^n$ (hoặc $n!$](./g11-cs/factorial.md){:target="_blank"}).
-    - [Tìm phần tử thứ n của dãy Fibonacci](./g11-cs/fibonacci.md){:target="_blank"}.
-    - [Bài toán Tháp Hà Nội](./g11-cs/hanoi-tower.md){:target="_blank"}.
+    - [Tính $a^n$ (hoặc $n!$](./g11-cs/recursion-factorial.md){:target="_blank"}).
+    - [Tìm phần tử thứ n của dãy Fibonacci](./g11-cs/recursion-fibonacci.md){:target="_blank"}.
+    - [Bài toán Tháp Hà Nội](./g11-cs/recursion-hanoi-tower.md){:target="_blank"}.
 - Viết được chương trình sử dụng kỹ thuật đệ quy cho một vài bài toán đơn giản.
 - Nhận biết được tính ưu việt của kỹ thuật đệ quy trong định nghĩa sự vật, mô tả và thiết kế thuật toán.
 
@@ -133,7 +133,7 @@ Tìm hiểu một vài kiểu dữ liệu tuyến tính
 
 - [Mô tả được khái niệm kiểu dữ liệu hàng đợi](./g12-cs/queue-a-simplified-overview.md){:target="_blank"} và [ngăn xếp](./g12-cs/stack-a-simplified-overview.md){:target="_blank"} thông qua cơ chế hoạt động của các kiểu dữ liệu này.
 - Biểu diễn được hàng đợi và ngăn xếp bằng mảng một chiều.
-- Giải thích và viết được chương trình con thực hiện các phép toán cơ bản: khởi tạo, thêm, bớt phần tử cho [hàng đợi](./g12-cs/queue-task-queue-simulation.md){:target="_blank"} và [ngăn xếp](./g12-cs/stack-balanced-parentheses-check.md){:target="_blank"}.
+- Giải thích và viết được chương trình con thực hiện các phép toán cơ bản: khởi tạo, thêm, bớt phần tử cho [hàng đợi](./g12-cs/queue-task-queue-simulation.md){:target="_blank"} và [ngăn xếp](./g12-cs/stack-balanced-parentheses-check-1.md){:target="_blank"}.
 - Nêu được một số ứng dụng kiểu dữ liệu hàng đợi và ngăn xếp.
 
 ### Chuyên đề 12.2

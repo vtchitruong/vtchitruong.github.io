@@ -12,9 +12,9 @@ Viết chương trình mô phỏng một hệ thống điều khiển thiết b�
 
 - `ADD task`: thêm nhiệm vụ `task` vào hàng đợi.
 - `RUN`: thực hiện nhiệm vụ ở đầu hàng đợi.
-- `CANCEL task`: huỷ nhiệm vụ `task`.
+- `CANCEL task`: hủy nhiệm vụ `task`.
 
-    Khi huỷ một nhiệm vụ `task` nào đó ở giữa hàng đợi, những nhiệm vụ đứng trước `task` sẽ lần lượt được lấy ra và đưa lại vào cuối hàng đợi nhằm bảo đảm nguyên tắc FIFO, cho đến khi tìm thấy nhiệm vụ `task` cần huỷ nằm ở đầu hàng đợi.
+    Khi hủy một nhiệm vụ `task` nào đó ở giữa hàng đợi, những nhiệm vụ đứng trước `task` sẽ lần lượt được lấy ra và đưa lại vào cuối hàng đợi nhằm bảo đảm nguyên tắc FIFO, cho đến khi tìm thấy nhiệm vụ `task` cần hủy nằm ở đầu hàng đợi.
 
 Với mỗi lệnh và nhiệm vụ, ta chỉ cần in ra thông báo về lệnh và nhiệm vụ đó. 
 
@@ -67,13 +67,13 @@ Hàng đợi: ['WRITE_LOG', 'READ_SENSOR']
 Thêm nhiệm vụ WRITE_LOG
 Hàng đợi: ['WRITE_LOG', 'READ_SENSOR', 'WRITE_LOG']
 
-Huỷ nhiệm vụ WRITE_LOG
+hủy nhiệm vụ WRITE_LOG
 Hàng đợi: ['READ_SENSOR', 'WRITE_LOG']
 
 Thêm nhiệm vụ CLEAN_MEMORY
 Hàng đợi: ['READ_SENSOR', 'WRITE_LOG', 'CLEAN_MEMORY']
 
-Huỷ nhiệm vụ CLEAN_MEMORY
+hủy nhiệm vụ CLEAN_MEMORY
 Hàng đợi: ['READ_SENSOR', 'WRITE_LOG']
 
 Thêm nhiệm vụ SYNC_SERVER
@@ -93,202 +93,202 @@ Hàng đợi: []
 
 ## Cách giải đề xuất
 
-### Ý tưởng chính
+??? tip "Ý tưởng chính"
 
-Ta viết các hàm `add()`, `run()` và `cancel()` để xử lý các lệnh tương ứng.
+    1\. Viết các hàm `add()`, `run()` và `cancel()` để xử lý các lệnh tương ứng.
 
-- Trong mỗi hàm, việc xử lý lệnh và nhiệm vụ không có gì phức tạp, chỉ đơn giản là gọi hàm `print()` để in ra thông báo liên quan.
+    - Trong mỗi hàm, việc xử lý lệnh và nhiệm vụ không có gì phức tạp, chỉ đơn giản là gọi hàm `print()` để in ra thông báo liên quan.
 
-- Đối với hàm huỷ `cancel()`, ta dùng vòng lặp để lấy ra từng nhiệm vụ trong hàng đợi cho đến khi tìm thấy nhiệm vụ cần huỷ.
+    - Đối với hàm hủy `cancel()`, ta dùng vòng lặp để lấy ra từng nhiệm vụ trong hàng đợi cho đến khi tìm thấy nhiệm vụ cần hủy.
 
-Viết thêm hàm `process()` để xử lý từng dòng trong dữ liệu đầu vào. Với mỗi dòng, ta gọi hàm tương ứng một trong ba hàm đã viết trên ra xử lý.
+    2\. Viết thêm hàm `process()` để xử lý từng dòng trong dữ liệu đầu vào. Với mỗi dòng, ta gọi tương ứng một trong ba hàm đã viết trên ra xử lý.
 
-### Viết chương trình
+??? tip "Viết chương trình"
 
-#### 1. Nạp module và khai báo biến
+    1\. Nạp lớp `Queue` của module `queue`.
 
-Nạp lớp `Queue` của module `queue`.
+    ```py linenums="1"
+    from queue import Queue
+    ```
 
-```py linenums="1"
-from queue import Queue
-```
+    2\. Khai báo biến `data` chứa dữ liệu đầu vào.
 
-Khai báo biến `data` chứa dữ liệu đầu vào.
+    ```py linenums="5"
+    data = '''
+    ADD READ_SENSOR
+    ADD WRITE_LOG
+    ADD UPDATE_STATUS
+    RUN
+    ADD READ_SENSOR
+    ADD WRITE_LOG
+    CANCEL UPDATE_STATUS
+    ADD SYNC_SERVER
+    RUN
+    ADD CLEAN_MEMORY
+    CANCEL WRITE_LOG
+    ADD BACKUP_DB
+    RUN
+    RUN
+    RUN
+    '''
+    ```
 
-```py linenums="5"
-data = '''
-ADD READ_SENSOR
-ADD WRITE_LOG
-ADD UPDATE_STATUS
-RUN
-ADD READ_SENSOR
-ADD WRITE_LOG
-CANCEL UPDATE_STATUS
-ADD SYNC_SERVER
-RUN
-ADD CLEAN_MEMORY
-CANCEL WRITE_LOG
-ADD BACKUP_DB
-RUN
-RUN
-RUN
-'''
-```
+    3\. Khởi tạo hàng đợi `task_queue` dùng để chứa các phần tử là nhiệm vụ.
 
-Khởi tạo hàng đợi `task_queue` dùng để chứa các phần tử là nhiệm vụ.
+    ```py linenums="22"
+    task_queue = Queue()
+    ```
 
-```py linenums="22"
-task_queue = Queue()
-```
+    4\. Viết hàm `parse_data()` dùng để đọc và phân tách dữ liệu đầu vào.
+    
+    Hàm gồm một tham số `d` là là dữ liệu đầu vào.
 
-#### 2. Đọc dữ liệu đầu vào
+    Giá trị trả về là danh sách các dòng lệnh.
 
-Viết hàm `parse_data()` để đọc dữ liệu đầu vào trong biến `data`.
+    ```py linenums="26"
+    def parse_data(d):
+        # Chuyển đổi dữ liệu đầu vào thành danh sách các dòng lệnh
+        return d.strip().splitlines() # (1)!
+    ```
 
-Hàm này trả về danh sách các dòng lệnh.
+    1.  `strip()` được thực hiện trước, dùng để cắt bỏ các khoảng trắng ở hai đầu của `d`.
 
-```py linenums="26"
-def parse_data(d): #(1)!
-    # Chuyển đổi dữ liệu đầu vào thành danh sách các dòng lệnh
-    return d.strip().splitlines() # (2)!
-```
-{ .annotate }
+        `splitlines()` được thực hiện sau, dùng để phân tách thành các dòng lệnh riêng lẻ.
 
-1.  Tham số `d` dùng để nhận dữ liệu đầu vào.
+    5\. Viết hàm `add()` dùng để xử lý lệnh `ADD`.
+    
+    Hàm gồm một tham số `task` là nhiệm vụ cần đưa vào hàng đợi.
 
-2.  `strip()` được thực hiện trước, dùng để cắt bỏ các khoảng trắng ở hai đầu của `d`.
+    Hàm hoạt động như sau:
 
-    `splitlines()` được thực hiện sau, dùng để phân tách thành các dòng lệnh riêng lẻ.
+    - Đưa nhiệm vụ vào hàng đợi `task_queue`.
+    - In ra thông báo liên quan.
 
-#### 3. Xử lý
-
-Viết hàm `add()` để xử lý lệnh `ADD`. Việc xử lý bao gồm:
-
-- Đưa nhiệm vụ vào hàng đợi `task_queue`.
-- In ra thông báo liên quan.
-
-Hàm này gồm một tham số là nhiệm vụ cần đưa vào hàng đợi, đặt là `task`.
-
-```py linenums="32"
-def add(task):
-    # Đưa nhiệm vụ vào hàng đợi
-    task_queue.put(task)
-
-    # In ra thông báo
-    print(f'Thêm nhiệm vụ {task}')
-```
-
-Viết hàm `run()` để xử lý lệnh `RUN`. Việc xử lý bao gồm:
-
-- Lấy ra nhiệm vụ nằm ở đầu hàng đợi.
-- In ra thông báo liên quan.
-
-Hàm này không có tham số vì nhiệm vụ là giá trị của phần tử nằm ở đầu hàng đợi.
-
-```py linenums="41"
-def run():
-    if task_queue.empty():
-        # Nếu hàng đợi rỗng thì thông báo hết nhiệm vụ
-        print('Đã hết nhiệm vụ')
-    else:
-        # Ngược lại, nếu không rỗng thì lấy ra nhiệm vụ ở đầu hàng đợi
-        t = task_queue.get() # (1)!
+    ```py linenums="32"
+    def add(task):
+        # Đưa nhiệm vụ vào hàng đợi
+        task_queue.put(task)
 
         # In ra thông báo
-        print(f'Đang thực thi nhiệm vụ {t}')
-```
-{ .annotate }
+        print(f'Thêm nhiệm vụ {task}')
+    ```
 
-1.  `get()` vừa lấy giá trị của phần tử ở đầu hàng đợi, vừa xoá nó khỏi hàng đợi.
+    6\. Viết hàm `run()` dùng để xử lý lệnh `RUN`.
 
-Viết hàm `cancel()` để xử lý lệnh `CANCEL`.
+    Hàm này không có tham số vì nhiệm vụ là giá trị của phần tử nằm ở đầu hàng đợi.
 
-Hàm này gồm một tham số là nhiệm vụ cần huỷ, đặt là `task`.
+    Hàm hoạt động như sau:
 
-Ta dùng vòng lặp while để xác định xem phần tử nằm ở đầu hàng đợi có phải là nhiệm vụ cần huỷ `task` hay không:
+    - Lấy ra nhiệm vụ nằm ở đầu hàng đợi.
+    - In ra thông báo liên quan.    
 
-- Nếu phần tử đầu hàng đợi là nhiệm vụ cần huỷ thì in ra thông báo liên quan.
-- Ngược lại, nếu phần tử đầu hàng đợi không phải là nhiệm vụ cần huỷ thì đưa nhiệm vụ này ra sau cùng, tức đưa lại vào cuối hàng đợi `task_queue`.
-
-```py linenums="54"
-def cancel(task):
-    # biến cờ hiệu dùng để đánh dấu việc tìm thấy nhiệm vụ cần huỷ
-    found = False
-
-    # Trong khi hàng đợi vẫn còn nhiệm vụ
-    while not task_queue.empty():
-        # Lấy ra phần tử ở đầu hàng đợi để xét
-        t = task_queue.get()
-
-        if t == task:
-            # Nếu phần tử này là nhiệm vụ cần huỷ thì in ra thông báo
-            print(f'Huỷ nhiệm vụ {task}')
-
-            # Đánh dấu đã tìm thấy nhiệm vụ cần huỷ
-            found = True
-
-            # Ngắt vòng lặp
-            break
+    ```py linenums="41"
+    def run():
+        if task_queue.empty():
+            # Nếu hàng đợi rỗng thì thông báo hết nhiệm vụ
+            print('Đã hết nhiệm vụ')
         else:
-            # Ngược lại, nếu phần tử này không phải là nhiệm vụ cần huỷ thì đưa nó vào cuối hàng
-            task_queue.put(t)
+            # Ngược lại, nếu không rỗng thì lấy ra nhiệm vụ ở đầu hàng đợi
+            t = task_queue.get() # (1)!
 
-    if not found:
-        # Nếu found == False thì thông báo lệnh CANCEL không thể xử lý
-        print(f'Không tồn tại nhiệm vụ {task} nên không thể xử lý lệnh huỷ')
-```
+            # In ra thông báo
+            print(f'Đang thực thi nhiệm vụ {t}')
+    ```
+    { .annotate }
 
-Viết hàm `process()` để gọi các hàm trên.
+    1.  `get()` vừa lấy giá trị của phần tử ở đầu hàng đợi, vừa xóa nó khỏi hàng đợi.
 
-Hàm này gồm một tham số là danh sách các dòng lệnh có được từ hàm `parse_data()`, đặt là `lines`.
-
-Ta dùng vòng lặp for để duyệt từng dòng lệnh, lặp thao tác:
-
-- Phân tách hai thành phần trong mỗi dòng vào một danh sách `C`.
-- Xét thành phần đầu tiên, là `C[0]`, đang chứa lệnh gì.
-- Ứng với mỗi lệnh `C[0]`, ta gọi hàm tương ứng đã viết ở trên.
-
-```py linenums="82"
-def process(lines):
-    # Duyệt từng lệnh
-    for line in lines:
-        # Phân tách các thành phần trong một dòng vào danh sách C
-        C = line.split()
-
-        # Xét lệnh C[0]
-        if C[0] == 'ADD':
-            add(C[1]) 
-        elif C[0] == 'RUN':
-            run()
-        elif C[0] == 'CANCEL':
-            cancel(C[1])
     
-        # Xem tình trạng hiện tại của hàng đợi nhiệm vụ
-        print(f'Hàng đợi: {list(task_queue.queue)}')
+    7\. Viết hàm `cancel()` dùng để xử lý lệnh `CANCEL`.
+
+    Hàm này gồm một tham số `task` là nhiệm vụ cần hủy.
+
+    Hàm hoạt động như sau:
+
+    Dùng vòng lặp while để xác định xem phần tử nằm ở đầu hàng đợi có phải là nhiệm vụ cần hủy `task` hay không:
+
+    - Nếu phần tử đầu hàng đợi là nhiệm vụ cần hủy thì in ra thông báo liên quan.
+    - Ngược lại, nếu phần tử đầu hàng đợi không phải là nhiệm vụ cần hủy thì đưa nhiệm vụ này ra sau cùng, tức đưa lại vào cuối hàng đợi `task_queue`.
+
+    ```py linenums="54"
+    def cancel(task):
+        # biến cờ hiệu dùng để đánh dấu việc tìm thấy nhiệm vụ cần hủy
+        found = False
+
+        # Trong khi hàng đợi vẫn còn nhiệm vụ
+        while not task_queue.empty():
+            # Lấy ra phần tử ở đầu hàng đợi để xét
+            t = task_queue.get()
+
+            if t == task:
+                # Nếu phần tử này là nhiệm vụ cần hủy thì in ra thông báo
+                print(f'hủy nhiệm vụ {task}')
+
+                # Đánh dấu đã tìm thấy nhiệm vụ cần hủy
+                found = True
+
+                # Ngắt vòng lặp
+                break
+            else:
+                # Ngược lại, nếu phần tử này không phải là nhiệm vụ cần hủy thì đưa nó vào cuối hàng
+                task_queue.put(t)
+
+        if not found:
+            # Nếu found == False thì thông báo lệnh CANCEL không thể xử lý
+            print(f'Không tồn tại nhiệm vụ {task} nên không thể xử lý lệnh hủy')
+    ```
+
+    8\. Viết hàm `process()` dùng để gọi các hàm trên.
+
+    Hàm này gồm một tham số `lines` là danh sách các dòng lệnh có được từ hàm `parse_data()`.
+
+    Hàm hoạt động như sau:
+
+    Dùng vòng lặp for để duyệt từng dòng lệnh, lặp thao tác:
+
+    - Phân tách hai thành phần trong mỗi dòng vào một danh sách `c`.
+    - Xét thành phần đầu tiên, là `c[`0]`, đang chứa lệnh gì.
+    - Ứng với mỗi lệnh `c[`0]`, ta gọi hàm tương ứng đã viết ở trên.
+
+    ```py linenums="82"
+    def process(lines):
+        # Duyệt từng lệnh
+        for line in lines:
+            # Phân tách các thành phần trong một dòng vào danh sách c
+            c = line.split()
+
+            # Xét lệnh c[0]
+            if c[0] == 'ADD':
+                add(c[1]) 
+            elif c[0] == 'RUN':
+                run()
+            elif c[0] == 'CANCEL':
+                cancel(c[1])
+        
+            # Xem tình trạng hiện tại của hàng đợi nhiệm vụ
+            print(f'Hàng đợi: {list(task_queue.queue)}')
+            print()
+    ```
+
+    9\. Viết chương trình chính:
+
+    - Gọi hàm `parse_data()` để đọc dữ liệu đầu vào.
+    - Gọi hàm `process()` để xử lý dữ liệu.
+
+    ```py linenums="102"
+    if __name__ == '__main__':
+        # Đọc dữ liệu đầu vào và đưa vào danh sách command_lines
+        command_lines = parse_data(data)
+
+        # In danh sách các dòng lệnh
+        print(*command_lines, sep='\n')
         print()
-```
 
-#### 4. Chương trình chính
+        # Gọi hàm process() để tiến hành xử lý các lệnh
+        process(command_lines)
+    ```
 
-Trong chương trình chính, ta gọi các hàm đã viết ra thực hiện:
-
-- Hàm `parse_data()` để đọc dữ liệu đầu vào.
-- Hàm `process()` để xử lý dữ liệu.
-
-```py linenums="102"
-if __name__ == '__main__':
-    # Đọc dữ liệu đầu vào và đưa vào danh sách command_lines
-    command_lines = parse_data(data)
-
-    # In danh sách các dòng lệnh
-    print(*command_lines, sep='\n')
-    print()
-
-    # Gọi hàm process() để tiến hành xử lý các lệnh
-    process(command_lines)
-```
-
-Chạy chương trình trên và đối chiếu kết quả với đầu ra trong bộ kiểm thử.
+    10\. Chạy chương trình trên và đối chiếu kết quả với đầu ra trong bộ kiểm thử.
 
 ---
 

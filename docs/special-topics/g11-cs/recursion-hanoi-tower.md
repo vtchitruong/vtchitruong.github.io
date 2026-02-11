@@ -16,7 +16,7 @@ Người chơi cần phải chuyển toàn bộ đĩa đến cột đích theo q
 - Mỗi lần chỉ được lấy một đĩa nằm trên cùng của một cột và đặt đĩa này lên trên cùng của một cột khác.
 - Đĩa nhỏ phải luôn nằm trên đĩa lớn.
 
-![Minh họa trò chơi có 4 đĩa](/special-topics/recursion/images/ha-noi-tower.svg){width="75%" loading=lazy}
+![Minh họa trò chơi có 4 đĩa](images/ha-noi-tower.svg){width="75%" loading=lazy}
 
 *Minh họa trò chơi có 4 đĩa*
 
@@ -38,49 +38,51 @@ Các câu hướng dẫn chuyển đĩa.
 | --- | --- |
 | 3 1 3 | Chuyển đĩa 1: từ cột 1 đến cột 3 <br> Chuyển đĩa 2: từ cột 1 đến cột 2 <br> Chuyển đĩa 1: từ cột 3 đến cột 2 <br> Chuyển đĩa 3: từ cột 1 đến cột 3 <br> Chuyển đĩa 1: từ cột 2 đến cột 1 <br> Chuyển đĩa 2: từ cột 2 đến cột 3 <br> Chuyển đĩa 1: từ cột 1 đến cột 3 |
 
+---
+
 ## Cách giải đề xuất
 
-### Ý tưởng chính
+??? tip "Ý tưởng chính"
 
-Gọi:
-    
-- Đĩa nhỏ nhất (nằm trên cùng) là đĩa `1`.
-- Đĩa lớn nhất (nằm dưới cùng) là đĩa `n`.
-    
-Ta *"giả vờ"* xem tất cả các đĩa chỉ là hai nhóm:
+    Gọi:
+        
+    - Đĩa nhỏ nhất (nằm trên cùng) là đĩa `1`.
+    - Đĩa lớn nhất (nằm dưới cùng) là đĩa `n`.
+        
+    Ta *"giả vờ"* xem tất cả các đĩa chỉ là hai nhóm:
 
-- Nhóm thứ nhất: `n - 1` đĩa nằm trên.
-- Nhóm thứ hai: đĩa `n` nằm dưới.
+    - Nhóm thứ nhất: `n - 1` đĩa nằm trên.
+    - Nhóm thứ hai: đĩa `n` nằm dưới.
 
-Với chỉ hai nhóm, ta có thể chuyển đĩa như sau:
+    Với chỉ hai nhóm, ta có thể chuyển đĩa như sau:
 
-- Bước 1: chuyển `n - 1` đĩa từ **cột bắt đầu** đến **cột trung gian**.
-- Bước 2: chuyển đĩa `n` từ **cột bắt đầu** đến **cột đích**.
-- Bước 3: chuyển `n - 1` đĩa từ **cột trung gian** đến **cột đích**.
+    - Bước 1: chuyển `n - 1` đĩa từ **cột bắt đầu** đến **cột trung gian**.
+    - Bước 2: chuyển đĩa `n` từ **cột bắt đầu** đến **cột đích**.
+    - Bước 3: chuyển `n - 1` đĩa từ **cột trung gian** đến **cột đích**.
 
-Ta nhận thấy tại bước 1 và bước 3, bài toán được lặp lại với kích thước nhỏ hơn. Đây là chỗ có thể gọi thực hiện đệ quy.
+    Ta nhận thấy tại bước 1 và bước 3, bài toán được lặp lại với kích thước nhỏ hơn. Đây là chỗ có thể gọi thực hiện đệ quy.
 
-Như vậy, bài toán có thể được phân tích như sau:
+    Như vậy, bài toán có thể được phân tích như sau:
 
-1. **Trường hợp cơ sở:** `n == 1` đĩa.
+    1. **Trường hợp cơ sở:** `n == 1` đĩa.
 
-    Đây là trường hợp mà ta chuyển một đĩa cụ thể từ cột xác định này đến một cột xác định khác.
+        Đây là trường hợp mà ta chuyển một đĩa cụ thể từ cột xác định này đến một cột xác định khác.
 
-2. **Trường hợp đệ quy:** `n - 1` đĩa còn lại.
+    2. **Trường hợp đệ quy:** `n - 1` đĩa còn lại.
 
-    Đây là trường hợp dành cho bước 1 và bước 3.
+        Đây là trường hợp dành cho bước 1 và bước 3.
 
-    Trong đó, ta cần xác định cột trung gian là cột nào, vì không phải lúc nào cũng là cột 2. Chẳng hạn, khi chuyển đĩa từ cột 2 đến cột 1, thì cột trung gian là cột 3.
+        Trong đó, ta cần xác định cột trung gian là cột nào, vì không phải lúc nào cũng là cột 2. Chẳng hạn, khi chuyển đĩa từ cột 2 đến cột 1, thì cột trung gian là cột 3.
 
-    Ta có: tổng số thứ tự của ba cột là $1 + 2 + 3 = 6$.
+        Ta có: tổng số thứ tự của ba cột là $1 + 2 + 3 = 6$.
 
-    Do đó, để xác định cột trung gian, ta lấy tổng trừ đi cột bắt đầu và cột đích.
+        Do đó, để xác định cột trung gian, ta lấy tổng trừ đi cột bắt đầu và cột đích.
 
-    Ví dụ: nếu cột bắt đầu là cột 2, cột đích là cột 1, thì cột trung gian là $6 - 2 - 1 = 3$.
+        Ví dụ: nếu cột bắt đầu là cột 2, cột đích là cột 1, thì cột trung gian là $6 - 2 - 1 = 3$.
 
-### Viết chương trình
+??? tip "Viết chương trình"
 
-1. Viết hàm `hanoi_tower()` để thực hiện chuyển đĩa bằng kỹ thuật đệ quy.
+    1\. Viết hàm `hanoi_tower()` để thực hiện chuyển đĩa bằng kỹ thuật đệ quy.
 
     Hàm này gồm ba tham số:
     
@@ -108,7 +110,10 @@ Như vậy, bài toán có thể được phân tích như sau:
         hanoi_tower(disc - 1, spare, target)
     ```
 
-2. Viết chương trình chính.
+    2\. Viết chương trình chính:
+
+    - Cho người dùng nhập vào số đĩa, cột bắt đầu, cột đích.
+    - Gọi hàm `hanoi_tower()` ra thực hiện.
 
     ```py linenums="20"
     if __name__ == '__main__':
@@ -119,7 +124,7 @@ Như vậy, bài toán có thể được phân tích như sau:
         hanoi_tower(n, s, t)
     ```
 
-3. Chạy chương trình trên, kết quả như sau:
+    3\. Chạy chương trình trên, kết quả như sau:
 
     ```pycon
     Số lượng đĩa: 4
@@ -141,6 +146,8 @@ Như vậy, bài toán có thể được phân tích như sau:
     Chuyển đĩa 2: từ cột 1 đến cột 3
     Chuyển đĩa 1: từ cột 2 đến cột 3
     ```
+
+---
 
 ## Mã nguồn
 

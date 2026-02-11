@@ -496,10 +496,10 @@ nav:
     - Lớp 11 CS:
       - Mục lục: special-topics/g11-cs/topic-g11-cs-index.md
       - Đệ quy:
-        - special-topics/g11-cs/an-overview-of-recursion.md
-        - special-topics/g11-cs/factorial.md
-        - special-topics/g11-cs/fibonacci.md
-        - special-topics/g11-cs/hanoi-tower.md
+        - special-topics/g11-cs/recursion-a-simplified-overview.md
+        - special-topics/g11-cs/recursion-factorial.md
+        - special-topics/g11-cs/recursion-fibonacci.md
+        - special-topics/g11-cs/recursion-hanoi-tower.md
       - Quay lui:
         - special-topics/g11-cs/back-tracking-a-simplified-overview.md
         - special-topics/g11-cs/back-tracking-binary-string.md
@@ -517,7 +517,7 @@ nav:
       - Ngăn xếp:
         - special-topics/g12-cs/stack-a-simplified-overview.md
         - special-topics/g12-cs/stack-balanced-parentheses-check-1.md
-        - special-topics/g12-cs/stack-balanced-parentheses-check.md
+        - special-topics/g12-cs/stack-balanced-parentheses-check-2.md
       - Cây nhị phân:
         - special-topics/g12-cs/tree-a-simplified-overview.md
         - special-topics/g12-cs/tree-binary-tree-a-simplified-overview.md
