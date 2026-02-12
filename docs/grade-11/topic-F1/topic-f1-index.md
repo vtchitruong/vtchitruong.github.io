@@ -1,5 +1,6 @@
 ---
 icon: material/table-of-contents
+show_donation: false
 ---
 
 # Giới thiệu các hệ cơ sở dữ liệu

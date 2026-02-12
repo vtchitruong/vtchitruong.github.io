@@ -26,7 +26,7 @@ icon: material/table-large
 
 Mảng một chiều `A` và giá trị `k`.
 
-**Đầu vào:**
+**Đầu ra:**
 
 Tần số của `k`.
 
@@ -107,7 +107,7 @@ Tần số của `k`.
 
 Mảng một chiều `A` tăng dần và giá trị `k`.
 
-**Đầu vào:**
+**Đầu ra:**
 
 Vị trí bắt đầu và vị trí kết thúc.
 
@@ -233,7 +233,7 @@ Là số chính phương hoặc không.
 
 ??? tip "Viết chương trình"
 
-    1\. Viết hàm `is_square_number()` để kiểm tra chính phương.
+    1\. Viết hàm `is_square_number()` dùng để kiểm tra chính phương.
 
     Hàm gồm có tham số `n` là số cần kiểm tra.
     

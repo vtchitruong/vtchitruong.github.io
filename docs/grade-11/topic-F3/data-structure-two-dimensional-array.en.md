@@ -22,7 +22,9 @@ In such cases, a one-dimensional array is no longer sufficient. We need a new st
 
 ## Concept
 
-A **two-dimensional array** is a data structure used to store elements in a table format with rows and columns.
+!!! note "Two-dimensional array"
+
+    A **two-dimensional array** is a data structure used to store elements **in a table format** with rows and columns.
 
 Each element is identified by two indices:
 

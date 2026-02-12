@@ -26,36 +26,36 @@ Giả sử quyển từ điển đang mở ở một trang nào đó.
 
 Đây là động tác giới hạn phạm vi tìm kiếm, chỉ tập trung vào xét phạm vi mà chữ cái T xuất hiện.
 
-Áp dụng ý tưởng trên cho mảng, thuật toán tìm kiếm nhị phân được thực hiện như sau:
+Áp dụng ý tưởng trên cho mảng, ta cần phải:
 
 - Xác định **phần tử giữa** nhằm chia mảng ban đầu thanh hai mảng con: **nửa trái** và **nửa phải**.
 - **So sánh** phần tử giữa với giá trị cần tìm `k` để loại bỏ mảng con không chứa `k`.
 - Lặp lại nhiều lần hai thao tác trên đối với mảng con còn lại cho đến khi tìm thấy `k` hoặc không còn chia đôi mảng được nữa.
 
-Cụ thể:
+!!! note "Thuật toán tìm kiếm nhị phân"
 
-1. Đặt mốc trái `left` là vị trí đầu mảng và mốc phải `right` là vị trí cuối mảng.
+    1. Đặt mốc trái `left` là vị trí đầu mảng và mốc phải `right` là vị trí cuối mảng.
 
-2. Trong khi mốc `left` vẫn chưa vượt quá mốc `right`, lặp các thao tác sau:
+    2. Trong khi mốc `left` vẫn chưa vượt quá mốc `right`, lặp các thao tác sau:
 
-    - Xác định mốc giữa: `mid = (left + right) / 2`, lấy phần nguyên.
-    - Nếu `A[mid] == k` thì đây chính là vị trí tìm thấy. Kết thúc thuật toán.
-    - Nếu `A[mid] < k` thì *dời* mốc `left` sang bên phải của `mid`: `left = mid + 1` để xét mảng con bên phải.
-    - Nếu `A[mid] > k` thì *dời* mốc `right` sang bên trái của `mid`: `right = mid - 1` để xét mảng con bên trái.
+        - Xác định mốc giữa: `mid = (left + right) / 2`, lấy phần nguyên.
+        - Nếu `A[mid] == k` thì đây chính là vị trí tìm thấy. Kết thúc thuật toán.
+        - Nếu `A[mid] < k` thì *dời* mốc `left` sang bên phải của `mid`: `left = mid + 1` để xét mảng con bên phải.
+        - Nếu `A[mid] > k` thì *dời* mốc `right` sang bên trái của `mid`: `right = mid - 1` để xét mảng con bên trái.
 
-3. Khi vòng lặp kết thúc, tức mốc `left` đã vượt quá mốc `right`, nghĩa là không có `A[mid]` nào bằng `k`, thì trả về `-1`.
-    
-    (`-1` là giá trị quy ước cho trường hợp không tìm thấy, vì chỉ số của mảng bắt đầu từ `0`, không có chỉ số âm).
+    3. Khi vòng lặp kết thúc, tức mốc `left` đã vượt quá mốc `right`, nghĩa là không có `A[mid]` nào bằng `k`, thì trả về `-1`.
+        
+        (`-1` là giá trị quy ước cho trường hợp không tìm thấy, vì chỉ số của mảng bắt đầu từ `0`, không có chỉ số âm).
 
-### Ví dụ minh hoạ
+### Ví dụ minh họa
 
-![Ví dụ minh hoạ tiến trình tìm kiếm nhị phân](images/search-algorithm-binary-search-manual-run.svg){loading=lazy}
+![Ví dụ minh họa tiến trình tìm kiếm nhị phân](images/search-algorithm-binary-search-manual-run.svg){loading=lazy}
 
 ### Lưu đồ
 
 ![Lưu đồ thuật toán tìm kiếm nhị phân](images/search-algorithm-binary-search-flowchart.svg){loading=lazy}
 
-### Trực quan hoá
+### Trực quan hóa
 
 <div>
     <iframe width="100%" height="760px" frameBorder=0 src="/grade-11/topic-F3/visualize/binary-search.html"></iframe>

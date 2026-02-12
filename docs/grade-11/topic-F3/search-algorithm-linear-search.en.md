@@ -28,11 +28,11 @@ In this lesson, we focus on a specific version of the search problem:
 - The data is stored in a one-dimensional array.
 - We are looking for exactly one element with a given value *k*.
 
-Formal problem statement:
+!!! note "Formal problem statement"
 
-| Input | Output |
-| --- | --- |
-| - A one-dimensional array `A` containing `n` integers.<br>- A target value `k` to search for. | - The index (position) of the element equal to `k` in array `A` or `-1` if `k` is not found. |
+    | Input | Output |
+    | --- | --- |
+    | - A one-dimensional array `A` containing `n` integers.<br>- A target value `k` to search for. | - The index (position) of the element equal to `k` in array `A` or `-1` if `k` is not found. |
 
 ### Search algorithms
 
@@ -92,13 +92,15 @@ We compare each element with the target value `k`, from the beginning to the end
 
 Here’s how it works step by step:
 
-1. Go through the array from the first element to the last (`A[i]`), and for each position `i`:
+!!! note "How the sequential seach algorithm works"
 
-    - If `A[i] == k`, return `i` — that’s the index where the value was found.
+    1. Go through the array from the first element to the last (`A[i]`), and for each position `i`:
 
-2. If we finish checking all elements and never found `k`, return `-1` (meaning: not found).
+        - If `A[i] == k`, return `i` — that’s the index where the value was found.
 
-    (`-1` is a common convention for "not found" because array indices start at 0 — there are no negative indices.)
+    2. If we finish checking all elements and never found `k`, return `-1` (meaning: not found).
+
+        (`-1` is a common convention for "not found" because array indices start at 0 — there are no negative indices.)
 
 ### Flowchart
 

@@ -33,7 +33,11 @@ May thay, các ngôn ngữ lập trình đều có hỗ trợ những cấu trú
 
 ### Khái niệm
 
-Trong đa số ngôn ngữ lập trình, **mảng** là cấu trúc dữ liệu dùng để lưu trữ và xử lý **tập hợp các phần tử**, trong đó:
+!!! note "Mảng"
+
+    Trong đa số ngôn ngữ lập trình, **mảng** là cấu trúc dữ liệu dùng để lưu trữ và xử lý **tập hợp các phần tử**
+    
+Trong đó:
 
 - Các phần tử được **lưu trữ liên tiếp nhau** trên bộ nhớ.
 - Các phần tử đều **có cùng kiểu dữ liệu**, chẳng hạn: cùng là số nguyên, cùng là số thực, v.v...
@@ -73,7 +77,9 @@ Bài học này chỉ đề cập **mảng một chiều**.
 
 ### Khái niệm
 
-**Mảng một chiều** là cấu trúc dữ liệu cơ bản nhất dùng để lưu trữ các các phần tử có cùng kiểu dữ liệu, được sắp xếp theo một hàng duy nhất, hoặc một cột duy nhất.
+!!! note "Mảng một chiều"
+
+    Là cấu trúc dữ liệu cơ bản nhất dùng để lưu trữ các các phần tử có **cùng kiểu dữ liệu**, được sắp xếp **theo một hàng duy nhất**, hoặc một cột duy nhất.
 
 Mỗi phần tử được định vị bằng một **chỉ số**, thường được đánh thứ tự từ **0**.
 
@@ -205,7 +211,9 @@ Mảng zeros: [0 0 0 0 0 0 0 0]
 
 Mỗi phần tử được truy xuất thông qua chỉ số của nó, đặt trong cặp ngoặc vuông `[ ]`.
 
-Phần tử đầu tiên có chỉ số là `0` và phần tử cuối cùng có chỉ số là `len(mảng) - 1`.
+!!! note "Chỉ số"
+
+    Phần tử đầu tiên có chỉ số là `0` và phần tử cuối cùng có chỉ số là `len(mảng) - 1`.
 
 Ví dụ:  
 Dòng lệnh 8 và 11 in ra màn hình giá trị của phần tử đầu tiên và cuối cùng của mảng `A`.

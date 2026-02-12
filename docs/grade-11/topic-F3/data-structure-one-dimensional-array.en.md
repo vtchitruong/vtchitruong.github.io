@@ -14,7 +14,7 @@ icon: material/table-row
 
 When managing the computer science grades for a class of 30 students, declaring 30 separate variables feels pretty impractical. Just look at how clunky this declaration code gets:
 
-(*This introductory problem is similar to the [`list` data structure`](/grade-10/topic-F/list.en.md){target="_blank"} lesson from grade 10.)*
+(*This introductory problem is similar to the [`list` data structure`](../../../grade-10/topic-F/list){target="_blank"} lesson from grade 10.)*
 
 ```py
 hs1 = 10
@@ -33,7 +33,11 @@ Fortunately, programming languages provide data structures that make handling gr
 
 ### Concept
 
-In most programming languages, an **array** is a data structure used to store and process a **collection of elements**, where:
+!!! note "Array"
+
+    In most programming languages, an **array** is a data structure used to store and process a **collection of elements**.
+
+In this collection:
 
 - The elements are **stored consecutively** in memory.
 - All elements have the **same data type** (e.g., all integers, all floating-point numbers, etc.).
@@ -77,7 +81,9 @@ This lesson focuses **only on one-dimensional arrays**.
 
 ### Concept
 
-A **one-dimensional array** is the most basic data structure used to store elements of the same data type, arranged in a single row or a single column.
+!!! note "One-dimensional array"
+
+    A **one-dimensional array** is the most basic data structure used to store elements of the same data type, arranged in a single row or a single column.
 
 Each element is identified by an **index**, which usually starts from **0**.
 

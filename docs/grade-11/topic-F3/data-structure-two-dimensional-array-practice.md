@@ -26,7 +26,7 @@ Viết chương trình chuyển đổi mảng hai chiều thành mảng một ch
 
 Mảng hai chiều `A`.
 
-**Đầu vào:**
+**Đầu ra:**
 
 Mảng một chiều `B`.
 
@@ -613,6 +613,8 @@ Không có dữ liệu đầu vào.
         board = fill_chess_board(size)
         show(board)
     ```
+
+---
 
 ## Mã nguồn
 

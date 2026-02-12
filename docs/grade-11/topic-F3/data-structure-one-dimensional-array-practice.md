@@ -25,7 +25,7 @@ Viết chương trình phát sinh `n` phần tử ngẫu nhiên cho mảng một
 
 Số phần tử cần phát sinh `n`.
 
-**Đầu vào:**
+**Đầu ra:**
 
 Mảng một chiều `A` gồm `n` phần tử nguyên.
 
@@ -119,7 +119,7 @@ Giá trị của phần tử lớn nhất và vị trí của nó.
 
 | Đầu vào | Đầu ra |
 | --- | --- |
-| [ 3  8  4  0  8  8  3  4  6  8 10 10  3  0  1  3  1  8  5  8] | Lớn nhất: 10<br>Vị trí: 10 |
+| 3  8  4  0  8  8  3  4  6  8 10 10  3  0  1  3  1  8  5  8 | Lớn nhất: 10<br>Vị trí: 10 |
 
 ### Cách giải đề xuất
 

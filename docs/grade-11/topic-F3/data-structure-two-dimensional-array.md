@@ -22,7 +22,9 @@ Khi đó, mảng một chiều không còn đủ mạnh nữa. Ta cần một c�
 
 ## Khái niệm
 
-**Mảng hai chiều** là cấu trúc dữ liệu dùng để lưu trữ các phần tử theo dạng bảng, gồm hàng và cột.
+!!! note "Mảng hai chiều"
+
+    Là cấu trúc dữ liệu dùng để lưu trữ các phần tử **theo dạng bảng**, gồm hàng và cột.
 
 Trong đó, mỗi phần tử được định vị bằng hai chỉ số:
 

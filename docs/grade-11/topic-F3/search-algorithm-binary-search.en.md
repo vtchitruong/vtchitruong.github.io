@@ -26,31 +26,31 @@ You don’t start from page 1. Instead, you look at the current page and decide:
 
 This is the key idea: keep cutting the search area in half.
 
-Applied to an array, binary search works as follows:
+Applying the above idea to an array, we need to:
 
 - Determine the **middle element** to split the original array into two sub-arrays: the **left half** and the **right half**.
 - **Compare** the middle element with the target value `k` in order to **eliminate** the half that cannot contain `k`.
 - **Repeat** the above two steps on the remaining sub-array until either `k` is found or the array can no longer be divided in half.
 
-Here’s how it works in detail:
+!!! note "How binary search algorithm works"
 
-1. Set two pointers:
+    1. Set two pointers:
 
-    - `left` = index of the first element
-    - `right` = index of the last element
+        - `left` = index of the first element
+        - `right` = index of the last element
 
-2. While `left` is still less than or equal to `right`, repeat the following steps:
+    2. While `left` is still less than or equal to `right`, repeat the following steps:
 
-    - Calculate the middle index: `mid = (left + right) // 2` (integer division)
-    - Compare the middle element with the target `k`:
-        
-        - If `A[mid] == k` then found! Return `mid` and stop.
-        - If `A[mid] < k` then the target must be in the right half. Discard the left half: `left = mid + 1`
-        - If `A[mid] > k` then the target must be in the left half. Discard the right half: `right = mid - 1`
+        - Calculate the middle index: `mid = (left + right) // 2` (integer division)
+        - Compare the middle element with the target `k`:
+            
+            - If `A[mid] == k` then found! Return `mid` and stop.
+            - If `A[mid] < k` then the target must be in the right half. Discard the left half: `left = mid + 1`
+            - If `A[mid] > k` then the target must be in the left half. Discard the right half: `right = mid - 1`
 
-3. When the loop ends (`left > right`), we have no more elements to check. `k` is not in the array. Return `-1`.
+    3. When the loop ends (`left > right`), we have no more elements to check. `k` is not in the array. Return `-1`.
 
-    (`-1` is the standard convention for “not found”, since valid array indices start at 0.)
+        (`-1` is the standard convention for “not found”, since valid array indices start at 0.)
 
 ### Example illustration
 

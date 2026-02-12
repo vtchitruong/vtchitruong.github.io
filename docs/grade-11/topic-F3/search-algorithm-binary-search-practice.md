@@ -25,7 +25,7 @@ icon: material/table-large
 
 Mảng một chiều `A` tăng dần và giá trị `k`.
 
-**Đầu vào:**
+**Đầu ra:**
 
 Vị trí bắt đầu và vị trí kết thúc.
 

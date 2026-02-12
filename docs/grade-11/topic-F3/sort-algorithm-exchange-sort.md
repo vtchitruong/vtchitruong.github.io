@@ -46,7 +46,7 @@ Thuật toán có thể được phác hoạ như hình sau:
 
 ![Lưu đồ sắp xếp tráo đổi](images/sort-algorithm-exchange-sort-flowchart.svg){loading=lazy width=600}
 
-### Trực quan hoá
+### Trực quan hóa
 
 <div>
     <iframe width="100%" height="690px" frameBorder=0 src="../visualize/exchange-sort.html"></iframe>

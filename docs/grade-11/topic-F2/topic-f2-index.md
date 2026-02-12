@@ -1,5 +1,6 @@
 ---
 icon: material/table-of-contents
+show_donation: false
 ---
 
 # Thực hành tạo và khai thác cơ sở dữ liệu

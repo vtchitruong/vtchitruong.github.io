@@ -19,18 +19,18 @@ Nhu cầu về thông tin của con người là thiết yếu, trong khi lượ
 
 ### Bài toán tìm kiếm
 
-Một cách tổng quát, **bài toán tìm kiếm** đề cập đến việc **xác định một hoặc nhiều đối tượng thoả điều kiện** trong tập hợp.
+Một cách tổng quát, **bài toán tìm kiếm** đề cập đến việc **xác định một hoặc nhiều đối tượng thỏa điều kiện** trong tập hợp.
 
 Trong bài này, giới hạn của bài toán tìm kiếm như sau:
 
 - Phạm vi tìm kiếm là mảng một chiều.
 - Đối tượng tìm kiếm là chỉ một phần tử có giá trị *k* cho trước.
 
-Cụ thể, bài toán tìm kiếm được phát biểu như sau:
+!!! note "Phát biểu bài toán tìm kiếm"
 
-| Đầu vào | Đầu ra |
-| --- | --- |
-| - Mảng một chiều `A` gồm `n` phần tử đều là số nguyên.<br>- Giá trị `k` cần tìm. | - Chỉ số của phần tử có giá trị `k` hoặc `-1` nếu không tồn tại `k`. |
+    | Đầu vào | Đầu ra |
+    | --- | --- |
+    | - Mảng một chiều `A` gồm `n` phần tử đều là số nguyên.<br>- Giá trị `k` cần tìm. | - Chỉ số của phần tử có giá trị `k` hoặc `-1` nếu không tồn tại `k`. |
 
 ### Thuật toán tìm kiếm
 
@@ -71,19 +71,21 @@ Cách làm là lần lượt lật từng lá bài lên cho đến khi thấy đ
 
 Áp dụng cách trên cho mảng, ta lần lượt (tuần tự) so sánh từng phần tử với giá trị `k`, bắt đầu từ phần tử đầu tiên cho đến phần tử cuối cùng, khi nào "*bắt gặp*" `k` thì dừng. Cụ thể như sau:
 
-1. Duyệt từng phần tử `A[i]` từ đầu đến cuối mảng, lặp thao tác sau:
+!!! note "Thuật toán tìm kiếm tuần tự"
 
-    - Nếu `A[i]` đang duyệt mà bằng `k` thì trả về `i`, đây chính là chỉ số (vị trí) chỉ số tìm thấy.
+    1. Duyệt từng phần tử `A[i]` từ đầu đến cuối mảng, lặp thao tác sau:
 
-2. Khi đã duyệt hết mảng mà vẫn chưa có `i` nào trả về, nghĩa là không có `A[i]` nào bằng `k`, thì trả về `-1`.
+        - Nếu `A[i]` đang duyệt mà bằng `k` thì trả về `i`, đây chính là chỉ số (vị trí) tìm thấy.
 
-    (`-1` là giá trị quy ước cho trường hợp không tìm thấy, vì chỉ số của mảng bắt đầu từ `0`, không có chỉ số âm).
+    2. Khi đã duyệt hết mảng mà vẫn chưa có `i` nào trả về, nghĩa là không có `A[i]` nào bằng `k`, thì trả về `-1`.
+
+        (`-1` là giá trị quy ước cho trường hợp không tìm thấy, vì chỉ số của mảng bắt đầu từ `0`, không có chỉ số âm).
 
 ### Lưu đồ
 
 ![Lưu đồ thuật toán tìm kiếm tuần tự](images/search-algorithm-linear-search-flowchart.svg){loading=lazy}
 
-### Trực quan hoá
+### Trực quan hóa
 
 <div>
     <iframe width="100%" height="680px" frameBorder=0 src="/grade-11/topic-F3/visualize/linear-search.html"></iframe>
@@ -97,7 +99,7 @@ Cách làm là lần lượt lật từng lá bài lên cho đến khi thấy đ
 import numpy as np
 ```
 
-2\. Viết hàm `linear_search()` để thực hiện thuật toán tìm kiếm tuần tự.
+2\. Viết hàm `linear_search()` dùng để thực hiện thuật toán tìm kiếm tuần tự.
 
 Hàm gồm hai tham số đầu vào: mảng `A` và giá trị cần tìm `k`.
 
