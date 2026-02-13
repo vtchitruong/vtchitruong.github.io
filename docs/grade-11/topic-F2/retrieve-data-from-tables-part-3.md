@@ -6,7 +6,7 @@ icon: simple/postgresql
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày câu lệnh truy vấn SELECT và INNER JOIN để trích xuất dữ liệu từ nhiều bảng.
+    Bài này trình bày câu lệnh SELECT và INNER JOIN để truy vấn dữ liệu từ nhiều bảng.
 
 ## Yêu cầu về cơ sở dữ liệu
 

@@ -6,10 +6,10 @@ icon: simple/postgresql
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày câu lệnh truy vấn SELECT để:
+    Bài này trình bày câu lệnh SELECT để:
     
-    - truy vấn dữ liệu thoả điều kiện cho trước từ một bảng.
-    - sắp xếp dữ liệu trả về.
+    - Truy vấn dữ liệu từ một bảng mà thỏa điều kiện nào đó.
+    - Sắp xếp dữ liệu trả về.
 
 ## Yêu cầu về cơ sở dữ liệu
 

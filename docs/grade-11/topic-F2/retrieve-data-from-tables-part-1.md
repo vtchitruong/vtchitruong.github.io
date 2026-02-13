@@ -6,18 +6,17 @@ icon: simple/postgresql
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày câu lệnh truy vấn SELECT để truy vấn dữ liệu từ một bảng.
+    Bài này trình bày câu lệnh SELECT để truy vấn dữ liệu từ một bảng.
 
 ## Yêu cầu về cơ sở dữ liệu
 
-1\. Tiếp tục sử dụng cơ sở dữ liệu `school_db` đã tạo ở những bài trước.
+Tiếp tục sử dụng cơ sở dữ liệu `school_db` đã tạo ở những bài trước.
 
-2\. Tải tập tin [school_db_script.sql](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_script.sql){:target="_blank"} và mở bằng pgAdmin của PostgreSQL.
+Tải về [tập tin school_db_script.sql](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f2/school_db_script.sql){:target="_blank"}.
 
-3\. Chạy từ dòng lệnh 110 để bổ sung dữ liệu vào `school_db`.
+**Trường hợp 1:** nếu `school_db` đã tạo hoàn chỉnh từ bài trước thì chạy mã lệnh từ dòng 108 để thêm mẫu tin vô bảng `students` và `scores`.
 
-```sql linenums="109"
--- Bổ sung dữ liệu
+```sql linenums="108"
 insert into students
 values
 	('221002', 'Tư Mã', 'Ý', 0, '2007-02-11', 'Seoul, South Korea', '12CTo'),
@@ -26,11 +25,24 @@ values
     ...
 ```
 
+**Trường hợp 2:** nếu chưa có `school_db` thì xem lại các bài trước và chạy các đoạn mã trong tập tin vừa tải về.
+
+**Trường hợp 3:** nếu `school_db` bị lỗi thì thực hiện như sau:
+
+1. Đóng hết các tab.
+2. Click phải lên `school_db`, chọn **Disconnect from database**.
+3. Click chọn cơ sở dữ liệu **postgres** (tức cơ sở dữ liệu mặc định khi cài đặt PostgreSQL).
+4. Click nút **Query Tool** để mở tab mới.
+5. Gõ và chạy lệnh: `drop database if exists school_db with (force);` để xóa `school_db`.
+6. Xem lại các bài trước và chạy các đoạn mã trong tập tin vừa tải về.
+
+---
+
 ## Câu lệnh truy vấn SELECT
 
-Để truy vấn (hay còn gọi là *trích xuất*) dữ liệu từ bảng, ta dùng câu lệnh SQL `SELECT`.
+Để truy vấn, hoặc *trích xuất*, dữ liệu từ bảng, ta dùng câu lệnh `SELECT`.
 
-!!! note "Cú pháp tổng quát lệnh `SELECT`"
+!!! note "Cú pháp SQL truy vấn dữ liệu"
 
     ```sql
     SELECT thuộc_tính_1, thuộc tính_2,...
@@ -45,90 +57,115 @@ values
     1.  Cặp ngoặc vuông `[ ]` nghĩa là tùy chọn, có thể có hoặc không.
     2.  `ASC` là thứ tự tăng dần, `DESC` là thứ tự giảm dần.
 
+---
+
 ## Truy vấn toàn bộ dữ liệu trong bảng
 
-Để truy vấn toàn bộ dữ liệu trong bảng, ta sử dụng dấu sao `*`.
+!!! note "Dấu sao `*`"
 
-Ví dụ:
+    Dùng để đại diện cho tất cả các thuộc tính trong bảng. Đồng nghĩa với trích xuất tất cả các cột.
 
-Mã lệnh SQL liệt kê toàn bộ dữ liệu trong trong bảng `students`:
+Ví dụ:  
+Dòng lệnh 2 và 3 trích xuất toàn bộ dữ liệu trong bảng `students`.
 
 ```sql linenums="1"
--- Liệt kê toàn bộ dữ liệu trong bảng students
-select * -- (1)!
+-- Trích xuất toàn bộ dữ liệu trong bảng students
+select *
 from students;
 ```
-{ .annotate }
 
-1.  Dấu sao `*` đại diện cho tất cả thuộc tính trong bảng.
+Chạy câu lệnh trên, kết quả như sau:
 
-Kết quả thực hiện truy vấn như hình dưới đây:
+![Kết quả thực hiện truy vấn SELECT](./images/select-1-students-asterisk-all.png){loading=lazy}
 
-![Kết quả thực hiện truy vấn SELECT](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr6Rbxmizf4b48WH1ZA/root/content){loading=lazy}
-
-Trên thanh trạng thái bên dưới của cửa sổ pgAdmin, **Total rows** thể hiện số lượng mẫu tin được trả về sau khi thực hiện truy vấn. (1)
+Trên thanh trạng thái bên dưới của cửa sổ pgAdmin, **Total rows** thể hiện số lượng mẫu tin trong kết quả truy vấn. (1)
 { .annotate }
 
 1.  Mặc định, nếu số lượng mẫu tin trong bảng nhiều hơn 1000 thì pgAdmin sẽ trả về 1000 mẫu tin đầu tiên.
 
-    Do đó, để xem toàn bộ dữ liệu, ta cần thực hiện thêm những truy vấn khác.
+---
 
-## Chỉ định số lượng mẫu tin trả về
+## Chỉ định số lượng mẫu tin
 
-Để chỉ định số lượng mẫu tin trả về, ta sử dụng từ khóa `LIMIT`.
+!!! note "Từ khóa `LIMIT`"
 
-Ví dụ:
+    Dùng để chỉ định số lượng mẫu tin cần trích xuất.
 
-Mã lệnh SQL trả về 10 mẫu tin đầu tiên trong bảng `students`:
+Ví dụ:  
+Dòng lệnh từ 6 đến 8 trích xuất 10 mẫu tin đầu tiên trong bảng `students`.
 
 ```sql linenums="5"
--- Liệt kê 10 mẫu tin đầu tiên trong bảng students
+-- Trích xuất 10 mẫu tin đầu tiên trong bảng students
 select *
 from students
 limit 10;
 ```
 
-![10 mẫu tin đầu tiên](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr6RiI2APSzUGeguIhw/root/content){loading=lazy}
+Chạy câu lệnh trên, kết quả như sau:
+
+![10 mẫu tin đầu tiên](./images/select-1-students-limit.png){loading=lazy}
+
+---
 
 ## Chỉ định vị trí của mẫu tin bắt đầu
 
-Để chỉ định vị trí của mẫu tin bắt đầu, ta sử dụng từ khóa `OFFSET`.
+!!! note "Từ khóa `OFFSET`"
 
-Trong đó, mẫu tin đầu tiên có vị trí là 0. `OFFSET 10` nghĩa là bắt đầu từ mẫu tin ở vị trí 11.
+    Dùng để chỉ định vị trí của mẫu tin bắt đầu. Trong đó, mẫu tin đầu tiên trong bảng có vị trí là 0.
 
-Ví dụ:
+Ta cũng có thể hiểu là chỉ định số lượng mẫu tin cần bỏ qua trước khi bắt đầu trích xuất.
 
-Mã lệnh SQL trả về các mẫu tin từ 11 đến 15 trong bảng `students`:
+Ví dụ:  
+Dòng lệnh từ 11 đến 14 trích xuất các mẫu tin từ vị trí 3 đến 7 trong bảng `students`.
 
 ```sql linenums="10"
--- Liệt kê các mẫu tin từ 11 đến 15 trong bảng students
+-- Trích xuất các mẫu tin từ vị trí 3 đến 7 trong bảng students
 select *
 from students
 limit 5
-offset 10;
+offset 3;
 ```
 
-![Các mẫu tin từ 11 đến 15](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr6Ru96gxx0Hc-qI0Kw/root/content){loading=lazy}
+Chạy câu lệnh trên, kết quả như sau:
 
-## Truy vấn thuộc tính
+![Các mẫu tin từ 3 đến 7](./images/select-1-students-offset.png){loading=lazy}
+
+---
+
+## Truy vấn thuộc tính cụ thể
 
 Để truy vấn các thuộc tính cụ thể, ta chỉ định tên các thuộc tính ngay sau từ khóa `SELECT`.
 
-Ví dụ:
-
-Mã lệnh SQL trả về danh sách toàn bộ học sinh gồm mã lớp và họ tên:
+Ví dụ:  
+Dòng lệnh 17 và 18 trích xuất danh sách toàn bộ học sinh và chỉ lấy các cột: cột mã lớp, cột họ và cột tên.
 
 ```sql linenums="16"
--- Liệt kê lớp và họ tên học sinh
+-- Trích xuất mã lớp, họ và tên học sinh
 select classroom_id, last_name, first_name
 from students;
 ```
 
-![Danh sách toàn bộ học sinh gồm ba thuộc tính](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr6R-uP7la19d-zlEzg/root/content){loading=lazy width=480}
+Chạy câu lệnh trên, kết quả như sau:
+
+![Danh sách toàn bộ học sinh gồm ba thuộc tính](./images/select-1-students-three-columns.png){loading=lazy width=480}
+
+---
+
+## Mã nguồn
+
+Code đầy đủ được đặt tại:
+
+- [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f2/school_db_select_1.sql){target="_blank"}
+
+---
 
 ## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-1.mm.md!}
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/retrieve-data-from-tables-part-1.html">Sơ đồ tóm tắt</iframe>
+</div>
+
+---
 
 ## Some English words
 
@@ -138,7 +175,3 @@ from students;
 | mẫu tin | record |
 | truy vấn | query |
 | trích xuất | extract |
-
-## Mã nguồn
-
-Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_select_1.sql){:target="_blank"}.

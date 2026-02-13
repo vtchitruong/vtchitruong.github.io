@@ -6,7 +6,7 @@ icon: simple/postgresql
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày câu lệnh truy vấn SELECT có dùng hàm tổng hợp và mệnh đề gom nhóm dữ liệu.
+    Bài này trình bày câu lệnh SELECT có dùng hàm tổng hợp và mệnh đề gom nhóm dữ liệu.
 
 ## Yêu cầu về cơ sở dữ liệu
 

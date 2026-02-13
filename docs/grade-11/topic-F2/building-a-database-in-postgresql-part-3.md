@@ -43,8 +43,8 @@ Bảng dưới đây mô tả các thuộc tính (cột) của `classrooms`:
 
 | Thuộc tính | Ý nghĩa | Kiểu dữ liệu |
 | --- | --- | --- |
-| `classroom_id` | mã định danh của mỗi lớp và là khoá chính | `char(5)`: chuỗi gồm 5 ký tự |
-| `classroom_name` | tên đầy đủ của mỗi lớp | `varchar(5)`: chuỗi gồm 50 ký tự |
+| `classroom_id` | mã định danh của mỗi lớp và là khóa chính | `char(5)`: chuỗi gồm 5 ký tự |
+| `classroom_name` | tên đầy đủ của mỗi lớp | `varchar(50)`: chuỗi gồm 50 ký tự |
 | `room` | phòng học của mỗi lớp | `varchar(50)`: chuỗi gồm 50 ký tự |
 | `head_teacher` | họ tên giáo viên chủ nhiệm | `varchar(50)`: chuỗi gồm 50 ký tự |
 
@@ -68,12 +68,12 @@ create table classrooms (
 
 ---
 
-## Thêm mẫu tin vào bảng
+## Thêm mẫu tin vô bảng
 
-1\. Viết câu lệnh SQL để thêm ba mẫu tin mới vào bảng `classrooms`.
+1\. Viết câu lệnh SQL để thêm ba mẫu tin mới vô bảng `classrooms`.
 
 ```sql linenums="29"
--- Thêm dữ liệu vào bảng classrooms
+-- Thêm mẫu tin vô bảng classrooms
 insert into classrooms -- (1)!
 values ('12CTo', '12 chuyên Toán', '3.14', 'Prof. Ngô Bảo Châu'),
 		('11CTi', '11 chuyên Tin', 'Fibonacci', 'Mr School'),
@@ -81,7 +81,7 @@ values ('12CTo', '12 chuyên Toán', '3.14', 'Prof. Ngô Bảo Châu'),
 ```
 { .annotate }
 
-1.	Do thêm dữ liệu vào tất cả thuộc tính trong bảng, ta không cần liệt kê tên từng thuộc tính.
+1.	Do thêm dữ liệu vô tất cả thuộc tính trong bảng, ta không cần liệt kê tên từng thuộc tính.
 
 2\. Quét khối câu lệnh vừa viết, nhấn ++f5++ để chạy.
 
@@ -91,7 +91,7 @@ values ('12CTo', '12 chuyên Toán', '3.14', 'Prof. Ngô Bảo Châu'),
 
 ## Thêm thuộc tính cho bảng
 
-!!! info "Cú pháp SQL thêm thuộc tính (cột) cho bảng"
+!!! note "Cú pháp SQL thêm thuộc tính (cột) cho bảng"
 
     ```sql
     ALTER TABLE bảng
@@ -104,7 +104,7 @@ Trước khi liên kết hai bảng `students` và `classrooms` với nhau, ta c
 1\. Viết câu lệnh SQL để thêm thuộc tính `classroom_id` cho bảng `students`.
 
 ```sql linenums="35"
--- Thêm thuộc tính classroom_id vào bảng students
+-- Thêm thuộc tính classroom_id vô bảng students
 alter table students
 add column classroom_id char(5);
 ```
@@ -135,7 +135,7 @@ Mối quan hệ này giúp ta biết được: một học sinh thuộc về l�
 
 	**Bước 1:** Xác định một **thuộc tính chung** giữa hai bảng.
 	
-	Thuộc tính chung còn được gọi là **khoá chính** đối với bảng cha và **khoá ngoại** đối với bảng con.
+	Thuộc tính chung còn được gọi là **khóa chính** đối với bảng cha và **khóa ngoại** đối với bảng con.
 
 	**Bước 2:** Tạo tham chiếu từ bảng này đến bảng kia.
 
@@ -144,21 +144,21 @@ Hai bước để liên kết bảng `students` và bảng `classrooms`:
 
 - Bước 1: thuộc tính chung của hai bảng `students` và `classrooms` là `classroom_id`. Trong đó:
 
-	- `classrooms` là bảng cha. `classroom_id` của `classrooms` là khoá chính.
-	- `students` là bảng con. `classroom_id` của `students` là khoá ngoại. 
+	- `classrooms` là bảng cha. `classroom_id` của `classrooms` là khóa chính.
+	- `students` là bảng con. `classroom_id` của `students` là khóa ngoại. 
 
-- Bước 2: tạo tham chiếu từ thuộc tính `classroom_id` của bảng `students` (khoá ngoại) đến thuộc tính `classroom_id` của bảng `classrooms` (khoá chính).
+- Bước 2: tạo tham chiếu từ thuộc tính `classroom_id` của bảng `students` (khóa ngoại) đến thuộc tính `classroom_id` của bảng `classrooms` (khóa chính).
 
-Trong SQL, việc liên kết hai bảng được thực hiện bằng cách **thiết lập một ràng buộc khóa ngoại**. Ràng buộc này bắt buộc giá trị tại `classroom_id` của `students` phải tham chiếu chính xác đến khoá chính `classroom_id` của `classrooms`.
+Trong SQL, việc liên kết hai bảng được thực hiện bằng cách **thiết lập một ràng buộc khóa ngoại**. Ràng buộc này bắt buộc giá trị tại `classroom_id` của `students` phải tham chiếu chính xác đến khóa chính `classroom_id` của `classrooms`.
 
-Nói cách khác, mọi mã lớp được nhập cho học sinh trong bảng `students` bắt buộc phải tồn tại sẵn trong `classroom_id` của bảng `classrooms`. Việc xếp học sinh vào một lớp không có thực sẽ làm cho cơ sở dữ liệu mất tính toàn vẹn.
+Nói cách khác, mọi mã lớp được nhập cho học sinh trong bảng `students` bắt buộc phải tồn tại sẵn trong `classroom_id` của bảng `classrooms`. Việc xếp học sinh vô một lớp không có thực sẽ làm cho cơ sở dữ liệu mất tính toàn vẹn.
 
 Ví dụ:  
 Nếu ta chỉnh sửa `classroom_id` của một học sinh thành `11A17`, mà giá trị `11A17` lại không tồn tại trong bảng `classrooms`, thì cơ sở dữ liệu sẽ không còn đúng đắn, mất tính toàn vẹn.
 
-Ràng buộc khoá ngoại là nhằm giúp ngăn chặn những tình huống này xảy ra.
+Ràng buộc khóa ngoại là nhằm giúp ngăn chặn những tình huống này xảy ra.
 
-!!! info "Cú pháp SQL tạo ràng buộc khoá ngoại"
+!!! note "Cú pháp SQL tạo ràng buộc khóa ngoại"
 
     ```sql
 	ALTER TABLE bảng
@@ -167,10 +167,10 @@ Ràng buộc khoá ngoại là nhằm giúp ngăn chặn những tình huống n
     ```
 
 Ví dụ:  
-1\. Viết câu lệnh SQL để tạo ràng buộc khoá ngoại từ bảng `students` tham chiếu đến bảng `classrooms`:
+1\. Viết câu lệnh SQL để tạo ràng buộc khóa ngoại từ bảng `students` tham chiếu đến bảng `classrooms`:
 
 ```sql linenums="39"
--- Tạo ràng buộc khoá ngoại từ students tham chiếu đến classrooms
+-- Thêm ràng buộc khóa ngoại vô bảng students để tham chiếu đến bảng classrooms
 alter table students
 add constraint fk_classroom_id foreign key (classroom_id) -- (1)!
 references classrooms(classroom_id); -- (2)!
@@ -179,7 +179,7 @@ references classrooms(classroom_id); -- (2)!
 
 1.	`fk_classroom_id` là tên của ràng buộc.
 
-	`classroom_id` là thuộc tính sẽ làm khoá ngoại của bảng `students`.
+	`classroom_id` là thuộc tính sẽ làm khóa ngoại của bảng `students`.
 
 2.	Dòng này có nghĩa là: tham chiếu đến `classroom_id` của bảng `classrooms`.
 
@@ -191,11 +191,11 @@ Sau khi chạy câu lệnh trên, mối quan hệ giữa hai bảng `students` v
 
 ## Cập nhật dữ liệu
 
-Lúc này, trong bảng `students`, dữ liệu của thuộc tính `classroom_id` đang rỗng. Ta cần chỉnh sửa lại bằng cách nhập mã lớp cụ thể vào.
+Lúc này, trong bảng `students`, dữ liệu của thuộc tính `classroom_id` đang rỗng. Ta cần chỉnh sửa lại bằng cách nhập mã lớp cụ thể.
 
 Thao tác chỉnh sửa được gọi là **cập nhật dữ liệu**.
 
-!!! info "Cú pháp SQL cập nhật dữ liệu"
+!!! note "Cú pháp SQL cập nhật dữ liệu"
 
     ```sql
 	UPDATE bảng
@@ -220,7 +220,7 @@ where student_id = '221001'; -- (2)!
 
 !!! warning "Về điều kiện trong WHERE"
 
-	Trước khi thực thi câu lệnh, ta phải kiểm tra kỹ điều kiện sau từ khoá `WHERE`, vì chỉ một sai sót nhỏ cũng có thể làm thay đổi dữ liệu của tất cả các mẫu tin trong bảng.
+	Trước khi thực thi câu lệnh, ta phải kiểm tra kỹ điều kiện sau từ khóa `WHERE`, vì chỉ một sai sót nhỏ cũng có thể làm thay đổi dữ liệu của tất cả các mẫu tin trong bảng.
 
 2\. Viết câu lệnh SQL để cập nhật thuộc tính `classroom_id` cho hai học sinh có mã `231001` và `241021`.
 

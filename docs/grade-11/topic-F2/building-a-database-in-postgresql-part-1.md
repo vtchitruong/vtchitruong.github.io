@@ -8,7 +8,7 @@ icon: simple/postgresql
     
     Bài này trình bày:
     
-    - Cách kết nối vào server trong **pgAdmin** của PostgreSQL
+    - Cách kết nối vô server trong **pgAdmin** của PostgreSQL
     - Cách tạo cơ sở dữ liệu
 
 ## Khái quát
@@ -34,7 +34,7 @@ Bài này chỉ đề cập cách tạo cơ sở dữ liệu, chưa đề cập 
 
 2\. Trong cửa sổ **pgAdmin 4**, trong ngăn **Object Explorer** bên trái, chọn **Servers**.
 
-3\. Click đôi vào server cần kết nối. Ví dụ trong hình dưới là **PostgreSQL 17**.
+3\. Click đôi vô server cần kết nối. Ví dụ trong hình dưới là **PostgreSQL 17**.
 
 4\. Trong hộp thoại **Connect to Server**, nhập mật khẩu (1).
 { .annotate }
@@ -43,7 +43,7 @@ Bài này chỉ đề cập cách tạo cơ sở dữ liệu, chưa đề cập 
 
 5\. Click **OK**.
 
-![Cách kết nối vào server trong pgAdmin 4](./images/part-1-pgadmin-connect-to-server.png){loading=lazy}
+![Cách kết nối vô server trong pgAdmin 4](./images/part-1-pgadmin-connect-to-server.png){loading=lazy}
 
 ---
 
@@ -83,7 +83,7 @@ Ví dụ:
 create database school_db;
 ```
 
-!!! info "Chú thích"
+!!! note "Chú thích"
 
     Trong PostgreSQL, hai ký tự `--` dùng để tạo chú thích. Máy tính sẽ bỏ qua không thực thi các dòng chú thích.
 
@@ -111,7 +111,7 @@ Nếu thấy thông báo đại loại như `Query returned successfully in 787 
 
 !!! warning "Chọn đúng cơ sở dữ liệu"
 
-    Hãy luôn bảo đảm mở **Query Tool** từ đúng cơ sở dữ liệu mà mình muốn làm việc để tránh việc tạo bảng nhầm vào cơ sở dữ liệu hệ thống `postgres`.
+    Hãy luôn bảo đảm mở **Query Tool** từ đúng cơ sở dữ liệu mà mình muốn làm việc để tránh việc tạo bảng nhầm vô cơ sở dữ liệu hệ thống `postgres`.
 
 ---
 

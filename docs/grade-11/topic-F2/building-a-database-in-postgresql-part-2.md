@@ -9,7 +9,7 @@ icon: simple/postgresql
     Bài này trình bày:
 
     - Cách tạo một bảng
-    - Cách thêm mẫu tin vào bảng
+    - Cách thêm mẫu tin vô bảng
     - Cách xem dữ liệu trong bảng
 
 ## Khái quát
@@ -35,7 +35,7 @@ Nếu tập tin **school_db.sql** ở bài trước đã bị đóng thì ta m�
 
 1\. Mở **pgAdmin 4**.
 
-2\. Kết nối vào server.
+2\. Kết nối vô server.
 
 3\. Click chọn cơ sở dữ liệu `school_db`.
 
@@ -61,7 +61,7 @@ Một tab mới sẽ mở ra, tiêu đề có dạng `school_db/postgres@Postgre
 
 ## Tạo bảng
 
-!!! info "Cú pháp SQL tạo bảng"
+!!! note "Cú pháp SQL tạo bảng"
 
     ```sql
     CREATE TABLE table_name (
@@ -81,7 +81,7 @@ Bảng dưới đây mô tả các **thuộc tính** (còn gọi là **cột**) 
 
 | Thuộc tính | Ý nghĩa | Kiểu dữ liệu |
 | --- | --- | --- |
-| `student_id` | mã định danh của mỗi học sinh và là khoá chính | `char(6)`: chuỗi gồm 6 ký tự |
+| `student_id` | mã định danh của mỗi học sinh và là khóa chính | `char(6)`: chuỗi gồm 6 ký tự |
 | `last_name` | họ và chữ đệm của học sinh | `varchar(50)`: chuỗi gồm 50 ký tự |
 | `first_name` | tên của học sinh | `varchar(50)`: chuỗi gồm 50 ký tự |
 | `gender` | giới tính | `smallint`: số nguyên, với quy ước `0` là nam, `1` là nữ |
@@ -108,7 +108,7 @@ create table students (
 ```
 { .annotate }
 
-1.	Khai báo thuộc tính `student_id` có kiểu dữ liệu là `char`, chứa tối đa 6 ký tự và đặt làm khoá chính.
+1.	Khai báo thuộc tính `student_id` có kiểu dữ liệu là `char`, chứa tối đa 6 ký tự và đặt làm khóa chính.
 2.	Khai báo các thuộc tính `last_name`, `first_name` và `birth_place` đều có kiểu dữ liệu là `varchar`, chứa tối đa 50 ký tự.
 3.	Khai báo thuộc tính `gender` có kiểu dữ liệu là `smallint`, với quy ước `0` là nam, `1` là nữ`.
 4.	Khai báo  thuộc tính `birth_date` có kiểu dữ liệu là `date`.
@@ -119,7 +119,7 @@ Hoặc chỉ cần đặt con trỏ tại vị trí bất kỳ trong câu lệnh
 
 Để thấy được bảng vừa tạo, ta thực hiện như sau:
 
-3\. Trong **Object Explorer**, click phải vào **school_db** rồi chọn **Refresh...**.
+3\. Trong **Object Explorer**, click phải vô **school_db** rồi chọn **Refresh...**.
 
 4\. Click mở **school_db**.
 
@@ -133,9 +133,9 @@ Hoặc chỉ cần đặt con trỏ tại vị trí bất kỳ trong câu lệnh
 
 ---
 
-## Thêm mẫu tin vào bảng
+## Thêm mẫu tin vô bảng
 
-!!! info "Cú pháp SQL thêm mẫu tin vào bảng"
+!!! note "Cú pháp SQL thêm mẫu tin vô bảng"
 
     ```sql
     INSERT INTO bảng(thuộc_tính_1, thuộc_tính_2, ..., thuộc_tính_n)
@@ -150,13 +150,13 @@ Hoặc chỉ cần đặt con trỏ tại vị trí bất kỳ trong câu lệnh
     ```
 
 Ví dụ:  
-1\. Viết câu lệnh SQL để thêm ba mẫu tin mới (1) vào bảng `students`.
+1\. Viết câu lệnh SQL để thêm ba mẫu tin mới (1) vô bảng `students`.
 { .annotate }
 
 1.	Mỗi **mẫu tin** là một hàng trong bảng, chứa dữ liệu của một thực thể hoặc một sự kiện, cụ thể ở đây, mỗi mẫu tin là dữ liệu của một học sinh.
 
 ```sql linenums="14"
--- Thêm mẫu tin vào bảng students
+-- Thêm mẫu tin vô bảng students
 insert into students(student_id, last_name, first_name, gender, birth_date, birth_place) 
 values
 	('221001', 'Tào', 'Tháo', 0, '2007-01-15', 'Osaka, Japan'),
@@ -166,7 +166,7 @@ values
 
 !!! info "Dữ liệu chuỗi và ngày tháng"
 
-    Trong SQL, khi gõ dữ liệu kiểu chuỗi (`char`, `varchar`) hoặc ngày tháng (`date`), ta phải đặt giá trị vào trong cặp dấu nháy đơn `' '`.
+    Trong SQL, khi gõ dữ liệu kiểu chuỗi (`char`, `varchar`) hoặc ngày tháng (`date`), ta phải đặt giá trị vô trong cặp dấu nháy đơn `' '`.
 
 2\. Quét khối câu lệnh vừa viết, nhấn ++f5++ để chạy.
 
@@ -176,7 +176,7 @@ values
 
 Để xem tất cả mẫu tin hiện có trong bảng `student`, ta thực hiện như sau:
 
-1\. Trong **Object Explorer**, click phải vào bảng **students**.
+1\. Trong **Object Explorer**, click phải vô bảng **students**.
 
 2\. Chọn **View/Edit Data**.
 

@@ -8,6 +8,30 @@ Tiếng Việt là một ngôn ngữ giàu đẹp, và song song đó tồn tạ
 
 Nhằm bảo đảm tính nhất quán và chuyên nghiệp của website, cũng như trải nghiệm đọc tốt nhất, bài viết này liệt kê các quy ước về chính tả mà chúng tôi áp dụng trên website của mình.
 
+## Cách dùng từ
+
+### Sắc thái vùng miền
+
+Chúng tôi ưu tiên dùng từ vựng miền nam. Nếu từ miền nam đã quá cổ hoặc ít phổ biến, chúng tôi dùng các từ hiện nay thông dụng hơn.
+
+### Thuật ngữ chuyên môn
+
+Chúng tôi ưu tiên dùng thuật ngữ tiếng Việt.
+
+Tuy nhiên, vẫn có một số trường hợp ngoại lệ, bao gồm:
+
+- click (chuột), click đôi
+- web, website
+
+### Bảng đối chiếu thuật ngữ Việt - Anh
+
+| Tiếng Việt | Tiếng Anh |
+| --- | --- |
+| đăng nhập | log in, sign in |
+| đăng xuất | log out, sign out |
+| tải lên | upload |
+| tải xuống, tải về | download |
+
 ## Vấn đề đặt dấu thanh
 
 Chúng tôi đồng ý với ý kiến: *"dấu thanh nên được đánh trên nguyên âm chính của âm tiết"* (học giả An Chi) hoặc *"dấu thanh phải được đánh ở cuối, vì nó bao trùm cả âm tiết"* (Giáo sư Cao Xuân Hạo).

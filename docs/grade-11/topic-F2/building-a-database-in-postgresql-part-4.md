@@ -40,7 +40,7 @@ Bảng dưới đây mô tả các thuộc tính (cột) của `subjects`:
 
 | Thuộc tính | Ý nghĩa | Kiểu dữ liệu |
 | --- | --- | --- |
-| `subject_id` | mã định danh của mỗi môn học và là khoá chính | `char(2)`: chuỗi gồm 2 ký tự và là khoá chính |
+| `subject_id` | mã định danh của mỗi môn học và là khóa chính | `char(2)`: chuỗi gồm 2 ký tự và là khóa chính |
 | `subject_name` | tên đầy đủ của mỗi môn học | `varchar(100)`: chuỗi gồm 100 ký tự |
 | `description` | mô tả môn học | `text`: văn bản dài |
 | `is_mandatory` | là môn học bắt buộc hoặc không | `boolean`: `true` là bắt buộc, `false` là không |
@@ -73,10 +73,10 @@ create table subjects (
 
 Các bước thực hiện:
 
-1\. Viết câu lệnh SQL để thêm ba mẫu tin vào bảng `subjects`.
+1\. Viết câu lệnh SQL để thêm ba mẫu tin vô bảng `subjects`.
 
 ```sql linenums="65"
--- Thêm mẫu tin vào bảng subjects
+-- Thêm mẫu tin vô bảng subjects
 insert into subjects
 values
 	('CS', 'Khoa học máy tính', 'Khoa học xử lý dữ liệu và thông tin bằng máy tính', true),
@@ -102,7 +102,7 @@ scores(<ins>student_id, subject_id</ins>, regular_1, regular_2, regular_3, midte
 
 Trong đó:
 
-- Khoá chính gồm cả hai thuộc tính là `student_id` và `subject_id`.
+- khóa chính gồm cả hai thuộc tính là `student_id` và `subject_id`.
 
 	Vì một học sinh có thể kiểm tra nhiều môn, và một môn có thể có nhiều học sinh làm kiểm tra, nên ta cần kết hợp cả hai thuộc tính này để định danh duy nhất cho mỗi mẫu tin trong bảng.
 
@@ -111,17 +111,17 @@ Trong đó:
 	Ví dụ:  
 	Nếu đã có mẫu tin ('221001', 'DH') trong bảng thì ta không thể nhập thêm mẫu tin ('221001', 'DH') lần nữa.
 
-- Hai thuộc tính này cũng đồng thời là hai khoá ngoại riêng lẻ:
+- Hai thuộc tính này cũng đồng thời là hai khóa ngoại riêng lẻ:
 
-	- Khoá ngoại thứ nhất: `student_id` tham chiếu đến khoá chính `student_id` của bảng `students`.
-	- Khoá ngoại thứ hai: `subject_id` tham chiếu đến khoá chính `subject_id` của bảng `subjects`.
+	- khóa ngoại thứ nhất: `student_id` tham chiếu đến khóa chính `student_id` của bảng `students`.
+	- khóa ngoại thứ hai: `subject_id` tham chiếu đến khóa chính `subject_id` của bảng `subjects`.
 
 Bảng dưới đây mô tả các thuộc tính (cột) của `scores`:
 
 | Thuộc tính | Ý nghĩa | Kiểu dữ liệu | Ghi chú |
 | --- | --- | --- | --- |
-| `student_id` | mã định danh của mỗi học sinh | `char(6)`: chuỗi gồm 6 ký tự | - Là khoá ngoại<br>- Đồng thời là thuộc tính của khoá chính |
-| `subject_id` | mã định danh của mỗi môn học | `char(2)`: chuỗi gồm 2 ký tự | - Là khoá ngoại<br>- Đồng thời là thuộc tính của khoá chính |
+| `student_id` | mã định danh của mỗi học sinh | `char(6)`: chuỗi gồm 6 ký tự | - Là khóa ngoại<br>- Đồng thời là thuộc tính của khóa chính |
+| `subject_id` | mã định danh của mỗi môn học | `char(2)`: chuỗi gồm 2 ký tự | - Là khóa ngoại<br>- Đồng thời là thuộc tính của khóa chính |
 | `regular_1` | điểm kiểm tra thường xuyên 1 | `float`: số thực |
 | `regular_2` | điểm kiểm tra thường xuyên 2 | `float`: số thực |
 | `regular_3` | điểm kiểm tra thường xuyên 3 | `float`: số thực |
@@ -145,14 +145,14 @@ create table scores (
 	midterm float,
 	final_test float,
 
-	-- Thiết lập khoá chính tổng hợp
+	-- Thiết lập khóa chính tổng hợp
 	primary key (student_id, subject_id),
 
-	-- Thiết lập khoá ngoại thứ nhất
-	foreign key (student_id) references students(student_id),
+    -- Thiết lập khóa ngoại thứ nhất để tham chiếu đến bảng students
+    foreign key (student_id) references students(student_id),
 
-	-- Thiết lập khoá ngoại thứ hai
-	foreign key (subject_id) references subjects(subject_id)
+    -- Thiết lập khóa ngoại thứ hai để tham chiếu đến bảng subjects
+    foreign key (subject_id) references subjects(subject_id)
 );
 ```
 
@@ -173,7 +173,7 @@ Ta có thể hiển thị lược đồ quan hệ dưới dạng sơ đồ trự
 
 1.	**ERD** là viết tắt của **Entity Relationship Diagram**.
 
-	ERD giúp thấy rõ các đường nối (mối quan hệ) giữa khoá chính và khoá ngoại của các bảng.
+	ERD giúp thấy rõ các đường nối (mối quan hệ) giữa khóa chính và khóa ngoại của các bảng.
 
 ![Cách xem lược đồ quan hệ](./images/part-4-display-erd-diagram.png){loading=lazy width=300}
 
@@ -185,10 +185,10 @@ Lược đồ quan hệ của cơ sở dữ liệu được hiển thị như h�
 
 Các bước thực hiện:
 
-1\. Viết câu lệnh SQL để thêm chín mẫu tin vào bảng `scores`.
+1\. Viết câu lệnh SQL để thêm chín mẫu tin vô bảng `scores`.
 
 ```sql linenums="92"
--- Thêm mẫu tin vào bảng scores
+-- Thêm mẫu tin vô bảng scores
 insert into scores
 values
     ('221001', 'CS', 9.2, 9.4, 8.3, 9.1, 8.5),
