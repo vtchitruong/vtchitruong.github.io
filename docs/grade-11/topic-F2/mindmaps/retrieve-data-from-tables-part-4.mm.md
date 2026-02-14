@@ -1,23 +1,21 @@
 ---
 markmap:
-    colorFreezeLevel: 2
-    maxWidth: 300
+    colorFreezeLevel: 3
+    maxWidth: 360
 ---
 
 # Truy vấn dữ liệu
 
-## Hàmg tổng hợp
+## `INNER JOIN`
 
-### `SUM`
-### `AVG`
-### `MIN`
-### `MAX`
-### `COUNT`
+- Dùng để liên kết nhiều bảng
+- Cần chỉ rõ thuộc liên kết giữa từng cặp bảng
+- Kết quả trích xuất là các mẫu tin có giá trị của thuộc tính liên kết khớp nhau
 
-## `GROUP BY`
+## `USING`
 
-- Gom nhóm các mẫu tin theo một hoặc nhiều cột.
+- Chỉ định thuộc tính liên kết của hai bảng
 
-## `HAVING`
+## Chỉ định tên bảng cụ thể
 
-- Lọc các nhóm dựa trên điều kiện.
+- `bảng.thuộc_tính`

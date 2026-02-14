@@ -36,13 +36,13 @@ Như vậy, sau mỗi lần lặp của vòng lặp trong (biến `j`), các ph�
 
 Có thể thấy, với mỗi lần lặp tiếp theo của vòng lặp ngoài (biến `i`), phạm vi duyệt sẽ thu nhỏ lại, từ đầu mảng cho đến trước phần tử lớn nhất của lần duyệt trước đó.
 
-Thuật toán có thể được phác hoạ như hình sau:
+Thuật toán có thể được phác họa như hình sau:
 
-![Phác hoạ ý tưởng chính](images/sort-algorithm-bubble-sort-illustration.svg){loading=lazy width=300}
+![Phác họa ý tưởng chính](images/sort-algorithm-bubble-sort-illustration.svg){loading=lazy width=300}
 
-### Ví dụ minh hoạ
+### Ví dụ minh họa
 
-![Ví dụ minh hoạ tiến trình sắp xếp nổi bọt](images/sort-algorithm-bubble-sort-manual-run.svg){loading=lazy width=360px}
+![Ví dụ minh họa tiến trình sắp xếp nổi bọt](images/sort-algorithm-bubble-sort-manual-run.svg){loading=lazy width=360px}
 
 ### Lưu đồ
 

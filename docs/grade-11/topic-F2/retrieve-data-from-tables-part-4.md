@@ -6,279 +6,218 @@ icon: simple/postgresql
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày câu lệnh SELECT có dùng hàm tổng hợp và mệnh đề gom nhóm dữ liệu.
+    Bài này trình bày câu lệnh SELECT và INNER JOIN để trích xuất dữ liệu từ nhiều bảng.
 
 ## Yêu cầu về cơ sở dữ liệu
 
-Tiếp tục sử dụng cơ sở dữ liệu `school_db` đã tạo ở bài trước.
+Tiếp tục sử dụng cơ sở dữ liệu `school_db` như ở bài trước.
 
-Nếu gặp trục trặc về cơ sở dữ liệu, hãy xoá `school_db` (1) và tạo lại từ đầu (2).
-{ .annotate }
+---
 
-1.  1\. Trong **pgAdmin**, click chuột phải vào **school_db** và chọn **Delete**.
+## Truy vấn hai bảng
 
-    2\. Trong hộp thoại hiện ra, chọn **Yes** để xác nhận xoá.
+!!! note "Từ khóa `INNER JOIN`"
 
-2.  Chạy tập tin [school_db_script.sql](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_script.sql){:target="_blank"} bằng pdAdmin của PostgreSQL.
+    Dùng để liên kết các mẫu tin từ hai bảng khi giá trị của các thuộc tính liên kết **khớp nhau**.
+    
+Hình dưới đây minh họa thao tác liên kết INNER JOIN.
 
-## Các hàm tổng hợp
+![Minh họa thao tác liên kết INNER JOIN](images/inner-join.svg){loading=lazy width=420}
 
-**Hàm tổng hợp** là hàm dùng để thực hiện các phép toán tổng hợp trên một tập hợp các giá trị và trả về một giá trị duy nhất.
+Nếu một mẫu tin trong bảng A mà không tìm thấy giá trị tương ứng trong bảng B thì sẽ bị loại bỏ khỏi kết quả trích xuất.
 
-Một số phép toan tổng hợp phổ biến là:
-
-| Hàm | Giá trị trả về |
-| --- | --- |
-| `SUM` | Tổng của một cột |
-| `AVG` | Trung bình cộng của một cột |
-| `COUNT` | Số lượng giá trị của một cột |
-| `MAX` | Giá trị lớn nhất của một cột |
-| `MIN` | Giá trị nhỏ nhất của một cột |
-
-!!! note "Cú pháp hàm COUNT"
+!!! note "Cú pháp SQL truy vấn hai bảng bằng `INNER JOIN`"
 
     ```sql
-    SELECT thuộc_tính, tên_hàm(tên_cột)
-    FROM tên_bảng
-    [WHERE điều_kiện]
-    [GROUP BY thuộc_tính_cần_gom_nhóm]
-    [HAVING điều_kiện]
+    SELECT thuộc_tính_1, thuộc tính_2,...
+    FROM bảng_1
+    INNER JOIN bảng_2 ON bảng_1.thuộc_tính_liên_kết = bảng_2.thuộc_tính_liên_kết
     ```
 
-Các hàm tổng hợp thường được sử dụng cùng với mệnh đề `GROUP BY` trong truy vấn `SELECT`.
+Ví dụ:  
+**Yêu cầu:**
 
-`GROUP BY` được dùng để gom nhóm các mẫu tin theo giá trị của một hoặc nhiều cột.
-
-`HAVING` được dùng để lọc các nhóm dựa trên điều kiện.
-
-## Hàm COUNT
-
-Để đếm số lượng giá trị của một cột, ta dùng hàm `COUNT`. Hàm này trả về số lượng giá trị khác `NULL` của cột đó.
-
-### Số lượng tổng thể
-
-Ví dụ:
-
-**Yêu cầu:** Tính số lượng mẫu tin hiện có trong bảng `scores`. Biết rằng không được dùng `SELECT *`.
+Lập danh sách học sinh, kèm theo lớp và phòng học.
 
 **Phân tích:**
 
-Trong bảng `scores`, thuộc tính `student_id` thuộc khoá chính (1), nghĩa là không được để rỗng.
-{ .annotate }
+Dữ liệu về học sinh được lưu trong bảng `students`, dữ liệu về lớp học được lưu trong bảng `classrooms`.
 
-1.  Khoá chính của bảng `scores` là cặp thuộc tính `student_id` và `subject_id`.
+Hai bảng này đều có thuộc tính `classroom_id`, được dùng làm thuộc tính liên kết.
 
-Do đó, ta có thể dùng hàm `COUNT` để đếm các giá trị trong cột `student_id`.
+Như vậy, mệnh đề `INNER JOIN` sẽ là `inner join classrooms on students.classroom_id = classrooms.classroom_id`.
 
-**Mã lệnh SQL:**
+**Cách thực hiện:**
 
-``` sql linenums="1"
--- Tính số lượng mẫu tin trong bảng scores
-select count(student_id) as "Số lượng" -- (1)!
-from scores;
+1\. Viết mã lệnh SQL.
+
+```sql linenums="1"
+-- Trích xuất họ, tên, lớp học và phòng học của các học sinh
+select last_name, first_name, classroom_name, room
+from students
+inner join classrooms
+on students.classroom_id = classrooms.classroom_id;
 ```
-{ .annotate }
 
-1.  Từ khoá `as` dùng để đặt tên cho một cột.
+Với truy vấn trên, nếu những học sinh nào (trong bảng `students`) mà thuộc tính `classroom_id` không có giá trị hoặc giá trị không khớp với bảng `classrooms` thì sẽ không được trả về.
 
-**Output:**
+2\. Chạy câu lệnh trên, kết quả như sau:
 
-![Số lượng mẫu tin trong bảng scores](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9BE9ycfeoHkQrr-tg/root/content){loading=lazy width=300}
+![Dữ liệu trả về khi liên kết hai bảng thông qua thuộc tính classroom_id](./images/select-4-students-inner-join-2-tables.png){loading=lazy width=600}
 
-### Kết hợp với WHERE
+---
 
-Ví dụ:
+## Viết tắt mệnh đề `ON`
 
-**Yêu cầu:** Cho biết số lượng điểm cuối kỳ từ 5 trở lên ở tất cả các môn.
+!!! note "Từ khóa `USING`"
+
+    Dùng để chỉ định thuộc tính liên kết của cả hai bảng.
+
+    `USING` được dùng khi:
+
+    - Thuộc tính liên kết ở hai bảng có **tên giống hệt nhau**.
+    - Thuộc tính liên kết ở hai bảng có **cùng kiểu dữ liệu**.
+
+`USING` làm cho câu truy vấn ngắn lại, giúp tập trung vào bản chất của việc liên kết.
+
+Ví dụ:  
+**Yêu cầu:**
+
+Viết lại truy vấn trên bằng cách dùng `USING`.
+
+**Cách thực hiện:**
+
+1\. Viết mã lệnh SQL.
+
+```sql linenums="6"
+-- Dùng USING
+select last_name, first_name, classroom_name, room
+from students
+inner join classrooms using(classroom_id);
+```
+
+2\. Chạy câu lệnh trên, kết quả vẫn không đổi.
+
+---
+
+## Chỉ định tên bảng
+
+Khi tên của một thuộc tính xuất hiện trong hai bảng trở lên, ta cần chỉ định cụ thể tên bảng nào sẽ đi kèm với thuộc tính để tránh gây ra sự mơ hồ cho hệ thống.
+
+Ví dụ:  
+**Yêu cầu:**
+
+Cũng với truy vấn trên, hãy bổ sung mã lớp học.
 
 **Phân tích:**
 
-Trong số tất cả 66 mẫu tin của bảng `scores`, ta chỉ đếm số mẫu tin mà điểm cuối kỳ từ 5 trở lên.
+Thuộc tính mã lớp học `classroom_id` được lưu trong cả hai bảng: `classrooms` và `students`.
 
-Như vậy, ta vẫn giữ lại truy vấn trên, nhưng thêm mệnh đề `WHERE` để lọc ra các mẫu tin thỏa điều kiện.
+Để tránh sự nhầm lẫn, ta cần chỉ rõ tên bảng nào sẽ trích xuất thuộc tính `classroom_id`. Chẳng hạn, ta chọn bảng `students`.
 
-**Mã lệnh SQL:**
+Như vậy, trong mệnh đề `SELECT`, ta bổ sung: `students.classroom_id`. 
 
-``` sql linenums="5"
--- Tính số lượng điểm cuối kỳ từ 5 trở lên ở tất cả các môn
-select count(student_id)
+**Cách thực hiện:**
+
+1\. Viết mã lệnh SQL.
+
+```sql linenums="11"
+-- Trích xuất họ, tên, mã lớp học, tên lớp học và phòng học của các học sinh
+select last_name, first_name, students.classroom_id, classroom_name, room
+from students
+inner join classrooms using(classroom_id);
+```
+
+2\. Chạy câu lệnh trên, kết quả như sau:
+
+![Dữ liệu trả về khi bổ sung mã lớp classroom_id](./images/select-4-students-inner-join-specify-table-name.png){loading=lazy width=660}
+
+---
+
+## Truy vấn ba bảng
+
+!!! note "Cú pháp SQL truy vấn ba bảng bằng `INNER JOIN`"
+
+    ```sql
+    SELECT thuộc_tính_1, thuộc tính_2,...
+    FROM (bảng_1
+    INNER JOIN bảng_2 ON bảng_1.thuộc_tính_liên_kết = bảng_2.thuộc_tính_liên_kết
+    INNER JOIN bảng_3 ON bảng_2.thuộc_tính_liên_kết = bảng_3.thuộc_tính_liên_kết
+    ```
+
+Ví dụ:  
+**Yêu cầu:**
+
+In ra bảng điểm kiểm tra cuối kỳ môn Khoa học máy tính của tất cả học sinh.
+
+**Phân tích:**
+
+![Lược đồ toàn bộ cơ sở dữ liệu](./images/part-4-whole-database-relationship-diagram.png){loading=lazy}
+
+Quan sát lược đồ trên, ta thấy:
+
+Dữ liệu về điểm kiểm tra cuối kỳ được lưu trong bảng `scores`, dữ liệu về môn học được lưu trong bảng `subjects`.
+
+Hai bảng này đều có thuộc tính `subject_id`, được dùng làm thuộc tính liên kết (khóa chính và khóa ngoại).
+
+Dữ liệu về học sinh được lưu trong bảng `students`, có thuộc tính `student_id` cũng làm thuộc tính liên kết (khóa chính và khóa ngoại).
+
+Như vậy, mệnh đề `INNER JOIN` sẽ là `inner join subjects on scores.subject_id = subjects.subject_id inner join students on scores.student_id = students.student_id`.
+
+**Cách thực hiện:**
+
+1\. Viết mã lệnh SQL.
+
+```sql linenums="16"
+-- Trích xuất họ, tên, tên môn học và điểm thi cuối kỳ của các học sinh trong môn Khoa học máy tính
+select last_name, first_name, subject_name, final_test
 from scores
-where final_test >= 5;
+inner join subjects on scores.subject_id = subjects.subject_id
+inner join students on scores.student_id = students.student_id
+where subject_name = 'Khoa học máy tính';
 ```
 
-**Output:**
+2\. Chạy câu lệnh trên, kết quả như sau:
 
-![Số lượng mẫu tin có điểm cuối kỳ từ 5 trở lên](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9BFwMAfhuCLRtlt8w/root/content){loading=lazy width=300}
+![Dữ liệu trả về khi liên kết ba bảng](./images/select-4-students-inner-join-3-tables.png){loading=lazy width=600}
 
-### Kết hợp với WHERE và GROUP BY
+??? info "Các loại liên kết khác"
 
-Ví dụ:
+    Ngoài `INNER JOIN`, còn có các loại liên kết khác như: `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN`, `OUTER JOIN`, `CROSS JOIN`, `SELF JOIN`, `THETA JOIN`, `NATURAL JOIN`, `EQUI JOIN`, `SEMI JOIN`, `ANTI JOIN`, v.v...
 
-**Yêu cầu:** Cho biết số lượng điểm cuối kỳ từ 5 trở lên theo từng môn.
+---
 
-**Phân tích:**
+3\. Ta cũng có thể dùng `USING` cho truy vấn trên.
 
-Để biết số lượng điểm cuối kỳ từ 5 trở lên theo từng môn, ta cần gom nhóm các mẫu tin theo mã môn học `subject_id`.
-
-Như vậy, ta thêm mệnh đề `GROUP BY` vào truy vấn trên: `group by subject_id`. Đồng thời, thêm cột `subject_id` vào mệnh đề `SELECT`.
-
-**Mã lệnh SQL:**
-
-``` sql linenums="10"
--- Tính số lượng điểm cuối kỳ từ 5 trở lên theo từng môn
-select subject_id, count(student_id) 
+```sql linenums="23"
+-- Dùng USING
+select last_name, first_name, subject_name, final_test
 from scores
-where final_test >= 5
-group by subject_id;
+inner join subjects using(subject_id)
+inner join students using(student_id)
+where subject_name = 'Khoa học máy tính';
 ```
 
-**Output:**
+---
 
-![Số lượng mẫu tin có điểm cuối kỳ từ 5 trở lên theo từng môn](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9BQS-1xZ92gK30SUw/root/content){loading=lazy width=300}
+## Mã nguồn
 
-!!! note "Lưu ý"
+Code đầy đủ được đặt tại:
 
-    Khi trong mệnh đề `SELECT` vừa có thuộc tính vừa có hàm tổng hợp, ta cần thực hiện gom nhóm bằng `GORUP BY` đối với các thuộc tính.
+- [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f2/school_db_select_4.sql){target="_blank"}
 
-### Kết hợp với WHERE, GROUP BY và HAVING
-
-Ví dụ:
-
-**Yêu cầu:** Cho biết những môn nào đạt số lượng hơn 10 học sinh mà có điểm cuối kỳ từ 5 trở lên.
-
-**Phân tích:**
-
-Vẫn là truy vấn trên, nhưng chỉ lấy những môn mà số lượng hơn 10.
-
-Như vậy, ta sẽ thêm mệnh đề `HAVING`: `having count(student_id) > 10`.
-
-**Mã lệnh SQL:**
-
-``` sql linenums="16"
--- Tính số lượng điểm cuối kỳ từ 5 trở lên theo từng môn, chỉ lấy môn nào có số lượng hơn 10
-select subject_id, count(student_id) as "Số lượng"
-from scores
-where final_test >= 5
-group by subject_id
-having count(student_id) > 10;
-```
-
-**Output:**
-
-![Các môn có số lượng điểm trên trung bình đạt hơn 10 học sinh](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9BUbL8m_S48ZVWYeg/root/content){loading=lazy width=300}
-
-!!! note "Lưu ý"
-
-    Mệnh đề `HAVING` chỉ có thể được sử dụng sau mệnh đề `GROUP BY`.
-
-    Phân biệt `WHERE` và `HAVING`:
-
-    | | WHERE | HAVING |
-    | --- | --- | --- |
-    | Công dụng | Lọc các mẫu tin trước khi gom nhóm | Lọc các nhóm sau khi gom nhóm |
-    | Điều kiện | Áp dụng cho từng mẫu tin | Áp dụng cho từng nhóm |
-
-## Hàm AVG
-
-Để tính trung bình cộng của một cột, ta dùng hàm `AVG`.
-
-### Kết hợp với GROUP BY
-
-Ví dụ:
-
-**Yêu cầu:** Nhằm đánh giá chất lượng giảng dạy, hãy tính giá trị trung bình của cột điểm cuối kỳ theo từng môn. Kết quả trả về phải có tên môn học cụ thể, chứ không phải mã môn.
-
-**Phân tích:**
-
-![Lược đồ toàn bộ cơ sở dữ liệu](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNrt9uhcYkGep8Sb-DTQ/root/content){loading=lazy}
-
-Quan sát lược đồ trên, ta thấy điểm cuối kỳ được lưu trong bảng `scores`, tên môn học được lưu trong bảng `subjects`.
-
-Do đó, ta liên kết hai bảng này bằng `INNER JOIN`.
-
-Để biết điểm trung bình của tất cả học sinh trong trường, ta dùng hàm `AVG` đối với cột `final_test`.
-
-Để phân theo từng môn, ta thực hiện gom nhóm các mẫu tin theo tên môn.
-
-Như vậy, mệnh đề `GROUP BY` sẽ là `group by subject_name`.
-
-**Mã lệnh SQL:**
-
-``` sql linenums="23"
--- Tính giá trị trung bình của cột điểm cuối kỳ theo từng môn
--- Kết quả trả về phải có tên môn
-select subject_name, avg(final_test) as "Điểm trung bình"
-from scores inner join subjects on scores.subject_id = subjects.subject_id
-group by subject_name;
-```
-
-**Output:**
-
-![Giá trị trung bình điểm cuối kỳ](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9Bc0d2c0JHeaWaCjw/root/content){loading=lazy width=300}
-
-### Kết hợp với WHERE và GROUP BY
-
-Ví dụ: 
-
-**Yêu cầu:** Tính giá trị trung bình của cột điểm cuối kỳ cho riêng môn Khoa học máy tính.
-
-**Phân tích:**
-
-Truy vấn này tương tự truy vấn trên, nhưng chỉ lấy môn Khoa học máy tính.
-
-Như vậy, ta thêm mệnh đề `WHERE` vào truy vấn: `where subject_name = 'Khoa học máy tính'`.
-
-**Mã lệnh SQL:**
-
-``` sql linenums="29"
--- Tính giá trị trung bình của cột điểm cuối kỳ cho riêng môn Khoa học máy tính
-select subject_name, avg(final_test) as "Điểm trung bình"
-from scores inner join subjects on scores.subject_id = subjects.subject_id
-where subject_name = 'Khoa học máy tính'
-group by subject_name;
-```
-
-**Output:**
-
-![Giá trị trung bình điểm cuối kỳ môn Khoa học máy tính](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9Bhvf63hFVc8YwCkw/root/content){loading=lazy width=360}
-
-### Kết hợp với GROUP BY và HAVING
-
-Ví dụ: 
-
-**Yêu cầu:** Lọc ra các môn mà giá trị trung bình của cột điểm cuối kỳ lớn hơn 7.
-
-**Phân tích:**
-
-Truy vấn này tương tự truy vấn trên, nhưng không lấy môn Khoa học máy tính, mà lấy các môn nào có giá trị trung bình lớn hơn 7.
-
-Nhu vậy, ta bỏ mệnh đề `WHERE` của truy vấn trên, thay bằng mệnh đề `HAVING`: `having avg(final_test) > 7`.
-
-**Mã lệnh SQL:**
-
-``` sql linenums="35"
--- Lọc ra các môn mà giá trị trung bình của cột điểm cuối kỳ lớn hơn 7
-select subject_name, avg(final_test) as "Điểm trung bình"
-from scores inner join subjects on scores.subject_id = subjects.subject_id
-group by subject_name
-having avg(final_test) > 7;
-```
-
-**Output:**
-
-![Các môn có giá trị trung bình điểm cuối kỳ trên 7](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNr9BlpyE89tOE-QvmqA/root/content){loading=lazy width=360}
+---
 
 ## Sơ đồ tóm tắt
 
-{!grade-11/topic-F1/mindmaps/retrieve-data-from-tables-part-4.mm.md!}
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/retrieve-data-from-tables-part-4.html">Sơ đồ tóm tắt</iframe>
+</div>
+
+---
 
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
-| gom nhóm | group by |
-| hàm tổng hợp | aggregate function |
-
-## Mã nguồn
-
-Các đoạn mã trong bài được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-11/topic-f1/school_db_select_4.sql){:target="_blank"}.
+| liên kết | join |

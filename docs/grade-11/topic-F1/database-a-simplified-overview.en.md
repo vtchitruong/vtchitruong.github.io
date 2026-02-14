@@ -112,7 +112,7 @@ A **database system** consists of:
 - The database management system
 - Application software
 
-![Components of a database system](/grade-11/topic-F1/images/database-system.svg){ loading=lazy width=300 }
+![Components of a database system](./images/database-system.svg){ loading=lazy width=300 }
 
 *Components of a database system*
 

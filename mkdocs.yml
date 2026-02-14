@@ -407,39 +407,49 @@ nav:
       - grade-11/topic-F1/database-security.md
     - Chủ đề F2:
       - Mục lục: grade-11/topic-F2/topic-f2-index.md
-      - grade-11/topic-F2/create-a-table-in-ms-access.md
-      - grade-11/topic-F2/create-a-table-in-mysql-workbench.md
-      - grade-11/topic-F2/building-a-database-in-postgresql-part-1.md
-      - grade-11/topic-F2/building-a-database-in-postgresql-part-2.md
-      - grade-11/topic-F2/building-a-database-in-postgresql-part-3.md
-      - grade-11/topic-F2/building-a-database-in-postgresql-part-4.md
-      - grade-11/topic-F2/retrieve-data-from-tables-part-1.md
-      - grade-11/topic-F2/retrieve-data-from-tables-part-2.md
-      - grade-11/topic-F2/retrieve-data-from-tables-part-3.md
-      - grade-11/topic-F2/retrieve-data-from-tables-part-4.md
-      - grade-11/topic-F2/sql-query-on-one-table-pratice.md
+      - Xây dựng cơ sở dữ liệu:
+        - grade-11/topic-F2/building-a-database-in-postgresql-part-1.md
+        - grade-11/topic-F2/building-a-database-in-postgresql-part-2.md
+        - grade-11/topic-F2/building-a-database-in-postgresql-part-3.md
+        - grade-11/topic-F2/building-a-database-in-postgresql-part-4.md
+      - Truy vấn dữ liệu:
+        - grade-11/topic-F2/retrieve-data-from-tables-part-1.md
+        - grade-11/topic-F2/retrieve-data-from-tables-part-2.md
+        - grade-11/topic-F2/retrieve-data-from-tables-part-3.md
+        - grade-11/topic-F2/retrieve-data-from-tables-part-4.md
+        - grade-11/topic-F2/retrieve-data-from-tables-part-5.md
+        - grade-11/topic-F2/retrieve-data-from-tables-part-6.md
+        - grade-11/topic-F2/sql-query-on-one-table-pratice.md
+      - Tạo bảng trong một số DMBS khác:
+        - grade-11/topic-F2/create-a-table-in-ms-access.md
+        - grade-11/topic-F2/create-a-table-in-mysql-workbench.md
     - Chủ đề F3:
       - Mục lục: grade-11/topic-F3/topic-f3-index.md
-      - grade-11/topic-F3/data-structure-one-dimensional-array.md
-      - grade-11/topic-F3/data-structure-one-dimensional-array-practice.md
-      - grade-11/topic-F3/data-structure-two-dimensional-array.md
-      - grade-11/topic-F3/data-structure-two-dimensional-array-practice.md
-      - grade-11/topic-F3/search-algorithm-linear-search.md
-      - grade-11/topic-F3/search-algorithm-linear-search-practice.md
-      - grade-11/topic-F3/search-algorithm-binary-search.md
-      - grade-11/topic-F3/search-algorithm-binary-search-practice.md
-      - grade-11/topic-F3/sort-algorithm-selection-sort.md
-      - grade-11/topic-F3/sort-algorithm-insertion-sort.md
-      - grade-11/topic-F3/sort-algorithm-bubble-sort.md
-      - grade-11/topic-F3/sort-algorithm-exchange-sort.md
-      - grade-11/topic-F3/data-structure-linked-list-a-simplified-overview.md
-      - grade-11/topic-F3/data-structure-linked-list-manipulation.md
-      - grade-11/topic-F3/algorithmic-complexity-a-simplified-overview.md
-      - grade-11/topic-F3/algorithmic-complexity-big-o-notation.md
-      - grade-11/topic-F3/algorithmic-complexity-rules-for-determining.md
-      - grade-11/topic-F3/algorithmic-complexity-of-search-and-sort.md
-      - grade-11/topic-F3/algorithmic-complexity-practice.md
-      - grade-11/topic-F3/modular-software-design.md
+      - Mảng:
+        - grade-11/topic-F3/data-structure-one-dimensional-array.md
+        - grade-11/topic-F3/data-structure-one-dimensional-array-practice.md
+        - grade-11/topic-F3/data-structure-two-dimensional-array.md
+        - grade-11/topic-F3/data-structure-two-dimensional-array-practice.md
+      - Thuật toán tìm kiếm:
+        - grade-11/topic-F3/search-algorithm-linear-search.md
+        - grade-11/topic-F3/search-algorithm-linear-search-practice.md
+        - grade-11/topic-F3/search-algorithm-binary-search.md
+        - grade-11/topic-F3/search-algorithm-binary-search-practice.md
+      - Thuật toán sắp xếp:
+        - grade-11/topic-F3/sort-algorithm-selection-sort.md
+        - grade-11/topic-F3/sort-algorithm-insertion-sort.md
+        - grade-11/topic-F3/sort-algorithm-bubble-sort.md
+        - grade-11/topic-F3/sort-algorithm-exchange-sort.md
+      - Danh sách liên kết:
+        - grade-11/topic-F3/data-structure-linked-list-a-simplified-overview.md
+        - grade-11/topic-F3/data-structure-linked-list-manipulation.md
+      - Độ phức tạp thuật toán:
+        - grade-11/topic-F3/algorithmic-complexity-a-simplified-overview.md
+        - grade-11/topic-F3/algorithmic-complexity-big-o-notation.md
+        - grade-11/topic-F3/algorithmic-complexity-rules-for-determining.md
+        - grade-11/topic-F3/algorithmic-complexity-of-search-and-sort.md
+        - grade-11/topic-F3/algorithmic-complexity-practice.md
+        # - grade-11/topic-F3/modular-software-design.md
     - Chủ đề G:
       - Mục lục: grade-11/topic-G/topic-g-index.md
       - grade-11/topic-G/database-administration.md

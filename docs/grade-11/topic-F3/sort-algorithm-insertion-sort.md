@@ -38,13 +38,13 @@ Duyệt từng phần tử `A[i]` từ `1` đến cuối mảng, lặp các thao
 
     (Vì sau khi vòng lặp của bước 2 dừng, `j` là vị trí của phần tử bị bắt gặp không còn lớn hơn `A[i]`, và `j + 1` là vị trí mà `A[i]` chèn vào).
 
-Thuật toán có thể được phác hoạ như hình sau:
+Thuật toán có thể được phác họa như hình sau:
 
-![Phác hoạ ý tưởng chính](images/sort-algorithm-insertion-sort-illustration.svg){loading=lazy width=300}
+![Phác họa ý tưởng chính](images/sort-algorithm-insertion-sort-illustration.svg){loading=lazy width=300}
 
-### Ví dụ minh hoạ
+### Ví dụ minh họa
 
-![Ví dụ minh hoạ tiến trình sắp xếp chèn](images/sort-algorithm-insertion-sort-manual-run.svg){loading=lazy width=360px}
+![Ví dụ minh họa tiến trình sắp xếp chèn](images/sort-algorithm-insertion-sort-manual-run.svg){loading=lazy width=360px}
 
 ### Lưu đồ
 

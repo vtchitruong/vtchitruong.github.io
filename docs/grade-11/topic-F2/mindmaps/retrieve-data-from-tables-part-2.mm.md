@@ -6,17 +6,21 @@ markmap:
 
 # Truy vấn dữ liệu
 
-## `WHERE`
+## Mệnh đề `WHERE`
 
-### Điều kiện của dữ liệu cần trích xuất
+- Trích xuất các mẫu tin theo điều kiện
 
-- Các toán tử so sánh dữ liệu kiểu số
-- Toán tử `LIKE`: so sánh gần bằng
-- Toán tử logic `AND`, `OR`, `NOT`  
+## Điều kiện
 
-## `ORDER BY`
+### Dữ liệu kiểu số
 
-### Sắp xếp dữ liệu trả về
+- `=`, `<>`, `>`, `>=`, `<`, `<=`
 
-- `ASC`: tăng dần
-- `DESC`: giảm dần
+### Dữ liệu kiểu chuỗi văn bản
+
+- `=`, `<>`
+- `LIKE`, `%`, `_`
+
+### Kết hợp các điều kiện
+
+- `AND`, `OR`, `NOT`

@@ -30,17 +30,17 @@ Duyệt từng phần tử `A[i]` từ đầu đến áp cuối, lặp thao tác
 
 Như vậy, sau mỗi lần duyệt của vòng lặp ngoài (biến `i`), phần tử nhỏ nhất của mảng con `A[i..n - 1]` được đưa về vị trí đầu của mảng con đó, cũng chính là vị trí `i`.
 
-Thuật toán có thể được phác hoạ như hình sau:
+Thuật toán có thể được phác họa như hình sau:
 
-![Phác hoạ ý tưởng chính](images/sort-algorithm-exchange-sort-illustration.svg){loading=lazy width=300}
+![Phác họa ý tưởng chính](images/sort-algorithm-exchange-sort-illustration.svg){loading=lazy width=300}
 
 !!! warning "Nói thêm về thuật toán này"
 
     Trong một số sách tiếng Anh, sắp xếp tráo đổi thường được xem là "anh em họ" của sắp xếp nổi bọt nhưng hiệu năng kém hơn. Vì thế, người ta cho rằng không đáng để dạy thuật toán này.
 
-### Ví dụ minh hoạ
+### Ví dụ minh họa
 
-![Ví dụ minh hoạ tiến trình sắp tráo đổi](images/sort-algorithm-exchange-sort-manual-run.svg){loading=lazy width=360px}
+![Ví dụ minh họa tiến trình sắp tráo đổi](images/sort-algorithm-exchange-sort-manual-run.svg){loading=lazy width=360px}
 
 ### Lưu đồ
 

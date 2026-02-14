@@ -77,13 +77,13 @@ Duyệt từng phần tử `A[i]` từ đầu đến áp cuối, lặp các thao
 - Tìm vị trí `min` của phần tử nhỏ nhất trong mảng con từ vị trí `i` đến cuối mảng.
 - Hoán vị `A[i]` và `A[min]`.
 
-Thuật toán có thể được phác hoạ như hình sau:
+Thuật toán có thể được phác họa như hình sau:
 
-![Phác hoạ ý tưởng chính](images/sort-algorithm-selection-sort-illustration.svg){loading=lazy width=300}
+![Phác họa ý tưởng chính](images/sort-algorithm-selection-sort-illustration.svg){loading=lazy width=300}
 
-### Ví dụ minh hoạ
+### Ví dụ minh họa
 
-![Ví dụ minh hoạ tiến trình sắp xếp chọn](images/sort-algorithm-selection-sort-manual-run.svg){loading=lazy width=360px}
+![Ví dụ minh họa tiến trình sắp xếp chọn](images/sort-algorithm-selection-sort-manual-run.svg){loading=lazy width=360px}
 
 ### Lưu đồ
 
