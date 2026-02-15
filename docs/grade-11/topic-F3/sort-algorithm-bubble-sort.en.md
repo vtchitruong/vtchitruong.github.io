@@ -8,15 +8,7 @@ icon: material/sort
 
     This lesson introduces the bubble sort algorithm.
 
-## Overview
-
-Review the general introduction to the sorting problem and sorting algorithms [here](sort-algorithm-selection-sort.md#overview){target="_blank"}.
-
----
-
-## Bubble sort algorithm
-
-### Idea
+## Idea
 
 Imagine bubbles rising from the bottom of a glass of water to the surface.
 
@@ -24,14 +16,14 @@ Small bubbles start at the bottom, and as they rise, larger bubbles appear close
 
 If we think of the beginning of the array as the bottom of the water and the end of the array as the surface, we can sort the array by repeatedly letting the larger elements "bubble up" toward the end.
 
-Here’s how it works in detail:
+!!! note "How the insertion sort algorithm works"
 
-For `i` from the first element to the second-to-last element:
+    For `i` from the first element to the second-to-last element:
 
-- Traverse the array from index `0` up to `n - 1 - i` (i.e., stop before the last `i` elements that are already in place), and for each pair of adjacent elements `A[j]` and `A[j + 1]`:
+    - Traverse the array from index `0` up to `n - 1 - i` (i.e., stop before the last `i` elements that are already in place), and for each pair of adjacent elements `A[j]` and `A[j + 1]`:
 
-    - Compare them.
-    - If `A[j] > A[j + 1]`, swap them so the larger one moves to the right.
+        - Compare them.
+        - If `A[j] > A[j + 1]`, swap them so the larger one moves to the right.
 
 This way:
 
@@ -46,21 +38,29 @@ The main idea is illustrated below:
 
 ![Illustration of the core idea](images/sort-algorithm-bubble-sort-illustration.svg){loading=lazy width=300}
 
-### Example illustration
+---
+
+## Example illustration
 
 ![Step-by-step example of bubble sort](images/sort-algorithm-bubble-sort-manual-run.svg){loading=lazy width=360px}
 
-### Flowchart
+---
+
+## Flowchart
 
 ![Flowchart of the bubble sort algorithm](images/sort-algorithm-bubble-sort-flowchart.svg){loading=lazy width=600}
 
-### Visualization
+---
+
+## Visualization
 
 <div>
     <iframe width="100%" height="690px" frameBorder=0 src="/grade-11/topic-F3/visualize/bubble-sort.html"></iframe>
 </div>  
 
-### Writing the program
+---
+
+## Writing the program
 
 1\. Import the `numpy` library.
 
@@ -117,14 +117,6 @@ Mảng mới sau khi sắp xếp: [0 1 4 4 7 8 8 9]
 The complete code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/1c3INW2H5BhjXAfn18KiXWXlA0vLvDo7n?usp=sharing){target="_blank"}
-
----
-
-## Summary mindmap
-
-<div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/sort-algorithm-bubble-sort.html">Sơ đồ tóm tắt</iframe>
-</div>
 
 ---
 

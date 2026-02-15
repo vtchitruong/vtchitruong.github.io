@@ -8,26 +8,18 @@ icon: material/sort
 
     This lesson introduces the exchange sort algorithm.
 
-## Overview
-
-Review the general introduction to the sorting problem and sorting algorithms [here](sort-algorithm-selection-sort.md#overview){target="_blank"}.
-
----
-
-## Exchange sort algorithm
-
-### Idea
+## Idea
 
 The core idea of exchange sort is to repeatedly compare the current element with all elements that come after it and swap them whenever necessary, so that the smaller element moves forward and the larger one moves backward.
 
-Here’s how it works in detail:
+!!! note "How the exchange sort algorithm works"
 
-For each position `i` from the beginning of the array up to the second-to-last element:
+    For each position `i` from the beginning of the array up to the second-to-last element:
 
-- For each position `j` from `i + 1` to the end of the array:
+    - For each position `j` from `i + 1` to the end of the array:
 
-    - Compare `A[i]` and `A[j]`.
-    - If `A[i] > A[j]`, swap them so that the smaller value ends up at index `i`.
+        - Compare `A[i]` and `A[j]`.
+        - If `A[i] > A[j]`, swap them so that the smaller value ends up at index `i`.
 
 After each complete pass of the outer loop (variable `i`), the smallest remaining element in the subarray `A[i..n-1]` is moved to its correct position at index `i`.
 
@@ -49,21 +41,29 @@ The main idea is illustrated below:
 
     For this reason, most educators and authors agree that it is not worth teaching as a separate algorithm — the standard bubble sort (with the early-exit optimisation) is simpler, faster, and more commonly used.
 
-### Example illustration
+---
+
+## Example illustration
 
 ![Step-by-step example of exchange sort](images/sort-algorithm-exchange-sort-manual-run.svg){loading=lazy width=360px}
 
-### Flowchart
+---
+
+## Flowchart
 
 ![Flowchart of the exchange sort algorithm](images/sort-algorithm-exchange-sort-flowchart.svg){loading=lazy width=600}
 
-### Visualization
+---
+
+## Visualization
 
 <div>
     <iframe width="100%" height="690px" frameBorder=0 src="/grade-11/topic-F3/visualize/exchange-sort.html"></iframe>
 </div>   
 
-### Writing the program
+---
+
+## Writing the program
 
 1\. Import the `numpy` library.
 
@@ -120,14 +120,6 @@ Mảng mới sau khi sắp xếp: [0 1 4 4 7 8 8 9]
 The complete code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/1dg_zTANTcBFwKDcV3MdsN5Ksw2Hy9fr_?usp=sharing){target="_blank"}
-
----
-
-## Summary mindmap
-
-<div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/sort-algorithm-exchange-sort.html">Sơ đồ tóm tắt</iframe>
-</div>
 
 ---
 

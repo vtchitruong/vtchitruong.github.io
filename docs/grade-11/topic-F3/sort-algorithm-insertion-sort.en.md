@@ -8,15 +8,9 @@ icon: material/sort
 
     This lesson introduces the insertion sort algorithm.
 
-## Overview
-
-Review the general introduction to the sorting problem and sorting algorithms [here](sort-algorithm-selection-sort.md#overview){target="_blank"}.
-
 ---
 
-## Insertion sort algorithm
-
-### Idea
+## Idea
 
 Imagine your class is lining up by height.
 
@@ -24,25 +18,25 @@ Now picture a student named Tèo. Everyone standing in front of Tèo who is tall
 
 This is exactly how insertion sort works: it repeatedly takes the next element and inserts it into its correct position among the elements that are already sorted.
 
-Here’s the step-by-step process:
+!!! note "How the insertion sort algorithm works"
 
-For each element `A[i]` from the second position (`i = 1`) to the end of the array:
+    For each element `A[i]` from the second position (`i = 1`) to the end of the array:
 
-1. Save the current value `A[i]` into a temporary variable `t`
+    1. Save the current value `A[i]` into a temporary variable `t`
 
-   (because the original spot will soon be overwritten).
+    (because the original spot will soon be overwritten).
 
-2. Starting from position `j = i - 1`, move backward through the sorted part:
+    2. Starting from position `j = i - 1`, move backward through the sorted part:
 
-    - As long as `A[j]` is greater than `t`, shift `A[j]` one position to the right (`A[j + 1] = A[j]`).
-    - Stop when:
-        
-        - You reach the beginning of the array (`j < 0`), or
-        - You find an element `A[j]` that is not greater than `t` (`A[j] <= t`).
+        - As long as `A[j]` is greater than `t`, shift `A[j]` one position to the right (`A[j + 1] = A[j]`).
+        - Stop when:
+            
+            - You reach the beginning of the array (`j < 0`), or
+            - You find an element `A[j]` that is not greater than `t` (`A[j] <= t`).
 
-3. Insert the saved value `t` into the gap that was created: `A[j + 1] = t`
+    3. Insert the saved value `t` into the gap that was created: `A[j + 1] = t`
 
-    (After step 2 stops, `j + 1` is exactly the correct position for the element.)
+        (After step 2 stops, `j + 1` is exactly the correct position for the element.)
 
 This way, after each iteration, the first `i + 1` elements are always sorted — the sorted portion grows one element at a time, just like the line of students getting taller and taller from the front.
 
@@ -50,21 +44,29 @@ The main idea is illustrated below:
 
 ![Illustration of the core idea](images/sort-algorithm-insertion-sort-illustration.svg){loading=lazy width=300}
 
-### Example illustration
+---
+
+## Example illustration
 
 ![Step-by-step example of insertion sort](images/sort-algorithm-insertion-sort-manual-run.svg){loading=lazy width=360px}
 
-### Flowchart
+---
+
+## Flowchart
 
 ![Flowchart of the insertion sort algorithm](images/sort-algorithm-insertion-sort-flowchart.svg){loading=lazy width=600}
 
-### Visualization
+---
+
+## Visualization
 
 <div>
     <iframe width="100%" height="690px" frameBorder=0 src="/grade-11/topic-F3/visualize/insertion-sort.html"></iframe>
 </div>   
 
-### Writing the program
+---
+
+## Writing the program
 
 1\. Import the `numpy` library.
 
@@ -137,14 +139,6 @@ Mảng mới sau khi sắp xếp: [0 1 4 4 7 8 8 9]
 The complete code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/1zkDywixSi1Le7XikA4njlg72Kpz5E7dY?usp=sharing){target="_blank"}
-
----
-
-## Summary mindmap
-
-<div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/sort-algorithm-insertion-sort.html">Sơ đồ tóm tắt</iframe>
-</div>
 
 ---
 

@@ -11,8 +11,6 @@ icon: material/table-large
     - Xác định vị trí xuất hiện đầu tiên và cuối cùng
     - Kiểm tra số chính phương
 
----
-
 ## Bài 1
 
 ### Đề bài

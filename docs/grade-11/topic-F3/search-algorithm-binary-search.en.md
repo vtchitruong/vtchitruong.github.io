@@ -8,15 +8,7 @@ icon: material/table-search
 
     This lesson introduces the binary search algorithm.
 
-## Overview
-
-Review the general introduction to the search problem and search algorithms [here](search-algorithm-linear-search.en.md/#overview){target="_blank"}.
-
----
-
-## Binary search algorithm
-
-### Idea
+## Idea
 
 Imagine you’re looking for a word that starts with the letter T in a dictionary.
 
@@ -52,21 +44,29 @@ Applying the above idea to an array, we need to:
 
         (`-1` is the standard convention for “not found”, since valid array indices start at 0.)
 
-### Example illustration
+---
+
+## Example illustration
 
 ![Step-by-step example of binary search](images/search-algorithm-binary-search-manual-run.svg){loading=lazy}
 
-### Flowchart
+---
+
+## Flowchart
 
 ![Flowchart of the binary search algorithm](images/search-algorithm-binary-search-flowchart.svg){loading=lazy}
 
-### Visualization
+---
+
+## Visualization
 
 <div>
     <iframe width="100%" height="760px" frameBorder=0 src="/grade-11/topic-F3/visualize/binary-search.html"></iframe>
 </div>
 
-### Writing the program
+---
+
+## Writing the program
 
 1\. Import the `numpy` library.
 
@@ -229,14 +229,6 @@ Here are the main differences between the two algorithms:
 The complete code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/1xhy3RfkEaeQQuWfXm1b5Ev_txYnw9jjr?usp=sharing){target="_blank"}
-
----
-
-## Summary mindmap
-
-<div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/search-algorithm-binary-search.html">Sơ đồ tóm tắt</iframe>
-</div>
 
 ---
 

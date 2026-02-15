@@ -8,27 +8,19 @@ icon: material/sort
 
     Bài này trình bày thuật toán sắp xếp tráo đổi.
 
-## Khái quát
-
-Xem lại khái quát về bài toán và thuật toán sắp xếp [tại đây](sort-algorithm-selection-sort.md/#khai-quat){target="_blank"}.
-
----
-
-## Thuật toán sắp xếp tráo đổi
-
-### Ý tưởng
+## Ý tưởng
 
 Ý tưởng chính của thuật toán sắp xếp tráo đổi là lặp lại nhiều lần thao tác so sánh phần tử đang xét với các phần tử theo sau nó và tráo đổi (hoán vị) sao cho phần tử nhỏ hơn lên trước và phần tử lớn hơn ra sau.
 
-Cụ thể như sau:
+!!! note "Thuật toán sắp xếp tráo đổi"
 
-Duyệt từng phần tử `A[i]` từ đầu đến áp cuối, lặp thao tác:
+    Duyệt từng phần tử `A[i]` từ đầu đến áp cuối, lặp thao tác:
 
-- Duyệt từng phần tử `A[j]` từ `i + 1` đến cuối mảng, lặp thao tác:
+    - Duyệt từng phần tử `A[j]` từ `i + 1` đến cuối mảng, lặp thao tác:
 
-    So sánh và tráo đổi (hoán vị) `A[i]` và `A[j]` sao cho phần tử nhỏ hơn đứng trước và phần tử lớn hơn đứng sau.
+        So sánh và tráo đổi (hoán vị) `A[i]` và `A[j]` sao cho phần tử nhỏ hơn đứng trước và phần tử lớn hơn đứng sau.
 
-Như vậy, sau mỗi lần duyệt của vòng lặp ngoài (biến `i`), phần tử nhỏ nhất của mảng con `A[i..n - 1]` được đưa về vị trí đầu của mảng con đó, cũng chính là vị trí `i`.
+    Như vậy, sau mỗi lần duyệt của vòng lặp ngoài (biến `i`), phần tử nhỏ nhất của mảng con `A[i..n - 1]` được đưa về vị trí đầu của mảng con đó, cũng chính là vị trí `i`.
 
 Thuật toán có thể được phác họa như hình sau:
 
@@ -38,21 +30,29 @@ Thuật toán có thể được phác họa như hình sau:
 
     Trong một số sách tiếng Anh, sắp xếp tráo đổi thường được xem là "anh em họ" của sắp xếp nổi bọt nhưng hiệu năng kém hơn. Vì thế, người ta cho rằng không đáng để dạy thuật toán này.
 
-### Ví dụ minh họa
+---
+
+## Ví dụ minh họa
 
 ![Ví dụ minh họa tiến trình sắp tráo đổi](images/sort-algorithm-exchange-sort-manual-run.svg){loading=lazy width=360px}
 
-### Lưu đồ
+---
+
+## Lưu đồ
 
 ![Lưu đồ sắp xếp tráo đổi](images/sort-algorithm-exchange-sort-flowchart.svg){loading=lazy width=600}
 
-### Trực quan hóa
+---
+
+## Trực quan hóa
 
 <div>
     <iframe width="100%" height="690px" frameBorder=0 src="../visualize/exchange-sort.html"></iframe>
 </div>   
 
-### Viết chương trình
+---
+
+## Viết chương trình
 
 1\. Nạp thư viện `numpy`.
 
@@ -109,14 +109,6 @@ Mảng mới sau khi sắp xếp: [0 1 4 4 7 8 8 9]
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1dg_zTANTcBFwKDcV3MdsN5Ksw2Hy9fr_?usp=sharing){target="_blank"}
-
----
-
-## Sơ đồ tóm tắt
-
-<div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/sort-algorithm-exchange-sort.html">Sơ đồ tóm tắt</iframe>
-</div>
 
 ---
 

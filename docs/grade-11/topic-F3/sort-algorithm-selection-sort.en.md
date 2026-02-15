@@ -6,65 +6,9 @@ icon: material/sort
 
 !!! abstract "Content summary"
 
-    This lesson covers:
+    This lesson introduces the selection sort algorithm.
 
-    - The sorting problem
-    - The selection sort algorithm
-
-## Overview
-
-### Problem statement
-
-Given a class gradebook, how can we quickly find the top 10 students with the highest scores?
-
-One simple and effective solution is to sort the entire list in descending order. After that, the first 10 students in the sorted list are exactly the ones with the highest grades.
-
-### The sorting problem
-
-Sorting data is a fundamental and important task in data processing. It makes searching, retrieving, and analyzing data much easier and faster.
-
-**Sorting** means **rearranging data into a meaningful order**.
-
-In topic F, we only study the simple case of sorting a one-dimensional array in non-decreasing order (1).
-{ .annotate }
-
-1.  **Non-decreasing** allows equal values: each next element is greater than or equal to the previous one.
-
-    Meanwhile, **strictly increasing** does not allow duplicates — each next element must be strictly greater than the previous one.
-
-Formal problem statement:
-
-| Input | Output |
-| --- | --- |
-| A one-dimensional array `A` with `n` integers | The same array `A`, now sorted in non-decreasing order |
-
-### Sorting algorithms
-
-There are many different sorting algorithms. Most of them work by comparing elements with each other to decide which one should come first.
-
-This lesson focuses on the **selection sort** algorithm.
-
-??? info "Benefits and real-world applications"
-
-    Sorting data makes it easier to read, faster to search, and simpler to process.
-
-    In practice, sorting algorithms are used in a wide variety of problems, including:
-
-    - Management systems — sorting IDs, names, dates, locations, etc.
-    - Graph algorithms such as Prim, Kruskal, and Dijkstra — sorting edges by weight.
-    - Statistics — finding the median, quartiles, percentiles.
-    - Removing duplicates, merging datasets, divide-and-conquer strategies, range searches.
-    - Scheduling and simulation — ordering events by time in games, job schedulers, operating systems, or network packet processing.
-
-    Today, almost every programming language and software library already provides built-in, highly efficient sorting functions.
-
-    Even so, learning how sorting algorithms work remains very valuable — it helps you develop logical thinking, understand performance differences, and write better code.
-
----
-
-## Selection sort algorithm
-
-### Idea
+## Idea
 
 Imagine you need to pick the best possible starting lineup from a group of players.
 
@@ -74,12 +18,12 @@ Now apply this to an array.
 
 If we treat *"smallest"* as *"best"*, the strategy becomes: Find the smallest element and put it in the first position. Then find the next smallest and put it in the second position. Keep going until the array is fully sorted.
 
-Here’s how it works step by step:
+!!! note "How the selection sort algorithm works"
 
-For each position `i` from the beginning of the array up to the second-to-last element:
+    For each position `i` from the beginning of the array up to the second-to-last element:
 
-- Scan the unsorted portion (from index `i` to the end) to find the smallest element and remember its index `min`.
-- Swap `A[i]` with `A[min]`.
+    - Scan the unsorted portion (from index `i` to the end) to find the smallest element and remember its index `min`.
+    - Swap `A[i]` with `A[min]`.
 
 This process gradually builds the sorted part at the beginning of the array.
 
@@ -87,21 +31,29 @@ The main idea is illustrated below:
 
 ![Illustration of the core idea](images/sort-algorithm-selection-sort-illustration.svg){loading=lazy width=300}
 
-### Example illustration
+---
+
+## Example illustration
 
 ![Step-by-step example of selection sort](images/sort-algorithm-selection-sort-manual-run.svg){loading=lazy width=360px}
 
-### Flowchart
+---
+
+## Flowchart
 
 ![Flowchart of the selection sort algorithm](images/sort-algorithm-selection-sort-flowchart.svg){loading=lazy width=600}
 
-### Visualization
+---
+
+## Visualization
 
 <div>
     <iframe width="100%" height="690px" frameBorder=0 src="/grade-11/topic-F3/visualize/selection-sort.html"></iframe>
 </div>  
 
-### Writing the program
+---
+
+## Writing the program
 
 1\. Import the `numpy` library.
 
@@ -161,14 +113,6 @@ Mảng mới sau khi sắp xếp: [0 1 4 4 7 8 8 9]
 The complete code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/1VBtZAQbqQTRyQx1hsF0Ez68VPa5h3I7Y?usp=sharing){target="_blank"}
-
----
-
-## Summary mindmap
-
-<div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/sort-algorithm-selection-sort.html">Sơ đồ tóm tắt</iframe>
-</div>
 
 ---
 

@@ -8,15 +8,7 @@ icon: material/table-search
 
     Bài này trình bày thuật toán tìm kiếm nhị phân.
 
-## Khái quát
-
-Xem lại khái quát về bài toán và thuật toán tìm kiếm [tại đây](search-algorithm-linear-search.md/#khai-quat){target="_blank"}.
-
----
-
-## Thuật toán tìm kiếm nhị phân
-
-### Ý tưởng
+## Ý tưởng
 
 Hãy tưởng tượng tình huống tìm một thuật ngữ bắt đầu bằng chữ cái T trong từ điển.
 
@@ -47,21 +39,29 @@ Giả sử quyển từ điển đang mở ở một trang nào đó.
         
         (`-1` là giá trị quy ước cho trường hợp không tìm thấy, vì chỉ số của mảng bắt đầu từ `0`, không có chỉ số âm).
 
-### Ví dụ minh họa
+---
+
+## Ví dụ minh họa
 
 ![Ví dụ minh họa tiến trình tìm kiếm nhị phân](images/search-algorithm-binary-search-manual-run.svg){loading=lazy}
 
-### Lưu đồ
+---
+
+## Lưu đồ
 
 ![Lưu đồ thuật toán tìm kiếm nhị phân](images/search-algorithm-binary-search-flowchart.svg){loading=lazy}
 
-### Trực quan hóa
+---
+
+## Trực quan hóa
 
 <div>
     <iframe width="100%" height="760px" frameBorder=0 src="/grade-11/topic-F3/visualize/binary-search.html"></iframe>
 </div>
 
-### Viết chương trình
+---
+
+## Viết chương trình
 
 1\. Nạp thư viện `numpy`.
 
@@ -217,14 +217,6 @@ Hai thuật toán có một vài khác biệt chủ yếu sau:
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/1xhy3RfkEaeQQuWfXm1b5Ev_txYnw9jjr?usp=sharing){target="_blank"}
-
----
-
-## Sơ đồ tóm tắt
-
-<div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/search-algorithm-binary-search.html">Sơ đồ tóm tắt</iframe>
-</div>
 
 ---
 

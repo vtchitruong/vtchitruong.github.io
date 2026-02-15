@@ -6,81 +6,9 @@ icon: material/table-search
 
 !!! abstract "Content summary"
 
-    This lesson covers:
+    This lesson introduces the sequential search algorithm.
 
-    - The search problem
-    - The sequential search algorithm
-
-## Overview
-
-### Problem statement
-
-People need information constantly, yet the amount of data stored in systems is enormous.
-
-How can we quickly find the exact piece of information we need in such a vast sea of data?
-
-### The search problem
-
-In general, the **search problem** involves **finding one or more items** that satisfy a given condition within a collection.
-
-In this lesson, we focus on a specific version of the search problem:
-
-- The data is stored in a one-dimensional array.
-- We are looking for exactly one element with a given value *k*.
-
-!!! note "Formal problem statement"
-
-    | Input | Output |
-    | --- | --- |
-    | - A one-dimensional array `A` containing `n` integers.<br>- A target value `k` to search for. | - The index (position) of the element equal to `k` in array `A` or `-1` if `k` is not found. |
-
-### Search algorithms
-
-For the problem described above, there are two fundamental search algorithms:
-
-- **Sequential search**
-- **Binary search**
-
-This lesson focuses only on sequential search, also known as **linear search** (1).
-{ .annotate }
-
-1.  Both terms can be used interchangeably. Internationally, **linear search** is the more common term. In Vietnamese textbooks, however, it is usually translated as **sequential search** (tìm kiếm tuần tự).
-
-??? info "Benefits and applications of search algorithms"
-
-    Searching is a fundamental way of interacting with data and brings many important benefits. It helps discover relevant information, deepens understanding of the world from existing data, and supports better decision-making.
-
-    Common real-world applications of search algorithms include:
-
-    1. Searching for specific information
-
-        Words in a document, a phone number in a contact list, a file on a computer, or a book in a library.
-
-    2. Database queries
-
-        Customers searching for products, prices, or promotions on e-commerce platforms.
-
-    3. Information retrieval
-
-        Search engines helping users find relevant documents or websites on the internet.
-
-    4. Optimization problems
-
-        Finding the best solution among many possibilities — e.g., the shortest path or the cheapest option.
-
-    5. Data analysis
-
-        Identifying patterns, trends, or correlations in large datasets to gain insights and draw conclusions.
-
-    6. Anomaly detection
-
-        Helping systems spot potential problems, trigger alerts, or take appropriate actions.
-
----
-
-## Sequential search algorithm
-
-### Idea
+## Idea
 
 Imagine a deck of cards all face down. You need to find where one of the 3s is (any of the four 3s).
 
@@ -102,17 +30,29 @@ Here’s how it works step by step:
 
         (`-1` is a common convention for "not found" because array indices start at 0 — there are no negative indices.)
 
-### Flowchart
+!!! tip "Terminology"
+
+    Sequential search is also known as linear search.
+
+    Both terms can be used interchangeably. Internationally, **linear search** is the more common term. In Vietnamese textbooks, however, it is usually translated as **sequential search** (tìm kiếm tuần tự).
+
+---
+
+## Flowchart
 
 ![Flowchart of the sequential search algorithm](images/search-algorithm-linear-search-flowchart.svg){loading=lazy}
 
-### Visualization
+---
+
+## Visualization
 
 <div>
     <iframe width="100%" height="680px" frameBorder=0 src="/grade-11/topic-F3/visualize/linear-search.html"></iframe>
 </div>
 
-### Writing the program
+---
+
+## Writing the program
 
 1\. Import the `numpy` library.
 
@@ -225,19 +165,10 @@ The complete code is available at:
 
 ---
 
-## Summary mindmap
-
-<div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-F3/mindmaps/search-algorithm-linear-search.html">Sơ đồ tóm tắt</iframe>
-</div>
-
----
-
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
-| bài toán tìm kiếm | search problem |
 | so sánh | compare |
 | thuật toán tìm kiếm | search algorithm |
 | tìm kiếm tuần tự | sequential search, linear search |
