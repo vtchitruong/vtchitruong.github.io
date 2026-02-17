@@ -21,7 +21,7 @@ icon: material/format-font
 | `<small>` | Làm nhỏ cỡ chữ |
 
 Ví dụ:  
-Đoạn mã từ dòng 24 đến 34 minh hoạ một số hình thức định dạng văn bản.
+Đoạn mã từ dòng 24 đến 34 minh họa một số hình thức định dạng văn bản.
 
 ```html title="portfolio.html" linenums="8" hl_lines="17-27"
 <body>
@@ -32,7 +32,6 @@ Ví dụ:
     <hr>
     <p>... cho đến khi<br>&emsp;&emsp;&emsp;
         &ensp;&ensp;&nbsp;bạn sụp ổ gà :)</p>
-    <br>
     <br>
     <p>Khi sụp rồi thì bạn thường tìm đến những thứ self-help hoặc chữa lành.</p>
     <h2>Một chiều ngược gió</h2>

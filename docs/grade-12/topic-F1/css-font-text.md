@@ -2,65 +2,91 @@
 icon: material/format-letter-spacing-variant
 ---
 
-# Định kiểu font và văn bản
+# Định kiểu font chữ và văn bản
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách dùng thẻ `<span>`, các thuộc tính CSS dành cho font và text để định kiểu riêng cho một phần văn bản.
+    Bài này trình bày:
+    
+    - Phần tử `<span>`
+    - Các thuộc tính CSS dành cho font chữ và văn bản
 
-## Thẻ span
+## Phần tử `<span>`
 
-Thẻ `<span>` thuộc nhóm phần tử **inline** (1), được dùng để gom nhóm một phần văn bản nào đó trong cả đoạn hoặc các phần tử nằm trên cùng một dòng như: từ, cụm từ, thẻ `<a>`, `<strong>`, `<em>`, v.v...
-{ .annotate }
+!!! note "Phần tử `<span>`"
 
-1.  **Inline element** là những phần tử mà khi hiển thị trên trang web, chúng sẽ nằm cùng dòng với các phần tử khác, trừ khi gặp thẻ ngắt dòng như `<br>`.
+    - Thuộc nhóm phần tử **nội dòng** (inline) (1).
+        { .annotate }
 
-    Nói cách khác, inline element không tự động xuống dòng như các block-level element.
+        1.  **Phần tử nội dòng** (phần tử inline) là phần tử mà khi hiển thị sẽ nằm cùng dòng với các phần tử và nội dung lân cận. Nó không tự động xuống dòng mới như các phần tử block-level.
 
-Thẻ `<span>` thường áp dụng cho những tình huống như:
+            Phần tử nội dòng có đặc điểm:
 
-- Định kiểu CSS cho một phần nhỏ của văn bản.
-- Đánh dấu một phần văn bản để đặt các thuộc tính JavaScript.
+            - Kích thước bao vừa đủ nội dung bên trong, kể cả `padding` và `border`.
+            - Không thể thiết lập `width` và `height`.
+            - `margin-top` và `margin-bottom` không có tác dụng.
 
-Ví dụ:
+    - Được dùng để khoanh vùng một phần văn bản hoặc các phần tử nằm trên cùng một dòng (`<a>`, `<strong>`, `<em>`, v.v...) nhằm phục vụ cho việc định kiểu.
+    
+Thẻ `<span>` thường được áp dụng cho những tình huống:
+
+- Định kiểu màu sắc, font chữ hoặc hiệu ứng riêng cho một phần nhỏ của văn bản mà không phá vỡ cấu trúc của đoạn.
+- Thay đổi nội dung bằng mã lệnh JavaScript.
+
+Ví dụ:  
+Đoạn mã sau thêm `<span>` cho từ "khoa học" nhằm chuẩn bị định kiểu riêng cho từ này.
 
 ```html title="portfolio.html" linenums="24"
     <p>Một cách <em>chữa lành</em> tốt là hãy <em>"tựa"</em> vào <span>khoa học</span>.</p>
 ```
 
-## Định kiểu font chữ
+## Thuộc tính dành cho font chữ
 
-Một số thuộc tính CSS dùng cho font:
-
-| Thuộc tính | Ý nghĩa | Giá trị |
+| Thuộc tính | Ý nghĩa | Giá trị ví dụ |
 |--- | --- | --- |
-| `font-family` | Tên font chữ | `Arial`, `Times New Roman`, `Georgia`, `Impact`, v.v... |
-| `font-size`	| Cỡ chữ | 1. Từ khóa: `medium`, `large`, `x-large`, v.v... <br> 2. Theo tỉ lệ phần trăm: `150%`, v.v... <br> 3. Số và đơn vị cụ thể: `16px`, `2em`, `1.5rem`, v.v... |
-| `font-style` | In nghiêng | `normal`, `italic`, `oblique` |
-| `font-weight` |	Độ in đậm | 1. Từ khóa: `normal`, `lighter`, `bold`, `bolder`. <br> 2. Số: `100`, `200`, `300`,... `800`, `900`.
-| `font-variant` | Chữ in hoa cỡ nhỏ | `normal`, `small-caps` |
+| `font-family` | Tên font chữ | `Arial`, `Times New Roman`, `Georgia`, `Impact` |
+| `font-size`	| Cỡ chữ | - Từ khóa: `medium`, `large`, `x-large`<br>- Theo tỷ lệ phần trăm: `150%`<br>- Số và đơn vị cụ thể: `16px`, `2em`, `1.5rem` |
+| `font-style` | Kiểu nghiêng | `normal`, `italic` (chữ nghiêng do thiết kế), `oblique` (chữ nghiêng do trình duyệt làm nghiêng) |
+| `font-weight` | Độ in đậm | 1. Từ khóa: `normal`, `lighter`, `bold`, `bolder`. <br> 2. Số: `100`, `200`, `300`,... `800`, `900`.
+| `font-variant` | Biến thể | `normal`, `small-caps` (in hoa cỡ nhỏ) |
 
-!!! note "font-family"
+!!! tip "font-family"
 
-    Nếu muốn sử dụng những font khác với các font mặc định, trong tập tin CSS, ta cần thêm dòng lệnh `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');`.
+    Nếu muốn sử dụng những font không có sẵn trên hệ điều hành của người dùng, ta có hai cách như sau:
+    
+    - Cách 1:
+    
+        Ở ngay đầu tập tin CSS, thêm dòng lệnh `@import`. 
 
-## Định kiểu văn bản
+        ```css        
+        `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');`.
+        ```
 
-Một số thuộc tính CSS dùng cho văn bản:
+    - Cách 2:
 
-| Thuộc tính | Ý nghĩa | Giá trị |
+        Trong tập tin HTML, sử dụng thẻ `<link>` bên trong `<head>` để tối ưu tốc độ tải trang.
+
+        ```html
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        ```
+
+## Thuộc tính dành cho văn bản
+
+| Thuộc tính | Ý nghĩa | Giá trị ví dụ |
 | --- | --- | --- |
-| `text-color` | Màu chữ | Tên màu, mã màu hoặc các hàm `rgb`, `rgba`, `hsl`, v.v... |
-| `background-color` | Màu nền | Tên màu, mã màu hoặc các hàm `rgb`, `rgba`, `hsl`, v.v... |
-| `text-align` | Căn chỉnh theo phương ngang | `left`, `right`, `center`, `justify` |
-| `vertical-align` | Căn chỉnh theo phương dọc | `top`, `bottom`, `middle`, `sub`, `super`, v.v... |
-| `text-decoration` | Thêm đường thẳng vào văn bản | `overline`, `line-through`, `underline` |
-| `text-transformation` | Biển đổi thành chữ thường hoặc in hoa | `uppercase`, `lowercase`, `capitalize` |
+| `color` | Màu chữ | - Tên màu: `red`<br>- Mã màu: `#ff0000`<br>- Các hàm `rgb`, `rgba`, `hsl`: `rgba(255,0,0,0.5)`|
+| `background-color` | Màu nền | Tên màu, mã màu hoặc các hàm |
+| `text-align` | Căn chỉnh vị trí của `<span>` theo phương ngang | `left`, `right`, `center`, `justify` |
+| `vertical-align` | Căn chỉnh vị trí của `<span>` theo phương dọc so với dòng văn bản chứa nó | `top`, `bottom`, `middle`, `sub`, `super` |
+| `text-decoration` | Đường trang trí | `overline`, `line-through`, `underline` |
+| `text-transform` | Biển đổi thành chữ thường hoặc in hoa | `uppercase`, `lowercase`, `capitalize` |
 | `text-shadow` | Đổ bóng | Gồm 4 giá trị lần lượt là phương ngang, phương dọc, hiệu ứng mờ và màu sắc của bóng: `text-shadow: 2px 2px 4px grey` |
-| `letter-spacing` | Khoảng cách giữa các ký tự | Số dương hoặc âm, kèm đơn vị cụ thể |
-| `word-spacing` | Khoảng cách giữa các từ | Số dương hoặc âm, kèm đơn vị cụ thể |
+| `letter-spacing` | Khoảng cách giữa các ký tự | `2px`, `-1px` |
+| `word-spacing` | Khoảng cách giữa các từ | `10px`, `-3px` |
+| `line-height` | Chiều cao của dòng | `1.5`, `2.4px` |
 
-Ví dụ:
+Ví dụ:  
+Đoạn mã sau minh họa cách định kiểu cho từ "khoa học".
 
 ```html title="portfolio.html" linenums="24"
     <p>Một cách <em>chữa lành</em> tốt là hãy <em>"tựa"</em> vào <span style="font-family: Georgia; font-size: 2.5rem; font-style: oblique; font-weight: 700; color: #00d86c; letter-spacing: -7px;">khoa học</span>.</p>

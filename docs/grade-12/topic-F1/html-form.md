@@ -2,7 +2,7 @@
 icon: material/form-select
 ---
 
-# Biểu mẫu
+# Tạo biểu mẫu
 
 !!! abstract "Tóm lược nội dung"
 
