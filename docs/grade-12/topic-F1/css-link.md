@@ -26,6 +26,8 @@ a {
 }
 ```
 
+---
+
 ## Quy tắc thứ tự LVHA
 
 Bộ chọn `a` trên đã thiết lập các thuộc tính chung nhất cho mọi liên kết, không phân biệt trạng thái, đóng vai trò là kiểu nền tảng.
@@ -40,6 +42,8 @@ Các bộ chọn lớp giả phải tuân theo **thứ tự bắt buộc** sau �
 | 2 | `:visited` | Đã truy cập |
 | 3 | `:hover` | Đang có trỏ chuột ở trên |
 | 4 | `:active` | Đang được nhấn giữ chuột |
+
+---
 
 ## Lớp giả `:link`
 
@@ -72,6 +76,8 @@ a:link {
 
         Viết `a { ... }` ngắn gọn hơn và bao quát được toàn bộ trạng thái cơ bản trước khi thêm các hiệu ứng khác.
 
+---
+
 ## Lớp giả `:visited`
 
 !!! note "Bộ chọn `a:visited`"
@@ -91,6 +97,8 @@ a:visited {
 }
 ```
 
+---
+
 ## Lớp giả `:hover`
 
 !!! note "Bộ chọn `a:hover`"
@@ -109,6 +117,8 @@ a:hover {
     font-weight: 700;
 }
 ```
+
+---
 
 ## Lớp giả `:active`
 

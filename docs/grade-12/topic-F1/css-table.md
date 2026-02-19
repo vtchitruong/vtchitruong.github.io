@@ -38,6 +38,8 @@ td {
 }
 ```
 
+---
+
 ## Bộ chọn và thuộc tính dành cho hàng tiêu đề
 
 Hàng tiêu đề (phần tử `<th>`) thường chứa các thông tin mô tả cột, cho nên cần có định dạng khác biệt để tăng tính phân cấp thị giác.
@@ -52,6 +54,8 @@ th {
     min-width: 80px;
 }
 ```
+
+---
 
 ## Bộ chọn và thuộc tính dành cho hàng nội dung
 
@@ -71,6 +75,8 @@ tr:nth-child(even) {
     background-color: #e5e5e5;
 }
 ```
+
+---
 
 ## Hiệu ứng tương tác
 

@@ -16,6 +16,8 @@ icon: octicons/list-ordered-24
 | `list-style-image` | Sử dụng hình ảnh | `url('đường_dẫn/hình_ảnh.png')` |
 | `list-style-position` | Chỉ định vị trí của dấu đầu dòng so với phần nội dung | `inside`, `outside` | 
 
+---
+
 ## Một số giá trị của `list-style-type`
 
 | Giá trị | Giải thích | Phần tử áp dụng |

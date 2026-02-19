@@ -30,7 +30,7 @@ Ngoài ra, các phần tử `<br>` đều được bỏ đi.
     </div>
 ```
 
-## Định kiểu thẻ form và nhãn
+---
 
 ## Bộ chọn lớp `form-container`
 
@@ -58,6 +58,8 @@ Trong đó, thuộc tính `font-family: 'Roboto'` có được là nhờ dòng l
     width: 100%;
 }
 ```
+
+---
 
 ## Bộ chọn phần tử `form`
 
@@ -96,6 +98,8 @@ form {
 }
 ```
 
+---
+
 ## Bộ chọn phần tử `label`
 
 !!! note "Thuộc tính `display`"
@@ -121,6 +125,8 @@ label {
     color: #1C1B1F;
 }
 ```
+
+---
 
 ## Các bộ chọn liên quan phần tử `<input>` và `<textarea>`
 
@@ -167,6 +173,8 @@ textarea:focus {
 { .annotate }
 
 1.  Tạo hiệu ứng chuyển cảnh mượt mà khi thay đổi màu sắc của thuộc tính `border-color`.
+
+---
 
 ## Các bộ chọn liên quan phần tử `<button>`
 

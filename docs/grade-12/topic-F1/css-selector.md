@@ -58,6 +58,8 @@ Ngoài ra, còn có những bộ chọn khác như: bộ chọn con, hậu duệ
 
 Bài học này chỉ đề cập ba bộ chọn cơ bản là: phần tử, id và lớp.
 
+---
+
 ## Bộ chọn phần tử
 
 !!! note "Bộ chọn phần tử"
@@ -99,6 +101,8 @@ h2 {
 
 [Click để xem kết xuất trang portfolio trong tab mới](css-selector/portfolio-1.html){:target="_blank"}
 
+---
+
 ## Bộ chọn id
 
 !!! note "Bộ chọn id"
@@ -130,6 +134,8 @@ Các bước sau đây định kiểu cho một đề mục `<h2>` khác với c
 ```
 
 [Click để xem kết xuất trang portfolio trong tab mới](css-selector/portfolio-2.html#langlist){:target="_blank"}
+
+---
 
 ## Bộ chọn lớp
 
@@ -178,6 +184,8 @@ Các bước sau đây định kiểu giống nhau cho một số phần tử kh
 !!! tip "Gán lớp cho phần tử"
 
     Ta có thể **gán nhiều lớp cho cùng một phần tử** bằng cách viết các tên lớp cách nhau bằng khoảng trắng.
+
+---
 
 ## Some English words
 

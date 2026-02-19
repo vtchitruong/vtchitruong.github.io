@@ -23,6 +23,8 @@ Bố cục cần tạo là hai khối **nằm ở hai bên trái và phải** tr
 
 Tuy nhiên, trong giới hạn của chương trình phổ thông, bài này chỉ sử dụng phần tử `<div>`.
 
+---
+
 ## Mã lệnh HTML
 
 Đoạn mã sau sử dụng các phần tử `<div>` để bao bọc các phần tử `<p>`, `<a>` và `<iframe>`. Đồng thời, gán các lớp `container`, `nav-bar` và `iframe-container` cho các `<div>` này để phục vụ cho việc định kiểu CSS.
@@ -45,10 +47,9 @@ Tuy nhiên, trong giới hạn của chương trình phổ thông, bài này ch�
 *Lưu ý:*  
 *Giá trị thuộc tính `target` của phần tử `<a>` phải trùng với giá trị thuộc tính `name` của phần tử `<iframe>` để liên kết có thể mở đúng chỗ.*
 
+---
 
-## Mã lệnh CSS
-
-### Lớp `nav-bar` và `iframe-container`
+## Lớp `nav-bar` và `iframe-container`
 
 !!! note "Thuộc tính `box-sizing`"
 
@@ -89,7 +90,9 @@ Bên cạnh đó, đoạn mã sau sử dụng **bộ chọn hậu duệ** (`.ifr
 }
 ```
 
-### Lớp `container`
+---
+
+## Lớp `container`
 
 !!! note "Mô hình Flexbox"
 
