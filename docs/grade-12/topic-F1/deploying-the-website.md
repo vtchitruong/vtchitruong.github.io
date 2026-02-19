@@ -9,21 +9,25 @@ icon: simple/netlify
 
     Bài này trình bày cách tải website đã tạo lên một dịch vụ máy chủ (hosting) để mọi người có thể truy cập.
 
-## Khát quát
+## Khái quát
 
-Khi website kỷ yếu được tạo ra trên máy tính cá nhân, ta chỉ xem được website trên máy tính này.
+Khi tạo website kỷ yếu, ta chỉ xem được website trên máy tính của mình.
 
-Để người khác có thể truy cập được website bằng máy tính của họ, ta cần một nơi "*đặt*" các thư mục và tập tin của website. Nơi đó được gọi là **hosting**, hoặc **web hosting**, tạm dịch là **máy chủ**.
+Để người khác có thể truy cập website bằng máy tính của họ, ta cần một nơi để *"đặt"* các thư mục và tập tin của website. Nơi đó được gọi là **hosting**, hoặc **web hosting**.
 
-Nói cách khác, khi đặt trên hosting, website của mình mới có thể được truy cập công khai từ bất kỳ đâu trên thế giới bằng Internet.
+!!! note "Hosting"
 
-Hơn nữa, máy chủ hosting luôn hoạt động liên tục để phục vụ mọi lúc mọi nơi.
+    Là dịch vụ cho thuê một phần không gian trên máy chủ (server) để lưu trữ dữ liệu website, nhằm mục đích cho mọi người có thể truy cập website từ khắp nơi trên thế giới.
+
+    Máy chủ hosting luôn hoạt động liên tục để phục vụ mọi lúc mọi nơi.
 
 ## Hướng dẫn sử dụng Netlify
 
 ### Giới thiệu
 
-[Netlify](https://www.netlify.com/){target="_blank"} là nền tảng giúp người dùng xuất bản các trang web tĩnh (chẳng hạn như các trang web đã học trong chủ đề F này) lên Internet.
+!!! info "Netlify"
+
+    [Netlify](https://www.netlify.com/){target="_blank"} là nền tảng chuyên dùng để triển khai các trang web tĩnh.
 
 Ưu điểm của Netlify là dễ sử dụng và có gói miễn phí, vừa đủ đáp ứng nhu cầu triển khai trang web trong các bài đã học.
 
@@ -31,8 +35,7 @@ Hơn nữa, máy chủ hosting luôn hoạt động liên tục để phục v�
 
 1\. Cần bảo đảm toàn bộ thư mục và tập tin của website đều nằm trong cùng một thư mục chung.
 
-Ví dụ:
-
+Ví dụ:  
 Tham khảo cây thư mục dưới đây. Trong đó:
 
 - Tập tin `index.html` là trang chủ của website kỷ yếu, chứa các đường link liên kết đến các trang portfolio. Tập tin này bắt buộc phải có khi tải lên Netlify.
@@ -69,45 +72,47 @@ web-yearbook/
 
 3\. Click vào **browse to upload.**
 
-![browse to upload](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNsMUjMyTiWzp1LzpJdQ/root/content){loading=lazy}
+![browse to upload](./images/netlify-browse-to-upload.png){loading=lazy}
 
-4\. Trong hộp thoại hiện ra, chọn thư mục chứa website của mình.
+4\. Trong hộp thoại hiện ra, chọn thư mục chứa website.
 
-Khi tải lên, Netlify sẽ hiển thị thông báo thành công hoặc không.
+Netlify sẽ hiển thị thông báo thành công hoặc không.
 
-![browse to upload](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNsMUl6J-LvSiMB7R3Mg/root/content){loading=lazy}
+![browse to upload](./images/netlify-upload-success.png){loading=lazy}
 
 ### Đổi tên website
 
-Khi có thông báo triển khai thành công, mọi người đã có thể truy cập website. Tuy nhiên, ta nên đổi tên website lại cho thân thiện hơn.
+Khi triển khai thành công, mọi người đã có thể truy cập website. Tuy nhiên, ta nên đổi tên website cho thân thiện hơn.
 
 1\. Trong menu bên trái, chọn mục **Site configuration**.
 
 2\. Click nút **Change site name**.
 
-![browse to upload](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNsMU8TUEGXc9QiBrgEA/root/content){loading=lazy}
+![browse to upload](./images/netlify-change-site-name.png){loading=lazy}
 
 3\. Trong hộp thoại hiện ra, gõ tên website tuỳ ý (1).
 { .annotate }
 
 1.  Tên này còn được gọi chính xác là **tên miền phụ** (sub-domain).
 
-    Tên miền chính là `netlify.app`. Nếu muốn sử dụng tên miền khác, chẳng hạn như `.com`, `.vn`, v.v... ta phải trả phí hằng năm cho một công ty quản lý tên miền nào đó.
+    Tên miền chính là `netlify.app`. Nếu muốn sử dụng tên miền khác, chẳng hạn như `.com`, `.vn`, v.v..., ta phải trả phí hằng năm cho một công ty quản lý tên miền nào đó.
 
-4. Click nút **Save**.
+4\. Click nút **Save**.
 
 ### Xem thành quả
 
-Ta có thể mở trình duyệt bất kỳ và nhập vào địa chỉ vừa thay đổi để truy cập website.
+Mở trình duyệt bất kỳ và nhập địa chỉ để truy cập website.
 
 ### Cập nhật website
 
-Sau mỗi lần bổ sung hoặc chỉnh sửa, ta có thể cập nhật website bằng cách thực hiện lại việc tải lên Netlify tương tự như bước đầu.
+Sau mỗi lần chỉnh sửa, ta có thể cập nhật website bằng cách tải lên Netlify tương tự như bước đầu.
 
 1\. Trong menu bên trái, chọn mục **Deploys**.
 
 2\. Click vào **browse to upload**.
 
-![browse to upload](https://api.onedrive.com/v1.0/shares/s!ApQ3j6n6-2wNsMVAtq9lhdnm7vkEWQ/root/content){loading=lazy}
+![browse to upload](./images/netlify-update.png){loading=lazy}
 
 3\. Trong hộp thoại hiện ra, chọn thư mục chứa website của mình.
+
+Netlify sẽ tự động thay thế toàn bộ nội dung cũ bằng nội dung mới nhất mà ta vừa tải lên. Vì vậy, cần bảo đảm thư mục trên máy tính luôn chứa đầy đủ các tập tin của website trước khi tải lên.

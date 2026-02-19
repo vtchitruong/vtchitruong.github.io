@@ -52,9 +52,14 @@ Tuy nhiên, trong giới hạn của chương trình phổ thông, bài này ch�
 
 !!! note "Thuộc tính `box-sizing`"
 
-    Giá trị mặc định của `box-sizing` là `content-box;`, nghĩa là độ cao và độ rộng của phần tử chỉ bao gồm phần nội dung, không bao gồm đường viền và vùng đệm.
+    Dùng để thay đổi **cách tính tổng độ rộng và độ cao** của một phần tử.
 
-    Để gộp phần nội dung với đường viền và vùng đệm vào chung kích thước của phần tử (độ rộng = nội dung + đường viền + vùng đệm), ta dùng giá trị `border-box`: `box-sizing: border-box`.
+Một số giá trị của thuộc tính `box-sizing`:
+
+| Giá trị | Ý nghĩa |
+| --- | --- |
+| `content-box;` | Độ rộng và độ cao của phần tử chỉ bao gồm phần nội dung, không bao gồm đường viền và vùng đệm. |
+| `border-box` | Gộp phần nội dung với đường viền và vùng đệm vào chung kích thước của phần tử: độ rộng = nội dung + đường viền + vùng đệm. |
 
 Ví dụ:  
 Đoạn mã sau sử dụng các bộ chọn lớp `.nav-bar` và `.iframe-container` để định kiểu cho các phần tử `<div>` tương ứng. Trong đó, `.nav-bar` dành cho khối bên trái và `.iframe-container` dành cho khối bên phải.
