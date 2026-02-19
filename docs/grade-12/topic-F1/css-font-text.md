@@ -40,6 +40,8 @@ Ví dụ:
     <p>Một cách <em>chữa lành</em> tốt là hãy <em>"tựa"</em> vào <span>khoa học</span>.</p>
 ```
 
+---
+
 ## Thuộc tính dành cho font chữ
 
 | Thuộc tính | Ý nghĩa | Giá trị ví dụ |
@@ -69,6 +71,8 @@ Ví dụ:
         ```html
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         ```
+
+---
 
 ## Thuộc tính dành cho văn bản
 

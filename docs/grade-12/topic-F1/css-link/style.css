@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: #7360f2;
+}
+
 a:hover {
     color: #fd98a9;
     text-decoration: underline;
@@ -40,9 +44,3 @@ a:hover {
 a:active {
     color: #fc3758;
 }
-  
-a:visited {
-    color: #7360f2;
-}
-
-

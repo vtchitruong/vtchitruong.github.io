@@ -154,6 +154,8 @@ h1 {
         - Nếu tập tin CSS không tải được thì trang web sẽ bị hiển thị dưới dạng văn bản thuần túy, không có hình thức.
         - Khi dự án có nhiều tập tin CSS, có thể xảy ra tình trạng các quy tắc định kiểu chồng chéo hoặc ghi đè lẫn nhau.
 
+---
+
 ## Thứ tự ưu tiên
 
 Trong trường hợp một phần tử HTML chịu tác động của nhiều quy tắc CSS khác nhau, trình duyệt sẽ áp dụng theo thứ tự ưu tiên từ cao xuống thấp như sau:

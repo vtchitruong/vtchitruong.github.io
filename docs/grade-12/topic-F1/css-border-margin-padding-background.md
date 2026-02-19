@@ -48,6 +48,8 @@ Dòng lệnh 44 và 54 dùng `<div>` bao bọc danh sách các ngôn ngữ lập
     </div>
 ```
 
+---
+
 ## Đường viền, vùng đệm và lề
 
 !!! note "Đường viền"
@@ -65,6 +67,8 @@ Dòng lệnh 44 và 54 dùng `<div>` bao bọc danh sách các ngôn ngữ lập
 Hình sau mô tả đường viền (màu xám), vùng đệm (màu tím) và lề (màu vàng) của phần nội dung (màu xanh).
 
 ![Mô tả đường viền, vùng đệm và lề](./images/css-border-margin-padding-background.png){loading=lazy}
+
+---
 
 ## Thuộc tính dành cho đường viền
 
@@ -100,6 +104,8 @@ Dòng lệnh 44 và 45 minh họa cách định kiểu đường viền bao quan
 
 [Click dòng này để xem kết xuất trang portfolio trong tab mới](css-border-margin-padding-background/portfolio-1.html#langlist){:target="_blank"}
 
+---
+
 ## Thuộc tính dành cho vùng đệm
 
 | Thuộc tính | Ý nghĩa | Giá trị ví dụ |
@@ -109,6 +115,8 @@ Dòng lệnh 44 và 45 minh họa cách định kiểu đường viền bao quan
 | padding-bottom | Dưới | Số và đơn vị cụ thể |
 | padding-left | Trái | Số và đơn vị cụ thể |
 | padding | Thuộc tính rút gọn | - **1 giá trị:** áp dụng **quy tắc kim đồng hồ** "Trên - Phải - Dưới - Trái". Ví dụ: `padding: 10px;`<br>- **2 giá trị:** áp dụng cho [Trên & Dưới] và [Phải & Trái]. Ví dụ: `padding: 10px 20px;` |
+
+---
 
 ## Thuộc tính dành cho lề
 
@@ -149,6 +157,8 @@ Dòng lệnh 46 minh họa cách định kiểu vùng đệm và lề của danh
 [Click dòng này để xem kết xuất trang portfolio trong tab mới](css-border-margin-padding-background/portfolio-2.html#langlist){:target="_blank"}
 
 Bạn nên click phải chuột vào trang web, chọn **Inspect**, rồi rê chuột đến từng phần tử để quan sát: nội dung của phần tử `div`, padding, border và margin.
+
+---
 
 ## Thuộc tính dành cho nền
 

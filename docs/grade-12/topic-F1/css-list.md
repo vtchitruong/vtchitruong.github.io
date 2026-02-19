@@ -6,33 +6,33 @@ icon: octicons/list-ordered-24
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày các thuộc tính CSS dành cho danh sách.
+    Bài này trình bày các thuộc tính CSS dành cho các phần tử tạo danh sách.
 
-## Định kiểu số và dấu đầu dòng
+## Thuộc tính dành cho dấu hoặc số đầu dòng của danh sách
 
-Một số thuộc tính CSS dùng cho số đầu dòng hoặc dấu đầu dòng của mỗi mục trong danh sách:
-
-| Thuộc tính | Ý nghĩa | Giá trị |
+| Thuộc tính | Ý nghĩa | Giá trị phổ biến |
 | --- | --- | --- |
-| `list-style-type` | Kiểu có sẵn | Xem bảng ngay bên dưới |
-| `list-style-image` | Sử dụng hình ảnh khác | `url('đường dẫn và tên tập tin hình ảnh')` |
-| `list-style-position` | Vị trí so với phần nội dung | `inside`, `outside` | 
+| `list-style-type` | Chỉ định kiểu có sẵn | Xem bảng bên dưới |
+| `list-style-image` | Sử dụng hình ảnh | `url('đường_dẫn/hình_ảnh.png')` |
+| `list-style-position` | Chỉ định vị trí của dấu đầu dòng so với phần nội dung | `inside`, `outside` | 
 
+## Một số giá trị của `list-style-type`
 
-| Giá trị của `list-style-type` | Giải thích | 
-| --- | --- |
-| disc (mặc định) | Hình tròn tô đen |
-| circle | Hình tròn rỗng |
-| square | Hình vuông |
-| none | Không đánh dấu đầu dòng |
-| decimal | Số thập phân: 1, 2, 3 |
-| decimal-leading-zero | Số thập phân có chữ số 0 ở đầu: 01, 02, 03 |
-| lower-roman | Số La Mã thường: i, ii, iii |
-| upper-roman | Số La Mã in hoa: I, II, III |
-| lower-alpha | Chữ thường: a, b, c |
-| upper-alpha | Chữ in hoa: A, B, C |
+| Giá trị | Giải thích | Phần tử áp dụng |
+| --- | --- | --- |
+| disc (mặc định) | Hình tròn tô đen | Danh sách không thứ tự `<ul>` |
+| circle | Hình tròn rỗng | Danh sách không thứ tự `<ul>` |
+| square | Hình vuông | Danh sách không thứ tự `<ul>` |
+| decimal | Số thập phân: 1, 2, 3 |  Danh sách có thứ tự `<ol>` |
+| decimal-leading-zero | Số thập phân có chữ số 0 ở đầu: 01, 02, 03 | Danh sách có thứ tự `<ol>` |
+| lower-roman | Số La Mã thường: i, ii, iii | Danh sách có thứ tự `<ol>` |
+| upper-roman | Số La Mã in hoa: I, II, III | Danh sách có thứ tự `<ol>` |
+| lower-alpha | Chữ thường: a, b, c | Danh sách có thứ tự `<ol>` |
+| upper-alpha | Chữ in hoa: A, B, C | Danh sách có thứ tự `<ol>` |
+| none | Không đánh dấu đầu dòng | Cả hai. Thường dùng cho menu. |
 
-Ví dụ:
+Ví dụ:  
+Đoạn mã sau minh họa cách định kiểu cho dấu đầu dòng bằng hình ảnh.
 
 ```css title="style.css" linenums="48"
 ul {

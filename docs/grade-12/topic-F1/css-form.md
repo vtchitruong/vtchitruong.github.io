@@ -6,13 +6,13 @@ icon: material/form-select
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách định kiểu cho một số thành phần trong biểu mẫu.
+    Bài này trình bày cách các bộ chọn và lớp giả dành cho các phần tử tạo biểu mẫu.
 
-## Định kiểu thẻ form và nhãn
+## Mã lệnh HTML
 
-### Bước 0
+Đoạn mã sau sử dụng phần tử `<div>` bao bọc phần tử `<p>` và `<form>`. Đồng thời, gán lớp `form-container` cho `<div>` này để phục vụ cho việc định kiểu CSS.
 
-Đặt biểu mẫu vào thẻ `<div>`. Bỏ hết các thẻ `<br>`.
+Ngoài ra, các phần tử `<br>` đều được bỏ đi.
 
 ```html title="portfolio.html" linenums="115" hl_lines="2 13"
     <h2>Biểu mẫu góp ý</h2>
@@ -29,6 +29,8 @@ icon: material/form-select
         </form>   
     </div>
 ```
+
+## Định kiểu thẻ form và nhãn
 
 ### Bước 1
 

@@ -6,51 +6,71 @@ icon: material/selection-drag
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách định kiểu bằng các bộ chọn như: tag, id, class.
+    Bài này trình bày:
+    
+    - Khái quát về bộ chọn
+    - Cách định kiểu bằng các bộ chọn: phần tử, id và lớp
 
-## Khát quát về bộ chọn
+## Khái niệm
 
-### Khái niệm
+!!! note "Bộ chọn"
 
-**Bộ chọn** (1) là khuôn mẫu dùng để chỉ định chính xác những phần tử HTML nào trên trang web sẽ được định kiểu theo ý muốn.
-{ .annotate }
+    **Bộ chọn** (1) là thành phần trong mã lệnh CSS dùng để xác định chính xác những phần tử HTML nào sẽ chịu tác động của các quy tắc định kiểu.
+    { .annotate }
 
-1.  Các sách giáo khoa đều dịch chữ **CSS selector** là **vùng chọn**.
+    1.  Các sách giáo khoa đều dịch chữ **CSS selector** là **vùng chọn**.
 
-### Phân loại
+---
 
-Các bộ chọn cơ bản gồm:
-
-- Bộ chọn phần tử
-- Bộ chọn id
-- Bộ chọn lớp
-
-Các bộ chọn phức tạp hơn: bộ chọn con, hậu duệ, anh em, thuộc tính, lớp giả, phần tử giả, v.v...
-
-### Lợi ích
+## Lợi ích
 
 Những lợi ích chính khi định kiểu bằng bộ chọn:
 
-- Linh hoạt trong việc chọn các phần tử cần định kiểu.
-- Tách riêng HTML và CSS, giúp mã lệnh sạch hơn và dễ bảo trì hơn.
-- Tái sử dụng kiểu cho các phần tử khác.
+1. **Linh hoạt**
 
-Bài học này chỉ đề cập ba bộ chọn cơ bản.
+    Có thể chọn một phần tử duy nhất hoặc hàng loạt phần tử cùng lúc chỉ bằng một dòng lệnh.
+
+2. **Tách biệt**
+
+    Tách riêng HTML và CSS, giúp mã lệnh sạch sẽ và chuyên nghiệp.
+
+3. **Dễ bảo trì**
+
+    Khi cần thay đổi giao diện toàn hệ thống, ta chỉ cần chỉnh sửa bộ chọn trong tập tin CSS, thay vì phải rà soát hàng ngàn dòng lệnh HTML.
+
+---
+
+## Phân loại
+
+Bảng sau liệt kê các bộ chọn cơ bản, xếp theo thứ tự độ ưu tiên từ thấp đến cao.
+
+| STT | Loại bộ chọn | Ký hiệu | Ý nghĩa | Độ ưu tiên |
+| --- | --- | --- | --- | --- |
+| 1 | Toàn cục | `*` | Chọn mọi phần tử | (0, 0, 0, 0)
+| 2 | Phần tử | Tên thẻ. Ví dụ: `h1` | Chọn theo tên thẻ | (0, 0, 0, 1) |
+| 3 | Phần tử giả | `::before`, `::after` | Chọn một phần của phần tử | (0, 0, 0, 1) |
+| 4 | Lớp | Dấu chấm và tên lớp. Ví dụ: `.highlight` | Chọn theo nhóm | (0, 0, 1, 0) |
+| 5 | Thuộc tính | Tên thuộc tính. Ví dụ: `[type="text"]` | Chọn theo các thuộc tính bên trong thẻ | (0, 0, 1, 0) |
+| 6 | Bộ chọn giả | Tên trạng thái. Ví dụ: `:hover` | Chọn theo trạng thái hoặc vị trí logic | (0, 0, 1, 0) |
+| 7 | ID | Dấu # và tên định dạnh. Ví dụ: `#id` | Chọn theo định danh duy nhất | (0, 1, 0, 0) |
+
+Ngoài ra, còn có những bộ chọn khác như: bộ chọn con, hậu duệ, anh em, v.v... Thực chất, những bộ chọn này là sự kết hợp của các bộ chọn cơ bản trong bảng trên.
+
+Bài học này chỉ đề cập ba bộ chọn cơ bản là: phần tử, id và lớp.
 
 ## Bộ chọn phần tử
 
-**Bộ chọn phần tử**, hay còn gọi là **bộ chọn thẻ**, dùng để chọn tất cả phần tử cùng tên trong trang web.
+!!! note "Bộ chọn phần tử"
+
+    - Còn gọi là **bộ chọn thẻ**.
+    - Dùng để chọn và định kiểu cho tất cả phần tử cùng tên trong trang web.
 
 Ví dụ:  
-Để định kiểu cho tất cả đề mục cấp 2 (heading 2), ta thực hiện như sau:
+Các bước sau đây định kiểu cho tất cả đề mục cấp 2 (heading 2).
 
-### Bước 0
+0\. Tạo tập tin **style.css** nằm cùng thư mục với tập tin **portfolio.html**.
 
-Tạo tập tin **style.css** nằm cùng thư mục với tập tin **portfolio.html**.
-
-### Bước 1
-
-Trong tập tin **style.css**, gõ mã lệnh CSS theo mong muốn.
+1\. Trong tập tin **style.css**, viết mã lệnh để định nghĩa các thuộc tính cho phần tử `<h2>`.
 
 ```css title="style.css" linenums="1"
 h2 {
@@ -65,9 +85,7 @@ h2 {
 }
 ```
 
-### Bước 2
-
-Trong tập tin **portfolio.html**, thêm liên kết đến tập tin **style.css**.
+2\. Trong tập tin **portfolio.html**, viết thẻ `<link>` để liên kết đến tập tin **style.css**.
 
 ```html title="portfolio.html" linenums="1" hl_lines="6"
 <!DOCTYPE html>
@@ -83,24 +101,22 @@ Trong tập tin **portfolio.html**, thêm liên kết đến tập tin **style.c
 
 ## Bộ chọn id
 
-**Bộ chọn id** dùng để chọn phần tử có giá trị id cụ thể.
+!!! note "Bộ chọn id"
 
-Mọi phần tử đều có thể có thuộc tính id, nhưng giá trị id của mỗi phần tử là duy nhất, không trùng với phần tử nào khác trong cùng trang web.
+    Dùng để chọn và định kiểu một phần tử duy nhất theo **giá trị của thuộc tính `id`**.
+
+Mọi phần tử HTML đều có thể có thuộc tính `id`, và giá trị `id` phải là duy nhất, không trùng với phần tử nào khác trong cùng trang web.
 
 Ví dụ:  
-Để định kiểu riêng cho một đề mục `h2` khác với các `h2` còn lại, ta thực hiện như sau:
+Các bước sau đây định kiểu cho một đề mục `<h2>` khác với các `<h2>` còn lại.
 
-### Bước 1
-
-Trong tập tin **portfolio.html**, đặt id cho tiêu đề `h2` cần định kiểu riêng.
+1\. Trong tập tin **portfolio.html**, đặt tên định danh là `langlist` cho đề mục `<h2>` cần định kiểu.
 
 ```html title="portfolio.html" linenums="44"
 <h2 id="langlist">Những ngôn ngữ giúp mình giỏi hơn trong môn... bơi lội</h2>
 ```
 
-### Bước 2
-
-Trong tập tin **style.css**, khai báo id cần định kiểu là `#langlist` (bắt đầu bằng dấu `#`), rồi gõ mã lệnh CSS theo mong muốn.
+2\. Trong tập tin **style.css**, khai báo id cần định kiểu là `#langlist` bằng dấu `#`, rồi viết mã lệnh CSS.
 
 ```css title="style.css" linenums="12"
 #langlist {
@@ -117,16 +133,14 @@ Trong tập tin **style.css**, khai báo id cần định kiểu là `#langlist`
 
 ## Bộ chọn lớp
 
-**Bộ chọn lớp** dùng để chọn các phần tử có cùng giá trị của thuộc tính `class`.
+!!! note "Bộ chọn phần tử"
 
-Bộ chọn lớp áp dụng trong tình huống cần định kiểu cho các phần tử không cùng tên.
+    Dùng để chọn và định kiểu cho tất cả phần tử có **cùng giá trị của thuộc tính `class`**, bất kể chúng có cùng tên hay không.
 
 Ví dụ:  
-Để định kiểu giống nhau cho một số phần tử khác tên, ta thực hiện như sau:
+Các bước sau đây định kiểu giống nhau cho một số phần tử khác tên.
 
-### Bước 1
-
-Trong tập tin **style.css**, khai báo lớp `.my-class` (bắt đầu bằng dấu chấm), rồi gõ mã lệnh CSS theo mong muốn.
+1\. Trong tập tin **style.css**, khai báo lớp `.my-class` bằng dấu chấm, rồi viết mã lệnh CSS.
 
 ```css title="style.css" linenums="21"
 .my-class {
@@ -137,9 +151,7 @@ Trong tập tin **style.css**, khai báo lớp `.my-class` (bắt đầu bằng 
 }
 ```
 
-### Bước 2
-
-Trong tập tin **portfolio.html**, khai báo `class="my-class"` cho các phần tử nào muốn định kiểu.
+2\. Trong tập tin **portfolio.html**, thêm `class="my-class"` cho các phần tử muốn định kiểu.
 
 ```html title="portfolio.html" linenums="11"
     <p class="my-class">Trang web này tự tay mình dệt nên.</p>
@@ -162,6 +174,10 @@ Trong tập tin **portfolio.html**, khai báo `class="my-class"` cho các phần
 ```
 
 [Click để xem kết xuất trang portfolio trong tab mới](css-selector/portfolio-3.html){:target="_blank"}
+
+!!! tip "Gán lớp cho phần tử"
+
+    Ta có thể **gán nhiều lớp cho cùng một phần tử** bằng cách viết các tên lớp cách nhau bằng khoảng trắng.
 
 ## Some English words
 
