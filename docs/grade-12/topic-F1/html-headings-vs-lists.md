@@ -22,7 +22,7 @@ Trong một cuốn sách, ta có phân bổ như sau:
 
 - `<h1>`: tên cuốn sách
 - `<h2>`: tên các chương
-- `<h3>`: rên các mục nhỏ trong chương
+- `<h3>`: tên các mục nhỏ trong chương
 
 ??? info "Lợi ích của heading"
 

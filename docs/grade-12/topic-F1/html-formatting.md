@@ -2,7 +2,7 @@
 icon: material/format-font
 ---
 
-# Định dạng văn bản
+# Định dạng nội dung văn bản
 
 !!! abstract "Tóm lược nội dung"
 

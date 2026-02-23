@@ -21,6 +21,8 @@ Khi tạo website kỷ yếu, ta chỉ xem được website trên máy tính c�
 
     Máy chủ hosting luôn hoạt động liên tục để phục vụ mọi lúc mọi nơi.
 
+---
+
 ## Hướng dẫn sử dụng Netlify
 
 ### Giới thiệu
