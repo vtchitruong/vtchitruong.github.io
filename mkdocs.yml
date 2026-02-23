@@ -419,7 +419,9 @@ nav:
         - grade-11/topic-F2/retrieve-data-from-tables-part-4.md
         - grade-11/topic-F2/retrieve-data-from-tables-part-5.md
         - grade-11/topic-F2/retrieve-data-from-tables-part-6.md
-        - grade-11/topic-F2/sql-query-on-one-table-pratice.md
+        - grade-11/topic-F2/retrieve-data-from-tables-practice-1.md
+        - grade-11/topic-F2/retrieve-data-from-tables-practice-2.md
+        - grade-11/topic-F2/retrieve-data-from-tables-practice-3.md
       - Tạo bảng trong một số DMBS khác:
         - grade-11/topic-F2/create-a-table-in-ms-access.md
         - grade-11/topic-F2/create-a-table-in-mysql-workbench.md
@@ -499,10 +501,13 @@ nav:
         - grade-12/topic-F1/deploying-the-website.md
     - Chủ đề F2:
       - Mục lục: grade-12/topic-F2/topic-f2-index.md
-      - grade-12/topic-F2/data-science.md
-      - grade-12/topic-F2/data-science-practice.md
-      - grade-12/topic-F2/machine-learning.md
-      - grade-12/topic-F2/simulation.md
+      - Khoa học dữ liệu:
+        - grade-12/topic-F2/data-science.md
+        - grade-12/topic-F2/data-science-practice.md
+      - Học máy:
+        - grade-12/topic-F2/machine-learning.md
+      - Mô phỏng:
+        - grade-12/topic-F2/simulation.md
     - Chủ đề G:
       - Mục lục: grade-12/topic-G/topic-index.md
       - grade-12/topic-G/network-administration-vs-system-security.md
