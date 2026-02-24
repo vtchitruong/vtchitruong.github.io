@@ -211,7 +211,7 @@ extra_javascript:
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap
-  - stylesheets/custom.css
+  # - stylesheets/custom.css
   - stylesheets/extra.css
   - stylesheets/floating_action_button.css
   # - https://cdn.jsdelivr.net/npm/@fontsource/noto-sans
