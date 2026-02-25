@@ -361,25 +361,31 @@ nav:
       - grade-10/topic-E/vietnam-flag.md
       - grade-10/topic-E/olympic-circles.md
     - Chủ đề F:
-      - Mục lục: grade-10/topic-F/topic-index.md
-      - grade-10/topic-F/getting-started-with-python.md
-      - grade-10/topic-F/input-and-output.md
-      - grade-10/topic-F/variable-basic-operators.md
-      - grade-10/topic-F/function.md
-      - grade-10/topic-F/conditional-statement-if.md
-      - grade-10/topic-F/conditional-statement-if-practice.md
-      - grade-10/topic-F/loop-structure-for.md
-      - grade-10/topic-F/loop-structure-for-practice-1.md
-      - grade-10/topic-F/loop-structure-for-practice-2.md
-      - grade-10/topic-F/loop-structure-for-practice-3.md
-      - grade-10/topic-F/loop-structure-while.md
-      - grade-10/topic-F/loop-structure-while-practice.md
-      - grade-10/topic-F/list.md
-      - grade-10/topic-F/list-practice-1.md
-      - grade-10/topic-F/list-some-operations-on-lists.md
-      - grade-10/topic-F/list-practice-2.md
-      - grade-10/topic-F/list-practice-3.md
-      - grade-10/topic-F/string.md
+      - Mục lục: grade-10/topic-F/topic-f-index.md
+      - Nhập, xuất, biến và phép toán:
+        - grade-10/topic-F/getting-started-with-python.md
+        - grade-10/topic-F/input-and-output.md
+        - grade-10/topic-F/variable-basic-operators.md
+      - Hàm:
+        - grade-10/topic-F/function.md
+      - Điều kiện:
+        - grade-10/topic-F/conditional-statement-if.md
+        - grade-10/topic-F/conditional-statement-if-practice.md
+      - Vòng lặp:
+        - grade-10/topic-F/loop-structure-for.md
+        - grade-10/topic-F/loop-structure-for-practice-1.md
+        - grade-10/topic-F/loop-structure-for-practice-2.md
+        - grade-10/topic-F/loop-structure-for-practice-3.md
+        - grade-10/topic-F/loop-structure-while.md
+        - grade-10/topic-F/loop-structure-while-practice.md
+      - Danh sách:
+        - grade-10/topic-F/list.md
+        - grade-10/topic-F/list-practice-1.md
+        - grade-10/topic-F/list-some-operations-on-lists.md
+        - grade-10/topic-F/list-practice-2.md
+        - grade-10/topic-F/list-practice-3.md
+      - Chuỗi:
+        - grade-10/topic-F/string.md
     - Chủ đề G:
       - Mục lục: grade-10/topic-G/topic-index.md
       - grade-10/topic-G/graphic-design.md
