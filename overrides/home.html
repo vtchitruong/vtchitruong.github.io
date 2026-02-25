@@ -37,11 +37,18 @@
 
       .md-main {
           flex-grow: 0;
+          height: 0;
+          /* display: none; */
       }
 
       .md-main__inner {
           display: flex;
           /* height: 100%; */
+      }
+
+      div.top-hr h1 {
+        font-size: 1.5rem;
+        font-weight: 300;
       }
 
       .tx-container {
@@ -113,14 +120,14 @@
       .feature-item h2 {
           color: #333;
           font-weight: 700;
-          font-size: 2em;
-          white-space: nowrap;
+          font-size: 1rem;
+          /* white-space: nowrap; */
           overflow: hidden;
           text-overflow: ellipsis;
-          line-height: normal;
-          margin-top: 1rem;
-          margin-bottom: 1rem;
-          font-family: inherit;
+          /* line-height: normal; */
+          /* margin-top: 1rem;
+          margin-bottom: 1rem; */
+          /* font-family: inherit; */
       }
 
       .feature-item p {
@@ -190,8 +197,8 @@
           }
 
           .feature-item:hover {
-              background-color: #e7f9ff;
-              border-radius: 15px;
+              background-color: #F1F5F9;
+              border-radius: 1.5rem;
           }
       }
 
@@ -243,6 +250,15 @@
       .md-footer-social {
           padding-top: 20px;
       }
+
+      .md-footer {
+        background-color: #000;
+      }
+
+      /* Hide the Next/Previous navigation bar only on this page */
+        nav.md-footer__inner.md-grid {
+            display: none;
+        }
 
       /* First section */
       a.md-button.md-button {
@@ -311,10 +327,10 @@
   </section>
 
 <!-- Main site box descriptions -->
-<div style="background-color: #fff; display: block; position: relative; transform-style: preserve-3d; padding: 3rem 0 3rem 0;">
+<div style="background-color: #fff; display: block; position: relative; transform-style: preserve-3d; padding: 1rem 0.7rem;">
     <div class="top-hr">
         <div>
-            <h1 style="color: #0000008a; font-size: 3em; font-weight: 300;">Những mong muốn của
+            <h1 style="color: #0000008a;">Những mong muốn của
                 chúng tôi và bạn có thể tin</h1>
         </div>
     </div>
@@ -342,7 +358,7 @@
                 Giảng liệu tin cậy của giáo viên
             </h2>
             <p>Là giáo viên, bạn chưa biết bắt đầu bài giảng từ đâu, hoặc soạn bài như thế nào.</p>  
-            <p>Với Mr School's docs, bạn đã có giảng liệu và học liệu số tin cậy, có sẵn ý tưởng, và như thế hãy tuỳ nghi chế biến lại theo ý mình.</p>
+            <p>Với Mr School's docs, bạn đã có giảng liệu và học liệu số tin cậy, có sẵn ý tưởng, và như thế hãy tùy nghi chế biến lại theo ý mình.</p>
         </div>
     </div>
     <div class="top-hr">
@@ -352,7 +368,7 @@
                     <path d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 109 11a3.5 3.5 0 003.5-3.5m3.44 5.5A5.32 5.32 0 0118 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 00-1.93.59 5 5 0 010 5.82A3.39 3.39 0 0015 11a3.5 3.5 0 000-7z" /></svg>
                 Bình dân Tin học vụ
             </h2>
-            <p>Là người làm trong lĩnh vực khác, nay muốn <em>lấn sân</em> sang tin học, bạn không cần phải biết trước kiến thức tin học nào cả. Yêu cầu duy nhất là biết đọc. Thoả yêu cầu này, bạn chỉ việc tự học mà lấn tới.</p>
+            <p>Là người làm trong lĩnh vực khác, nay muốn <em>lấn sân</em> sang tin học, bạn không cần phải biết trước kiến thức tin học nào cả. Yêu cầu duy nhất là biết đọc. Thỏa yêu cầu này, bạn chỉ việc tự học mà lấn tới.</p>
             <p>Mr School's docs giảm một chút tính hàn lâm và tăng hai chút tính bình dân, lớp 9 còn học được, chẳng lẽ bạn lại không.</p>
         </div>
         <div class="feature-item">
@@ -405,32 +421,31 @@
     </div>
 </div>
 
-<div style="background-color: #005d8b; display: block; position: relative; transform-style: preserve-3d; padding: 3rem 0 3rem 0;">
+<div style="background-color: #4682B4; display: block; position: relative; transform-style: preserve-3d; padding: 1rem 0.7rem;">
     <div class="top-hr">
-        <h1 style="color: #f5f5f5; background-color: #005d8b; font-size: 3em; font-weight:
-            300;">Về chúng tôi</h1>
+        <h1 style="color: #f5f5f5;">Về chúng tôi</h1>
     </div>
     <div class="top-hr"
-        style="color: whitesmoke; word-break: break-word; font-size: 0.8rem; font-weight: 300; line-height: 1.2rem;  padding: 0 15px;">
+        style="color: whitesmoke; font-size: 1rem; font-weight: 300;">
         <div>
             <p>Mr School's docs được xây dựng nhằm hướng đến học sinh và giáo viên trung học phổ thông, với tiêu chí dễ đọc và dễ hiểu về nội dung, đơn giản và thẩm mỹ về hình thức, thuận tiện và nhanh chóng về thao tác truy cập.</p>
             <p>Mr School's docs vẫn dành cho bạn, những người ham học hỏi, trân trọng tri thức, nhất là tri thức trong lĩnh vực khoa học máy tính.</p>
             <p>Mr School's docs được xây dựng bởi giáo viên có không ít hơn <code>years = pow(4, 2)</code> năm trong nghề <em>type to teach</em> và <em>code to coach</em>.</p>
             <p>Mr School's docs được xây dựng từ việc học hỏi, tham khảo và tra cứu các tài liệu tin học tin cậy, đặc biệt là các website học thuật nước ngoài đủ uy tín. Ngoài ra, không loại trừ việc sử dụng những công cụ AI để đối chiếu, phản biện, double check, triple check, quadruple check và multiple check.</p>
             <p>Mr School's docs được xây dựng vì đam mê. Nó không vì Nghị quyết 03 (về sau là NQ 08). Nó thể hiện mong muốn góp một bao xi măng của chúng tôi vào xã hội học tập 4.0.</p>            
-            <p>Chúng tôi <em>giả vờ</em> rằng một số bài viết trong sách giáo khoa, bằng một cách nào đó, chưa thực sự ổn, hoặc chưa được bớt hàn lâm hoá, hoặc chưa kịp cập nhật theo thực tế, hoặc những hạn chế khác, dẫn đến hiệu quả sử dụng chưa được như ý. Do đó, Mr School's docs được xây dựng với mong muốn học sinh và đồng nghiệp có thêm một lựa chọn để <em>xài</em> và <em>xài được</em>, chứ không <em>xài xể</em>.                
+            <p>Chúng tôi <em>giả vờ</em> rằng một số bài viết trong sách giáo khoa, bằng một cách nào đó, chưa thực sự ổn, hoặc chưa được bớt hàn lâm hóa, hoặc chưa kịp cập nhật theo thực tế, hoặc những hạn chế khác, dẫn đến hiệu quả sử dụng chưa được như ý. Do đó, Mr School's docs được xây dựng với mong muốn học sinh và đồng nghiệp có thêm một lựa chọn để <em>xài</em> và <em>xài được</em>, chứ không <em>xài xể</em>.                
             <p>Mr School's docs được xây dựng bằng/dựa trên/nhờ vào <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>, có thể xem là một framework, một công cụ đơn giản mà ảo diệu, đặc biệt đối với các tài liệu tin học và kỹ thuật. Đội ơn ông trời, đội ơn tác giả Material for MkDocs và tác giả của các tool liên quan.</p>
         </div>
     </div>
 </div>
 
 
-<div style="background-color: #FDF6E3; display: block; position: relative; transform-style: preserve-3d; padding: 3rem 0 3rem 0;">
+<div style="background-color: #FDF6E3; display: block; position: relative; transform-style: preserve-3d; padding: 1rem 0.7rem;">
     <div class="top-hr">
-        <h1 style="color: #263238; font-size: 3em; font-weight: 300;">Tài trợ</h1>
+        <h1 style="color: #657B83;">Tài trợ</h1>
     </div>
     <div class="top-hr"
-        style="color: #263238; word-break: break-word; font-size: 0.8rem; font-weight: 300; line-height: 1.2rem;  padding: 0 15px;">
+        style="color: #657B83; font-size: 1rem; font-weight: 300;">
         <div>
             <p>Chào bạn! Tôi đã dành nhiều công sức và thời gian để xây dựng website học liệu này nhằm hướng đến học sinh cấp 2 và 3 (THCS lẫn THPT), đồng nghiệp là các giáo viên môn Tin học và cả bản thân nữa. Nếu bạn thấy nó có ích cho việc học tập hoặc giảng dạy của mình, xin hoan hỉ gởi tặng tôi một ly cà phê nhé. Cám ơn bạn nhiều lắm! Đừng ngại phản hồi hoặc thắc mắc bất kỳ điều gì liên quan đến môn Tin học thú vị này, tôi sẽ cố gắng trong khả năng của mình hồi âm cho bạn.</p>
 
@@ -453,4 +468,6 @@
 {% block content %}{% endblock %}
 
 <!-- Application footer -->
-{% block footer %}{% endblock %}
+{% block footer %}
+  {{ super() }}
+{% endblock %}

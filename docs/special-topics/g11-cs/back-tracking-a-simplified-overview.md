@@ -38,19 +38,19 @@ Gọi:
 
     Bắt đầu bằng `option` rỗng.
 
-    Đây là bước `i = 1`. Ta chọn `choice` đầu tiên để nạp vào `option`.
+    Đây là bước `i = 1`. Ta chọn `choice` đầu tiên để nạp vô `option`.
 
 2. **Xây dựng lời giải**
 
     Tại bước thứ `i`, ta thực hiện các thao tác sau:
 
     - Chọn thử một `choice` khả thi.
-    - Kiểm tra tính hợp lệ của `option` sau khi nạp `choice` vào:
+    - Kiểm tra tính hợp lệ của `option` sau khi nạp `choice` vô:
 
         - Nếu `option` không hợp lệ thì loại bỏ `choice` này và thử nạp `choice` khác.
         - Ngược lại, `option` hợp lệ, thì xét tiếp hai trường hợp sau:
 
-            - Nếu `option` đã thành một lời giải hoàn chỉnh thì lưu `option` này vào `solutions`.
+            - Nếu `option` đã thành một lời giải hoàn chỉnh thì lưu `option` này vô `solutions`.
             - Ngược lại, `option` chưa phải là lời giải, thì tiến đến bước `i + 1` để thử nạp `choice` tiếp theo.
 
 3. **Quay lui**
@@ -59,7 +59,7 @@ Gọi:
 
     - Trường hợp 1: đã đến bước `n`, tìm thấy một `option` hoàn chỉnh.
 
-        - Lưu `option` hoàn chỉnh này vào `solutions`.
+        - Lưu `option` hoàn chỉnh này vô `solutions`.
         - Quay lại bước `n - 1` để thử nạp `choice` khác.
 
     - Trường hợp 2: đang ở bước `i` mà gặp ngõ cụt (1).
@@ -86,19 +86,19 @@ Hàm quay lui có thể được biểu diễn bằng mã giả theo một trong
 ```py
 def back_tracking(bước_i, option):
     if kiểm_tra_hoàn_chỉnh(option):
-        # Lưu option vào solutions
+        # Lưu option vô solutions
         solutions.append(option)
         return
 
     for choice in danh_sách_choice_khả_thi_tại_bước_i:
-        # Bước 1 - Thử: nạp choice vào option
+        # Bước 1 - Thử: nạp choice vô option
         option.append(choice)
 
         if kiểm_tra_hợp_lệ(option):
             # Bước 2 - Tiến: gọi đệ quy cho bước tiếp theo
             back_tracking(bước_i + 1, option)
 
-        # Bước 3 - Quay lui: gỡ bỏ choice vừa nạp vào (tức choice nằm ở cuối)
+        # Bước 3 - Quay lui: gỡ bỏ choice vừa nạp vô (tức choice nằm ở cuối)
         option.pop()
 ```
 
@@ -107,18 +107,18 @@ def back_tracking(bước_i, option):
 ```py
 def back_tracking(bước_i, option):
     for choice in danh_sách_choice_khả_thi_tại_bước_i:
-        # Bước 1 - Thử: nạp choice vào option
+        # Bước 1 - Thử: nạp choice vô option
         option.append(choice)
 
         if kiểm_tra_hợp_lệ(option):
             if kiểm_tra_hoàn_chỉnh(option):
-                # Lưu option vào solutions
+                # Lưu option vô solutions
                 solutions.append(option)
             else:
                 # Bước 2 - Tiến: gọi đệ quy cho bước tiếp theo
                 back_tracking(bước_i + 1, option)
 
-        # Bước 3 - Quay lui: gỡ bỏ choice vừa nạp vào (tức choice nằm ở cuối)
+        # Bước 3 - Quay lui: gỡ bỏ choice vừa nạp vô (tức choice nằm ở cuối)
         option.pop()
 ```
 
@@ -165,7 +165,7 @@ Nhóm các bài toán quay lui được phân loại theo độ khó tăng dần
 - Quân hậu: Đặt $n$ quân hậu trên bàn cờ sao cho không con nào ăn nhau.
 - Mã đi tuần: Tìm cách để con mã đi qua tất cả các ô trên bàn cờ đúng một lần.
 - Mê cung: Tìm đường đi từ điểm bắt đầu đến điểm kết thúc.
-- Sudoku: Điền số vào bảng sao cho thỏa mãn các quy tắc về hàng, cột và vùng.
+- Sudoku: Điền số vô bảng sao cho thỏa mãn các quy tắc về hàng, cột và vùng.
 
 **Nhóm 3: Các bài toán tối ưu hoá**
 
