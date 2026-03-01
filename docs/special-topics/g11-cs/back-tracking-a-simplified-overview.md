@@ -14,7 +14,7 @@ Giả sử ta đang đứng trong một mê cung rộng lớn.
 
 !!! note "Quay lui"
 
-    **Quay lui** là phương pháp giải bài toán bằng cách **thử từng lựa chọn một**.
+    Là phương pháp giải bài toán bằng cách **thử từng lựa chọn một**.
     
     Trong quá trình xây dựng một lời giải, nếu ta nhận thấy lựa chọn hiện tại không thể dẫn đến kết quả đúng thì ta bỏ qua và **quay lại bước trước đó** để thử một lựa chọn khác.
 

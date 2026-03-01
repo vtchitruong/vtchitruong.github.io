@@ -1,5 +1,5 @@
 ---
-icon: material/table-large
+icon: material/table-search
 ---
 
 # Thực hành tìm kiếm nhị phân

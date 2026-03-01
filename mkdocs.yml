@@ -532,10 +532,9 @@ nav:
         - special-topics/g11-cs/back-tracking-binary-string.md
         - special-topics/g11-cs/back-tracking-permutation-of-words.md
       - Chia để trị:
-        - Mục lục: special-topics/divide-and-conquer/topic-index.md
-        - special-topics/divide-and-conquer/an-overview-of-divide-and-conquer.md
-        - special-topics/divide-and-conquer/merge-sort.md
-        - special-topics/divide-and-conquer/quick-sort.md
+        - special-topics/g11-cs/divide-and-conquer-a-simplified-overview.md
+        - special-topics/g11-cs/divide-and-conquer-merge-sort.md
+        # - special-topics/divide-and-conquer/quick-sort.md
     - Lớp 12 CS:
       - Mục lục: special-topics/g12-cs/topic-g12-cs-index.md
       - Hàng đợi:
