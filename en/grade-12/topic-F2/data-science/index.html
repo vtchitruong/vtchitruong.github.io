@@ -1,0 +1,2842 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Giúp bạn nắm bắt kiến thức của môn Tin học cấp trung học phổ thông. Tiếp thu dễ dàng. Tra cứu thuận tiện. Vượt qua kỳ thi Tốt nghiệp THPT và những kỳ thi khác. Xem được ở mọi nơi có internet, trên nhiều loại máy, bất kể tư thế.">
+      
+      
+        <meta name="author" content="Mr School">
+      
+      
+        <link rel="canonical" href="https://docs.mrschool.vn/en/grade-12/topic-F2/data-science/">
+      
+      
+        <link rel="prev" href="../topic-f2-index/">
+      
+      
+        <link rel="next" href="../data-science-practice/">
+      
+      
+        
+          <link rel="alternate" href="../../../../grade-12/topic-F2/data-science/" hreflang="vi">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Khoa học dữ liệu - Mr School's docs for Tin học GDPT 2018</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CConsolas+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Consolas Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;display=swap">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/floating_action_button.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-406896385"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-406896385",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-406896385",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+
+  <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+  <!-- <link
+    rel="stylesheet"
+    href="../../../../assets/stylesheets/custom.css"
+  /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QqYBUQwKtpBHq0bDfzJ9jMb2N5+8w/RcZ1Rqxq43+3Qp8sdsO6T7XbuK+LzYQ4M4Zg8q3yY2Wg9p6aa+MglbHA==" crossorigin="anonymous" /> -->
+
+
+  <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="vtct_theme" data-md-color-primary="green" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#khoa-hoc-du-lieu" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+              </button>
+            
+            
+    Nơi đây có 10 cái bình <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 320 512">
+        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <style>
+            svg {
+                fill: #C2B280
+            }
+        </style>
+        <path d="M120 0h80c13.3 0 24 10.7 24 24V64H96V24c0-13.3 10.7-24 24-24zM32 151.7c0-15.6 9-29.8 23.2-36.5l24.4-11.4c11-5.1 23-7.8 35.1-7.8h90.6c12.1 0 24.1 2.7 35.1 7.8l24.4 11.4c14.1 6.6 23.2 20.8 23.2 36.5c0 14.4-7.5 27-18.9 34.1c11.5 8.8 18.9 22.6 18.9 38.2c0 16.7-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48c0-16.7 8.5-31.4 21.5-40C40.5 415.4 32 400.7 32 384s8.5-31.4 21.5-40C40.5 335.4 32 320.7 32 304s8.5-31.4 21.5-40C40.5 255.4 32 240.7 32 224c0-15.6 7.4-29.4 18.9-38.2C39.5 178.7 32 166.1 32 151.7zM96 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z"></path>
+    </svg>: Bình tĩnh và bình dân Tin học vụ.
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../" title="Mr School's docs for Tin học GDPT 2018" class="md-header__button md-logo" aria-label="Mr School's docs for Tin học GDPT 2018" data-md-component="logo">
+      
+  <img src="../../../../assets/mr-school-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr School's docs for Tin học GDPT 2018
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Khoa học dữ liệu
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="vtct_theme" data-md-color-primary="green" data-md-color-accent="light-blue" aria-hidden="true" type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../grade-12/topic-F2/data-science/" hreflang="vi" class="md-select__link">
+              Tiếng Việt
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../features/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../grade-10/grade-10-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lớp 10
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../grade-11/grade-11-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lớp 11
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../grade-12-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lớp 12
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../special-topics/special-topics-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chuyên đề
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../supplementary-reading/dikw-pyramid/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Đọc thêm
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../advanced/advanced-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Nâng cao
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../solve-to-surpass/solve-to-surpass-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Solve to surpass
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../mos/mos-2019-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MOS
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Mr School's docs for Tin học GDPT 2018" class="md-nav__button md-logo" aria-label="Mr School's docs for Tin học GDPT 2018" data-md-component="logo">
+      
+  <img src="../../../../assets/mr-school-logo.png" alt="logo">
+
+    </a>
+    Mr School's docs for Tin học GDPT 2018
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../features/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../grade-10/grade-10-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lớp 10
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../grade-11/grade-11-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lớp 11
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lớp 12
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lớp 12
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../grade-12-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chương trình khung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-A/topic-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề A
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-B1/topic-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề B1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-B2/topic-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề B2
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-F1/topic-f1-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề F1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề F2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chủ đề F2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topic-f2-index/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3zm0 4h14v-2H3zm0 4h14v-2H3zm16 0h2v-2h-2zm0-10v2h2V7zm0 6h2v-2h-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mục lục
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_6_2" id="__nav_5_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Khoa học dữ liệu
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Khoa học dữ liệu
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2v20h20v-2h-2v-2h2v-2h-2v-2h2v-2h-4v-2h-2v2h-2v-2h-2V8H8v4h4v4h-2v2h2v2h-2v-2H8v-2H6v-2H4v-2h2V6H4V2zm4 4h2V2H6zm2 10h2v-2H8zm10-6h4V8h-4zm0-2V4h-2v2h-2v2zm-2-4V2h-2v2zm2 0h2V2h-2zm2 0v2h2V4zM10 2v4h2V2zm4 12h2v2h2v4h-4zM4 18h2v2H4z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Khoa học dữ liệu
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2v20h20v-2h-2v-2h2v-2h-2v-2h2v-2h-4v-2h-2v2h-2v-2h-2V8H8v4h4v4h-2v2h2v2h-2v-2H8v-2H6v-2H4v-2h2V6H4V2zm4 4h2V2H6zm2 10h2v-2H8zm10-6h4V8h-4zm0-2V4h-2v2h-2v2zm-2-4V2h-2v2zm2 0h2V2h-2zm2 0v2h2V4zM10 2v4h2V2zm4 12h2v2h2v4h-4zM4 18h2v2H4z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Khoa học dữ liệu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#khai-quat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Khái quát
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#muc-ich" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mục đích
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cac-linh-vuc-lien-quan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Các lĩnh vực liên quan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quy-trinh-khoa-hoc-du-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quy trình khoa học dữ liệu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quy trình khoa học dữ liệu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crisp-dm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CRISP-DM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osemn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OSEMN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vai-tro-cua-may-tinh-oi-voi-khoa-hoc-du-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vai trò của máy tính đối với khoa học dữ liệu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tinh-uu-viet-cua-may-tinh-va-thuat-toan-trong-xu-ly-du-lieu-lon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tính ưu việt của máy tính và thuật toán trong xử lý dữ liệu lớn
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mot-so-thanh-tuu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Một số thành tựu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-o-tom-tat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sơ đồ tóm tắt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-english-words" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Some English words
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-science-practice/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2v20h20v-2h-2v-2h2v-2h-2v-2h2v-2h-4v-2h-2v2h-2v-2h-2V8H8v4h4v4h-2v2h2v2h-2v-2H8v-2H6v-2H4v-2h2V6H4V2zm4 4h2V2H6zm2 10h2v-2H8zm10-6h4V8h-4zm0-2V4h-2v2h-2v2zm-2-4V2h-2v2zm2 0h2V2h-2zm2 0v2h2V4zM10 2v4h2V2zm4 12h2v2h2v4h-4zM4 18h2v2H4z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Thực hành khoa học dữ liệu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../machine-learning/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Học máy
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../simulation/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mô phỏng
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-G/topic-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề G
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../special-topics/special-topics-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../../supplementary-reading/dikw-pyramid/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Đọc thêm
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../advanced/advanced-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nâng cao
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../solve-to-surpass/solve-to-surpass-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solve to surpass
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../mos/mos-2019-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MOS
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#khai-quat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Khái quát
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#muc-ich" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mục đích
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cac-linh-vuc-lien-quan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Các lĩnh vực liên quan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quy-trinh-khoa-hoc-du-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quy trình khoa học dữ liệu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quy trình khoa học dữ liệu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crisp-dm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CRISP-DM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osemn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OSEMN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vai-tro-cua-may-tinh-oi-voi-khoa-hoc-du-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vai trò của máy tính đối với khoa học dữ liệu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tinh-uu-viet-cua-may-tinh-va-thuat-toan-trong-xu-ly-du-lieu-lon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tính ưu việt của máy tính và thuật toán trong xử lý dữ liệu lớn
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mot-so-thanh-tuu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Một số thành tựu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-o-tom-tat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sơ đồ tóm tắt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-english-words" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Some English words
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../../" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../grade-12-index/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Lớp 12
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../topic-f2-index/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chủ đề F2
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Khoa học dữ liệu
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+  
+    <a href="https://github.com/vtchitruong/vtchitruong.github.io/edit/master/docs/grade-12/topic-F2/data-science.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/vtchitruong/vtchitruong.github.io/raw/master/docs/grade-12/topic-F2/data-science.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
+    </a>
+  
+
+
+<h1 id="khoa-hoc-du-lieu">Khoa học dữ liệu<a class="headerlink" href="#khoa-hoc-du-lieu" title="Permanent link">¶</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Tóm lược nội dung</p>
+<p>Bài này trình bày một số khía cạnh về khoa học dữ liệu, bao gồm:</p>
+<ul>
+<li>Khái niệm</li>
+<li>Các lĩnh vực liên quan</li>
+<li>Quy trình</li>
+<li>Vai trò của máy tính</li>
+<li>Tính ưu việt của máy tính và thuật toán</li>
+<li>Một số thành tựu</li>
+</ul>
+</div>
+<h2 id="khai-quat">Khái quát<a class="headerlink" href="#khai-quat" title="Permanent link">¶</a></h2>
+<p class="annotate">Trong thế giới số, mỗi khi ta thực hiện một thao tác, ta đã để lại một <strong>dấu vết kỹ thuật số</strong> (1) và hệ thống sẽ ghi nhận nó thành một thực thể dữ liệu.</p>
+<ol>
+<li>
+<p>Dấu vết kỹ thuật số được chia thành hai loại chính:</p>
+<ol>
+<li>
+<p><strong>Dấu vết chủ động</strong></p>
+<p>Là dữ liệu mà ta chủ ý tạo ra. Ví dụ: email, bài đăng hoặc bình luận trên mạng xã hội.</p>
+</li>
+<li>
+<p><strong>Dấu vết thụ động</strong></p>
+<p>Là dữ liệu được thu thập mà ta có thể không nhận ra hoặc không trực tiếp kiểm soát tại thời điểm đó. Ví dụ: địa chỉ IP của máy tính, vị trí, cookies khi duyệt web.</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Khoa học dữ liệu bắt nguồn từ những dấu vết kỹ thuật số này. Chúng còn được gọi là <strong>dữ liệu thô</strong>.</p>
+<p class="annotate">Nếu dữ liệu thô chỉ có một ít, ta không thể hiểu hết về một đối tượng. Song với lượng dữ liệu thô đủ lớn, chẳng hạn như hàng triệu dấu vết kỹ thuật số của đối tượng (1), tạo thành một dòng chảy không ngừng nghỉ, khoa học dữ liệu có thể:</p>
+<ol>
+<li>Tập hợp những dấu vết kỹ thuật số khổng lồ này được gọi là <strong>dữ liệu lớn</strong>.</li>
+</ol>
+<p> </p>
+<ul>
+<li>Phân tích dữ liệu trong quá khứ, chẳng hạn như: hành vi, quá trình.</li>
+<li>Nắm bắt dữ liệu hiện tại, chẳng hạn như: trạng thái, ngữ cảnh.</li>
+<li>Kết hợp <em>"quá khứ"</em> và <em>"hiện tại"</em> tạo ra <em>"quyền năng"</em> của khoa học dữ liệu, chẳng hạn như: so sánh, đối chiếu, dự đoán xu hướng tương lai.</li>
+</ul>
+<p>Ví dụ:<br>
+Khoa học dữ liệu có thể giúp thực hiện một chuỗi nhận thức liên tục như sau:</p>
+<ul>
+<li>Hệ thống lưu trữ và phân tích việc ta thường xuyên xem các video dạy học tiếng Anh vào tối thứ Bảy. </li>
+<li>Hệ thống nhận thấy ta vừa nhấn vào một khoá học IELTS và đang dừng lại ở trang thanh toán hai phút mà chưa <em>"chốt đơn"</em>.</li>
+<li>Hệ thống dự đoán khả năng cao là ta sẽ mua, nên lập tức gửi mã giảm giá 10% nhằm <em>"tối ưu hoá"</em> khả năng <em>"chốt đơn"</em>.</li>
+</ul>
+<p>Tóm lại, khoa học dữ liệu là tiến trình <em>"bắt"</em> dữ liệu phải <em>"lên tiếng"</em>. Khoa học dữ liệu không chỉ là <em>"kính lúp để soi quá khứ"</em> mà còn là <em>"radar để quét hiện tại"</em> và "<em>la bàn để chỉ hướng cho tương lai"</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Khái niệm khoa học dữ liệu</p>
+<p><strong>Khoa học dữ liệu</strong> là tiến trình trích xuất những thông tin và tri thức có giá trị từ các tập dữ liệu khổng lồ, hay gọi tắt là <strong>trích xuất tri thức từ dữ liệu</strong>.</p>
+</div>
+<hr>
+<h2 id="muc-ich">Mục đích<a class="headerlink" href="#muc-ich" title="Permanent link">¶</a></h2>
+<p>Khoa học dữ liệu hướng đến 3 việc sau, sắp xếp theo mức độ tăng dần:</p>
+<ol>
+<li>
+<p><strong>Mô tả dữ liệu</strong></p>
+<p>Việc này giúp thấy được điều gì đã xảy ra.</p>
+<p>Mô tả dữ liệu bao gồm phân tích dữ liệu và trực quan hoá dữ liệu.</p>
+<ul>
+<li>
+<p><strong>Phân tích dữ liệu</strong> là nắm được các thuộc tính và ý nghĩa của dữ liệu.</p>
+</li>
+<li>
+<p><strong>Trực quan hoá dữ liệu</strong> là biểu diễn dữ liệu thông qua biểu đồ hoặc infographic.</p>
+</li>
+</ul>
+<p>Ví dụ:<br>
+Hệ thống vận hành xe ôm công nghệ biết được thói quen di chuyển của khách hàng thông qua các biểu đồ nhiệt: vào giờ H của thứ Hai hằng tuần, khu vực R luôn có lượng gọi xe cao gấp N lần so với khung giờ khác; 80% các chuyến đều hướng về các toà nhà văn phòng.</p>
+</li>
+<li>
+<p><strong>Khám phá tri thức và dự đoán xu hướng</strong>:</p>
+<p>Việc này giúp hiểu rõ hơn về xu hướng cũng như những mối quan hệ ẩn trong dữ liệu. Từ đó, có thể dự đoán được tương lai.</p>
+<p>Ví dụ:<br>
+Hệ thống biết rằng: thứ Hai tuần tới là ngày đầu tiên sau kỳ nghỉ Tết, cộng với dự báo 70% có mưa. Hệ thống dự đoán lượng cầu sẽ tăng thêm 30%.</p>
+</li>
+<li>
+<p><strong>Đề xuất và tối ưu hoá quyết định</strong></p>
+<p>Việc này giúp đưa ra giải pháp tốt nhất cho một vấn đề, thay sự <em>"cảm tính"</em> bằng <em>"định lượng"</em>.</p>
+<p>Ví dụ:<br>
+Hệ thống đề xuất: áp dụng chính sách giá linh hoạt để khuyến khích tài xế chạy đến khu vực R; gợi ý tài xế A đang ở gần đó chạy đến đường S.</p>
+</li>
+</ol>
+<hr>
+<h2 id="cac-linh-vuc-lien-quan">Các lĩnh vực liên quan<a class="headerlink" href="#cac-linh-vuc-lien-quan" title="Permanent link">¶</a></h2>
+<p>Để thực hiện tiến trình trích xuất tri thức từ dữ liệu, khoa học dữ liệu cần sự giao thoa của ba lĩnh vực lớn.</p>
+<div class="admonition note">
+<p class="admonition-title">Các lĩnh vực liên quan</p>
+<p>Về khía cạnh học thuật, <strong>khoa học dữ liệu</strong> là lĩnh vực liên ngành kết hợp giữa:</p>
+<ul>
+<li>Toán học</li>
+<li>Khoa học máy tính</li>
+<li>Kiến thức chuyên môn nghiệp vụ</li>
+</ul>
+</div>
+<p>Hình sau minh hoạ mối quan hệ giữa khoa học dữ liệu và các lĩnh vực liên quan.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../../../grade-12/topic-F2/images/data-science.svg" data-title="Mối quan hệ giữa khoa học dữ liệu và các lĩnh vực liên quan" data-desc-position="bottom"><img alt="Mối quan hệ giữa khoa học dữ liệu và các lĩnh vực liên quan" loading="lazy" src="../../../../grade-12/topic-F2/images/data-science.svg" width="480"></a></p>
+<p>Ba lĩnh vực trên đóng vai trò là trụ cột kiến thức cho khoa học dữ liệu, trong đó:</p>
+<ul>
+<li><strong>Toán học</strong> đóng vai trò nền tảng cốt lõi, là phần <em>"hồn"</em>, dùng để tư duy và suy luận.</li>
+<li><strong>Khoa học máy tính</strong> đóng vai trò công cụ, dùng để điều khiển việc thu thập và xử lý dữ liệu.</li>
+<li><strong>Kiến thức chuyên môn nghiệp vụ</strong> đóng vai trò ngữ cảnh, dùng để hiểu đúng về dữ liệu.</li>
+</ul>
+<p>Ví dụ:<br>
+Đối với việc xây dựng hệ thống phát hiện bệnh qua hình ảnh X-quang:</p>
+<ul>
+<li>Toán học: giúp tính toán xác suất vùng mờ trên ảnh có phải là khối u hay không.</li>
+<li>Khoa học máy tính: giúp xử lý hàng vạn hình ảnh cùng lúc với tốc độ nhanh.</li>
+<li>Kiến thức chuyên môn nghiệp vụ: cụ thể là y khoa, giúp hiểu một chấm đen tại một vị trí nào đó là bình thường hay cần báo động. </li>
+</ul>
+<hr>
+<h2 id="quy-trinh-khoa-hoc-du-lieu">Quy trình khoa học dữ liệu<a class="headerlink" href="#quy-trinh-khoa-hoc-du-lieu" title="Permanent link">¶</a></h2>
+<h3 id="crisp-dm">CRISP-DM<a class="headerlink" href="#crisp-dm" title="Permanent link">¶</a></h3>
+<p>Theo hướng tiếp cận tư duy hệ thống, vòng đời của một dự án khoa học dữ liệu thường áp dụng quy trình <strong>CRISP-DM</strong>, viết tắt của <strong>Cross-Industry Standard Process for Data Mining</strong>, tạm dịch là <strong>Quy trình tiêu chuẩn liên ngành dành cho khai phá dữ liệu</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Tên gọi</th>
+<th>Ý nghĩa khoa học</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Xác định vấn đề</td>
+<td>Xác định mục tiêu và giả thuyết.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Thu thập dữ liệu</td>
+<td>Thu thập dữ liệu huấn luyện và dữ liệu kiểm tra.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Chuẩn bị dữ liệu</td>
+<td>Làm sạch, loại bỏ dữ liệu sai hoặc lỗi.<br>Chọn lọc, kết hợp và định dạng lại dữ liệu.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Mô hình hoá</td>
+<td>Áp dụng các thuật toán phù hợp để tìm ra các mối liên hệ ẩn giấu trong dữ liệu.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Đánh giá</td>
+<td>Kiểm tra độ chính xác và độ tin cậy của mô hình.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Triển khai</td>
+<td>Đưa mô hình vào sử dụng trong thực tế.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="osemn">OSEMN<a class="headerlink" href="#osemn" title="Permanent link">¶</a></h3>
+<p>Nếu CRISP-DM là chiến lược thì OSEMN là các bước hành động cụ thể của một lập trình viên khi đối mặt với dữ liệu.</p>
+<p class="annotate">Khung quy trình <strong>OSEMN</strong> (The OSEMN Framework), viết tắt của <strong>Obtain, Scrub, Explore, Model, iNterpret</strong> (1), thường được gọi là <strong>đường ống khoa học dữ liệu</strong> (The data science pipeline) để diễn tả dữ liệu đi từ đầu này, qua các công đoạn và ra ở đầu kia.</p>
+<ol>
+<li>Người ta không lấy chữ <strong>I</strong>, mà lấy chữ <strong>N</strong> là để phát âm tương tự <em>"awesome"</em>, nghĩa là <em>"tuyệt vời"</em>, thay vì OSEMI khó đọc và không có nghĩa.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Tên gọi</th>
+<th>Công việc cụ thể</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Thu thập</td>
+<td>Lấy dữ liệu từ các nguồn khác nhau như: tập tin, cảm biến, internet.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Làm sạch</td>
+<td>Xử lý các giá trị trống, dữ liệu nhiễu hoặc các lỗi định dạng.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Khám phá</td>
+<td>Dùng biểu đồ và thống kê mô tả để "nhìn" vào dữ liệu, tìm ra những điểm bất thường hoặc các xu hướng thú vị ban đầu.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Xây dựng mô hình</td>
+<td>Sử dụng thuật toán để tìm ra các quy luật.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Thông dịch kết quả</td>
+<td>Chuyển hoá các con số phức tạp thành những báo cáo, câu chuyện dễ hiểu.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="vai-tro-cua-may-tinh-oi-voi-khoa-hoc-du-lieu">Vai trò của máy tính đối với khoa học dữ liệu<a class="headerlink" href="#vai-tro-cua-may-tinh-oi-voi-khoa-hoc-du-lieu" title="Permanent link">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Vai trò của máy tính</p>
+<p>Máy tính đóng vai trò là <strong>công cụ thực thi</strong> và <strong>môi trường vận hành</strong> của khoa học dữ liệu.</p>
+</div>
+<p>Máy tính là <strong>điều kiện cần</strong> để khoa học dữ liệu tồn tại và phát triển trong kỷ nguyên số.</p>
+<p>Cụ thể:</p>
+<ul>
+<li>
+<p>Với vai trò công cụ thực thi, máy tính có thể:</p>
+<ul>
+<li>Số hoá và lưu trữ các thực thể dữ liệu.</li>
+<li>Thực hiện các thuật toán phức tạp.</li>
+</ul>
+</li>
+<li>
+<p>Với vai trò môi trường vận hành, máy tính giúp kết nối các bước trong quy trình khoa học dữ liệu thành một dòng chảy liên tục.</p>
+</li>
+</ul>
+<hr>
+<h2 id="tinh-uu-viet-cua-may-tinh-va-thuat-toan-trong-xu-ly-du-lieu-lon">Tính ưu việt của máy tính và thuật toán trong xử lý dữ liệu lớn<a class="headerlink" href="#tinh-uu-viet-cua-may-tinh-va-thuat-toan-trong-xu-ly-du-lieu-lon" title="Permanent link">¶</a></h2>
+<ol>
+<li>
+<p><strong>Năng lực lưu trữ lớn và bảo mật dữ liệu</strong></p>
+<p>Công nghệ điện toán đám mây cho phép lưu trữ hàng tỷ thực thể dữ liệu từ khắp nơi trên thế giới.</p>
+</li>
+<li>
+<p><strong>Tốc độ xử lý siêu việt</strong></p>
+<p>Sự ra đời của các bộ vi xử lý chuyên dụng như GPU, NPU và TPU đã giúp cho việc xây dựng mô hình trở nên khả thi. Các phép toán trên ma trận phức tạp giờ đây được giải quyết với tốc độ rất nhanh.</p>
+</li>
+<li>
+<p><strong>Năng lực tự động hoá</strong></p>
+<p>Sử dụng thuật toán để tự động hoá toàn bộ <em>"đường ống dữ liệu"</em>, tức các nhiệm vụ có tính chất lặp lại trong quy trình.</p>
+</li>
+<li>
+<p><strong>Năng lực xử lý song song</strong></p>
+<p>Máy tính có thể chia nhỏ dữ liệu khổng lồ thành hàng triệu phần và xử lý chúng cùng một lúc.</p>
+</li>
+<li>
+<p><strong>Năng lực xử lý theo thời gian thực</strong></p>
+<p>Nghĩa là máy tính có năng lực phản hồi kết quả gần như ngay tức thì, độ trễ rất thấp, sau khi nhận dữ liệu đầu vào.</p>
+<p>Xử lý song song là điều kiện cần và là nền tảng quan trong để đạt được xử lý theo thời gian thực.</p>
+</li>
+<li>
+<p><strong>Năng lực mở rộng</strong></p>
+<p>Mở rộng không chỉ có nghĩa là làm việc nhiều hơn, mà còn có nghĩa là hệ thống vẫn vận hành tốt khi lượng dữ liệu tăng lên hàng triệu lần. Trong đó:</p>
+<ul>
+<li>Mở rộng theo chiều dọc: nâng cấp cấu hình máy tính mạnh hơn.</li>
+<li>Mở rộng theo chiều ngang: kết nối hàng nghìn máy tính với nhau.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tính khách quan</strong></p>
+<p>Với cùng một dữ liệu đầu vào, thuật toán luôn cho ra kết quả nhất quán.</p>
+<p>Điều này giúp hệ thống trở nên công bằng và đáng tin cậy, loại bỏ được những sai sót do cảm tính của con người.</p>
+</li>
+<li>
+<p><strong>Năng lực phát hiện mối quan hệ phi tuyến tính</strong></p>
+<p>Thuật toán có năng lực tìm ra các quy luật ẩn giữa hàng nghìn biến số khác nhau.</p>
+</li>
+</ol>
+<hr>
+<h2 id="mot-so-thanh-tuu">Một số thành tựu<a class="headerlink" href="#mot-so-thanh-tuu" title="Permanent link">¶</a></h2>
+<p>Khoa học dữ liệu đã trở thành hạt nhân chính của sự phát triển hiện đại. Dưới đây là những thành tựu nổi bật thể hiện sức mạnh của lĩnh vực này:</p>
+<ol>
+<li>
+<p><strong>Khám phá tri thức mới</strong></p>
+<p>Khoa học dữ liệu có khả năng tìm ra những quy luật và mối liên hệ mà con người chưa từng biết tới, đặc biệt là các lĩnh vực phức tạp như y sinh.</p>
+<p>Ví dụ:<br>
+Trong dự án giải mã bản đồ gene của người, khoa học dữ liệu giúp phân tích hàng tỷ chuỗi DNA để tìm ra các gene gây bệnh.<br></p>
+</li>
+<li>
+<p><strong>Nâng cao năng lực ra quyết định</strong></p>
+<p>Thay vì dựa vào kinh nghiệm hoặc cảm tính, các cá nhân, tổ chức hiện nay đã dựa trên bằng chứng số liệu để đưa ra quyết định, giúp tăng hiệu quả và giảm rủi ro.</p>
+<p>Ví dụ:<br>
+Các hãng hàng không sử dụng dữ liệu về thời tiết, giá nhiên liệu và nhu cầu của khách hàng để quyết định giá vé và lịch trình bay theo thời gian thực, giúp tối ưu hoá lợi nhuận trong khi khách hàng vẫn có cơ hội mua được vé giá tốt.</p>
+</li>
+<li>
+<p><strong>Cá nhân hoá trải nghiệm người dùng</strong></p>
+<p>Khoa học dữ liệu giúp các hệ thống hiểu rõ sở thích cá nhân của từng người, từ đó phục vụ người dùng một cách chính xác nhất.</p>
+<p>Ví dụ:<br>
+Các hệ thống đề xuất nội dung của Youtube, Netflix, Spotify hoặc của các mạng xã hội.</p>
+</li>
+<li>
+<p><strong>Dự báo xu hướng</strong></p>
+<p>Khoa học dữ liệu có thể <em>"nhìn thấy tương lai"</em>, giúp con người chủ động hơn trước các biến cố.</p>
+<p>Ví dụ:<br>
+Trong lĩnh vực tài chính - ngân hàng, khoa học dữ liệu giúp phát hiện các giao dịch gian lận chỉ trong vài mili-giây.</p>
+</li>
+<li>
+<p><strong>Thúc đẩy sự phát triển của tự động hoá và AI</strong></p>
+<p>Khoa học dữ liệu là nền móng tạo ra những cỗ máy thông minh có năng lực tự học và thực hiện các nhiệm vụ thay con người.</p>
+<p>Ví dụ:<br>
+Xe tự hành là <em>"đỉnh cao"</em> của việc kết hợp xử lý song song và thời gian thực để đưa ra các quyết định lái xe an toàn.</p>
+</li>
+</ol>
+<hr>
+<h2 id="so-o-tom-tat">Sơ đồ tóm tắt<a class="headerlink" href="#so-o-tom-tat" title="Permanent link">¶</a></h2>
+<div>
+<iframe frameborder="0" src="../mindmaps/data-science.html" style="width: 100%; height: 360px">Sơ đồ tóm tắt</iframe>
+</div>
+<hr>
+<h2 id="some-english-words">Some English words<a class="headerlink" href="#some-english-words" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Vietnamese</th>
+<th>Tiếng Anh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dấu vết kỹ thuật số</td>
+<td>digital footprint</td>
+</tr>
+<tr>
+<td>dữ liệu thô</td>
+<td>raw data</td>
+</tr>
+<tr>
+<td>khoa học dữ liệu</td>
+<td>data science</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+
+                
+  
+  
+    <div class="donation-button">
+      <a href="https://docs.mrschool.vn/donation/#cach-thuc" class="btn-donate">Bao tôi ly cafe 🧋 nhé!</a>
+    </div>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../topic-f2-index/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mục lục">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Mục lục
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../data-science-practice/" class="md-footer__link md-footer__link--next" aria-label="Next: Thực hành khoa học dữ liệu">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Thực hành khoa học dữ liệu
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://docs.mrschool.vn/donation/">Please click here to donate, if possible. Thank you!</a><br>Copyright © 2023 Mr School
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/vtchitruong/vtchitruong.github.io" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/vothachchitruong" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://docs.mrschool.vn/donation/" target="_blank" rel="noopener" title="Please donate!" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M96 64c0-17.7 14.3-32 32-32H448h64c70.7 0 128 57.3 128 128s-57.3 128-128 128H480c0 53-43 96-96 96H192c-53 0-96-43-96-96V64zM480 224h32c35.3 0 64-28.7 64-64s-28.7-64-64-64H480V224zM32 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.prune", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+    
+
+  
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/extra.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="../../../../javascripts/feedback.js"></script>
+      
+        <script src="../../../../javascripts/floating_action_button.js"></script>
+      
+        <script src="../../../../javascripts/markmap-d3.js"></script>
+      
+        <script src="../../../../javascripts/markmap-lib.js"></script>
+      
+        <script src="../../../../javascripts/markmap-view.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+
+  <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+  <!-- <script src="../../../../assets/javascripts/custom.js"></script> -->
+
+  
+  <!-- <script>
+    // Remove the markmap button
+    const iframe = document.querySelector('iframe');
+
+    iframe.addEventListener('load', () => {
+        const iframeContent = iframe.contentDocument || iframe.contentWindow.document;
+        const brandLink = iframeContent.querySelector('.mm-toolbar a.mm-toolbar-brand');
+        brandLink.style.display = 'none';
+    });
+  </script> -->
+
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html><!-- Donation button at the end of content, conditional -->

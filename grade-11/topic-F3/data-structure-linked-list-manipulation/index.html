@@ -1,0 +1,3402 @@
+<!DOCTYPE html><html lang="vi" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Giúp bạn nắm bắt kiến thức của môn Tin học cấp trung học phổ thông. Tiếp thu dễ dàng. Tra cứu thuận tiện. Vượt qua kỳ thi Tốt nghiệp THPT và những kỳ thi khác. Xem được ở mọi nơi có internet, trên nhiều loại máy, bất kể tư thế.">
+      
+      
+        <meta name="author" content="Mr School">
+      
+      
+        <link rel="canonical" href="https://docs.mrschool.vn/grade-11/topic-F3/data-structure-linked-list-manipulation/">
+      
+      
+        <link rel="prev" href="../data-structure-linked-list-a-simplified-overview/">
+      
+      
+        <link rel="next" href="../algorithmic-complexity-a-simplified-overview/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="vi">
+        
+          <link rel="alternate" href="../../../en/grade-11/topic-F3/data-structure-linked-list-manipulation/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Thao tác với danh sách liên kết - Mr School's docs for Tin học GDPT 2018</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CConsolas+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Consolas Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;display=swap">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/floating_action_button.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-406896385"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-406896385",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-406896385",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+
+  <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+  <!-- <link
+    rel="stylesheet"
+    href="../../../assets/stylesheets/custom.css"
+  /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QqYBUQwKtpBHq0bDfzJ9jMb2N5+8w/RcZ1Rqxq43+3Qp8sdsO6T7XbuK+LzYQ4M4Zg8q3yY2Wg9p6aa+MglbHA==" crossorigin="anonymous" /> -->
+
+
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="vtct_theme" data-md-color-primary="green" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#thao-tac-voi-danh-sach-lien-ket" class="md-skip">
+          Bỏ qua
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Không hiển thị lại">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+              </button>
+            
+            
+    Nơi đây có 10 cái bình <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 320 512">
+        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <style>
+            svg {
+                fill: #C2B280
+            }
+        </style>
+        <path d="M120 0h80c13.3 0 24 10.7 24 24V64H96V24c0-13.3 10.7-24 24-24zM32 151.7c0-15.6 9-29.8 23.2-36.5l24.4-11.4c11-5.1 23-7.8 35.1-7.8h90.6c12.1 0 24.1 2.7 35.1 7.8l24.4 11.4c14.1 6.6 23.2 20.8 23.2 36.5c0 14.4-7.5 27-18.9 34.1c11.5 8.8 18.9 22.6 18.9 38.2c0 16.7-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48c0-16.7 8.5-31.4 21.5-40C40.5 415.4 32 400.7 32 384s8.5-31.4 21.5-40C40.5 335.4 32 320.7 32 304s8.5-31.4 21.5-40C40.5 255.4 32 240.7 32 224c0-15.6 7.4-29.4 18.9-38.2C39.5 178.7 32 166.1 32 151.7zM96 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z"></path>
+    </svg>: Bình tĩnh và bình dân Tin học vụ.
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Đầu trang">
+    <a href="../../.." title="Mr School's docs for Tin học GDPT 2018" class="md-header__button md-logo" aria-label="Mr School's docs for Tin học GDPT 2018" data-md-component="logo">
+      
+  <img src="../../../assets/mr-school-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr School's docs for Tin học GDPT 2018
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Thao tác với danh sách liên kết
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="vtct_theme" data-md-color-primary="green" data-md-color-accent="light-blue" aria-hidden="true" type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Chọn ngôn ngữ">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="vi" class="md-select__link">
+              Tiếng Việt
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../en/grade-11/topic-F3/data-structure-linked-list-manipulation/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Tìm kiếm" placeholder="Tìm kiếm" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Tìm kiếm">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Chia sẻ" aria-label="Chia sẻ" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Xoá" aria-label="Xoá" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/vtchitruong/vtchitruong.github.io" title="Xem mã nguồn" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../features/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../grade-10/grade-10-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lớp 10
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../grade-11-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lớp 11
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../grade-12/grade-12-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lớp 12
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../special-topics/special-topics-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chuyên đề
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../supplementary-reading/dikw-pyramid/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Đọc thêm
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../advanced/advanced-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Nâng cao
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../solve-to-surpass/solve-to-surpass-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Solve to surpass
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../mos/mos-2019-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MOS
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Thanh điều hướng" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Mr School's docs for Tin học GDPT 2018" class="md-nav__button md-logo" aria-label="Mr School's docs for Tin học GDPT 2018" data-md-component="logo">
+      
+  <img src="../../../assets/mr-school-logo.png" alt="logo">
+
+    </a>
+    Mr School's docs for Tin học GDPT 2018
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/vtchitruong/vtchitruong.github.io" title="Xem mã nguồn" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../features/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../grade-10/grade-10-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lớp 10
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lớp 11
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lớp 11
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../grade-11-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chương trình khung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-A1/topic-a1-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề A1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-A2/topic-a2-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề A2
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-F1/topic-f1-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề F1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-F2/topic-f2-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề F2
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề F3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chủ đề F3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topic-f3-index/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3zm0 4h14v-2H3zm0 4h14v-2H3zm16 0h2v-2h-2zm0-10v2h2V7zm0 6h2v-2h-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mục lục
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../data-structure-one-dimensional-array/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mảng
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../search-algorithm-search-problem/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thuật toán tìm kiếm
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../sort-algorithm-sorting-problem/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thuật toán sắp xếp
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_6_5" id="__nav_4_6_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Danh sách liên kết
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_6_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Danh sách liên kết
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-structure-linked-list-a-simplified-overview/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Danh sách liên kết
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Thao tác với danh sách liên kết
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Thao tác với danh sách liên kết
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inh-nghia-cac-lop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Định nghĩa các lớp
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#khoi-tao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Khởi tạo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duyet-va-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duyệt và in
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#them-node-moi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thêm node mới
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Thêm node mới">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chen-vao-au" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chèn vào đầu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#them-vao-cuoi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thêm vào cuối
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chen-vao-truoc-mot-node-xac-inh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chèn vào trước một node xác định
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xoa-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Xoá node
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Xoá node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xoa-node-au-tien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Xoá node đầu tiên
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xoa-node-cuoi-cung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Xoá node cuối cùng
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xoa-mot-node-xac-inh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Xoá một node xác định
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ma-nguon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mã nguồn
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-o-tom-tat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sơ đồ tóm tắt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-english-words" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Some English words
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../algorithmic-complexity-a-simplified-overview/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Độ phức tạp thuật toán
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-G/topic-g-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề G
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../grade-12/grade-12-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lớp 12
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../special-topics/special-topics-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../../supplementary-reading/dikw-pyramid/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Đọc thêm
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../advanced/advanced-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nâng cao
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../solve-to-surpass/solve-to-surpass-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solve to surpass
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../mos/mos-2019-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MOS
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inh-nghia-cac-lop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Định nghĩa các lớp
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#khoi-tao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Khởi tạo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duyet-va-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duyệt và in
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#them-node-moi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thêm node mới
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Thêm node mới">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chen-vao-au" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chèn vào đầu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#them-vao-cuoi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thêm vào cuối
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chen-vao-truoc-mot-node-xac-inh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chèn vào trước một node xác định
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xoa-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Xoá node
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Xoá node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xoa-node-au-tien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Xoá node đầu tiên
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xoa-node-cuoi-cung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Xoá node cuối cùng
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xoa-mot-node-xac-inh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Xoá một node xác định
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ma-nguon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mã nguồn
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-o-tom-tat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sơ đồ tóm tắt
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-english-words" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Some English words
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Thanh điều hướng">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../grade-11-index/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Lớp 11
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../topic-f3-index/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chủ đề F3
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../data-structure-linked-list-a-simplified-overview/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Danh sách liên kết
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+  
+    <a href="https://github.com/vtchitruong/vtchitruong.github.io/edit/master/docs/grade-11/topic-F3/data-structure-linked-list-manipulation.md" title="Chỉnh sửa" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/vtchitruong/vtchitruong.github.io/raw/master/docs/grade-11/topic-F3/data-structure-linked-list-manipulation.md" title="Xem mã nguồn của trang" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
+    </a>
+  
+
+
+<h1 id="thao-tac-voi-danh-sach-lien-ket">Thao tác với danh sách liên kết<a class="headerlink" href="#thao-tac-voi-danh-sach-lien-ket" title="Permanent link">¶</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Tóm lược nội dung</p>
+<p>Bài này trình bày các thao tác thêm và xoá node trong danh sách liên kết.</p>
+</div>
+<h2 id="inh-nghia-cac-lop">Định nghĩa các lớp<a class="headerlink" href="#inh-nghia-cac-lop" title="Permanent link">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Về mã lệnh trong bài này</p>
+<p>Việc viết mã lệnh cho danh sách liên kết trong bài này đòi hỏi kiến thức về lập trình hướng đối tượng và kỹ thuật lập trình, vốn nằm ngoài chương trình phổ thông. Do đó, một số câu lệnh sẽ chỉ diễn giải sơ nét. Bạn có thể ghép các đoạn mã thành chương trình hoàn chỉnh mà không cần quá quan tâm chi tiết kỹ thuật.</p>
+</div>
+<p>1. Định nghĩa lớp <code>node</code> gồm hai thành phần <code>data</code> và <code>next</code>, đóng vai trò làm khuôn mẫu cho mỗi node.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Định nghĩa lớp Node</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">Node</span><span class="p">:</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="kc">None</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>2. Định nghĩa lớp <code>LinkedList</code>, đóng vai trò làm khuôn mẫu cho danh sách liên kết.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="c1"># Định nghĩa lớp LinkedList</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="k">class</span><span class="w"> </span><span class="nc">LinkedList</span><span class="p">:</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="kc">None</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Trong danh sách liên kết, thuộc tính <code>head</code> dùng để nắm giữ node đầu tiên. <code>head</code> đóng vai trò là điểm khởi đầu của danh sách liên kết. Dựa vào <code>head</code>, ta có thể duyệt từng node trong danh sách liên kết.</p>
+<hr>
+<h2 id="khoi-tao">Khởi tạo<a class="headerlink" href="#khoi-tao" title="Permanent link">¶</a></h2>
+<p>1. Trong chương trình chính, ta khai báo biến <code>char_list</code> có kiểu <code>LinkedList</code> vừa định nghĩa.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="c1"># Chương trình chính</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a>    <span class="c1"># Khai báo danh sách liên kết char_list</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a>    <span class="n">char_list</span> <span class="o">=</span> <span class="n">LinkedList</span><span class="p">()</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Lúc này, danh sách liên kết <code>char_list</code> là rỗng, chưa có node nào.</p>
+<p>2. Khởi tạo ba node, lần lượt đặt tên là <code>first</code>, <code>second</code> và <code>third</code>. Thành phần <code>data</code> của mỗi node chứa một ký tự.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="c1"># Chương trình chính</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a>    <span class="c1"># Khai báo danh sách liên kết char_list</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a>    <span class="n">char_list</span> <span class="o">=</span> <span class="n">LinkedList</span><span class="p">()</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="hll">    <span class="c1"># Khởi tạo ba node đơn lẻ</span>
+</span></span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="hll">    <span class="n">first</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">'o'</span><span class="p">)</span>
+</span></span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="hll">    <span class="n">second</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">'l'</span><span class="p">)</span>
+</span></span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="hll">    <span class="n">third</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">'d'</span><span class="p">)</span>
+</span></span></code></pre></div></td></tr></tbody></table></div>
+<p>Lúc này, cả ba node đều là đơn lẻ, chưa liên kết với nhau. Xem hình dưới đây.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/init-3-single-nodes.svg" data-title="Ba node chưa liên kết với nhau" data-desc-position="bottom"><img alt="Ba node chưa liên kết với nhau" loading="lazy" src="../images/init-3-single-nodes.svg"></a></p>
+<p><em>Ba node chưa liên kết với nhau</em></p>
+<p>3. Liên kết các node bằng cách:</p>
+<p>3.1. Đặt <code>first</code> làm node đầu tiên của danh sách liên kết <code>char_list</code>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/init-step-5-1.svg" data-title="first là node đầu tiên của char_list" data-desc-position="bottom"><img alt="first là node đầu tiên của char_list" loading="lazy" src="../images/init-step-5-1.svg"></a></p>
+<p>3.2. Liên kết <code>first</code> với <code>second</code>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/init-step-5-2.svg" data-title="first trỏ đến second" data-desc-position="bottom"><img alt="first trỏ đến second" loading="lazy" src="../images/init-step-5-2.svg"></a></p>
+<p>3.3. Liên kết <code>second</code> với <code>third</code>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/init-step-5-3.svg" data-title="second trỏ đến third" data-desc-position="bottom"><img alt="second trỏ đến third" loading="lazy" src="../images/init-step-5-3.svg"></a></p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-14">14</a></span>
+<span class="normal"><a href="#__codelineno-4-15">15</a></span>
+<span class="normal"><a href="#__codelineno-4-16">16</a></span>
+<span class="normal"><a href="#__codelineno-4-17">17</a></span>
+<span class="normal"><a href="#__codelineno-4-18">18</a></span>
+<span class="normal"><a href="#__codelineno-4-19">19</a></span>
+<span class="normal"><a href="#__codelineno-4-20">20</a></span>
+<span class="normal"><a href="#__codelineno-4-21">21</a></span>
+<span class="normal"><a href="#__codelineno-4-22">22</a></span>
+<span class="normal"><a href="#__codelineno-4-23">23</a></span>
+<span class="normal"><a href="#__codelineno-4-24">24</a></span>
+<span class="normal"><a href="#__codelineno-4-25">25</a></span>
+<span class="normal"><a href="#__codelineno-4-26">26</a></span>
+<span class="normal"><a href="#__codelineno-4-27">27</a></span>
+<span class="normal"><a href="#__codelineno-4-28">28</a></span>
+<span class="normal"><a href="#__codelineno-4-29">29</a></span>
+<span class="normal"><a href="#__codelineno-4-30">30</a></span>
+<span class="normal"><a href="#__codelineno-4-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="c1"># Chương trình chính</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16"></a>    <span class="c1"># Khai báo danh sách liên kết char_list</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17"></a>    <span class="n">char_list</span> <span class="o">=</span> <span class="n">LinkedList</span><span class="p">()</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18"></a>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19"></a>    <span class="c1"># Khởi tạo ba node đơn lẻ</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20"></a>    <span class="n">first</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">'o'</span><span class="p">)</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21"></a>    <span class="n">second</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">'l'</span><span class="p">)</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22"></a>    <span class="n">third</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">'d'</span><span class="p">)</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23"></a>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24"></a><span class="hll">    <span class="c1"># Đặt first làm node đầu tiên của char_list</span>
+</span></span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25"></a><span class="hll">    <span class="n">char_list</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">first</span>
+</span></span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="hll">
+</span></span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27"></a><span class="hll">    <span class="c1"># Liên kết first với second</span>
+</span></span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28"></a><span class="hll">    <span class="n">first</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">second</span>
+</span></span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29"></a><span class="hll">
+</span></span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30"></a><span class="hll">    <span class="c1"># Liên kết second với third</span>
+</span></span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31"></a><span class="hll">    <span class="n">second</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">third</span>
+</span></span></code></pre></div></td></tr></tbody></table></div>
+<hr>
+<h2 id="duyet-va-in">Duyệt và in<a class="headerlink" href="#duyet-va-in" title="Permanent link">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Duyệt danh sách liên kết</p>
+<p>Duyệt danh sách liên kết là tiến trình di chuyển qua từng node, xuất phát từ node đầu tiên (do biến <code>head</code> trỏ đến) và đi đến node cuối cùng (là node trỏ đến <code>None</code>).</p>
+</div>
+<p>Cụ thể, ta dùng một biến phụ, gọi là <code>current</code>, để lần lượt trỏ đến từng node như sau:</p>
+<ol>
+<li>Cho <code>current</code> trỏ đến node đầu tiên (do <code>head</code> trỏ đến).</li>
+<li>In ra dữ liệu của node mà <code>current</code> đang trỏ đến.</li>
+<li>Cho <code>current</code> trỏ đến node kế tiếp.</li>
+<li>Lặp lại bước 2 và bước 3 cho đến khi <code>current</code> trỏ đến <code>None</code>.</li>
+</ol>
+<p>Dựa theo thuật toán trên, ta viết chương trình như sau:</p>
+<p>1. Viết hàm <code>print_linked_list()</code> dùng để duyệt danh sách liên kết và in ra dữ liệu của từng node.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span>
+<span class="normal"><a href="#__codelineno-5-20">20</a></span>
+<span class="normal"><a href="#__codelineno-5-21">21</a></span>
+<span class="normal"><a href="#__codelineno-5-22">22</a></span>
+<span class="normal"><a href="#__codelineno-5-23">23</a></span>
+<span class="normal"><a href="#__codelineno-5-24">24</a></span>
+<span class="normal"><a href="#__codelineno-5-25">25</a></span>
+<span class="normal"><a href="#__codelineno-5-26">26</a></span>
+<span class="normal"><a href="#__codelineno-5-27">27</a></span>
+<span class="normal"><a href="#__codelineno-5-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">print_linked_list</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16"></a>    <span class="c1"># Cho current trỏ đến head</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17"></a>    <span class="n">current</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18"></a>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19"></a>    <span class="c1"># Trong khi current chưa gặp None</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20"></a>    <span class="k">while</span> <span class="n">current</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21"></a>        <span class="c1"># thì in ra data của current và mũi tên</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'[</span><span class="si">{</span><span class="n">current</span><span class="o">.</span><span class="n">data</span><span class="si">}</span><span class="s1">]'</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">' -&gt; '</span><span class="p">)</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23"></a>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24"></a>        <span class="c1"># Di chuyển current đến node kế tiếp</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25"></a>        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26"></a>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27"></a>    <span class="c1"># In ra None báo hiệu kết thúc danh sách liên kết</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">'None'</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>2. Trong chương trình chính, gọi hàm <code>print_linked_list()</code> ra thực hiện.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-50">50</a></span>
+<span class="normal"><a href="#__codelineno-6-51">51</a></span>
+<span class="normal"><a href="#__codelineno-6-52">52</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-50"><a id="__codelineno-6-50" name="__codelineno-6-50"></a>    <span class="c1"># In ra danh sách liên kết</span>
+</span><span id="__span-6-51"><a id="__codelineno-6-51" name="__codelineno-6-51"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">'Danh sách liên kết ban đầu:'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+</span><span id="__span-6-52"><a id="__codelineno-6-52" name="__codelineno-6-52"></a>    <span class="n">print_linked_list</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>3. Chạy chương trình trên, kết quả như sau:</p>
+<div class="language-pycon highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="go">Danh sách liên kết ban đầu: [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span></code></pre></div>
+<hr>
+<h2 id="them-node-moi">Thêm node mới<a class="headerlink" href="#them-node-moi" title="Permanent link">¶</a></h2>
+<p>Khi thêm hoặc xoá một node trong danh sách liên kết, ta không hề di chuyển các node, mà chỉ đang tái thiết lập các liên kết giữa chúng.</p>
+<div class="admonition note">
+<p class="admonition-title">Thêm và xoá node</p>
+<p>Về bản chất, các thao tác thêm hoặc xoá node đều là thay đổi giá trị của thành phần <code>next</code> của các node.</p>
+</div>
+<h3 id="chen-vao-au">Chèn vào đầu<a class="headerlink" href="#chen-vao-au" title="Permanent link">¶</a></h3>
+<p>Để chèn một node mới vào đầu danh sách, ta thực hiện các bước sau:</p>
+<ol>
+<li>Khởi tạo node mới, đặt tên là <code>new_node</code>, chứa dữ liệu cần chèn <code>new_data</code>.</li>
+<li>Liên kết <code>new_node</code> với node đầu tiên của danh sách liên kết (do <code>head</code> đang trỏ đến).</li>
+<li>Cập nhật <code>head</code> để nó chuyển sang trỏ đến <code>new_node</code>.</li>
+</ol>
+<p>Dựa theo thuật toán trên, ta viết chương trình như sau:</p>
+<p>1. Viết hàm <code>insert_at_head()</code> dùng để chèn một node mới vào đầu danh sách liên kết.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-32">32</a></span>
+<span class="normal"><a href="#__codelineno-8-33">33</a></span>
+<span class="normal"><a href="#__codelineno-8-34">34</a></span>
+<span class="normal"><a href="#__codelineno-8-35">35</a></span>
+<span class="normal"><a href="#__codelineno-8-36">36</a></span>
+<span class="normal"><a href="#__codelineno-8-37">37</a></span>
+<span class="normal"><a href="#__codelineno-8-38">38</a></span>
+<span class="normal"><a href="#__codelineno-8-39">39</a></span>
+<span class="normal"><a href="#__codelineno-8-40">40</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32"></a><span class="k">def</span><span class="w"> </span><span class="nf">insert_at_head</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">new_data</span><span class="p">):</span>
+</span><span id="__span-8-33"><a id="__codelineno-8-33" name="__codelineno-8-33"></a>    <span class="c1"># Khởi tạo node mới</span>
+</span><span id="__span-8-34"><a id="__codelineno-8-34" name="__codelineno-8-34"></a>    <span class="n">new_node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+</span><span id="__span-8-35"><a id="__codelineno-8-35" name="__codelineno-8-35"></a>
+</span><span id="__span-8-36"><a id="__codelineno-8-36" name="__codelineno-8-36"></a>    <span class="c1"># Cho node mới trỏ đến node đầu</span>
+</span><span id="__span-8-37"><a id="__codelineno-8-37" name="__codelineno-8-37"></a>    <span class="n">new_node</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span>
+</span><span id="__span-8-38"><a id="__codelineno-8-38" name="__codelineno-8-38"></a>
+</span><span id="__span-8-39"><a id="__codelineno-8-39" name="__codelineno-8-39"></a>    <span class="c1"># Cập nhật head để trỏ đến node mới</span>
+</span><span id="__span-8-40"><a id="__codelineno-8-40" name="__codelineno-8-40"></a>    <span class="n">L</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">new_node</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>2. Trong chương trình chính, gọi hàm <code>insert_at_head()</code> ra thực hiện.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-66">66</a></span>
+<span class="normal"><a href="#__codelineno-9-67">67</a></span>
+<span class="normal"><a href="#__codelineno-9-68">68</a></span>
+<span class="normal"><a href="#__codelineno-9-69">69</a></span>
+<span class="normal"><a href="#__codelineno-9-70">70</a></span>
+<span class="normal"><a href="#__codelineno-9-71">71</a></span>
+<span class="normal"><a href="#__codelineno-9-72">72</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-66"><a id="__codelineno-9-66" name="__codelineno-9-66"></a>    <span class="c1"># Chèn node mới vào đầu</span>
+</span><span id="__span-9-67"><a id="__codelineno-9-67" name="__codelineno-9-67"></a>    <span class="n">new_data</span> <span class="o">=</span> <span class="s1">'c'</span>
+</span><span id="__span-9-68"><a id="__codelineno-9-68" name="__codelineno-9-68"></a>    <span class="n">insert_at_head</span><span class="p">(</span><span class="n">char_list</span><span class="p">,</span> <span class="n">new_data</span><span class="p">)</span>
+</span><span id="__span-9-69"><a id="__codelineno-9-69" name="__codelineno-9-69"></a>
+</span><span id="__span-9-70"><a id="__codelineno-9-70" name="__codelineno-9-70"></a>    <span class="c1"># In ra danh sách liên kết</span>
+</span><span id="__span-9-71"><a id="__codelineno-9-71" name="__codelineno-9-71"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Chèn [</span><span class="si">{</span><span class="n">new_data</span><span class="si">}</span><span class="s1">] vào đầu danh sách liên kết:'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+</span><span id="__span-9-72"><a id="__codelineno-9-72" name="__codelineno-9-72"></a>    <span class="n">print_linked_list</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>3. Chạy chương trình trên, kết quả như sau:</p>
+<div class="language-pycon highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="go">Danh sách liên kết ban đầu: [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-10-2"><a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="go">Chèn [c] vào đầu danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span></code></pre></div>
+<h3 id="them-vao-cuoi">Thêm vào cuối<a class="headerlink" href="#them-vao-cuoi" title="Permanent link">¶</a></h3>
+<p>Để thêm một node mới vào cuối danh sách liên kết, ta thực hiện các bước sau:</p>
+<ol>
+<li>Khởi tạo node mới, đặt tên là <code>new_node</code>, chứa dữ liệu cần chèn <code>new_data</code>.</li>
+<li>Kiểm tra danh sách liên kết: nếu danh sách đang rỗng thì ta chỉ cần cho <code>head</code> trỏ vào <code>new_node</code>.</li>
+<li>
+<p>Ngược lại, danh sách không rỗng, thì tìm node cuối cùng bằng cách:</p>
+<p>Dùng biến tạm <code>current</code> để duyệt danh sách liên kết cho đến khi tìm được node cuối cùng.</p>
+</li>
+<li>
+<p>Liên kết node cuối cùng với <code>new_node</code>. </p>
+</li>
+</ol>
+<p>Dựa theo thuật toán trên, ta viết chương trình như sau:</p>
+<p>1. Viết hàm <code>insert_at_end()</code> dùng để chèn một node mới vào cuối danh sách liên kết.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-44">44</a></span>
+<span class="normal"><a href="#__codelineno-11-45">45</a></span>
+<span class="normal"><a href="#__codelineno-11-46">46</a></span>
+<span class="normal"><a href="#__codelineno-11-47">47</a></span>
+<span class="normal"><a href="#__codelineno-11-48">48</a></span>
+<span class="normal"><a href="#__codelineno-11-49">49</a></span>
+<span class="normal"><a href="#__codelineno-11-50">50</a></span>
+<span class="normal"><a href="#__codelineno-11-51">51</a></span>
+<span class="normal"><a href="#__codelineno-11-52">52</a></span>
+<span class="normal"><a href="#__codelineno-11-53">53</a></span>
+<span class="normal"><a href="#__codelineno-11-54">54</a></span>
+<span class="normal"><a href="#__codelineno-11-55">55</a></span>
+<span class="normal"><a href="#__codelineno-11-56">56</a></span>
+<span class="normal"><a href="#__codelineno-11-57">57</a></span>
+<span class="normal"><a href="#__codelineno-11-58">58</a></span>
+<span class="normal"><a href="#__codelineno-11-59">59</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-44"><a id="__codelineno-11-44" name="__codelineno-11-44"></a><span class="k">def</span><span class="w"> </span><span class="nf">insert_at_end</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">new_data</span><span class="p">):</span>
+</span><span id="__span-11-45"><a id="__codelineno-11-45" name="__codelineno-11-45"></a>    <span class="c1"># Khởi tạo node mới</span>
+</span><span id="__span-11-46"><a id="__codelineno-11-46" name="__codelineno-11-46"></a>    <span class="n">new_node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+</span><span id="__span-11-47"><a id="__codelineno-11-47" name="__codelineno-11-47"></a>
+</span><span id="__span-11-48"><a id="__codelineno-11-48" name="__codelineno-11-48"></a>    <span class="k">if</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-11-49"><a id="__codelineno-11-49" name="__codelineno-11-49"></a>        <span class="c1"># Nếu danh sách rỗng thì cho head trỏ đến node mới</span>
+</span><span id="__span-11-50"><a id="__codelineno-11-50" name="__codelineno-11-50"></a>        <span class="n">L</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">new_node</span>
+</span><span id="__span-11-51"><a id="__codelineno-11-51" name="__codelineno-11-51"></a>        <span class="k">return</span>
+</span><span id="__span-11-52"><a id="__codelineno-11-52" name="__codelineno-11-52"></a>
+</span><span id="__span-11-53"><a id="__codelineno-11-53" name="__codelineno-11-53"></a>    <span class="c1"># Ngược lại, danh sách không rỗng, tìm node cuối cùng</span>
+</span><span id="__span-11-54"><a id="__codelineno-11-54" name="__codelineno-11-54"></a>    <span class="n">current</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span>
+</span><span id="__span-11-55"><a id="__codelineno-11-55" name="__codelineno-11-55"></a>    <span class="k">while</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-11-56"><a id="__codelineno-11-56" name="__codelineno-11-56"></a>        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span>
+</span><span id="__span-11-57"><a id="__codelineno-11-57" name="__codelineno-11-57"></a>
+</span><span id="__span-11-58"><a id="__codelineno-11-58" name="__codelineno-11-58"></a>    <span class="c1"># Cho node cuối cùng trỏ đến node mới</span>
+</span><span id="__span-11-59"><a id="__codelineno-11-59" name="__codelineno-11-59"></a>    <span class="n">current</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">new_node</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>2. Trong chương trình chính, gọi hàm <code>insert_at_end()</code> ra thực hiện.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-93">93</a></span>
+<span class="normal"><a href="#__codelineno-12-94">94</a></span>
+<span class="normal"><a href="#__codelineno-12-95">95</a></span>
+<span class="normal"><a href="#__codelineno-12-96">96</a></span>
+<span class="normal"><a href="#__codelineno-12-97">97</a></span>
+<span class="normal"><a href="#__codelineno-12-98">98</a></span>
+<span class="normal"><a href="#__codelineno-12-99">99</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-93"><a id="__codelineno-12-93" name="__codelineno-12-93"></a>    <span class="c1"># Thêm node mới vào cuối</span>
+</span><span id="__span-12-94"><a id="__codelineno-12-94" name="__codelineno-12-94"></a>    <span class="n">new_data</span> <span class="o">=</span> <span class="s1">'y'</span>
+</span><span id="__span-12-95"><a id="__codelineno-12-95" name="__codelineno-12-95"></a>    <span class="n">insert_at_end</span><span class="p">(</span><span class="n">char_list</span><span class="p">,</span> <span class="n">new_data</span><span class="p">)</span>
+</span><span id="__span-12-96"><a id="__codelineno-12-96" name="__codelineno-12-96"></a>
+</span><span id="__span-12-97"><a id="__codelineno-12-97" name="__codelineno-12-97"></a>    <span class="c1"># In ra danh sách liên kết</span>
+</span><span id="__span-12-98"><a id="__codelineno-12-98" name="__codelineno-12-98"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Thêm [</span><span class="si">{</span><span class="n">new_data</span><span class="si">}</span><span class="s1">] vào cuối danh sách liên kết:'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+</span><span id="__span-12-99"><a id="__codelineno-12-99" name="__codelineno-12-99"></a>    <span class="n">print_linked_list</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>3. Chạy chương trình trên, kết quả như sau:</p>
+<div class="language-pycon highlight"><pre><span></span><code><span id="__span-13-1"><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="go">Danh sách liên kết ban đầu: [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-13-2"><a href="#__codelineno-13-2" id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="go">Chèn [c] vào đầu danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-13-3"><a href="#__codelineno-13-3" id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="go">Thêm [y] vào cuối danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span></code></pre></div>
+<h3 id="chen-vao-truoc-mot-node-xac-inh">Chèn vào trước một node xác định<a class="headerlink" href="#chen-vao-truoc-mot-node-xac-inh" title="Permanent link">¶</a></h3>
+<p>Giả sử node có dữ liệu <code>k</code> đã <strong>tồn tại</strong> trong danh sách liên kết và <strong>không phải là node đầu tiên</strong>.</p>
+<p>Để chèn node mới vào trước node <code>k</code>, thử thách là phải tìm được node liền trước node <code>k</code>. Vì khi quá node <code>k</code>, ta không thể quay lại được.</p>
+<p>Để giải quyết thử thách này, ta áp dụng kỹ thuật "hai người dắt tay nhau" như sau:</p>
+<ul>
+<li>Biến <code>current</code> đi trước để tìm node <code>k</code>.</li>
+<li>Biến <code>previous</code> đi <em>"nôi gót"</em> theo sau.</li>
+</ul>
+<p>Khi <code>current</code> tìm thấy node <code>k</code>, thì <code>previous</code> chính là node liền trước node <code>k</code>, đóng vai trò điểm tựa để ta chèn node mới vào.</p>
+<p>Cụ thể, ta thực hiện các bước sau:</p>
+<ol>
+<li>
+<p>Khởi tạo node mới, đặt tên là <code>new_node</code>, chứa dữ liệu <code>new_data</code>.</p>
+</li>
+<li>
+<p>Cho <code>current</code> xuất phát từ  node đầu tiên, còn <code>previous</code> là <code>None</code>.</p>
+</li>
+<li>
+<p>Duyệt danh sách liên kết bằng <code>current</code> cho đến khi tìm thấy node <code>k</code>:</p>
+<ul>
+<li>Nếu tìm thấy <code>k</code> thì ngắt vòng lặp.</li>
+<li>Ngược lại, chưa tìm thấy, thì cho <code>previous</code> thay thế <code>current</code>, rồi cho <code>current</code> di chuyển đến node kế tiếp.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/insert-step-1.svg" data-title="Tìm node k" data-desc-position="bottom"><img alt="Tìm node k" loading="lazy" src="../images/insert-step-1.svg"></a></p>
+</li>
+<li>
+<p>Liên kết <code>new_node</code> với <code>current</code>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/insert-step-2.svg" data-title="Liên kết new_node với current" data-desc-position="bottom"><img alt="Liên kết new_node với current" loading="lazy" src="../images/insert-step-2.svg"></a></p>
+</li>
+<li>
+<p>Liên kết <code>previous</code> với <code>new_node</code>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/insert-step-3.svg" data-title="Liên kết previous với new_node" data-desc-position="bottom"><img alt="Liên kết previous với new_node" loading="lazy" src="../images/insert-step-3.svg"></a></p>
+</li>
+</ol>
+<p>Dựa theo thuật toán trên, ta viết chương trình như sau:</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-62">62</a></span>
+<span class="normal"><a href="#__codelineno-14-63">63</a></span>
+<span class="normal"><a href="#__codelineno-14-64">64</a></span>
+<span class="normal"><a href="#__codelineno-14-65">65</a></span>
+<span class="normal"><a href="#__codelineno-14-66">66</a></span>
+<span class="normal"><a href="#__codelineno-14-67">67</a></span>
+<span class="normal"><a href="#__codelineno-14-68">68</a></span>
+<span class="normal"><a href="#__codelineno-14-69">69</a></span>
+<span class="normal"><a href="#__codelineno-14-70">70</a></span>
+<span class="normal"><a href="#__codelineno-14-71">71</a></span>
+<span class="normal"><a href="#__codelineno-14-72">72</a></span>
+<span class="normal"><a href="#__codelineno-14-73">73</a></span>
+<span class="normal"><a href="#__codelineno-14-74">74</a></span>
+<span class="normal"><a href="#__codelineno-14-75">75</a></span>
+<span class="normal"><a href="#__codelineno-14-76">76</a></span>
+<span class="normal"><a href="#__codelineno-14-77">77</a></span>
+<span class="normal"><a href="#__codelineno-14-78">78</a></span>
+<span class="normal"><a href="#__codelineno-14-79">79</a></span>
+<span class="normal"><a href="#__codelineno-14-80">80</a></span>
+<span class="normal"><a href="#__codelineno-14-81">81</a></span>
+<span class="normal"><a href="#__codelineno-14-82">82</a></span>
+<span class="normal"><a href="#__codelineno-14-83">83</a></span>
+<span class="normal"><a href="#__codelineno-14-84">84</a></span>
+<span class="normal"><a href="#__codelineno-14-85">85</a></span>
+<span class="normal"><a href="#__codelineno-14-86">86</a></span>
+<span class="normal"><a href="#__codelineno-14-87">87</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-62"><a id="__codelineno-14-62" name="__codelineno-14-62"></a><span class="c1"># Hàm chèn node mới vào trước node k</span>
+</span><span id="__span-14-63"><a id="__codelineno-14-63" name="__codelineno-14-63"></a><span class="k">def</span><span class="w"> </span><span class="nf">insert_before</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">new_data</span><span class="p">):</span>
+</span><span id="__span-14-64"><a id="__codelineno-14-64" name="__codelineno-14-64"></a>    <span class="c1"># Khởi tạo node mới</span>
+</span><span id="__span-14-65"><a id="__codelineno-14-65" name="__codelineno-14-65"></a>    <span class="n">new_node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+</span><span id="__span-14-66"><a id="__codelineno-14-66" name="__codelineno-14-66"></a>
+</span><span id="__span-14-67"><a id="__codelineno-14-67" name="__codelineno-14-67"></a>    <span class="c1"># Khởi tạo current và previous</span>
+</span><span id="__span-14-68"><a id="__codelineno-14-68" name="__codelineno-14-68"></a>    <span class="n">current</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span>             
+</span><span id="__span-14-69"><a id="__codelineno-14-69" name="__codelineno-14-69"></a>    <span class="n">previous</span> <span class="o">=</span> <span class="kc">None</span>
+</span><span id="__span-14-70"><a id="__codelineno-14-70" name="__codelineno-14-70"></a>
+</span><span id="__span-14-71"><a id="__codelineno-14-71" name="__codelineno-14-71"></a>    <span class="c1"># Duyệt danh sách liên kết để tìm node có dữ liệu k</span>
+</span><span id="__span-14-72"><a id="__codelineno-14-72" name="__codelineno-14-72"></a>    <span class="k">while</span> <span class="n">current</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-14-73"><a id="__codelineno-14-73" name="__codelineno-14-73"></a>        <span class="c1"># Nếu tìm thấy k thì ngắt vòng lặp</span>
+</span><span id="__span-14-74"><a id="__codelineno-14-74" name="__codelineno-14-74"></a>        <span class="k">if</span> <span class="n">current</span><span class="o">.</span><span class="n">data</span> <span class="o">==</span> <span class="n">k</span><span class="p">:</span>
+</span><span id="__span-14-75"><a id="__codelineno-14-75" name="__codelineno-14-75"></a>            <span class="k">break</span>
+</span><span id="__span-14-76"><a id="__codelineno-14-76" name="__codelineno-14-76"></a>
+</span><span id="__span-14-77"><a id="__codelineno-14-77" name="__codelineno-14-77"></a>        <span class="c1"># Ngược lại, chưa tìm thấy, thì cho previous thay thế current</span>
+</span><span id="__span-14-78"><a id="__codelineno-14-78" name="__codelineno-14-78"></a>        <span class="n">previous</span> <span class="o">=</span> <span class="n">current</span>
+</span><span id="__span-14-79"><a id="__codelineno-14-79" name="__codelineno-14-79"></a>
+</span><span id="__span-14-80"><a id="__codelineno-14-80" name="__codelineno-14-80"></a>        <span class="c1"># Cho current di chuyển đến node kế tiếp</span>
+</span><span id="__span-14-81"><a id="__codelineno-14-81" name="__codelineno-14-81"></a>        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span>   
+</span><span id="__span-14-82"><a id="__codelineno-14-82" name="__codelineno-14-82"></a>
+</span><span id="__span-14-83"><a id="__codelineno-14-83" name="__codelineno-14-83"></a>    <span class="c1"># Cho node mới trỏ đến current</span>
+</span><span id="__span-14-84"><a id="__codelineno-14-84" name="__codelineno-14-84"></a>    <span class="n">new_node</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">current</span>
+</span><span id="__span-14-85"><a id="__codelineno-14-85" name="__codelineno-14-85"></a>
+</span><span id="__span-14-86"><a id="__codelineno-14-86" name="__codelineno-14-86"></a>    <span class="c1"># Cho previous trỏ đến node mới     </span>
+</span><span id="__span-14-87"><a id="__codelineno-14-87" name="__codelineno-14-87"></a>    <span class="n">previous</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">new_node</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>2. Trong chương trình chính, ta gọi hàm <code>insert_before()</code> ra thực hiện.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-129">129</a></span>
+<span class="normal"><a href="#__codelineno-15-130">130</a></span>
+<span class="normal"><a href="#__codelineno-15-131">131</a></span>
+<span class="normal"><a href="#__codelineno-15-132">132</a></span>
+<span class="normal"><a href="#__codelineno-15-133">133</a></span>
+<span class="normal"><a href="#__codelineno-15-134">134</a></span>
+<span class="normal"><a href="#__codelineno-15-135">135</a></span>
+<span class="normal"><a href="#__codelineno-15-136">136</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-129"><a id="__codelineno-15-129" name="__codelineno-15-129"></a>    <span class="c1"># Thêm node mới vào trước node key</span>
+</span><span id="__span-15-130"><a id="__codelineno-15-130" name="__codelineno-15-130"></a>    <span class="n">key</span> <span class="o">=</span> <span class="s1">'d'</span>
+</span><span id="__span-15-131"><a id="__codelineno-15-131" name="__codelineno-15-131"></a>    <span class="n">new_data</span> <span class="o">=</span> <span class="s1">'y'</span>
+</span><span id="__span-15-132"><a id="__codelineno-15-132" name="__codelineno-15-132"></a>    <span class="n">insert_before</span><span class="p">(</span><span class="n">char_list</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">new_data</span><span class="p">)</span>
+</span><span id="__span-15-133"><a id="__codelineno-15-133" name="__codelineno-15-133"></a>
+</span><span id="__span-15-134"><a id="__codelineno-15-134" name="__codelineno-15-134"></a>    <span class="c1"># In ra danh sách liên kết</span>
+</span><span id="__span-15-135"><a id="__codelineno-15-135" name="__codelineno-15-135"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Chèn [</span><span class="si">{</span><span class="n">new_data</span><span class="si">}</span><span class="s1">] vào trước [</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">]:'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+</span><span id="__span-15-136"><a id="__codelineno-15-136" name="__codelineno-15-136"></a>    <span class="n">print_linked_list</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>3. Chạy chương trình trên, kết quả như sau:</p>
+<div class="language-pycon highlight"><pre><span></span><code><span id="__span-16-1"><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="go">Danh sách liên kết ban đầu: [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-16-2"><a href="#__codelineno-16-2" id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="go">Chèn [c] vào đầu danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-16-3"><a href="#__codelineno-16-3" id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="go">Thêm [y] vào cuối danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span><span id="__span-16-4"><a href="#__codelineno-16-4" id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="go">Chèn [y] vào trước [d]: [c] -&gt; [o] -&gt; [l] -&gt; [y] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Về việc chèn vào trước một node</p>
+<p>Hàm <code>insert_before()</code> vừa viết chỉ áp dụng cho trường hợp lý tưởng, đó là node <code>k</code> đã tồn tại trong danh sách liên kết và không phải là node đầu tiên.</p>
+<p>Khi viết đầy đủ, ta cần xét thêm các trường hợp:</p>
+<ul>
+<li>Danh sách liên kết rỗng.</li>
+<li>Node <code>k</code> là node đầu tiên.</li>
+<li>Node <code>k</code> không tồn tại.</li>
+</ul>
+</div>
+<hr>
+<h2 id="xoa-node">Xoá node<a class="headerlink" href="#xoa-node" title="Permanent link">¶</a></h2>
+<h3 id="xoa-node-au-tien">Xoá node đầu tiên<a class="headerlink" href="#xoa-node-au-tien" title="Permanent link">¶</a></h3>
+<p>Để xoá node đầu tiên trong danh sách liên kết, ta thực hiện các bước sau:</p>
+<ol>
+<li>Kiểm tra danh sách liên kết: nếu danh sách rỗng thì không có gì để xoá, ta kết thúc hàm.</li>
+<li>
+<p>Ngược lại, danh sách không rỗng, ta cập nhật <code>head</code> để nó chuyển sang trỏ đến node kế tiếp của <code>current</code>.</p>
+<p>Node đầu tiên không còn ai quản lý sẽ tự động bị hệ thống loại bỏ.</p>
+</li>
+</ol>
+<p>Dựa theo thuật toán trên, ta viết chương trình như sau:</p>
+<p>1. Viết hàm <code>remove_head()</code> dùng để xoá node đầu tiên trong danh sách liên kết.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-91">91</a></span>
+<span class="normal"><a href="#__codelineno-17-92">92</a></span>
+<span class="normal"><a href="#__codelineno-17-93">93</a></span>
+<span class="normal"><a href="#__codelineno-17-94">94</a></span>
+<span class="normal"><a href="#__codelineno-17-95">95</a></span>
+<span class="normal"><a href="#__codelineno-17-96">96</a></span>
+<span class="normal"><a href="#__codelineno-17-97">97</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-91"><a id="__codelineno-17-91" name="__codelineno-17-91"></a><span class="k">def</span><span class="w"> </span><span class="nf">remove_head</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+</span><span id="__span-17-92"><a id="__codelineno-17-92" name="__codelineno-17-92"></a>    <span class="k">if</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-17-93"><a id="__codelineno-17-93" name="__codelineno-17-93"></a>        <span class="c1"># Nếu danh sách rỗng thì không có gì để xoá</span>
+</span><span id="__span-17-94"><a id="__codelineno-17-94" name="__codelineno-17-94"></a>        <span class="k">return</span>
+</span><span id="__span-17-95"><a id="__codelineno-17-95" name="__codelineno-17-95"></a>
+</span><span id="__span-17-96"><a id="__codelineno-17-96" name="__codelineno-17-96"></a>    <span class="c1"># Ngược lại, danh sách không rỗng, cập nhật head để trỏ đến node kế tiếp</span>
+</span><span id="__span-17-97"><a id="__codelineno-17-97" name="__codelineno-17-97"></a>    <span class="n">L</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">next</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>2. Trong chương trình chính, ta gọi hàm <code>remove_head()</code> ra thực hiện.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-148">148</a></span>
+<span class="normal"><a href="#__codelineno-18-149">149</a></span>
+<span class="normal"><a href="#__codelineno-18-150">150</a></span>
+<span class="normal"><a href="#__codelineno-18-151">151</a></span>
+<span class="normal"><a href="#__codelineno-18-152">152</a></span>
+<span class="normal"><a href="#__codelineno-18-153">153</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-148"><a id="__codelineno-18-148" name="__codelineno-18-148"></a>    <span class="c1"># Xoá node đầu tiên</span>
+</span><span id="__span-18-149"><a id="__codelineno-18-149" name="__codelineno-18-149"></a>    <span class="n">remove_head</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+</span><span id="__span-18-150"><a id="__codelineno-18-150" name="__codelineno-18-150"></a>
+</span><span id="__span-18-151"><a id="__codelineno-18-151" name="__codelineno-18-151"></a>    <span class="c1"># In ra danh sách liên kết</span>
+</span><span id="__span-18-152"><a id="__codelineno-18-152" name="__codelineno-18-152"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">'Xoá node đầu tiên:'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+</span><span id="__span-18-153"><a id="__codelineno-18-153" name="__codelineno-18-153"></a>    <span class="n">print_linked_list</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>3. Chạy chương trình trên, kết quả như sau:</p>
+<div class="language-pycon highlight"><pre><span></span><code><span id="__span-19-1"><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="go">Danh sách liên kết ban đầu: [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-19-2"><a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="go">Chèn [c] vào đầu danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-19-3"><a href="#__codelineno-19-3" id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="go">Thêm [y] vào cuối danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span><span id="__span-19-4"><a href="#__codelineno-19-4" id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="go">Chèn [y] vào trước [d]: [c] -&gt; [o] -&gt; [l] -&gt; [y] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span><span id="__span-19-5"><a href="#__codelineno-19-5" id="__codelineno-19-5" name="__codelineno-19-5"></a><span class="go">Xoá node đầu tiên: [o] -&gt; [l] -&gt; [y] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span></code></pre></div>
+<h3 id="xoa-node-cuoi-cung">Xoá node cuối cùng<a class="headerlink" href="#xoa-node-cuoi-cung" title="Permanent link">¶</a></h3>
+<p>Để xoá node cuối cùng trong danh sách liên kết, ta thực hiện các bước sau:</p>
+<ol>
+<li>Kiểm tra danh sách liên kết: nếu danh sách rỗng thì không có gì để xoá, ta kết thúc hàm.</li>
+<li>Nếu danh sách chỉ có một node thì ta cho <code>head</code> trỏ đến <code>None</code>.</li>
+<li>
+<p>Ngược lại, danh sách có nhiều hơn một node, ta lại dùng kỹ thuật <em>"hai người dắt tay nhau"</em> để duyệt đến node cuối cùng:</p>
+<ul>
+<li>Biến <code>current</code> đi trước để tìm node cuối.</li>
+<li>Biến <code>previous</code> đi <em>"nôi gót"</em> theo sau.</li>
+</ul>
+<p>Khi <code>current</code> đến node cuối cùng, thì <code>previous</code> chính là node liền trước node cuối.</p>
+</li>
+<li>
+<p>Ngắt liên kết từ <code>previous</code> đến <code>current</code> bằng cách liên kết <code>previous</code> với <code>None</code>.</p>
+</li>
+</ol>
+<p>Dựa theo thuật toán trên, ta viết chương trình như sau:</p>
+<p>1. Viết hàm <code>remove_tail()</code> dùng để xoá node cuối cùng trong danh sách liên kết.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-101">101</a></span>
+<span class="normal"><a href="#__codelineno-20-102">102</a></span>
+<span class="normal"><a href="#__codelineno-20-103">103</a></span>
+<span class="normal"><a href="#__codelineno-20-104">104</a></span>
+<span class="normal"><a href="#__codelineno-20-105">105</a></span>
+<span class="normal"><a href="#__codelineno-20-106">106</a></span>
+<span class="normal"><a href="#__codelineno-20-107">107</a></span>
+<span class="normal"><a href="#__codelineno-20-108">108</a></span>
+<span class="normal"><a href="#__codelineno-20-109">109</a></span>
+<span class="normal"><a href="#__codelineno-20-110">110</a></span>
+<span class="normal"><a href="#__codelineno-20-111">111</a></span>
+<span class="normal"><a href="#__codelineno-20-112">112</a></span>
+<span class="normal"><a href="#__codelineno-20-113">113</a></span>
+<span class="normal"><a href="#__codelineno-20-114">114</a></span>
+<span class="normal"><a href="#__codelineno-20-115">115</a></span>
+<span class="normal"><a href="#__codelineno-20-116">116</a></span>
+<span class="normal"><a href="#__codelineno-20-117">117</a></span>
+<span class="normal"><a href="#__codelineno-20-118">118</a></span>
+<span class="normal"><a href="#__codelineno-20-119">119</a></span>
+<span class="normal"><a href="#__codelineno-20-120">120</a></span>
+<span class="normal"><a href="#__codelineno-20-121">121</a></span>
+<span class="normal"><a href="#__codelineno-20-122">122</a></span>
+<span class="normal"><a href="#__codelineno-20-123">123</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-101"><a id="__codelineno-20-101" name="__codelineno-20-101"></a><span class="k">def</span><span class="w"> </span><span class="nf">remove_tail</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+</span><span id="__span-20-102"><a id="__codelineno-20-102" name="__codelineno-20-102"></a>    <span class="k">if</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-20-103"><a id="__codelineno-20-103" name="__codelineno-20-103"></a>        <span class="c1"># Nếu danh sách rỗng thì không có gì để xoá</span>
+</span><span id="__span-20-104"><a id="__codelineno-20-104" name="__codelineno-20-104"></a>        <span class="k">return</span>
+</span><span id="__span-20-105"><a id="__codelineno-20-105" name="__codelineno-20-105"></a>
+</span><span id="__span-20-106"><a id="__codelineno-20-106" name="__codelineno-20-106"></a>    <span class="k">if</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">next</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-20-107"><a id="__codelineno-20-107" name="__codelineno-20-107"></a>        <span class="c1"># Nếu danh sách chỉ có một node thì cho head trỏ đến None</span>
+</span><span id="__span-20-108"><a id="__codelineno-20-108" name="__codelineno-20-108"></a>        <span class="n">L</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="kc">None</span>
+</span><span id="__span-20-109"><a id="__codelineno-20-109" name="__codelineno-20-109"></a>        <span class="k">return</span>
+</span><span id="__span-20-110"><a id="__codelineno-20-110" name="__codelineno-20-110"></a>
+</span><span id="__span-20-111"><a id="__codelineno-20-111" name="__codelineno-20-111"></a>    <span class="c1"># Ngược lại, danh sách có nhiều hơn một node, tìm node cuối</span>
+</span><span id="__span-20-112"><a id="__codelineno-20-112" name="__codelineno-20-112"></a>    <span class="n">current</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span>
+</span><span id="__span-20-113"><a id="__codelineno-20-113" name="__codelineno-20-113"></a>    <span class="n">previous</span> <span class="o">=</span> <span class="kc">None</span>
+</span><span id="__span-20-114"><a id="__codelineno-20-114" name="__codelineno-20-114"></a>
+</span><span id="__span-20-115"><a id="__codelineno-20-115" name="__codelineno-20-115"></a>    <span class="k">while</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-20-116"><a id="__codelineno-20-116" name="__codelineno-20-116"></a>        <span class="c1"># Cho previous thay thế current</span>
+</span><span id="__span-20-117"><a id="__codelineno-20-117" name="__codelineno-20-117"></a>        <span class="n">previous</span> <span class="o">=</span> <span class="n">current</span>
+</span><span id="__span-20-118"><a id="__codelineno-20-118" name="__codelineno-20-118"></a>
+</span><span id="__span-20-119"><a id="__codelineno-20-119" name="__codelineno-20-119"></a>        <span class="c1"># Cho current di chuyển đến node kế tiếp</span>
+</span><span id="__span-20-120"><a id="__codelineno-20-120" name="__codelineno-20-120"></a>        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span>
+</span><span id="__span-20-121"><a id="__codelineno-20-121" name="__codelineno-20-121"></a>
+</span><span id="__span-20-122"><a id="__codelineno-20-122" name="__codelineno-20-122"></a>    <span class="c1"># Ngắt liên kết từ previous đến current</span>
+</span><span id="__span-20-123"><a id="__codelineno-20-123" name="__codelineno-20-123"></a>    <span class="n">previous</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="kc">None</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>2. Trong chương trình chính, ta gọi hàm <code>remove_tail()</code> ra thực hiện.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-78">78</a></span>
+<span class="normal"><a href="#__codelineno-21-79">79</a></span>
+<span class="normal"><a href="#__codelineno-21-80">80</a></span>
+<span class="normal"><a href="#__codelineno-21-81">81</a></span>
+<span class="normal"><a href="#__codelineno-21-82">82</a></span>
+<span class="normal"><a href="#__codelineno-21-83">83</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-78"><a id="__codelineno-21-78" name="__codelineno-21-78"></a>    <span class="c1"># Xoá node cuối cùng</span>
+</span><span id="__span-21-79"><a id="__codelineno-21-79" name="__codelineno-21-79"></a>    <span class="n">remove_tail</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+</span><span id="__span-21-80"><a id="__codelineno-21-80" name="__codelineno-21-80"></a>
+</span><span id="__span-21-81"><a id="__codelineno-21-81" name="__codelineno-21-81"></a>    <span class="c1"># In ra danh sách liên kết</span>
+</span><span id="__span-21-82"><a id="__codelineno-21-82" name="__codelineno-21-82"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">'Xoá node cuối cùng:'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+</span><span id="__span-21-83"><a id="__codelineno-21-83" name="__codelineno-21-83"></a>    <span class="n">print_linked_list</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>3. Chạy chương trình trên, kết quả như sau:</p>
+<div class="language-pycon highlight"><pre><span></span><code><span id="__span-22-1"><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="go">Danh sách liên kết ban đầu: [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-22-2"><a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="go">Chèn [c] vào đầu danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-22-3"><a href="#__codelineno-22-3" id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="go">Thêm [y] vào cuối danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span><span id="__span-22-4"><a href="#__codelineno-22-4" id="__codelineno-22-4" name="__codelineno-22-4"></a><span class="go">Chèn [y] vào trước [d]: [c] -&gt; [o] -&gt; [l] -&gt; [y] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span><span id="__span-22-5"><a href="#__codelineno-22-5" id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="go">Xoá node đầu tiên: [o] -&gt; [l] -&gt; [y] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span><span id="__span-22-6"><a href="#__codelineno-22-6" id="__codelineno-22-6" name="__codelineno-22-6"></a><span class="go">Xoá node cuối cùng: [o] -&gt; [l] -&gt; [y] -&gt; [d] -&gt; None</span>
+</span></code></pre></div>
+<h3 id="xoa-mot-node-xac-inh">Xoá một node xác định<a class="headerlink" href="#xoa-mot-node-xac-inh" title="Permanent link">¶</a></h3>
+<p>Giả sử node có dữ liệu <code>k</code> đã <strong>tồn tại</strong> trong danh sách liên kết và <strong>không phải là node đầu tiên</strong>.</p>
+<p>Để xoá node có dữ liệu <code>k</code>, ta lại áp dụng kỹ thuật "hai người dắt tay nhau" như sau:</p>
+<ol>
+<li>
+<p>Duyệt tìm <code>k</code>: Cho <code>current</code> đi trước và <code>previous</code> <em>"nối gót"</em> theo sau. Vòng lặp dừng lại khi <code>current</code> tìm thấy node <code>k</code>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/remove-step-1.svg" data-title="Tìm node k" data-desc-position="bottom"><img alt="Tìm node k" loading="lazy" src="../images/remove-step-1.svg"></a></p>
+</li>
+<li>
+<p>Liên kết <code>previous</code> với node liền sau <code>current</code>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/remove-step-2.svg" data-title="Liên kết previous với node liền sau current" data-desc-position="bottom"><img alt="Liên kết previous với node liền sau current" loading="lazy" src="../images/remove-step-2.svg"></a></p>
+<p>Thao tác này tạo ra một <em>"chiếc cầu"</em> đi xuyên qua nút.</p>
+<p><code>current</code> (là node chứa dữ liệu <code>k</code>) bị cô lập hoàn toàn. Python sẽ tự động thu hồi bộ nhớ của node này.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/remove-step-3.svg" data-title="Kết quả của việc xoá node k" data-desc-position="bottom"><img alt="Kết quả của việc xoá node k" loading="lazy" src="../images/remove-step-3.svg"></a></p>
+</li>
+</ol>
+<p>Dựa theo thuật toán trên, ta viết chương trình như sau:</p>
+<p>1. Viết hàm <code>remove()</code> dùng để xoá node có dữ liệu <code>k</code>.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-127">127</a></span>
+<span class="normal"><a href="#__codelineno-23-128">128</a></span>
+<span class="normal"><a href="#__codelineno-23-129">129</a></span>
+<span class="normal"><a href="#__codelineno-23-130">130</a></span>
+<span class="normal"><a href="#__codelineno-23-131">131</a></span>
+<span class="normal"><a href="#__codelineno-23-132">132</a></span>
+<span class="normal"><a href="#__codelineno-23-133">133</a></span>
+<span class="normal"><a href="#__codelineno-23-134">134</a></span>
+<span class="normal"><a href="#__codelineno-23-135">135</a></span>
+<span class="normal"><a href="#__codelineno-23-136">136</a></span>
+<span class="normal"><a href="#__codelineno-23-137">137</a></span>
+<span class="normal"><a href="#__codelineno-23-138">138</a></span>
+<span class="normal"><a href="#__codelineno-23-139">139</a></span>
+<span class="normal"><a href="#__codelineno-23-140">140</a></span>
+<span class="normal"><a href="#__codelineno-23-141">141</a></span>
+<span class="normal"><a href="#__codelineno-23-142">142</a></span>
+<span class="normal"><a href="#__codelineno-23-143">143</a></span>
+<span class="normal"><a href="#__codelineno-23-144">144</a></span>
+<span class="normal"><a href="#__codelineno-23-145">145</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-127"><a id="__codelineno-23-127" name="__codelineno-23-127"></a><span class="k">def</span><span class="w"> </span><span class="nf">remove</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span><span id="__span-23-128"><a id="__codelineno-23-128" name="__codelineno-23-128"></a>    <span class="c1"># Khởi tạo current và previous</span>
+</span><span id="__span-23-129"><a id="__codelineno-23-129" name="__codelineno-23-129"></a>    <span class="n">current</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">head</span>
+</span><span id="__span-23-130"><a id="__codelineno-23-130" name="__codelineno-23-130"></a>    <span class="n">previous</span> <span class="o">=</span> <span class="kc">None</span>
+</span><span id="__span-23-131"><a id="__codelineno-23-131" name="__codelineno-23-131"></a>
+</span><span id="__span-23-132"><a id="__codelineno-23-132" name="__codelineno-23-132"></a>    <span class="c1"># Duyệt danh sách liên kết để tìm node có dữ liệu k</span>
+</span><span id="__span-23-133"><a id="__codelineno-23-133" name="__codelineno-23-133"></a>    <span class="k">while</span> <span class="n">current</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-23-134"><a id="__codelineno-23-134" name="__codelineno-23-134"></a>        <span class="c1"># Nếu tìm thấy k thì ngắt vòng lặp</span>
+</span><span id="__span-23-135"><a id="__codelineno-23-135" name="__codelineno-23-135"></a>        <span class="k">if</span> <span class="n">current</span><span class="o">.</span><span class="n">data</span> <span class="o">==</span> <span class="n">k</span><span class="p">:</span>
+</span><span id="__span-23-136"><a id="__codelineno-23-136" name="__codelineno-23-136"></a>            <span class="k">break</span>
+</span><span id="__span-23-137"><a id="__codelineno-23-137" name="__codelineno-23-137"></a>
+</span><span id="__span-23-138"><a id="__codelineno-23-138" name="__codelineno-23-138"></a>        <span class="c1"># Ngược lại, chưa tìm thấy, thì cho previous thay thế current</span>
+</span><span id="__span-23-139"><a id="__codelineno-23-139" name="__codelineno-23-139"></a>        <span class="n">previous</span> <span class="o">=</span> <span class="n">current</span>
+</span><span id="__span-23-140"><a id="__codelineno-23-140" name="__codelineno-23-140"></a>
+</span><span id="__span-23-141"><a id="__codelineno-23-141" name="__codelineno-23-141"></a>        <span class="c1"># Cho current di chuyển đến node kế tiếp</span>
+</span><span id="__span-23-142"><a id="__codelineno-23-142" name="__codelineno-23-142"></a>        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span>
+</span><span id="__span-23-143"><a id="__codelineno-23-143" name="__codelineno-23-143"></a>
+</span><span id="__span-23-144"><a id="__codelineno-23-144" name="__codelineno-23-144"></a>    <span class="c1"># Cho previous trỏ đến node liền sau current</span>
+</span><span id="__span-23-145"><a id="__codelineno-23-145" name="__codelineno-23-145"></a>    <span class="n">previous</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>2. Trong chương trình chính, ta gọi hàm <code>remove()</code> ra thực hiện.</p>
+<div class="language-py highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-210">210</a></span>
+<span class="normal"><a href="#__codelineno-24-211">211</a></span>
+<span class="normal"><a href="#__codelineno-24-212">212</a></span>
+<span class="normal"><a href="#__codelineno-24-213">213</a></span>
+<span class="normal"><a href="#__codelineno-24-214">214</a></span>
+<span class="normal"><a href="#__codelineno-24-215">215</a></span>
+<span class="normal"><a href="#__codelineno-24-216">216</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-210"><a id="__codelineno-24-210" name="__codelineno-24-210"></a>    <span class="c1"># Xoá node có dữ liệu key</span>
+</span><span id="__span-24-211"><a id="__codelineno-24-211" name="__codelineno-24-211"></a>    <span class="n">key</span> <span class="o">=</span> <span class="s1">'y'</span>
+</span><span id="__span-24-212"><a id="__codelineno-24-212" name="__codelineno-24-212"></a>    <span class="n">remove</span><span class="p">(</span><span class="n">char_list</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+</span><span id="__span-24-213"><a id="__codelineno-24-213" name="__codelineno-24-213"></a>
+</span><span id="__span-24-214"><a id="__codelineno-24-214" name="__codelineno-24-214"></a>    <span class="c1"># In ra danh sách liên kết</span>
+</span><span id="__span-24-215"><a id="__codelineno-24-215" name="__codelineno-24-215"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Xoá [</span><span class="si">{</span><span class="n">new_data</span><span class="si">}</span><span class="s1">] khỏi danh sách liên kết:'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+</span><span id="__span-24-216"><a id="__codelineno-24-216" name="__codelineno-24-216"></a>    <span class="n">print_linked_list</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>3. Chạy chương trình trên, kết quả như sau:</p>
+<div class="language-pycon highlight"><pre><span></span><code><span id="__span-25-1"><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="go">Danh sách liên kết ban đầu: [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-25-2"><a href="#__codelineno-25-2" id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="go">Chèn [c] vào đầu danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span><span id="__span-25-3"><a href="#__codelineno-25-3" id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="go">Thêm [y] vào cuối danh sách liên kết: [c] -&gt; [o] -&gt; [l] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span><span id="__span-25-4"><a href="#__codelineno-25-4" id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="go">Chèn [y] vào trước [d]: [c] -&gt; [o] -&gt; [l] -&gt; [y] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span><span id="__span-25-5"><a href="#__codelineno-25-5" id="__codelineno-25-5" name="__codelineno-25-5"></a><span class="go">Xoá node đầu tiên: [o] -&gt; [l] -&gt; [y] -&gt; [d] -&gt; [y] -&gt; None</span>
+</span><span id="__span-25-6"><a href="#__codelineno-25-6" id="__codelineno-25-6" name="__codelineno-25-6"></a><span class="go">Xoá node cuối cùng: [o] -&gt; [l] -&gt; [y] -&gt; [d] -&gt; None</span>
+</span><span id="__span-25-7"><a href="#__codelineno-25-7" id="__codelineno-25-7" name="__codelineno-25-7"></a><span class="go">Xoá [y] khỏi danh sách liên kết: [o] -&gt; [l] -&gt; [d] -&gt; None</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Về việc xoá node</p>
+<p>Hàm <code>remove()</code> vừa viết cũng áp dụng cho trường hợp lý tưởng, đó là node <code>k</code> cần xoá đã tồn tại trong danh sách liên kết và không phải là node đầu tiên.</p>
+<p>Khi viết đầy đủ, ta cần xét thêm các trường hợp:</p>
+<ul>
+<li>Danh sách liên kết rỗng.</li>
+<li>Node <code>k</code> cần xoá là node đầu tiên.</li>
+<li>Node <code>k</code> cần xoá không tồn tại.</li>
+</ul>
+</div>
+<hr>
+<h2 id="ma-nguon">Mã nguồn<a class="headerlink" href="#ma-nguon" title="Permanent link">¶</a></h2>
+<p>Code đầy đủ được đặt tại:</p>
+<ul>
+<li><a href="https://colab.research.google.com/drive/1erfVlrVQm3g5DRsLROjWFEjDlhLEglPu?usp=sharing" target="_blank">Google Colab</a></li>
+</ul>
+<hr>
+<h2 id="so-o-tom-tat">Sơ đồ tóm tắt<a class="headerlink" href="#so-o-tom-tat" title="Permanent link">¶</a></h2>
+<div>
+<iframe frameborder="0" src="../mindmaps/data-structure-linked-list-manipulation.html" style="width: 100%; height: 360px">Sơ đồ tóm tắt</iframe>
+</div>
+<hr>
+<h2 id="some-english-words">Some English words<a class="headerlink" href="#some-english-words" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Vietnamese</th>
+<th>Tiếng Anh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>duyệt (danh sách liên kết)</td>
+<td>traverse (a linked list)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+
+                
+  
+  
+    <div class="donation-button">
+      <a href="https://docs.mrschool.vn/donation/#cach-thuc" class="btn-donate">Bao tôi ly cafe 🧋 nhé!</a>
+    </div>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Trở lại mục lục
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Chân trang">
+        
+          
+          <a href="../data-structure-linked-list-a-simplified-overview/" class="md-footer__link md-footer__link--prev" aria-label="Trước: Danh sách liên kết">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Trước
+              </span>
+              <div class="md-ellipsis">
+                Danh sách liên kết
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../algorithmic-complexity-a-simplified-overview/" class="md-footer__link md-footer__link--next" aria-label="Sau: Khái quát độ phức tạp thuật toán">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sau
+              </span>
+              <div class="md-ellipsis">
+                Khái quát độ phức tạp thuật toán
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://docs.mrschool.vn/donation/">Please click here to donate, if possible. Thank you!</a><br>Copyright © 2023 Mr School
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/vtchitruong/vtchitruong.github.io" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/vothachchitruong" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://docs.mrschool.vn/donation/" target="_blank" rel="noopener" title="Please donate!" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M96 64c0-17.7 14.3-32 32-32H448h64c70.7 0 128 57.3 128 128s-57.3 128-128 128H480c0 53-43 96-96 96H192c-53 0-96-43-96-96V64zM480 224h32c35.3 0 64-28.7 64-64s-28.7-64-64-64H480V224zM32 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.prune", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0110\u00e3 sao ch\u00e9p", "clipboard.copy": "Sao ch\u00e9p v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m", "search.result.more.one": "1 t\u1eeb kh\u00e1c trong trang", "search.result.more.other": "# t\u1eeb kh\u00e1c trong trang", "search.result.none": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00e0i li\u1ec7u li\u00ean quan", "search.result.one": "1 t\u00e0i li\u1ec7u li\u00ean quan", "search.result.other": "# t\u00e0i li\u1ec7u li\u00ean quan", "search.result.placeholder": "Nh\u1eadp \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u00ecm ki\u1ebfm", "search.result.term.missing": "Kh\u00f4ng", "select.version": "Ch\u1ecdn phi\u00ean b\u1ea3n"}, "version": null}</script>
+    
+    
+    
+
+  
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="../../../javascripts/feedback.js"></script>
+      
+        <script src="../../../javascripts/floating_action_button.js"></script>
+      
+        <script src="../../../javascripts/markmap-d3.js"></script>
+      
+        <script src="../../../javascripts/markmap-lib.js"></script>
+      
+        <script src="../../../javascripts/markmap-view.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+
+  <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+  <!-- <script src="../../../assets/javascripts/custom.js"></script> -->
+
+  
+  <!-- <script>
+    // Remove the markmap button
+    const iframe = document.querySelector('iframe');
+
+    iframe.addEventListener('load', () => {
+        const iframeContent = iframe.contentDocument || iframe.contentWindow.document;
+        const brandLink = iframeContent.querySelector('.mm-toolbar a.mm-toolbar-brand');
+        brandLink.style.display = 'none';
+    });
+  </script> -->
+
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html><!-- Donation button at the end of content, conditional -->

@@ -1,0 +1,1121 @@
+<!DOCTYPE html><html class="no-js" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta content="Giúp bạn nắm bắt kiến thức của môn Tin học cấp trung học phổ thông. Tiếp thu dễ dàng. Tra cứu thuận tiện. Vượt qua kỳ thi Tốt nghiệp THPT và những kỳ thi khác. Xem được ở mọi nơi có internet, trên nhiều loại máy, bất kể tư thế." name="description">
+<meta content="Mr School" name="author">
+<link href="https://docs.mrschool.vn/en/grade-10/topic-B/iot/" rel="canonical">
+<link href="../cloud-computing/" rel="prev">
+<link href="../../topic-E/topic-index/" rel="next">
+<link href="../../../../grade-10/topic-B/iot/" hreflang="vi" rel="alternate">
+<link href="./" hreflang="en" rel="alternate">
+<link href="../../../../assets/favicon.png" rel="icon">
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.3" name="generator">
+<title>Internet vạn vật - Mr School's docs for Tin học GDPT 2018</title>
+<link href="../../../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet">
+<link href="../../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CConsolas+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet">
+<style>:root{--md-text-font:"Noto Sans";--md-code-font:"Consolas Mono"}</style>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;display=swap" rel="stylesheet">
+<link href="../../../../stylesheets/extra.css" rel="stylesheet">
+<link href="../../../../stylesheets/floating_action_button.css" rel="stylesheet">
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-406896385"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-406896385",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-406896385",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+<!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+<!-- <link
+    rel="stylesheet"
+    href="../../../../assets/stylesheets/custom.css"
+  /> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QqYBUQwKtpBHq0bDfzJ9jMb2N5+8w/RcZ1Rqxq43+3Qp8sdsO6T7XbuK+LzYQ4M4Zg8q3yY2Wg9p6aa+MglbHA==" crossorigin="anonymous" /> -->
+<style type="text/css">div.mkdocs-markmap {
+    width: 100%;
+    min-height: 1em;
+    border: 1px solid grey;
+}
+.mkdocs-markmap > svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+</style><link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+<body data-md-color-accent="light-blue" data-md-color-primary="green" data-md-color-scheme="vtct_theme" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox">
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#internet-van-vat">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+<aside class="md-banner">
+<div class="md-banner__inner md-grid md-typeset">
+<button aria-label="Don't show this again" class="md-banner__button md-icon">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+            
+            
+    Nơi đây có 10 cái bình <svg height="1.25em" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+<style>
+            svg {
+                fill: #C2B280
+            }
+        </style>
+<path d="M120 0h80c13.3 0 24 10.7 24 24V64H96V24c0-13.3 10.7-24 24-24zM32 151.7c0-15.6 9-29.8 23.2-36.5l24.4-11.4c11-5.1 23-7.8 35.1-7.8h90.6c12.1 0 24.1 2.7 35.1 7.8l24.4 11.4c14.1 6.6 23.2 20.8 23.2 36.5c0 14.4-7.5 27-18.9 34.1c11.5 8.8 18.9 22.6 18.9 38.2c0 16.7-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48c0-16.7 8.5-31.4 21.5-40C40.5 415.4 32 400.7 32 384s8.5-31.4 21.5-40C40.5 335.4 32 320.7 32 304s8.5-31.4 21.5-40C40.5 255.4 32 240.7 32 224c0-15.6 7.4-29.4 18.9-38.2C39.5 178.7 32 166.1 32 151.7zM96 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z"></path>
+</svg>: Bình tĩnh và bình dân Tin học vụ.
+
+          </div>
+<script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+</aside>
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Mr School's docs for Tin học GDPT 2018" class="md-header__button md-logo" data-md-component="logo" href="../../../" title="Mr School's docs for Tin học GDPT 2018">
+<img alt="logo" src="../../../../assets/mr-school-logo.png">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Mr School's docs for Tin học GDPT 2018
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Internet vạn vật
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-hidden="true" class="md-option" data-md-color-accent="light-blue" data-md-color-media="" data-md-color-primary="green" data-md-color-scheme="vtct_theme" id="__palette_0" name="__palette" type="radio">
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<div class="md-header__option">
+<div class="md-select">
+<button aria-label="Select language" class="md-header__button md-icon">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+</button>
+<div class="md-select__inner">
+<ul class="md-select__list">
+<li class="md-select__item">
+<a class="md-select__link" href="../../../../grade-10/topic-B/iot/" hreflang="vi">
+              Tiếng Việt
+            </a>
+</li>
+<li class="md-select__item">
+<a class="md-select__link" href="./" hreflang="en">
+              English
+            </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text">
+<label class="md-search__icon md-icon" for="__search">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../features/">
+          
+  
+  
+    
+  
+  Getting started
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../../grade-10-index/">
+          
+  
+  
+    
+  
+  Lớp 10
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../grade-11/grade-11-index/">
+          
+  
+  
+    
+  
+  Lớp 11
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../grade-12/grade-12-index/">
+          
+  
+  
+    
+  
+  Lớp 12
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../special-topics/special-topics-index/">
+          
+  
+  
+    
+  
+  Chuyên đề
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../supplementary-reading/dikw-pyramid/">
+          
+  
+  
+    
+  
+  Đọc thêm
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../advanced/advanced-index/">
+          
+  
+  
+    
+  
+  Nâng cao
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../solve-to-surpass/solve-to-surpass-index/">
+          
+  
+  
+    
+  
+  Solve to surpass
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../mos/mos-2019-index/">
+          
+  
+  
+    
+  
+  MOS
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Mr School's docs for Tin học GDPT 2018" class="md-nav__button md-logo" data-md-component="logo" href="../../../" title="Mr School's docs for Tin học GDPT 2018">
+<img alt="logo" src="../../../../assets/mr-school-logo.png">
+</a>
+    Mr School's docs for Tin học GDPT 2018
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../">
+<span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../features/">
+<span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox">
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Lớp 10
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Lớp 10
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../grade-10-index/">
+<span class="md-ellipsis">
+    
+  
+    Chương trình khung
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../topic-A1/topic-index/">
+<span class="md-ellipsis">
+    
+  
+    Chủ đề A1
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../topic-A2/topic-index/">
+<span class="md-ellipsis">
+    
+  
+    Chủ đề A2
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox">
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Chủ đề B
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Chủ đề B
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../topic-index/">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9h14V7H3zm0 4h14v-2H3zm0 4h14v-2H3zm16 0h2v-2h-2zm0-10v2h2V7zm0 6h2v-2h-2z"></path></svg>
+<span class="md-ellipsis">
+    
+  
+    Mục lục
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../computer-network/">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a8 8 0 0 0-8 8c0 4.03 3 7.42 7 7.93V19h-1a1 1 0 0 0-1 1H2v2h7a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1h7v-2h-7a1 1 0 0 0-1-1h-1v-1.07c4-.5 7-3.9 7-7.93a8 8 0 0 0-8-8m0 2s.74 1.28 1.26 3h-2.52C11.26 5.28 12 4 12 4m-2.23.43c-.27.5-.68 1.41-1.03 2.57H6.81C7.5 5.84 8.5 4.93 9.77 4.43m4.46.01c1.27.5 2.27 1.4 2.96 2.56h-1.93c-.35-1.16-.76-2.07-1.03-2.56M6.09 9h2.23c-.04.33-.07.66-.07 1s.03.67.07 1H6.09a5.6 5.6 0 0 1 0-2m4.23 0h3.36c.04.33.07.66.07 1s-.03.67-.07 1h-3.36c-.04-.33-.07-.66-.07-1s.03-.67.07-1m5.36 0h2.23a5.6 5.6 0 0 1 0 2h-2.23c.04-.33.07-.66.07-1s-.03-.67-.07-1m-8.87 4h1.93c.35 1.16.76 2.07 1.03 2.56-1.27-.5-2.27-1.4-2.96-2.56m3.93 0h2.52c-.52 1.72-1.26 3-1.26 3s-.74-1.28-1.26-3m4.52 0h1.93c-.69 1.16-1.69 2.07-2.96 2.57.27-.5.68-1.41 1.03-2.57"></path></svg>
+<span class="md-ellipsis">
+    
+  
+    Mạng máy tính
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cloud-computing/">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.103 10.107c0-4.244 3.445-7.607 7.733-7.607 3.19 0 5.912 1.858 7.099 4.563l.01.022.001.006C21.348 7.345 24 10.095 24 13.536 24 17.148 21.076 20 17.431 20H5.017C2.23 20 0 17.83 0 15.06a4.9 4.9 0 0 1 3.112-4.581 8 8 0 0 1-.009-.372M10.836 4c-3.485 0-6.233 2.717-6.233 6.107 0 .284.022.602.052.756a.75.75 0 0 1-.552.869c-1.52.385-2.603 1.712-2.603 3.328 0 1.917 1.532 3.44 3.517 3.44h12.414c2.843 0 5.069-2.206 5.069-4.964s-2.226-4.965-5.069-4.965a.75.75 0 0 1-.696-.47l-.179-.446C15.606 5.5 13.424 4 10.836 4"></path></svg>
+<span class="md-ellipsis">
+    
+  
+    Điện toán đám mây
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.96 0 6.21 1.23 4.22 3.22l1.41 1.41A8.95 8.95 0 0 1 12 2c2.5 0 4.74 1 6.36 2.64l1.41-1.41C17.79 1.23 15.04 0 12 0M7.05 6.05l1.41 1.41a5.02 5.02 0 0 1 7.08 0l1.41-1.41A6.98 6.98 0 0 0 12 4c-1.93 0-3.68.78-4.95 2.05M12 15a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2m3-6H9a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V10a1 1 0 0 0-1-1"></path></svg>
+<span class="md-ellipsis">
+    
+  
+    Internet vạn vật
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.96 0 6.21 1.23 4.22 3.22l1.41 1.41A8.95 8.95 0 0 1 12 2c2.5 0 4.74 1 6.36 2.64l1.41-1.41C17.79 1.23 15.04 0 12 0M7.05 6.05l1.41 1.41a5.02 5.02 0 0 1 7.08 0l1.41-1.41A6.98 6.98 0 0 0 12 4c-1.93 0-3.68.78-4.95 2.05M12 15a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2m3-6H9a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V10a1 1 0 0 0-1-1"></path></svg>
+<span class="md-ellipsis">
+    
+  
+    Internet vạn vật
+  
+
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#khai-niem">
+<span class="md-ellipsis">
+      
+        Khái niệm
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cac-thanh-phan">
+<span class="md-ellipsis">
+      
+        Các thành phần
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#co-che-hoat-ong">
+<span class="md-ellipsis">
+      
+        Cơ chế hoạt động
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mot-so-ung-dung">
+<span class="md-ellipsis">
+      
+        Một số ứng dụng
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#so-o-tom-tat-noi-dung">
+<span class="md-ellipsis">
+      
+        Sơ đồ tóm tắt nội dung
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#some-english-words">
+<span class="md-ellipsis">
+      
+        Some English words
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../topic-E/topic-index/">
+<span class="md-ellipsis">
+    
+  
+    Chủ đề E
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../topic-F/topic-f-index/">
+<span class="md-ellipsis">
+    
+  
+    Chủ đề F
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../topic-G/topic-index/">
+<span class="md-ellipsis">
+    
+  
+    Chủ đề G
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../grade-11/grade-11-index/">
+<span class="md-ellipsis">
+    
+  
+    Lớp 11
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../grade-12/grade-12-index/">
+<span class="md-ellipsis">
+    
+  
+    Lớp 12
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../special-topics/special-topics-index/">
+<span class="md-ellipsis">
+    
+  
+    Chuyên đề
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../supplementary-reading/dikw-pyramid/">
+<span class="md-ellipsis">
+    
+  
+    Đọc thêm
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../advanced/advanced-index/">
+<span class="md-ellipsis">
+    
+  
+    Nâng cao
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../solve-to-surpass/solve-to-surpass-index/">
+<span class="md-ellipsis">
+    
+  
+    Solve to surpass
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../mos/mos-2019-index/">
+<span class="md-ellipsis">
+    
+  
+    MOS
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#khai-niem">
+<span class="md-ellipsis">
+      
+        Khái niệm
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cac-thanh-phan">
+<span class="md-ellipsis">
+      
+        Các thành phần
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#co-che-hoat-ong">
+<span class="md-ellipsis">
+      
+        Cơ chế hoạt động
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mot-so-ung-dung">
+<span class="md-ellipsis">
+      
+        Một số ứng dụng
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#so-o-tom-tat-noi-dung">
+<span class="md-ellipsis">
+      
+        Sơ đồ tóm tắt nội dung
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#some-english-words">
+<span class="md-ellipsis">
+      
+        Some English words
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<nav aria-label="Navigation" class="md-path">
+<ol class="md-path__list">
+<li class="md-path__item">
+<a class="md-path__link" href="../../../">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-path__item">
+<a class="md-path__link" href="../../grade-10-index/">
+<span class="md-ellipsis">
+    Lớp 10
+  </span>
+</a>
+</li>
+<li class="md-path__item">
+<a class="md-path__link" href="../topic-index/">
+<span class="md-ellipsis">
+    Chủ đề B
+  </span>
+</a>
+</li>
+</ol>
+</nav>
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/vtchitruong/vtchitruong.github.io/edit/master/docs/grade-10/topic-B/iot.md" rel="edit" title="Edit this page">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+</a>
+<a class="md-content__button md-icon" href="https://github.com/vtchitruong/vtchitruong.github.io/raw/master/docs/grade-10/topic-B/iot.md" title="View source of this page">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
+</a>
+<h1 id="internet-van-vat">Internet vạn vật<a class="headerlink" href="#internet-van-vat" title="Permanent link">¶</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Tóm lược nội dung</p>
+<p>Bài này trình bày sơ nét về IoT.</p>
+</div>
+<h2 id="khai-niem">Khái niệm<a class="headerlink" href="#khai-niem" title="Permanent link">¶</a></h2>
+<p><strong>IoT (Internet of Things)</strong> là thuật ngữ dùng để chỉ mạng lưới các thiết bị có gắn cảm biến và cài đặt phần mềm, cũng như đính kèm những công nghệ khác, để có thể giao tiếp và trao đổi dữ liệu với nhau thông qua Internet.</p>
+<p>Các thiết bị có thể là đồ gia dụng, máy móc công nghiệp, xe cộ hoặc thiết bị đeo, chẳng hạn như: máy điều hòa nhiệt độ, hệ thống an ninh trong nhà, xe ô tô, v.v...</p>
+<h2 id="cac-thanh-phan">Các thành phần<a class="headerlink" href="#cac-thanh-phan" title="Permanent link">¶</a></h2>
+<p>Các thành phần chủ yếu trong một hệ thống IoT gồm có:  </p>
+<ol>
+<li>
+<p><strong>Thiết bị</strong></p>
+<p>Các thiết bị hoặc đối tượng vật lý có trang bị những bộ phận sau:</p>
+<ul>
+<li>Bộ phận cảm biến    </li>
+<li>Bộ phận kết nối mạng    </li>
+<li>Bộ phận truyền động</li>
+</ul>
+</li>
+<li>
+<p><strong>Cảm biến</strong></p>
+<p>Dùng để thu thập dữ liệu và phát hiện những thay đổi của môi trường.</p>
+</li>
+<li>
+<p><strong>Kết nối mạng</strong></p>
+<p>Gồm Internet và các công nghệ mạng khác: WiFi, Bluetooth, mạng di động, Zigbee, LoRa, v.v...</p>
+</li>
+<li>
+<p><strong>Bộ phận truyền động</strong></p>
+<p>Dùng để thực hiện các hành động cơ học hoặc tương tác lại với môi trường xung quanh.</p>
+</li>
+<li>
+<p><strong>Thành phần xử lý và điện toán đám mây</strong></p>
+<p>Thiết bị IoT thường có bộ xử lý riêng hoặc dựa vào hệ thống điện toán đám mây để xử lý dữ liệu.</p>
+</li>
+<li>
+<p><strong>Phần mềm ứng dụng</strong></p>
+<p>Cài đặt trên máy tính hoặc điện thoại thông minh của người dùng để theo dõi và điều khiển từ xa các thiết bị.</p>
+</li>
+<li>
+<p><strong>Thành phần đảm bảo an toàn</strong></p>
+<p>Gồm các phương thức bảo vệ và bảo mật các thiết bị IoT và dữ liệu.</p>
+</li>
+</ol>
+<h2 id="co-che-hoat-ong">Cơ chế hoạt động<a class="headerlink" href="#co-che-hoat-ong" title="Permanent link">¶</a></h2>
+<p>Ý tưởng cơ bản của IoT là cho phép các thiết bị thu thập, chia sẻ dữ liệu và tương tác với môi trường xung quanh mà không cần sự can thiệp của con người. </p>
+<p>Hoạt động của hệ thống IoT như sau:</p>
+<ol>
+<li>Thiết bị IoT sử dụng các cảm biến để thu thập dữ liệu từ môi trường xung quanh.</li>
+<li>Dữ liệu được truyền về hệ thống điện toán đám mây để xử lý.</li>
+<li>Hệ thống điện toán đám mây gửi lệnh cho bộ phận truyền động của thiết bị.</li>
+<li>Dựa theo lệnh nhận được, thiết bị tương tác lại với môi trường xung quanh hoặc thiết bị khác.</li>
+</ol>
+<p></p><pre class="mermaid"><code>sequenceDiagram
+    autonumber
+    participant C as Điện toán đám mây
+    participant D as Thiết bị IoT
+    participant E as Môi trường
+    E-&gt;&gt;D: Thu thập dữ liệu
+    D-&gt;&gt;C: Truyền về để xử lý
+    C-&gt;&gt;D: Lệnh điều khiển thiết bị
+    D-&gt;&gt;E: Tương tác lại môi trường</code></pre>
+<em>Sơ đồ khái quát hoạt động của hệ thống IoT</em><p></p>
+<p>Việc liên lạc giữa các thiết bị được thực hiện thông qua nhiều loại mạng khác nhau, phụ thuộc các yếu tố như vị trí địa lý, phạm vi, tốc độ truyền dữ liệu, điện năng tiêu thụ, v.v... Internet là một phương án phổ biến, và trong nhiều trường hợp, người ta sử dụng kết hợp các công nghệ mạng để tăng độ tin cậy, để dự phòng và để mở rộng quy mô.</p>
+<p>Đối với việc xử lý dữ liệu, thiết bị IoT có thể nhờ vào bộ xử lý riêng. Tuy nhiên, IoT thường tận dụng điện toán đám mây vì những lý do như khối lượng dữ liệu lớn, việc tính toán phức tạp.</p>
+<h2 id="mot-so-ung-dung">Một số ứng dụng<a class="headerlink" href="#mot-so-ung-dung" title="Permanent link">¶</a></h2>
+<p>IoT có phạm vi ứng dụng rộng lớn, bao gồm:</p>
+<ol>
+<li>
+<p>Nhà thông minh</p>
+<ul>
+<li>Hệ thống điều khiển và kiểm soát từ xa các vật dụng như đèn, máy điều hòa nhiệt độ, camera, v.v...</li>
+<li>Máy đo chỉ số điện tiêu thụ tại gia đình và trợ giúp thanh toán chi phí hằng tháng.</li>
+</ul>
+</li>
+<li>
+<p>Y tế</p>
+<ul>
+<li>Thiết bị theo dõi sức khỏe.</li>
+</ul>
+</li>
+<li>
+<p>Nông nghiệp</p>
+<ul>
+<li>Hệ thống giám sát tình trạng của đất, thời tiết và cây trồng để tối ưu hóa tưới tiêu, bón phân.</li>
+<li>Hệ thống giám sát sức khỏe, vị trí và hành vi của vật nuôi.</li>
+</ul>
+</li>
+<li>
+<p>Công nghiệp</p>
+<ul>
+<li>Hệ thống kiểm soát quy trình sản xuất sản phẩm theo thời gian thực.</li>
+<li>Hệ thống bảo trì dựa trên dự đoán.</li>
+<li>Hệ thống giám sát mạng lưới điện, giúp tối ưu hóa việc phân phối điện năng.</li>
+</ul>
+</li>
+<li>
+<p>Dịch vụ vận tải</p>
+<ul>
+<li>Hệ thống theo dõi vị trí và tình trạng của hàng hóa trong khi vận chuyển, tối ưu hóa lộ trình.</li>
+</ul>
+</li>
+<li>
+<p>Dịch vụ bán lẻ</p>
+<ul>
+<li>Hệ thống theo dõi kho hàng giúp cải thiện việc quản lý chuỗi cung ứng và cá nhân hóa trải nghiệm mua sắm của khách hàng. </li>
+</ul>
+</li>
+<li>
+<p>Thành phố thông minh</p>
+<ul>
+<li>Hệ thống điều khiển giao thông , giám sát môi trường, quản lý chất thải.</li>
+</ul>
+</li>
+</ol>
+<h2 id="so-o-tom-tat-noi-dung">Sơ đồ tóm tắt nội dung<a class="headerlink" href="#so-o-tom-tat-noi-dung" title="Permanent link">¶</a></h2>
+<div class="language-markmap mkdocs-markmap"><markmap-data encoding="base64" hidden="true">
+LS0tCm1hcmttYXA6CiAgICBjb2xvckZyZWV6ZUxldmVsOiAzCiAgICBtYXhXaWR0aDogMzAwCi0tLQoKIyBI4buHIHRo4buRbmcgSW9UCgojIyBMw6AgdGh14bqtdCBuZ+G7ryBjaOG7iSBt4bqhbmcgbMaw4bubaSBjw6FjIHRoaeG6v3QgYuG7iyBjw7MgdGjhu4MgZ2lhbyB0aeG6v3AgdsOgIHTGsMahbmcgdMOhYy4KCiMjIFRow6BuaCBwaOG6p24KCiMjIyBUaGnhur90IGLhu4ssIGPDsyBn4bqvbjoKLSBD4bqjbSBiaeG6v24KICAgIC0gRMO5bmcgxJHhu4MgdGh1IHRo4bqtcCBk4buvIGxp4buHdS4KLSBC4buZIHBo4bqtbiBr4bq/dCBu4buRaSBt4bqhbmcKICAgIC0gSW50ZXJuZXQgdsOgIGPDoWMgY8O0bmcgbmdo4buHIG3huqFuZyBraMOhYy4KLSBC4buZIHBo4bqtbiB0cnV54buBbiDEkeG7mW5nCiAgICAtIETDuW5nIMSR4buDIHTGsMahbmcgdMOhYyB24bubaSBtw7RpIHRyxrDhu51uZy4KCiMjIyBC4buZIHjhu60gbMO9IHbDoCDEkWnhu4duIHRvw6FuIMSRw6FtIG3DonkKLSBEw7luZyDEkeG7gyB44butIGzDvSBk4buvIGxp4buHdS4KCiMjIyBQaOG6p24gbeG7gW0g4bupbmcgZOG7pW5nCi0gRMO5bmcgxJHhu4MgdGhlbyBkw7VpIHbDoCDEkWnhu4F1IGtoaeG7g24gdOG7qyB4YS4KCiMjIyBUaMOgbmggcGjhuqduIMSR4bqjbSBi4bqjbyBhbiB0b8OgbgotIETDuW5nIMSR4buDIGLhuqNvIHbhu4cgdsOgIGLhuqNvIG3huq10IGNobyBo4buHIHRo4buRbmcuCgojIyDhu6huZyBk4bulbmcKLSBUcm9uZyBuaGnhu4F1IGzEqW5oIHbhu7FjIGTDom4gZOG7pW5nLCB5IHThur8sIGPDtG5nIG5naGnhu4dwLCBuw7RuZyBuZ2hp4buHcCB2w6AgZOG7i2NoIHbhu6UuCi0gQ8OhYyBo4buHIHRo4buRbmcgdGjDtG5nIG1pbmggZ2nDunAgdGhlbyBkw7VpLCBraeG7g20gc2/DoXQgdsOgIMSRaeG7gXUga2hp4buDbiB04burIHhhLgoKCg==
+</markmap-data></div>
+<p><em>Sơ đồ khái quát về IoT</em></p>
+<h2 id="some-english-words">Some English words<a class="headerlink" href="#some-english-words" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Vietnamese</th>
+<th>Tiếng Anh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bộ phận truyền động</td>
+<td>actuator</td>
+</tr>
+<tr>
+<td>cảm biến</td>
+<td>sensor</td>
+</tr>
+<tr>
+<td>điện toán đám mây</td>
+<td>cloud computing</td>
+</tr>
+<tr>
+<td>Internet vạn vật</td>
+<td>Internet of Things (IoT)</td>
+</tr>
+</tbody>
+</table>
+
+<div class="donation-button">
+<a class="btn-donate" href="https://docs.mrschool.vn/donation/#cach-thuc">Bao tôi ly cafe 🧋 nhé!</a>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Điện toán đám mây" class="md-footer__link md-footer__link--prev" href="../cloud-computing/">
+<div class="md-footer__button md-icon">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Điện toán đám mây
+              </div>
+</div>
+</a>
+<a aria-label="Next: Mục lục" class="md-footer__link md-footer__link--next" href="../../topic-E/topic-index/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Mục lục
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+<a href="https://docs.mrschool.vn/donation/">Please click here to donate, if possible. Thank you!</a><br>Copyright © 2023 Mr School
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/vtchitruong/vtchitruong.github.io" rel="noopener" target="_blank" title="github.com">
+<svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.facebook.com/vothachchitruong" rel="noopener" target="_blank" title="www.facebook.com">
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+</a>
+<a class="md-social__link" href="https://docs.mrschool.vn/donation/" rel="noopener" target="_blank" title="Please donate!">
+<svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M96 64c0-17.7 14.3-32 32-32H448h64c70.7 0 128 57.3 128 128s-57.3 128-128 128H480c0 53-43 96-96 96H192c-53 0-96-43-96-96V64zM480 224h32c35.3 0 64-28.7 64-64s-28.7-64-64-64H480V224zM32 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.prune", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../../../javascripts/extra.js"></script>
+<script src="../../../../javascripts/mathjax.js"></script>
+<script src="../../../../javascripts/feedback.js"></script>
+<script src="../../../../javascripts/floating_action_button.js"></script>
+<script src="../../../../javascripts/markmap-d3.js"></script>
+<script src="../../../../javascripts/markmap-lib.js"></script>
+<script src="../../../../javascripts/markmap-view.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+<!-- <script src="../../../../assets/javascripts/custom.js"></script> -->
+<!-- <script>
+    // Remove the markmap button
+    const iframe = document.querySelector('iframe');
+
+    iframe.addEventListener('load', () => {
+        const iframeContent = iframe.contentDocument || iframe.contentWindow.document;
+        const brandLink = iframeContent.querySelector('.mm-toolbar a.mm-toolbar-brand');
+        brandLink.style.display = 'none';
+    });
+  </script> -->
+<script type="text/javascript">(function initializeMarkmap() {
+    const transformer = new markmap.Transformer();
+    const preloadScripts = transformer.plugins
+        .flatMap((plugin) => plugin.config?.preloadScripts || [])
+        .map((item) => transformer.resolveJS(item));
+    const assets = transformer.getAssets();
+    const loading = Promise.all([
+        assets.styles && markmap.loadCSS(assets.styles),
+        markmap.loadJS([...preloadScripts, ...assets.scripts]),
+    ]);
+
+    function parseData(content) {
+        const { root, frontmatter } = transformer.transform(content);
+        let options = markmap.deriveOptions(frontmatter?.markmap);
+        options = Object.assign(
+            {
+                fitRatio: 0.85,
+            },
+            options
+        );
+        return { root, options };
+    }
+
+    function resetMarkmap(m, el) {
+        if (!m.state.rect) return;
+        const { x1, y1, x2, y2 } = m.state.rect;
+        const height = (el.offsetWidth / (x2 - x1)) * (y2 - y1);
+        el.style.height = height + "px";
+        m.fit();
+    }
+
+    function decodeBase64(encoded) {
+        const binary = atob(encoded);
+        const bytes = new Uint8Array(binary.length);
+        for (let i = 0; i < bytes.length; i++) {
+            bytes[i] = binary.charCodeAt(i);
+        }
+        return new TextDecoder().decode(bytes);
+    }
+
+    function renderMarkmap(el) {
+        const dataEl = el.querySelector("markmap-data");
+        if (!dataEl) return;
+        let content = el.textContent;
+        if (dataEl.getAttribute("encoding") === "base64") {
+            content = decodeBase64(content);
+        }
+        el.innerHTML = "<svg>";
+        svg = el.firstChild;
+        const { root, options } = parseData(content);
+        const m = markmap.Markmap.create(svg, options);
+        m.setData(root);
+        requestAnimationFrame(() => {
+            resetMarkmap(m, el);
+        });
+    }
+
+    function updateMarkmaps(node) {
+        for (const el of node.querySelectorAll(".mkdocs-markmap")) {
+            renderMarkmap(el);
+        }
+    }
+
+    loading.then(() => {
+        const observer = new MutationObserver((mutationList) => {
+            for (const mutation of mutationList) {
+                if (mutation.type === "childList") {
+                    for (const node of mutation.addedNodes) {
+                        updateMarkmaps(node);
+                    }
+                }
+            }
+        });
+
+        observer.observe(document.body, { childList: true });
+
+        updateMarkmaps(document);
+    });
+})();
+</script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html><!-- Donation button at the end of content, conditional -->

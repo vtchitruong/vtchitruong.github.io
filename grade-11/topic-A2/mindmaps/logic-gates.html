@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"C&#x1ed5;ng logic","children":[{"content":"V&#x1ead;n h&#xe0;nh h&#x1ec7; th&#x1ed1;ng k&#x1ef9; thu&#x1ead;t s&#x1ed1;","children":[],"payload":{"tag":"h2","lines":"8,9"}},{"content":"N&#x1ec1;n t&#x1ea3;ng cho &#x111;i&#x1ec7;n to&#xe1;n v&#xe0; &#x111;i&#x1ec7;n t&#x1eed;","children":[],"payload":{"tag":"h2","lines":"10,11"}},{"content":"&#x110;&#x1ea7;u v&#xe0;o: m&#x1ed9;t ho&#x1eb7;c nhi&#x1ec1;u","children":[],"payload":{"tag":"h2","lines":"12,13"}},{"content":"&#x110;&#x1ea7;u ra: ch&#x1ec9; m&#x1ed9;t","children":[],"payload":{"tag":"h2","lines":"14,15"}},{"content":"M&#x1ed9;t s&#x1ed1; c&#x1ed5;ng ph&#x1ed5; bi&#x1ebf;n","children":[{"content":"NOT","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"AND","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"OR","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"XOR","children":[],"payload":{"tag":"li","lines":"21,22"}}],"payload":{"tag":"h2","lines":"16,17"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+</body>
+</html>

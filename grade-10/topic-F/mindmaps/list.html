@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"<code>list</code>","children":[{"content":"Kh&#xe1;i ni&#x1ec7;m","children":[{"content":"L&#xe0; c&#x1ea5;u tr&#xfa;c d&#x1eef; li&#x1ec7;u.","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"D&#xf9;ng &#x111;&#x1ec3; x&#x1eed; l&#xfd; t&#x1ead;p h&#x1ee3;p nhi&#x1ec1;u ph&#x1ea7;n t&#x1eed;.","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Ph&#x1ea7;n t&#x1eed;","children":[{"content":"\n<p data-lines=\"15,16\">C&#xf3; th&#x1ec3; kh&#xe1;c nhau v&#x1ec1; ki&#x1ec3;u d&#x1eef; li&#x1ec7;u.</p>","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"\n<p data-lines=\"16,17\">G&#x1ed3;m hai y&#x1ebf;u t&#x1ed1;:</p>","children":[{"content":"ch&#x1ec9; s&#x1ed1;","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"gi&#xe1; tr&#x1ecb;","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"li","lines":"16,21"}}],"payload":{"tag":"h2","lines":"13,14"}},{"content":"Kh&#x1edf;i t&#x1ea1;o","children":[{"content":"Li&#x1ec7;t k&#xea; trong c&#x1eb7;p ngo&#x1eb7;c <code>[ ]</code>.","children":[],"payload":{"tag":"li","lines":"23,25"}}],"payload":{"tag":"h2","lines":"21,22"}},{"content":"L&#x1ea5;y s&#x1ed1; ph&#x1ea7;n t&#x1eed;","children":[{"content":"<code>len(danh s&#xe1;ch)</code>","children":[],"payload":{"tag":"li","lines":"27,29"}}],"payload":{"tag":"h2","lines":"25,26"}},{"content":"Truy xu&#x1ea5;t ph&#x1ea7;n t&#x1eed;","children":[{"content":"Ph&#x1ea7;n t&#x1eed; &#x111;&#x1ea7;u ti&#xea;n: <code>L[0]</code>","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"Ph&#x1ea7;n t&#x1eed; cu&#x1ed1;i c&#xf9;ng: <code>L[n - 1]</code>","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"h2","lines":"29,30"}},{"content":"Duy&#x1ec7;t danh s&#xe1;ch","children":[{"content":"D&#xf9;ng ch&#x1ec9; s&#x1ed1;","children":[{"content":"<code>for i in range(n):</code>","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"h3","lines":"36,37"}},{"content":"D&#xf9;ng to&#xe1;n t&#x1eed; <code>in</code>","children":[{"content":"<code>for x in L:</code>","children":[],"payload":{"tag":"li","lines":"42,43"}}],"payload":{"tag":"h3","lines":"40,41"}}],"payload":{"tag":"h2","lines":"34,35"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+</body>
+</html>

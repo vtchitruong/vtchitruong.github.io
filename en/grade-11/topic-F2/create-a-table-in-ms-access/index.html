@@ -1,0 +1,2569 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Giúp bạn nắm bắt kiến thức của môn Tin học cấp trung học phổ thông. Tiếp thu dễ dàng. Tra cứu thuận tiện. Vượt qua kỳ thi Tốt nghiệp THPT và những kỳ thi khác. Xem được ở mọi nơi có internet, trên nhiều loại máy, bất kể tư thế.">
+      
+      
+        <meta name="author" content="Mr School">
+      
+      
+        <link rel="canonical" href="https://docs.mrschool.vn/en/grade-11/topic-F2/create-a-table-in-ms-access/">
+      
+      
+        <link rel="prev" href="../retrieve-data-from-tables-practice-3/">
+      
+      
+        <link rel="next" href="../create-a-table-in-mysql-workbench/">
+      
+      
+        
+          <link rel="alternate" href="../../../../grade-11/topic-F2/create-a-table-in-ms-access/" hreflang="vi">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Tạo bảng trong Microsoft Access - Mr School's docs for Tin học GDPT 2018</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CConsolas+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Consolas Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;display=swap">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/floating_action_button.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-406896385"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-406896385",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-406896385",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+
+  <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+  <!-- <link
+    rel="stylesheet"
+    href="../../../../assets/stylesheets/custom.css"
+  /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QqYBUQwKtpBHq0bDfzJ9jMb2N5+8w/RcZ1Rqxq43+3Qp8sdsO6T7XbuK+LzYQ4M4Zg8q3yY2Wg9p6aa+MglbHA==" crossorigin="anonymous" /> -->
+
+
+  <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="vtct_theme" data-md-color-primary="green" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tao-bang-trong-microsoft-access" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+              </button>
+            
+            
+    Nơi đây có 10 cái bình <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 320 512">
+        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <style>
+            svg {
+                fill: #C2B280
+            }
+        </style>
+        <path d="M120 0h80c13.3 0 24 10.7 24 24V64H96V24c0-13.3 10.7-24 24-24zM32 151.7c0-15.6 9-29.8 23.2-36.5l24.4-11.4c11-5.1 23-7.8 35.1-7.8h90.6c12.1 0 24.1 2.7 35.1 7.8l24.4 11.4c14.1 6.6 23.2 20.8 23.2 36.5c0 14.4-7.5 27-18.9 34.1c11.5 8.8 18.9 22.6 18.9 38.2c0 16.7-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48c0-16.7 8.5-31.4 21.5-40C40.5 415.4 32 400.7 32 384s8.5-31.4 21.5-40C40.5 335.4 32 320.7 32 304s8.5-31.4 21.5-40C40.5 255.4 32 240.7 32 224c0-15.6 7.4-29.4 18.9-38.2C39.5 178.7 32 166.1 32 151.7zM96 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z"></path>
+    </svg>: Bình tĩnh và bình dân Tin học vụ.
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../" title="Mr School's docs for Tin học GDPT 2018" class="md-header__button md-logo" aria-label="Mr School's docs for Tin học GDPT 2018" data-md-component="logo">
+      
+  <img src="../../../../assets/mr-school-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mr School's docs for Tin học GDPT 2018
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tạo bảng trong Microsoft Access
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="vtct_theme" data-md-color-primary="green" data-md-color-accent="light-blue" aria-hidden="true" type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../grade-11/topic-F2/create-a-table-in-ms-access/" hreflang="vi" class="md-select__link">
+              Tiếng Việt
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../features/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../grade-10/grade-10-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lớp 10
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../grade-11-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lớp 11
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../grade-12/grade-12-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lớp 12
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../special-topics/special-topics-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chuyên đề
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../supplementary-reading/dikw-pyramid/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Đọc thêm
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../advanced/advanced-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Nâng cao
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../solve-to-surpass/solve-to-surpass-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Solve to surpass
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../mos/mos-2019-index/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MOS
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Mr School's docs for Tin học GDPT 2018" class="md-nav__button md-logo" aria-label="Mr School's docs for Tin học GDPT 2018" data-md-component="logo">
+      
+  <img src="../../../../assets/mr-school-logo.png" alt="logo">
+
+    </a>
+    Mr School's docs for Tin học GDPT 2018
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/vtchitruong/vtchitruong.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub để chữa lành
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../features/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../grade-10/grade-10-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lớp 10
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lớp 11
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lớp 11
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../grade-11-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chương trình khung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-A1/topic-a1-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề A1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-A2/topic-a2-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề A2
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-F1/topic-f1-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề F1
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề F2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chủ đề F2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topic-f2-index/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3zm0 4h14v-2H3zm0 4h14v-2H3zm16 0h2v-2h-2zm0-10v2h2V7zm0 6h2v-2h-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Mục lục
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../building-a-database-in-postgresql-part-1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Xây dựng cơ sở dữ liệu
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../retrieve-data-from-tables-part-1/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Truy vấn dữ liệu
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_5_4" id="__nav_4_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tạo bảng trong một số DMBS khác
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tạo bảng trong một số DMBS khác
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.5 2.63q1.34 0 2.68.14l.67.09q.45.07.99.18.53.11 1.09.27.57.16 1.03.38t.75.5.29.62v14.38q0 .34-.29.62-.3.28-.75.5-.46.22-1.03.38-.56.16-1.1.27-.53.11-.97.18-.45.07-.69.09-1.33.15-2.67.15-1.35 0-2.68-.15-.23-.02-.67-.09-.45-.07-.99-.18-.53-.11-1.09-.27-.57-.16-1.02-.38-.46-.22-.76-.5-.29-.28-.29-.62V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.81q0-.34.29-.62.3-.28.76-.5.45-.22 1.02-.38.56-.16 1.1-.27.53-.11.97-.18.45-.06.69-.09 1.32-.14 2.67-.14m0 1.25q-.63 0-1.42.04-.78.04-1.58.15-.81.11-1.57.29t-1.35.45q.61.29 1.37.47.75.18 1.55.28.79.1 1.57.15.78.04 1.43.04.66 0 1.43-.04.78-.05 1.57-.15.8-.1 1.56-.28.75-.18 1.36-.47-.59-.27-1.35-.45t-1.57-.29q-.8-.11-1.58-.15t-1.42-.04m-8.56 9.91h2.12l.49 1.49h1.67L7.83 8.72H6.2l-2.42 6.56h1.66M20.75 19v-3q-.64.31-1.44.5-.81.18-1.64.29-.84.11-1.67.16-.81.05-1.5.05-.71 0-1.42-.04-.71-.05-1.41-.13-.23.17-.5.17H8.25v2q.28.21.75.38.5.18 1.07.3.58.13 1.22.22.63.1 1.21.13.62.06 1.14.08t.86.02q.34-.01.86-.03.52-.01 1.14-.07.58-.03 1.21-.13.64-.09 1.22-.22.57-.12 1.07-.3.47-.17.75-.38m0-4.37V11q-.64.31-1.44.5-.81.18-1.64.29-.84.11-1.67.16-.81.05-1.5.05-.62 0-1.25-.03-.62-.04-1.25-.1v3.75q.63.07 1.25.1.63.03 1.25.03.36 0 .88-.02t1.12-.07q.58-.06 1.2-.16.63-.06 1.2-.19.6-.13 1.06-.31.49-.15.79-.37m0-5V6q-.64.31-1.44.5-.81.18-1.64.29-.84.11-1.67.16-.81.05-1.5.05T13 6.95q-.83-.05-1.67-.16-.83-.11-1.64-.29-.8-.19-1.44-.5v1h2.92q.33 0 .59.24.24.26.24.59v2.79q.63.07 1.25.1.63.03 1.25.03.36 0 .88-.02t1.12-.07q.58-.06 1.2-.16.63-.06 1.2-.19.6-.13 1.06-.31.48-.15.79-.37M6.32 12.5l.68-2 .65 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Tạo bảng trong Microsoft Access
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.5 2.63q1.34 0 2.68.14l.67.09q.45.07.99.18.53.11 1.09.27.57.16 1.03.38t.75.5.29.62v14.38q0 .34-.29.62-.3.28-.75.5-.46.22-1.03.38-.56.16-1.1.27-.53.11-.97.18-.45.07-.69.09-1.33.15-2.67.15-1.35 0-2.68-.15-.23-.02-.67-.09-.45-.07-.99-.18-.53-.11-1.09-.27-.57-.16-1.02-.38-.46-.22-.76-.5-.29-.28-.29-.62V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.81q0-.34.29-.62.3-.28.76-.5.45-.22 1.02-.38.56-.16 1.1-.27.53-.11.97-.18.45-.06.69-.09 1.32-.14 2.67-.14m0 1.25q-.63 0-1.42.04-.78.04-1.58.15-.81.11-1.57.29t-1.35.45q.61.29 1.37.47.75.18 1.55.28.79.1 1.57.15.78.04 1.43.04.66 0 1.43-.04.78-.05 1.57-.15.8-.1 1.56-.28.75-.18 1.36-.47-.59-.27-1.35-.45t-1.57-.29q-.8-.11-1.58-.15t-1.42-.04m-8.56 9.91h2.12l.49 1.49h1.67L7.83 8.72H6.2l-2.42 6.56h1.66M20.75 19v-3q-.64.31-1.44.5-.81.18-1.64.29-.84.11-1.67.16-.81.05-1.5.05-.71 0-1.42-.04-.71-.05-1.41-.13-.23.17-.5.17H8.25v2q.28.21.75.38.5.18 1.07.3.58.13 1.22.22.63.1 1.21.13.62.06 1.14.08t.86.02q.34-.01.86-.03.52-.01 1.14-.07.58-.03 1.21-.13.64-.09 1.22-.22.57-.12 1.07-.3.47-.17.75-.38m0-4.37V11q-.64.31-1.44.5-.81.18-1.64.29-.84.11-1.67.16-.81.05-1.5.05-.62 0-1.25-.03-.62-.04-1.25-.1v3.75q.63.07 1.25.1.63.03 1.25.03.36 0 .88-.02t1.12-.07q.58-.06 1.2-.16.63-.06 1.2-.19.6-.13 1.06-.31.49-.15.79-.37m0-5V6q-.64.31-1.44.5-.81.18-1.64.29-.84.11-1.67.16-.81.05-1.5.05T13 6.95q-.83-.05-1.67-.16-.83-.11-1.64-.29-.8-.19-1.44-.5v1h2.92q.33 0 .59.24.24.26.24.59v2.79q.63.07 1.25.1.63.03 1.25.03.36 0 .88-.02t1.12-.07q.58-.06 1.2-.16.63-.06 1.2-.19.6-.13 1.06-.31.48-.15.79-.37M6.32 12.5l.68-2 .65 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Tạo bảng trong Microsoft Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tao-tap-tin-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tạo tập tin Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tao-bang" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tạo bảng
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nhap-cac-thuoc-tinh-cua-bang" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nhập các thuộc tính của bảng
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tao-khoa-chinh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tạo khóa chính
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nhap-du-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nhập dữ liệu
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-a-table-in-mysql-workbench/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a51 51 0 0 0-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a73 73 0 0 0-.195 4.41H0q.083-2.95.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095q.363 3.024.428 5.53zm4.017-4.08q-.567 3.069-1.492 4.46-.723 1.074-1.583 1.073-.228 0-.566-.138v-.494q.166.026.386.026.402 0 .647-.222.295-.27.295-.605 0-.233-.23-.944L6.23 14.615h.91l.727 2.36q.247.804.205 1.123.6-1.598.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135-1.016-.5q.136-.113.255-.25.649-.76.648-2.253 0-2.745-2.155-2.746-1.056 0-1.65.697-.646.762-.646 2.245-.001 1.459.574 2.14.524.615 1.583.615.396 0 .725-.098l1.325.772.36-.622zM15.5 17.588q-.337-.541-.337-1.736 0-2.09 1.27-2.09.666 0 .977.5.336.543.336 1.723 0 2.107-1.27 2.108-.667 0-.978-.5zm-1.658-.425q0 .706-.516 1.156-.514.45-1.384.45c-.543 0-1.064-.172-1.573-.515l.237-.476q.656.329 1.19.328.498 0 .783-.22a.75.75 0 0 0 .3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177q0-.674.47-1.085.471-.416 1.22-.415.769 0 1.4.41l-.213.476a2.7 2.7 0 0 0-1.064-.23q-.425 0-.654.206a.69.69 0 0 0-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407q.208.167.427.31c.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.2 3.2 0 0 0-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106q.16-.042.32-.094v-.06c-.12-.12-.21-.283-.334-.395a9 9 0 0 0-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a18 18 0 0 1-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.5 3.5 0 0 1-.35-.4 9 9 0 0 1-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.5 2.5 0 0 1-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.95 5.95 0 0 1 2.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Tạo bảng trong MySQL Workbench
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-F3/topic-f3-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề F3
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../topic-G/topic-g-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chủ đề G
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../grade-12/grade-12-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lớp 12
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../special-topics/special-topics-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chuyên đề
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../../supplementary-reading/dikw-pyramid/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Đọc thêm
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../advanced/advanced-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nâng cao
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../solve-to-surpass/solve-to-surpass-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solve to surpass
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../mos/mos-2019-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MOS
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tao-tap-tin-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tạo tập tin Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tao-bang" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tạo bảng
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nhap-cac-thuoc-tinh-cua-bang" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nhập các thuộc tính của bảng
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tao-khoa-chinh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tạo khóa chính
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nhap-du-lieu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nhập dữ liệu
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../../" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../grade-11-index/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Lớp 11
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../topic-f2-index/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chủ đề F2
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Tạo bảng trong một số DMBS khác
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+  
+    <a href="https://github.com/vtchitruong/vtchitruong.github.io/edit/master/docs/grade-11/topic-F2/create-a-table-in-ms-access.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/vtchitruong/vtchitruong.github.io/raw/master/docs/grade-11/topic-F2/create-a-table-in-ms-access.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
+    </a>
+  
+
+
+<h1 id="tao-bang-trong-microsoft-access">Tạo bảng trong Microsoft Access<a class="headerlink" href="#tao-bang-trong-microsoft-access" title="Permanent link">¶</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Tóm lược nội dung</p>
+<p>Bài này hướng dẫn cách tạo bảng dữ liệu trong phần mềm Microsoft Access.</p>
+<p>Thao tác hướng dẫn được thực hiện trên Access phiên bản Microsoft 365 (ảnh chụp màn hình vào tháng 02.2022). Bạn có thể thực hiện tương tự trên các phiên bản 2013, 2016, 2019, 2021 và 2024.</p>
+<p>Đây là bài viết cũ dành cho học sinh lớp 12 chương trình trước 2024 (chương trình trước GDPT 2018). Mr School thấy tiếc quá nên <em>chép</em> lại.</p>
+<p>Đối với lớp 11 chương trình mới hiện nay, bạn có thể chọn sử dụng một trong số những phương án sau:</p>
+<ul>
+<li>Hệ cơ sở dữ liệu MySQL thông qua công cụ phpMyAdmin.</li>
+<li>Hệ cơ sở dữ liệu MySQL thông qua công cụ Workbench của Oracle.</li>
+<li>Hệ cơ sở dữ liệu PostgreSQL thông qua công cụ pgAdmin.</li>
+</ul>
+</div>
+<h2 id="tao-tap-tin-access">Tạo tập tin Access<a class="headerlink" href="#tao-tap-tin-access" title="Permanent link">¶</a></h2>
+<p>Mở Access và thực hiện các thao tác sau:</p>
+<ol>
+<li>Chọn <strong>Home</strong>.</li>
+<li>
+<p>Click vào <strong>Blank database</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/PKOmSA5kDRP_GTQo1Iz24_Wh_CD0X04CT2CEW1LE7bhhNTbVD9QSTB3BpW_jgdBe7ceBSvahwx0ghC86P-P1Hn8EOTiqD18_hJP_0R-YqmXK9ws96BCm3tg_3vqK2tOQlN7pXGRokQE=w2400" data-title="Cách tạo tập tin cơ sở dữ liệu mới" data-desc-position="bottom"><img alt="Cách tạo tập tin cơ sở dữ liệu mới" loading="lazy" src="https://lh3.googleusercontent.com/PKOmSA5kDRP_GTQo1Iz24_Wh_CD0X04CT2CEW1LE7bhhNTbVD9QSTB3BpW_jgdBe7ceBSvahwx0ghC86P-P1Hn8EOTiqD18_hJP_0R-YqmXK9ws96BCm3tg_3vqK2tOQlN7pXGRokQE=w2400" width="320"></a></p>
+</li>
+<li>
+<p>Trong hộp thoại hiện ra, chọn thư mục lưu trữ và nhập tên tập tin.</p>
+</li>
+<li>Điều chỉnh tên tập tin nếu cần. Đuôi tập tin <strong>.accdb</strong> đã có sẵn.</li>
+<li>
+<p>Bấm nút <strong>Create</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/PXAiELIE7TQGhTYeUtnAKp87WLbHBDOgq3O8Tu3_mnekHgniJ7Fh_SKUvjHJi6_iuUUox6mu_MFkRZTmCBI3vtqKcvmJM0NZ54Zs2Hma-9vnrt8IdugR7d-5fYVn4eVlUbgFeVG4iLQ=w2400" data-title="Cách đặt tên tập tin và nơi lưu" data-desc-position="bottom"><img alt="Cách đặt tên tập tin và nơi lưu" loading="lazy" src="https://lh3.googleusercontent.com/PXAiELIE7TQGhTYeUtnAKp87WLbHBDOgq3O8Tu3_mnekHgniJ7Fh_SKUvjHJi6_iuUUox6mu_MFkRZTmCBI3vtqKcvmJM0NZ54Zs2Hma-9vnrt8IdugR7d-5fYVn4eVlUbgFeVG4iLQ=w2400" width="400"></a></p>
+</li>
+</ol>
+<h2 id="tao-bang">Tạo bảng<a class="headerlink" href="#tao-bang" title="Permanent link">¶</a></h2>
+<p>Một bảng tên là <strong>Table1</strong> đã có sẵn. Ta có thể thao tác luôn hoặc đóng lại để tạo bảng mới.</p>
+<p class="annotate">Trong bài này, ta đóng lại bằng cách bấm vào nút <strong>X</strong> (1).</p>
+<ol>
+<li>Trong phiên bản Access 2016, nút <strong>X</strong> nằm ở phía xa bên phải.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/WYUFFAq6PaqMCBwwG3QrsSXffrbTSGl_XkEuNbPUAXx4rp3Z9LPjy4adh3cTPBVO1ehSyjirfao0OBDfrcqz42khhNxWdf26KtLOk6YQJn55KITz4Ysox1oo8484zsVODeT5jnTSV7w=w2400" data-title="Cách đóng tab của bảng đang thao tác" data-desc-position="bottom"><img alt="Cách đóng tab của bảng đang thao tác" loading="lazy" src="https://lh3.googleusercontent.com/WYUFFAq6PaqMCBwwG3QrsSXffrbTSGl_XkEuNbPUAXx4rp3Z9LPjy4adh3cTPBVO1ehSyjirfao0OBDfrcqz42khhNxWdf26KtLOk6YQJn55KITz4Ysox1oo8484zsVODeT5jnTSV7w=w2400" width="320"></a></p>
+<p>Để tạo bảng mới:</p>
+<ol>
+<li>Chọn tab <strong>Create</strong>.</li>
+<li>
+<p>Bấm nút <strong>Table Design</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/3aEuwv93q3txbFJ8e3FuQVKrJrjEuXUWw0q7CPA-5HSj2bI825rTsJbat_R8tjT27jmElYf6FBf0t66MybTYEqhtkx6SZu0aGn8GP8oo90ZvHo2-W6Bzh-IH0ajsxrqZ468l4r0nFl0=w2400" data-title="Cách tạo bảng mới" data-desc-position="bottom"><img alt="Cách tạo bảng mới" loading="lazy" src="https://lh3.googleusercontent.com/3aEuwv93q3txbFJ8e3FuQVKrJrjEuXUWw0q7CPA-5HSj2bI825rTsJbat_R8tjT27jmElYf6FBf0t66MybTYEqhtkx6SZu0aGn8GP8oo90ZvHo2-W6Bzh-IH0ajsxrqZ468l4r0nFl0=w2400" width="320"></a></p>
+</li>
+</ol>
+<h2 id="nhap-cac-thuoc-tinh-cua-bang">Nhập các thuộc tính của bảng<a class="headerlink" href="#nhap-cac-thuoc-tinh-cua-bang" title="Permanent link">¶</a></h2>
+<p>Giả sử ta có lược đồ sau:</p>
+<p class="annotate">HocSinh(<strong><ins>MaHocSinh</ins></strong>, Ho, Ten, GioiTinh, NgaySinh, NoiSinh, TonGiao, SoDienThoai, MaLop) (1)</p>
+<ol>
+<li>Tên bảng là <code>HocSinh</code>, còn các thuộc tính được đặt trong ngoặc đơn. <code>MaHocSinh</code> là khóa chính, được quy ước bằng gạch dưới.</li>
+</ol>
+<p>Bảng HocSinh được mô tả như dưới đây:</p>
+<table>
+<thead>
+<tr>
+<th>Thuộc tính</th>
+<th>Kiểu dữ liệu</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MaHocSinh</td>
+<td>Short Text (7)</td>
+<td>Mã định danh học sinh</td>
+</tr>
+<tr>
+<td>Ho</td>
+<td>Short Text (30)</td>
+<td>Họ và chữ đệm</td>
+</tr>
+<tr>
+<td>Ten</td>
+<td>Short Text (10)</td>
+<td>Tên</td>
+</tr>
+<tr>
+<td>GioiTinh</td>
+<td>Yes/No</td>
+<td>Tạm quy ước nữ là 1, nam là 0</td>
+</tr>
+<tr>
+<td>NgaySinh</td>
+<td>DateTime</td>
+<td>Ngày sinh</td>
+</tr>
+<tr>
+<td>NoiSinh</td>
+<td>Short Text (20)</td>
+<td>Nơi sinh</td>
+</tr>
+<tr>
+<td>QueQuan</td>
+<td>Short Text (20)</td>
+<td>Quê quán</td>
+</tr>
+<tr>
+<td>TonGiao</td>
+<td>Short Text (20)</td>
+<td>Tôn giáo</td>
+</tr>
+<tr>
+<td>SoDienThoai</td>
+<td>Text (10)</td>
+<td>Số điện thoại di động có tối đa 10 chữ số</td>
+</tr>
+<tr>
+<td>MaLop</td>
+<td>Text (5)</td>
+<td>Mã của lớp mà học sinh đó đang học</td>
+</tr>
+</tbody>
+</table>
+<p>Ta lần lượt nhập như sau:</p>
+<ul>
+<li>Nhập tên các thuộc tính vào cột <strong>Field Name</strong>. Lưu ý: không gõ dấu tiếng Việt và khoảng trắng.</li>
+<li>Nhập kiểu dữ liệu tương ứng vào cột <strong>Data Type</strong>.</li>
+<li>Cột <strong>Description</strong> là tùy chọn (optional) nên có thể bỏ qua.</li>
+</ul>
+<p>Đối với những thuộc tính có kiểu <code>Short Text</code> như <code>MaHocSinh</code>, ta nhập thêm số ký tự tối đa ở mục <strong>Field Size</strong> bên dưới. Việc này làm cho người dùng chỉ được nhập dữ liệu có số ký tự bằng hoặc nhỏ hơn 7. Nếu người dùng cố ý nhập hơn 7 thì máy tính sẽ không cho nhập tiếp.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/kG-SrwLrfmizqbRUTFLYiWZzzfIgsF4TKDcRQzVshWbGpBuj8Gk1f633lbAKYpI95d86OqcE9XOhw36vwpPkUzyfzbUw9AM-T2Z3obitLO94VM57z9ii4WuzU3-6ew-ir97CE1dbasw=w2400" data-title="Cách nhập thuộc tính của bảng" data-desc-position="bottom"><img alt="Cách nhập thuộc tính của bảng" loading="lazy" src="https://lh3.googleusercontent.com/kG-SrwLrfmizqbRUTFLYiWZzzfIgsF4TKDcRQzVshWbGpBuj8Gk1f633lbAKYpI95d86OqcE9XOhw36vwpPkUzyfzbUw9AM-T2Z3obitLO94VM57z9ii4WuzU3-6ew-ir97CE1dbasw=w2400" width="600"></a></p>
+<h2 id="tao-khoa-chinh">Tạo khóa chính<a class="headerlink" href="#tao-khoa-chinh" title="Permanent link">¶</a></h2>
+<p>Mỗi bảng có một khóa chính. Khóa chính có thể gồm một hoặc nhiều thuộc tính, dùng để phân biệt các mẫu tin với nhau.</p>
+<p>Trong bảng này, khóa chính là <code>MaHocSinh</code>. Nghĩa là, hai học sinh bất kỳ có thể trùng nhau về họ, tên, giới tính, ngày sinh, v.v... (chẳng hạn anh em song sinh), nhưng <strong>mã định danh</strong> (<code>MaHocSinh</code>) của họ là phải khác nhau.</p>
+<p>Để tạo khóa chính:</p>
+<ol>
+<li>Click chọn <code>MaHocSinh</code>.</li>
+<li>Chọn tab <strong>Table Design</strong>.</li>
+<li>Click nút <strong>Primary Key</strong>.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/khHr9OrXOgn9eYo4lzwPpjkmtjgsCpcQuJy23gOSHBoztiPxGPAdyR0RQz5ksA6AGsFw3-mVXkhPIfAG_aHZmTSmW6rFxEa2a2VJoz6USKBsfnQQs4F04F9adPj7f88NKx3d_uxEz-Y=w2400" data-title="Cách tạo khóa chính của bảng" data-desc-position="bottom"><img alt="Cách tạo khóa chính của bảng" loading="lazy" src="https://lh3.googleusercontent.com/khHr9OrXOgn9eYo4lzwPpjkmtjgsCpcQuJy23gOSHBoztiPxGPAdyR0RQz5ksA6AGsFw3-mVXkhPIfAG_aHZmTSmW6rFxEa2a2VJoz6USKBsfnQQs4F04F9adPj7f88NKx3d_uxEz-Y=w2400" width="480"></a> </p>
+<p>Một biểu tượng chìa khóa sẽ xuất hiện ở phía đầu của thuộc tính.</p>
+<p>Tiếp đó, ta bấm nút <strong>X</strong> để đóng bảng lại. Trong hộp thoại xác nhận <strong>"Do you want to save... "</strong> hiện ra, bạn bấm <strong>Yes</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/V7y4WDVbC8UrzZW9kklHa_aGCpzRl4WqpEsjtuyqQkoazFF5zryG_s9dyzeb2BDHEXeFJtNtnQFtwzu8FeXNpK14ohQ_lLOU93PjIg1PYOsLy9Su5LCW-6lqOhzNSWWunXb6ixd3gng=w2400" data-title="Hộp thoại xác nhận lưu bảng" data-desc-position="bottom"><img alt="Hộp thoại xác nhận lưu bảng" loading="lazy" src="https://lh3.googleusercontent.com/V7y4WDVbC8UrzZW9kklHa_aGCpzRl4WqpEsjtuyqQkoazFF5zryG_s9dyzeb2BDHEXeFJtNtnQFtwzu8FeXNpK14ohQ_lLOU93PjIg1PYOsLy9Su5LCW-6lqOhzNSWWunXb6ixd3gng=w2400" width="320"></a></p>
+<p>Trong hộp thoại <strong>Save As</strong> hiện ra:</p>
+<ol>
+<li>Nhập tên bảng là <code>HocSinh</code>, </li>
+<li>Bấm <em>OK</em>.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/C5jEHR0XyKkfp1pCUj-5ic4NKl20eDfAFJJ4hdk7rgB4HnMG-iZPZUfVksgShMXCWJV-YuIK_ZAkgwdbqPOMbOQp4zW9rGZKwVKFQBVcKZI8UaVqkUFJRURfsYxL9RVHQ-0eF086SQQ=w2400" data-title="Cách đặt tên cho bảng vừa tạo" data-desc-position="bottom"><img alt="Cách đặt tên cho bảng vừa tạo" loading="lazy" src="https://lh3.googleusercontent.com/C5jEHR0XyKkfp1pCUj-5ic4NKl20eDfAFJJ4hdk7rgB4HnMG-iZPZUfVksgShMXCWJV-YuIK_ZAkgwdbqPOMbOQp4zW9rGZKwVKFQBVcKZI8UaVqkUFJRURfsYxL9RVHQ-0eF086SQQ=w2400" width="240"></a></p>
+<p>Vậy là xong. Bảng <code>HocSinh</code> sẽ xuất hiện ở panel <strong>All Access Objects</strong> bên trái.</p>
+<p>Nếu cần đổi tên, ta click phải vào bảng, rồi chọn <strong>Rename</strong>.</p>
+<p>Nếu cần điều chỉnh thiết kế, ta click phải vào bảng, rồi chọn <strong>Design View</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/lqfl6XoAiqabh7m2MgCq0jEgnOP_ef0otIDDcNPJVw5TVLtD2BfCfep9odWTesoZJZH0WxDVJvjOWTO8TAwv3UVSHoD-vlN73Kg8_BbDtk4WWASCZ4oQWz8rJIcnalu2EKEyc83CUS0=w2400" data-title="Cách đổi tên và chỉnh sửa thiết kế của bảng" data-desc-position="bottom"><img alt="Cách đổi tên và chỉnh sửa thiết kế của bảng" loading="lazy" src="https://lh3.googleusercontent.com/lqfl6XoAiqabh7m2MgCq0jEgnOP_ef0otIDDcNPJVw5TVLtD2BfCfep9odWTesoZJZH0WxDVJvjOWTO8TAwv3UVSHoD-vlN73Kg8_BbDtk4WWASCZ4oQWz8rJIcnalu2EKEyc83CUS0=w2400" width="240"></a></p>
+<h2 id="nhap-du-lieu">Nhập dữ liệu<a class="headerlink" href="#nhap-du-lieu" title="Permanent link">¶</a></h2>
+<p>Để kiểm tra bảng, ta thử nhập một số dòng dữ liệu giả vào bằng cách:</p>
+<ol>
+<li>Click đôi bảng <strong>HocSinh</strong> ở panel bên trái.</li>
+<li>
+<p>Nhập thử hai dòng dữ liệu.</p>
+<p>Lưu ý: Do <code>MaHocSinh</code> là khóa chính, ta không được nhập trùng với mã đã có và cũng không được bỏ trống.</p>
+</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://lh3.googleusercontent.com/4n1BgFCBzyWFNBtE532HCmK6pIMztKq9ab4NmUWsauamtFJ0or-Qeg83LBTYW_nHGQeePCMN9vDjmKLgoKhCDIEylYUPE4x7vyzKVn0oCIP2nFogVdGtGL41-HN-z3zYgguBMCZXLBY=w2400" data-title="Dữ liệu trong bảng sau khi nhập" data-desc-position="bottom"><img alt="Dữ liệu trong bảng sau khi nhập" loading="lazy" src="https://lh3.googleusercontent.com/4n1BgFCBzyWFNBtE532HCmK6pIMztKq9ab4NmUWsauamtFJ0or-Qeg83LBTYW_nHGQeePCMN9vDjmKLgoKhCDIEylYUPE4x7vyzKVn0oCIP2nFogVdGtGL41-HN-z3zYgguBMCZXLBY=w2400"></a></p>
+<p>Thông thường, khi nhập dữ liệu, Access sẽ tự động lưu. Nếu ta thay đổi độ rộng các cột thì khi đóng bảng, Access sẽ hiển thị hộp thoại xác nhận lưu.</p>
+<div class="admonition info">
+<p class="admonition-title">Về các tập tin liên quan</p>
+<p>Trong quá trình thao tác, Access tạo ra một tập tin phụ, dung lượng 1 KB, có thể ẩn hoặc hiển thị tùy thuộc thiết lập của Windows.</p>
+<p>Khi hoàn tất công việc, ta phải đóng cửa sổ Access để Windows xóa tập tin phụ này, giúp ta không bị nhầm lẫn giữa các tập tin.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+
+                
+  
+  
+    <div class="donation-button">
+      <a href="https://docs.mrschool.vn/donation/#cach-thuc" class="btn-donate">Bao tôi ly cafe 🧋 nhé!</a>
+    </div>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../retrieve-data-from-tables-practice-3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Thực hành truy vấn dữ liệu - Phần 3">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Thực hành truy vấn dữ liệu - Phần 3
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../create-a-table-in-mysql-workbench/" class="md-footer__link md-footer__link--next" aria-label="Next: Tạo bảng trong MySQL Workbench">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Tạo bảng trong MySQL Workbench
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://docs.mrschool.vn/donation/">Please click here to donate, if possible. Thank you!</a><br>Copyright © 2023 Mr School
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/vtchitruong/vtchitruong.github.io" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/vothachchitruong" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://docs.mrschool.vn/donation/" target="_blank" rel="noopener" title="Please donate!" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M96 64c0-17.7 14.3-32 32-32H448h64c70.7 0 128 57.3 128 128s-57.3 128-128 128H480c0 53-43 96-96 96H192c-53 0-96-43-96-96V64zM480 224h32c35.3 0 64-28.7 64-64s-28.7-64-64-64H480V224zM32 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "../../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.prune", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+    
+
+  
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/extra.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="../../../../javascripts/feedback.js"></script>
+      
+        <script src="../../../../javascripts/floating_action_button.js"></script>
+      
+        <script src="../../../../javascripts/markmap-d3.js"></script>
+      
+        <script src="../../../../javascripts/markmap-lib.js"></script>
+      
+        <script src="../../../../javascripts/markmap-view.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+
+  <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+  <!-- <script src="../../../../assets/javascripts/custom.js"></script> -->
+
+  
+  <!-- <script>
+    // Remove the markmap button
+    const iframe = document.querySelector('iframe');
+
+    iframe.addEventListener('load', () => {
+        const iframeContent = iframe.contentDocument || iframe.contentWindow.document;
+        const brandLink = iframeContent.querySelector('.mm-toolbar a.mm-toolbar-brand');
+        brandLink.style.display = 'none';
+    });
+  </script> -->
+
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html><!-- Donation button at the end of content, conditional -->

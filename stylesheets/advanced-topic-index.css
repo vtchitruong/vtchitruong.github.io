@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advanced-topic-index {
+    width: 480px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.advanced-topic-index p {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.advanced-topic-index h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 35px;
+    line-height: 1.5em;
+}
+
+.advanced-topic-index h1 span {
+    display: block;
+}
+
+.advanced-topic-index h2 {
+    background-color: var(--first-color);
+    color: #fff;
+    margin: 0 5px 0 2px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.advanced-topic-index h2#head {
+    border-radius: 2rem 2rem 0 0;
+    font-weight: normal;
+}
+
+.advanced-topic-index h2#foot {
+    border-radius: 0 0 30px 30px;
+}
+
+.advanced-topic-index .list {
+    list-style: none;
+    text-align: left;
+    margin: 0 5px 0 2px;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.advanced-topic-index .list a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    height: 3rem;
+    align-content: center;
+}
+
+.advanced-topic-index .list a span {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    position: relative;
+    left: 0;
+}
+
+.advanced-topic-index .list a:hover {
+    background-color: rgba(235, 243, 247, 0.7);
+}
+
+.advanced-topic-index .list a:hover span {
+    left: 8px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.advanced-topic-index .list li {
+    margin: 0 0 1px 0;
+    padding: 0;
+}

@@ -1,0 +1,46 @@
+h2 {
+    font-size: 1.2rem;
+    border: 2px solid #0097be;
+    border-left: none;
+    border-radius: 0 30px 30px 0;
+    margin-left: -10px;
+    padding: 10px 20px;
+    width: 30%;
+    text-align: right;
+}
+
+#langlist {
+    color: #fff;
+    background-color: #0097be;
+    margin-left: 50px;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.my-class {
+    color: #9c4957;
+    font-weight: 700;
+    font-size: 1.3rem;
+    word-spacing: 1rem;;
+}
+
+a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #7360f2;
+}
+
+a:hover {
+    color: #fd98a9;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+a:active {
+    color: #fc3758;
+}
