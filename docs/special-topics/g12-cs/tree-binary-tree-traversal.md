@@ -73,9 +73,9 @@ Duyệt sau: D → E → B → F → G → C → A
 
 ---
 
-## Chương trình minh hoạ
+## Chương trình minh họa
 
-Chương trình sau đây minh hoạ các cách duyệt cây nhị phân nêu trên.
+Chương trình sau đây minh họa các cách duyệt cây nhị phân nêu trên.
 
 Trong chương trình, ta sử dụng lại lớp `BinaryTree` và các phương thức của nó ở [bài trước](./tree-implementing-binary-tree-with-1d-array.md){target="_blank"}.
 
