@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"S&#x1eaf;p x&#x1ebf;p","children":[{"content":"B&#xe0;i to&#xe1;n","children":[{"content":"&#x110;&#x1ea7;u v&#xe0;o: m&#x1ea3;ng <code>A</code> g&#x1ed3;m <code>n</code> s&#x1ed1; nguy&#xea;n","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"&#x110;&#x1ea7;u ra: m&#x1ea3;ng <code>A</code> c&#xf3; th&#x1ee9; t&#x1ef1; t&#x103;ng d&#x1ea7;n","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Thu&#x1ead;t to&#xe1;n","children":[{"content":"S&#x1eaf;p x&#x1ebf;p ch&#x1ecd;n","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"S&#x1eaf;p x&#x1ebf;p ch&#xe8;n","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"S&#x1eaf;p x&#x1ebf;p n&#x1ed5;i b&#x1ecd;t","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"v.v...","children":[],"payload":{"tag":"li","lines":"18,19"}}],"payload":{"tag":"h2","lines":"13,14"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":300})</script>
+</body>
+</html>
