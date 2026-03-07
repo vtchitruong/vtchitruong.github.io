@@ -534,7 +534,7 @@ nav:
       - Chia để trị:
         - special-topics/g11-cs/divide-and-conquer-a-simplified-overview.md
         - special-topics/g11-cs/divide-and-conquer-merge-sort.md
-        # - special-topics/divide-and-conquer/quick-sort.md
+        - special-topics/g11-cs/divide-and-conquer-quick-sort.md
     - Lớp 12 CS:
       - Mục lục: special-topics/g12-cs/topic-g12-cs-index.md
       - Hàng đợi:
@@ -743,6 +743,9 @@ nav:
         - Project 5: mos/powerpoint-2016/exam-3/project-5.md
         - Project 6: mos/powerpoint-2016/exam-3/project-6.md
         - Project 7: mos/powerpoint-2016/exam-3/project-7.md
+  - AI:
+    - Generative AI Foundations:
+      - ai/generative-ai-foundations/exam-1.md
 
 # nav_translations:
 #   en: # Target the English language locale

@@ -16,7 +16,7 @@ Người chơi cần phải chuyển toàn bộ đĩa đến cột đích theo q
 - Mỗi lần chỉ được lấy một đĩa nằm trên cùng của một cột và đặt đĩa này lên trên cùng của một cột khác.
 - Đĩa nhỏ phải luôn nằm trên đĩa lớn.
 
-![Minh họa trò chơi có 4 đĩa](images/ha-noi-tower.svg){width="75%" loading=lazy}
+![Minh họa trò chơi có 4 đĩa](images/recursion-ha-noi-tower.png){width="75%" loading=lazy}
 
 *Minh họa trò chơi có 4 đĩa*
 

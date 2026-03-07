@@ -26,7 +26,7 @@ Mảng A có thứ tự tăng dần.
 
 ---
 
-## Thuật toán sắp xếp trộn
+## Thuật toán
 
 Chia mảng `A` thành hai mảng con: nửa trái và nửa phải. 
 
@@ -38,7 +38,7 @@ Tiếp tục *"trộn"* các mảng con nửa trái và nửa phải đã có th
 
 Dựa theo ý tưởng trên, sắp xếp trộn được mô tả theo phương pháp chia để trị như sau:
 
-!!! note "Sắp xếp trộn"
+!!! note "Thuật toán sắp xếp trộn"
 
     **Bước 1: Chia**
 
@@ -64,7 +64,7 @@ Dựa theo ý tưởng trên, sắp xếp trộn được mô tả theo phương
 
 Hình sau minh họa thuật toán sắp xếp trộn đối với mảng `A = [1, 7, 4, 0, 9, 4, 8]`.
 
-![Minh họa thuật toán sắp xếp trộn](../divide-and-conquer/images/merge-sort.svg){ loading=lazy width=420 }
+![Minh họa thuật toán sắp xếp trộn](images/divide-and-conquer-merge-sort.png){loading=lazy width="50%"}
 
 ---
 
@@ -75,7 +75,7 @@ Hình sau minh họa thuật toán sắp xếp trộn đối với mảng `A = [
 Hàm gồm có ba tham số đầu vào:
 
 - `A` là mảng ban đầu cần sắp xếp.
-- `left` và `right` là chỉ số dùng để xác định ranh giới của hai mảng con trái và phải trong mảng A. 
+- `left` và `right` là chỉ số dùng để xác định phạm vi của phần mảng cần xử lý trong mảng `A`.
 
 ```py linenums="37"
 def merge_sort(A, left, right):

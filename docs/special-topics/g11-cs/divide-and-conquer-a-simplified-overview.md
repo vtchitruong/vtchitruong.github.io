@@ -52,7 +52,7 @@ Tùy theo bài toán, thao tác kết hợp có thể đơn giản là thu thậ
 
 Sơ đồ sau minh họa phương pháp chia để trị ở mức đơn giản.
 
-![Sơ đồ minh họa phương pháp chia để trị ở mức đơn giản](images/divide-and-conquer.png){ loading=lazy width=360 }
+![Sơ đồ minh họa phương pháp chia để trị ở mức đơn giản](images/divide-and-conquer.png){loading=lazy width="40%"}
 
 ---
 
