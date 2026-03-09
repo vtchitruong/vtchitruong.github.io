@@ -89,7 +89,7 @@ On Slide 4 Reset the Picture and then Crop the picture to a Shape named Round Di
 
         ![Minh họa hướng dẫn](images/question-06-2.png){loading=lazy}
 
-    3. **Format** tab > click mũi tên của nút **Crop**> **Crop to Shape** > **Select Rectangle: Diagonal Corners Rounded**.
+    3. **Format** tab > click mũi tên của nút **Crop** > **Crop to Shape** > **Select Rectangle: Diagonal Corners Rounded**.
 
         ![Minh họa hướng dẫn](images/question-06-3.png){loading=lazy}
 

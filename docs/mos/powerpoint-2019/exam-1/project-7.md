@@ -6,6 +6,8 @@ You own a small SCUBA diving concession in the Caribbean. You are creating a pre
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/3WeOg30TnvA?si=CIgAOuTG4Pzbn-jB&amp;start=1908" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 Apply the Ripple transition to all of the slides.
@@ -18,6 +20,8 @@ Apply the Ripple transition to all of the slides.
     4. Trong phần **Exciting**, chọn **Ripple**.
     5. Trong nhóm **Timing**, click nút **Apply To All**.
 
+---
+
 ## Task 2
 
 On slide 2, modify the animation so all of the list items enter From Bottom-Right.
@@ -28,6 +32,8 @@ On slide 2, modify the animation so all of the list items enter From Bottom-Righ
     2. Chọn toàn bộ các mục trong danh sách từ **Learn the Basics** đến **Underwater World**.
     3. Chọn tab **Animations**.
     4. Trong nhóm **Animation**, click nút **Effect Options**, rồi chọn **From Bottom-Right**.
+
+---
 
 ## Task 3
 
@@ -42,6 +48,8 @@ On slide 3, next to the list item Pay $75, insert a comment that reads Update th
     5. Trong bảng **Comment** bên phải, gõ **Update the fee to $90**.
     6. Gõ **Enter** hoặc click ra chỗ khác.
 
+---
+
 ## Task 4
 
 On slide 5, modify the animation so the list items appear in the order Theory, Skills, Ocean Dive.
@@ -54,6 +62,8 @@ On slide 5, modify the animation so the list items appear in the order Theory, S
     4. Trong bảng **Animation**, click chọn mục **Ocean Dive**.
     5. Cũng trong bảng **Animation**, click hai lần nút mũi tên xuống để di chuyển **Ocean Dive** đến vị trí thứ 3.
     6. Click nút **X** ở góc phải trên để đóng bảng **Animation**.
+
+---
 
 ## Task 5
 

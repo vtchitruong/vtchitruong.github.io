@@ -6,6 +6,8 @@ A tourism office in southern Utah has hired you to modify a slide presentation o
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/3WeOg30TnvA?si=CIgAOuTG4Pzbn-jB&amp;start=801" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 Duplicate the slide titled Most Popular.
@@ -15,6 +17,8 @@ Duplicate the slide titled Most Popular.
     1. Trong **Navigation Pane** bên trái, chọn **Slide 3**.
     2. Click phải lên slide này rồi chọn mục **Duplicate Slide**.
 
+---
+
 ## Task 2
 
 Make the slide titled Other Activities visible.
@@ -23,6 +27,8 @@ Make the slide titled Other Activities visible.
 
     1. Trong **Navigation Pane** bên trái, chọn slide **Other Activities**.
     2. Click phải lên slide này rồi chọn mục **Unhide Slide**.
+
+---
 
 ## Task 3
 
@@ -34,6 +40,8 @@ Display the date in the upper-right corner of handouts created from this present
     2. Trong tab **Handout Master**, nhóm **Placeholders**, đánh dấu check vào mục **Date**.
     3. Trong nhóm **Close**, click nút **Close Master View**.
 
+---
+
 ## Task 4
 
 Reorder the presentation so the last slide titled Adventurous Trails is slide 3.
@@ -43,6 +51,8 @@ Reorder the presentation so the last slide titled Adventurous Trails is slide 3.
     1. Trong **Navigation Pane** bên trái, chọn slide cuối cùng.
     2. Nhấn giữ chuột và kéo các slide đến vị trí theo yêu cầu.
     3. Nhả chuột.
+
+---
 
 ## Task 5
 

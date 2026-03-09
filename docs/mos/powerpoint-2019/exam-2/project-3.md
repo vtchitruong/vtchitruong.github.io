@@ -6,6 +6,8 @@ You work for a travel agency. You are preparing a presentation to promote your c
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/u3FK8zHOmRM?si=qIfdRAq2H92F5pkE&amp;start=657" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 Rename the Untitled Section to Intro.
@@ -17,6 +19,8 @@ Rename the Untitled Section to Intro.
     3. Gõ tên **Intro**.
     4. Click nút **Rename**.
 
+---
+
 ## Task 2
 
 Apply the Bevel Rectangle style to the image on the Backpacking Trips slide.
@@ -26,6 +30,8 @@ Apply the Bevel Rectangle style to the image on the Backpacking Trips slide.
     1. Trong bảng **Navigation Pane** bên trái, chọn slide **Backpacking Trips**.
     2. Click chọn ảnh bên phải.
     3. Trong tab **Picture Tools Format**, trong nhóm **Picture Styles**, click **Bevel Rectangle**.
+
+---
 
 ## Task 3
 
@@ -38,6 +44,8 @@ Reposition the center image on the Our Rock Crawling adventures... slide to Alig
     3. Trong tab **Picture Tools Format**, trong nhóm **Arrange**, click **Align**.
     4. Chọn **Align Middle**.
     5. Trong nhóm **Arrange**, chọn **Bring Forward** và click **Bring to Front**.
+
+---
 
 ## Task 4
 
@@ -52,6 +60,8 @@ Insert a Summary Zoom slide between slides 1 and 2. Include all of the slides ex
         Nếu cần, đánh dấu chọn cho tất cả slide khác.
         Giữ nguyên các thiết lập mặc định khác.
     5. Click **Insert**.
+
+---
 
 ## Task 5
 

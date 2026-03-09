@@ -6,6 +6,8 @@ Your family owns a small bait and tackle shop next to a lake popular for its fis
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/3WeOg30TnvA?si=CIgAOuTG4Pzbn-jB&amp;start=1383" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 Add the text Summer Success to the Subject property of this file.
@@ -18,6 +20,8 @@ Add the text Summer Success to the Subject property of this file.
     4. Click ô **Subject** rồi gõ **Summer Success**.
     5. Gõ **Enter** hoặc click ra ngoài ô.
     6. Góc trên bên trái màn hình, click nút mũi tên quay về.
+
+---
 
 ## Task 2
 
@@ -33,6 +37,8 @@ On slide 2, apply the color Yellow to the text 10%, 12%, and 60% and equalize th
     6. Trong phần **Effects**, đánh dấu check vào mục **Equalize Character Height**.
     7. Click **OK**.
 
+---
+
 ## Task 3
 
 On slide 2, apply the Inside: Bottom Right shadow effect to the illustration of the sun.
@@ -45,6 +51,8 @@ On slide 2, apply the Inside: Bottom Right shadow effect to the illustration of 
     4. Trong nhóm **Shape Styles**, click nút **Shape Effects**.
     5. Chọn mục **Shadow**, trong phần **Inner**, click **Inside: Bottom Right**.
 
+---
+
 ## Task 4
 
 On slide 5, crop the image to an Oval shape.
@@ -56,6 +64,8 @@ On slide 5, crop the image to an Oval shape.
     3. Chọn tab **Picture Tools Format**.
     4. Trong nhóm **Size**, click nút mũi tên **Crop** để mở menu.
     5. Chọn mục **Crop to Shape**, trong phần **Basic Shapes**, chọn **Oval**.
+
+---
 
 ## Task 5
 

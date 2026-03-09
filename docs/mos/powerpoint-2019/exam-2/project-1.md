@@ -6,6 +6,8 @@ You work for a business that rents recreational vehicles. You are developing a p
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/u3FK8zHOmRM?si=qIfdRAq2H92F5pkE&amp;start=53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 On slide 4, crop the image to an Oval shape and resize it to a Height of 3.5" (8.9 cm) and a Width of 4.5" (11.43 cm).
@@ -20,6 +22,8 @@ On slide 4, crop the image to an Oval shape and resize it to a Height of 3.5" (8
     6. Chỉnh giá trị **Size** là **Height**: **3.5"** (8.9 cm) và **Width**: **4.5"** (11.43 cm).
     6. Click ra chỗ khác để bỏ chọn hình.
 
+---
+
 ## Task 2
 
 Center align the equal (=) shapes on slide 5 to the top shape and then group the shapes.
@@ -33,6 +37,8 @@ Center align the equal (=) shapes on slide 5 to the top shape and then group the
     5. Trong menu **Align**, chọn **Align Center**.  
     6. Trong nhóm **Arrange**, click vào **Group**, rồi click **Group** lần nữa.
 
+---
+
 ## Task 3
 
 Insert a legend above the chart on slide 6.
@@ -44,6 +50,8 @@ Insert a legend above the chart on slide 6.
     3. Trong tab **Chart Tools Design**, trong nhóm **Chart Layouts**, click vào **Add Chart Element**.  
     4. Chọn **Legend** và click chọn **Top**.
 
+---
+
 ## Task 4
 
 Convert the text on slide 7 to a Target List graphic.
@@ -53,6 +61,8 @@ Convert the text on slide 7 to a Target List graphic.
     1. Trong bảng **Navigation Pane** bên trái, chọn **slide 7**.
     2. Chọn tất cả ba mục của danh sách.
     3. Trong tab **Home**, trong nhóm **Paragraph**, click **Convert to SmartArt**. Chọn **Target List**.
+
+---
 
 ## Task 5
 

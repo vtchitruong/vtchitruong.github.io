@@ -6,6 +6,8 @@ You work for a small business center that offers certification on Microsoft Offi
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/u3FK8zHOmRM?si=qIfdRAq2H92F5pkE&amp;start=1120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 Configure printing options to print slides 1, 3, and 4 as full-page slides.
@@ -19,6 +21,8 @@ Configure printing options to print slides 1, 3, and 4 as full-page slides.
     5. Click chọn **Full Page Slides**.
     6. Click mũi tên ở góc trên bên trái để quay về.
 
+---
+
 ## Task 2
 
 Prepare this presentation to be printed in Grayscale.
@@ -29,6 +33,8 @@ Prepare this presentation to be printed in Grayscale.
     2. Chọn mục **Print**.
     3. Bên dưới **Settings**, mục cuối cùng, chỉnh **Color** thành **Grayscale**.
     4. Click mũi tên ở góc trên bên trái để quay về.
+
+---
 
 ## Task 3
 
@@ -44,6 +50,8 @@ Format the text on slide 4 into two columns with 0.5" (1.27 cm) spacing between 
         **Spacing**: **0.5" (1.27 cm)** 
     5. Click **OK**.
 
+---
+
 ## Task 4
 
 On slide 5, add a new shape to the SmartArt graphic between Invite Students from Course and Get Accepted to Camp. Insert the text Enroll Students into the new shape.
@@ -54,6 +62,8 @@ On slide 5, add a new shape to the SmartArt graphic between Invite Students from
     2. Chọn hình chứa dòng chữ **Invite Students from Course**.
     3. Trong tab **SmartArt Tools Design**, trong nhóm **Create Graphic**, click mũi tên xuống của **Add Shape** rồi chọn **Add Shape After**.
     4. Click vào trong hình rồi gõ **Enroll Students**.
+
+---
 
 ## Task 5
 

@@ -6,6 +6,8 @@ You are developing a presentation showing the benefits of using the FusionTomo b
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/3WeOg30TnvA?si=CIgAOuTG4Pzbn-jB&amp;start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 On the Slide Master, change the theme colors to Blue.
@@ -24,6 +26,8 @@ On the Slide Master, change the theme colors to Blue.
     4. Dưới hàng màu **Office**, chọn hàng màu **Blue**.
         (Gợi ý: Khi bạn áp dụng một theme hoặc chỉnh sửa các thành phần của theme (chẳng hạn như: Colors, Fonts, Effects) thì nó sẽ tự động chỉnh sửa luôn Slide Master. Do đó, không cần mở Slide Master để chỉnh những cái như vầy).
 
+---
+
 ## Task 2
 
 On Slide 2, create a bulleted list from the text Leading . . . recognition. For the bullet, use the picture TomoLogo.png located in the GMetrixTemplates folder.
@@ -36,6 +40,8 @@ On Slide 2, create a bulleted list from the text Leading . . . recognition. For 
     4. Trong cửa số pop-up **Bullets and Numbering**, chọn tab **Bulleted**, click nút **Picture**.
     5. Trong cửa số pop-up **Insert Pictures**, click **Browse**, nằm bên phải mục **From a file**, tìm đến thư mục **GMetrixTemplates**.
     6. Chọn file **TomoLogo.png** rồi click nút **Insert**.
+
+---
 
 ## Task 3
 
@@ -51,6 +57,8 @@ Insert a new slide 3 using the slide titled Board of Directors from FT_Draft.ppt
     5. Click phải lên slide **Board of Directors** (tức **Slide 3**) rồi chọn **Insert Slide**. (Gợi ý: Cách làm khác, click luôn vào slide đó để chèn vào.)
     6. Click nút **X** ở góc phải trên để đóng bảng **Reuse Slides**.
 
+---
+
 ## Task 4
 
 In the right pane of the slide titled FusionTomo, insert the video FusionTomo.mp4 located in the GMetrixTemplates folder.
@@ -63,6 +71,8 @@ In the right pane of the slide titled FusionTomo, insert the video FusionTomo.mp
         (Gợi ý: Cách làm khác, là click đại đâu đó  you bên trong cái placeholder, sau đó trong tab **Insert**, nhóm **Media**, click **Video** rồi chọn **Video on My PC...**)
     4. Tìm đến thư mục **GMetrixTemplates** rồi chọn file **FusionTomo.mp4**.
     5. Click nút **Insert**.
+
+---
 
 ## Task 5
 

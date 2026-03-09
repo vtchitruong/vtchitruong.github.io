@@ -6,6 +6,8 @@ A shop you manage sells custom-flavored ice cream. You are creating a presentati
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/3WeOg30TnvA?si=CIgAOuTG4Pzbn-jB&amp;start=1649" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 Locate the center of the slide by displaying the alignment guides.
@@ -17,6 +19,8 @@ Locate the center of the slide by displaying the alignment guides.
     3. Trong nhóm **Show**, đánh dấu check vào mục **Guides**.
     
     (Gợi ý: Giao điểm của hai đường dẫn là tâm của slide.)
+
+---
 
 ## Task 2
 
@@ -32,6 +36,8 @@ Change the chart on slide 3 to a Clustered Bar.
     6. Trong bảng bên phải, chọn biểu tượng **Clustered Bar**.
     7. Click **OK**.
 
+---
+
 ## Task 3
 
 On the last slide, reorder the shapes so the diagram reads Quality Ingredients + Exciting Flavors → Amazing Ice Cream.
@@ -46,6 +52,8 @@ On the last slide, reorder the shapes so the diagram reads Quality Ingredients +
     6. Chọn tab **SmartArt Tools Design**, trong nhóm **Create Graphic**, click một lần nút **Move Down**.
     7. Click nút **X** ở góc trái trên để đóng bảng nội dung.
 
+---
+
 ## Task 4
 
 Apply a transition effect duration of 1.50 to all of the slides in the presentation.
@@ -55,6 +63,8 @@ Apply a transition effect duration of 1.50 to all of the slides in the presentat
     1. Chọn tab **Transitions**.
     2. Trong nhóm **Timing**, click nút mũi tên xuống của mục **Duration** để chỉnh thành **1.50**. (Gợi ý: có thể gõ giá trị vào ô.)
     3. Cũng trong nhóm này, click nút **Apply To All**.
+
+---
 
 ## Task 5
 

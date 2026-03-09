@@ -6,6 +6,8 @@ You are the assistant to a marketing director. You are preparing a presentation 
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/u3FK8zHOmRM?si=qIfdRAq2H92F5pkE&amp;start=283" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 Import Marketing.rtf located in the GmetrixTemplates folder to create two new slides immediately following the title slide.
@@ -16,6 +18,8 @@ Import Marketing.rtf located in the GmetrixTemplates folder to create two new sl
     2. Trong tab **Home**, trong nhóm **Slides**, click **New Slide** rồi chọn **Slides from Outline...**
     3. Trong thư mục **GMetrixTemplates**, chọn **Marketing.rtf**.
     4. Click **Insert**. (Gợi ý: Hai slide mới sẽ được tạo với tiêu đề **Interesting Statistics** và **Best Ways to Start**.)
+
+---
 
 ## Task 2
 
@@ -33,6 +37,8 @@ On the Summary slide, insert a Screen Recording of the video from the Investing 
     Khi đếm ngược 3-2-1 hoàn tất, click nút **Play** để phát video.
     Trong khi theo dõi bộ đếm thời gian phát, trong bảng điều khiển **Screen Recording** ở đầu màn hình (di chuyển con trỏ lên đó để hiển thị), canh thời gian phát từ 00:13:00 đến 00:14:50, rồi click nút **Stop**. (Lưu ý: Video sẽ tiếp tục phát đến hết và phần quay màn hình sẽ tự động chèn vào slide **Summary**.)
 
+---
+
 ## Task 3
 
 Delete the Word of Mouth row from the table on the Generating Income slide.
@@ -42,6 +48,8 @@ Delete the Word of Mouth row from the table on the Generating Income slide.
     1. Trong bảng **Navigation Pane** bên trái, chọn slide có bảng **Generating Income**.
     2. Click chỗ bất kỳ trong hàng **Word of Mouth**.
     3. Trong tab **Table Tools Layout**, trong nhóm **Rows & Columns**, click menu **Delete** rồi chọn **Delete Rows**.
+
+---
 
 ## Task 4
 
@@ -54,6 +62,8 @@ On the slide Investing in Internet Technologies, edit the video End Time to stop
     3. Trong tab **Video Tools Playback**, trong nhóm **Editing**, click **Trim Video**.
     4. Trong cửa sổ pop-up **Trim Video**, chỉnh thời gian kết thúc thành **00:14**. 
     5. Click **OK**.
+
+---
 
 ## Task 5
 

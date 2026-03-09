@@ -6,6 +6,8 @@ The firm where you work counsels investors. You are an investment adviser, and y
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/u3FK8zHOmRM?si=qIfdRAq2H92F5pkE&amp;start=1339" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+---
+
 ## Task 1
 
 Remove the Header and Footer from the Notes Master.
@@ -16,6 +18,8 @@ Remove the Header and Footer from the Notes Master.
     2. Trong tab **Notes Master**, trong nhóm **Placeholders**, bỏ đánh dấu mục **Header** và mục **Footer**.
     3. Trong nhóm **Close**, click **Close Master View**.
 
+---
+
 ## Task 2
 
 Change this presentation to be viewed in Widescreen (16:9) and ensure the fit.
@@ -25,6 +29,8 @@ Change this presentation to be viewed in Widescreen (16:9) and ensure the fit.
     1. Trong tab **Design**, trong nhóm **Customize**, click **Slide Size**.
     2. Chọn **Widescreen**.
     3. Click **Ensure Fit**.
+
+---
 
 ## Task 3
 
@@ -37,6 +43,8 @@ Configure the print settings to print Notes Pages for the presentation.
     3. Bên dưới **Settings**, click mũi tên thứ hai để chỉnh từ **Full Page Slides** thành **Notes Pages**.
     4. Click mũi tên ở góc trên bên trái để quay về.
 
+---
+
 ## Task 4
 
 On slide 5, add a Pareto Histogram chart using default settings and data.
@@ -48,6 +56,8 @@ On slide 5, add a Pareto Histogram chart using default settings and data.
     3. Trong cửa sổ pop-up **Insert Chart**, chọn mục **Histogram** bên trái.
     4. Trong danh sách của **Histogram**, click chọn **Pareto**.
     5. Click **OK**.
+
+---
 
 ## Task 5
 
