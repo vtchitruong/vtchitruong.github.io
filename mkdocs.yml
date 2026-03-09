@@ -745,7 +745,7 @@ nav:
         - Project 7: mos/powerpoint-2016/exam-3/project-7.md
   - AI:
     - Generative AI Foundations:
-      - ai/generative-ai-foundations/exam-1.md
+      - Exam 1: ai/generative-ai-foundations/exam-1.md
 
 # nav_translations:
 #   en: # Target the English language locale
