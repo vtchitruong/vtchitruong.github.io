@@ -594,7 +594,8 @@ nav:
       - advanced/graph/bellman-ford.md
       - advanced/graph/floyd-warshall.md
     - Quy hoạch động:
-      - Mục lục: advanced/dynamic-programming/topic-index.md
+      - Mục lục: advanced/dynamic-programming/topic-dynamic-programming-index.md
+      - advanced/dynamic-programming/jump-steps-in-the-sequence.md
       - advanced/dynamic-programming/rewardstudent.md
       - advanced/dynamic-programming/lis.md
       - advanced/dynamic-programming/knapsack.md
