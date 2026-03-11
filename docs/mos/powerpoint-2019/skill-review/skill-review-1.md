@@ -167,7 +167,7 @@ Start the slide show from the beginning. On Slide 5 use the highlighter with Red
     4. Kéo chuột để gạch dưới câu hỏi đầu tiên.
     5. Nhấn **Esc** > Khi gặp thông báo, thì chọn **Keep**.
         
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-11.png){loading=lazy}
 
 ---
 
@@ -181,9 +181,9 @@ On Slide 2 insert a Clustered Column Chart inside the empty text box. Resize the
     2. **Insert Chart** > **Clustered Column** > **OK**.
     3. Trong Excel, kéo chuột chọn vùng và nhập dữ liệu như hình:
     
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-12-3-1.png){loading=lazy}
     
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-12-3-2.png){loading=lazy}
 
     4. Đóng cửa sổ Excel.
 
@@ -198,9 +198,7 @@ Convert the question list in Slide 5 to the Vertical Bullet List Smart Art.
     1. Chọn slide 5 > chọn text box chứa 5 câu hỏi.
     2. **Home** tab > **Convert to SmartArt** > **Vertical Bullet List**.
         
-        ![Minh họa hướng dẫn](images/){loading=lazy}
-
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-13.png){loading=lazy}
 
 ---
 
@@ -213,7 +211,7 @@ Modify the Text Box on slide 3 with the Quote from Dr. Seuss by adding the Shape
     1. Chọn Slide 3 > chọn text box có chữ **Quote from Dr. Seuss**.
     2. **Shape Format** tab > **Shape Fill** > **Gradient** > **Linear Down**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-14.png){loading=lazy}
 
 ---
 
@@ -226,7 +224,7 @@ Change the print settings of the document to Uncollated, and Grayscale.
     1. **File** tab > **Print** tab > **Collated** > Uncollated.
     2. **Color** > **Grayscale**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-15.png){loading=lazy}
 
 ---
 
@@ -239,11 +237,11 @@ On slide 4, apply the Table hierarchy layout, and the Subtle Effect style to the
     1. Chọn slide 4 > chọn hình SmartArt.
     2. **SmartArt Design** tab > click nút mũi tên **More** > **Table Hierarchy**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-16-2.png){loading=lazy}
 
     3. **SmartArt Design** tab > **Subtle Effect**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-16-3.png){loading=lazy}
 
 ---
 
@@ -256,7 +254,7 @@ On slide 2, change the shape of the video placeholder to the Rectangle: Rounded 
     1. Chọn Slide 2 > chọn video box ngay dưới tiêu đề **Fusion Tomo**
     2. **Video Tools/Format** tab > **Video Shape** > **Rectangle: Rounded Corners**.
         
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-17.png){loading=lazy}
 
 ---
 
@@ -269,7 +267,7 @@ Add a section above Slide 1 named Introduction and a section above Slide 3 named
     1. Chọn Slide 1.
     2. **Home** tab > **Section** > **Add Section**.
    
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-18-2.png){loading=lazy}
 
     3. Trong hộp thoại, gõ **SWOT**.
 
@@ -284,11 +282,11 @@ On Slide 1, add the Cash Register sound to the first animation.
     1. Chọn Slide 1.
     2. **Animations** tab > **Animation Pane** > chọn hiệu ứng thứ nhất > click nút mũi tên xuống > **Effect Options...**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-19-2.png){loading=lazy}
 
     3. Trong hộp thoại hiện ra, mục **Sound**: chọn **Cash Register** > **OK**.
         
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-19-3.png){loading=lazy}
 
 ---
 
@@ -301,7 +299,7 @@ On Slide 2, select the words Fusion Tomo in the title and add a comment that say
     1. Chọn Slide 2 > chọn tiêu đề **Fusion Tomo**.
     2. **Review** tab > **New Comment** > gõ **Delete Fusion Tomo so that the title is SWOT Video**.
         
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-20.png){loading=lazy}
 
 ---
 
@@ -314,9 +312,9 @@ In the current presentation Delete the second Comment in the document.
     1. Chọn Slide 1.
     2. **Review** tab > Trong **Comments** group, click nút **Next** hai lần > click nút xoá comment.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-21-2-1.png){loading=lazy}
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-21-2-2.png){loading=lazy}
 
 ---
 
@@ -328,7 +326,7 @@ On Slide 3 format the Competition Chart to show the Data Labels at Best Fit.
 
     1. Chọn slide 3 > click phải lên biểu đồ > **Data Labels** > **Best Fit**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-22.png){loading=lazy}
 
 ---
 
@@ -340,15 +338,15 @@ On Slide 3 format the chart Legend to be positioned at the Bottom with a Solid F
 
     1. Chọn slide 3 > chọn biểu đồ > **Chart Design** tab > **Add Chart Element** > **Legend** > **More Legend Options**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-23-1.png){loading=lazy}
 
     2. Click nút dấu + như hình > **Legend** > **Bottom**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-23-2.png){loading=lazy}
 
     3. Chọn nút hình thùng sơn > **Fill** > Chọn **Automatic** > chọn màu **Rose, Accent 2**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-23-3.png){loading=lazy}
 
 ---
 
@@ -362,7 +360,7 @@ Apply the Zoom animation to the title of Slide 1.
     
     2. **Animations** tab > trong phần **Entrance** > **Zoom**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-24.png){loading=lazy}
 
 ---
 
@@ -375,7 +373,7 @@ On Slide 4, apply the Loops motion path to the image.
     1. Chọn slide 4 > chọn hình dancing shoes.
     2. **Animations** tab> **Add Animation** > Trong phần **Motion Paths**, chọn **Loops**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-25.png){loading=lazy}
 
 ---
 
@@ -398,7 +396,7 @@ Modify the transition on Slide 1 to Advance After 5 seconds, and not on click.
     1. Chọn Slide 1.
     2. **Transitions** tab > Mục **Advance Slide**: bỏ chọn **On Mouse Click** > Đánh dấu chọn **After** > Gõ **00:05:00** (5 giây).
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-27.png){loading=lazy}
 
 ---
 
@@ -411,7 +409,7 @@ In Slide 4, set the text box with the bulleted list to have Two Columns.
     1. Chọn Slide 4 > chọn text box liên quan.
     2. **Home** > **Add or Remove Columns** > **Two Columns**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-28.png){loading=lazy}
 
 ---
 
@@ -424,7 +422,7 @@ Insert additional slides to the end of the current slideshow using the outline f
     1. Chọn slide cuối.
     2. **Home** tab > **New Slide** > **Slides from Outline**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-29-2.png){loading=lazy}
 
     3. Chọn tập tin **Outline.docx** > **Insert**.
 
@@ -438,7 +436,7 @@ Create a handout of the presentation with blank lines below the slides. Save the
 
     1. **File** tab > **Export** > **Create Handouts** > click nút **Create Handouts**.
     
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-30-1.png){loading=lazy}
     
     2. Trong hộp thoại **Send to Microsoft Word**, chọn mục **Blank lines below slides** > **OK**.
     3. Trong cửa sổ Word, lưu tập tin với tên MyHandout (đừng gõ .docx) > Đóng cửa sổ Word.
@@ -453,13 +451,13 @@ On Slide 5 insert a new row on top of the first table, and merge the cells. Type
 
     1. Chọn Slide 5 > click phải vào ô bất kỳ trong hàng đầu tiên > **Insert** > **Insert Above**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-31-1.png){loading=lazy}
 
-    3. Làm tương tự > chọn mục **Merge Cells**.
+    2. Làm tương tự > chọn mục **Merge Cells**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-31-2.png){loading=lazy}
 
-    4. Trong ô mới, gõ **Customer Orientation**.
+    3. Trong ô mới, gõ **Customer Orientation**.
 
 ---
 
@@ -473,7 +471,7 @@ On Slide 3 change the Chart Type to Clustered Bar.
     2. **Chart Design** tab > **Change Chart Type**.
     3. Trong hộp thoại **Change Chart Type** > **Bar** > **Clustered Bar**> **OK**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-32.png){loading=lazy}
 
 ---
 
@@ -486,7 +484,7 @@ On Slide 5, change the animation of the text box The Marketing Way to start Afte
     1. Chọn Slide 5.
     2. **Animations** tab > thiết lập như hình:
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-33.png){loading=lazy}
 
 ---
 
@@ -501,7 +499,7 @@ Nhớ chỉ chọn đường viền ngoài của biểu đồ.
     
     2. **Format** tab > click mũi tên của **Shape Styles** gallery > chọn **Colored Outline - Orange, Accent 1**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-34.png){loading=lazy}
 
 ---
 
@@ -526,7 +524,7 @@ Create a New Photo Album and insert the pictures photo1.jpg, photo2.jpg and phot
     2. **Insert** tab > **Photo Album** > **New Photo Album**.
     3. Trong hộp thoại **Photo Album**, click nút **File/Disk** để thêm hình > Điều chỉnh lại thứ tự các hình > **Create**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-36-3.png){loading=lazy}
 
 ---
 
@@ -540,7 +538,7 @@ Select Slide 3. Change the view of the presentation to Notes Page. Below Slide 3
     2. **View** tab > **Notes Page**.
     3. Trong phần ghi chú ngay dưới slide 3, gõ **Take reading with you through technology**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-37-3.png){loading=lazy}
 
 ---
 
@@ -553,7 +551,7 @@ Apply a footer to all of the slides in the presentation except the title slide. 
     1. **Insert** tab > **Header & Footer**.
     2. Chọn như hình:
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-38.png){loading=lazy}
 
     3. **Apply to all**.
 
@@ -569,7 +567,7 @@ Change the view of the slideshow to Grayscale, and show Gridlines.
     2. **Grayscale** tab > **Grayscale**.
     3. **View** tab > **Gridlines**.
         
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-39.png){loading=lazy}
 
 ---
 
@@ -581,8 +579,10 @@ In the document properties, add the title Staff Training.
 
     1. **File** tab > **Info** > **Properties** > **Advanced Properties**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-40-1.png){loading=lazy}
 
     2. Trong hộp thoại hiện ra, chọn **Summary** tab > mục **Title**: gõ **Staff Training** > **OK**.
 
-        ![Minh họa hướng dẫn](images/){loading=lazy}
+        ![Minh họa hướng dẫn](images/question-40-2.png){loading=lazy}
+        
+        ![Minh họa hướng dẫn](images/question-01-2.png){loading=lazy}
