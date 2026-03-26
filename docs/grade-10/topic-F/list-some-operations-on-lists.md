@@ -175,46 +175,46 @@ Thêm 4 phần tử: [-1, 1, 7, 4, 0, 9, 4, 8, 8, 2, 4, 5, 5]
 
 ---
 
-## Xoá phần tử
+## Xóa phần tử
 
 | Hàm | Công dụng |
 | --- | --- |
-| `L.remove(e)` | Xoá phần tử có giá trị `e` khỏi danh sách `L`. |
-| `L.pop(p)` | Xoá phần tử tại vị trí `p` khỏi danh sách `L`. |
-| `L.clear()` | Xoá toàn bộ phần tử trong danh sách `L`. |
+| `L.remove(e)` | Xóa phần tử có giá trị `e` khỏi danh sách `L`. |
+| `L.pop(p)` | Xóa phần tử tại vị trí `p` khỏi danh sách `L`. |
+| `L.clear()` | Xóa toàn bộ phần tử trong danh sách `L`. |
 
 Ví dụ:  
-Dòng lệnh 34 xoá phần tử có giá trị là `0`.
+Dòng lệnh 34 xóa phần tử có giá trị là `0`.
 
 ```py linenums="34" hl_lines="3"
-    # Xoá phần tử có giá trị là 0
+    # Xóa phần tử có giá trị là 0
     e = 0
     L.remove(e)
 
-    print(f'Xoá phần tử 0: {L}')
+    print(f'Xóa phần tử 0: {L}')
 ```
 
 Chạy đoạn mã trên, kết quả như sau:
 
 ```pycon
-Xoá phần tử 0: [-1, 1, 7, 4, 9, 4, 8, 8, 2, 4, 5, 5]
+Xóa phần tử 0: [-1, 1, 7, 4, 9, 4, 8, 8, 2, 4, 5, 5]
 ```
 
 Ví dụ:  
 Dòng lệnh 42 xoá phần tử đầu danh sách, tức có chỉ số là `0`.
 
 ```py linenums="40" hl_lines="3"
-    # Xoá phần tử đầu danh sách
+    # Xóa phần tử đầu danh sách
     p = 0
     L.pop(p)
 
-    print(f'Xoá phần tử đầu tiên: {L}')
+    print(f'Xóa phần tử đầu tiên: {L}')
 ```
 
 Chạy đoạn mã trên, kết quả như sau:
 
 ```pycon
-Xoá phần tử đầu tiên: [1, 7, 4, 9, 4, 8, 8, 2, 4, 5, 5]
+Xóa phần tử đầu tiên: [1, 7, 4, 9, 4, 8, 8, 2, 4, 5, 5]
 ```
 
 !!! warning "Lưu ý"

@@ -72,7 +72,7 @@ Cho biết số lượng mẫu tin hiện có trong bảng `scores`.
 
 ```sql linenums="1"
 -- Đếm số lượng mẫu tin trong bảng scores
-select count(*) as "Số lượng"
+select count(*) as "Số lượng" -- (1)!
 from scores;
 ```
 { .annotate }

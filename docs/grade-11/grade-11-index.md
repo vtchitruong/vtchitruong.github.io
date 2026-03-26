@@ -1,3 +1,7 @@
+---
+show_donation: false
+---
+
 # Chương trình khung lớp 11 theo Chương trình GDPT 2018
 
 ## Sơ đồ tóm tắt

@@ -20,7 +20,7 @@ Người quản trị mạng chịu trách nhiệm xây dựng, quản lý, và 
 
 - Cài đặt hệ thống mạng.
 - Cấu hình các thiết bị mạng: router, switch, firewall.
-- Bảo đám mạng hoạt động ổn định và hiệu quả.
+- Bảo đảm mạng hoạt động ổn định và hiệu quả.
 
 2\. Công việc cụ thể:
 

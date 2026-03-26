@@ -2,7 +2,7 @@
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách biểu diễn cây nhị ph6an bằng mảng một chiều.
+    Bài này trình bày cách biểu diễn cây nhị phân bằng mảng một chiều.
 
 ## Khái quát
 

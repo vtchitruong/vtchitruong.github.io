@@ -146,7 +146,7 @@ The complete code is available at:
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
-| biến tạm thời | temporatory variable |
+| biến tạm thời | temporary variable |
 | hoán vị (hai phần tử) | swap |
 | sắp xếp chèn | insertion sort |
 | so sánh | compare |
