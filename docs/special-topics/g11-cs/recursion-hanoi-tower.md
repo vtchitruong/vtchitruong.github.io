@@ -2,7 +2,7 @@
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách giải bài toán tháp Hà Nội bằng kỹ thuật đệ quy.
+    Bài này trình bày bài toán tháp Hà Nội bằng kỹ thuật đệ quy.
 
 ## Bài toán
 

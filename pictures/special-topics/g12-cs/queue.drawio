@@ -1,0 +1,63 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="queue" id="blD7ZZ_PqU-iT5JnfKSL">
+    <mxGraphModel dx="854" dy="632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="690" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f7fa;strokeColor=none;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;verticalAlign=top;fontSize=16;fontColor=#56A69E;" value="hàng đợi" vertex="1">
+          <mxGeometry height="110" width="680" x="180" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#72bcd4;fontFamily=consolas;fontSize=16;fontColor=#FFFFFF;arcSize=30;" value="&#39;Bernard Arnault&#39;" vertex="1">
+          <mxGeometry height="50" width="120" x="200" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#72bcd4;fontFamily=consolas;fontSize=16;fontColor=#FFFFFF;arcSize=30;" value="&#39;Mark Zuckerberg&#39;" vertex="1">
+          <mxGeometry height="50" width="120" x="590" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#72bcd4;fontFamily=consolas;fontSize=16;fontColor=#FFFFFF;arcSize=30;" value="&#39;Larry Ellison&#39;" vertex="1">
+          <mxGeometry height="50" width="120" x="720" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#72bcd4;fontFamily=consolas;fontSize=16;fontColor=#FFFFFF;arcSize=30;" value="&#39;Elon Musk&#39;" vertex="1">
+          <mxGeometry height="50" width="120" x="330" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#72bcd4;fontFamily=consolas;fontSize=16;fontColor=#FFFFFF;arcSize=30;" value="&#39;Jeff Bezos&#39;" vertex="1">
+          <mxGeometry height="50" width="120" x="460" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;arcSize=50;fillColor=none;strokeColor=none;fontColor=#0CC167;fontSize=16;" value="đầu" vertex="1">
+          <mxGeometry height="40" width="100" x="210" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;arcSize=50;fillColor=none;strokeColor=none;fontColor=#FF9966;fontSize=16;" value="cuối" vertex="1">
+          <mxGeometry height="40" width="100" x="730" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-9" edge="1" parent="1" source="sCs1FFfdnBTJLXxeUYFg-6" style="endArrow=classic;html=1;rounded=0;strokeColor=#0CC167;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endFill=1;" target="sCs1FFfdnBTJLXxeUYFg-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="280" as="sourcePoint" />
+            <mxPoint x="420" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-10" edge="1" parent="1" source="sCs1FFfdnBTJLXxeUYFg-7" style="endArrow=classic;html=1;rounded=0;strokeColor=#ff9966;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=1;" target="sCs1FFfdnBTJLXxeUYFg-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="290" as="sourcePoint" />
+            <mxPoint x="270" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-11" edge="1" parent="1" style="edgeStyle=segmentEdgeStyle;endArrow=blockThin;html=1;curved=0;rounded=1;endSize=8;startSize=8;strokeWidth=5;endFill=1;fontSize=16;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;labelBackgroundColor=none;" value="lấy ra">
+          <mxGeometry height="50" relative="1" width="50" x="-0.2" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="190" y="370" as="sourcePoint" />
+            <mxPoint x="120" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCs1FFfdnBTJLXxeUYFg-12" edge="1" parent="1" style="edgeStyle=segmentEdgeStyle;endArrow=blockThin;html=1;curved=0;rounded=1;endSize=8;startSize=8;strokeWidth=5;endFill=1;fontSize=16;fontFamily=Noto Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DNoto%2BSans;labelBackgroundColor=none;" value="thêm vào">
+          <mxGeometry height="50" relative="1" width="50" x="-1" y="-28" as="geometry">
+            <mxPoint x="8" y="-20" as="offset" />
+            <Array as="points">
+              <mxPoint x="930" y="370" />
+            </Array>
+            <mxPoint x="930" y="330" as="sourcePoint" />
+            <mxPoint x="850" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

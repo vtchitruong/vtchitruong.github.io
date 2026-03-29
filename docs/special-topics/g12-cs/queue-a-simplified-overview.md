@@ -20,7 +20,7 @@ Một số hình ảnh minh hoạ cho hàng đợi:
 
 Hình dưới đây minh hoạ hàng đợi gồm năm phần tử. Mỗi phần tử là một chuỗi.
 
-![Minh hoạ hàng đợi](./images/queue.svg){loading=lazy }  
+![Minh hoạ hàng đợi](images/queue.png){loading=lazy width=75%}  
 
 *Minh hoạ hàng đợi*
 

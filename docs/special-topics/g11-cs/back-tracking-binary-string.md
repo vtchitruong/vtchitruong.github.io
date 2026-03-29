@@ -2,7 +2,7 @@
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách giải bài toán liệt kê chuỗi nhị phân bằng phương pháp quay lui.
+    Bài này trình bày bài toán liệt kê chuỗi nhị phân bằng phương pháp quay lui.
 
 ## Bài toán
 

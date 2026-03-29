@@ -2,7 +2,7 @@
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách giải bài toán quản lý các nhiệm vụ của hệ thống bằng cấu trúc hàng đợi.
+    Bài này trình bày bài toán quản lý các nhiệm vụ của hệ thống bằng cấu trúc hàng đợi.
 
 ## Bài toán
 

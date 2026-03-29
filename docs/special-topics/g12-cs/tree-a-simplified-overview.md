@@ -50,7 +50,7 @@ Trong cây:
 Ví dụ:  
 Cho cây T như hình dưới đây.
 
-![Cây T](./images/genealogy-tree.svg){loading=lazy}
+![Cây T](images/genealogy-tree.png){loading=lazy width=80%}
 
 - Nút gốc là `Ông cố`.
 - Nút gốc có ba cây con: cây gốc `Ông bác`, cây gốc `Ông nội` và cây gốc `Ông chú`.

@@ -550,11 +550,11 @@ nav:
         - special-topics/g12-cs/tree-implementing-binary-tree-with-1d-array.md
         - special-topics/g12-cs/tree-binary-tree-traversal.md
       - Đồ thị:
-        - Mục lục: special-topics/graph/topic-index.md
-        - special-topics/graph/an-overview-of-graph.md
-        - special-topics/graph/graph-representing.md
-        - special-topics/graph/bfs.md
-        - special-topics/graph/dfs.md
+        - special-topics/g12-cs/graph-a-simplified-overview.md
+        - special-topics/g12-cs/graph-bfs-a-simplified-overview.md
+        - special-topics/g12-cs/graph-bfs-shortest-path.md
+        # - special-topics/graph/graph-representing.md
+        # - special-topics/graph/dfs.md
     - Lớp 12 ICT:
       - Mục lục: special-topics/g12-ict/topic-index.md
       - special-topics/g12-ict/random-data.md

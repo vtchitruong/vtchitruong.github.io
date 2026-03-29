@@ -2,7 +2,7 @@
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày cách giải bài toán hoán vị các từ trong câu.
+    Bài này trình bày bài toán hoán vị các từ trong câu.
 
 ## Bài toán
 
