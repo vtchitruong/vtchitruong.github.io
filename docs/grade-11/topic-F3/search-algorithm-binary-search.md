@@ -20,7 +20,7 @@ Giả sử quyển từ điển đang mở ở một trang nào đó.
 
 Áp dụng ý tưởng trên cho mảng, ta cần phải:
 
-- Xác định **phần tử giữa** nhằm chia mảng ban đầu thanh hai mảng con: **nửa trái** và **nửa phải**.
+- Xác định **phần tử giữa** nhằm chia mảng ban đầu thành hai mảng con: **nửa trái** và **nửa phải**.
 - **So sánh** phần tử giữa với giá trị cần tìm `k` để loại bỏ mảng con không chứa `k`.
 - Lặp lại nhiều lần hai thao tác trên đối với mảng con còn lại cho đến khi tìm thấy `k` hoặc không còn chia đôi mảng được nữa.
 

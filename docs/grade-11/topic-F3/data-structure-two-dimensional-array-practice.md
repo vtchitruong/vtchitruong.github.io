@@ -353,7 +353,7 @@ scores = [[8, 8, 8, 2, 9],
     - Gọi hàm `calculate_average()` ra thực hiện, gán kết quả cho biến `averages`.
     - Gọi hàm `show()` ra thực hiện.
 
-    ```py linenums="31"
+    ```py linenums="26"
     if __name__ == '__main__':
         scores = [[8, 8, 8, 2, 9],
                 [0, 0, 0, 8, 9],
