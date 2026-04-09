@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Thao t&#xe1;c v&#x1edb;i danh s&#xe1;ch li&#xea;n k&#x1ebf;t","children":[{"content":"&#x110;&#x1ecb;nh ngh&#x129;a l&#x1edb;p <code>Node</code>","children":[],"payload":{"tag":"h2","lines":"8,9"}},{"content":"&#x110;&#x1ecb;nh ngh&#x129;a l&#x1edb;p <code>LinkedList</code>","children":[],"payload":{"tag":"h2","lines":"10,11"}},{"content":"Kh&#x1edf;i t&#x1ea1;o c&#xe1;c node v&#xe0; danh s&#xe1;ch li&#xea;n k&#x1ebf;t","children":[],"payload":{"tag":"h2","lines":"12,13"}},{"content":"Duy&#x1ec7;t danh s&#xe1;ch li&#xea;n k&#x1ebf;t","children":[{"content":"D&#xf9;ng v&#xf2;ng l&#x1eb7;p v&#xe0; bi&#x1ebf;n <code>current</code> &#x111;&#x1ec3; duy&#x1ec7;t","children":[],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"h2","lines":"14,15"}},{"content":"Th&#xea;m node m&#x1edb;i","children":[{"content":"Ch&#xe8;n v&#xe0;o &#x111;&#x1ea7;u","children":[{"content":"Cho <code>head</code> tr&#x1ecf; &#x111;&#x1ebf;n node m&#x1edb;i","children":[],"payload":{"tag":"li","lines":"22,24"}}],"payload":{"tag":"h3","lines":"20,21"}},{"content":"Th&#xea;m v&#xe0;o cu&#x1ed1;i","children":[{"content":"Cho node cu&#x1ed1;i c&#xf9;ng tr&#x1ecf; &#x111;&#x1ebf;n node m&#x1edb;i","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"h3","lines":"24,25"}},{"content":"Ch&#xe8;n v&#xe0;o tr&#x1b0;&#x1edb;c m&#x1ed9;t node x&#xe1;c &#x111;&#x1ecb;nh","children":[{"content":"D&#xf9;ng hai bi&#x1ebf;n <code>previous</code> v&#xe0; <code>current</code>.","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"Cho node m&#x1edb;i tr&#x1ecf; &#x111;&#x1ebf;n <code>current</code>.","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"Cho <code>previous</code> tr&#x1ecf; &#x111;&#x1ebf;n node m&#x1edb;i.","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"h3","lines":"28,29"}}],"payload":{"tag":"h2","lines":"18,19"}},{"content":"Xo&#xe1; node","children":[{"content":"Xo&#xe1; node &#x111;&#x1ea7;u ti&#xea;n","children":[{"content":"Cho <code>head</code> tr&#x1ecf; &#x111;&#x1ebf;n node k&#x1ebf; ti&#x1ebf;p.","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"h3","lines":"36,37"}},{"content":"Xo&#xe1; node cu&#x1ed1;i c&#xf9;ng","children":[{"content":"D&#xf9;ng hai bi&#x1ebf;n <code>previous</code> v&#xe0; <code>current</code>.","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"Cho <code>previous</code> tr&#x1ecf; &#x111;&#x1ebf;n <code>None</code>.","children":[],"payload":{"tag":"li","lines":"43,45"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"Xo&#xe1; m&#x1ed9;t node x&#xe1;c &#x111;&#x1ecb;nh","children":[{"content":"D&#xf9;ng hai bi&#x1ebf;n <code>previous</code> v&#xe0; <code>current</code>.","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"Cho <code>previous</code> tr&#x1ecf; &#x111;&#x1ebf;n node k&#x1ebf; ti&#x1ebf;p c&#x1ee7;a <code>current</code>.","children":[],"payload":{"tag":"li","lines":"48,49"}}],"payload":{"tag":"h3","lines":"45,46"}}],"payload":{"tag":"h2","lines":"34,35"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":360})</script>
+</body>
+</html>

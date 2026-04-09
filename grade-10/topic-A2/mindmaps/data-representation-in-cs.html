@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Bi&#x1ec3;u di&#x1ec5;n d&#x1eef; li&#x1ec7;u","children":[{"content":"M&#xe3; ho&#xe1; th&#xe0;nh c&#xe1;c bit <code>0</code> v&#xe0; <code>1</code>","children":[],"payload":{"tag":"h2","lines":"8,9"}},{"content":"S&#x1ed1;","children":[{"content":"Chuy&#x1ec3;n &#x111;&#x1ed5;i sang d&#x1ea1;ng nh&#x1ecb; ph&#xe2;n.","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"T&#x1ed5; ch&#x1ee9;c c&#xe1;c bit bi&#x1ec3;u di&#x1ec5;n &#xe2;m ho&#x1eb7;c d&#x1b0;&#x1a1;ng.","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"T&#x1ed5; ch&#x1ee9;c c&#xe1;c bit bi&#x1ec3;u di&#x1ec5;n s&#x1ed1; m&#x169; ho&#x1eb7;c ph&#x1ea7;n l&#x1ebb; th&#x1ead;p ph&#xe2;n.","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"h2","lines":"10,11"}},{"content":"V&#x103;n b&#x1ea3;n","children":[{"content":"B&#x1ea3;ng m&#xe3; ASCII","children":[{"content":"M&#x1ed7;i k&#xfd; t&#x1ef1; chi&#x1ebf;m 8 bit.","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"M&#xe3; ho&#xe1; &#x111;&#x1b0;&#x1ee3;c 256 k&#xfd; t&#x1ef1;.","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h3","lines":"18,19"}},{"content":"B&#x1ea3;ng m&#xe3; Unicode","children":[{"content":"C&#xe1;c &#x111;&#x1ecb;nh d&#x1ea1;ng m&#xe3; ho&#xe1;: UTF-8, UTF-16 v&#xe0; UTF-32.","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"M&#x1ed7;i k&#xfd; t&#x1ef1; chi&#x1ebf;m 1 byte, 2 byte ho&#x1eb7;c 4 byte.","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"M&#xe3; ho&#xe1; &#x111;&#x1b0;&#x1ee3;c h&#xe0;ng tri&#x1ec7;u k&#xfd; t&#x1ef1;.","children":[],"payload":{"tag":"li","lines":"27,29"}}],"payload":{"tag":"h3","lines":"23,24"}}],"payload":{"tag":"h2","lines":"16,17"}},{"content":"H&#xec;nh &#x1ea3;nh","children":[{"content":"Bi&#x1ec3;u di&#x1ec5;n d&#x1b0;&#x1edb;i d&#x1ea1;ng l&#x1b0;&#x1edb;i c&#x1ee7;a c&#xe1;c pixel.","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"D&#xf9;ng k&#xea;nh m&#xe0;u RGB.","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"h2","lines":"29,30"}},{"content":"&#xc2;m thanh","children":[{"content":"Chuy&#x1ec3;n &#x111;&#x1ed5;i t&#x1eeb; d&#x1ea1;ng s&#xf3;ng sang d&#x1ea1;ng s&#x1ed1;.","children":[],"payload":{"tag":"li","lines":"36,37"}}],"payload":{"tag":"h2","lines":"34,35"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+</body>
+</html>
