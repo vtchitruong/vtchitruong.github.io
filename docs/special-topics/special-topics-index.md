@@ -153,7 +153,7 @@ Tìm hiểu kỹ thuật duyệt đồ thị và ứng dụng
 
 - Trình bày được [khái niệm đồ thị](./g12-cs/graph-a-simplified-overview.md){:target="_blank"}.
 - [Biểu diễn được đồ thị](./graph/graph-representing.md){:target="_blank"} bằng ma trận kề và danh sách đỉnh kề.
-- Trình bày được ý tưởng của duyệt đồ thị theo [chiều rộng](./graph/bfs.md){:target="_blank"} và [chiều sâu](./graph/dfs.md){:target="_blank"}.
+- Trình bày được ý tưởng của duyệt đồ thị theo [chiều rộng](./g12-cs/graph-bfs.md){:target="_blank"} và [chiều sâu](./graph/dfs.md){:target="_blank"}.
 - Mô phỏng được thuật toán duyệt theo chiều rộng và theo chiều sâu một đồ thị cụ thể cho bằng biểu diễn trực quan.
 - Nêu được vài ứng dụng của kỹ thuật duyệt đồ thị trong một số bài toán thực tế.
 
