@@ -136,7 +136,7 @@ Vị trí bắt đầu và vị trí kết thúc.
         if first == -1:
             print(f'Không tìm thấy {key} trong mảng')
         else:
-            print(f'{key} xuất hiện trong phạm vị từ {first} đến {last}')
+            print(f'{key} xuất hiện trong phạm vi từ {first} đến {last}')
     ```
 
 ---

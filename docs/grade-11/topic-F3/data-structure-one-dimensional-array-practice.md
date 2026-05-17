@@ -302,13 +302,13 @@ Mảng một chiều `A`.
 
 **Đầu ra:**
 
-Mảng một chiều gốm các giá trị True và False.
+Mảng một chiều gồm các giá trị True và False.
 
 **Ví dụ:**
 
 | Đầu vào | Đầu ra |
 | --- | --- |
-| [ 3  8  4  0  8  8  3  4  6  8 10 10  3  0  1  3  1  8  5  8] | [ True False  True  True False False  True  True False False False False  True  True  True  True  True False  True False] |
+| `[ 3  8  4  0  8  8  3  4  6  8 10 10  3  0  1  3  1  8  5  8]` | `[ True False  True  True False False  True  True False False False False  True  True  True  True  True False  True False]` |
 
 ### Cách giải đề xuất
 
