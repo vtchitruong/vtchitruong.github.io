@@ -1,59 +1,101 @@
 {% extends "base.html" %}
 
-<!-- Custom front matter -->
 {% block extrahead %}
-
-  <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
-  <!-- <link
-    rel="stylesheet"
-    href="{{ 'assets/stylesheets/custom.css' | url }}"
-  /> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-QqYBUQwKtpBHq0bDfzJ9jMb2N5+8w/RcZ1Rqxq43+3Qp8sdsO6T7XbuK+LzYQ4M4Zg8q3yY2Wg9p6aa+MglbHA==" crossorigin="anonymous" /> -->
-
+  {{ super() }}
 {% endblock %}
 
 <!-- Announcement bar -->
 {% block announce %}
-    Nơi đây có 10 cái bình <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 320 512">
-        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-        <style>
-            svg {
-                fill: #C2B280
-            }
-        </style>
-        <path
-            d="M120 0h80c13.3 0 24 10.7 24 24V64H96V24c0-13.3 10.7-24 24-24zM32 151.7c0-15.6 9-29.8 23.2-36.5l24.4-11.4c11-5.1 23-7.8 35.1-7.8h90.6c12.1 0 24.1 2.7 35.1 7.8l24.4 11.4c14.1 6.6 23.2 20.8 23.2 36.5c0 14.4-7.5 27-18.9 34.1c11.5 8.8 18.9 22.6 18.9 38.2c0 16.7-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48c0-16.7 8.5-31.4 21.5-40C40.5 415.4 32 400.7 32 384s8.5-31.4 21.5-40C40.5 335.4 32 320.7 32 304s8.5-31.4 21.5-40C40.5 255.4 32 240.7 32 224c0-15.6 7.4-29.4 18.9-38.2C39.5 178.7 32 166.1 32 151.7zM96 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z" />
-    </svg>: Bình tĩnh và bình dân Tin học vụ.
+  Nơi đây có 10 cái bình 
+  <svg class="announce-icon" xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 320 512">
+    <path d="M120 0h80c13.3 0 24 10.7 24 24V64H96V24c0-13.3 10.7-24 24-24zM32 151.7c0-15.6 9-29.8 23.2-36.5l24.4-11.4c11-5.1 23-7.8 35.1-7.8h90.6c12.1 0 24.1 2.7 35.1 7.8l24.4 11.4c14.1 6.6 23.2 20.8 23.2 36.5c0 14.4-7.5 27-18.9 34.1c11.5 8.8 18.9 22.6 18.9 38.2c0 16.7-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48c0-16.7 8.5-31.4 21.5-40C40.5 415.4 32 400.7 32 384s8.5-31.4 21.5-40C40.5 335.4 32 320.7 32 304s8.5-31.4 21.5-40C40.5 255.4 32 240.7 32 224c0-15.6 7.4-29.4 18.9-38.2C39.5 178.7 32 166.1 32 151.7zM96 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z" />
+  </svg>: Bình tĩnh và bình dân Tin học vụ.
 {% endblock %}
 
 {% block content %}
   {{ super() }}
-  <!-- Donation button at the end of content, conditional -->
   {% if page.meta.show_donation != false %}
     <div class="donation-button">
       <a href="https://docs.mrschool.vn/donation/#cach-thuc" class="btn-donate">Bao tôi ly cafe 🧋 nhé!</a>
     </div>
   {% endif %}
 {% endblock %}
-
-<!-- Theme-related JavaScript -->
 {% block scripts %}
-    
-
   {{ super() }}
 
-  <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
-  <!-- <script src="{{ 'assets/javascripts/custom.js' | url }}"></script> -->
+  <!-- Floating Liquid Glass Action Bar -->
+  <div class="glass-action-bar" role="toolbar" aria-label="Quick Actions">
+    
+    <!-- Home Button -->
+    <a href="{{ '' | url }}" class="glass-btn" title="Trang chủ">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+      </svg>
+    </a>
 
-  
-  <!-- <script>
-    // Remove the markmap button
-    const iframe = document.querySelector('iframe');
+    <!-- Back to Top Button -->
+    <a href="#__top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" class="glass-btn" title="Lên đầu trang">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/>
+      </svg>
+    </a>
 
-    iframe.addEventListener('load', () => {
-        const iframeContent = iframe.contentDocument || iframe.contentWindow.document;
-        const brandLink = iframeContent.querySelector('.mm-toolbar a.mm-toolbar-brand');
-        brandLink.style.display = 'none';
+    <!-- Donation Dropdown -->
+    <div class="glass-dropdown">
+      <!-- Popup Stack Menu -->
+      <div class="glass-stack" id="donation-stack" aria-hidden="true">
+        <a href="https://buymeacoffee.com/vtchitruong" target="_blank" rel="noopener" class="glass-stack-btn">
+          <span>☕ Buy Me a Coffee</span>
+        </a>
+        <a href="{{ 'donation-momo/' | url }}" target="_blank" class="glass-stack-btn">
+          <span>📱 Ví MoMo</span>
+        </a>
+        <a href="{{ 'donation-tcb/' | url }}" target="_blank" class="glass-stack-btn">
+          <span>🏦 Techcombank</span>
+        </a>
+      </div>
+
+      <!-- Donation Toggle Button -->
+      <button type="button" class="glass-btn" id="donation-toggle" title="Tài trợ" aria-expanded="false" aria-controls="donation-stack">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Toggle Logic for Donation Stack -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("donation-toggle");
+      const stack = document.getElementById("donation-stack");
+
+      if (toggleBtn && stack) {
+        toggleBtn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          const isOpen = stack.classList.contains("is-open");
+          
+          if (isOpen) {
+            stack.classList.remove("is-open");
+            stack.setAttribute("aria-hidden", "true");
+            toggleBtn.setAttribute("aria-expanded", "false");
+          } else {
+            stack.classList.add("is-open");
+            stack.setAttribute("aria-hidden", "false");
+            toggleBtn.setAttribute("aria-expanded", "true");
+          }
+        });
+
+        /* Close stack when clicking anywhere outside */
+        document.addEventListener("click", function (e) {
+          if (!stack.contains(e.target) && e.target !== toggleBtn) {
+            stack.classList.remove("is-open");
+            stack.setAttribute("aria-hidden", "true");
+            toggleBtn.setAttribute("aria-expanded", "false");
+          }
+        });
+      }
     });
-  </script> -->
+  </script>
 {% endblock %}

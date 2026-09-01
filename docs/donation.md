@@ -2,7 +2,7 @@
 show_donation: false
 ---
 
-# Bao tôi ly cafe 🧋 nhé!
+# Bao tôi ly cafe nhé!
 
 ## Lời nhắn
 
@@ -10,42 +10,12 @@ Chào bạn! Tôi đã dành nhiều công sức và thời gian để xây dự
 
 English version:
 
-Welcome! I've put together this online computer science resource for my high school students, fellow educators, and myself. If it helps you in your learning or teaching journey, I'd be grateful if you'd consider buying me a coffee. Thank you so much! Feel free to share feedback or drop any Computer Science-related questions my way—I'd love to hear from you.
+Welcome! I've put together this online computer science resource for my high school students, fellow educators, and myself. If it helps you in your learning or teaching journey, I'd be grateful if you'd consider buying me a coffee. Thank you so much! Feel free to share feedback or drop any Computer Science-related questions my way. I'd love to hear from you.
 
-## Cách thức
+## Cách thức tài trợ
 
-### Cách 1: Ngân hàng
+[Cách 1: ngân hàng](./donation-tcb.md){target="_blank}
 
-Xin chuyển khoản theo thông tin dưới đây:
+[Cách 2: ví Momo](./donation-momo.md){target="_blank}
 
-- Ngân hàng TMCP Kỹ Thương Việt Nam (`Techcombank` - `TCB`)
-- Số tài khoản: `19027254456019`
-- Chủ tài khoản: `Võ Thạch Chí Trường`
-
-<br>
-
-hoặc quét QR Code sau:
-
-![QR Code ngân hàng](https://live.staticflickr.com/65535/54786534094_35b0a6fb70_o.png){loading="lazy" width=360} 
-
-*Vui lòng ghi tên của bạn và lời nhắn nếu được. Xin cám ơn!*
-
-### Cách 2: Momo
-
-Xin chuyển khoản theo thông tin dưới đây:
-
-- Số điện thoại: `0902622090`
-- Chủ ví: `Võ Thạch Chí Trường`
-
-<br>
-
-hoặc quét QR Code sau:
-
-![QR Code ví Momo](https://live.staticflickr.com/65535/54786641310_2899698198_c.jpg){loading="lazy" width=360}
-
-*Vui lòng ghi lời nhắn nếu được. Xin cám ơn!*
-
-### Cách 3: Buy Me a Coffee
-
-For a quick thank-you donation!  
-[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/vtchitruong)
+[Cách 3: Buy Me a Coffee](https://buymeacoffee.com/vtchitruong){target="_blank}

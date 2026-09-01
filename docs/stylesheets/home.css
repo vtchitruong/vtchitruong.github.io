@@ -1,0 +1,257 @@
+/* ==========================================
+   Landing Page (home.html) Styles
+   ========================================== */
+
+/* Application header and inner container layout */
+.md-header {
+  position: initial;
+}
+
+.md-main {
+  flex-grow: 0;
+  height: 0;
+}
+
+.md-main__inner {
+  margin: 0;
+  display: flex;
+}
+
+.md-content {
+  display: none;
+}
+
+div.top-hr h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.top-hr {
+  margin-top: 0;
+}
+
+.hr {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Landing Page Hero Section */
+.tx-container {
+  padding-top: 0;
+  background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg, 47%, 55%, 1) 99%, #fff 99%);
+}
+
+.tx-hero {
+  margin: 32px 2.8rem;
+  color: var(--md-primary-bg-color);
+  justify-content: center;
+}
+
+.tx-hero h1 {
+  margin-bottom: 1rem;
+  color: currentColor;
+  font-weight: 700;
+}
+
+.tx-hero__content {
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.tx-hero__image {
+  width: 17rem;
+  height: 17rem;
+  order: 1;
+  padding-right: 2.5rem;
+}
+
+.tx-hero .md-button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--md-primary-bg-color);
+}
+
+.tx-hero .md-button--primary {
+  background-color: var(--md-primary-bg-color);
+  color: hsla(280deg, 37%, 48%, 1);
+  border-color: var(--md-primary-bg-color);
+}
+
+.tx-hero .md-button:focus,
+.tx-hero .md-button:hover {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-default-bg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+/* Landing Page Feature Grid */
+.feature-item {
+  font-weight: 300;
+  box-sizing: border-box;
+  padding: 0 15px;
+  word-break: break-word;
+}
+
+.feature-item h2 {
+  color: #333;
+  font-weight: 700;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feature-item h2 svg {
+  height: 30px;
+  float: left;
+  margin-right: 10px;
+  transform: translateY(10%);
+}
+
+.feature-item p {
+  font-size: 0.8rem;
+  line-height: 1.8em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #111;
+  margin: 0 0 10px;
+  display: block;
+}
+
+/* Logos & Misc Grid Utilities */
+.text-center {
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  font-size: 23px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+.logos img {
+  flex: 1 1 auto;
+  padding: 25px;
+  max-height: 130px;
+  vertical-align: middle;
+}
+
+.hr-logos {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Landing Page Footer Overrides */
+.md-footer-meta__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.md-footer-social {
+  padding-top: 20px;
+}
+
+.md-footer {
+  background-color: #000;
+}
+
+/* Hide Next/Previous navigation bar only on home page */
+nav.md-footer__inner.md-grid {
+  display: none;
+}
+
+/* Hero Button Variants */
+a.md-button.md-button {
+  color: #fff;
+  border-color: #fff;
+  border-radius: 100px;
+}
+
+a.md-button.md-button:hover {
+  color: #fff;
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+a.md-button.md-button--primary {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: #fff;
+  border-radius: 100px;
+}
+
+a.md-button.md-button--primary:hover {
+  color: var(--md-accent-fg-color);
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 30em) {
+  .tx-hero h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .md-sidebar--secondary {
+    display: none;
+  }
+
+  .tx-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tx-hero__content {
+    max-width: 22rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    display: none;
+  }
+
+  .top-hr,
+  .bottom-hr {
+    width: 100%;
+    display: flex;
+    max-width: 61rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 0.2rem;
+  }
+
+  .bottom-hr {
+    margin-top: 10px;
+  }
+
+  .feature-item {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .feature-item:hover {
+    background-color: #f1f5f9;
+    border-radius: 1.5rem;
+  }
+}

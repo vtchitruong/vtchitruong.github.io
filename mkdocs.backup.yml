@@ -3,7 +3,7 @@ site_name: Mr School's docs for Tin học GDPT 2018
 site_url: https://docs.mrschool.vn
 site_author: Mr School
 site_description: >-
-  Giúp bạn nắm bắt kiến thức của môn Tin học cấp trung học phổ thông. Tiếp thu dễ dàng. Tra cứu thuận tiện. Vượt qua kỳ thi Tốt nghiệp THPT và những kỳ thi khác. Xem được ở mọi nơi có internet, trên nhiều loại máy.
+  Giúp bạn nắm bắt kiến thức của môn Tin học cấp trung học phổ thông. Tiếp thu dễ dàng. Tra cứu thuận tiện. Vượt qua kỳ thi Tốt nghiệp THPT và những kỳ thi khác. Xem được ở mọi nơi có internet, trên nhiều loại máy, bất kể tư thế.
 
 # Repository
 repo_name: GitHub để chữa lành
@@ -22,10 +22,17 @@ theme:
     - content.action.view
     - content.code.annotate
     - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
     - content.tooltips
+    # - header.autohide
+    # - navigation.expand
     - navigation.footer
     - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
     - navigation.prune
+    # - navigation.sections
     - navigation.path
     - navigation.tabs
     - navigation.tabs.sticky
@@ -35,24 +42,81 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
+    # - toc.integrate
   palette:
+    # - scheme: default
+    #   primary: green
+    #   accent: light blue
+    #   toggle:
+    #   #   icon: material/lightbulb-outline
+    #   #   name: Switch to dark mode
+    # - scheme: slate
+    #   primary: teal
+    #   accent: lime
+    #   toggle:
     - scheme: vtct_theme
       primary: green
       accent: light blue
+      #   icon: material/lightbulb
+      #   name: Switch to light mode
   font:
     text: Noto Sans
     code: Consolas Mono
   favicon: assets/favicon.png
+  # icon:    
+  #   logo: logo
   logo: assets/mr-school-logo.png
   language: vi
+  # icon:
+  #   alternate: flag_vn
 
 # Customization
 extra:
+  # alternate:
+  #   # Switch to Vietnamese (default)
+  #   - name: Tiếng Việt
+  #     link: ./
+  #     lang: vi
+
+  #   # Switch to English
+  #   - name: English
+  #     # The link will depend on how you deploy. 
+  #     # This example assumes the English version is built to a subfolder "en"
+  #     link: /en/ 
+  #     lang: en
   annotate:
     json: [.s2]
   analytics:
     provider: google
     property: G-406896385
+    # feedback:
+    #   title: Bài viết trên có giúp ích gì cho bạn không?</br>Hãy nán lại "quánh giá" một cái cho chủ thớt thêm cảm hứng, hoặc cảm... lạnh 😄
+    #   ratings:
+    #     - icon: material/heart
+    #       name: This post definitely needs improvement.
+    #       data: 1
+    #       note: >-
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+    #     - icon: material/heart
+    #       name: This post could be improved.
+    #       data: 2
+    #       note: >- 
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+    #     - icon: material/heart
+    #       name: I'm not sure. This post is passable.
+    #       data: 3
+    #       note: >-
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+    #     - icon: material/heart
+    #       name: This post is quite useful.
+    #       data: 4
+    #       note: >-
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
+    #     - icon: material/heart
+    #       name: This post is absolutely useful.
+    #       data: 5
+    #       note: >-
+    #         Cảm ơn bạn đã đánh giá. Chúng tôi đang xây dựng form phản hồi ý kiến. Mong lần tới sẽ nhận được góp ý của bạn.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/vtchitruong/vtchitruong.github.io
@@ -61,12 +125,25 @@ extra:
     - icon: fontawesome/solid/mug-saucer
       name: Please donate!
       link: https://docs.mrschool.vn/donation/
-
+    # - icon: fontawesome/brands/gitter
+    #   link: https://gitter.im/squidfunk/mkdocs-material
+    # - icon: fontawesome/brands/docker
+    #   link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    # - icon: fontawesome/brands/python
+    #   link: https://pypi.org/project/mkdocs-material/
+    # - icon: fontawesome/brands/mastodon
+    #   link: https://fosstodon.org/@squidfunk
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/squidfunk
+  # alternate:
+  #   - name: English
+  #     link: /en/
+  #     lang: en
 # Extensions
 markdown_extensions:
   - abbr
   - admonition
-  - attr_list
+  - attr_list # Required for custom classes
   - def_list
   - footnotes
   - md_in_html
@@ -81,6 +158,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      # options:
+      #   custom_icons:
+      #     - overrides/.icons
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -104,29 +184,50 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.snippets
+  - attr_list
 
-# Custom Assets
+
+## Custom theme additions
 extra_javascript:
   - javascripts/extra.js
   - javascripts/mathjax.js
   - javascripts/feedback.js
-  # - javascripts/markmap-d3.js
-  # - javascripts/markmap-lib.js
-  # - javascripts/markmap-view.js
+  - javascripts/markmap-d3.js
+  - javascripts/markmap-lib.js
+  - javascripts/markmap-view.js
+
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - https://unpkg.com/d3@7/dist/d3.min.js
+  # - https://unpkg.com/markmap-lib@0.15.3/dist/browser/index.js
+  # - https://unpkg.com/markmap-view@0.15.3/dist/browser/index.js
+  # - https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js
+  # - https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js
+  # - https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js
+  
+    
+  
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap
+  # - stylesheets/custom.css
   - stylesheets/extra.css
   - stylesheets/floating_action_button.css
+  # - https://cdn.jsdelivr.net/npm/@fontsource/noto-sans
 
-# Plugins
 plugins:
   - markmap:
       d3_version: ""
       lib_version: ""
       view_version: ""
       base_path: docs
+      # encoding: utf-8
+      # file_extension: .mm.md
+      # d3_version: '3.6.0'
+      # lib_version: 0.15.3
+      # view_version: 0.15.3
+  # - meta
+        # enabled: true 
   - tags
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -163,6 +264,8 @@ plugins:
         - Solve to surpass
         - Set up & Code down
         - Work wild web
+      #   - Performance
+      #   - Blog
       pagination: true
       pagination_per_page: 10
       pagination_keep_content: true
@@ -172,6 +275,13 @@ plugins:
       draft: false
       draft_on_serve: true
       draft_if_future_date: false
+  # - rss:
+  #     enabled: true
+  #     match_path: blog/posts/.* 
+  #     date_from_meta:
+  #       as_creation: date
+  #     categories:
+  #       - categories
   - glightbox:
       touchNavigation: true
       loop: false
@@ -189,6 +299,7 @@ plugins:
       shadow: true
       manual: false  
   - i18n:
+      # default_language: vi # current default language
       docs_structure: suffix
       languages:
         - locale: vi
@@ -198,19 +309,32 @@ plugins:
         - locale: en
           name: English
           build: true
+      # nav_translations:
+      #   en:
+      #     "Lớp 11": "Grade 11"
+
+      #   vi:
+      #     name: Tiếng Việt # Display name for the Vietnamese language
+      #     build: true
+      #   en:
+      #     name: English # Display name for the English language
+      #     build: true
+      # material_alternate: true # Enables the Material for MkDocs language selector
 
 # Page tree
 nav:
-  - Trang chủ: index.md
-  - Hướng dẫn:
+  - Home: index.md
+  - Getting started:
     - 🔦 Tính năng: features.md
     - 🪵 Nhật ký thay đổi: changelog.md
     - 📜 Giấy phép: license.md
     - ✍️ Cách chúng tôi viết tiếng Việt: how-we-write-vietnamese.md
-    - ☕ Bao tôi ly cafe nhé!: donation.md
-    - 🏦 Techcombank: donation-tcb.md
-    - 📱 Ví MoMo: donation-momo.md
-    - 🧋 Buy Me a Coffee: https://buymeacoffee.com/vtchitruong
+    - 💰 Bao tôi ly cafe nhé!: donation.md
+  # - Lớp 8:
+  #   - Chủ đề F:
+  #     - grade-08/topic-F/algorithm-and-program.md
+  #     - grade-08/topic-F/sequential-structure.md
+  #     - grade-08/topic-F/variable.md
   - Lớp 10:
     - Chương trình khung: grade-10/grade-10-index.md
     - Chủ đề A1:
@@ -334,6 +458,7 @@ nav:
         - grade-11/topic-F3/algorithmic-complexity-rules-for-determining.md
         - grade-11/topic-F3/algorithmic-complexity-of-search-and-sort.md
         - grade-11/topic-F3/algorithmic-complexity-practice.md
+        # - grade-11/topic-F3/modular-software-design.md
     - Chủ đề G:
       - Mục lục: grade-11/topic-G/topic-g-index.md
       - grade-11/topic-G/database-administration.md
@@ -427,6 +552,8 @@ nav:
         - special-topics/g12-cs/graph-a-simplified-overview.md
         - special-topics/g12-cs/graph-bfs-a-simplified-overview.md
         - special-topics/g12-cs/graph-bfs-shortest-path.md
+        # - special-topics/graph/graph-representing.md
+        # - special-topics/graph/dfs.md
     - Lớp 12 ICT:
       - Mục lục: special-topics/g12-ict/topic-index.md
       - special-topics/g12-ict/random-data.md
@@ -493,6 +620,7 @@ nav:
       - 2024 - 2025 Tây Ninh (buổi 1): solve-to-surpass/hsg12-tinh/2024-2025-tayninh-buoi-1.md
       - solve-to-surpass/hsg12-tinh/2024-2025-tuyenquang.md      
       - solve-to-surpass/hsg12-tinh/2023-2024-vinhphuc.md
+
     - Olympic 30/4:
       - 2014 - 2015 lớp 10: solve-to-surpass/olympic-april-30/2015-grade-10.md
     - Olympic 11 Thành phố:
@@ -506,6 +634,8 @@ nav:
       - Olympic 10 2020 - 2021: solve-to-surpass/olympic10-hcm/2020-2021.md
       - Olympic 10 2016 - 2017: solve-to-surpass/olympic10-hcm/2016-2017.md
       - Olympic 10 2014 - 2015: solve-to-surpass/olympic10-hcm/2014-2015.md
+    # - HSG 9 thành phố:
+    #   - 2022 - 2023: solve-to-surpass/hsg9-hcm/2022-2023.md
     - HSG 9 tỉnh khác:
       - Mục lục: solve-to-surpass/hsg9-tinh/hsg9-tinh-index.md
       - 2023 - 2024 Cà Mau: solve-to-surpass/hsg9-tinh/2023-2024-camau.md
@@ -514,6 +644,7 @@ nav:
       - 2023 - 2024 Hải Dương: solve-to-surpass/hsg9-tinh/2023-2024-haiduong.md
       - 2023 - 2024 Khánh Hòa: solve-to-surpass/hsg9-tinh/2023-2024-khanhhoa.md
       - 2023 - 2024 Thanh Hoá: solve-to-surpass/hsg9-tinh/2023-2024-thanhhoa.md
+      # - 2022 - 2023 Hà Nội: solve-to-surpass/hsg9-tinh/2022-2023-hanoi.md
       - 2022 - 2023 Thừa Thiên Huế: solve-to-surpass/hsg9-tinh/2022-2023-thuathienhue.md
   - MOS:
     - PowerPoint 2019:
@@ -608,7 +739,7 @@ nav:
         - Project 7: mos/powerpoint-2016/exam-2/project-7.md
       - Practice Exam 3:
         - Project 1: mos/powerpoint-2016/exam-3/project-1.md
-        - Project 2: mos/powerpoint-2016/exam-3/project-3.md
+        - Project 2: mos/powerpoint-2016/exam-3/project-2.md
         - Project 3: mos/powerpoint-2016/exam-3/project-3.md
         - Project 4: mos/powerpoint-2016/exam-3/project-4.md
         - Project 5: mos/powerpoint-2016/exam-3/project-5.md
@@ -617,3 +748,12 @@ nav:
   - AI:
     - Generative AI Foundations:
       - Exam 1: ai/generative-ai-foundations/exam-1.md
+
+# nav_translations:
+#   en: # Target the English language locale
+#     "Lớp 11": "Grade 11"
+#     "Chương trình khung": "Syllabus"
+#     "Chủ đề F2": "Topic F2"
+#     "Mục lục": "Index"
+  # - Blog:
+  #   - blog/index.md

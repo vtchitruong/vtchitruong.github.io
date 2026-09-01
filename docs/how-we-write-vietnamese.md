@@ -66,4 +66,11 @@ Nhằm bảo đảm sự trang trọng và tính thẩm mỹ cho từ ngữ ti�
 
 ## **sử dụng** và **xử dụng**
 
-Từ đúng chính tả tiếng Việt là **xử dụng**. Nhưng do phần lớn nơi khác đều viết **sử dụng**, chúng tôi phải tạm chấp nhận thỏa hiệp.
+Một số tài liệu và văn bản ở miền Nam trước đây viết là **xử dụng**.
+
+Còn trong tiếng Hán, từ này được viết là 使用, phát âm là Shǐyòng.
+
+Theo *Hán Việt Tân từ điển* của Nguyễn Quốc Hùng, **sử dụng** 使用 có nghĩa là "khiến mà dùng, đem dùng".
+**Sử dụng** được viết bằng tiếng  使用 được phát âm al2 có nghĩa là
+
+Do phần lớn văn bản hiện nay đều viết **sử dụng**, chúng tôi vẫn viết từ này theo chữ **s**.

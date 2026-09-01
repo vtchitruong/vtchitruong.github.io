@@ -1,25 +1,224 @@
-.fab {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
-    color: #6200ea;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Smaller, lighter shadow */
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: box-shadow 0.3s, transform 0.3s;
+/* Fix default Material for MkDocs top button layout */
+.md-top {
+  z-index: 100;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center;
+  height: auto !important;
 }
 
-.fab:hover {
-    background: rgba(245, 245, 245, 0.9); /* Slightly darker on hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); /* Subtle increase in shadow on hover */
-    transform: scale(1.05); /* Slight zoom on hover */
+/* ==========================================================================
+   SHARED APPLE LIQUID GLASS STYLING (Action Bar & Popover Stack)
+   ========================================================================== */
+
+.glass-action-bar,
+.glass-stack {
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+
+  /* Subtle Identical Shadow */
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.glass-action-bar {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Higher opacity for popover card text readability */
+.glass-stack {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.glass-action-bar:hover {
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 
+    0 6px 16px rgba(0, 0, 0, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+/* Dark Mode (Slate) Shared Styling */
+[data-md-color-scheme="slate"] .glass-action-bar,
+[data-md-color-scheme="slate"] .glass-stack {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.22),
+    inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+
+[data-md-color-scheme="slate"] .glass-action-bar {
+  background: rgba(25, 30, 42, 0.55);
+}
+
+[data-md-color-scheme="slate"] .glass-stack {
+  background: rgba(30, 36, 50, 0.88);
+}
+
+/* ==========================================================================
+   LAYOUT & POSITIONING
+   ========================================================================== */
+
+/* Mobile-First Floating Action Bar Container */
+.glass-action-bar {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 9999px;
+  max-height: 2.5rem;
+  width: max-content;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Individual Bar Buttons (Links & Toggle Button) */
+a.glass-btn, 
+a.glass-btn:link, 
+a.glass-btn:visited,
+button.glass-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  color: var(--md-default-fg-color--light, #444);
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font: inherit;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+a.glass-btn svg,
+button.glass-btn svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
+a.glass-btn:hover,
+button.glass-btn:hover {
+  color: var(--md-accent-fg-color, #007bff);
+  transform: translateY(-2px) scale(1.03);
+  text-decoration: none;
+}
+
+a.glass-btn:active,
+button.glass-btn:active {
+  transform: translateY(0) scale(0.95);
+}
+
+[data-md-color-scheme="slate"] a.glass-btn,
+[data-md-color-scheme="slate"] a.glass-btn:link,
+[data-md-color-scheme="slate"] a.glass-btn:visited,
+[data-md-color-scheme="slate"] button.glass-btn {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ==========================================================================
+   DONATION DROPDOWN & STACK MENU
+   ========================================================================== */
+
+.glass-dropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+/* Stack Menu Container */
+.glass-stack {
+  position: absolute;
+  bottom: calc(100% + 0.6rem);
+  right: 50%;
+  transform: translateX(50%) translateY(8px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.4rem;
+  border-radius: 1rem;
+  min-width: 10.5rem;
+
+  /* Hidden State */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+/* Active Open State */
+.glass-stack.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(50%) translateY(0);
+}
+
+/* Stack Items */
+a.glass-stack-btn,
+a.glass-stack-btn:link,
+a.glass-stack-btn:visited {
+  display: flex;
+  align-items: center;
+  padding: 0.45rem 0.75rem;
+  border-radius: 2.5rem;
+  color: var(--md-default-fg-color, #333);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  background: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+a.glass-stack-btn:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: var(--md-accent-fg-color, #007bff);
+  transform: translateX(2px);
+  text-decoration: none;
+}
+
+a.glass-stack-btn:active {
+  transform: translateX(0) scale(0.98);
+}
+
+[data-md-color-scheme="slate"] a.glass-stack-btn,
+[data-md-color-scheme="slate"] a.glass-stack-btn:link,
+[data-md-color-scheme="slate"] a.glass-stack-btn:visited {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-md-color-scheme="slate"] a.glass-stack-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* Tablet & Desktop Scaling */
+@media screen and (min-width: 60em) {
+  .glass-action-bar {
+    bottom: 1.5rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  a.glass-btn, 
+  a.glass-btn:link, 
+  a.glass-btn:visited,
+  button.glass-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  a.glass-btn svg,
+  button.glass-btn svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
 }
