@@ -1,7 +1,3 @@
----
-show_donation: false
----
-
 # Cách chúng tôi viết tiếng Việt
 
 Tiếng Việt là một ngôn ngữ giàu đẹp, và song song đó tồn tại những quan điểm khác nhau trong cách thể hiện, chẳng hạn như vị trí đặt dấu thanh hay việc dùng "i" ngắn và "y" dài.

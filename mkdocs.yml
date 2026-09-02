@@ -56,8 +56,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/vtchitruong/vtchitruong.github.io
-    - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/vothachchitruong
     - icon: fontawesome/solid/mug-saucer
       name: Please donate!
       link: https://docs.mrschool.vn/donation/
@@ -108,25 +106,27 @@ markdown_extensions:
 # Custom Assets
 extra_javascript:
   - javascripts/extra.js
+  - javascripts/main.js
   - javascripts/mathjax.js
   - javascripts/feedback.js
-  # - javascripts/markmap-d3.js
-  # - javascripts/markmap-lib.js
-  # - javascripts/markmap-view.js
+  - js/d3.min.js
+  - js/markmap-lib.js
+  - js/markmap-view.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
   - stylesheets/extra.css
   - stylesheets/floating_action_button.css
 
 # Plugins
 plugins:
-  - markmap:
-      d3_version: ""
-      lib_version: ""
-      view_version: ""
-      base_path: docs
+  # - markmap:
+  #     d3_version: ""
+  #     lib_version: ""
+  #     view_version: ""
+  #     base_path: docs
   - tags
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -203,7 +203,7 @@ plugins:
 nav:
   - Trang chủ: index.md
   - Hướng dẫn:
-    - 🔦 Tính năng: features.md
+    - 🧭 Cách sử dụng: features.md
     - 🪵 Nhật ký thay đổi: changelog.md
     - 📜 Giấy phép: license.md
     - ✍️ Cách chúng tôi viết tiếng Việt: how-we-write-vietnamese.md

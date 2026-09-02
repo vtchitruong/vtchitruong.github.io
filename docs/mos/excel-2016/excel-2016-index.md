@@ -1,8 +1,3 @@
----
-icon: material/table-of-contents
-show_donation: false
----
-
 # Chương trình quốc tế MOS 2016 - Excel
 
 ## Practice Exam 1

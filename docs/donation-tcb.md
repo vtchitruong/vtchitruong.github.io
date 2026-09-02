@@ -1,7 +1,3 @@
----
-show_donation: false
----
-
 # Bao tôi ly cafe nhé! (thông qua ngân hàng)
 
 Xin quét QR Code:

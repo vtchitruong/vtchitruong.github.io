@@ -198,13 +198,75 @@ a.md-button.md-button--primary:hover {
   border-color: #fff;
 }
 
+/* ==========================================
+   Home Section Blocks & Typography
+   ========================================== */
+
+/* Shared container base */
+.home-section {
+  display: block;
+  position: relative;
+  transform-style: preserve-3d;
+  padding: 1rem 0.7rem;
+}
+
+/* Background variants */
+.home-section--features {
+  background-color: #ffffff;
+}
+
+.home-section--about {
+  background-color: #4682b4;
+}
+
+.home-section--donate {
+  background-color: #fdf6e3;
+}
+
+/* Title text color variants */
+.home-section--features .home-section-title {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.home-section--about .home-section-title {
+  color: #f5f5f5;
+}
+
+.home-section--donate .home-section-title {
+  color: #657b83;
+}
+
+/* Content body typography & colors */
+.home-section-content {
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.home-section--about .home-section-content {
+  color: whitesmoke;
+}
+
+.home-section--donate .home-section-content {
+  color: #657b83;
+}
+
 /* Responsive Media Queries */
+
+/* Mobile / Small Screens: <= 480px (30em * 16px) */
 @media screen and (max-width: 30em) {
   .tx-hero h1 {
     font-size: 1.4rem;
   }
 }
 
+/* Replicating Bootstrap col-md-6 / col-lg-6 (50% width centered) */
+/* Medium Screens / Tablets: >= 768px (48em * 16px) -> Matches Bootstrap 'md' breakpoint */
+@media screen and (min-width: 48em) {
+
+}
+
+/* Large Screens / Desktops: >= 960px (60em * 16px) -> MkDocs desktop breakpoint */
 @media screen and (min-width: 60em) {
   .md-sidebar--secondary {
     display: none;
@@ -224,8 +286,18 @@ a.md-button.md-button--primary:hover {
     margin-right: 4rem;
     align-items: center;
   }
+
+  .home-section-content > div,
+  .home-section--about .home-section-title,
+  .home-section--donate .home-section-title {
+    width: 66%; /* Occupies 8 of 12 columns */
+    max-width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+/* Extra Large Screens / Wide Displays: >= 1220px (76.25em * 16px) -> MkDocs wide desktop breakpoint */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
     display: none;

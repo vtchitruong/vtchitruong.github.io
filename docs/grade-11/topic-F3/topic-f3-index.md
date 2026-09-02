@@ -1,6 +1,5 @@
 ---
 icon: material/table-of-contents
-show_donation: false
 ---
 
 # Kỹ thuật lập trình

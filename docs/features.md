@@ -1,7 +1,3 @@
----
-show_donation: false
----
-
 # Cách sử dụng
 
 Bằng một cách nào đó, website này cũng giống như thuốc, thuốc dành cho trí não và tâm hồn. Cho nên, xin vui lòng đọc kỹ hướng dẫn sử dụng trước khi dùng.

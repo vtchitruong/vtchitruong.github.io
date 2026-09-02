@@ -14,11 +14,7 @@
 
 {% block content %}
   {{ super() }}
-  {% if page.meta.show_donation != false %}
-    <div class="donation-button">
-      <a href="https://docs.mrschool.vn/donation/#cach-thuc" class="btn-donate">Bao tôi ly cafe 🧋 nhé!</a>
-    </div>
-  {% endif %}
+
 {% endblock %}
 {% block scripts %}
   {{ super() }}
@@ -33,6 +29,33 @@
       </svg>
     </a>
 
+    <!-- Program Menu Dropdown -->
+    <div class="glass-dropdown">
+      <!-- Menu Stack -->
+      <div class="glass-stack" id="menu-stack" aria-hidden="true">
+        <a href="{{ 'grade-10/grade-10-index/' | url }}" class="glass-stack-btn">
+          <span><i class="fa-solid fa-0"></i> Lớp 10</span>
+        </a>
+        <a href="{{ 'grade-11/grade-11-index' | url }}" class="glass-stack-btn">
+          <span><i class="fa-solid fa-1"></i> Lớp 11</span>
+        </a>
+        <a href="{{ 'grade-12/grade-12-index/' | url }}" class="glass-stack-btn">
+          <span><i class="fa-solid fa-2"></i> Lớp 12</span>
+        </a>
+        <a href="{{ 'special-topics/special-topics-index/' | url }}" class="glass-stack-btn">
+          <span><i class="fa-brands fa-think-peaks"></i> Chuyên đề</span>
+        </a>
+        <!-- Add future links below by duplicating a <a class="glass-stack-btn"> tag -->
+      </div>
+
+      <!-- Menu Toggle Button -->
+      <button type="button" class="glass-btn" id="menu-toggle" title="Danh mục bài học" aria-expanded="false" aria-controls="menu-stack">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+        </svg>
+      </button>
+    </div>
+
     <!-- Back to Top Button -->
     <a href="#__top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" class="glass-btn" title="Lên đầu trang">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -45,13 +68,13 @@
       <!-- Popup Stack Menu -->
       <div class="glass-stack" id="donation-stack" aria-hidden="true">
         <a href="https://buymeacoffee.com/vtchitruong" target="_blank" rel="noopener" class="glass-stack-btn">
-          <span>☕ Buy Me a Coffee</span>
+          <span><i class="fa-solid fa-mug-hot"></i> Buy Me a Coffee</span>
         </a>
         <a href="{{ 'donation-momo/' | url }}" target="_blank" class="glass-stack-btn">
-          <span>📱 Ví MoMo</span>
+          <span><i class="fa-solid fa-wallet"></i> Ví MoMo</span>
         </a>
         <a href="{{ 'donation-tcb/' | url }}" target="_blank" class="glass-stack-btn">
-          <span>🏦 Techcombank</span>
+          <span><i class="fa-solid fa-building-columns"></i> Techcombank</span>
         </a>
       </div>
 
@@ -62,40 +85,6 @@
         </svg>
       </button>
     </div>
-
   </div>
 
-  <!-- Toggle Logic for Donation Stack -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleBtn = document.getElementById("donation-toggle");
-      const stack = document.getElementById("donation-stack");
-
-      if (toggleBtn && stack) {
-        toggleBtn.addEventListener("click", function (e) {
-          e.stopPropagation();
-          const isOpen = stack.classList.contains("is-open");
-          
-          if (isOpen) {
-            stack.classList.remove("is-open");
-            stack.setAttribute("aria-hidden", "true");
-            toggleBtn.setAttribute("aria-expanded", "false");
-          } else {
-            stack.classList.add("is-open");
-            stack.setAttribute("aria-hidden", "false");
-            toggleBtn.setAttribute("aria-expanded", "true");
-          }
-        });
-
-        /* Close stack when clicking anywhere outside */
-        document.addEventListener("click", function (e) {
-          if (!stack.contains(e.target) && e.target !== toggleBtn) {
-            stack.classList.remove("is-open");
-            stack.setAttribute("aria-hidden", "true");
-            toggleBtn.setAttribute("aria-expanded", "false");
-          }
-        });
-      }
-    });
-  </script>
 {% endblock %}

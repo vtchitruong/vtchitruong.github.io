@@ -9,6 +9,8 @@
 :root {
   --md-text-font: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
+
+  --msd-blue: #4682b4;
 }
 
 [data-md-color-scheme="vtct_theme"] {
@@ -24,6 +26,8 @@
   --md-code-hl-comment-color: #aaa;
   --md-code-hl-generic-color: var(--md-default-fg-color--light);
   --md-code-hl-variable-color: #333;
+
+  --msd-blue: #4682b4;
 }
 
 /* Base Layout & Typography */
@@ -229,6 +233,31 @@ details {
 
 .highlighttable tr {
   border: hidden;
+}
+
+/* Sidebar item text color on hover */
+.md-nav__link:hover {
+  color: var(--msd-blue) !important;
+}
+
+/* Currently selected / active page in the sidebar */
+.md-nav__link--active,
+.md-nav__link--active:hover {
+  color: var(--msd-blue) !important;
+}
+
+/* Optional: Active icon color if using navigation icons */
+.md-nav__link--active .md-icon,
+.md-nav__link--active svg {
+  fill: var(--msd-blue) !important;
+  color: var(--msd-blue) !important;
+}
+
+/* If sidebar items contain SVG icons, update their hover color as well */
+.md-nav__link:hover .md-icon,
+.md-nav__link:hover svg {
+  fill: var(--msd-blue) !important;
+  color: var(--msd-blue) !important;
 }
 
 @media screen and (max-width: 44.9375em) {

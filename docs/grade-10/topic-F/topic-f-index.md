@@ -1,6 +1,5 @@
 ---
 icon: material/table-of-contents
-show_donation: false
 ---
 
 # Lập trình cơ bản
