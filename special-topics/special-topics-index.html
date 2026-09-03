@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Chuy&#xea;n &#x111;&#x1ec1;","children":[{"content":"L&#x1edb;p 10","children":[{"content":"CS","children":[{"content":"Chuy&#xea;n &#x111;&#x1ec1; 10.1","children":[{"content":"Th&#x1ef1;c h&#xe0;nh v&#x1edb;i c&#xe1;c b&#x1ed9; ph&#x1ead;n c&#x1ee7;a robot gi&#xe1;o d&#x1ee5;c","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"h4","lines":"12,13"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 10.2","children":[{"content":"K&#x1ebf;t n&#x1ed1;i robot gi&#xe1;o d&#x1ee5;c v&#x1edb;i m&#xe1;y t&#xed;nh","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"h4","lines":"16,17"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 10.3","children":[{"content":"L&#x1ead;p tr&#xec;nh &#x111;i&#x1ec1;u khi&#x1ec3;n robot gi&#xe1;o d&#x1ee5;c","children":[],"payload":{"tag":"li","lines":"22,24"}}],"payload":{"tag":"h4","lines":"20,21"}}],"payload":{"tag":"h3","lines":"10,11"}},{"content":"ICT","children":[{"content":"Chuy&#xea;n &#x111;&#x1ec1; 10.1","children":[{"content":"Th&#x1ef1;c h&#xe0;nh l&#xe0;m vi&#x1ec7;c v&#x1edb;i c&#xe1;c t&#x1ec7;p v&#x103;n b&#x1ea3;n","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h4","lines":"26,27"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 10.2","children":[{"content":"Th&#x1ef1;c h&#xe0;nh s&#x1eed; d&#x1ee5;ng ph&#x1ea7;n m&#x1ec1;m tr&#xec;nh chi&#x1ebf;u","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"h4","lines":"30,31"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 10.3","children":[{"content":"Th&#x1ef1;c h&#xe0;nh s&#x1eed; d&#x1ee5;ng ph&#x1ea7;n m&#x1ec1;m b&#x1ea3;ng t&#xed;nh","children":[],"payload":{"tag":"li","lines":"36,38"}}],"payload":{"tag":"h4","lines":"34,35"}}],"payload":{"tag":"h3","lines":"24,25"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"L&#x1edb;p 11","children":[{"content":"CS","children":[{"content":"Chuy&#xea;n &#x111;&#x1ec1; 11.1","children":[{"content":"Thi&#x1ebf;t k&#x1ebf; thu&#x1ead;t to&#xe1;n theo k&#x1ef9; thu&#x1ead;t &#x111;&#x1ec7; quy","children":[],"payload":{"tag":"li","lines":"44,46"}}],"payload":{"tag":"h4","lines":"42,43"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 11.2","children":[{"content":"Thi&#x1ebf;t k&#x1ebf; thu&#x1ead;t to&#xe1;n theo k&#x1ef9; thu&#x1ead;t chia &#x111;&#x1ec3; tr&#x1ecb;","children":[],"payload":{"tag":"li","lines":"48,50"}}],"payload":{"tag":"h4","lines":"46,47"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 11.3","children":[{"content":"Thi&#x1ebf;t k&#x1ebf; thu&#x1ead;t to&#xe1;n theo k&#x1ef9; thu&#x1ead;t duy&#x1ec7;t v&#xe0; quay lui","children":[],"payload":{"tag":"li","lines":"52,54"}}],"payload":{"tag":"h4","lines":"50,51"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"ICT","children":[{"content":"Chuy&#xea;n &#x111;&#x1ec1; 11.1","children":[{"content":"S&#x1eed; d&#x1ee5;ng ph&#x1ea7;n m&#x1ec1;m v&#x1ebd; trang tr&#xed;","children":[],"payload":{"tag":"li","lines":"58,60"}}],"payload":{"tag":"h4","lines":"56,57"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 11.2","children":[{"content":"S&#x1eed; d&#x1ee5;ng ph&#x1ea7;n m&#x1ec1;m l&#xe0;m phim ho&#x1ea1;t h&#xec;nh","children":[],"payload":{"tag":"li","lines":"62,64"}}],"payload":{"tag":"h4","lines":"60,61"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 11.3","children":[{"content":"S&#x1eed; d&#x1ee5;ng ph&#x1ea7;n m&#x1ec1;m ch&#x1ec9;nh s&#x1eed;a &#x1ea3;nh","children":[],"payload":{"tag":"li","lines":"66,68"}}],"payload":{"tag":"h4","lines":"64,65"}}],"payload":{"tag":"h3","lines":"54,55"}}],"payload":{"tag":"h2","lines":"38,39"}},{"content":"L&#x1edb;p 12","children":[{"content":"CS","children":[{"content":"Chuy&#xea;n &#x111;&#x1ec1; 12.1","children":[{"content":"M&#x1ed9;t v&#xe0;i ki&#x1ec3;u d&#x1eef; li&#x1ec7;u tuy&#x1ebf;n t&#xed;nh","children":[],"payload":{"tag":"li","lines":"74,76"}}],"payload":{"tag":"h4","lines":"72,73"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 12.2:","children":[{"content":"C&#xe2;y t&#xec;m ki&#x1ebf;m nh&#x1ecb; ph&#xe2;n trong s&#x1eaf;p x&#x1ebf;p v&#xe0; t&#xec;m ki&#x1ebf;m","children":[],"payload":{"tag":"li","lines":"78,80"}}],"payload":{"tag":"h4","lines":"76,77"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 12.3:","children":[{"content":"T&#xec;m hi&#x1ec3;u k&#x129; thu&#x1ead;t duy&#x1ec7;t &#x111;&#x1ed3; th&#x1ecb; v&#xe0; &#x1ee9;ng d&#x1ee5;ng","children":[],"payload":{"tag":"li","lines":"82,84"}}],"payload":{"tag":"h4","lines":"80,81"}}],"payload":{"tag":"h3","lines":"70,71"}},{"content":"ICT","children":[{"content":"Chuy&#xea;n &#x111;&#x1ec1; 12.1:","children":[{"content":"S&#x1eed; d&#x1ee5;ng ph&#x1ea7;n m&#x1ec1;m qu&#x1ea3;n l&#xfd; d&#x1ef1; &#xe1;n","children":[],"payload":{"tag":"li","lines":"88,90"}}],"payload":{"tag":"h4","lines":"86,87"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 12.2:","children":[{"content":"B&#x1ea3;o v&#x1ec7; d&#x1eef; li&#x1ec7;u, c&#xe0;i &#x111;&#x1eb7;t v&#xe0; g&#x1ee1; b&#x1ecf; ph&#x1ea7;n m&#x1ec1;m","children":[],"payload":{"tag":"li","lines":"92,94"}}],"payload":{"tag":"h4","lines":"90,91"}},{"content":"Chuy&#xea;n &#x111;&#x1ec1; 12.3:","children":[{"content":"Ph&#xe2;n t&#xed;ch d&#x1eef; li&#x1ec7;u v&#x1edb;i ph&#x1ea7;n m&#x1ec1;mb&#x1ea3;ng t&#xed;nh","children":[],"payload":{"tag":"li","lines":"96,97"}}],"payload":{"tag":"h4","lines":"94,95"}}],"payload":{"tag":"h3","lines":"84,85"}}],"payload":{"tag":"h2","lines":"68,69"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":360})</script>
+</body>
+</html>

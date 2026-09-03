@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"X&#xe2;y d&#x1ef1;ng c&#x1a1; s&#x1edf; d&#x1eef; li&#x1ec7;u","children":[{"content":"T&#x1ea1;o b&#x1ea3;ng","children":[{"content":"C&#xfa; ph&#xe1;p SQL <code>CREATE TABLE</code>","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"C&#xf3; th&#x1ec3; t&#x1ea1;o kho&#xe1; ch&#xed;nh v&#xe0; kho&#xe1; ngo&#x1ea1;i ngay trong c&#xe2;u l&#x1ec7;nh <code>CREATE TABLE</code>","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Xem l&#x1b0;&#x1ee3;c &#x111;&#x1ed3; quan h&#x1ec7;","children":[{"content":"Ch&#x1ecd;n menu <strong>ERD For Database</strong>","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h2","lines":"13,14"}},{"content":"Th&#xea;m m&#x1eab;u tin v&#xe0;o b&#x1ea3;ng","children":[{"content":"Nh&#x1ead;p cho b&#x1ea3;ng cha tr&#x1b0;&#x1edb;c, r&#x1ed3;i m&#x1edb;i nh&#x1ead;p b&#x1ea3;ng con.","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"C&#xfa; ph&#xe1;p SQL <code>INSERT INTO ... VALUES</code>","children":[],"payload":{"tag":"li","lines":"20,21"}}],"payload":{"tag":"h2","lines":"17,18"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":360})</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Thi&#x1ebf;t b&#x1ecb; m&#x1ea1;ng","children":[{"content":"Kh&#xe1;i ni&#x1ec7;m","children":[{"content":"\n<p data-lines=\"10,11\">L&#xe0; nh&#x1eef;ng ph&#x1ea7;n c&#x1ee9;ng</p>","children":[],"payload":{"tag":"li","lines":"10,12"}},{"content":"\n<p data-lines=\"12,13\">D&#xf9;ng &#x111;&#x1ec3; k&#x1ebf;t n&#x1ed1;i trong m&#x1ea1;ng m&#xe1;y t&#xed;nh</p>","children":[],"payload":{"tag":"li","lines":"12,14"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Thi&#x1ebf;t b&#x1ecb; th&#xf4;ng d&#x1ee5;ng","children":[{"content":"Modem","children":[{"content":"Truy&#x1ec1;n d&#x1eab;n t&#xed;n hi&#x1ec7;u Internet gi&#x1eef;a ISP v&#xe0; h&#x1ed9; gia &#x111;&#xec;nh.","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"h3","lines":"16,17"}},{"content":"B&#x1ed9; &#x111;&#x1ecb;nh tuy&#x1ebf;n (router)","children":[{"content":"Chuy&#x1ec3;n ti&#x1ebf;p g&#xf3;i tin gi&#x1eef;a c&#xe1;c m&#x1ea1;ng kh&#xe1;c nhau.","children":[],"payload":{"tag":"li","lines":"22,24"}}],"payload":{"tag":"h3","lines":"20,21"}},{"content":"B&#x1ed9; chuy&#x1ec3;n m&#x1ea1;ch (switch)","children":[{"content":"K&#x1ebf;t n&#x1ed1;i c&#xe1;c thi&#x1ebf;t b&#x1ecb; trong c&#xf9;ng m&#x1ed9;t m&#x1ea1;ng.","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"h3","lines":"24,25"}},{"content":"&#x110;i&#x1ec3;m truy c&#x1ead;p kh&#xf4;ng d&#xe2;y (WAP)","children":[{"content":"M&#x1edf; r&#x1ed9;ng v&#xf9;ng m&#x1ea1;ng kh&#xf4;ng d&#xe2;y","children":[],"payload":{"tag":"li","lines":"30,31"}}],"payload":{"tag":"h3","lines":"28,29"}}],"payload":{"tag":"h2","lines":"14,15"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+</body>
+</html>
