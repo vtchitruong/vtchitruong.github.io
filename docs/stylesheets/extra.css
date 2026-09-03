@@ -11,6 +11,7 @@
   font-optical-sizing: auto;
 
   --msd-blue: #4682b4;
+  --msd-green: #4cae4f;
 }
 
 [data-md-color-scheme="vtct_theme"] {
@@ -28,6 +29,7 @@
   --md-code-hl-variable-color: #333;
 
   --msd-blue: #4682b4;
+  --msd-green: #4cae4f;
 }
 
 /* Base Layout & Typography */
@@ -45,12 +47,25 @@ strong {
 
 .md-content {
   background-color: #fff;
-  margin-bottom: 0.8rem;
-  border-radius: 15px;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
 }
 
 .tx-hero h1 {
   font-size: 2.41rem !important;
+}
+
+.md-content article h2 {
+  color: var(--msd-green);
+  font-weight: 400;
+}
+
+.md-content article h3 {
+  font-weight: 400;
+}
+
+.md-content article h3 {
+  font-weight: 400;
 }
 
 
@@ -506,6 +521,10 @@ div.gslide-description.description-bottom {
   fill: #C2B280;
 }
 
+.md-banner code {
+  color: #c2b280;
+  background-color: #2f4f4f;
+}
 
 /* ==========================================================================
    8. MATERIAL FOR MKDOCS EXTENSIONS & INSIDERS (.mdx-*)
@@ -573,6 +592,43 @@ div.gslide-description.description-bottom {
 .md-typeset .mdx-columns ol,
 .md-typeset .mdx-columns ul {
   column-count: 2;
+}
+
+/* Increase specificity with .md-typeset */
+.md-typeset .table-card {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--md-default-fg-color--lightest, #e2e8f0);
+}
+
+.md-typeset .table-card table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.md-typeset .table-card th {
+  background-color: var(--md-primary-fg-color, #0d9488) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 12px 16px;
+}
+
+.md-typeset .table-card td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest, #f1f5f9);
+}
+
+.md-typeset .table-card tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.md-typeset .table-card tr:hover td {
+  background-color: rgba(13, 148, 136, 0.08);
 }
 
 @media screen and (max-width: 29.9375em) {

@@ -89,7 +89,7 @@ Giới thiệu các hệ cơ sở dữ liệu
 
 1. Nhận biết được [nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý](./topic-F1/data-management.md){:target="_blank"}.
 2. Diễn đạt được khái niệm hệ cơ sở dữ liệu, các khái niệm cơ bản trong [mô hình cơ sở dữ liệu quan hệ](./topic-F1/relational-database.md){:target="_blank"} như quan hệ (bảng), khoá, khoá ngoài, truy vấn, cập nhật dữ liệu, v.v...
-3. Nêu được [những khái niệm cơ bản của hệ cơ sở dữ liệu](./topic-F1/database-a-simplified-overview.md){:target="_blank"}. Giải thích được các khái niệm đó qua ví dụ minh hoạ.
+3. Nêu được [những khái niệm cơ bản của hệ cơ sở dữ liệu](./topic-F1/database-a-simplified-overview.md){:target="_blank"}. Giải thích được các khái niệm đó qua ví dụ minh họa.
 4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
 5. Nêu được [tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu](./topic-F1/database-security.md){:target="_blank"}.
 
@@ -136,7 +136,7 @@ Kỹ thuật lập trình
 2. Kiểm thử và đánh giá hiệu quả của chương trình
     1. Biết được việc kiểm thử giúp lập trình viên phát hiện lỗi, làm tăng độ tin cậy của chương trình nhưng chưa chứng minh được tính đúng của chương trình.
     2. Trình bày được sơ lược khái niệm độ phức tạp thời gian của thuật toán và phép toán tích cực.
-    Nêu được ví dụ minh hoạ.
+    Nêu được ví dụ minh họa.
     3. Vận dụng được những quy tắc thực hành xác định độ phức tạp thời gian của một số thuật toán, chương trình đã biết.
 3. Phương pháp làm mịn dần và sử dụng module trong lập trình
     1. Giải thích và vận dụng được phương pháp làm mịn dần trong lập trình.

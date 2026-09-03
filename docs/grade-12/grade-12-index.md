@@ -14,12 +14,12 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 ### Chủ đề A
 
-#### Chủ đề A1 
+#### Chủ đề A1
 
 Giới thiệu trí tuệ nhân tạo
 
 - [Giải thích được sơ lược về khái niệm trí tuệ nhân tạo](./topic-A/ai-a-simplified-overview.md){:target="_blank"}.
-- [Nêu được ví dụ minh hoạ cho một số ứng dụng điển hình của AI](./topic-A/ai-applications-in-real-life.md){:target="_blank"} như điều khiển tự động, chẩn đoán bệnh, nhận dạng chữ viết tay, nhận dạng tiếng nói và khuôn mặt, trợ lí ảo, v.v...
+- [Nêu được ví dụ minh họa cho một số ứng dụng điển hình của AI](./topic-A/ai-applications-in-real-life.md){:target="_blank"} như điều khiển tự động, chẩn đoán bệnh, nhận dạng chữ viết tay, nhận dạng tiếng nói và khuôn mặt, trợ lí ảo, v.v...
 - [Chỉ ra được một số lĩnh vực của khoa học công nghệ và đời sống đã và đang phát triển mạnh mẽ dựa trên những thành tựu to lớn của AI](./topic-A/ai-applications-in-real-life.md){:target="_blank"}.
 - [Nêu được ví dụ để thấy một hệ thống AI có tri thức, có khả năng suy luận và khả năng học](./topic-A/generative-ai.md){:target="_blank"}.
 - [Nêu được một cảnh báo về sự phát triển của AI trong tương lai](./topic-A/ai-applications-in-real-life.md){:target="_blank"}.
@@ -154,9 +154,9 @@ Phác thảo thiết kế mạng máy tính
 
     1. [Giới thiệu khoa học dữ liệu](./topic-F2/data-science.md){target="_blank"}
     
-        - Nêu được sơ lược về mục tiêu và một số thành tựu của khoa học dữ liệu, nêu được ví dụ minh hoạ.
+        - Nêu được sơ lược về mục tiêu và một số thành tựu của khoa học dữ liệu, nêu được ví dụ minh họa.
         - Biết được vai trò của máy tính đối với sự phát triển của Khoa học dữ liệu.
-        - Biết được tính ưu việt trong việc sử dụng máy tính và thuật toán hiệu quả để xử lí khối dữ liệu lớn, nêu được ví dụ minh hoạ.
+        - Biết được tính ưu việt trong việc sử dụng máy tính và thuật toán hiệu quả để xử lí khối dữ liệu lớn, nêu được ví dụ minh họa.
         - Nêu được trải nghiệm của bản thân trong việc trích rút thông tin và tri thức hữu ích từ dữ liệu đã có.
 
 	2. [Giới thiệu học máy](./topic-F2/machine-learning.md){target="_blank"}
