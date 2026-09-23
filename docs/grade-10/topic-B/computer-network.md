@@ -43,7 +43,7 @@ Phương tiện dùng để kết nối có thể là **cáp Ethernet** hoặc c
 
 Hình dưới đây minh hoạ một mạng cục bộ có cấu trúc hình sao, sử dụng bộ định tuyến để kết nối các máy tính để bàn và máy in bằng cáp Ethernet, kết nối các thiết bị khác bằng sóng WiFi. Bộ định tuyến này vừa cho phép tạo mạng cục bộ, vừa cho phép các thiết bị cục bộ kết nối ra mạng ngoài, chẳng hạn ra Internet.
 
-![Minh hoạ mạng cục bộ](../topic-B/network/lan.svg){loading=lazy}  
+![Minh hoạ mạng cục bộ](./network/lan.svg){loading=lazy}  
 *Minh hoạ mạng cục bộ*
 
 #### Lợi ích
@@ -146,10 +146,11 @@ Một số lợi ích chủ yếu của Internet là:
 
         1.  *Khoảng cách số* là sự chênh lệch trong việc tiếp cận và sử dụng công nghệ số giữa các cá nhân, cộng đồng hoặc lãnh thổ. Sự chênh lệch này bắt nguồn từ sự bất bình đẳng về khả năng tiếp cận công nghệ, hiểu biết kỹ thuật số và khả năng tận dụng hiệu quả các nguồn tài nguyên số.
 
-## Sơ đồ tóm tắt nội dung
+## Sơ đồ tóm tắt
 
-{!grade-10/topic-B/computer-network.mm.md!}
-*Sơ đồ khái quát phân loại mạng máy tính*
+<div>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/computer-network.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ## Some English words
 

@@ -9,7 +9,7 @@ markmap:
 
 ### Phạm vi kết nối gần
 
-- Trường học, cơ quan, văn phòng, v.v...
+- Trường học, cơ quan, văn phòng, v.v.
 
 ### Phương tiện truyền dẫn
 

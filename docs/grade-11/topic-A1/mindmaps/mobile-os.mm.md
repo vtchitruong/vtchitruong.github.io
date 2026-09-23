@@ -8,11 +8,11 @@ markmap:
 
 ## Thiết bị hướng đến
 
-- Các thiết bị di động.
+- Điện thoại thông minh, máy tính bảng
 
 ## Tính năng hướng đến
 
-- Màn hình cảm ứng, kết nối không dây, GPS, camera, v.v...
+- Màn hình cảm ứng, kết nối không dây, GPS, camera, v.v.
 
 ## Ví dụ
 

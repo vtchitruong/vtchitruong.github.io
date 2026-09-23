@@ -105,6 +105,18 @@ Android có một số đặc điểm sau:
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/4/t/10/l/16/s/39/q/1/){:target="_blank"}
 
+??? info "Một số điểm khác nhau giữa hệ điều hành trên máy tính để bàn và trên thiết bị di động"
+
+    | Khía cạnh | Hệ điều hành máy tính để bàn | Hệ điều hành thiết bị di động |
+    | --- | ---- | ---- |
+    | Kiểu dáng thiết bị | Dành cho như **máy tính để bàn** và **máy tính xách tay**. | Dành cho **điện thoại thông minh** và **máy tính bảng**. |
+    | Phương thức tương tác | Thiên về **bàn phím** và **chuột** (con trỏ trên màn hình). | Thiên về **màn hình cảm ứng**, cử chỉ chạm hoặc vuốt, giọng nói. |
+    | Giao diện người dùng | **Tối ưu cho màn hình lớn**, thường trên 13 inch; nhiều cửa sổ. | **Tối ưu cho màn hình nhỏ**, thường dưới 13 inch; thường là một cửa sổ toàn màn hình. |
+    | Khả năng đa nhiệm | **Đa nhiệm song song**: cho phép nhiều ứng dụng xử lý đồng thời. | **Đa nhiệm tối ưu**: Hiển thị một ứng dụng chính, tạm ngừng các ứng dụng ẩn để tiết kiệm pin và RAM. |
+    | Tác vụ | Thiên về **công việc phức tạp**: sáng tạo nội dung, lập trình, đồ họa, chơi game cấu hình cao. | Thiên về **công việc tức thời**: giao tiếp, giải trí, tra cứu nhanh, định vị, di chuyển. |
+    | Kết nối mạng | Thiên về kết nối có dây **Ethernet** hoặc không dây **WiFi**. | Thiên về kết nối không dây như **WiFi**, **4G/5G**, Bluetooth, NFC. |
+    | Phần mềm | Thiên về về cài đặt tự do từ **nhiều nguồn**; phần mềm có thể can thiệp sâu vào hệ thống tập tin. | Thiên về cài đặt từ **cửa hàng ứng dụng**; phần mềm chạy trong môi trường cô lập để tăng cường bảo mật. |
+
 ## Sơ đồ tóm tắt
 
 <div>

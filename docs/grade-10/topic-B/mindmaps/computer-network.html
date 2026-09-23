@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"M&#x1ea1;ng m&#xe1;y t&#xed;nh","children":[{"content":"LAN","children":[{"content":"Ph&#x1ea1;m vi k&#x1ebf;t n&#x1ed1;i g&#x1ea7;n","children":[{"content":"Tr&#x1b0;&#x1edd;ng h&#x1ecd;c, c&#x1a1; quan, v&#x103;n ph&#xf2;ng, v.v.","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"h3","lines":"9,10"}},{"content":"Ph&#x1b0;&#x1a1;ng ti&#x1ec7;n truy&#x1ec1;n d&#x1eab;n","children":[{"content":"C&#xe1;p Ethernet","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"S&#xf3;ng WiFi","children":[],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"h3","lines":"13,14"}},{"content":"&#x1ee8;ng d&#x1ee5;ng","children":[{"content":"Chia s&#x1ebb; d&#x1eef; li&#x1ec7;u n&#x1ed9;i b&#x1ed9;","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"D&#xf9;ng chung thi&#x1ebf;t b&#x1ecb;","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"Chia s&#x1ebb; k&#x1ebf;t n&#x1ed1;i ra Internet","children":[],"payload":{"tag":"li","lines":"22,24"}}],"payload":{"tag":"h3","lines":"18,19"}}],"payload":{"tag":"h2","lines":"7,8"}},{"content":"WAN","children":[{"content":"Ph&#x1ea1;m vi k&#x1ebf;t n&#x1ed1;i xa","children":[{"content":"T&#x1ec9;nh th&#xe0;nh, qu&#x1ed1;c gia","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h3","lines":"26,27"}},{"content":"Ph&#x1b0;&#x1a1;ng ti&#x1ec7;n truy&#x1ec1;n d&#x1eab;n","children":[{"content":"C&#xe1;p quang","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"V&#x1ec7; tinh","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"h3","lines":"30,31"}},{"content":"&#x110;i&#x1ec3;n h&#xec;nh l&#xe0; Internet","children":[{"content":"&#x1ee8;ng d&#x1ee5;ng","children":[{"content":"Truy c&#x1ead;p website","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"D&#x1ecb;ch v&#x1ee5; tr&#x1ef1;c tuy&#x1ebf;n","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"C&#xe1;c h&#xec;nh th&#x1ee9;c giao ti&#x1ebf;p t&#x1eeb; xa","children":[],"payload":{"tag":"li","lines":"41,43"}}],"payload":{"tag":"h4","lines":"37,38"}},{"content":"Vai tr&#xf2; &#x111;&#x1ed1;i v&#x1edb;i x&#xe3; h&#x1ed9;i","children":[{"content":"K&#x1ebf;t n&#x1ed1;i v&#xe0; giao ti&#x1ebf;p","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"Truy c&#x1ead;p v&#xe0; chia s&#x1ebb; th&#xf4;ng tin","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"Giao ti&#x1ebf;p t&#x1eeb; xa","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"T&#x103;ng tr&#x1b0;&#x1edf;ng kinh t&#x1ebf;","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Ph&#xe1;t tri&#x1ec3;n con ng&#x1b0;&#x1edd;i","children":[],"payload":{"tag":"li","lines":"49,50"}}],"payload":{"tag":"h4","lines":"43,44"}}],"payload":{"tag":"h3","lines":"35,36"}}],"payload":{"tag":"h2","lines":"24,25"}}],"payload":{"tag":"h1","lines":"5,6"}},{"colorFreezeLevel":3})</script>
+</body>
+</html>

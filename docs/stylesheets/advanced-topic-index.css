@@ -44,12 +44,14 @@ body {
 }
 
 .advanced-topic-index h2#head {
-    border-radius: 2rem 2rem 0 0;
+    border-radius: 1rem 1rem 0 0;
     font-weight: normal;
+    font-size: 1rem;
 }
 
 .advanced-topic-index h2#foot {
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 1rem 1rem;
+    max-height: 0.5rem;
 }
 
 .advanced-topic-index .list {
@@ -79,12 +81,14 @@ body {
 
 .advanced-topic-index .list a:hover {
     background-color: rgba(235, 243, 247, 0.7);
+    
 }
 
 .advanced-topic-index .list a:hover span {
     left: 8px;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    font-weight: 600;
 }
 
 .advanced-topic-index .list li {
