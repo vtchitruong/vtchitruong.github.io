@@ -12,7 +12,7 @@ icon: material/remote
 
 **IoT (Internet of Things)** là thuật ngữ dùng để chỉ mạng lưới các thiết bị có gắn cảm biến và cài đặt phần mềm, cũng như đính kèm những công nghệ khác, để có thể giao tiếp và trao đổi dữ liệu với nhau thông qua Internet.
 
-Các thiết bị có thể là đồ gia dụng, máy móc công nghiệp, xe cộ hoặc thiết bị đeo, chẳng hạn như: máy điều hòa nhiệt độ, hệ thống an ninh trong nhà, xe ô tô, v.v...
+Các thiết bị có thể là đồ gia dụng, máy móc công nghiệp, xe cộ hoặc thiết bị đeo, chẳng hạn như: máy điều hòa nhiệt độ, hệ thống an ninh trong nhà, xe ô tô, v.v..
 
 ## Các thành phần
 
@@ -32,7 +32,7 @@ Các thành phần chủ yếu trong một hệ thống IoT gồm có:
 
 3. **Kết nối mạng**
 
-    Gồm Internet và các công nghệ mạng khác: WiFi, Bluetooth, mạng di động, Zigbee, LoRa, v.v...
+    Gồm Internet và các công nghệ mạng khác: WiFi, Bluetooth, mạng di động, Zigbee, LoRa, v.v..
 
 4. **Bộ phận truyền động**
 
@@ -83,7 +83,7 @@ Việc liên lạc giữa các thiết bị được thực hiện thông qua nh
 IoT có phạm vi ứng dụng rộng lớn, bao gồm:
 
 1. Nhà thông minh
-    - Hệ thống điều khiển và kiểm soát từ xa các vật dụng như đèn, máy điều hòa nhiệt độ, camera, v.v...
+    - Hệ thống điều khiển và kiểm soát từ xa các vật dụng như đèn, máy điều hòa nhiệt độ, camera, v.v..
     - Máy đo chỉ số điện tiêu thụ tại gia đình và trợ giúp thanh toán chi phí hằng tháng.
 
 2. Y tế

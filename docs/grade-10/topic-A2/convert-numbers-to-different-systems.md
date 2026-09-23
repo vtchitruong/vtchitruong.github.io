@@ -60,7 +60,7 @@ Hệ thập lục phân sử dụng 16 ký số: `0`, `1`, `2`, `3`, `4`, `5`, `
 !!! note "Hệ 2 → hệ 10"
 
     1. Lấy mỗi chữ số nhân với cơ số 2 và lũy thừa với số mũ tương ứng.
-    2. Số mũ được tính từ phải sang trái, bắt đầu từ 0, 1, 2, v.v...
+    2. Số mũ được tính từ phải sang trái, bắt đầu từ 0, 1, 2, v.v..
     2. Cộng tất cả với nhau.
 
 Ví dụ:

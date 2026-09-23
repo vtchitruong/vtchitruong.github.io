@@ -32,7 +32,7 @@ Ví dụ:
 
 [Chromium](https://www.chromium.org/chromium-projects/){:target="_blank"} là dự án trình duyệt web mã nguồn mở. Mã nguồn của Chromium có thể xem tại [https://chromium.googlesource.com/chromium/src/](https://chromium.googlesource.com/chromium/src/){:target="_blank"}.
 
-Nhiều tổ chức và cá nhân đã tận dụng mã nguồn của Chromium để phát triển trình duyệt web của riêng mình, chẳng hạn như: [Microsoft Edge](https://www.microsoft.com/en-us/edge/){:target="_blank"}, [Opera](https://www.opera.com/){:target="_blank"}, [Brave](https://brave.com/){:target="_blank"}, v.v...
+Nhiều tổ chức và cá nhân đã tận dụng mã nguồn của Chromium để phát triển trình duyệt web của riêng mình, chẳng hạn như: [Microsoft Edge](https://www.microsoft.com/en-us/edge/){:target="_blank"}, [Opera](https://www.opera.com/){:target="_blank"}, [Brave](https://brave.com/){:target="_blank"}, v.v..
 
 Tuy nhiên, mã nguồn mở không đồng nghĩa với việc tác giả từ bỏ bản quyền, mà cần hiểu đúng là: tác giả vẫn giữ bản quyền đối với mã nguồn và cấp quyền sử dụng rộng rãi thông qua giấy phép.
 
@@ -101,7 +101,6 @@ Mỗi loại giấy phép có những yêu cầu riêng, chẳng hạn như:
 - Bắt buộc công bố mã nguồn chỉnh sửa mới.
 - Chia sẻ các sửa đổi theo cùng một giấy phép.
 - Không sử dụng phần mềm vì mục đích cụ thể nào đó.
-- v.v...
     
 Một số giấy phép mã nguồn mở thông dụng là:
 

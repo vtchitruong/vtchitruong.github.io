@@ -20,7 +20,7 @@ Tin học và xử lý thông tin
 
 1. Dữ liệu, thông tin và xử lý thông tin
     1. [Phân biệt được thông tin và dữ liệu, nêu được ví dụ minh họa](../grade-10/topic-A1/data-vs-information.md){:target="_blank"}.
-    2. [Chuyển đổi được giữa các đơn vị lưu trữ thông tin: B, KB, MB, v.v...](../grade-10/topic-A1/data-measurement-unit.md){:target="_blank"}
+    2. [Chuyển đổi được giữa các đơn vị lưu trữ thông tin: B, KB, MB, v.v..](../grade-10/topic-A1/data-measurement-unit.md){:target="_blank"}
     3. [Nêu được sự ưu việt của việc lưu trữ, xử lý và truyền thông tin bằng thiết bị số](../grade-10/topic-A1/digital-devices-vs-smart-devices.md){:target="_blank"}.
 2. Vai trò của máy tính và các thiết bị thông minh trong nền kinh tế tri thức
     1. Trình bày được những đóng góp cơ bản của tin học đối với xã hội, nêu được ví dụ minh họa.
@@ -105,14 +105,14 @@ Lập trình cơ bản
 
 Giới thiệu nhóm [nghề thiết kế](./topic-G/graphic-design.md){:target="_blank"} và [nghề lập trình](./topic-G/developer.md){:target="_blank"}.
 
-1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v...):
+1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v.):
 
     - Những nét sơ lược về công việc chính mà người làm nghề phải thực hiện.
     - Yêu cầu thiết yếu về kiến thức và kỹ năng cần có để làm nghề.
     - Ngành học có liên quan ở các bậc học tiếp theo.
     - Nhu cầu nhân lực hiện tại và tương lai của nhóm nghề đó.
 
-2. Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực, v.v...) về một vài ngành nghề khác trong lĩnh vực tin học.
+2. Tự tìm kiếm và khai thác được thông tin hướng nghiệp (qua các chương trình đào tạo, thông báo tuyển dụng nhân lực, v.v.) về một vài ngành nghề khác trong lĩnh vực tin học.
 3. Giao lưu được với bạn bè qua các kênh truyền thông tin số để tham khảo và trao đổi ý kiến về những thông tin trên.
 
 ---
@@ -143,4 +143,4 @@ Biểu diễn thông tin
 Phần mềm thiết kế đồ họa
     
 1. Sử dụng được một số chức năng cơ bản của phần mềm thiết kế đồ họa.
-2. Tạo được sản phẩm số đơn giản, hữu ích và thực tế như thiết kế logo, tạo banner, topic quảng cáo, banderole, áp phích, poster và thiệp chúc mừng, v.v...
+2. Tạo được sản phẩm số đơn giản, hữu ích và thực tế như thiết kế logo, tạo banner, topic quảng cáo, banderole, áp phích, poster và thiệp chúc mừng, v.v.

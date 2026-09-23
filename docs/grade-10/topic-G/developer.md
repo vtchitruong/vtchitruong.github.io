@@ -78,7 +78,7 @@ Mặc dù vậy, một trong những yếu tố ảnh hưởng đáng kể đế
 
 Giai đoạn này tập trung vào nắm vững những kiến thức và kỹ năng cơ bản nhất của lập trình.
 
-- Nguyên tắc cơ bản về lập trình: thuật toán, cấu trúc dữ liệu, cấu trúc điều khiển, hàm, lập trình hướng đối tượng, v.v...
+- Nguyên tắc cơ bản về lập trình: thuật toán, cấu trúc dữ liệu, cấu trúc điều khiển, hàm, lập trình hướng đối tượng, v.v..
 - Chọn  ngôn ngữ lập trình cho người mới bắt đầu.
 - Làm quen với các công cụ phát triển cơ bản:
     - Trình soạn thảo hoặc môi trường phát triển tích hợp.

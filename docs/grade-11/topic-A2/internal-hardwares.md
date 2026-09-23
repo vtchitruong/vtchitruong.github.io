@@ -32,7 +32,7 @@ Viết tắt là **CPU**, được xem là bộ não của máy tính, chịu tr
 
     Một số loại chỉ thị của CPU là: 
 
-    - Phép toán số học: cộng, trừ, nhân, chia, v.v...
+    - Phép toán số học: cộng, trừ, nhân, chia, v.v..
     - Phép toán logic: AND, OR, XOR, các phép toán so sánh, các phép dịch chuyển bit (shift).
     - Điều khiển luồng: Rẽ nhánh và lặp.
     - Di chuyển dữ liệu: Sao chép dữ liêu qua lại giữa các ô nhớ, thanh ghi, thiết bị vào, ra.

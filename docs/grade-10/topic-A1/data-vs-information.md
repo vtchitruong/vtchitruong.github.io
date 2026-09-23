@@ -16,7 +16,7 @@ icon: octicons/number-16
 - chữ
 - hình ảnh
 - âm thanh
-- v.v...
+- v.v.
 
 ở dạng thô, được thu thập từ nhiều nơi khác nhau.
 

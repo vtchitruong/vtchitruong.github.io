@@ -60,11 +60,11 @@ Trong lập trình, sắp xếp dữ liệu giúp cho tập dữ liệu trở n�
 
 Nhìn chung, thuật toán sắp xếp được ứng dụng trong các vấn đề về tìm kiếm thông tin và so khớp dữ liệu. Một số bài toán liên quan là:
 
-- Bài toán quản lý, trong đó cần sắp xếp mã định danh, họ tên, thời gian, nơi chốn, v.v...
-- Bài toán đồ thị như Prim, Dijkstra, Kruskal, v.v..., trong đó cần sắp xếp các cạnh theo trọng số.
+- Bài toán quản lý, trong đó cần sắp xếp mã định danh, họ tên, thời gian, nơi chốn, v.v..
+- Bài toán đồ thị như Prim, Dijkstra, Kruskal, v.v., trong đó cần sắp xếp các cạnh theo trọng số.
 - Bài toán thống kê như tìm trung vị, tìm tứ phân vị.
 - Bài toán tìm phần tử trùng lắp, trộn các tập dữ liệu, chia để trị, tìm kiếm theo khoảng.
-- Bài toán sắp xếp sự kiện theo thời gian trong mô phỏng, trò chơi, lịch trình công việc, xử lý gói tin mạng, v.v...
+- Bài toán sắp xếp sự kiện theo thời gian trong mô phỏng, trò chơi, lịch trình công việc, xử lý gói tin mạng, v.v..
 
 Hiện nay, các ngôn ngữ lập trình và hệ thống phần mềm đã có sẵn công cụ sắp xếp để người dùng dễ dàng sử dụng. Song việc tìm hiểu các thuật toán sắp xếp vẫn là cần thiết giúp người học phát triển tư duy và kỹ năng lập trình.
 

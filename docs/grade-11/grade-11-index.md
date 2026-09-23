@@ -35,16 +35,16 @@ Thế giới thiết bị số
 
 1. [Những bộ phận chính bên trong máy tính](./topic-A2/internal-hardwares.md){:target="_blank"}
 
-    1. [Nhận diện được hình dạng, mô tả được chức năng của các bộ phận chính bên trong thân máy tính như CPU, RAM và các thiết bị lưu trữ. Nêu được tên và giải thích được đơn vị đo hiệu năng của chúng như GHz, GB, v.v...](./topic-A2/internal-hardwares.md){:target="_blank"}
+    1. [Nhận diện được hình dạng, mô tả được chức năng của các bộ phận chính bên trong thân máy tính như CPU, RAM và các thiết bị lưu trữ. Nêu được tên và giải thích được đơn vị đo hiệu năng của chúng như GHz, GB, v.v..](./topic-A2/internal-hardwares.md){:target="_blank"}
     2. [Nhận biết được sơ đồ của các mạch logic AND, OR, NOT, giải thích được vai trò của các mạch logic đó trong thực hiện các tính toán nhị phân](./topic-A2/logic-gates.md){:target="_blank"}.
     3. Tùy chỉnh được một vài chức năng cơ bản của máy tính và các thiết bị vào – ra thông dụng để phù hợp với nhu cầu sử dụng và đạt hiệu quả tốt hơn.
 
 2. Chức năng và hoạt động của những thiết bị ngoại vi và thiết bị số thông dụng
 
     1. Đọc hiểu được một số điểm chính trong tài liệu hướng dẫn về thiết bị số thông dụng. Thực hiện được một số những chỉ dẫn trong tài liệu đó.
-    2. [Đọc hiểu và giải thích được một số thông số cơ bản như kích thước màn hình, CPU, RAM, dung lượng lưu trữ, độ phân giải camera, v.v... của các thiết bị số thông dụng](./topic-A2/laptop-smartphone-specifications.md){:target="_blank"}. Ví dụ: PC, máy tính bảng, điện thoại thông minh, tivi có khả năng kết nối Internet, v.v...
+    2. [Đọc hiểu và giải thích được một số thông số cơ bản như kích thước màn hình, CPU, RAM, dung lượng lưu trữ, độ phân giải camera, v.v. của các thiết bị số thông dụng](./topic-A2/laptop-smartphone-specifications.md){:target="_blank"}. Ví dụ: PC, máy tính bảng, điện thoại thông minh, tivi có khả năng kết nối Internet, v.v..
     3. Biết được cách kết nối các bộ phận thân máy, bàn phím, chuột, màn hình của máy tính với nhau.
-    4. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v...
+    4. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v..
 
 ---
 
@@ -58,8 +58,8 @@ Thế giới thiết bị số
 
 Tìm kiếm và trao đổi thông tin trên mạng
 
-1. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v...  
-2. Sử dụng được máy tìm kiếm, chẳng hạn máy tìm kiếm của Google, Yahoo, Bing, v.v... trên PC và thiết bị số thông minh để tìm kiếm thông tin bằng cách gõ từ khoá hoặc bằng tiếng nói.
+1. Biết được cách kết nối PC với các thiết bị số thông dụng như máy in, điện thoại thông minh, máy ảnh số, v.v..  
+2. Sử dụng được máy tìm kiếm, chẳng hạn máy tìm kiếm của Google, Yahoo, Bing, v.v. trên PC và thiết bị số thông minh để tìm kiếm thông tin bằng cách gõ từ khoá hoặc bằng tiếng nói.
 3. Xác lập được các lựa chọn theo tiêu chí tìm kiếm để nâng cao hiệu quả tìm kiếm thông tin.
 4. Sử dụng được những chức năng nâng cao của dịch vụ mạng xã hội.
 5. Biết cách phân loại và đánh dấu các email.
@@ -71,7 +71,7 @@ Tìm kiếm và trao đổi thông tin trên mạng
 Ứng xử văn hoá và an toàn trên mạng
 
 1. Nêu được một số dạng lừa đảo phổ biến trên mạng và những biện pháp phòng tránh.
-2. Giao tiếp được trên mạng qua email, chat, mạng xã hội, v.v... và trong môi trường số một cách văn minh, phù hợp với các quy tắc và văn hoá ứng xử.
+2. Giao tiếp được trên mạng qua email, chat, mạng xã hội, v.v. và trong môi trường số một cách văn minh, phù hợp với các quy tắc và văn hoá ứng xử.
 
 ---
 
@@ -88,7 +88,7 @@ Tìm kiếm và trao đổi thông tin trên mạng
 Giới thiệu các hệ cơ sở dữ liệu
 
 1. Nhận biết được [nhu cầu lưu trữ dữ liệu và khai thác thông tin cho bài toán quản lý](./topic-F1/data-management.md){:target="_blank"}.
-2. Diễn đạt được khái niệm hệ cơ sở dữ liệu, các khái niệm cơ bản trong [mô hình cơ sở dữ liệu quan hệ](./topic-F1/relational-database.md){:target="_blank"} như quan hệ (bảng), khoá, khoá ngoài, truy vấn, cập nhật dữ liệu, v.v...
+2. Diễn đạt được khái niệm hệ cơ sở dữ liệu, các khái niệm cơ bản trong [mô hình cơ sở dữ liệu quan hệ](./topic-F1/relational-database.md){:target="_blank"} như quan hệ (bảng), khoá, khoá ngoài, truy vấn, cập nhật dữ liệu, v.v..
 3. Nêu được [những khái niệm cơ bản của hệ cơ sở dữ liệu](./topic-F1/database-a-simplified-overview.md){:target="_blank"}. Giải thích được các khái niệm đó qua ví dụ minh họa.
 4. Phân biệt được hai loại kiến trúc hệ cơ sở dữ liệu là tập trung và phân tán.
 5. Nêu được [tầm quan trọng và một số biện pháp bảo mật hệ cơ sở dữ liệu](./topic-F1/database-security.md){:target="_blank"}.
@@ -103,7 +103,7 @@ Giới thiệu các hệ cơ sở dữ liệu
 
 [Nghề quản trị cơ sở dữ liệu](./topic-G/database-administration.md){:target="_blank"}
 
-1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v...):
+1. Trình bày được thông tin hướng nghiệp về nhóm nghề thiết kế và lập trình thông qua phân tích nghiệp vụ của một số nghề điển hình (Ví dụ: thiết kế đồ họa, thiết kế trò chơi máy tính, lập trình viên, phân tích thiết kế hệ thống, v.v.):
 
     - Những nét sơ lược về công việc chính mà người làm nghề phải thực hiện.
     - Yêu cầu thiết yếu về kiến thức và kĩ năng cần có để làm nghề.

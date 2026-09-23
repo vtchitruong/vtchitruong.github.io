@@ -35,7 +35,7 @@ Ta có thể tính toán trên giấy bằng cách xếp các toán hạng (1) t
 1.  Toán hạng là số hạng trong phép cộng hoặc thừa số trong phép nhân.
 
 1. Xếp các toán hạng theo hàng dọc theo hướng từ phải qua trái.
-2. Thực hiện cộng hoặc nhân tương tự như trong hệ thập phân, tức bắt đầu từ hàng đơn vị, rồi hàng chục, hàng trăm, v.v...
+2. Thực hiện cộng hoặc nhân tương tự như trong hệ thập phân, tức bắt đầu từ hàng đơn vị, rồi hàng chục, hàng trăm, v.v..
 3. Các chữ số của kết quả thành phần (đối với phép nhân) và kết quả cuối cùng cũng phải được căn phải và đúng vị trí so với các chữ số của toán hạng.
 4. Trường hợp cộng hoặc nhân ra `10` hoặc `11`, ta vẫn *nhớ* `1` cho phép toán của chữ số tiếp theo bên trái.
 
@@ -109,4 +109,4 @@ Ví dụ:
 | phép toán logic | logical operation |
 | phép toán số học | arithmetic operation |
 | toán hạng | operand |
-| toán tử (ví dụ: `+`, `&#215`, `AND`, `OR`, v.v...) | operator |
+| toán tử (ví dụ: `+`, `&#215`, `AND`, `OR`, v.v.) | operator |

@@ -51,7 +51,7 @@ Do đó, bài này chỉ đề cập độ phức tạp thời gian của thuậ
 
 ## Ý tưởng
 
-Thời gian chạy thực tế của chương trình (1) phụ thuộc vào nhiều yếu tố khác nhau như ngôn ngữ lập trình, trình biên dịch, hệ điều hành, tốc độ CPU, RAM, v.v... Vì thế, để đánh giá thuật toán một cách công bằng, ta cần một đơn vị đo khác, độc lập với các yếu tố trên.
+Thời gian chạy thực tế của chương trình (1) phụ thuộc vào nhiều yếu tố khác nhau như ngôn ngữ lập trình, trình biên dịch, hệ điều hành, tốc độ CPU, RAM, v.v.. Vì thế, để đánh giá thuật toán một cách công bằng, ta cần một đơn vị đo khác, độc lập với các yếu tố trên.
 { .annotate }
 
 1.  được tính bằng giây hoặc milli-giây

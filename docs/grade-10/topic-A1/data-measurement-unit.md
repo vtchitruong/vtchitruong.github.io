@@ -47,7 +47,7 @@ Ký hiệu: **B**.
     Byte có thể dùng để biểu diễn:
 
     - **Ký tự**: tuỳ theo bảng mã mà mỗi ký tự có thể chiếm 1 byte, 2 byte trên bộ nhớ hoặc nhiều hơn.
-    - **Số nguyên** hoặc **số có phần thập phân**: tuỳ theo độ lớn hoặc độ chính xác của số mà một số có thể chiếm 1 byte, 2 byte, 4 byte, v.v... trên bộ nhớ.
+    - **Số nguyên** hoặc **số có phần thập phân**: tuỳ theo độ lớn hoặc độ chính xác của số mà một số có thể chiếm 1 byte, 2 byte, 4 byte, v.v. trên bộ nhớ.
     - **Kênh màu**: trong hệ màu RGB, mỗi kênh màu (R, G hoặc B) chiếm 1 byte. Nói cách khác, mỗi điểm ảnh gồm 3 kênh màu sẽ chiếm 3 byte trên bộ nhớ. 
 
 !!! info "Lưu ý về ký hiệu"

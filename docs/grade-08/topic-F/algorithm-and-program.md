@@ -37,7 +37,7 @@ Hình sau đây là lưu đồ minh hoạ thuật toán chiên trứng.
 
 **Chương trình máy tính** là **dãy các lệnh** điều khiển máy tính thực hiện một thuật toán.
 
-Chương trình máy tính có thể được viết bằng các ngôn ngữ lập trình, chẳng hạn như: C++, Python, Scratch, v.v...
+Chương trình máy tính có thể được viết bằng các ngôn ngữ lập trình, chẳng hạn như: C++, Python, Scratch, v.v..
 
 ## Mối quan hệ giữa thuật toán và chương trình máy tính
 

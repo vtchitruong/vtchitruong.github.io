@@ -48,7 +48,7 @@ Android có một số đặc điểm sau:
 
 4. **Khả năng tích hợp Google**
 
-    Android được tích hợp chặt chẽ các dịch vụ Google, chẳng hạn như Gmail, Maps, Drive, v.v...
+    Android được tích hợp chặt chẽ các dịch vụ Google, chẳng hạn như Gmail, Maps, Drive, v.v..
 
 5. **Khả năng tích hợp đám mây**
 

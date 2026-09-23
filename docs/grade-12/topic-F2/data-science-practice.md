@@ -133,7 +133,7 @@ Tất cả trường hợp nhiễm bệnh, tử vong và hồi phục là dựa 
     3. Click nút **Sort Z to A** để sắp xếp từ lớn đến nhỏ.
     4. Quan sát những hàng đầu tiên.
 
-    **Đáp án:** United Kingdom, France, Turkey, India, v.v...    
+    **Đáp án:** United Kingdom, France, Turkey, India, v.v..   
 
 ### Câu 2
 
@@ -146,7 +146,7 @@ Tất cả trường hợp nhiễm bệnh, tử vong và hồi phục là dựa 
     3. Click nút **Sort Z to A** để sắp xếp giảm dần.
     4. Quan sát những hàng đầu tiên.
 
-    **Đáp án:** Illinois, Florida, Unknown (Belgium), Puerto Rico, Nebraska, Maryland, Minnesota, v.v...
+    **Đáp án:** Illinois, Florida, Unknown (Belgium), Puerto Rico, Nebraska, Maryland, Minnesota, v.v..
 
     Lưu ý:
     

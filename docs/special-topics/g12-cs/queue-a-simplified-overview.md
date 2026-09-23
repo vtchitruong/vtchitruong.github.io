@@ -187,7 +187,7 @@ Hàng đợi được truy xuất theo FIFO: Bernard Arnault Elon Musk Jeff Bezo
 
 Một số ứng dụng của hàng đợi là:
 
-- Xử lý hàng đợi công việc: phổ biến trong hệ thống đa nhiệm, lập lịch công việc như in ấn, xử lý tác vụ nền, v.v...
+- Xử lý hàng đợi công việc: phổ biến trong hệ thống đa nhiệm, lập lịch công việc như in ấn, xử lý tác vụ nền, v.v..
 - Quản lý tài nguyên: bộ nhớ đệm (buffer), lập lịch cho CPU scheduling, quản lý kết nối mạng, v.v...
 - Xử lý sự kiện trong các hệ thống phần mềm.
 

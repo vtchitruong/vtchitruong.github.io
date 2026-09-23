@@ -21,7 +21,7 @@ Hàm `isPrime()` dùng để kiểm tra một số tự nhiên `n` có phải l�
 - Trường hợp 3: Nếu `n` chia hết cho 2 hoặc chia hết cho 3 thì không là nguyên tố.
 - Trường hợp 4: Với các số `n` còn lại, ta không cần kiểm tra chia cho `i` = 2..`n - 1`, mà chỉ cần kiểm tra từ 5 và 7, và tăng `i` lên 6 trong mỗi lần lặp.
 
-    Nói cách khác, chỉ kiểm tra xem `n` có chia hết cho `i` = 5, 7, 11, 13, 17, 19, v.v... Bởi vì các số nằm giữa những số trên đã thuộc về ba trường hợp đã xét.
+    Nói cách khác, chỉ kiểm tra xem `n` có chia hết cho `i` = 5, 7, 11, 13, 17, 19, v.v.. Bởi vì các số nằm giữa những số trên đã thuộc về ba trường hợp đã xét.
 
     Ngoài ra, ta cũng không chia `i` đến `n - 1`, mà chỉ chia đến $\sqrt{n}$.
 
@@ -41,7 +41,7 @@ bool isPrime(int n)
     if (n % 2 == 0) return false;
     if (n % 3 == 0) return false;
     
-    // Kiểm tra n có chia hết cho 5, 7, 11, 13, 17, 19, v.v...
+    // Kiểm tra n có chia hết cho 5, 7, 11, 13, 17, 19, v.v.
     for (int i = 5; i * i <= n; i += 6)
     {
         if (n % i == 0) return false;

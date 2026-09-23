@@ -26,7 +26,7 @@ Ngoài máy tính, các thiết bị trong mạng cục bộ còn có:
 - Bộ định tuyến
 - Máy in
 - Thiết bị lưu trữ NAS
-- v.v... 
+- v.v.
 
 ??? info "Cấu trúc liên kết mạng"
 
@@ -123,7 +123,7 @@ Một số lợi ích chủ yếu của Internet là:
 
     Internet hỗ trợ khả năng làm việc từ xa, làm việc cộng tác theo thời gian thực, dẫn đến việc giảm nhu cầu di chuyển vật lý, góp phần làm giảm tắc nghẽn giao thông và ô nhiễm.
 
-    Internet tạo điều kiện phát triển chính phủ điện tử, thương mại điện tử, đào tạo từ xa, e-learning, theo dõi và chẩn đoán y tế từ xa, chăm sóc sức khỏe từ xa, v.v...
+    Internet tạo điều kiện phát triển chính phủ điện tử, thương mại điện tử, đào tạo từ xa, e-learning, theo dõi và chẩn đoán y tế từ xa, chăm sóc sức khỏe từ xa, v.v..
 
 4. **Tăng trưởng kinh tế**
 

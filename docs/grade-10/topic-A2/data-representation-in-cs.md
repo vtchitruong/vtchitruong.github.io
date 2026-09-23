@@ -63,7 +63,7 @@ Việc mã hoá các code point này thành dữ liệu máy tính sử dụng c
     Hiện nay, Unicode đã cập nhật đến phiên bản 15.0, mã hoá được tổng cộng 149,186 (1) ký tự.
     { .annotate }
 
-    1.  Trong website này, dấu phẩy `,` dùng để gom nhóm 3 chữ số hàng nghìn, hàng triệu, v.v...
+    1.  Trong website này, dấu phẩy `,` dùng để gom nhóm 3 chữ số hàng nghìn, hàng triệu, v.v..
 
     Bạn có thể tìm hiểu thêm tại [home.unicode.org](https://home.unicode.org/){:target="_blank"}.
 

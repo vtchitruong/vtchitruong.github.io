@@ -56,7 +56,7 @@ Bên cạnh đó, cứ sau bốn phiên bản, Canonical lại phát hành phiê
 Một điểm thú vị là, tên mã của mỗi phiên bản được đặt bằng một *"từ láy"* ký tự đầu, gồm danh từ chỉ con vật và tính từ đi kèm, chẳng hạn như:
 
 - Phiên bản đầu tiên có tên mã là Warty Warthog.
-- Các phiên bản tiếp theo là: Hoary Hedgehog, Breezy Badger, Dapper Drake, v.v...
+- Các phiên bản tiếp theo là: Hoary Hedgehog, Breezy Badger, Dapper Drake, v.v..
 - Những phiên bản gần đây là:
 
     | Phiên bản | Tên mã |

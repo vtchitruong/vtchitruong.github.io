@@ -4,7 +4,7 @@
 
 Trong C++, **struct** là kiểu dữ liệu do người dùng tự định nghĩa, cho phép gom nhóm các thành phần có kiểu khác nhau vào chung một đơn vị.
 
-Cụ thể hơn, một struct có thể chứa nhiều thành phần (member) mà mỗi thành phần có kiểu dữ liệu chuẩn tuỳ ý (`int`, `float`, `bool`, v.v...), các thành phần này có thể là biến hoặc hàm (member variable, member function), nhằm biểu diễn một đối tượng nào đó có nhiều thuộc tính.
+Cụ thể hơn, một struct có thể chứa nhiều thành phần (member) mà mỗi thành phần có kiểu dữ liệu chuẩn tuỳ ý (`int`, `float`, `bool`, v.v.), các thành phần này có thể là biến hoặc hàm (member variable, member function), nhằm biểu diễn một đối tượng nào đó có nhiều thuộc tính.
 
 Ví dụ:
 

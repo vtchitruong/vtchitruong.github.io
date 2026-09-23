@@ -99,7 +99,7 @@ Kỹ thuật mô phỏng đang hiện diện trong hầu hết các lĩnh vực 
 
 5. **Giải trí**
 
-    Các trò chơi như Roblox, Flight Simulator, đua xe F1, v.v... thực chất là những hệ thống mô phỏng vật lý cực kỳ phức tạp.
+    Các trò chơi như Roblox, Flight Simulator, đua xe F1, v.v. thực chất là những hệ thống mô phỏng vật lý cực kỳ phức tạp.
 
 6. **Quân sự**
     

@@ -19,7 +19,7 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 Giới thiệu trí tuệ nhân tạo
 
 - [Giải thích được sơ lược về khái niệm trí tuệ nhân tạo](./topic-A/ai-a-simplified-overview.md){:target="_blank"}.
-- [Nêu được ví dụ minh họa cho một số ứng dụng điển hình của AI](./topic-A/ai-applications-in-real-life.md){:target="_blank"} như điều khiển tự động, chẩn đoán bệnh, nhận dạng chữ viết tay, nhận dạng tiếng nói và khuôn mặt, trợ lí ảo, v.v...
+- [Nêu được ví dụ minh họa cho một số ứng dụng điển hình của AI](./topic-A/ai-applications-in-real-life.md){:target="_blank"} như điều khiển tự động, chẩn đoán bệnh, nhận dạng chữ viết tay, nhận dạng tiếng nói và khuôn mặt, trợ lí ảo, v.v..
 - [Chỉ ra được một số lĩnh vực của khoa học công nghệ và đời sống đã và đang phát triển mạnh mẽ dựa trên những thành tựu to lớn của AI](./topic-A/ai-applications-in-real-life.md){:target="_blank"}.
 - [Nêu được ví dụ để thấy một hệ thống AI có tri thức, có khả năng suy luận và khả năng học](./topic-A/generative-ai.md){:target="_blank"}.
 - [Nêu được một cảnh báo về sự phát triển của AI trong tương lai](./topic-A/ai-applications-in-real-life.md){:target="_blank"}.
@@ -93,8 +93,8 @@ Tạo trang web
 
 2. Sử dụng CSS trong tạo trang web
 
-    - Hiểu và sử dụng được một số thuộc tính cơ bản của CSS: màu sắc, phông chữ, nền, đường viền, kích cỡ, v.v...
-    - Sử dụng được các yếu tố của vùng chọn (selector) như class, id, tag, v.v...
+    - Hiểu và sử dụng được một số thuộc tính cơ bản của CSS: màu sắc, phông chữ, nền, đường viền, kích cỡ, v.v..
+    - Sử dụng được các yếu tố của vùng chọn (selector) như class, id, tag, v.v..
     - Sử dụng được CSS làm trang web đẹp, đa dạng và sinh động hơn.
 
 #### Chủ đề F2

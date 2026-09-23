@@ -183,7 +183,7 @@ where subject_name = 'Khoa học máy tính';
 
 ??? info "Các loại liên kết khác"
 
-    Ngoài `INNER JOIN`, còn có các loại liên kết khác như: `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN`, `OUTER JOIN`, `CROSS JOIN`, `SELF JOIN`, `THETA JOIN`, `NATURAL JOIN`, `EQUI JOIN`, `SEMI JOIN`, `ANTI JOIN`, v.v...
+    Ngoài `INNER JOIN`, còn có các loại liên kết khác như: `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN`, `OUTER JOIN`, `CROSS JOIN`, `SELF JOIN`, `THETA JOIN`, `NATURAL JOIN`, `EQUI JOIN`, `SEMI JOIN`, `ANTI JOIN`, v.v..
 
 ---
 

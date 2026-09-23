@@ -40,7 +40,7 @@ May thay, các ngôn ngữ lập trình đều có hỗ trợ những cấu trú
 Trong đó:
 
 - Các phần tử được **lưu trữ liên tiếp nhau** trên bộ nhớ.
-- Các phần tử đều **có cùng kiểu dữ liệu**, chẳng hạn: cùng là số nguyên, cùng là số thực, v.v...
+- Các phần tử đều **có cùng kiểu dữ liệu**, chẳng hạn: cùng là số nguyên, cùng là số thực, v.v..
 - **Số lượng phần tử** là **hữu hạn** và thường được xác định trước.
 - Mỗi phần tử được truy xuất thông qua **một hoặc nhiều chỉ số** tuỳ theo **số chiều** của mảng. Chẳng hạn:
 

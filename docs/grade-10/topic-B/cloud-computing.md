@@ -141,7 +141,7 @@ Thay vì phải sở hữu và tự bảo trì cơ sở hạ tầng phần cứn
 
     Stream nhạc, phim: Netflix, Hulu, Disney+, Spotify.
 
-    v.v...
+    v.v.
 
 ## Lợi ích
 

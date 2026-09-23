@@ -37,7 +37,7 @@ Muốn phần cứng hoạt động được, cần phải có phần mềm, là
     2.  Có hai loại giao diện:
 
         - **Giao diện dòng lệnh**: người dùng gõ lệnh để điều khiển máy tính.
-        - **Giao diện đồ hoạ**: người dùng sử dụng chuột hoặc màn hình cảm ứng để tương tác với các đối tượng như biểu tượng, cửa sổ, menu, v.v...   
+        - **Giao diện đồ hoạ**: người dùng sử dụng chuột hoặc màn hình cảm ứng để tương tác với các đối tượng như biểu tượng, cửa sổ, menu, v.v..
 
 - **Phần mềm ứng dụng** được thiết kế để đáp ứng những công việc cụ thể nào đó của người dùng.
 
@@ -79,9 +79,9 @@ Vai trò của các thành phần trên như sau:
     - Game A chạy được trên Windows và Android, nhưng không chạy được trên MacOS.
     - Game B chạy được trên Nintendo nhưng không chắc chạy được trên Windows.
 
-2. Các phần mềm ứng dụng muốn sử dụng CPU, bộ nhớ, v.v... cho công việc của mình thì phải thông qua hệ điều hành.
+2. Các phần mềm ứng dụng muốn sử dụng CPU, bộ nhớ, v.v. cho công việc của mình thì phải thông qua hệ điều hành.
 
-    Hệ điều hành có chức năng phân phối CPU, bộ nhớ, v.v... một cách hợp lý khi có nhiều phần mềm ứng dụng yêu cầu cùng lúc.
+    Hệ điều hành có chức năng phân phối CPU, bộ nhớ, v.v. một cách hợp lý khi có nhiều phần mềm ứng dụng yêu cầu cùng lúc.
 
 ### Hệ điều hành và phần cứng
 

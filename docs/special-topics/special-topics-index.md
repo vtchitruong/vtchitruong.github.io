@@ -14,15 +14,15 @@ Sơ đồ dưới đây chỉ mang tính khái quát, không trình bày đầy 
 
 Thực hành với các bộ phận của robot giáo dục
 
-- Trình bày được sơ lược về phân loại, vai trò và cơ chế hoạt động của những bộ phận chính của robot giáo dục như: pin (pin đũa, pin cúc, v.v...), động cơ (động cơ DC, động cơ servo hoặc động cơ bước), bảng mạch, cảm biến, đèn LED, loa, còi, dây cáp, bánh xe, thiết bị điều khiển từ xa, v.v...
-- Lắp ráp được robot giáo dục từ các bộ phận và linh kiện (gắn pin, lắp bánh xe, gắn động cơ, v.v...)
+- Trình bày được sơ lược về phân loại, vai trò và cơ chế hoạt động của những bộ phận chính của robot giáo dục như: pin (pin đũa, pin cúc, v.v.), động cơ (động cơ DC, động cơ servo hoặc động cơ bước), bảng mạch, cảm biến, đèn LED, loa, còi, dây cáp, bánh xe, thiết bị điều khiển từ xa, v.v..
+- Lắp ráp được robot giáo dục từ các bộ phận và linh kiện (gắn pin, lắp bánh xe, gắn động cơ, v.v.)
 - Kiểm tra được tình trạng sẵn sàng hoạt động của robot giáo dục.
 
 ### Chuyên đề 10.2
 
 Kết nối robot giáo dục với máy tính
 
-- Cài đặt được phần mềm hỗ trợ và kết nối được robot giáo dục với máy tính, máy tính bảng hoặc điện thoại thông minh thông qua các cổng như wifi, bluetooth hay USB, v.v...
+- Cài đặt được phần mềm hỗ trợ và kết nối được robot giáo dục với máy tính, máy tính bảng hoặc điện thoại thông minh thông qua các cổng như wifi, bluetooth hay USB, v.v..
 - Kiểm tra được kết quả kết nối robot giáo dục với máy tính.
 
 ### Chuyên đề 10.3
@@ -60,7 +60,7 @@ Thực hành sử dụng phần mềm trình chiếu
 
 Thực hành sử dụng phần mềm bảng tính
 
-- Đọc hiểu được một số công thức cơ bản trong bảng tính điện tử. Tạo được các công thức tính toán và hiển thị được các thông tin thống kê trong bảng tính,ví dụ tỷ lệ xếp loại kết quả học tập, số tiền thu chi hàng tháng, v.v...
+- Đọc hiểu được một số công thức cơ bản trong bảng tính điện tử. Tạo được các công thức tính toán và hiển thị được các thông tin thống kê trong bảng tính,ví dụ tỷ lệ xếp loại kết quả học tập, số tiền thu chi hàng tháng, v.v..
 - Tạo được bảng tính có cấu trúc hợp lý, có tính thẩm mĩ và được minh họa bằng những đồ thị, biểu đồ sinh động.
 - Làm việc được theo nhóm với tinh thần hợp tác.
 
@@ -91,8 +91,8 @@ Thực hành thiết kế thuật toán theo kỹ thuật chia để trị
 
 Thực hành thiết kế thuật toán theo kỹ thuật duyệt
 
-- Nêu được ý tưởng của kỹ thuật duyệt và ví dụ minh họa (như tìm phần tử lớn nhất hoặc nhỏ nhất trong một dãy số, tìm một số trong một dãy số, v.v...).
-- [Nêu được ý tưởng của kỹ thuật quay lui](./g11-cs/back-tracking-a-simplified-overview.md){:target="_blank"}. và nêu được ví dụ minh họa (như in các xâu nhị phân độ dài n, tìm tất cả các hoán vị của n phần tử, v.v...).
+- Nêu được ý tưởng của kỹ thuật duyệt và ví dụ minh họa (như tìm phần tử lớn nhất hoặc nhỏ nhất trong một dãy số, tìm một số trong một dãy số, v.v.).
+- [Nêu được ý tưởng của kỹ thuật quay lui](./g11-cs/back-tracking-a-simplified-overview.md){:target="_blank"}. và nêu được ví dụ minh họa (như in các xâu nhị phân độ dài n, tìm tất cả các hoán vị của n phần tử, v.v.).
 - Nhận ra được mối liên quan giữa thiết kế thuật toán theo kỹ thuật quay lui và kỹ thuật đệ quy.
 - Viết được chương trình đơn giản có sử dụng kỹ thuật duyệt.
 - [Viết được chương trình đơn giản có sử dụng kỹ thuật quay lui](./g11-cs/back-tracking-binary-string.md){:target="_blank"}.

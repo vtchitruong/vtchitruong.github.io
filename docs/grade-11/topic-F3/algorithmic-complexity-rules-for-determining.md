@@ -15,7 +15,7 @@ Việc xác định chính xác độ phức tạp của thuật toán đôi khi
 Độ phức tạp của mỗi phép toán cơ bản trên các biến đơn (1) như:
 { .annotate }
 
-1.  Biến đơn có thể là: số nguyên, ký tự, bool, v.v...
+1.  Biến đơn có thể là: số nguyên, ký tự, bool, v.v.
 
 - so sánh: `<`, `<=`, `>`, `>=`, `==`, `!=`
 - số học: `+`, `-`, `*`, `/`, `%`

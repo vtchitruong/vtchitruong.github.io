@@ -66,7 +66,7 @@ Những dữ liệu môi trường mà máy tính đã có thể lưu trữ và 
 - vị trí
 - góc quay
 - hướng
-- dữ liệu sinh trắc (vân tay, tròng mắt, v.v...)
+- dữ liệu sinh trắc, chẳng hạn như vân tay, tròng mắt, v.v.
 
 Dữ liệu yếu tố môi trường được máy tính thu thập thông qua các thiết bị gọi là **cảm biến**.
 

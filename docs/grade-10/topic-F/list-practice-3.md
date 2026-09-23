@@ -16,7 +16,7 @@ Cho bảng xếp hạng hộ chiếu các quốc gia như sau: [^1]
 | --- | --- |
 | 1 | United Arab Emirate |
 | 2 | Singapore, Spain |
-| 3 | Belgium, France, Sweden, Germany, v.v... |
+| 3 | Belgium, France, Sweden, Germany, v.v. |
 | ... | ... |
 
 ## Bài 1

@@ -53,7 +53,7 @@ Lược đồ sau điểm qua một số cột mốc phát triển của Tin h�
 
     Từ 2010 đến nay, lĩnh vực **trí tuệ nhân tạo** tiến bộ vượt bậc, có những đột phá trong các nhánh như xử lý ngôn ngữ tự nhiên, thị giác máy tính và các autonomous system (tạm dịch là hệ thống tự quản).
 
-    Các công nghệ khác cũng đạt được những bước phát triển đáng kể: **máy tính lượng tử**, **blockchain**, **thiết bị đeo** điện tử thích ứng cơ thể, v.v...
+    Các công nghệ khác cũng đạt được những bước phát triển đáng kể: **máy tính lượng tử**, **blockchain**, **thiết bị đeo** điện tử thích ứng cơ thể, v.v..
 
     Năm 2022, OpenAI phát hành **ChatGPT** (dựa trên mô hình GPT-3.5), tạo nên cột mốc có sức ảnh hưởng toàn cầu, thúc đẩy một cuộc chạy đua phát triển và ứng dụng AI tạo sinh.
 

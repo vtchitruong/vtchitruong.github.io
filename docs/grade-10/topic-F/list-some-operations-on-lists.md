@@ -81,7 +81,7 @@ Bảng sau thể hiện một số cách áp dụng lát cắt.
 | `L[:3]` | Từ đầu đến trước chỉ số `3` | 
 | `L[2:]` | Từ chỉ số `2` đến cuối |
 | `L[:]` | Sao chép toàn bộ danh sách |
-| `L[::2]` | Lấy các phần tử ở chỉ số: 0, 2, ,4, 6, v.v... |
+| `L[::2]` | Lấy các phần tử ở chỉ số: 0, 2, ,4, 6, v.v. |
 | `L[::-1]` | Đảo ngược danh sách |
 | `L[-3:]` | 3 phần tử cuối cùng |
 

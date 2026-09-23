@@ -23,7 +23,7 @@ Nó kết hợp các tính năng của hệ điều hành dành cho máy tính v
 - Camera
 - Quản lý pin
 - Tối ưu đa nhiệm cho màn hình nhỏ
-- v.v...
+- v.v.
 
 Nhờ hệ điều hành di động, người dùng có thể thực hiện được nhiều tác vụ trong học tập, làm việc, giải trí, trong đó phần lớn là các tác vụ như:
 
@@ -75,7 +75,7 @@ Android có một số đặc điểm sau:
 
 4. **Khả năng tích hợp Google**
 
-    Android được tích hợp chặt chẽ các dịch vụ Google, chẳng hạn như Gmail, Maps, Drive, v.v...
+    Android được tích hợp chặt chẽ các dịch vụ Google, chẳng hạn như Gmail, Maps, Drive, v.v..
 
 5. **Khả năng tích hợp đám mây**
 

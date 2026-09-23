@@ -91,7 +91,7 @@ icon: material/robot-industrial-outline
 
     4. **Quản lý khủng hoảng xã hội**
 
-        Trong các tình huống khủng hoảng xã hội như xung đột chính trị, thiên tai, quản lý đám đông, v.v... mà đòi hỏi sự kết hợp giữa lý trí, cảm xúc và kinh nghiệm sống, AI chưa thể đảm nhận vai trò lãnh đạo hoặc đưa ra quyết định tổng thể thay con người.
+        Trong các tình huống khủng hoảng xã hội như xung đột chính trị, thiên tai, quản lý đám đông, v.v. mà đòi hỏi sự kết hợp giữa lý trí, cảm xúc và kinh nghiệm sống, AI chưa thể đảm nhận vai trò lãnh đạo hoặc đưa ra quyết định tổng thể thay con người.
 
     5. **Nghiên cứu khoa học cơ bản**
 
