@@ -14,39 +14,33 @@ icon: material/open-source-initiative
 
 ## Khái niệm
 
-**Mã nguồn** là tập hợp các các dòng lệnh được viết bằng ngôn ngữ lập trình để hướng dẫn máy tính thực thi một công việc nào đó.
+**Mã nguồn** là tập hợp **các dòng lệnh** được viết bằng ngôn ngữ lập trình để hướng dẫn máy tính thực thi một công việc nào đó.
 
-**Phần mềm mã nguồn mở** (1) là phần mềm mà mã nguồn của nó được công khai và cho phép người dùng xem, sử dụng, bổ sung và phân phối lại mã nguồn.  
+**Phần mềm mã nguồn mở** (1) là phần mềm mà mã nguồn của nó được **công khai** và **cho phép người dùng xem**, sử dụng, bổ sung và phân phối lại mã nguồn (2).
 { .annotate }
 
-1.  Một số sách ghi ngắn gọn hơn là *phần mềm nguồn mở*.
+1. Một số sách ghi ngắn gọn hơn là *phần mềm nguồn mở*.
 
-Cụ thể hơn, bất kỳ ai cũng có thể:
+2. Cụ thể hơn, bất kỳ ai cũng có thể:
 
-- Xem mã nguồn để hiểu cách hoạt động của phần mềm.
-- Sửa đổi mã nguồn để cải thiện hoặc tuỳ chỉnh phần mềm.
-- Phân phối lại phần mềm cho người khác.
-- Sử dụng phần mềm miễn phí hoặc với chi phí thấp.
+    - Xem mã nguồn để hiểu cách hoạt động của phần mềm.
+    - Sửa đổi hoặc tùy chỉnh mã nguồn để cải thiện phần mềm.
+    - Phân phối lại phần mềm cho người khác.
+    - Sử dụng phần mềm miễn phí hoặc với chi phí thấp.
 
-Ví dụ:
-
+Ví dụ:  
 [Chromium](https://www.chromium.org/chromium-projects/){:target="_blank"} là dự án trình duyệt web mã nguồn mở. Mã nguồn của Chromium có thể xem tại [https://chromium.googlesource.com/chromium/src/](https://chromium.googlesource.com/chromium/src/){:target="_blank"}.
 
 Nhiều tổ chức và cá nhân đã tận dụng mã nguồn của Chromium để phát triển trình duyệt web của riêng mình, chẳng hạn như: [Microsoft Edge](https://www.microsoft.com/en-us/edge/){:target="_blank"}, [Opera](https://www.opera.com/){:target="_blank"}, [Brave](https://brave.com/){:target="_blank"}, v.v..
 
-Tuy nhiên, mã nguồn mở không đồng nghĩa với việc tác giả từ bỏ bản quyền, mà cần hiểu đúng là: tác giả vẫn giữ bản quyền đối với mã nguồn và cấp quyền sử dụng rộng rãi thông qua giấy phép.
+Mã nguồn mở không đồng nghĩa với việc tác giả từ bỏ bản quyền, mà cần hiểu đúng là: tác giả vẫn giữ bản quyền đối với mã nguồn và cấp quyền sử dụng rộng rãi thông qua giấy phép.
 
-Cách ghi tắt bản quyền theo công ước Berne như sau:
+??? info "Cách ghi tắt bản quyền theo công ước Berne"
 
-```
-Copyright © [năm cập nhật nếu có thay đổi lớn] [tên tác giả/tổ chức giữ bản quyền]
-```
+    Copyright © [năm cập nhật nếu có thay đổi lớn] [tên tác giả/tổ chức giữ bản quyền]
 
-Ví dụ:
-
-```
-Copyright © 2008-2025 The Linux Foundation
-```
+    Ví dụ:  
+    Copyright © 2008-2025 The Linux Foundation
 
 !!! question "Hỏi chút chơi"
     
@@ -54,37 +48,44 @@ Copyright © 2008-2025 The Linux Foundation
 
 ## Đặc điểm
 
-1. **Minh bạch mã nguồn**
+<div class="grid cards" markdown>
 
-    Việc truy xuất mã nguồn giúp người dùng hiểu được cơ chế vận hành của phần mềm và thực hiện được các điều chỉnh cho phù hợp với nhu cầu của mình.
+-   :material-eye-check:{ .lg .middle } **Minh bạch**
     
-    Bản chất *"mở"* làm cho các vấn đề bảo mật được sớm phát hiện và khắc phục, đồng nghĩa phần mềm sẽ an toàn hơn.
+    * Người dùng có thể xem mã nguồn hoặc chỉnh sửa theo nhu cầu.
+    * Cộng đồng có thể phát hiện và vá lỗi bảo mật sớm hơn.
+    * Thúc đẩy học tập và cộng tác thông qua việc tham khảo trực tiếp mã nguồn.
+
+-   :material-source-fork:{ .lg .middle } **Đa dạng và phân mảnh**
     
-    Tính minh bạch cũng thúc đẩy khả năng học tập và cộng tác.
+    Nhiều phiên bản khác nhau, nhiều giải pháp sáng tạo khác nhau.
 
-2. **Được đóng góp từ cộng đồng**
+    Ví dụ:  
+    Hệ điều hành Linux có hơn 600 bản phân phối đang hoạt động và hơn 500 bản đang được phát triển.
 
-    Các lập trình viên hoặc người biết lập trình trên thế giới có thể đóng góp cho phần mềm bằng cách sửa lỗi, bổ sung tính năng hoặc cải thiện chất lượng của phần mềm.
-
-    Như vậy, phần mềm mã nguồn mở có thể phát triển mạnh nhờ cộng đồng lập trình viên.
-
-3. **Đa dạng và phân mảnh**
-
-    Vì những người đóng góp có nền tảng bản thân khác nhau nên phần mềm có thể được phân hoá hoặc phân mảnh, dẫn đến các quan điểm và giải pháp sáng tạo khác nhau.
+-   :material-account-group:{ .lg .middle } **Được cộng đồng phát triển**
     
-    Ví dụ: Một thống kê cho biết, có đến hơn 600 bản phân phối Linux, chưa kể 500 bản khác đang phát triển.
+    Lập trình viên trên thế giới có thể cùng tham gia:
 
-4. **Được hỗ trợ từ cộng đồng**
+    * Sửa lỗi
+    * Bổ sung tính năng
+    * Cải thiện chất lượng phần mềm
 
-    Người dùng có thể tìm kiếm sự trợ giúp từ những người sử dụng cùng phần mềm như mình, nhất là những phần mềm có cộng đồng lớn.
+-   :material-forum:{ .lg .middle } **Được cộng đồng hỗ trợ**
+    
+    * Người dùng có thể tìm kiếm sự trợ giúp từ những người sử dụng cùng phần mềm như mình.
+    * Phần mềm càng có nhiều người dùng thì càng có giải đáp nhanh chóng.
 
-5. **Tiết kiệm chi phí**
+-   :material-cash-off:{ .lg .middle } **Tiết kiệm chi phí**
+    
+    * Phần mềm mã nguồn mở thường miễn phí.
+    * Điều này giúp cá nhân, trường học và doanh nghiệp tối ưu hóa ngân sách công nghệ.
 
-    Phần mềm mã nguồn mở thường miễn phí, giúp cá nhân, tổ chức có thể tiết kiệm chi phí.
+</div>
 
-    !!! info "Về chi phí sử dụng"
+??? info "Về chi phí sử dụng"
 
-        Điều này không đồng nghĩa phần mềm mã nguồn mở luôn miễn phí hay người dùng sẽ luôn tiết kiệm được chi phí đối với phần mềm mã nguồn mở, bởi vì nhiều yếu tố khác có thể xuất hiện trong quá trình sử dụng khiến chi phí phát sinh thêm.
+    Điều này không đồng nghĩa phần mềm mã nguồn mở luôn miễn phí hay người dùng sẽ luôn tiết kiệm được chi phí đối với phần mềm mã nguồn mở, bởi vì nhiều yếu tố khác có thể xuất hiện trong quá trình sử dụng khiến chi phí phát sinh thêm.
 
 !!! question "Hỏi chút chơi"
     
@@ -92,16 +93,17 @@ Copyright © 2008-2025 The Linux Foundation
 
 ## Giấy phép
 
-**Giấy phép mã nguồn mở** là giấy phép đi kèm theo phần mềm mã nguồn mở, trong đó nêu rõ các điều khoản và điều kiện liên quan đến việc sử dụng, sửa đổi và phân phối lại phần mềm.
+**Giấy phép mã nguồn mở** là giấy phép đi kèm theo phần mềm mã nguồn mở, trong đó nêu rõ **các điều khoản và điều kiện** liên quan đến việc sử dụng, sửa đổi và phân phối lại phần mềm.
 
 Mỗi loại giấy phép có những yêu cầu riêng, chẳng hạn như:
 
 - Ghi công tác giả gốc.
 - Miễn trừ trách nhiệm của người phân phối.
-- Bắt buộc công bố mã nguồn chỉnh sửa mới.
-- Chia sẻ các sửa đổi theo cùng một giấy phép.
-- Không sử dụng phần mềm vì mục đích cụ thể nào đó.
-    
+- Bắt buộc công bố mã nguồn đã sửa đổi.
+- Phân phối theo cùng giấy phép.
+- Giới hạn mục đích sử dụng thực tế.
+
+Ví dụ:  
 Một số giấy phép mã nguồn mở thông dụng là:
 
 - GNU General Public License (GPL)

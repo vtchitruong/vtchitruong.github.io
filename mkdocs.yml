@@ -113,6 +113,8 @@ extra_javascript:
   - js/markmap-lib.js
   - js/markmap-view.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://mermaid.live/embed.js
+  - https://mermaid.live/embed.js
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap

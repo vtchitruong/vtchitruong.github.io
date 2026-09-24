@@ -12,6 +12,8 @@
 
   --msd-blue: #4682b4;
   --msd-green: #4cae4f;
+  --msd-dark-grey: #464e56;
+  --msd-medium-grey: #6c757d;
 }
 
 [data-md-color-scheme="vtct_theme"] {
@@ -48,7 +50,7 @@ strong {
 .md-content {
   background-color: #fff;
   margin-bottom: 2rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
 
 .tx-hero h1 {
@@ -131,7 +133,6 @@ table tr {
 table tr th,
 table tr td {
   border: 0px solid #cccccc;
-  text-align: center;
   margin: 0;
   padding: 6px 13px;
 }
@@ -153,7 +154,7 @@ table tr td :last-child {
 .md-typeset table:not([class]) {
   font-size: 0.7rem;
   font-family: "Noto Sans", sans-serif;
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 
 .md-typeset table:not([class]) th {
@@ -172,17 +173,17 @@ details {
 .md-typeset .admonition, 
 .md-typeset details {
   font-size: 0.75rem;
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 
 [dir=ltr] .md-typeset .admonition-title,
 [dir=ltr] .md-typeset summary {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 
 .md-typeset details:not([open]) > summary {
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 
 /* Custom Admonition: Settings */
@@ -212,11 +213,11 @@ details {
 .md-typeset img, 
 .md-typeset svg, 
 .md-typeset video {
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 
 .md-typeset pre > code {
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 .md-typeset .tabbed-block > .highlight:first-child > .highlighttable > tbody > tr > .code > div > pre > code,
@@ -287,7 +288,7 @@ details {
   }
 
   .md-content__inner > .highlight > pre > code {
-    border-radius: 15px;
+    border-radius: 1.5rem;
   }
 }
 
@@ -993,3 +994,99 @@ div.gslide-description.description-bottom {
 .md-typeset .mdx-sponsorship-button { font-weight: 400; }
 .md-typeset .mdx-sponsorship-count,
 .md-typeset .mdx-sponsorship-total { font-weight: 700; }
+
+/* ----------------- */
+.md-typeset h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.md-typeset h2 {
+  font-size: 1.3rem;
+}
+
+/* Normal text links inside articles */
+.md-typeset a:not(.md-button) {
+  color: var(--msd-blue);
+  text-decoration: none;
+  /* text-decoration-color: rgba(13, 148, 136, 0.3); */
+  /* text-underline-offset: 3px; */
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+/* Link hover state */
+.md-typeset a:not(.md-button):hover {
+  color: #7ca8cc; /* Slightly brighter blue on hover */
+  /* text-decoration-color: #0284c7; */
+  /* text-decoration-thickness: 2px; */
+}
+
+/* Dark mode adjustments (Slate theme) */
+[data-md-color-scheme="slate"] .md-typeset a:not(.md-button) {
+  color: #38bdf8;
+  /* text-decoration-color: rgba(56, 189, 248, 0.4); */
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:not(.md-button):hover {
+  color: #7dd3fc;
+  /* text-decoration-color: #7dd3fc; */
+}
+
+/* ==========================================
+   Custom Grid Cards Styling
+   ========================================== */
+
+/* 1. Card Grid Container */
+.md-typeset .grid.cards {
+  gap: 1.25rem; /* Space between cards */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 2. Individual Card Elements (List items, sub-divs, or links) */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > div,
+.md-typeset .grid.cards > a {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  background-color: var(--md-default-bg-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* Card Hover State - Subtle Shadow */
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > div:hover,
+.md-typeset .grid.cards > a:hover {
+  transform: translateY(-2px); /* Softened lift effect */
+  border-color: var(--msd-blue, #0d9488);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); /* Reduced spread & soft opacity */
+}
+
+/* 4. Headings inside Cards */
+.md-typeset .grid.cards h2,
+.md-typeset .grid.cards h3,
+.md-typeset .grid.cards h4 {
+  margin-top: 0;
+  color: var(--msd-blue, #0d9488);
+}
+
+/* Dark Mode (Slate) Hover Adjustment */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > div:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > a:hover {
+  border-color: var(--msd-blue, #2dd4bf);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Muted glow for dark mode */
+}
+
+/* Custom color for bold text inside articles */
+.md-typeset strong,
+.md-typeset b {
+  color: var(--msd-medium-grey);
+}
+
+/* Dark mode (Slate theme) adjustment */
+[data-md-color-scheme="slate"] .md-typeset strong,
+[data-md-color-scheme="slate"] .md-typeset b {
+  color: var(--msd-blue, #2dd4bf);
+}
