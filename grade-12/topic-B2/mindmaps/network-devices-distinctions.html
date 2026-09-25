@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"M&#x1ea1;ng m&#xe1;y t&#xed;nh","children":[{"content":"Thi&#x1ebf;t b&#x1ecb; &#x111;&#x1ea7;u cu&#x1ed1;i","children":[{"content":"N&#x1eb1;m &#x1edf; cu&#x1ed1;i &#x111;&#x1b0;&#x1edd;ng truy&#x1ec1;n.","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"S&#x1eed; d&#x1ee5;ng d&#x1ecb;ch v&#x1ee5;.","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"M&#xe1;y ch&#x1ee7;","children":[{"content":"Th&#x1b0;&#x1edd;ng n&#x1eb1;m &#x1edf; trung t&#xe2;m m&#x1ea1;ng.","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Cung c&#x1ea5;p d&#x1ecb;ch v&#x1ee5; ho&#x1eb7;c t&#xe0;i nguy&#xea;n.","children":[],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"h2","lines":"13,14"}},{"content":"Modem","children":[{"content":"K&#x1ebf;t n&#x1ed1;i LAN v&#xe0; ISP.","children":[],"payload":{"tag":"li","lines":"20,22"}}],"payload":{"tag":"h2","lines":"18,19"}},{"content":"Router","children":[{"content":"K&#x1ebf;t n&#x1ed1;i c&#xe1;c m&#x1ea1;ng kh&#xe1;c nhau.","children":[],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"h2","lines":"22,23"}},{"content":"Switch","children":[{"content":"K&#x1ebf;t n&#x1ed1;i trong LAN.","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h2","lines":"26,27"}},{"content":"Access point","children":[{"content":"T&#x1ea1;o ra k&#x1ebf;t n&#x1ed1;i kh&#xf4;ng d&#xe2;y trong LAN.","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"h2","lines":"30,31"}},{"content":"Repeater","children":[{"content":"M&#x1edf; r&#x1ed9;ng v&#xf9;ng ph&#x1ee7; s&#xf3;ng Wi-Fi.","children":[],"payload":{"tag":"li","lines":"36,38"}}],"payload":{"tag":"h2","lines":"34,35"}},{"content":"C&#xe1;p &#x111;&#x1ed3;ng tr&#x1ee5;c","children":[{"content":"C&#x1ea5;u t&#x1ea1;o: m&#x1ed9;t l&#xf5;i &#x111;&#x1ed3;ng.","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"&#xc1;p d&#x1ee5;ng: truy&#x1ec1;n h&#xec;nh c&#xe1;p, Internet.","children":[],"payload":{"tag":"li","lines":"41,43"}}],"payload":{"tag":"h2","lines":"38,39"}},{"content":"C&#xe1;p xo&#x1eaf;n &#x111;&#xf4;i","children":[{"content":"C&#x1ea5;u t&#x1ea1;o: c&#xe1;c s&#x1ee3;i &#x111;&#x1ed3;ng xo&#x1eaf;n nhau.","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"&#xc1;p d&#x1ee5;ng: trong LAN.","children":[],"payload":{"tag":"li","lines":"46,48"}}],"payload":{"tag":"h2","lines":"43,44"}},{"content":"C&#xe1;p quang","children":[{"content":"C&#x1ea5;u t&#x1ea1;o: c&#xe1;c s&#x1ee3;i thu&#x1ef7; tinh.","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"&#xc1;p d&#x1ee5;ng: Internet t&#x1ed1;c &#x111;&#x1ed9; cao.","children":[],"payload":{"tag":"li","lines":"51,52"}}],"payload":{"tag":"h2","lines":"48,49"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+</body>
+</html>

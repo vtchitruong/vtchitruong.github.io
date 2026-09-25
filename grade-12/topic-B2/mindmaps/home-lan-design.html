@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Thi&#x1ebf;t k&#x1ebf; m&#x1ea1;ng t&#x1ea1;i h&#x1ed9; gia &#x111;&#xec;nh","children":[{"content":"Xem x&#xe9;t &#x111;i&#x1ec1;u ki&#x1ec7;n l&#x1eaf;p &#x111;&#x1eb7;t","children":[{"content":"M&#x1ee5;c &#x111;&#xed;ch s&#x1eed; d&#x1ee5;ng","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"S&#x1ed1; l&#x1b0;&#x1ee3;ng thi&#x1ebf;t b&#x1ecb; c&#x1ea7;n k&#x1ebf;t n&#x1ed1;i","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Kh&#xf4;ng gian nh&#xe0;","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"Ng&#xe2;n s&#xe1;ch","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"h3","lines":"8,9"}},{"content":"X&#xe1;c &#x111;&#x1ecb;nh c&#xe1;c thi&#x1ebf;t b&#x1ecb;","children":[{"content":"&#x1ed4; c&#x1eaf;m &#x111;i&#x1ec7;n","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"Modem ho&#x1eb7;c ONT","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"Router v&#xe0; switch","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"C&#xe1;p Ethernet v&#xe0; &#x111;&#x1ea7;u n&#x1ed1;i RJ45","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"C&#xe1;c thi&#x1ebf;t b&#x1ecb; ph&#x1ee5; tr&#x1ee3; kh&#xe1;c","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h3","lines":"15,16"}},{"content":"V&#x1ebd; s&#x1a1; &#x111;&#x1ed3;","children":[{"content":"D&#x1ef1; t&#xed;nh c&#xe1;c v&#x1ecb; tr&#xed; tr&#x1b0;&#x1edb;c khi ti&#x1ebf;n h&#xe0;nh l&#x1eaf;p &#x111;&#x1eb7;t th&#x1ef1;c t&#x1ebf;","children":[],"payload":{"tag":"li","lines":"25,26"}}],"payload":{"tag":"h3","lines":"23,24"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":300})</script>
+</body>
+</html>

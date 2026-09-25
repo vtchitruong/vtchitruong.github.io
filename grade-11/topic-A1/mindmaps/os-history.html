@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"L&#x1ecb;ch s&#x1eed; h&#x1ec7; &#x111;i&#x1ec1;u h&#xe0;nh PC","children":[{"content":"Windows","children":[{"content":"Ng&#x1b0;&#x1edd;i kh&#x1edf;i x&#x1b0;&#x1edb;ng l&#xe0; Bill Gates.","children":[],"payload":{"tag":"h3","lines":"10,11"}},{"content":"S&#x1edf; h&#x1eef;u c&#x1ee7;a c&#xf4;ng ty Microsoft.","children":[],"payload":{"tag":"h3","lines":"12,13"}},{"content":"C&#xf4;ng b&#x1ed1; n&#x103;m 1983.","children":[],"payload":{"tag":"h3","lines":"14,15"}},{"content":"Phi&#xea;n b&#x1ea3;n m&#x1edb;i nh&#x1ea5;t l&#xe0; Windows 11.","children":[],"payload":{"tag":"h3","lines":"16,17"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Ubuntu","children":[{"content":"Ng&#x1b0;&#x1edd;i kh&#x1edf;i x&#x1b0;&#x1edb;ng l&#xe0; Mark Shuttleworth.","children":[],"payload":{"tag":"h3","lines":"20,21"}},{"content":"S&#x1edf; h&#x1eef;u c&#x1ee7;a c&#xf4;ng ty Canonical.","children":[],"payload":{"tag":"h3","lines":"22,23"}},{"content":"C&#xf4;ng b&#x1ed1; n&#x103;m 2004.","children":[],"payload":{"tag":"h3","lines":"24,25"}},{"content":"C&#xe1;c phi&#xea;n b&#x1ea3;n m&#x1edb;i g&#x1ed3;m: 25.04 (Plucky Puffin) v&#xe0; 25.10 (Questing Quokka).","children":[],"payload":{"tag":"h3","lines":"26,27"}}],"payload":{"tag":"h2","lines":"18,19"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":300})</script>
+</body>
+</html>

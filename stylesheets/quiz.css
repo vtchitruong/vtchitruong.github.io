@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Sitewide Styles */
+/*multiple selector*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
+  color: #4e5a65;
+  text-align: center;
+  margin-top: 0;
+}
+
+.wrapper {
+  height: 1rem;
+  text-align: left;
+}
+
+/* Quiz section */
+/*styling quiz area*/
+.main {
+  background-color: white;
+  margin: 0 auto;
+  width: 90%;
+  /* padding: 30px; */
+  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
+}
+
+/*Editing the number of questions*/
+/* span {
+  float: left;
+} */
+
+/*format text*/
+p {
+  padding: 10px 10px 0;
+}
+
+p#question {
+  text-align: left;
+  /* margin-left: 5%; */
+}
+
+/*Form area width*/
+.form-area, ul {
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+/*formatting answers*/
+li {
+  list-style-type: none;
+  text-align: left;
+  background-color: transparent;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border: 1px solid lightgray;
+  font-weight: normal;
+  border-radius: 30px;
+}
+
+li:hover {
+  background: #ECEEF0;
+}
+
+/*Change effect of question when the questions is selected*/
+.selected, .selected:hover {
+  background: #FFDEAD;
+}
+
+/*change correct answer background*/
+.correct, .correct:hover {
+  background: #2db950;
+  color: white;
+}
+
+/*change wrong answer background*/
+.wrong, .wrong:hover {
+  /* background: #db3c3c; */
+  color: #c14943;
+  text-decoration: line-through;
+}
+
+/*Submit button*/
+.main button {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  width: 20%;
+  border: none;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  border-radius: 999px;
+}
+
+.submit:hover, .submit:active, .submit:focus {
+  background: #43A047;
+}
+
+.submit {
+  background: #4CAF50;
+  min-width: 120px;
+}
+
+/*next question button*/
+.next {
+  background: #fa994a;
+  min-width: 120px;
+  border-radius: 999px;
+}
+
+.next:hover, .next:active, .next:focus {
+  background: #e38a42;
+}
+
+.restart {
+  background-color: #db3c3c;
+}
+
+/*Results*/
+.circle{
+  position: relative;
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  background: #bdc3c7;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.fill{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  background: #2db950;
+}
+
+h3 {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.circle p {
+  margin: 400px;
+}
+
+/* Confeeti Effect */
+canvas {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:0;
+  border:0px solid #000;
+}
+
+.score-tracker {
+  text-align: left;
+  padding: 10px;
+}
+/* .score-tracker span {
+  margin: 0 10px;
+} */

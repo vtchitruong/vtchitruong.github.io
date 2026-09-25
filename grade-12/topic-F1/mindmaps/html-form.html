@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Bi&#x1ec3;u m&#x1eab;u","children":[{"content":"<code>&lt;form&gt;</code>","children":[{"content":"Nh&#xe3;n","children":[{"content":"<code>&lt;label&gt;</code>","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"h3","lines":"11,12"}},{"content":"Th&#xe0;nh ph&#x1ea7;n nh&#x1ead;p li&#x1ec7;u","children":[{"content":"<code>&lt;input&gt;</code>","children":[{"content":"T&#xed;nh n&#x103;ng tu&#x1ef3; thu&#x1ed9;c <code>type=&quot;...&quot;</code>","children":[],"payload":{"tag":"li","lines":"18,19"}}],"payload":{"tag":"li","lines":"17,19"}},{"content":"<code>&lt;textarea&gt;</code>","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h3","lines":"15,16"}},{"content":"N&#xfa;t nh&#x1ea5;n","children":[{"content":"<code>&lt;button&gt;</code>","children":[],"payload":{"tag":"li","lines":"23,24"}}],"payload":{"tag":"h3","lines":"21,22"}}],"payload":{"tag":"h2","lines":"9,10"}}],"payload":{"tag":"h1","lines":"7,8"}},{"colorFreezeLevel":3,"maxWidth":240})</script>
+</body>
+</html>
