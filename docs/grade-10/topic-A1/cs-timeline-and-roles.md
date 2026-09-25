@@ -65,94 +65,62 @@ Lược đồ sau điểm qua một số cột mốc phát triển của Tin h�
 
 Tin học là lĩnh vực mang tính **cơ sở hạ tầng**, là "*bệ đỡ*" cho nhiều lĩnh vực khác phát triển, bằng cách cung cấp các công cụ, kỹ thuật và công nghệ cho các lĩnh vực đó.
 
-Tin học, với những thành tựu của nó, đã tạo ra ảnh hưởng đáng kể đến nhiều mặt của đời sống xã hội, chẳng hạn như:  
+Tin học, cùng với những thành tựu của nó, đã tạo ra ảnh hưởng đáng kể đến nhiều mặt của đời sống xã hội, chẳng hạn như:
 
-1. **Truyền thông và truy cập thông tin**
+<div class="grid cards" markdown>
 
-    Ví dụ:
-
-    a. Internet, mạng xã hội và các nền tảng trực tuyến:
-    
-    - giúp giao tiếp và chia sẻ thông tin tức thì
-    - thúc đẩy thương mại điện tử
-    - thúc đẩy chính phủ điện tử
-    
-    b. Các cỗ máy tìm kiếm giúp nhanh chóng truy cập nguồn thông tin như mong muốn.
-
-    c. Các hệ thống gợi ý (recommendation systems) giúp định hình cách tiếp cận thông tin và giải trí.
-
-2. **Sản xuất và tự động hoá**
+-   :material-earth:{ .lg .middle } **Truyền thông và truy cập thông tin**
 
     Ví dụ:
 
-    a. Robot tham gia vào nhiều ngành công nghiệp và dịch vụ như:
+    * Internet, mạng xã hội và các nền tảng trực tuyến: giúp giao tiếp tức thì, thúc đẩy thương mại điện tử và chính phủ điện tử.
+    * Công cụ tìm kiếm: giúp tra cứu và tiếp cận nguồn thông tin toàn cầu.
+    * Hệ thống gợi ý (Recommendation Systems): giúp định hình cách tiếp cận thông tin cá nhân hóa.
 
-    - sản xuất xe hơi
-    - hậu cần (logistic): cung ứng, vận chuyển, kho bãi.
-    - y tế
-
-    b. Internet vạn vật (IoT), kết nối máy móc và cảm biến, giúp hình thành nhà máy thông minh có năng lực tự tối ưu hoá quy trình sản xuất.
-
-    c. Máy in 3D tạo nên cuộc cách mạng về:
+-   :material-factory:{ .lg .middle } **Tự động hóa**
     
-    - tạo hình, tạo mẫu nhanh (rapid prototyping)
-    - sản xuất theo yêu cầu
-    - tạo bộ phận giả
-    - tạo mô hình giải phẫu trong y học
-
-3. **Giáo dục**
-
     Ví dụ:
 
-    Tin học giúp:
+    * Robot: tham gia vào nhiều ngành công nghiệp và dịch vụ như sản xuất, hậu cần, y tế, v.v..
+    * Internet vạn vật (IoT): giúp tạo nên nhà thông minh, nhà máy thông minh nhằm tối ưu hóa quy trình sản xuất.
+    * In 3D: tạo mẫu nhanh (rapid prototyping), sản xuất theo yêu cầu, tạo bộ phận giả và mô hình giải phẫu y học.
+
+-   :material-school:{ .lg .middle } **Giáo dục**
     
-    - việc học diễn ra trực tuyến, liên tục và mọi nơi.
-    - theo dõi tiến độ học tập.
-    - cá nhân hoá trải nghiệm học tập.
-
-4. **Nghiên cứu khoa học**
-
     Ví dụ:
 
-    Tin học giúp:
-    
-    - mô hình hoá các hiện tượng
-    - kiểm tra các giả thuyết
-    - phân tích lượng dữ liệu lớn
-    
-    Chẳng hạn như các nghiên cứu về gen, thiên văn, khí hậu.
+    * Học tập linh hoạt: cho phép việc học diễn ra trực tuyến, liên tục, mọi lúc và mọi nơi.
+    * Cá nhân hóa trải nghiệm học tập: quản lý tiến độ học tập và tùy chỉnh lộ trình phù hợp với từng người học.
 
-5. **Giao thông và vận chuyển**
-
+-   :material-flask:{ .lg .middle } **Nghiên cứu khoa học**
+    
     Ví dụ:
 
-    a. Các hệ thống định vị toàn cầu giúp:
-    
-    - định hướng theo thời gian thực.
-    - tìm địa điểm và tìm đường nhanh chóng.
+    * Mô phỏng: giúp mô hình hóa các hiện tượng phức tạp và kiểm tra các giả thuyết khoa học.
+    * Phân tích dữ liệu lớn (Big Data):** xử lý lượng dữ liệu khổng lồ như trong nghiên cứu gene, thiên văn học, khí hậu, v.v.
 
-    b. Tin học giúp:
+-   :material-navigation-variant:{ .lg .middle } **Giao thông và vận chuyển**
     
-    - xe tự vận hành.
-    - tối ưu hệ thống vận chuyển.
-    
-6. **Mã hoá và bảo mật**
-
     Ví dụ:
 
-    Tin học giúp:
+    * Hệ thống định vị: định hướng theo thời gian thực, tìm địa điểm và lộ trình tối ưu.
+    * Tự động hóa giao thông: hỗ trợ xe tự hành và tối ưu hóa hệ thống chuỗi cung ứng, vận chuyển.
+
+-   :material-shield-lock:{ .lg .middle } **Mã hóa và bảo mật**
     
-    - mã hoá và bảo vệ dữ liệu.
-    - ngăn chặn các mối đe dọa trên mạng.
-
-7. **Giải trí**
-
     Ví dụ:
 
-    Tin học giúp:
+    * Bảo vệ dữ liệu: sử dụng các thuật toán mã hóa.
+    * An ninh mạng: ngăn chặn, phát hiện và phòng chống các mối đe dọa trên không gian mạng.
+
+-   :material-controller:{ .lg .middle } **Giải trí**
     
-    - tạo ra các trải nghiệm giải trí có tính tương tác và sống động.    
-    - đề xuất và phân phối các nội dung giải trí phù hợp cho mỗi cá nhân.
+    Ví dụ:
+
+    * Trải nghiệm tương tác: tạo ra các sản phẩm giải trí có tính tương tác cao và sống động như game, thực tế ảo, thực tế tăng cường.
+    * Phân phối thông minh: đề xuất nội dung phim, nhạc, tin tức phù hợp với sở thích của từng người dùng.
+
+</div>
 
 !!! question "Hỏi chút chơi"
     

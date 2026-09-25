@@ -113,8 +113,6 @@ extra_javascript:
   - js/markmap-lib.js
   - js/markmap-view.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://mermaid.live/embed.js
-  - https://mermaid.live/embed.js
 
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap
@@ -414,7 +412,7 @@ nav:
         - special-topics/g11-cs/divide-and-conquer-merge-sort.md
         - special-topics/g11-cs/divide-and-conquer-quick-sort.md
     - Lớp 12 CS:
-      - Mục lục: special-topics/g12-cs/topic-g12-cs-index.md
+      - Mục lục: special-topics/g12-cs/topic-index.md
       - Hàng đợi:
         - special-topics/g12-cs/queue-a-simplified-overview.md
         - special-topics/g12-cs/queue-task-queue-simulation.md

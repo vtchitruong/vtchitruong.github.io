@@ -95,7 +95,8 @@ Mã nguồn mở không đồng nghĩa với việc tác giả từ bỏ bản q
 
 **Giấy phép mã nguồn mở** là giấy phép đi kèm theo phần mềm mã nguồn mở, trong đó nêu rõ **các điều khoản và điều kiện** liên quan đến việc sử dụng, sửa đổi và phân phối lại phần mềm.
 
-Mỗi loại giấy phép có những yêu cầu riêng, chẳng hạn như:
+Ví dụ:  
+Một số điều khoản bao gồm:
 
 - Ghi công tác giả gốc.
 - Miễn trừ trách nhiệm của người phân phối.
