@@ -61,6 +61,8 @@ Lược đồ sau điểm qua một số cột mốc phát triển của Tin h�
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/4/s/9/q/1/){:target="_blank"}
 
+---
+
 ## Một số đóng góp
 
 Tin học là lĩnh vực mang tính **cơ sở hạ tầng**, là "*bệ đỡ*" cho nhiều lĩnh vực khác phát triển, bằng cách cung cấp các công cụ, kỹ thuật và công nghệ cho các lĩnh vực đó.
@@ -126,11 +128,15 @@ Tin học, cùng với những thành tựu của nó, đã tạo ra ảnh hư�
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/4/s/10/q/1/){:target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/cs-timeline-and-roles.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

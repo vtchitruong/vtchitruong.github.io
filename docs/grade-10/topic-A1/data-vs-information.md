@@ -20,6 +20,8 @@ icon: octicons/number-16
 
 ở dạng thô, được thu thập từ nhiều nơi khác nhau.
 
+---
+
 ## Thông tin
 
 **Thông tin** là dữ liệu, nhưng đã xử lý (1) để có ngữ cảnh, ý nghĩa và mục đích.
@@ -61,15 +63,16 @@ flowchart LR
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/1/q/1/){:target="_blank"}
 
+---
+
 ## Mối quan hệ
 
-Dữ liệu và thông tin là những khái niệm liên quan mật thiết với nhau, nhưng chúng không hoàn toàn là một. Chúng đại diện cho các giai đoạn khác nhau của tiến trình xử lý. Cụ thể như sau:  
+Dữ liệu và thông tin là những khái niệm liên quan mật thiết với nhau, nhưng chúng không hoàn toàn là một. Chúng là **các trạng thái khác nhau của các tiến trình xử lý khác nhau**. Cụ thể như sau:  
 
 - Khi dữ liệu đã xử lý để trở nên có nghĩa, có ích thì gọi là thông tin.
-- Thông tin có được từ dữ liệu của tiến trình xử lý này có thể trở thành dữ liệu cho một tiến trình xử lý khác.
+- Thông tin có được của tiến trình xử lý này có thể trở thành dữ liệu cho một tiến trình xử lý khác.
 
-Ví dụ:
-
+Ví dụ:  
 1\. Trong tiến trình xác định điểm trung bình:
 
 - Dữ liệu: Điểm số các bài kiểm tra.
@@ -83,6 +86,8 @@ Ví dụ:
 !!! question "Hỏi chút chơi"
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/2/q/1/){:target="_blank"}
+
+---
 
 ## Phân biệt
 
@@ -111,6 +116,8 @@ Ví dụ:
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/3/q/1/){:target="_blank"}
 
+---
+
 ## Tầm quan trọng
 
 Thông tin đem lại nhiều lợi ích:
@@ -123,17 +130,21 @@ Thông tin đem lại nhiều lợi ích:
 
 Mà để có được thông tin, ta phải dựa trên dữ liệu.
 
-Vì thế, dữ liệu và thông tin là vô cùng quan trọng đối với mọi lĩnh vực của đời sống. Cùng với những tài nguyên quan trọng khác, chẳng hạn như dầu mỏ, thì dữ liệu cũng như thông tin đã và đang là nguồn tài nguyên quan trọng bậc nhất.
+Dữ liệu và thông tin ảnh hưởng đến nhiều mặt của đời sống. Dữ liệu và thông tin đã và đang trở thành một trong những nguồn tài nguyên quan trọng bậc nhất.
 
 !!! question "Hỏi chút chơi"
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/1/s/4/q/1/){:target="_blank"}
+
+---
 
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/data-vs-information.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

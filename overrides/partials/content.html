@@ -1,11 +1,59 @@
 {% include "partials/actions.html" %}
+
 {% if "\u003ch1" not in page.content %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
+
+{% if page.meta and (page.meta.grade or page.meta.level or page.meta.version or page.meta.updated) %}
+  <div class="badge-container">
+    {% if page.meta.grade %}
+      <span class="badge">
+        <span class="badge-label">
+          {% include ".icons/material/school-outline.svg" %}
+          grade
+        </span>
+        <span class="badge-value grade">{{ page.meta.grade }}</span>
+      </span>
+    {% endif %}
+
+    {% if page.meta.level %}
+      <span class="badge">
+        <span class="badge-label">
+          {% include ".icons/material/layers-outline.svg" %}
+          level
+        </span>
+        <span class="badge-value level">{{ page.meta.level }}</span>
+      </span>
+    {% endif %}
+
+    {% if page.meta.version %}
+      <span class="badge">
+        <span class="badge-label">
+          {% include ".icons/material/tag-outline.svg" %}
+          phiên bản
+        </span>
+        <span class="badge-value">{{ page.meta.version }}</span>
+      </span>
+    {% endif %}
+
+    {% if page.meta.updated %}
+      <span class="badge">
+        <span class="badge-label">
+          {% include ".icons/material/clock-outline.svg" %}
+          updated
+        </span>
+        <span class="badge-value blue">{{ page.meta.updated }}</span>
+      </span>
+    {% endif %}
+  </div>
+{% endif %}
+
 {{ page.content }}
+
 {% include "partials/source-file.html" %}
 {% include "partials/feedback.html" %}
 {% include "partials/comments.html" %}
+
 {% if page.meta and page.meta.tags %}
   {% include "partials/tags.html" %}
 {% endif %}

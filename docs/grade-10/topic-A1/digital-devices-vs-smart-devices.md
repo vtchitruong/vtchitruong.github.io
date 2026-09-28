@@ -86,6 +86,8 @@ Thiết bị số có những đặc điểm ưu việt hơn thiết bị cơ h�
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/3/s/7/q/1/){:target="_blank"}
 
+---
+
 ## Thiết bị thông minh
 
 ### Khái niệm
@@ -187,11 +189,15 @@ Các thiết bị thông minh đóng vai trò then chốt trong việc thúc đ�
 
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/3/s/8/q/1/){:target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/digital-devices-vs-smart-devices.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

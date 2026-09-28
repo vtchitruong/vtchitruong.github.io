@@ -479,8 +479,11 @@ nav:
     - Lập lịch:
       - Johnson: advanced/scheduling/johnson.md
     - Xử lý bit:
+      - Mục lục: advanced/bitwise/topic-index.md
+      - advanced/bitwise/bitwise-a-simplified-overview.md
       - advanced/bitwise/find-unique.md
       - advanced/bitwise/ceiling-power-of-two.md
+      - advanced/bitwise/insert-bits.md
     - Số học:
       - advanced/arithmetic/modulo-in-programming.md
       - advanced/arithmetic/combination-modulo.md

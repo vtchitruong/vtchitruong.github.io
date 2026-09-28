@@ -12,6 +12,7 @@
 
   --msd-blue: #4682b4;
   --msd-green: #4cae4f;
+  --msd-red: #dc3545;
   --msd-dark-grey: #464e56;
   --msd-medium-grey: #6c757d;
 }
@@ -1089,4 +1090,79 @@ div.gslide-description.description-bottom {
 [data-md-color-scheme="slate"] .md-typeset strong,
 [data-md-color-scheme="slate"] .md-typeset b {
   color: var(--msd-blue, #2dd4bf);
+}
+
+/* GitHub README Style Badges */
+.md-typeset .badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset .badge {
+  display: inline-flex;
+  align-items: center; /* Vertically aligns inner label and value containers */
+  font-size: 0.3rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  overflow: hidden;
+  /* line-height: 2; */
+}
+
+.md-typeset .badge-label {
+  background-color: #555555;
+  color: #ffffff !important;
+  /* padding: 1px 7px; */
+}
+
+.md-typeset .badge-value {
+  background-color: var(--msd-blue, #0d9488);
+  color: #ffffff !important;
+  /* padding: 1px 7px; */
+}
+
+.md-typeset .badge-label,
+.md-typeset .badge-value {
+  display: inline-flex;
+  align-items: center; /* Vertically centers the text inside each half */
+  padding: 1px 8px;    /* Adjust padding to control the total badge height */
+  gap: 4px; /* Space between icon and text */
+}
+
+/* Style SVG icons inside badge labels */
+.md-typeset .badge-label svg {
+  width: 0.65rem;
+  height: 0.65rem;
+  fill: currentColor; /* Inherits white text color */
+}
+
+/* Secondary badge value color variant */
+.md-typeset .badge-value.blue {
+  /* background-color: #0284c7; */
+  background-color: var(--msd-blue);
+}
+
+/* Slate Dark Mode tweak */
+[data-md-color-scheme="slate"] .md-typeset .badge-label {
+  /* background-color: #334155; */
+  background-color: var(--msd-dark-grey);
+}
+
+/* Custom Badge Value Colors */
+
+/* Grade Badge: Green */
+.md-typeset .badge-value.grade {
+  background-color: var(--msd-green);
+}
+
+/* Level Badge: red */
+.md-typeset .badge-value.level {
+  background-color: var(--msd-red);
+}
+
+/* Updated Badge: Blue */
+.md-typeset .badge-value.blue {
+  background-color: var(--msd-blue);
 }
