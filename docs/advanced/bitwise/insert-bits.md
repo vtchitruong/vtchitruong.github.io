@@ -8,8 +8,6 @@ updated: "27/09/2026"
 
 # Chèn bit
 
-Dưới đây là mô tả bài toán bằng tiếng Việt theo phong cách lập trình thi đấu:
-
 ## Đề bài
 
 Cho hai số nguyên 32 bit $n$ và $m$, cùng hai vị trí bit $start$ và $end$, với $start \ge end$.

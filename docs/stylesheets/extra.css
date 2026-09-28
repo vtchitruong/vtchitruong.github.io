@@ -1104,11 +1104,12 @@ div.gslide-description.description-bottom {
 .md-typeset .badge {
   display: inline-flex;
   align-items: center; /* Vertically aligns inner label and value containers */
-  font-size: 0.3rem;
+  font-size: 0.5rem;
   font-weight: 500;
   border-radius: 2rem;
   overflow: hidden;
-  /* line-height: 2; */
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%; /* Prevents mobile browsers from auto-boosting font size */
 }
 
 .md-typeset .badge-label {
@@ -1129,13 +1130,15 @@ div.gslide-description.description-bottom {
   align-items: center; /* Vertically centers the text inside each half */
   padding: 1px 8px;    /* Adjust padding to control the total badge height */
   gap: 4px; /* Space between icon and text */
+  height: 100%;
 }
 
 /* Style SVG icons inside badge labels */
 .md-typeset .badge-label svg {
-  width: 0.65rem;
-  height: 0.65rem;
+  width: 0.65rem !important;
+  height: 0.65rem !important;
   fill: currentColor; /* Inherits white text color */
+  fill: currentColor;
 }
 
 /* Secondary badge value color variant */
