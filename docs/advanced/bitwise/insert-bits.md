@@ -3,7 +3,10 @@ tags:
     - bitwise
     - chèn bit
 level: "nâng cao"
-updated: "27/09/2026"
+level_url: "/advanced/advanced-index/"
+
+difficulty: "easy"
+updated: "28/09/2026"
 ---
 
 # Chèn bit
@@ -12,9 +15,11 @@ updated: "27/09/2026"
 
 Cho hai số nguyên 32 bit $n$ và $m$, cùng hai vị trí bit $start$ và $end$, với $start \ge end$.
 
-**Yêu cầu**: hãy viết hàm chèn toàn bộ các bit của $m$ vô trong $n$ sao cho $m$ nằm từ vị trí bit $start$ đến vị trí bit $end$.
+**Yêu cầu**:  
+Chèn toàn bộ các bit của $m$ vô trong $n$ sao cho $m$ nằm từ vị trí bit $start$ đến vị trí bit $end$.
 
-**Input**: $n, m, start, end$.
+**Input**:  
+$n, m, start, end$.
 
 ```pycon
 n = 10101010 10101010
@@ -23,18 +28,17 @@ start = 6
 n = 2
 ```
 
-**Output**: $n$ mới sau khi chèn vô.
+**Output**:  
+$n$ mới sau khi chèn vô.
 
 ```pycon
 n = 10101010 1 10011 10
 ```
 
-**Giải thích**:
-
+**Giải thích**:  
 Các bit của $n$ tại vị trí từ 2 đến 6 được thay thế bằng các bit của $m = 10011$.
 
-**Điều kiện:**
-
+**Điều kiện:**  
 Đoạn bit từ $start$ đến $end$ luôn có đủ chỗ để chứa trọn vẹn $m$.
 
 ---

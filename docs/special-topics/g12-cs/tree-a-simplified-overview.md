@@ -1,4 +1,4 @@
-# Khái quát về cây
+# Tổng quan về cây
 
 !!! abstract "Tóm lược nội dung"
 

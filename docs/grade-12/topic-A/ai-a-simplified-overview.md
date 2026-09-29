@@ -21,6 +21,8 @@ icon: octicons/ai-model-24
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/5/s/11/q/1/){:target="_blank"}
 
+---
+
 ## Những năng lực chủ yếu
 
 Một hệ thống AI thường có những năng lực chủ yếu sau:
@@ -89,6 +91,8 @@ Một hệ thống AI thường có những năng lực chủ yếu sau:
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/5/s/12/q/1/){:target="_blank"}
 
+---
+
 ## Phân loại
 
 AI được phân thành hai loại:
@@ -129,6 +133,8 @@ Tất cả hệ thống AI hiện tại, bao gồm cả những hệ thống ti�
 !!! question "Hỏi chút chơi"
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/5/s/13/q/1/){:target="_blank"}
+
+---
 
 ## Một số nhánh nghiên cứu 
 
@@ -188,11 +194,15 @@ Các nhánh này thường chồng chéo và tương tác qua lại trong các h
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/5/s/14/q/1/){:target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 540px" frameBorder=0 src="../mindmaps/ai-a-simplified-overview.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

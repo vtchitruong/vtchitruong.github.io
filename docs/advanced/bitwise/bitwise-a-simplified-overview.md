@@ -3,6 +3,9 @@ tags:
     - bitwise
     - mặt nạ bit
 level: "nâng cao"
+level_url: "/advanced/advanced-index/"
+
+difficulty: "easy"
 updated: "28/09/2026"
 ---
 

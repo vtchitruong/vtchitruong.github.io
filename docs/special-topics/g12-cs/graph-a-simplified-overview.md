@@ -1,4 +1,4 @@
-# Khái quát về đồ thị
+# Tổng quan về đồ thị
 
 !!! abstract "Tóm lược nội dung"
 

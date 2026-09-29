@@ -4,46 +4,34 @@
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
 
-{% if page.meta and (page.meta.grade or page.meta.level or page.meta.version or page.meta.updated) %}
+{% if page.meta and (page.meta.grade or page.meta.level or page.meta.difficulty or page.meta.updated) %}
   <div class="badge-container">
     {% if page.meta.grade %}
-      <span class="badge">
-        <span class="badge-label">
-          {% include ".icons/material/school-outline.svg" %}
-          grade
-        </span>
-        <span class="badge-value grade">{{ page.meta.grade }}</span>
-      </span>
+      <a href="{{ (page.meta.grade_url | url) if page.meta.grade_url else '#' }}" class="badge">
+        <span class="badge-label">{% include ".icons/material/school-outline.svg" %} grade</span>
+        <span class="badge-value violet">{{ page.meta.grade }}</span>
+      </a>
     {% endif %}
 
     {% if page.meta.level %}
-      <span class="badge">
-        <span class="badge-label">
-          {% include ".icons/material/layers-outline.svg" %}
-          level
-        </span>
-        <span class="badge-value level">{{ page.meta.level }}</span>
-      </span>
+      <a href="{{ (page.meta.level_url | url) if page.meta.level_url else '#' }}" class="badge">
+        <span class="badge-label">{% include ".icons/material/layers-outline.svg" %} level</span>
+        <span class="badge-value green">{{ page.meta.level }}</span>
+      </a>
     {% endif %}
 
-    {% if page.meta.version %}
-      <span class="badge">
-        <span class="badge-label">
-          {% include ".icons/material/tag-outline.svg" %}
-          phiên bản
-        </span>
-        <span class="badge-value">{{ page.meta.version }}</span>
-      </span>
+    {% if page.meta.difficulty %}
+      <a href="{{ (page.meta.difficulty_url | url) if page.meta.difficulty_url else '#' }}" class="badge">
+        <span class="badge-label">{% include ".icons/material/gauge.svg" %} difficulty</span>
+        <span class="badge-value red">{{ page.meta.difficulty }}</span>
+      </a>
     {% endif %}
 
     {% if page.meta.updated %}
-      <span class="badge">
-        <span class="badge-label">
-          {% include ".icons/material/clock-outline.svg" %}
-          updated
-        </span>
+      <a href="{{ (page.meta.updated_url | url) if page.meta.updated_url else '#' }}" class="badge">
+        <span class="badge-label">{% include ".icons/material/clock-outline.svg" %} updated</span>
         <span class="badge-value blue">{{ page.meta.updated }}</span>
-      </span>
+      </a>
     {% endif %}
   </div>
 {% endif %}

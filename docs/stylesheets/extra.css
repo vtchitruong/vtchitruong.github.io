@@ -13,6 +13,7 @@
   --msd-blue: #4682b4;
   --msd-green: #4cae4f;
   --msd-red: #dc3545;
+  --msd-violet: #7e35f4;
   --msd-dark-grey: #464e56;
   --msd-medium-grey: #6c757d;
 }
@@ -1141,6 +1142,25 @@ div.gslide-description.description-bottom {
   fill: currentColor;
 }
 
+/* Badge Link Styling */
+.md-typeset a.badge {
+  text-decoration: none !important;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Hover Effect for Clickable Badges */
+.md-typeset a.badge:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a.badge:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* Secondary badge value color variant */
 .md-typeset .badge-value.blue {
   /* background-color: #0284c7; */
@@ -1156,12 +1176,16 @@ div.gslide-description.description-bottom {
 /* Custom Badge Value Colors */
 
 /* Grade Badge: Green */
-.md-typeset .badge-value.grade {
+.md-typeset .badge-value.green {
   background-color: var(--msd-green);
 }
 
 /* Level Badge: red */
-.md-typeset .badge-value.level {
+.md-typeset .badge-value.violet {
+  background-color: var(--msd-violet);
+}
+
+.md-typeset .badge-value.red {
   background-color: var(--msd-red);
 }
 
@@ -1169,3 +1193,4 @@ div.gslide-description.description-bottom {
 .md-typeset .badge-value.blue {
   background-color: var(--msd-blue);
 }
+

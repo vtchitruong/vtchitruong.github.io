@@ -1,4 +1,4 @@
-# Khái quát về cây nhị phân
+# Tổng quan về cây nhị phân
 
 !!! abstract "Tóm lược nội dung"
 

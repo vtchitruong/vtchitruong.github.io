@@ -415,6 +415,7 @@ nav:
       - Mục lục: special-topics/g12-cs/topic-index.md
       - Hàng đợi:
         - special-topics/g12-cs/queue-a-simplified-overview.md
+        - special-topics/g12-cs/queue-fundamental-operations.md
         - special-topics/g12-cs/queue-task-queue-simulation.md
       - Ngăn xếp:
         - special-topics/g12-cs/stack-a-simplified-overview.md

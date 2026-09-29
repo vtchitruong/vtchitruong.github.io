@@ -4,6 +4,9 @@ tags:
     - toán tử xor
     - xuất hiện một lần
 level: "nâng cao"
+level_url: "/advanced/advanced-index/"
+
+difficulty: "easy"
 updated: "28/09/2026"
 ---
 
@@ -15,15 +18,18 @@ Cho mảng một chiều gồm các số nguyên.
 
 Mỗi phần tử trong mảng này đều xuất hiện hai lần, chỉ có duy nhất một phần tử xuất hiện một lần.
 
-**Yêu cầu**: hãy tìm phần tử này.
+**Yêu cầu**:  
+Tìm phần tử chỉ xuất hiện một lần.
 
-**Input**: mảng gồm các số nguyên.
+**Input**:  
+Mảng gồm các số nguyên.
 
 ```pycon
 2, 3, 5, 5, 2, 4, 3
 ```
 
-**Output**: số nguyên mà chỉ xuất hiện một lần.
+**Output**:  
+Số nguyên mà chỉ xuất hiện một lần.
 
 ```pycon
 4
@@ -39,8 +45,7 @@ Vì `x XOR x = 0` nên ta sẽ dùng toán tử `XOR` để triệt tiêu các p
 
 ### Viết chương trình
 
-**Cách 1:**
-
+**Cách 1:**  
 Dùng vòng lặp for và `XOR` dồn từng phần tử.
 
 === "C++"
@@ -74,11 +79,11 @@ Dùng vòng lặp for và `XOR` dồn từng phần tử.
         return unique_element
     ```
 
-**Cách 2:**
+**Cách 2:**  
+Dùng hàm có sẵn:
 
-Trong C++, ta dùng hàm `accumulate()` và truyền vào tham số là **đối tượng hàm** (function object hoặc functor) `bit_xor<int>()`.
-
-Trong Python, ta dùng hàm `reduce()` và truyền vào tham số là hàm `operator.xor()`.
+- Trong C++, ta dùng hàm `accumulate()` và truyền vào tham số là **đối tượng hàm** (function object hoặc functor) `bit_xor<int>()`.
+- Trong Python, ta dùng hàm `reduce()` và truyền vào tham số là hàm `operator.xor()`.
 
 === "C++"
 

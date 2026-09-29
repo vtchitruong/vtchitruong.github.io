@@ -1,4 +1,4 @@
-# Khái quát về ngăn xếp
+# Tổng quan về ngăn xếp
 
 !!! abstract "Tóm lược nội dung"
 

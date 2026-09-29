@@ -12,6 +12,8 @@ icon: material/robot-outline
 
 **AI tạo sinh** là một nhánh của AI tập trung vào việc tạo ra các nội dung mới từ dữ liệu đầu vào. Thay vì chỉ phân tích hoặc phân loại dữ liệu, các mô hình AI tạo sinh có năng lực sinh ra dữ liệu mới mà không phải là bản sao của dữ liệu huấn luyện ban đầu. Dữ liệu mới được tạo ra có thể là văn bản, hình ảnh, âm thanh, video, hoặc các dạng nội dung khác.
 
+---
+
 ## Công nghệ cơ bản
 
 AI tạo sinh sử dụng những công nghệ sau:
@@ -44,7 +46,9 @@ AI tạo sinh sử dụng những công nghệ sau:
 !!! question "Hỏi chút chơi"
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/7/s/18/q/1/){:target="_blank"}
-    
+
+---
+
 ## Năng lực
 
 - **Tạo văn bản**:
@@ -70,6 +74,8 @@ AI tạo sinh sử dụng những công nghệ sau:
     - Chỉnh sửa video
     - Tạo ra video ngắn
 
+---
+
 ## Ứng dụng thực tế
 
    - Tạo văn bản: [ChatGPT](https://chatgpt.com/){target="_blank"}, [Claude](https://claude.ai/){target="_blank"}, [CoPilot](https://gemini.google.com/app){target="_blank"}, [Gemini](https://gemini.google.com/app){target="_blank"} v.v...
@@ -80,11 +86,15 @@ AI tạo sinh sử dụng những công nghệ sau:
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/7/s/19/q/1/){:target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/generative-ai.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

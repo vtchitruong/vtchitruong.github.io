@@ -105,6 +105,8 @@ icon: material/robot-industrial-outline
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/6/s/15/q/1/){:target="_blank"}
 
+---
+
 ## Những ứng dụng AI thực tế
 
 1. **Công cụ tìm kiếm**:
@@ -221,11 +223,15 @@ Cần có các quy định và biện pháp quản lý để kiểm soát các r
     
     [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/7/t/7/l/6/s/17/q/1/){:target="_blank"}
 
+---
+
 ## Sơ đồ tóm tắt
 
 <div>
     <iframe style="width: 100%; height: 540px" frameBorder=0 src="../mindmaps/ai-applications-in-real-life.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 

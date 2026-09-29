@@ -5,6 +5,9 @@ tags:
     - toán tử or
     - lũy thừa của 2
 level: "nâng cao"
+level_url: "/advanced/advanced-index/"
+
+difficulty: "easy"
 updated: "28/09/2026"
 ---
 
@@ -12,11 +15,14 @@ updated: "28/09/2026"
 
 ## Đề bài
 
-**Yêu cầu**: tìm số là lũy thừa của 2 nhỏ nhất mà lớn hơn hoặc bằng `n`.
+**Yêu cầu**:  
+Tìm số là lũy thừa của 2 nhỏ nhất mà lớn hơn hoặc bằng `n`.
 
-**Input** số nguyên dương `n`.
+**Input**  
+Số nguyên dương `n`.
 
-**Output**: số `x` là lũy thừa của 2 và lớn hơn hoặc bằng `n`.
+**Output**:  
+Số `x` là lũy thừa của 2 và lớn hơn hoặc bằng `n`.
 
 **Ví dụ:**
 
