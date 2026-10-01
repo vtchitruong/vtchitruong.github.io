@@ -17,3 +17,11 @@ markmap:
 - Trợ lý ảo
 - Hệ thống đề xuất
 - v.v..
+
+## Những cảnh báo về mặt trái
+
+- Việc làm
+- Quyền riêng tư
+- Đạo đức
+- An toàn
+- An ninh mạng

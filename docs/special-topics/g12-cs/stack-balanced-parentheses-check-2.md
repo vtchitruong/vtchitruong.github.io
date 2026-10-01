@@ -20,7 +20,7 @@ Dữ liệu đầu vào gồm nhiều dòng. Mỗi dòng là một chuỗi các 
 
 Dữ liệu đầu ra là *hợp lệ* hoặc *không hợp lệ*.
 
-**Bộ kiểm thử:**
+**Test case:**
 
 | Đầu vào | Đầu ra |
 | --- | --- |

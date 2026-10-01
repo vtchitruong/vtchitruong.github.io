@@ -16,7 +16,7 @@ body {
     width: 40px;
     height: 40px;
     border: 1px solid #fff;
-    border-radius: 15px;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;

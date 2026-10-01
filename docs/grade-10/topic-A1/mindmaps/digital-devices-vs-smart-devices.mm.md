@@ -1,7 +1,7 @@
 ---
 markmap:
     colorFreezeLevel: 3
-    maxWidth: 300
+    maxWidth: 420
 ---
 
 # Thiết bị thông minh
@@ -10,23 +10,11 @@ markmap:
 
 ### Ưu điểm
 
-#### Năng lực lưu trữ lớn
+#### Lưu trữ dung lượng lớn
 
-#### Xử lý nhanh chóng và chính xác
+#### Xử lý chính xác và nhanh chóng
 
-#### Truyền dẫn nhanh và tin cậy
-
-## Đặc điểm
-
-### Năng lực kết nối
-
-### Năng lực điểu khiển từ xa
-
-### Năng lực tương tác
-
-### Năng lực tự động
-
-### Năng lực xử lý và phân tích dữ liệu
+#### Truyền dẫn tốc độ cao và tin cậy
 
 ## Vai trò
 

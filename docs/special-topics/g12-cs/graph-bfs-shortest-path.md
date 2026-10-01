@@ -20,7 +20,7 @@ Tìm đường đi có khoảng cách ngắn nhất giữa hai đỉnh trong đ�
 
 Khoảng cách ngắn nhất giữa hai đỉnh theo yêu cầu.
 
-**Bộ kiểm thử:**
+**Test case:**
 
 | Đầu vào | Đầu ra | Giải thích |
 | --- | --- | --- |

@@ -32,7 +32,7 @@ Ba số nguyên lần lượt là số lượng đĩa, cột bắt đầu và c�
 
 Các câu hướng dẫn chuyển đĩa.
 
-**Bộ kiểm thử:**
+**Test case:**
 
 | Đầu vào | Đầu ra |
 | --- | --- |

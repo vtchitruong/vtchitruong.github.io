@@ -1,22 +1,21 @@
 ---
 markmap:
   colorFreezeLevel: 2
-  maxWidth: 300
+  maxWidth: 360
 ---
 
 # AI tạo sinh
 
 ## Khái niệm
 
-- Dùng để tạo ra nội dung mới từ dữ liệu đầu vào.
+- Một nhánh của AI
+- Tạo ra nội dung mới từ dữ liệu đầu vào
 
 ## Công nghệ
 
-- Mô hình ngôn ngữ lớn
-- Mô hình khuếch tán
-- Mô hình mạng thần kinh tạo sinh
 - Mô hình Transformer
-- v.v...
+- Mô hình ngôn ngữ lớn
+- Cơ chế suy luận
 
 ## Năng lực
 
@@ -25,9 +24,7 @@ markmap:
 - Tạo âm thanh
 - Tạo video
 
-## Ứng dụng thực tế
+## Ứng dụng
 
-- ChatGPT
-- Gemini
-- v.v....
+- Claude, ChatGPT, Gemini, v.v.
 

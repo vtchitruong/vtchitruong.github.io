@@ -18,7 +18,7 @@ Mảng gồm các phần tử là từ trong câu: `['hôm', 'bữa', 'đi', 'h�
 
 Các câu được tạo từ việc đổi chỗ (hoán vị) của các từ.
 
-**Bộ kiểm thử:**
+**Test case:**
 
 | Đầu vào | Đầu ra |
 | --- | --- |

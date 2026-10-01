@@ -24,7 +24,7 @@ Số nguyên dương n.
 
 Số Fibonacci thứ n.
 
-**Bộ kiểm thử:**
+**Test case:**
 
 | STT | Đầu vào | Đầu ra |
 | --- | --- | --- |

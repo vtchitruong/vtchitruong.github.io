@@ -18,7 +18,7 @@ Số nguyên dương $n$ biểu thị số ký tự của chuỗi nhị phân c�
 
 Các chuỗi nhị phân có $n$ ký tự.
 
-**Bộ kiểm thử:**
+**Test case:**
 
 | Đầu vào | Đầu ra |
 | --- | --- |

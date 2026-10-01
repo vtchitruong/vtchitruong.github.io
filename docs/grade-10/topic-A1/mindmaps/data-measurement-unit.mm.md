@@ -19,5 +19,5 @@ markmap:
 
 ## Các đơn vị bội của byte
 
-- kilobyte, megabyte, terabyte, v.v...
-- Đơn vị sau bằng 1024 đơn vị trước.
+- kilobyte, megabyte, terabyte, v.v.
+- Đơn vị sau bằng 1024 đơn vị trước

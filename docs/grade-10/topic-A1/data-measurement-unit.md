@@ -1,5 +1,13 @@
 ---
 icon: simple/bit
+grade: "lớp 10"
+grade_url: "/grade-10/grade-10-index/"
+
+level: "phổ thông"
+level_url: "/grade-10/grade-10-index/"
+
+difficulty: "easy"
+updated: "29/09/2026"
 ---
 
 # Đơn vị đo dữ liệu
@@ -10,12 +18,14 @@ icon: simple/bit
 
 ## bit
 
-Đơn vị đo dữ liệu nhỏ nhất và cơ bản (nhất) là **bit** (1).
-{ .annotate }
+!!! note "bit"
 
-1.  bit là viết tắt của **b** -inary dig- **it** (chữ số nhị phân).
+    Đơn vị đo dữ liệu **nhỏ nhất** và cơ bản nhất là **bit** (1).
+    { .annotate }
 
-Ký hiệu: **b**.
+    1.  bit là viết tắt của **b** -inary dig- **it** (chữ số nhị phân).
+
+    Ký hiệu: **b** (viết thường).
 
 ??? info "Giải thích thêm về bit"
 
@@ -24,7 +34,7 @@ Ký hiệu: **b**.
 
     1.  Loại máy tính được đề cập trong các bài học đều mặc định hiểu là **máy tính điện tử**.
 
-    Nghĩa là, máy tính sử dụng hai tín hiệu đại diện cho hai trạng thái khác nhau của một sự vật hoặc sự kiện, ký hiệu là `0` và `1`. Những chữ số `0` và `1` này được gọi là **bit**.  
+    Về mặt bản chất phần cứng, máy tính sử dụng hai mức tín hiệu điện áp (cao / thấp) hoặc trạng thái đóng / mở của linh kiện bán dẫn để đại diện cho hai trạng thái `0` và `1`. Mỗi chữ số `0` hoặc `1` này được gọi là một **bit**.
 
     Một cách hình tượng, bộ nhớ máy tính có thể chia nhỏ thành nhiều ô vuông, mỗi ô là một **bit**, và không thể chia nhỏ hơn được nữa.
 
@@ -34,68 +44,73 @@ Ký hiệu: **b**.
 
 ## byte
 
-Đơn vị đo dữ liệu thường dùng là **byte**.
-
-Ký hiệu: **B**.
-
-Đơn vị **byte** có được do gom nhóm nhiều **bit** lại với nhau. Cụ thể, cứ mỗi 8 bit liên tiếp được gom thành 1 byte.  
+Đơn vị **byte** được tạo thành bằng cách gom nhóm 8 bit liên tiếp lại với nhau.
 
 <div>
-    <iframe width="100%" height="150px" frameBorder=0 src="../data-measurement-unit/bit-byte.html"></iframe>
+    <iframe width="100%" height="150px" frameBorder=0 src="../images/bit-byte.html"></iframe>
 </div>
+
+!!! note "byte"
+
+    Đơn vị đo dữ liệu thường dùng là **byte**.
+
+    1 byte = 8 bit
+
+    Ký hiệu: **B** (viết hoa).
 
 ??? info "Giải thích thêm về byte"
 
     Byte có thể dùng để biểu diễn:
 
-    - **Ký tự**: tuỳ theo bảng mã mà mỗi ký tự có thể chiếm 1 byte, 2 byte trên bộ nhớ hoặc nhiều hơn.
-    - **Số nguyên** hoặc **số có phần thập phân**: tuỳ theo độ lớn hoặc độ chính xác của số mà một số có thể chiếm 1 byte, 2 byte, 4 byte, v.v. trên bộ nhớ.
-    - **Kênh màu**: trong hệ màu RGB, mỗi kênh màu (R, G hoặc B) chiếm 1 byte. Nói cách khác, mỗi điểm ảnh gồm 3 kênh màu sẽ chiếm 3 byte trên bộ nhớ. 
+    - **Ký tự**: tùy theo bảng mã mà mỗi ký tự có thể chiếm 1 byte, 2 byte hoặc nhiều hơn trên bộ nhớ.
+    - **Số nguyên** hoặc **số thực**: tùy theo độ lớn hoặc độ chính xác mà một số có thể chiếm 1 byte, 2 byte, 4 byte hoặc 8 byte trên bộ nhớ.
+    - **Kênh màu**: trong hệ màu RGB, mỗi kênh màu (R, G hoặc B) chiếm 1 byte. Mỗi điểm ảnh gồm 3 kênh màu sẽ chiếm 3 byte trên bộ nhớ. 
 
-!!! info "Lưu ý về ký hiệu"
+??? info "Phân biệt ký hiệu B và b"
 
-    **B** in hoa là byte, **b** thường là bit.  
-
-    Kích thước của tập tin và dung lượng của thiết bị lưu trữ thường ghi theo **B** -yte; trong khi đó, tốc độ đường truyền mạng thường ghi theo **b** -it.
-
-!!! question "Hỏi chút chơi"
-    
-    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/2/s/5/q/1/){:target="_blank"}
+    | | byte | bit |
+    | --- | --- | --- |
+    | Ký hiệu | **B** viết hoa | **b** viết thường |
+    | Công dụng | Dùng để chỉ **dung lượng** như: kích thước tập tin, dung lượng RAM, đĩa cứng, v.v. | Dùng để chỉ **tốc độ truyền dữ liệu** của mạng máy tính |
 
 ---
 
 ## Các đơn vị khác
 
-Tương tự các đơn vị đo lường khác, người ta gắn thêm các *tiếp đầu ngữ* vào byte để tạo ra các đơn vị bội của byte như sau: 
+Người ta gắn thêm các *tiếp đầu ngữ* vào byte để tạo ra các đơn vị bội như sau: 
 
-| Đơn vị | Ký hiệu | Quy đổi |
-| --- | --- | --- |
-| kilobyte | KB | 1 KB = $2^{10}$ B |
-| megabyte | MB | 1 MB = $2^{10}$ KB |
-| gigabyte | GB | 1 GB = $2^{10}$ MB |
-| terabyte | TB | 1 TB = $2^{10}$ GB |
-| petabyte | PB | 1 PB = $2^{10}$ TB |
-| exabyte | EB | 1 EB = $2^{10}$ PB |
-| zettabyte | ZB | 1 ZB = $2^{10}$ EB |
-| yottabyte | YB | 1 YB = $2^{10}$ ZB |
+| Đơn vị | Ký hiệu | Quy đổi theo lũy thừa cơ số 2 | Giá trị tương đương |
+| --- | --- | --- | --- |
+| kilobyte | KB | $1\text{ KB} = 2^{10}\text{ B}$ | $1024\text{ B}$ |
+| megabyte | MB | $1\text{ MB} = 2^{10}\text{ KB}$ | $1024\text{ KB}$ |
+| gigabyte | GB | $1\text{ GB} = 2^{10}\text{ MB}$ | $1024\text{ MB}$ |
+| terabyte | TB | $1\text{ TB} = 2^{10}\text{ GB}$ | $1024\text{ GB}$ |
+| petabyte | PB | $1\text{ PB} = 2^{10}\text{ TB}$ | $1024\text{ TB}$ |
+| exabyte | EB | $1\text{ EB} = 2^{10}\text{ PB}$ | $1024\text{ PB}$ |
+| zettabyte | ZB | $1\text{ ZB} = 2^{10}\text{ EB}$ | $1024\text{ EB}$ |
+| yottabyte | YB | $1\text{ YB} = 2^{10}\text{ ZB}$ | $1024\text{ ZB}$ |
 
-??? info "Cách quy đổi khác"
+??? info "Chuẩn quy đổi thập phân (SI) vs nhị phân (IEC)"
 
-    Trên thực tế, người ta còn một cách quy đổi khác, đó là **đơn vị sau** bằng $10^3$ **đơn vị trước**, thay vì $2^{10}$ như bảng trên. Chẳng hạn:   
+    Trên thực tế, tồn tại hai chuẩn quy đổi song song:
 
-    1 kilobyte = 1,000 byte  
-    1 megabyte = 1,000 kilobyte = 1,000,000 byte  
-    1 gigabyte = 1,000 megabyte = 1,000,000 kilobyte[^1]
-
-    [^1]: Tham khảo thêm về quy đổi đơn vị tại [Units of measurement for storage data](https://www.ibm.com/docs/en/storage-insights?topic=overview-units-measurement-storage-data)
-
-    Vì các nhà sản xuất thiết bị lưu trữ tính theo cách này, cộng thêm vài lý do khác, nên dung lượng của thiết bị lưu trữ mà máy tính nhận biết sẽ có sự chênh lệch với dung lượng ghi trên bao bì sản phẩm.  
-
-    Trong các chương trình học ở Việt Nam, bạn nên sử dụng $2^{10}$ để quy đổi.
-
-!!! question "Hỏi chút chơi"
+    1. **Chuẩn thập phân (chuẩn SI)** dùng cơ số 10:
     
-    [Nhấn vào đây để tự kiểm tra việc đọc hiểu.](https://mrschool.vn/tin-hoc-gdpt-2018/g/1/t/1/l/2/s/6/q/1/){:target="_blank"}
+        $1\text{ KB} = 1000\text{ B} = 10^3\text{ B}$
+
+        Các nhà sản xuất thiết bị lưu trữ sử dụng cách tính này để ghi bao bì sản phẩm. Chẳng hạn như: đĩa cứng 1 TB = 1,000,000,000,000 byte.
+    
+    2. **Chuẩn nhị phân (chuẩn IEC)** dùng cơ số 2:
+    
+        $1\text{ KiB} = 1024\text{ B} = 2^{10}\text{ B}$
+       
+        Tên chuẩn đầy đủ là: Kibibyte (KiB), Mebibyte (MiB), Gibibyte (GiB), v.v..
+
+        Hệ điều hành Windows tính toán theo cơ số 2 (tức 1024) nhưng lại ghi lầm ký hiệu thành KB, MB, GB, v.v.. Đây là lý do một đĩa cứng 1 TB khi cắm vào máy tính, Windows chỉ hiển thị khoảng 931 GB.
+
+    Tham khảo thêm về quy đổi đơn vị tại [Units of measurement for storage data](https://www.ibm.com/docs/en/storage-insights?topic=overview-units-measurement-storage-data)
+
+    Trong các chương trình học ở Việt Nam, bạn nên sử dụng $2^{10} = 1024$ để quy đổi. 
 
 ---
 
@@ -103,7 +118,7 @@ Tương tự các đơn vị đo lường khác, người ta gắn thêm các *t
 
 <div>
     <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/data-measurement-unit.html">Sơ đồ tóm tắt</iframe>
-    </div>>
+</div>
 
 ---
 

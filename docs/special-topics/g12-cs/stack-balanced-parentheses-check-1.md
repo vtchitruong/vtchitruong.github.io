@@ -24,7 +24,7 @@ Một chuỗi là biểu thức toán học có chứa dấu ngoặc.
 
 Thông báo *hợp lệ* hoặc *không hợp lệ*.
 
-**Bộ kiểm thử:**
+**Test case:**
 
 | Đầu vào | Đầu ra |
 | --- | --- |

@@ -1,3 +1,14 @@
+---
+grade: "lớp 11"
+grade_url: "/grade-11/grade-11-index/"
+
+level: "chuyên để"
+level_url: "/special-topics/g11-cs/topic-index/"
+
+difficulty: "easy"
+updated: "01/10/2026"
+---
+
 # Giai thừa
 
 !!! abstract "Tóm lược nội dung"
@@ -6,21 +17,20 @@
 
 ## Bài toán
 
-**Yêu cầu:**
+**Yêu cầu:**  
+Sử dụng kỹ thuật đệ quy, viết chương trình tính $n!$.
 
-Sử dụng kỹ thuật đệ quy, viết chương trình tính $n!$, biết rằng $0! = 1$ và $1! = 1$.
+Biết rằng $0! = 1$ và $1! = 1$.
 
-**Đầu vào:**
-
+**Input:**  
 Một số nguyên dương $n$.
 
-**Đầu ra:**
-
+**Output:**  
 Một số nguyên là giai thừa của $n$.
 
-**Bộ kiểm thử:**
+**Test case:**
 
-| STT | Đầu vào | Đầu ra |
+| STT | Input | Output |
 | --- | --- | --- |
 | 1 | 0 | 1 |
 | 2 | 1 | 1 |
@@ -29,7 +39,7 @@ Một số nguyên là giai thừa của $n$.
 
 ---
 
-## Cách giải đề xuất
+## Bài giải đề xuất
 
 ??? tip "Ý tưởng chính"
 

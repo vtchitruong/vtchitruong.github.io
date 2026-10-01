@@ -30,7 +30,7 @@ Gồm nhiều dòng, mỗi dòng biểu thị một lệnh.
 
 Các thông báo và tình trạng của hàng đợi tương ứng với mỗi dòng lệnh trong dữ liệu đầu vào.
 
-**Bộ kiểm thử:**
+**Test case:**
 
 Đầu vào:
 

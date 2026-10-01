@@ -18,7 +18,7 @@ Mảng A gồm n số nguyên.
 
 Mảng A có thứ tự tăng dần.
 
-**Bộ kiểm thử:**
+**Test case:**
 
 | Đầu vào | Đầu ra |
 | --- | --- |
