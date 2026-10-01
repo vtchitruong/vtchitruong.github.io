@@ -13,7 +13,7 @@ updated: "01/10/2026"
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày bài toán giai thừa bằng kỹ thuật đệ quy.
+    Bài này trình bày bài toán tính giai thừa bằng kỹ thuật đệ quy.
 
 ## Bài toán
 
@@ -57,21 +57,21 @@ Một số nguyên là giai thừa của $n$.
 
     1. **Trường hợp cơ sở:** `n == 0` hoặc `n == 1`.
         
-        Với trường hợp này, hàm đệ quy không cần gọi đệ quy nữa, mà chỉ trả về `1`. 
+        Không cần gọi đệ quy nữa, mà chỉ trả về `1`. 
 
     2. **Trường hợp đệ quy:** các giá trị $n$ còn lại. Giả sử không nhập `n` nguyên âm.
 
-        Với trường hợp này, hàm đệ quy sẽ gọi lại chính nó, tham số truyền vào là `n - 1` để tính $(n - 1)!$, rồi nhân thêm $n$.
+        Hàm sẽ gọi lại chính nó, tham số truyền vào là `n - 1` để tính $(n - 1)!$, rồi nhân thêm $n$.
 
         Ví dụ:  
-        Để tính $5!$, hàm đệ quy sẽ gọi lại chính nó để tính $(5 - 1)! = 4!$, rồi nhân thêm $5$.  
+        Để tính $5!$, hàm sẽ gọi lại chính nó để tính $(5 - 1)! = 4!$, rồi nhân thêm $5$.  
 
         Cụ thể:
 
-        - Hàm `factorial(5)` sẽ gọi đệ quy `factorial(4)`.
-        - Hàm `factorial(4)` sẽ gọi đệ quy `factorial(3)`.
-        - Hàm `factorial(3)` sẽ gọi đệ quy `factorial(2)`.
-        - Hàm `factorial(2)` sẽ gọi đệ quy `factorial(1)`.
+        - Hàm `factorial(5)` gọi đệ quy `factorial(4)`.
+        - Hàm `factorial(4)` gọi đệ quy `factorial(3)`.
+        - Hàm `factorial(3)` gọi đệ quy `factorial(2)`.
+        - Hàm `factorial(2)` gọi đệ quy `factorial(1)`.
         - Hàm `factorial(1)` không gọi đệ quy nữa, mà sẽ trả về `1`.
 
 ??? tip "Viết chương trình"
@@ -96,13 +96,13 @@ Một số nguyên là giai thừa của $n$.
 
     ```py linenums="10"
     if __name__ == '__main__':
-        number = int(input('Nhập n nguyên dương: '))
+        number = int(input('Nhập số nguyên dương: '))
 
         result = factorial(number)
         print(f'{number}! = {result}')
     ```
 
-    3\. Chạy chương trình trên, nhập vào `6`, kết quả như sau:
+    3\. Chạy chương trình, nhập vào `6`, kết quả như sau:
 
     ```pycon
     Nhập n nguyên dương: 6
@@ -116,3 +116,4 @@ Một số nguyên là giai thừa của $n$.
 Code đầy đủ được đặt tại:
 
 - [Google Colab](https://colab.research.google.com/drive/14yRy1G-tFj5Fov1NgeT8_V8qtWGDPeaQ?usp=sharing){target="_blank"}
+- [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/special-topics/recursion/factorial.py){target="_blank"}
