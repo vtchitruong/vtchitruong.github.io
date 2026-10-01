@@ -1,5 +1,5 @@
 ---
-icon: material/robot-industrial-outline
+icon: material/robot-angry
 grade: "lớp 12"
 grade_url: "/grade-12/grade-12-index/"
 
@@ -10,42 +10,51 @@ difficulty: "easy"
 updated: "01/10/2026"
 ---
 
-# Mặt trái và thách thức của AI
+# Nguy cơ và thách thức
 
 !!! abstract "Tóm lược nội dung"
 
     Bài này trình bày một số mặt trái của AI.
 
-AI mang lại nhiều lợi ích nhưng cùng với đó là những mối nguy hiểm và thách thức.
+AI mang lại nhiều lợi ích nhưng cùng với đó là những nguy cơ và thách thức.
 
-## Việc làm và thị trường lao động
+## Việc làm
 
-- **Thất nghiệp:** Các công việc có tính chất lặp đi lặp lại hoặc xử lý dữ liệu cơ bản như nhập liệu, dịch thuật cơ bản, chăm sóc khách hàng, v.v. dần bị AI thay thế.
-- **Chênh lệch kỹ năng:** Sự phát triển của AI đòi hỏi người lao động phải có các kỹ năng mới. Điều này cũng làm gia tăng khoảng cách thu nhập và gây ra nhiều nguy cơ khác cho lao động phổ thông.
-
----
-
-## Bảo vệ dữ liệu và quyền riêng tư
-
-- **Giám sát hàng loạt**: AI có năng lực xử lý lượng lớn dữ liệu từ camera an ninh, thiết bị IoT và mạng xã hội khiến quyền riêng tư cá nhân bị vi phạm.
-
-- **Dữ liệu nhạy cảm**: AI có thể thu thập lượng thông tin cá nhân khổng lồ như hồ sơ y tế, hành vi tiêu dùng, vị trí, v.v. dẫn đến nguy cơ sử dụng sai mục đích hoặc mua bán dữ liệu nhạy cảm, gây hại cho cá nhân hoặc tổ chức.
+- **Thất nghiệp**   
+    Các công việc có tính chất lặp đi lặp lại hoặc xử lý dữ liệu cơ bản như nhập liệu, dịch thuật cơ bản, chăm sóc khách hàng, v.v. dần bị AI thay thế.
+- **Khoảng cách kỹ năng**  
+    Sự phát triển của AI đòi hỏi người lao động phải có các kỹ năng mới. Điều này cũng làm gia tăng khoảng cách về kỹ năng, thu nhập và gây ra nhiều nguy cơ khác cho lao động phổ thông.
 
 ---
 
-## Đạo đức và tính minh bạch
+## Quyền riêng tư
 
-- **Thiên vị**: (còn gọi là **thiên lệch thuật toán**) AI có thể học và nhân bản các định kiến về giới tính, chủng tộc, văn hóa từ dữ liệu huấn luyện do con người cung cấp, dẫn đến các quyết định thiếu công bằng.
-- **Bài toán "Hộp đen":** Khi AI tự đưa ra các quyết định phức tạp, chẳng hạn như từ chối cho vay, loại bỏ hồ sơ xin việc, v.v., mà không có sự giám sát của con người có thể dẫn đến việc ra quyết định thiếu nhân văn hoặc thiếu cân nhắc các yếu tố đạo đức, hoặc rất khó để giải thích lý do chính xác đằng sau quyết định đó.
+- **Giám sát hàng loạt**  
+    AI có năng lực xử lý lượng lớn dữ liệu từ camera an ninh, thiết bị IoT và mạng xã hội khiến quyền riêng tư cá nhân bị vi phạm.
+- **Dữ liệu nhạy cảm**  
+    AI có thể thu thập lượng thông tin cá nhân khổng lồ như hồ sơ y tế, hành vi tiêu dùng, vị trí, v.v. dẫn đến nguy cơ sử dụng sai mục đích hoặc mua bán dữ liệu nhạy cảm, gây hại cho cá nhân hoặc tổ chức.
 
 ---
 
-## An toàn và an ninh thông tin
+## Đạo đức
 
-- **Vũ khí tự hành:** AI có thể bị lợi dụng để chế tạo vũ khí tấn công tự động mà không cần sự can thiệp hay phê chuẩn trực tiếp từ con người.
-- **Tấn công mạng:** AI có thể bị lợi dụng để quét tìm lỗ hổng phần mềm nhanh hơn, hoặc viết mã độc để qua mặt các phần mềm chống virus.
-- **Deepfake và tin giả:** AI tạo sinh có thể tạo ra hình ảnh, âm thanh, video giả lập y như thật để lừa đảo tài chính, thao túng dư luận hoặc gây bất ổn chính trị.
-- **Chạy đua vũ trang:** Sự đối đầu giữa các hệ thống AI phòng thủ và AI tấn công khiến môi trường không gian mạng trở nên phức tạp và khó kiểm soát hơn.
+- **Thiên vị** (còn gọi là **thiên lệch thuật toán**)  
+    AI có thể học và nhân bản các định kiến về giới tính, chủng tộc, văn hóa từ dữ liệu huấn luyện do con người cung cấp, dẫn đến các quyết định thiếu công bằng.
+- **Bài toán "Hộp đen"**  
+    Khi AI tự đưa ra các quyết định phức tạp, chẳng hạn như từ chối cho vay, loại bỏ hồ sơ xin việc, v.v., mà không có sự giám sát của con người có thể dẫn đến việc ra quyết định thiếu nhân văn hoặc thiếu cân nhắc các yếu tố đạo đức, hoặc rất khó để giải thích lý do chính xác đằng sau quyết định đó.
+
+---
+
+## An toàn
+
+- **Vũ khí tự hành**  
+    AI có thể bị lợi dụng để chế tạo vũ khí tấn công tự động mà không cần sự can thiệp hay phê chuẩn trực tiếp từ con người.
+- **Tấn công mạng**  
+    AI có thể bị lợi dụng để quét tìm lỗ hổng phần mềm nhanh hơn, hoặc viết mã độc để qua mặt các phần mềm chống virus.
+- **Deepfake và tin giả:**  
+    AI tạo sinh có thể tạo ra hình ảnh, âm thanh, video giả lập y như thật để lừa đảo tài chính, thao túng dư luận hoặc gây bất ổn chính trị.
+- **Chạy đua vũ trang**  
+    Sự đối đầu giữa các hệ thống AI phòng thủ và AI tấn công khiến môi trường không gian mạng trở nên phức tạp và khó kiểm soát hơn.
 
 ??? info "AI hóa vũ khí và vũ khí hóa AI"
 
@@ -62,6 +71,14 @@ AI mang lại nhiều lợi ích nhưng cùng với đó là những mối nguy 
     - **Tính minh bạch:** phải giải thích được logic xử lý và công khai khi nội dung do máy tính tạo ra.
     - **Quyền giám sát của con người:** các quyết định quan trọng liên quan đến tính mạng, pháp lý và tài chính bắt buộc phải có sự phê duyệt cuối cùng của con người.
     - **Bảo mật và không định kiến:** dữ liệu huấn luyện phải được làm sạch, loại bỏ định kiến và tuân thủ các quy định bảo vệ quyền riêng tư.
+
+---
+
+## Sơ đồ tóm tắt
+
+<div>
+    <iframe style="width: 100%; height: 300px" frameBorder=0 src="../mindmaps/ai-dark-side.html">Sơ đồ tóm tắt</iframe>
+</div>
 
 ---
 

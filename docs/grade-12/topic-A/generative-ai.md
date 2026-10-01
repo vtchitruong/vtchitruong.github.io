@@ -78,7 +78,7 @@ flowchart BT
 
         - Mô hình tự hồi quy (Autoregressive): dự đoán từ hoặc điểm ảnh tiếp theo dựa trên chuỗi dữ liệu đã xuất hiện trước đó.
 
-??? tips "Mô hình ngôn ngữ lớn"
+??? info "Mô hình ngôn ngữ lớn"
 
     Các mô hình ngôn ngữ lớn (LLM) là nền tảng quan trọng của AI tạo sinh, chuyên xử lý và tạo ra văn bản tự nhiên.
     

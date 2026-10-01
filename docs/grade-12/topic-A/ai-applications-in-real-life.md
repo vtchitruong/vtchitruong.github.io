@@ -88,8 +88,6 @@ updated: "30/09/2026"
 
 </div>
 
----
-
 ??? info "Những lĩnh vực mà AI còn hạn chế"
 
     Mặc dù đã được ứng dụng rộng rãi trong đời sống, AI vẫn đối mặt với những rào cản lớn về mặt kỹ thuật, năng lực nhận thức và chuẩn mực đạo đức, bao gồm:
