@@ -227,6 +227,15 @@ Dựa theo năng lực tư duy, AI được phân thành hai loại chính:
 
     Sự chuyển dịch từ AI hẹp sang AI tổng quát và hướng tới Siêu AI vẫn là chặng đường dài của Khoa học Máy tính.
 
+??? info "So sánh các loại AI"
+
+    | Tiêu chí | AI hẹp | AI tổng quát | Siêu AI |
+    | --- | --- | --- | --- |
+    | Tình trạng | Đang được ứng dụng rộng rãi | Lý thuyết, là mục tiêu hướng tới | Giả thuyết |
+    | Phạm vi hoạt động | Lĩnh vực hẹp | Toàn diện như con người | Vượt xa giới hạn trí tuệ của con người |
+    | Chuyển giao tri thức | Không thể | Tự chuyển giao linh hoạt | Tự phát minh tri thức mới |
+    | Cảm xúc, ý thức | Không có | Tương đương con người | Vượt xa mức độ nhận thức của con người |
+
 ??? info "Các nhánh nghiên cứu chính của AI"
 
     AI là lĩnh vực rộng lớn gồm nhiều nhánh nghiên cứu. Các nhánh này thường không hoạt động riêng rẽ mà phối hợp chặt chẽ với nhau trong các hệ thống AI phức tạp.
