@@ -468,6 +468,8 @@ nav:
       - advanced/back-tracking/ternary-string.md
       - advanced/back-tracking/balanced-parentheses.md
       - advanced/back-tracking/ab-string.md
+    - Tổng cộng dồn:
+      - advanced/prefix-sum/max-using-difference-array-and-prefix-sum.md
     - Đồ thị:
       - Mục lục: advanced/graph/topic-index.md
       - advanced/graph/dfs.md
