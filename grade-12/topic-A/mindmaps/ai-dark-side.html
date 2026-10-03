@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Nguy c&#x1a1; v&#xe0; th&#xe1;ch th&#x1ee9;c c&#x1ee7;a AI","children":[{"content":"Vi&#x1ec7;c l&#xe0;m","children":[{"content":"Ng&#x1b0;&#x1edd;i lao &#x111;&#x1ed9;ng c&#x1ea7;n h&#x1ecd;c th&#xea;m nhi&#x1ec1;u k&#x1ef9; n&#x103;ng m&#x1edb;i","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"Quy&#x1ec1;n ri&#xea;ng t&#x1b0;","children":[{"content":"D&#x1eef; li&#x1ec7;u c&#xf3; th&#x1ec3; b&#x1ecb; thu th&#x1ead;p v&#xe0; s&#x1eed; d&#x1ee5;ng sai m&#x1ee5;c &#x111;&#xed;ch","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"&#x110;&#x1ea1;o &#x111;&#x1ee9;c","children":[{"content":"C&#xe1;c quy&#x1ebf;t &#x111;&#x1ecb;nh thi&#x1ebf;u nh&#xe2;n v&#x103;n ho&#x1eb7;c thi&#x1ebf;u y&#x1ebf;u t&#x1ed1; &#x111;&#x1ea1;o &#x111;&#x1ee9;c","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"h2","lines":"16,17"}},{"content":"An to&#xe0;n","children":[{"content":"Kh&#x1ea3; n&#x103;ng b&#x1ecb; g&#xe2;y h&#x1ea1;i v&#x1ec1; nhi&#x1ec1;u m&#x1eb7;t &#x111;&#x1ed1;i v&#x1edb;i c&#xe1; nh&#xe2;n, h&#x1ec7; th&#x1ed1;ng v&#xe0; t&#x1ed5; ch&#x1ee9;c","children":[],"payload":{"tag":"li","lines":"22,23"}}],"payload":{"tag":"h2","lines":"20,21"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":2,"maxWidth":360})</script>
+</body>
+</html>

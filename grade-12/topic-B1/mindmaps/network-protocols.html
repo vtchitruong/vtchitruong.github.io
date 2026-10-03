@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Giao th&#x1ee9;c","children":[{"content":"L&#xe0; t&#x1ead;p h&#x1ee3;p c&#xe1;c quy t&#x1eaf;c giao ti&#x1ebf;p v&#x1edb;i nhau tr&#xea;n m&#x1ea1;ng","children":[],"payload":{"tag":"h2","lines":"8,9"}},{"content":"TCP/IP","children":[{"content":"L&#xe0; b&#x1ed9; giao th&#x1ee9;c &#x111;&#x1b0;&#x1ee3;c s&#x1eed; d&#x1ee5;ng ph&#x1ed5; bi&#x1ebf;n tr&#xea;n Internet","children":[],"payload":{"tag":"h3","lines":"12,13"}},{"content":"G&#x1ed3;m hai giao th&#x1ee9;c ch&#xed;nh:","children":[{"content":"\n<p data-lines=\"16,17\">TCP: b&#x1ea3;o &#x111;&#x1ea3;m d&#x1eef; li&#x1ec7;u &#x111;&#x1b0;&#x1ee3;c truy&#x1ec1;n t&#x1ea3;i ch&#xed;nh x&#xe1;c.</p>","children":[],"payload":{"tag":"li","lines":"16,18"}},{"content":"\n<p data-lines=\"18,19\">IP: b&#x1ea3;o &#x111;&#xe1;m g&#xf3;i tin &#x111;&#x1ebf;n &#x111;&#x1b0;&#x1ee3;c &#x111;&#xed;ch.</p>","children":[],"payload":{"tag":"li","lines":"18,19"}}],"payload":{"tag":"h3","lines":"14,15"}}],"payload":{"tag":"h2","lines":"10,11"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":300})</script>
+</body>
+</html>
