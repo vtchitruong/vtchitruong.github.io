@@ -18,13 +18,13 @@ updated: "28/09/2026"
 **Yêu cầu**:  
 Tìm số là lũy thừa của 2 nhỏ nhất mà lớn hơn hoặc bằng `n`.
 
-**Input**  
+**Input**:  
 Số nguyên dương `n`.
 
 **Output**:  
 Số `x` là lũy thừa của 2 và lớn hơn hoặc bằng `n`.
 
-**Ví dụ:**
+**Ví dụ**:
 
 | Input | Output |
 | --- | --- |
