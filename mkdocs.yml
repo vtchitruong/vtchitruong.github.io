@@ -202,12 +202,6 @@ plugins:
         - locale: en
           name: English
           build: true
-  - kroki:
-      Server: https://kroki.io  # Default public server (or use self-hosted URL)
-      FileType: svg             # Render crisp SVG diagrams
-      tag_format: svg
-      EnableLatex: false
-      FencePrefix: ""        # Optional prefix for codeblocks
 
 # Page tree
 nav:
@@ -406,7 +400,7 @@ nav:
   - Chuyên đề:
     - Chương trình khung: special-topics/special-topics-index.md
     - Lớp 11 CS:
-      - Mục lục: special-topics/g11-cs/topic-g11-cs-index.md
+      - Mục lục: special-topics/g11-cs/topic-index.md
       - Đệ quy:
         - special-topics/g11-cs/recursion-a-simplified-overview.md
         - special-topics/g11-cs/recursion-factorial.md
