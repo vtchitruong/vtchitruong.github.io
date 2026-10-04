@@ -1,38 +1,48 @@
-# Khái quát về đệ quy
+---
+grade: "lớp 11"
+grade_url: "/grade-11/grade-11-index/"
+
+level: "chuyên để"
+level_url: "/special-topics/g11-cs/topic-index/"
+
+difficulty: "easy"
+updated: "04/10/2026"
+---
+
+# Tổng quan về đệ quy
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày về khái quát về kỹ thuật đệ quy, bao gồm:
+    Bài này trình bày khái quát về kỹ thuật đệ quy, bao gồm:
+
     - Khái niệm
     - Cấu trúc chung của một hàm đệ quy
 
 ## Khái niệm
 
-Một số bài toán có thể được phân tách thành những bài toán con tương tự nhưng có kích thước nhỏ hơn.
+Một số bài toán phức tạp có thể được phân tách thành các bài toán con có **cấu trúc tương tự** nhưng với **kích thước nhỏ hơn**. 
 
-Tận dụng đặc điểm này, đệ quy có thể giải quyết bài toán ban đầu bằng cách giải quyết những bài toán con.
+Tận dụng đặc điểm này, **đệ quy** giúp giải quyết bài toán ban đầu bằng cách giải các bài toán con tương tự cho đến khi bài toán trở nên đủ nhỏ để giải trực tiếp.
 
 !!! note "Đệ quy"
 
-    **Đệ quy** là kỹ thuật lập trình mà trong đó **một hàm gọi lại chính nó** để giải quyết bài toán ban đầu.
+    Là kỹ thuật lập trình mà trong đó **một hàm gọi lại chính nó** để giải quyết các phiên bản nhỏ hơn của bài toán ban đầu.
 
 ---
 
 ## Ý tưởng chính
 
-Trong một hàm đệ quy, ta cần xác định hai loại trường hợp sau:
+Một hàm đệ quy hợp lệ bắt buộc phải có hai thành phần chính:
 
 1. **Trường hợp cơ sở**
 
-    Loại trường hợp này là một bài toán con mà có thể **giải quyết trực tiếp, không cần đến đệ quy**. Và tại trường hợp này, quá trình đệ quy trước đó sẽ dừng lại.  
-    
-    Nói cách khác, nếu không chỉ ra trường hợp cơ sở thì quá trình đệ quy sẽ tiếp tục đến vô hạn, gây tràn bộ nhớ, khiến bài toán ban đầu không giải quyết được.
+    - Là trường hợp đơn giản nhất của bài toán mà có thể **giải quyết trực tiếp, không cần gọi đệ quy tiếp**.
+    - Là điều kiện dừng bắt buộc. Nếu không có thì quá trình đệ quy sẽ lặp lại vô hạn, gây *"tràn ngăn xếp"* và làm chương trình bị lỗi.
 
 2. **Trường hợp đệ quy**
 
-    Với loại trường hợp này, ta chỉ ra **cách thức mà hàm đệ quy gọi lại chính nó**. Trong đó, tham số truyền vào ứng với kích thước nhỏ hơn của bài toán. Cụ thể hơn, ta thường dựa vào công thức truy hồi để gọi đệ quy.
-
-    Như vậy, mỗi lần gọi đệ quy sẽ giúp tiến gần hơn đến trường hợp cơ sở. Việc gọi đệ quy sẽ kết thúc khi đạt đến trường hợp cơ sở.
+    - Là phần mã lệnh chỉ ra **cách thức mà hàm gọi lại chính nó** với tham số đầu vào nhỏ hơn hoặc đơn giản hơn.
+    - Mỗi lần gọi đệ quy phải bảo đảm tiến dần về trường hợp cơ sở.
 
 ---
 
@@ -42,12 +52,13 @@ Hàm đệ quy có thể được viết tổng quát như sau:
 
 ```py
 def recursion(n):
-    # Trường hợp cơ sở
-    if n là trường_hợp_cơ_sở:
-        return giá_trị_cơ_sở_nào_đó
+    # Trường hợp cơ sở: điều kiện dừng
+    if n là trường_hợp_đơn_giản_nhất:
+        return giá_trị_cơ_sở
 
-    # Trường hợp đệ quy
-    return recursion(n_đơn_giản_hơn)
+    # Trường hợp đệ quy: giảm kích thước và kết hợp kết quả
+    kết_quả_con = recursion(n_đơn_giản_hơn) 
+    return kết_hợp(n, kết_quả_con)
 ```
 
 ---
@@ -56,17 +67,32 @@ def recursion(n):
 
 Một số bài toán có thể giải bằng kỹ thuật đệ quy:
 
-1. Tính giai thừa: $n!$
-2. Dãy Fibonacci
-3. Tháp Hà Nội
-4. Tính lũy thừa: $a^n$
-5. Tìm ước số chung lớn nhất theo Euclid
-6. Đảo ngược chuỗi
-7. Kiểm tra chuỗi Palindrome
-8. Sinh hoán vị hoặc tổ hợp
-9. Bài toán 8 quân hậu
-10. Các bài toán chia để trị: quick sort, merge sort
-11. Duyệt cây nhị phân: tiền tố, hậu tố, trung tố
+<div class="grid cards" markdown>
+
+-   :material-calculator:{ .lg .middle } **Số học**
+
+    - **Giai thừa**: $n! = n \times (n-1)!$ với $0! = 1$.
+    - **Dãy số Fibonacci**: $F(n) = F(n-1) + F(n-2)$ với $F(0)=0, F(1)=1$.
+    - **Lũy thừa**: $a^n = a \times a^{n-1}$ với $a^0 = 1$.
+    - **Ước số chung lớn nhất**: $\text{gcd}(a, b) = \text{gcd}(b, a \pmod b)$ với $\text{gcd}(a, 0) = a$.
+
+-   :material-code-string:{ .lg .middle } **Chuỗi và mảng**
+
+    - **Đảo ngược chuỗi**: lấy phần chuỗi từ ký tự thứ hai đến hết đem đi đảo ngược đệ quy, rồi ghép ký tự đầu tiên vô cuối chuỗi.
+    - **Chuỗi đối xứng**: so sánh ký tự đầu - cuối và gọi đệ quy kiểm tra phần còn lại ở giữa.
+    
+-   :material-sitemap-outline:{ .lg .middle } **Thuật toán sinh và quay lui** 
+
+    - **Tháp Hà Nội**: di chuyển $n$ đĩa từ cọc này sang cọc khác qua cọc trung gian.
+    - **Sinh hoán vị**: thử nghiệm đặt từng phần tử và đệ quy sinh các vị trí tiếp theo.
+    - **8 quân hậu**: đặt 8 quân hậu lên bàn cờ sao cho không quân nào khống chế nhau.
+
+-   :material-file-tree:{ .lg .middle } **Chia để trị**
+
+    - **Thuật toán sắp xếp**: quick sort, merge sort.
+    - **Duyệt cây nhị phân**: Duyệt tiền tố, trung tố và hậu tố.
+
+</div>
 
 ---
 

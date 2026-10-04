@@ -9,32 +9,32 @@ difficulty: "easy"
 updated: "04/10/2026"
 ---
 
-# Dãy Fibonacci
+# The Fibonacci sequence
 
-!!! abstract "Tóm lược nội dung"
+!!! abstract "Abstract"
 
-    Bài này trình bày bài toán dãy Fibonacci bằng kỹ thuật đệ quy.
+    This lesson presents the Fibonacci sequence problem using recursion.
 
-## Bài toán
+## Problem statement
 
-Dãy số Fibonacci được định nghĩa như sau:  
+The Fibonacci sequence is defined as follows:
 
 - $F_0 = 0$
 - $F_1 = 1$
-- $F_n = F_{n - 1} + F_{n - 2} \quad \text{với } n \ge 2$
+- $F_n = F_{n - 1} + F_{n - 2} \quad \text{for } n \ge 2$
 
-**Yêu cầu:**  
-Sử dụng kỹ thuật đệ quy, viết chương trình xác định giá trị của số Fibonacci thứ $n$.
+**Requirement:**  
+Using recursion, write a program to calculate the value of the $n$-th Fibonacci number.
 
 **Input:**  
-Số nguyên không âm $n$.
+A non-negative integer $n$.
 
 **Output:**  
-Giá trị của số Fibonacci thứ $n$.
+The value of the $n$-th Fibonacci number.
 
-**Test case:**
+**Test cases:**
 
-| STT | Input | Output |
+| No. | Input | Output |
 | --- | --- | --- |
 | 1 | 0 | 0 |
 | 2 | 1 | 1 |
@@ -47,23 +47,23 @@ Giá trị của số Fibonacci thứ $n$.
 
 ---
 
-## Bài giải đề xuất
+## Proposed solution
 
-??? tip "Ý tưởng chính"
+??? tip "Core idea"
 
-    1. **Trường hợp cơ sở:**
+    1. **Base cases:**
 
-        Bài toán này có hai trường hợp cơ sở:
+        This problem has two base cases:
 
-        - Khi $n = 0$: trả về `0`.
-        - Khi $n = 1$: trả về `1`.
+        - When $n = 0$: return `0`.
+        - When $n = 1$: return `1`.
 
-    2. **Trường hợp đệ quy:**
+    2. **Recursive case:**
 
-        Khi $n \ge 2$: trả về $F_n = F_{n - 1} + F_{n - 2}$.
+        When $n \ge 2$: return $F_n = F_{n - 1} + F_{n - 2}$.
 
-    Ví dụ:  
-    Sơ đồ dưới đây minh họa quá trình tính $\text{fibonacci}(4)$:
+    Example:  
+    The diagram below illustrates the process of calculating $\text{fibonacci}(4)$:
         
     ```mermaid
     %%{
@@ -95,11 +95,11 @@ Giá trị của số Fibonacci thứ $n$.
         class F0_1,F0_2 base0
     ```
 
-??? tip "Viết chương trình"
+??? tip "Writing the program"
 
-    1\. Viết hàm `fibonacci()`.
+    1\. Define the `fibonacci()` function.
     
-    Hàm gồm có một tham số là `n` và giá trị trả về là số Fibonacci thứ `n`. 
+    The function takes a single parameter `n` and returns the `n`-th Fibonacci number.
 
     ```py linenums="1"
     def fibonacci(n):
@@ -114,11 +114,11 @@ Giá trị của số Fibonacci thứ $n$.
         return fibonacci(n - 1) + fibonacci(n - 2)
     ```
 
-    2\. Viết chương trình chính:
+    2\. Write the main program:
 
-    - Cho người dùng nhập vào một số nguyên không âm, lưu vào biến `number`.
-    - Gọi hàm `fibonacci()` ra thực hiện, lưu kết quả vào biến `result`.
-    - In ra kết quả.
+    - Prompt the user to enter a non-negative integer and store it in the variable `number`.
+    - Call the `fibonacci()` function with `number` as the argument and store the returned value in the variable `result`.
+    - Print the result.
 
     ```py linenums="13"
     if __name__ == '__main__':
@@ -128,7 +128,7 @@ Giá trị của số Fibonacci thứ $n$.
         print(f'Fibonacci[{number}] = {result}')
     ```
 
-    3\. Chạy chương trình, nhập vào `10`, kết quả như sau:
+    3\. Run the program and enter `10`; the output is as follows:
 
     ```pycon
     Nhập số nguyên không âm: 10
@@ -137,9 +137,9 @@ Giá trị của số Fibonacci thứ $n$.
 
 ---
 
-## Mã nguồn
+## Source code
 
-Code đầy đủ được đặt tại:
+The complete source code is available at:
 
 - [Google Colab](https://colab.research.google.com/drive/176a-A851JGV_YITz7kM-qWzTde6STgBn?usp=sharing){target="_blank"}
 - [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/special-topics/recursion/fibonacci.py){target="_blank"}

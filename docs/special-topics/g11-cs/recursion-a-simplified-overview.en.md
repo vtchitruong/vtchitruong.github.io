@@ -1,74 +1,98 @@
+---
+grade: "lớp 11"
+grade_url: "/grade-11/grade-11-index/"
+
+level: "chuyên để"
+level_url: "/special-topics/g11-cs/topic-index/"
+
+difficulty: "easy"
+updated: "04/10/2026"
+---
+
 # Overview of recursion
 
-!!! abstract "Content summary"
+!!! abstract "Abstract"
 
-    This lesson covers recursion, including:
+    This lesson provides an overview of recursion, including:
+
     - The concept
     - The general structure of a recursive function
 
 ## Concept
 
-Some problems can be broken down into smaller, similar subproblems.
+Some complex problems can be broken down into subproblems that have a **similar structure** but a **smaller input size**.
 
-Recursion takes advantage of this by solving the original problem through solving these smaller subproblems.
+Leveraging this property, **recursion** solves the original problem by solving similar subproblems until the problem becomes small enough to be solved directly.
 
 !!! note "Recursion"
 
-    **Recursion** is a programming technique where **a function calls itself** to solve the original problem.
+    A programming technique in which **a function calls itself** to solve smaller instances of the original problem.
 
 ---
 
-## Core concept
+## Core idea
 
-In a recursive function, we must define two types of cases:
+A valid recursive function must consist of two main components:
 
 1. **Base case**
 
-    This is a subproblem that can be solved **directly**, without further recursion.
-
-    When this case is reached, the recursion stops.
-
-    In other words, if the base case is not defined, recursion will continue forever, causing stack overflow (memory error), and the problem will never be solved.
+    - The simplest instance of the problem that can be **solved directly without making further recursive calls**.
+    - The mandatory termination condition. Without it, the recursive process will repeat infinitely, causing a call stack overflow and crashing the program.
 
 2. **Recursive case**
 
-    This defines **how the function calls itself** with a smaller version of the problem. Usually, we use a recurrence relation to make the recursive call.
-
-    Each recursive call brings us closer to the base case. Recursion ends when the base case is reached.
+    - The section of code that specifies **how the function calls itself** with smaller or simpler input parameters.
+    - Every recursive call must guarantee progress toward the base case.
 
 ---
 
 ## Pseudocode
 
-A recursive function can be written in this general form:
+A recursive function can be expressed in general as follows:
 
 ```py
 def recursion(n):
-    # Base case
-    if n is base_case:
-        return some_base_value
+    # Base case: stopping condition
+    if n is simplest_case:
+        return base_value
 
-    # Recursive case
-    return recursion(simpler_n)
+    # Recursive case: reduce size and combine results
+    sub_result = recursion(simpler_n) 
+    return combine(n, sub_result)
 ```
 
 ---
 
-# Some problems solved using recursion
+## Some recursive problems
 
-Here are common problems that can be solved with recursion:
+Some problems that can be solved using recursion:
 
-1. Factorial: $n!$
-2. Fibonacci sequence
-3. Tower of Hanoi
-4. Power: $a^n$
-5. Greatest Common Divisor (GCD) using Euclid’s algorithm
-6. Reverse a string
-7. Check if a string is a palindrome
-8. Generate permutations or combinations
-9. N-Queens problem
-10. Divide-and-conquer algorithms: quick sort, merge sort
-11. Binary tree traversal: preorder, postorder, inorder
+<div class="grid cards" markdown>
+
+-   :material-calculator:{ .lg .middle } **Arithmetic**
+
+    - **Factorial**: $n! = n \times (n-1)!$ where $0! = 1$.
+    - **Fibonacci sequence**: $F(n) = F(n-1) + F(n-2)$ where $F(0)=0, F(1)=1$.
+    - **Exponentiation**: $a^n = a \times a^{n-1}$ where $a^0 = 1$.
+    - **Greatest common divisor**: $\text{gcd}(a, b) = \text{gcd}(b, a \pmod b)$ where $\text{gcd}(a, 0) = a$.
+
+-   :material-code-string:{ .lg .middle } **Strings and arrays**
+
+    - **String reversal**: recursively reverse the substring from the second character onward, then append the first character to the end.
+    - **Palindrome checking**: compare the first and last characters, then recursively check the remaining inner substring.
+    
+-   :material-sitemap-outline:{ .lg .middle } **Generation and backtracking algorithms** 
+
+    - **Tower of Hanoi**: move $n$ disks from a source peg to a target peg using an auxiliary peg.
+    - **Permutation generation**: place each element sequentially and recursively generate subsequent positions.
+    - **Eight queens puzzle**: place 8 queens on a chessboard such that no two queens attack each other.
+
+-   :material-file-tree:{ .lg .middle } **Divide and conquer**
+
+    - **Sorting algorithms**: Quicksort, Mergesort.
+    - **Binary tree traversal**: preorder, inorder, and postorder traversal.
+
+</div>
 
 ---
 

@@ -6,7 +6,7 @@ level: "chuyên để"
 level_url: "/special-topics/g11-cs/topic-index/"
 
 difficulty: "easy"
-updated: "01/10/2026"
+updated: "04/10/2026"
 ---
 
 # Giai thừa
@@ -23,7 +23,7 @@ Sử dụng kỹ thuật đệ quy, viết chương trình tính $n!$.
 Biết rằng $0! = 1$ và $1! = 1$.
 
 **Input:**  
-Một số nguyên dương $n$.
+Số nguyên dương $n$.
 
 **Output:**  
 Một số nguyên là giai thừa của $n$.
@@ -55,7 +55,7 @@ Một số nguyên là giai thừa của $n$.
 
     Theo công thức trên:
 
-    1. **Trường hợp cơ sở:** `n == 0` hoặc `n == 1`.
+    1. **Trường hợp cơ sở:** $n == 0$ hoặc $n == 1$.
         
         Không cần gọi đệ quy nữa, mà chỉ trả về `1`. 
 
@@ -96,7 +96,7 @@ Một số nguyên là giai thừa của $n$.
 
     ```py linenums="10"
     if __name__ == '__main__':
-        number = int(input('Nhập số nguyên dương: '))
+        number = int(input('Nhập số nguyên không âm: '))
 
         result = factorial(number)
         print(f'{number}! = {result}')
@@ -105,7 +105,7 @@ Một số nguyên là giai thừa của $n$.
     3\. Chạy chương trình, nhập vào `6`, kết quả như sau:
 
     ```pycon
-    Nhập n nguyên dương: 6
+    Nhập số nguyên không âm: 6
     6! = 720
     ```
 
