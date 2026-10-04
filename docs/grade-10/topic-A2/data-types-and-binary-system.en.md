@@ -12,7 +12,7 @@ updated: "03/10/2026"
 
 # Data types and the binary system
 
-!!! abstract "Content summary"
+!!! abstract "Abstract"
 
     This lesson covers:
 

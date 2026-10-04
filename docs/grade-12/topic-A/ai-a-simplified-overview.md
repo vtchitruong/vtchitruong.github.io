@@ -27,7 +27,7 @@ updated: "01/10/2026"
     Là một nhánh của Khoa học Máy tính, tập trung vào việc **nghiên cứu và phát triển các hệ thống** thông minh có năng lực thực hiện **các nhiệm vụ đòi hỏi trí tuệ như con người** (1). Từ đây viết tắt là **AI**.
     { .annotate }
 
-    1. Các năng lực đòi hỏi hỏi trí tuệ như con người bao gồm:
+    1. Các năng lực đòi hỏi trí tuệ như con người bao gồm:
 
         - Học tập
         - Suy luận
@@ -150,7 +150,7 @@ right side
 
         Đưa ra đề xuất hoặc tự động thực thi trong thời gian thực.
 
-    -   :material-transit-connection-variant:{ .lg .middle } Khái quát hóa
+    -   :material-transit-connection-variant:{ .lg .middle } **Khái quát hóa**
 
         Áp dụng kỹ năng đã học từ ngữ cảnh quen thuộc vào một tình huống mới hoàn toàn.
 
@@ -198,7 +198,7 @@ Dựa theo năng lực tư duy, AI được phân thành hai loại chính:
 
     !!! note "Đặc điểm của AI hẹp"
 
-        - Được thiết kế và huấn luyện để giải quy cho các nhiệm vụ hoặc lĩnh vực cụ thể.
+        - Được thiết kế và huấn luyện để giải quyết cho các nhiệm vụ hoặc lĩnh vực cụ thể.
         - Chỉ hoạt động tối ưu trong phạm vi các tham số đã được xác định trước.
         - Không thể chuyển giao tri ​​thức sang lĩnh vực khác.
 
@@ -259,9 +259,9 @@ Dựa theo năng lực tư duy, AI được phân thành hai loại chính:
     -   :material-sitemap-outline:{ .lg .middle } **Nhóm tri thức và tư duy**
 
         - **Biểu diễn tri thức và suy luận** (Knowledge representation and reasoning): mã hóa thông tin về thế giới thực dưới dạng mà máy tính có thể suy luận.
-        - **Hệ thống chuyên gia (Expert system): là chương trình máy tính mô phỏng năng lực ra quyết định của các chuyên gia trong một lĩnh vực hẹp.
-        - **Lập kế hoạch và ra quyết định (Automated planning and Decision making): tự động xây dựng trình tự các hành động tối ưu để đạt mục tiêu cụ thể.
-        - **Người máy học (Robotics): thiết kế và chế tạo các robot tích hợp AI để tương tác với thế giới thực.
+        - **Hệ thống chuyên gia** (Expert system): là chương trình máy tính mô phỏng năng lực ra quyết định của các chuyên gia trong một lĩnh vực hẹp.
+        - **Lập kế hoạch và ra quyết định** (Automated planning and Decision making): tự động xây dựng trình tự các hành động tối ưu để đạt mục tiêu cụ thể.
+        - **Người máy học** (Robotics): thiết kế và chế tạo các robot tích hợp AI để tương tác với thế giới thực.
 
     </div>
 
