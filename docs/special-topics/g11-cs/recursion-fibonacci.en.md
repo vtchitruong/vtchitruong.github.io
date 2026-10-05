@@ -23,7 +23,7 @@ The Fibonacci sequence is defined as follows:
 - $F_1 = 1$
 - $F_n = F_{n - 1} + F_{n - 2} \quad \text{for } n \ge 2$
 
-**Requirement:**  
+**Task:**  
 Using recursion, write a program to calculate the value of the $n$-th Fibonacci number.
 
 **Input:**  

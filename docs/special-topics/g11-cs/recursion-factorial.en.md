@@ -17,7 +17,7 @@ updated: "04/10/2026"
 
 ## Problem statement
 
-**Requirement:**  
+**Task:**  
 Using recursion, write a program to calculate $n!$.
 
 Given that $0! = 1$ and $1! = 1$.
