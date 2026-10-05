@@ -1,146 +1,200 @@
 ---
 icon: material/flag-outline
+grade: "lớp 10"
+grade_url: "/grade-10/grade-10-index/"
+
+level: "phổ thông"
+level_url: "/grade-10/grade-10-index/"
+
+difficulty: "easy"
+updated: "05/10/2026"
 ---
 
-# Vẽ cờ Tổ quốc
+# Vẽ cờ Tổ quốc bằng Inkscape
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này hướng dẫn cách vẽ lá cờ nước ta nhằm giúp người học nắm một số thao tác vẽ cơ bản.  
-    Các thao tác đề cập:  
+    Bài này hướng dẫn các thao tác cơ bản trong Inkscape để tạo hình quốc kỳ, bao gồm:
 
-    - Lưu tập tin
-    - Chọn màu bằng mục **Set stroke** và **Set fill**
-    - Nhập kích thước **Width** và **Height** của đối tượng
-    - Căn chỉnh đối tượng bằng bảng **Align and Distribute**
-    - Xoay đối tượng bằng chuột
+    - Tạo và lưu tập tin đồ họa vector.
+    - Vẽ và thiết lập kích thước cho hình chữ nhật và hình ngôi sao.
+    - Thiết lập màu nền và màu đường viền.
+    - Căn chỉnh đối tượng bằng công cụ **Align and Distribute**.
+    
+## Tạo và lưu tập tin
 
-## Bước 0. Tạo và lưu tập tin
+1. **Tạo tập tin mới**
 
-1. Chọn menu **File**.
-2. Chọn mục **Save As...**
-3. Trong hộp thoại hiện ra:
+    Chọn menu **File** > **New**.
+
+2. **Lưu tập tin**
+
+    Chọn menu **File** > **Save As...**.
+
+    Trong hộp thoại lưu tập tin:
 
     - Chọn ổ đĩa và thư mục để lưu.
-    - **File name**: nhập tên tập tin là **vietnam-flag** hoặc khác tùy ý.
-    - **Save as type**: giữ nguyên phần tên mở rộng mặc định **.svg**.
+    - **File name**: nhập tên tập tin là `vietnam-flag`.
+    - **Save as type**: giữ nguyên phần tên mở rộng mặc định **Inkscape SVG (`*.svg`)**.
     - Bấm nút **Save**.
 
-## Bước 1. Vẽ lá cờ
+---
 
-1. Click nút **Rectangle Tool**, hoặc bấm phím ++r++.
+## Vẽ lá cờ
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ADCreHeV-vk4-SeDPpNG2JhF-Q2QfxVZh_shc7Npfd92z0Zj5FvtYTB33PB6m_0aCXOTzy5CVZX_RboV_c5antoEKNnyr5DZZA2ibWqp6Efo18bGRtQpP83W=w1200){ width=180 loading=lazy}
+1. **Chọn công cụ vẽ hình chữ nhất**
 
-2. Click phải vào ô màu trong suốt (có hình dấu X).
+    Trên thanh công cụ bên cạnh trái, chọn **Rectangle Tool** (hoặc bấm phím ++r++).
 
-3. Chọn **Set stroke**, nghĩa là đường viền sẽ bị trong suốt.
+    ![Chọn công cụ Rectangle Tool](images/vietnam-flag-rectangle-tool.png){width=50% loading=lazy}
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ADCreHcYLsoiyPDvvuVIhxKwBCIp84kJSe51r550_Ui4V_w9O7AA7SyJhb4LtsXgY0MduKkqFweovpzP1y0aP5oVmETQ56oWfUsUGf8KhYiSkdRDSllUSZW_=w1200){ width=180 loading=lazy}
+2. **Loại bỏ đường viền**
 
-4. Click phải vào ô màu đỏ.
+    Trong bảng màu ở cạnh dưới, click phải vào ô màu trong suốt (ô có dấu **X**) > chọn **Set stroke**. 
 
-5. Chọn **Set fill**, nghĩa là chọn màu đỏ cho phần nền.
+    ![Loại bỏ đường viền](images/vietnam-flag-x-set-stroke.png){width=50% loading=lazy}
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ADCreHesglK3HYDuyvsz9m6ip6WYc8iMfOJZBepx0wZ_m-33UJhNVprVstT6aP6H97r9NUhXfq2gjZCKRm9P5kkDHgzYQcQmy6wyxyQthfbWIb_f3KUaRHnm=w1200){ width=180 loading=lazy}
+3. **Tạo màu nền đỏ**
 
-6. Kéo chuột để vẽ hình chữ nhật ở vị trí bất kỳ.
+    Trong bảng màu, click chuột phải vào ô màu đỏ > chọn **Set fill**.
 
-7. Nhập kích thước lá cờ:
-    
-    - Độ rộng **W**: nhập **300**.
-    - Độ cao **H**: nhập **200**.
+    ![Chọn màu nền đỏ](images/vietnam-flag-red-set-fill.png){width=50% loading=lazy}
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ADCreHd2yn7zOZhpLLFeEoaViKh-QIBMUaHeIK03DUS94PIdW3gIKDG1bA_SPlwjMf5GFzFTxknmLFkqTztDBVIZPKVgRIJ9njXqehn0sU5lUCMXlhjlFT0y=w1200){ width=480 loading=lazy}
+4. **Vẽ hình chữ nhật**
+
+    Kéo chuột để vẽ hình chữ nhật bất kỳ.
+
+5. **Thiết lập kích thước**
+
+    - Nhập chiều rộng **W** (Width): `300`.
+    - Nhập chiều cao **H** (Height): `200`.
+
+    ![Thiết lập kích thước](images/vietnam-flag-set-width-height.png){width=50% loading=lazy}
 
     Ghi chú:  
-    Lá cờ có thể lớn hơn kích thước trang giấy. Điều này không gây ảnh hưởng gì cả, ta có thể điều chỉnh lại khi cần.
+    Sau khi chỉnh kích thước, hình chữ nhật có thể lớn hơn khung trang giấy. Điều này hoàn toàn bình thường trong đồ họa vector và không ảnh hưởng đến nội dung bài vẽ.
 
-## Bước 2. Vẽ ngôi sao
+---
 
-1. Click chuột ra vùng trống để không còn chọn lá cờ nữa.  
+## Vẽ ngôi sao
 
-    Click chọn nút vẽ ngôi sao và màu vàng.
+1. **Bỏ chọn hình chữ nhật**
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ADCreHfzsfilLNsU1E0KbOtWt5hmBWlOkWydxyq3G1qsvfXLmFS5qdP6JU__RtHIgyVZU0G7Yuv9Umes7XRX1epvVSu9kzojNXpI8zmzotfvi9WKGXQpCtw3=w1200){ width=180 loading=lazy}
+    Chỉ cần click chuột ra vùng trống.
 
-2. Kéo chuột để vẽ ngôi sao ở vị trí bất kỳ.
+2. **Chọn công cụ vẽ hình ngôi sao**
+
+    Trên thanh công cụ bên cạnh trái, chọn **Star/Polygon Tool**.
+
+    ![Chọn công cụ Star/Polygon Tool](images/vietnam-flag-star-polygon-tool.png){width=50% loading=lazy}
+
+3. **Vẽ ngôi sao**
+
+    Kéo chuột để vẽ ngôi sao bất kỳ.
 
     Ngôi sao lúc này có thể bị lệch nghiên, sẽ được điều chỉnh sau.
 
-3. Để làm thẳng các cánh sao, chỉnh thông số **Spoke ratio** thành **0.38** (1).
+4. **Tạo dáng cho ngôi sao**
+
+    Để làm thẳng các cánh sao, nhập thông số **Spoke ratio**: `0.38` (1).
     { .annotate }
 
-    1. Số này do chủ thớt mò ra dựa trên *kiến thức*, *kinh nghiệm* và *trải nghiệm*.
+    1.  Gọi $r, R$ lần lượt là bán kính trong và bán kính ngoài của ngôi sao.
+    
+        Tỷ lệ chuẩn giữa hai bán kính này theo *"công thức vàng"* là: $\frac{r}{R} = \frac{1}{\varphi^2}$
 
-    ![Image title](https://lh3.googleusercontent.com/pw/AP1GczO0CSMDw7bl5uODvUhZQ6CuVxu9W2hpsTm_Fl0TU9wpx-MsrQmJ0FwhDsFruZSwk_5RQAcCOAsqCikqAzS0WuM8VMmsc4GP0qVgs1HzZQXtTaewxymk=w1200){ width=360 loading=lazy}
+        Trong đó: $\varphi = \frac{1 + \sqrt{5}}{2} \simeq 1.618$
 
+        Suy ra: $\frac{r}{R} = \frac{1}{1.618^2} \simeq 0.381982$
 
-3. Click chuột lần thứ hai vào ngôi sao (1), rồi rê chuột ở góc để xoay lại cho ngay.
+        Vậy ta có thể làm tròn $r \simeq 0.38 R$.
+
+    ![Set spoke để tạo dáng cho ngôi sao](images/vietnam-flag-set-spoke.png){ width=50% loading=lazy}
+
+5. **Xoay ngôi sao**
+
+    Click chuột lần thứ hai vào ngôi sao (1), rồi rê chuột ở góc để xoay lại cho ngay.
     { .annotate }
 
-    1. Có hai chế độ khi click chọn đối tượng:
+    1. Trong Inkscape, có hai chế độ chọn đối tượng:
 
-        - Click lần thứ nhất: dùng để thay đổi kích thước.
-        - Click lần thứ hai: dùng để xoay.
+        - Click lần thứ nhất: hiện các mũi tênt hẳng dùng để thay đổi kích thước.
+        - Click lần thứ hai: hiện các mũi tên cong dùng để xoay.
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ADCreHcRrfy_sHFdH36uWJwsOJzS1HNBAJ5PgumFrOayYhorGq2GTs0hYMGy70wZSRgFZ1UOPjZ1nVa5oryMfUNMK4hOnx6ZpVhCovHz-0LvvCiXZkyO_uyl=w1200){ width=360 loading=lazy}
+    ![Xoay ngôi sao](images/vietnam-flag-rotate.png){width=50% loading=lazy}
 
-4. Nhập kích thước cho ngôi sao:
+6. **Thiết lập kích thước**
 
-    - Độ rộng **W**: **114**
-    - Độ cao **H**: **108.5** (1)
+    Nhập kích thước cho ngôi sao:
+
+    - Nhập chiều rộng **W**: `114`
+    - Nhập chiều cao **H**: `108.5` (1)
         { .annotate }
 
-        1. Lấy độ dài $a$ làm chuẩn.
+        1.  Cơ sở tính toán kích thước ngôi sao:
 
-            Lá cờ sẽ có chiều dài là $3a$ và chiều rộng là $2a$.
+            Lá cờ có chiều dài $3a = 300$ và chiều rộng $2a = 200$. 
+
+            Bán kính đường tròn ngoại tiếp ngôi sao là $R = \frac{3a}{5} = 60$.
             
-            Bán kính đường tròn ngoại tiếp ngôi sao là $r = \frac{3a}{5}$
+            Dựa theo các công thức lượng giác, ta có:
+            
+            - Chiều rộng: $W = 2R \cdot \sin(72^\circ) \approx 114$
+            - Chiều cao: $H = R \cdot (1 + \cos(36^\circ)) \approx 108.5$
 
-            Thực hiện tiếp một vài phép tính để ra được chiều dài và chiều rộng của hình chữ nhật ngoại tiếp ngôi sao, chính là **W** và **H**. 
+---
 
-## Bước 3. Đặt ngôi sao vào giữa lá cờ
+## Đặt ngôi sao vào giữa lá cờ
 
-1. Click chọn lá cờ.
-2. Nhấn giữ phím ++shift++ và click chọn tiếp ngôi sao.
-3. Chọn menu **Object** > Chọn mục **Align and Distribute...**
-4. Trong bảng thông số bên phải, mục **Relative to**: chọn **First selected** để lấy lá cờ làm mốc.
-5. Nhấn hai nút: canh giữa theo trục đứng và canh giữa theo trục ngang.
+1. **Chọn cả hai đối tượng**
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ADCreHeDlQoArkvM5GyArHRQzhJDtU0W3w9M2D5sBWFK2BWt-SymvOa9ft_QqB8aVY3dWUy_K-SpkLRGrgRoi1Yi-Y1ZjwLLJ3OTUneoaYeIOwH6ouyKSnr7=w1200){ width=360 loading=lazy}
+    - Click chọn lá cờ.
+    - Nhấn giữ phím ++shift++ và click chọn ngôi sao.
 
-## Bước 4. Gom nhóm lá cờ và ngôi sao
+2. **Căn giữa ngôi sao trên lá cờ**
 
-1. Vẫn đang chọn lá cờ và ngôi sao, click phải lên lá cờ, chọn mục **Group** để gom nhóm cả hai thành một.
+    - Chọn menu **Object** > Chọn mục **Align and Distribute...**
+    - Trong bảng thông số bên phải, mục **Relative to**: chọn `First selected`, nghĩa là căn chỉnh theo đối tượng được chọn đầu tiên, ở đây là lá cờ.
+    - Nhấn lần lượt hai nút: căn giữa theo trục đứng và căn giữa theo trục ngang.
 
-    ![Image title](https://lh3.googleusercontent.com/pw/AP1GczNk78bbBVm4iGTpKHoph0iuWQfTuV2MNCzSw2rbAKhMXjKkSZmnd2ZjYZRVEQiSv46s8I9K2V88YEqEMVCUu6yj1Pte9Kgpmz0NqlVziz-AaZboP3zm=w1200){ width=480 loading=lazy}
+    ![Căn giữa ngôi sao trên lá cờ](images/vietnam-flag-align-center.png){width=50% loading=lazy}
 
-2. Bấm nút hình ổ khóa để khóa tỉ lệ.
+---
 
-    ![Image title](https://lh3.googleusercontent.com/pw/ADCreHcMt_lBUL0oYW1H0mJq1tF53RKuL8ik84EYplCvEngXrf0ALN-cSsupKEBNcfezoFXC8SMA4SQcoiieWPXPLeACmGECtb1gU2MT-O5W2ECqOknUJa8B=w1200){ width=360 loading=lazy}
+## Gom nhóm và khóa tỷ lệ các đối tượng
 
-3. Trong ô độ rộng **W**, nhập **150** để thu nhỏ lá cờ.  
-    Không cần nhập chiều cao H vì tỉ lệ đã được khóa, H sẽ tự động thay đổi tương ứng.
+1. **Gom nhóm**
+
+    Trong khi vẫn đang chọn lá cờ và ngôi sao, click phải > chọn **Group** để gom cả hai thành một khối duy nhất.
+
+    ![Gom nhóm hai đối tượng](images/vietnam-flag-group.png){width=50% loading=lazy}
+
+2. **Khóa tỷ lệ**
+
+    Trên thanh thuộc tính, click nút hình **ổ khóa** để khóa tỷ lệ chiều rộng và chiều cao.
+
+    ![Khóa tỷ lệ](images/vietnam-flag-toggle-lock.png){width=50% loading=lazy}
+
+3. **Thay đổi kích thước**
+
+    Trong ô độ rộng **W**, nhập `150` để thu nhỏ.
+    
+    Chiều cao **H** sẽ tự động thu nhỏ tương ứng thành `100` mà không bị méo hình.
 
 4. Nhấn ++ctrl+s++ để lưu tập tin. Kết thúc.
 
-    !!! note "Lưu ý"
+    Lưu ý:  
+    Nên thường xuyên lưu bài trong quá trình vẽ.
 
-        Nên thường xuyên lưu bài trong quá trình vẽ.
-
-## Tải bản vẽ hoàn chỉnh
-
-Bản vẽ hoàn chỉnh đặt tại [Google Drive](https://drive.google.com/file/d/1AZJJiwU6rAWcKVrXOQHZ60rCXuN-m0Ce/view?usp=sharing){:target="_blank"}.
+---
 
 ## Some English words
 
 | Vietnamese | Tiếng Anh | 
 | --- | --- |
+| căn chỉnh (các đối tượng) | align (objects) |
+| chiều cao | height |
+| chiều rộng | width |
 | chọn màu đường viền | set strike |
 | chọn màu nền | set fill |
-| căn giữa | center |
-| độ cao | height (H) |
-| độ rộng | width (W) |
 | gom nhóm | group |
-| hình chữ nhật | rectangle |

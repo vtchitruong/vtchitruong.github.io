@@ -2,7 +2,7 @@
 icon: octicons/circle-16
 ---
 
-# Vẽ vòng tròn Olympic
+# Vòng tròn Olympic
 
 !!! abstract "Tóm lược nội dung"
 

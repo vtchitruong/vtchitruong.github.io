@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+.mm-toolbar-brand {
+  display: none !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x110;&#x1ed3; h&#x1ecd;a m&#xe1;y t&#xed;nh","children":[{"content":"bitmap","children":[{"content":"&#x110;&#x1b0;&#x1ee3;c t&#x1ea1;o th&#xe0;nh t&#x1eeb; l&#x1b0;&#x1edb;i c&#xe1;c pixel","children":[],"payload":{"tag":"h3","lines":"10,11"}},{"content":"&#x110;&#x1ecb;nh d&#x1ea1;ng t&#x1ead;p tin: <code>JPEG</code>, <code>PNG</code>, <code>BMP</code>, <code>TIFF</code>, <code>GIF</code>","children":[],"payload":{"tag":"h3","lines":"12,13"}},{"content":"&#xc1;p d&#x1ee5;ng: &#x111;&#x1ed1;i t&#x1b0;&#x1ee3;ng &#x111;&#x1ed3; h&#x1ecd;a c&#xf3; nhi&#x1ec1;u chi ti&#x1ebf;t ph&#x1ee9;c t&#x1ea1;p","children":[],"payload":{"tag":"h3","lines":"14,15"}},{"content":"Ph&#x1ea7;n m&#x1ec1;m: Adobe Photoshop, GIMP","children":[],"payload":{"tag":"h3","lines":"16,17"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"vector","children":[{"content":"&#x110;&#x1b0;&#x1ee3;c t&#x1ea1;o th&#xe0;nh t&#x1eeb; c&#xe1;c &#x111;&#x1ed1;i t&#x1b0;&#x1ee3;ng to&#xe1;n h&#x1ecd;c","children":[],"payload":{"tag":"h3","lines":"20,21"}},{"content":"&#x110;&#x1ecb;nh d&#x1ea1;ng t&#x1ead;p tin: <code>SVG</code>, <code>AI</code> (Adobe Illustrator), <code>EPS</code>, <code>CDR</code>","children":[],"payload":{"tag":"h3","lines":"22,23"}},{"content":"&#xc1;p d&#x1ee5;ng: &#x111;&#x1ed1;i t&#x1b0;&#x1ee3;ng &#x111;&#x1ed3; h&#x1ecd;a &#x111;&#xf2;i h&#x1ecf;i &#x111;&#x1ed9; ch&#xed;nh x&#xe1;c cao","children":[],"payload":{"tag":"h3","lines":"24,25"}},{"content":"Ph&#x1ea7;n m&#x1ec1;m: Adobe Illustrator, CorelDRAW, Inkscape","children":[],"payload":{"tag":"h3","lines":"26,27"}}],"payload":{"tag":"h2","lines":"18,19"}}],"payload":{"tag":"h1","lines":"6,7"}},{"colorFreezeLevel":3,"maxWidth":420})</script>
+</body>
+</html>
