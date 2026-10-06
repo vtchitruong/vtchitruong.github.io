@@ -42,7 +42,7 @@ updated: "05/10/2026"
 
 ## Vẽ lá cờ
 
-1. **Chọn công cụ vẽ hình chữ nhất**
+1. **Chọn công cụ vẽ hình chữ nhật**
 
     Trên thanh công cụ bên cạnh trái, chọn **Rectangle Tool** (hoặc bấm phím ++r++).
 
@@ -92,7 +92,8 @@ updated: "05/10/2026"
 
     Kéo chuột để vẽ ngôi sao bất kỳ.
 
-    Ngôi sao lúc này có thể bị lệch nghiên, sẽ được điều chỉnh sau.
+    Lưu ý:  
+    Ngôi sao lúc này có thể bị lệch nghiêng, sẽ được điều chỉnh sau.
 
 4. **Tạo dáng cho ngôi sao**
 
@@ -118,7 +119,7 @@ updated: "05/10/2026"
 
     1. Trong Inkscape, có hai chế độ chọn đối tượng:
 
-        - Click lần thứ nhất: hiện các mũi tênt hẳng dùng để thay đổi kích thước.
+        - Click lần thứ nhất: hiện các mũi tên hẳng dùng để thay đổi kích thước.
         - Click lần thứ hai: hiện các mũi tên cong dùng để xoay.
 
     ![Xoay ngôi sao](images/vietnam-flag-rotate.png){width=50% loading=lazy}
@@ -181,10 +182,18 @@ updated: "05/10/2026"
     
     Chiều cao **H** sẽ tự động thu nhỏ tương ứng thành `100` mà không bị méo hình.
 
-4. Nhấn ++ctrl+s++ để lưu tập tin. Kết thúc.
+4. **Lưu tập tin**
+
+    Nhấn ++ctrl+s++ để lưu tập tin. Kết thúc.
 
     Lưu ý:  
     Nên thường xuyên lưu bài trong quá trình vẽ.
+
+---
+
+## Bản vẽ mẫu
+
+Bản vẽ hoàn chỉnh được đặt tại [GitHub](https://github.com/vtchitruong/gdpt-2018/blob/main/grade-10/topic-e/vietnam-flag.svg){:target="_blank"}.
 
 ---
 
