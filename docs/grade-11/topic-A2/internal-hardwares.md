@@ -1,76 +1,162 @@
 ---
 icon: octicons/cpu-24
+grade: "lớp 11"
+grade_url: "/grade-11/grade-11-index/"
+
+level: "phổ thông"
+level_url: "/grade-11/grade-11-index/"
+
+difficulty: "easy"
+updated: "07/10/2026"
 ---
 
-# Phần cứng bên trong máy tính
+# Phần cứng bên trong
 
 !!! abstract "Tóm lược nội dung"
 
-    Bài này trình bày một số thành phần phần cứng của máy tính, chủ yếu là phần cứng bên trong.
+    Bài này trình bày một số thành phần phần cứng bên trong của máy tính.
 
 ## Khái quát
 
-**Phần cứng** là những thiết bị vật lý của máy tính. Nói cách khác, phần cứng là những bộ phận mà ta có thể cầm, nắm hoặc chạm được.
+!!! note "Phần cứng"
 
-Phần cứng có thể được chia thành hai loại:
+    Là toàn bộ các **thiết bị vật lý** cấu thành nên hệ thống máy tính. 
+
+Đây là những bộ phận hữu hình mà ta có thể cầm hoặc chạm vô được. Chúng có thể được chia thành hai nhóm:
 
 - Phần cứng bên trong
 - Phần cứng bên ngoài
 
-## Phần cứng bên trong
+!!! note "Phần cứng bên trong"
+
+    Là các linh kiện **nằm bên trong thùng máy** (case), **gắn trực tiếp lên bo mạch chủ** hoặc các khe cắm mở rộng.
+
+    Là các **thiết bị cốt lõi** quyết định năng lực xử lý, lưu trữ và vận hành của hệ thống.
+
+---
+
+## CPU
+
+![CPU Intel Core Ultra X9](images/cpu.jpg){width=75% loading=lazy}  
+*Hình: CPU Intel Core Ultra X9*
+
+<div class="grid cards" markdown>
+
+-   :material-cpu-64-bit:{ .lg .middle } **Đặc điểm và chức năng chính**
     
-Là những thiết bị gắn trực tiếp trên bo mạch chính hoặc trên các bảng mạch mở rộng.
+    - Còn gọi là **bộ xử lý trung tâm**.
+    - Là **"bộ não" của máy tính**
+    
+        Chịu trách nhiệm thực thi các chỉ thị (1) từ hệ điều hành và phần mềm.
+        { .annotate }
 
-Chúng nằm "*trong hộp*" (case) của máy tính, thông thường từ ngoài nhìn vào sẽ không thấy.
+        1. **Chỉ thị** là một dãy bit nhị phân mà CPU trực tiếp đọc và thực hiện.
+    
+    - Có năng lực **xử lý đa nhiệm**
+    
+        Hỗ trợ nhiều nhân (core) và nhiều luồng (thread), cho phép xử lý đồng thời nhiều công việc.
 
-### Bộ xử lý trung tâm
+-   :material-speedometer:{ .lg .middle } **Đơn vị đo**
+    
+    **GHz** (gigahertz)  
+    Là đơn vị đo **tần số xung nhịp** trong một giây. Xung nhịp càng cao, tốc độ xử lý mỗi nhân càng nhanh.
 
-Viết tắt là **CPU**, được xem là bộ não của máy tính, chịu trách nhiệm thực thi các **chỉ thị** (1).
-{ .annotate }
+    ??? info "Đơn vị đo khác"
 
-1.  Mỗi **chỉ thị** là một dãy bit nhị phân mà CPU trực tiếp hiểu và thực hiện theo.
+        - **Số nhân và số luồng** (core, thread)
+        
+            Là đơn vị đo năng lực xử lý song song nhiều tác vụ cùng lúc.
+            
+            Ví dụ:  
+            8 nhân 16 luồng
+        
+        - **MB** (megabyte)
+        
+            Là đơn vị đo dung lượng bộ nhớ đệm (cache). Đây là bộ nhớ tích hợp bên trong CPU giúp giảm thời gian chờ khi truy xuất RAM.
 
-    Một số loại chỉ thị của CPU là: 
+</div>
 
-    - Phép toán số học: cộng, trừ, nhân, chia, v.v..
-    - Phép toán logic: AND, OR, XOR, các phép toán so sánh, các phép dịch chuyển bit (shift).
-    - Điều khiển luồng: Rẽ nhánh và lặp.
-    - Di chuyển dữ liệu: Sao chép dữ liêu qua lại giữa các ô nhớ, thanh ghi, thiết bị vào, ra.
-    - Xử lý dữ liệu: nạp, lưu trữ và biến đổi dữ liệu.
+---
 
-Đơn vị dùng để đo tốc độ của CPU là **Ghz** (gigahertz), trong đó hertz có thể hiểu là **số lượng chỉ thị** mà máy tính **thực hiện trong một giây**. Đồng nghĩa rằng, GHz càng cao thì hiệu năng của máy tính càng lớn.
+## RAM
 
-Ví dụ:  
-1 Ghz = 1 tỷ Hertz. CPU 1Ghz nghĩa là trong một giây, CPU có thể thực hiện 1 tỷ chỉ thị.
+![RAM](images/ram.jpg){width=75% loading=lazy}  
+*Hình: RAM Samsung 8 GB*
 
-??? info "Kỷ lục về tốc độ CPU"
 
-    Hiện nay, CPU của nhiều máy tính cá nhân có tốc độ từ 1Ghz đến 3Ghz, đủ dùng cho các tác vụ cơ bản như duyệt web, xem video, soạn thảo văn bản, lập trình cơ bản.
+<div class="grid cards" markdown>
 
-    Tính đến đầu tháng 01.2023, **13th-Generation Core i9-13900KS** là CPU đầu tiên đạt đến tốc độ 6 Ghz. 
+-   :material-memory:{ .lg .middle } **Đặc điểm và chức năng chính**
+    
+    - Còn gọi là **bộ nhớ truy xuất ngẫu nhiên**.
+    - **Lưu trữ tạm thời**
+    
+        Lưu trữ dữ liệu và chương trình mà CPU đang trực tiếp xử lý. Toàn bộ dữ liệu sẽ **mất hết khi tắt máy** hoặc mất điện.
+    
+    - **Quyền truy xuất**
+    
+        Cho phép CPU **đọc và ghi** dữ liệu nhanh ở bất kỳ ô nhớ nào với thời gian ngang nhau.
+    
+    - **Mở rộng không gian làm việc:**
+    
+        Dung lượng RAM lớn giúp máy tính mở được nhiều ứng dụng cùng lúc mà không bị giật hay chậm trễ.
 
-![CPU của Intel](https://i.pcmag.com/imagery/articles/02InbmluflyOPmvBXM7NMBI-1.fit_lim.size_1600x900.v1616592951.jpg){ loading=lazy width=420 }
+-   :material-gauge:{ .lg .middle } **Đơn vị đo**
+    
+    **GB** (gigabyte)  
+    Là **đơn vị đo dung lượng**, cho biết lượng dữ liệu và chương trình mà máy tính có thể lưu trữ tạm thời để CPU truy cập cùng lúc.
+        
+    Ví dụ:  
+    8 GB, 16 GB, 32 GB, 64 GB
 
-*CPU của Intel*[^1]
+    ??? info "Đơn vị đo khác"
 
-[^1]: Hình lấy tại [PC Magazine](https://www.pcmag.com/news/intels-7nm-pc-chip-will-arrive-in-2023-using-tsmcs-tech){:target="_blank"}.
+        - **MT/s** (megatransfers per second)
+        
+            Là đơn vị đo tốc độ truyền tải dữ liệu giữa RAM và CPU.
+            
+            Ví dụ:  
+            RAM DDR5 5600 nghĩa là RAM này có tốc độ truyền dữ liệu là 5600 triệu lần mỗi giây.
+        
+        - **Độ trễ** (CAS latency)
 
-### Bộ nhớ trong
+            Là khoảng thời gian từ khi CPU gửi yêu cầu đến khi RAM phản hồi. Độ trễ càng nhỏ thì càng tốt.
 
-Còn gọi là **bộ nhớ chính**, gồm có RAM và ROM.
+</div>
 
-| | RAM | ROM |
-| --- | --- | --- |
-| Vai trò | Dùng để lưu trữ dữ liệu mà CPU đang xử lý. | Dùng để lưu trữ dữ liệu của nhà sản xuất thiết bị. |
-| Quyền truy xuất | Cho phép đọc lẫn ghi. | Chỉ cho phép đọc, không dễ cho người dùng ghi đè lên. |  
-| Khả năng lưu trữ | Lưu trữ tạm thời, dữ liệu sẽ mất đi khi tắt máy hoặc máy mất điện. | Lưu trữ lâu dài, không bị mất khi mất điện. |
+---
 
-![Thanh RAM 48 GB](https://content.crucial.com/content/dam/crucial/dram-products/laptop/images/product/crucial-ddr5-32gb-sodimm-image.psd.transform/medium-png/image.png){ loading=lazy width=420 }  
-*Thanh RAM 48 GB*[^3]
+## ROM
 
-[^3]: Hình lấy tại [Crucial](https://www.crucial.com/memory/ddr5/ct48g56c46s5){:target="_blank"}.
+<div class="grid cards" markdown>
 
-Hiện nay, đơn vị phổ biến dùng để đo dung lượng của RAM là **gigabyte** (GB).
+-   :material-chip:{ .lg .middle } **Đặc điểm và chức năng chính**
+    
+    - Còn gọi là **bộ nhớ chỉ đọc**.
+    - **Lưu trữ lâu dài**
+    
+        Dữ liệu được nhà sản xuất ghi sẵn và **không bị mất đi** khi tắt máy hoặc mất điện.
+
+    - **Lưu trữ chương trình khởi động**
+    
+        Chứa các lệnh cấp thấp, chẳng hạn như **BIOS** hoặc **UEFI**, để kiểm tra phần cứng và nạp hệ điều hành khi bật máy.
+    
+    - **Quyền truy xuất**
+    
+        **Chỉ cho phép đọc** dữ liệu trong quá trình vận hành bình thường. Người dùng không thể ghi đè bằng thao tác thông thường.
+
+-   :material-database-clock:{ .lg .middle } **Đơn vị đo**
+    
+    **MB** (megabyte)  
+    Là **đơn vị đo dung lượng**. ROM chỉ chứa các mã lệnh khởi động nhẹ nên dung lượng rất nhỏ, thường từ 8 MB đến 64 MB.
+
+    ??? info "Đơn vị đo khác"
+
+        - **ns** (nano-giây) 
+        
+            Là thời gian truy xuất bộ nhớ, cho biết khoảng thời gian CPU cần để đọc dữ liệu từ chip ROM trong quá trình khởi động hệ thống.
+
+</div>
 
 ??? info "Sự nhập nhằng của thuật ngữ ROM giữa máy tính để bàn và điện thoại thông minh"
     
@@ -83,120 +169,120 @@ Hiện nay, đơn vị phổ biến dùng để đo dung lượng của RAM là 
     - Một phần dùng để lưu trữ hệ điều hành, người dùng không dễ chỉnh sửa được.
     - Phần còn lại dành cho dữ liệu và ứng dụng của người dùng, có thể tuỳ nghi lưu trữ hoặc cài đặt.
 
-### Bộ xử lý đồ hoạ
+---
 
-Viết tắt là **GPU**, dùng để xử lý hình ảnh và video, có vai trò quan trọng trong các tác vụ liên quan đến đồ hoạ và khía cạnh trực quan như chơi game, chỉnh sửa ảnh, biên tập video và tạo mô hình ba chiều.
+## GPU
 
-Bên cạnh đó, GPU còn góp phần trong các ứng dụng đòi hỏi sức mạnh tính toán lớn như khoa học kỹ thuật và trí tuệ nhân tạo.
+![GPU RTX 5090 của NVIDIA](images/gpu.png){width=75% loading=lazy}  
+*Hình: GPU RTX 5090 của NVIDIA*
 
-![GPU của NVIDIA](https://lh3.googleusercontent.com/pw/AIL4fc_OQmstGEWx7I-4dKbm9mQ4pf6pXRtOFClvH7ar7-zSx3Sq-ldwadmIoVJmRwymqYhC5vbbS0_Bv_ckIBJ2Ep6NBJW3EPFG_JuZ2exoo0G_0ZLWFj_X=w800){ loading=lazy width=420 }
+<div class="grid cards" markdown>
 
-*GPU của NVIDIA*[^6]
-
-[^6]: Hình lấy tại [Nvidia](https://www.nvidia.com/en-us/geforce/news/geforce-rtx-founders-graphics-card-breakdown){:target="_blank"}.
-
-Đơn vị dùng để đo hiệu năng của GPU là **TFLOPS** (Tera Floating Point Operations Per Second), nghĩa là một nghìn tỷ phép tính dấu phẩy động mỗi giây.
-
-Tuy nhiên, khi kinh doanh, các nhà sản xuất thường thể hiện các đơn vị khác, chẳng hạn như:
-
-- Số nhân xử lý (CUDA cores)
-- Bộ nhớ VRAM
-
-### Thiết bị lưu trữ
-
-Dùng để **lưu trữ dữ liệu lâu dài**.
-
-Các thiết bị lưu trữ có thể thuộc vào nhóm phần cứng bên trong hoặc phần cứng bên ngoài:
-
-- Bên trong: HDD, SSD.
-- Bên ngoài: USB Flash, đĩa cứng di động, thẻ nhớ, đĩa quang.
-
-Hiện nay, đơn vị phổ biến dùng để đo dung lượng của thiết bị lưu trữ là **gigabyte** (GB) và **terabyte** (TB).
-
-??? info "Dữ liệu trong thiết bị lưu trữ không thực sự bị xoá mất"
-
-    Khi ta xoá, dữ liệu không hoàn toàn bị mất, mà là ta mất khả năng tham chiếu đến dữ liệu đó.
-
-    Để thực sự xoá dữ liệu, người khác không thể truy hồi được, ta có một vài cách sau:
-
-    1. Ghi đè dữ liệu cần xoá bằng dữ liệu ngẫu nhiên và thực hiện nhiều lần, trên toàn bộ diện tích lưu trữ.
-    2. Mã hoá dữ liệu trước khi lưu trữ, để khi cần xóa, thì xoá các khoá dùng cho việc mã hoá, làm cho dữ liệu không còn truy xuất được nữa.
-    3. Phá hủy thiết bị về mặt vật lý, chẳng hạn đập nát hoặc đốt, để không còn sửa chữa được nữa, làm cho dữ liệu không thể phục hồi. 
-
-Những thiết bị lưu trữ gắn trong máy gồm có:
-
-#### Đĩa cứng
-
-1.  **HDD** (Hard Disk Drive):
+-   :material-expansion-card:{ .lg .middle } **Đặc điểm và chức năng chính**
     
-    Là đĩa cứng truyền thống, sử dụng từ tính để lưu trữ dữ liệu. Cấu tạo bao gồm một ổ đĩa quay và một đầu đọc/ghi dữ liệu cơ học.  
-
-2.  **SSD** (Solid-State Drive):
+    - Còn gọi là **bộ xử lý đồ họa**.
+    - **Chuyên biệt hóa xử lý hình ảnh**
     
-    Sử dụng các chip nhớ flash để lưu trữ dữ liệu, tức không có những bộ phận cơ học như HDD. Việc này giúp truy xuất dữ liệu nhanh hơn và tin cậy hơn.
-
-![HDD và SSD](https://lh3.googleusercontent.com/pw/AIL4fc9bSpTDl6XrxFRRqcFdWSq5h7zfCdz3JV9b57kUeQqn5C6hmoMiWyVpJnYscXqZeaXd-0JoI2qUexV4F2cyYwB3qynVyl5bKzxHrwNjXuxNe4w69vAM=w800){ loading=lazy width=540 }
-
-**HDD và SSD**[^4]
-
-[^4]: Hình lấy tại [medium.com](https://medium.com/@rodbauer/hdd-vs-ssd-what-does-the-future-for-storage-hold-dc8653f16366){:target="_blank"}.
-
-??? info "Kỷ lục về dung lượng SSD"
+        Đảm nhận các phép tính hình học phức tạp để xuất hình ảnh, video, đồ họa 3D và giao diện người dùng.
     
-    Hiện nay, nhiều máy tính cá nhân đã trang bị SSD. Dung lượng SSD phổ biến là 128GB, 256GB, 512GB, 1TB. 
-
-    Tính đến tháng 8.2023, dung lượng của một SSD đã đạt đến 100TB (1).
-    { .annotate } 
-
-    1.  Sản phẩm của [Nimbus Data](https://nimbusdata.com/products/exadrive/){:target="_blank"} đã được bán ra thị trường.
-
-#### Đĩa quang
-
-Gồm có CD, DVD và Blu-ray.
-
-Loại đĩa này sử dụng tia laser để đọc và ghi dữ liệu. Hiện nay, chúng dần không còn phổ biến trên máy tính.
-
-#### USB Flash drive
-
-USB flash là thiết bị lưu trữ gắn ngoài, kết nối vào máy tính thông qua cổng USB.
-
-Do nó là một trong những thiết bị dùng cổng USB đầu tiên có mặt ở thị trường nước ta, nên người ta quen gọi là USB. Mặc dù hiện nay có nhiều thiết bị kết nối vào máy tính thông qua cổng USB, cách gọi này vẫn còn khá phổ biến.
-
-## Phần cứng bên ngoài
+    - **Cấu trúc tính toán song song**
     
-Còn được gọi Là **thiết bị ngoại vi**, là những thiết bị nằm bên ngoài hộp của máy tính và kết nối với máy tính thông qua các cổng trên thân máy.
+        Chứa hàng nghìn nhân xử lý nhỏ hoạt động đồng thời, vượt trội hơn CPU trong các bài toán lặp lại.
 
-### Thiết bị vào
+    - **Tăng tốc AI**
+    
+        Được ứng dụng rộng rãi trong học máy, xử lý dữ liệu lớn và mô phỏng khoa học.
 
-Dùng để đưa dữ liệu từ bên ngoài vào máy tính.
+-   :material-chart-timeline-variant:{ .lg .middle } **Đơn vị đo**
+    
+    **TFLOPS** (Tera Floating Point Operations Per Second)  
+    Là **đơn vị đo nghìn tỷ phép tính số thực** mà GPU thực hiện trong một giây.
 
-Ví dụ:
+    ??? info "Đơn vị đo khác"
 
-- Bàn phím
-- Chuột    
-- Camera
-- Microphone
-- Máy quét
-- Cảm biến
-- Màn hình cảm ứng
-- Bút stylus
+        - **GB** (gigabyte)
+        
+            Dung lượng VRAM (GB):** Bộ nhớ đồ họa chuyên dụng dùng để lưu trữ kết cấu (textures), mô hình 3D và khung hình hiển thị.
+        
+        - **Số nhân xử lý** (CUDA core, stream processor)
+        
+            Số lượng lõi tính toán song song tích hợp bên trong GPU.
 
-### Thiết bị ra
+</div>
 
-Dùng để đưa dữ liệu từ trong máy tính ra bên ngoài.
+---
 
-Ví dụ:
+## Thiết bị lưu trữ
 
-- Màn hình
-- Loa, tai nghe
-- Máy in
-- Máy chiếu
+![HDD và SSD](images/hdd-vs-ssd.jpg){width=75% loading=lazy}  
+*Hình: HDD và SSD*
+
+<div class="grid cards" markdown>
+
+-   :material-harddisk:{ .lg .middle } **Đặc điểm và chức năng chính**
+    
+    - **Lưu trữ lâu dài**
+    
+        Dùng để lưu trữ hệ điều hành, phần mềm ứng dụng và các tập tin của người dùng một cách lâu dài.
+    
+    - **HDD**
+    
+        Là đĩa cứng cơ học, sử dụng **phiến đĩa quay có từ tính** và **đầu đọc cơ học**. Tốc độ truy xuất chậm hơn SSD.
+
+    - **SSD**
+    
+        Là đĩa cứng thể rắn, sử dụng **chip nhớ flash**, không có bộ phận chuyển động. Tốc độ truy xuất rất nhanh, chống sốc tốt.
+
+-   :material-transfer:{ .lg .middle } **Đơn vị đo**
+    
+    **GB** (gigabyte) và **TB** (terabyte)  
+    Là **đơn vị đo dung lương**, cho biết khả năng chứa dữ liệu.
+        
+    Hiện nay, các đĩa cứng có dung lượng phổ biến từ 256 GB đến vài TB.
+    
+    ??? info "Đơn vị đo khác"
+
+        - **MB/s** và **GB/s** (megabyte và gigabyte trên mỗi giây)
+        
+            Là đơn vị đo tốc độ đọc/ghi, cho biết lượng dữ liệu di chuyển trong một giây.
+            
+            Ví dụ:  
+            HDD đạt ~150 MB/s.  
+            SSD NVMe đạt từ 3500 MB/s đến 7000 MB/s.
+        
+        - **IOPS** (Số thao tác vào/ra mỗi giây)
+        
+            Là đơn vị đo khả năng xử lý các tập tin nhỏ ngẫu nhiên của ổ cứng.
+
+</div>
+
+??? info "Dữ liệu trong thiết bị lưu trữ không thực sự bị xóa mất"
+
+    Khi ta thực hiện xóa, dữ liệu không lập tức bị mất đi khỏi thiết bị lưu trữ, mà hệ điều hành chỉ xóa đường dẫn tham chiếu đến dữ liệu đó trong bảng chỉ mục và đánh dấu vùng nhớ tương ứng là *"trống"* để sẵn sàng cho việc ghi dữ liệu mới. Chừng nào vùng nhớ đó chưa bị dữ liệu mới ghi đè lên, dữ liệu cũ vẫn có khả năng được khôi phục.
+
+    Để thực sự xóa dữ liệu vĩnh viễn và ngăn chặn hoàn toàn khả năng truy hồi, ta có các cách sau:
+
+    1. **Ghi đè dữ liệu**
+    
+        Sử dụng phần mềm chuyên dụng để ghi đè các dãy số ngẫu nhiên hoặc số 0 lên toàn bộ vùng nhớ chứa dữ liệu cần xóa, và thường thực hiện nhiều lần.
+
+    2. **Xóa khóa mã hóa**
+    
+        Mã hóa toàn bộ dữ liệu trước khi lưu trữ. Khi cần xóa, hệ thống sẽ tiêu hủy khóa giải mã, khiến dữ liệu trở thành dãy bit ngẫu nhiên không thể đọc được.
+
+    3. **Phá hủy thiết bị về mặt vật lý**
+    
+        Tiêu hủy hoàn toàn thiết bị lưu trữ bằng cách đập nát, băm nhỏ, khử từ tính hoặc đốt cháy để không thể khôi phục hay sửa chữa.
+
+---
 
 ## Sơ đồ tóm tắt
 
 <div>
-    <iframe style="width: 100%; height: 360px" frameBorder=0 src="../mindmaps/internal-hardwares.html">Sơ đồ tóm tắt</iframe>
+    <iframe style="width: 100%; height: 360px" frameBorder=0 src="/grade-11/topic-A2/mindmaps/internal-hardwares.html">Sơ đồ tóm tắt</iframe>
 </div>
+
+---
 
 ## Some English words
 
@@ -207,11 +293,11 @@ Ví dụ:
 | bộ nhớ truy xuất ngẫu nhiên | Random Access Memory (RAM) |
 | bộ nhớ chỉ đọc (chỉ cho phép đọc) | Read-Only Memory (ROM) |
 | bộ xử lý trung tâm | Central Processing Unit (CPU) |
-| bộ xử lý đồ hoạ | Graphics Processing Unit (GPU) |
+| bộ xử lý đồ họa | Graphics Processing Unit (GPU) |
 | đĩa cứng thể rắn | solid-state drive |
 | đĩa cứng ổ quay truyền thống | hard disk drive |
 | đĩa quang học | optical disc |
-| hộp, thân máy | case |
+| thùng máy, vỏ máy | case |
 | phần cứng bên ngoài | external hardware |
 | phần cứng bên trong | internal hardware |
 | thiết bị lưu trữ | storage device |
