@@ -33,11 +33,11 @@ Hệ điều hành và phần mềm ứng dụng
 
 Thế giới thiết bị số
 
-1. [Những bộ phận chính bên trong máy tính](./topic-A2/internal-hardwares.md){:target="_blank"}
+1. [Những bộ phận chính bên trong máy tính](./topic-A2/external-hardwares.md){:target="_blank"}
 
     1. [Nhận diện được hình dạng, mô tả được chức năng của các bộ phận chính bên trong thân máy tính như CPU, RAM và các thiết bị lưu trữ. Nêu được tên và giải thích được đơn vị đo hiệu năng của chúng như GHz, GB, v.v..](./topic-A2/internal-hardwares.md){:target="_blank"}
     2. [Nhận biết được sơ đồ của các mạch logic AND, OR, NOT, giải thích được vai trò của các mạch logic đó trong thực hiện các tính toán nhị phân](./topic-A2/logic-gates.md){:target="_blank"}.
-    3. Tùy chỉnh được một vài chức năng cơ bản của máy tính và các thiết bị vào – ra thông dụng để phù hợp với nhu cầu sử dụng và đạt hiệu quả tốt hơn.
+    3. [Tùy chỉnh được một vài chức năng cơ bản của máy tính và các thiết bị vào – ra thông dụng](./topic-A2/external-hardwares.md){:target="_blank"} để phù hợp với nhu cầu sử dụng và đạt hiệu quả tốt hơn.
 
 2. Chức năng và hoạt động của những thiết bị ngoại vi và thiết bị số thông dụng
 

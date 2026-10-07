@@ -8,27 +8,29 @@ markmap:
 
 ## Phần cứng bên trong
 
-### Bộ xử lý trung tâm
+### CPU
 
 - Thực thi các chỉ thị
-- Đơn vị: Ghz
+- Đơn vị: GHz
 
-### Bộ nhớ trong
+### RAM
 
-- Làm việc trực tiếp với CPU
-- Gồm RAM và ROM
+- Đọc và ghi dữ liệu tạm thời
 - Đơn vị: GB
 
-### Bộ xử lý đồ họa
+### ROM
+
+- Chỉ cho phép đọc
+- Đơn vị: MB
+
+### GPU
+
+- Xử lý hình ảnh và AI
+- Đơn vị: TFLOPS
 
 ### Thiết bị lưu trữ
 
-- Lưu trữ lâu dài dữ liệu của người dùng
-- Có cả nhóm "bên trong" lẫn "bên ngoài"
-- HDD, SSD, USB Flash, thẻ nhớ, v.v.
+- Lưu trữ dữ liệu lâu dài
 - Đơn vị: GB và TB
 
 ## Phần cứng bên ngoài
-
-### Thiết bị vào
-### Thiết bị ra
