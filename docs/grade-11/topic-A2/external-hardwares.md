@@ -18,11 +18,7 @@ updated: "07/10/2026"
 
 ## Khái quát
 
-!!! note "Phần cứng bên ngoài"
-
-    Còn gọi là **thiết bị ngoại vi**, các thiết bị nằm bên ngoài thùng máy (case) và kết nối với bo mạch chủ thông qua các cổng giao tiếp như USB, HDMI, DisplayPort, Audio jack.
-
-Thiết bị ngoại vi có thể chia thành hai loại:
+Phần cứng bên ngoài còn gọi là **thiết bị ngoại vi**, có thể chia thành hai loại:
 
 !!! note "Thiết bị vào"
 
@@ -37,6 +33,14 @@ Bàn phím, chuột, camera, microphone, máy quét, cảm biến, bút stylus.
 
 Ví dụ:  
 Màn hình, máy in, loa, tai nghe, máy chiếu.
+
+## Kiến trúc máy tính
+
+Sơ đồ kiến trúc máy tính dưới đây thể hiện mối quan hệ giữa các thành phần phần cứng.
+
+<div>
+    <iframe style="width: 100%; height: 540px" frameBorder=0 src="/grade-11/topic-A2/images/computer-architecture-diagram.html">Kiến trúc máy tính</iframe>
+</div>
 
 ---
 
@@ -79,6 +83,8 @@ Màn hình, máy in, loa, tai nghe, máy chiếu.
 
 </div>
 
+🔙 [Quay lại sơ đồ kiến trúc máy tính](#kien-truc-may-tinh){target="_self"} 
+
 ---
 
 ## Màn hình
@@ -112,6 +118,8 @@ Màn hình, máy in, loa, tai nghe, máy chiếu.
             60 Hz, 120 Hz, 144 Hz, 165 Hz
 
 </div>
+
+🔙 [Quay lại sơ đồ kiến trúc máy tính](#kien-truc-may-tinh){target="_self"} 
 
 ---
 
@@ -149,6 +157,8 @@ Màn hình, máy in, loa, tai nghe, máy chiếu.
     
         Vừa hiển thị không gian 3D và phát âm thanh, vừa theo dõi chuyển động đầu và cử chỉ tay của người dùng.
 
+🔙 [Quay lại sơ đồ kiến trúc máy tính](#kien-truc-may-tinh){target="_self"} 
+
 ---
 
 ## Thiết bị lưu trữ
@@ -180,6 +190,15 @@ Màn hình, máy in, loa, tai nghe, máy chiếu.
         Là đơn vị đo tốc độ đọc hoặc ghi dữ liệu.
 
 </div>
+
+!!! info "Trong và ngoài đối với máy tính để bàn và máy tính xách tay"
+
+    Cùng một loại thiết bị có thể được phân loại khác nhau tùy theo thiết kế của máy tính. Chẳng hạn như:
+    
+    - Đối với máy tính để bàn, các thiết bị như loa, webcam, microphone thường được kết nối từ bên ngoài nên được xem là phần cứng bên ngoài.
+    - Còn đối với máy tính xách tay, các thiết bị này, cùng với bàn phím, được tích hợp bên trong thân máy nên có thể được xem là phần cứng bên trong.
+
+🔙 [Quay lại sơ đồ kiến trúc máy tính](#kien-truc-may-tinh){target="_self"} 
 
 ---
 

@@ -22,16 +22,29 @@ updated: "07/10/2026"
 
     Là toàn bộ các **thiết bị vật lý** cấu thành nên hệ thống máy tính. 
 
-Đây là những bộ phận hữu hình mà ta có thể cầm hoặc chạm vô được. Chúng có thể được chia thành hai nhóm:
+Phần cứng là những bộ phận hữu hình mà ta có thể cầm hoặc chạm vô được. Chúng có thể được chia thành hai nhóm:
 
-- Phần cứng bên trong
-- Phần cứng bên ngoài
+<div class="grid cards" markdown>
 
-!!! note "Phần cứng bên trong"
-
+-   :octicons-cpu-24:{ .lg .middle } **Phần cứng bên trong**
+    
     Là các linh kiện **nằm bên trong thùng máy** (case), **gắn trực tiếp lên bo mạch chủ** hoặc các khe cắm mở rộng.
 
     Là các **thiết bị cốt lõi** quyết định năng lực xử lý, lưu trữ và vận hành của hệ thống.
+
+-   :material-monitor:{ .lg .middle } **Phần cứng bên ngoài**
+    
+    Còn gọi là **thiết bị ngoại vi**, các thiết bị **nằm bên ngoài thùng máy** (case) và kết nối với bo mạch chủ thông qua các cổng giao tiếp như USB, HDMI, DisplayPort, Audio jack.
+
+</div>
+
+## Kiến trúc máy tính
+
+Sơ đồ kiến trúc máy tính dưới đây thể hiện mối quan hệ giữa các thành phần phần cứng.
+
+<div>
+    <iframe style="width: 100%; height: 540px" frameBorder=0 src="/grade-11/topic-A2/images/computer-architecture-diagram.html">Kiến trúc máy tính</iframe>
+</div>
 
 ---
 
@@ -75,6 +88,8 @@ updated: "07/10/2026"
             Là đơn vị đo dung lượng bộ nhớ đệm (cache). Đây là bộ nhớ tích hợp bên trong CPU giúp giảm thời gian chờ khi truy xuất RAM.
 
 </div>
+
+🔙 [Quay lại sơ đồ kiến trúc máy tính](#kien-truc-may-tinh){target="_self"} 
 
 ---
 
@@ -124,6 +139,8 @@ updated: "07/10/2026"
 
 </div>
 
+🔙 [Quay lại sơ đồ kiến trúc máy tính](#kien-truc-may-tinh){target="_self"} 
+
 ---
 
 ## ROM
@@ -169,6 +186,8 @@ updated: "07/10/2026"
     - Một phần dùng để lưu trữ hệ điều hành, người dùng không dễ chỉnh sửa được.
     - Phần còn lại dành cho dữ liệu và ứng dụng của người dùng, có thể tuỳ nghi lưu trữ hoặc cài đặt.
 
+🔙 [Quay lại sơ đồ kiến trúc máy tính](#kien-truc-may-tinh){target="_self"} 
+
 ---
 
 ## GPU
@@ -209,6 +228,8 @@ updated: "07/10/2026"
             Số lượng lõi tính toán song song tích hợp bên trong GPU.
 
 </div>
+
+🔙 [Quay lại sơ đồ kiến trúc máy tính](#kien-truc-may-tinh){target="_self"} 
 
 ---
 
@@ -273,6 +294,8 @@ updated: "07/10/2026"
     3. **Phá hủy thiết bị về mặt vật lý**
     
         Tiêu hủy hoàn toàn thiết bị lưu trữ bằng cách đập nát, băm nhỏ, khử từ tính hoặc đốt cháy để không thể khôi phục hay sửa chữa.
+
+🔙 [Quay lại sơ đồ kiến trúc máy tính](#kien-truc-may-tinh){target="_self"} 
 
 ---
 
